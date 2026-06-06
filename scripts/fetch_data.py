@@ -487,15 +487,13 @@ def fetch_matches_and_analyze():
     save(
         f"challenger-{REGION}-{SET_NUM}.json",
         {
+            "sources": {"riot": True},
             "unitStats": unit_output,
             "augmentStats": augment_output[:50],
             "challengerComps": challenger_comps,
             "scannedMatches": analyzed,
-            "source": {
-                "ladder": "TFT Challenger + Grandmaster",
-                "region": REGION,
-                "queue": "RANKED_TFT",
-            },
+            "region": REGION,
+            "scrapedAt": int(time.time() * 1000),
         },
     )
     print(f"  {len(challenger_comps)} comps, {len(unit_output)} units, {len(augment_output)} augments")
