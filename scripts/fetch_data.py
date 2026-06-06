@@ -181,6 +181,7 @@ def fetch_matches_and_analyze():
     print("Fetching & analyzing match details...")
 
     unit_stats: dict = {}
+    trait_stats: dict = {}
     # comp_stats keyed by "TraitA + TraitB" (top 2 active traits, sorted)
     comp_stats: dict = {}
     augment_stats: dict = {}
@@ -249,6 +250,18 @@ def fetch_matches_and_analyze():
                 )
                 top_trait_names = [t["name"] for t in active_traits[:2]]
                 comp_key = " + ".join(sorted(top_trait_names)) if top_trait_names else None
+
+                # ── Global trait stats ──────────────────────────────────────
+                for t in active_traits:
+                    tname = t.get("name", "")
+                    if not tname:
+                        continue
+                    if tname not in trait_stats:
+                        trait_stats[tname] = {"top4": 0, "total": 0, "totalPlacement": 0}
+                    trait_stats[tname]["total"] += 1
+                    trait_stats[tname]["totalPlacement"] += placement
+                    if is_top4:
+                        trait_stats[tname]["top4"] += 1
 
                 # ── Comp stats (trait-based) ────────────────────────────────
                 if comp_key and len(playable_units) >= 4:
@@ -483,12 +496,28 @@ def fetch_matches_and_analyze():
         key=lambda c: (-c["top4Rate"], c["avgPlace"], -c["count"]),
     )[:20]
 
+    # ── Build traitOutput ───────────────────────────────────────────────────────
+    trait_output = []
+    for tname, stats in trait_stats.items():
+        if stats["total"] < 2:
+            continue
+        trait_output.append({
+            "name": tname,
+            "apiName": tname,
+            "appearances": stats["total"],
+            "top4Rate": round(stats["top4"] / stats["total"], 4),
+            "avgPlacement": round(stats["totalPlacement"] / stats["total"], 3),
+            "source": "riot",
+        })
+    trait_output.sort(key=lambda x: x["appearances"], reverse=True)
+
     # Save challenger-{region}-{set}.json
     save(
         f"challenger-{REGION}-{SET_NUM}.json",
         {
             "sources": {"riot": True},
             "unitStats": unit_output,
+            "traitStats": trait_output,
             "augmentStats": augment_output[:50],
             "challengerComps": challenger_comps,
             "scannedMatches": analyzed,
