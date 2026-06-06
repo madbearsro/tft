@@ -197,7 +197,7 @@ export default function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <h1>TFT Helper</h1>
+        <h1>HexForge TFT</h1>
         <nav className="tabs">
           {TABS.map((t, i) => (
             <button
