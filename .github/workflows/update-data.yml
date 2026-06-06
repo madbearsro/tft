@@ -49,6 +49,7 @@ jobs:
 
       - name: Notificare Discord
         if: always()
+        continue-on-error: true
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         run: |
