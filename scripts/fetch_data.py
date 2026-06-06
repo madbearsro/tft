@@ -56,33 +56,36 @@ def fetch_challenger() -> None:
 
 
 def fetch_meta(data_en: dict) -> None:
-    """Extract current set meta data from CDragon set list."""
+    """Extract only the current set data from CDragon."""
     print("Fetching meta...")
     if not data_en:
         errors.append("meta: no CDragon data")
         return
     try:
-        sets = data_en.get("sets", {})
+        set_num = int(SET_NUM)
         set_data = data_en.get("setData", [])
+
+        # Pastreaza doar intrarile pentru setul curent
+        current = [s for s in set_data if s.get("number") == set_num]
+
+        # Dintre duplicate alege versiunea cu cei mai multi campioni
+        current.sort(key=lambda s: len(s.get("champions", [])), reverse=True)
+        best = current[0] if current else {}
+
         meta = {
             "source": "cdragon",
-            "sets": sets,
-            "setData": [
+            "number": best.get("number"),
+            "name": best.get("name"),
+            "traits": best.get("traits", []),
+            "champions": [
                 {
-                    "name": s.get("name"),
-                    "number": s.get("number"),
-                    "traits": s.get("traits", []),
-                    "champions": [
-                        {
-                            "apiName": c.get("apiName"),
-                            "name": c.get("name"),
-                            "cost": c.get("cost"),
-                            "traits": c.get("traits", []),
-                        }
-                        for c in s.get("champions", [])
-                    ],
+                    "apiName": c.get("apiName"),
+                    "name": c.get("name"),
+                    "cost": c.get("cost"),
+                    "traits": c.get("traits", []),
+                    "icon": c.get("squareIconPath"),
                 }
-                for s in set_data
+                for c in best.get("champions", [])
             ],
         }
         save(f"meta-{SET_NUM}.json", meta)
