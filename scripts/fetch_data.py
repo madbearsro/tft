@@ -24,6 +24,19 @@ def save(filename: str, data) -> None:
     print(f"  saved {filename} ({path.stat().st_size // 1024} KB)")
 
 
+def fetch_cdragon(lang: str) -> dict | None:
+    """Fetch full TFT data from CDragon for a given language."""
+    url = f"https://raw.communitydragon.org/latest/cdragon/tft/{lang}.json"
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=60)
+        r.raise_for_status()
+        return r.json()
+    except Exception as exc:
+        print(f"  ERROR CDragon {lang}: {exc}")
+        errors.append(f"cdragon-{lang}: {exc}")
+        return None
+
+
 def fetch_challenger() -> None:
     """OP.GG public TFT challenger endpoint (EUW)."""
     print("Fetching challenger...")
@@ -41,36 +54,34 @@ def fetch_challenger() -> None:
         errors.append(f"challenger: {exc}")
 
 
-def fetch_meta() -> None:
-    """MetaTFT public API — falls back to CDragon set data."""
+def fetch_meta(data_en: dict) -> None:
+    """Extract current set meta data from CDragon set list."""
     print("Fetching meta...")
-    try:
-        r = requests.get(
-            "https://api.metatft.com/tft/comps",
-            params={"region": "euw"},
-            headers=HEADERS,
-            timeout=20,
-        )
-        r.raise_for_status()
-        save(f"meta-{SET_NUM}.json", r.json())
+    if not data_en:
+        errors.append("meta: no CDragon data")
         return
-    except Exception as exc:
-        print(f"  WARN metatft: {exc}, trying CDragon fallback...")
-
     try:
-        r = requests.get(
-            "https://raw.communitydragon.org/latest/cdragon/tft/en_us.json",
-            headers=HEADERS,
-            timeout=40,
-        )
-        r.raise_for_status()
-        full = r.json()
-        # Keep only set-level data to avoid huge file
+        sets = data_en.get("sets", {})
+        set_data = data_en.get("setData", [])
         meta = {
             "source": "cdragon",
+            "sets": sets,
             "setData": [
-                {"name": s.get("name"), "number": s.get("number"), "traits": s.get("traits", [])[:10]}
-                for s in full.get("setData", [])
+                {
+                    "name": s.get("name"),
+                    "number": s.get("number"),
+                    "traits": s.get("traits", []),
+                    "champions": [
+                        {
+                            "apiName": c.get("apiName"),
+                            "name": c.get("name"),
+                            "cost": c.get("cost"),
+                            "traits": c.get("traits", []),
+                        }
+                        for c in s.get("champions", [])
+                    ],
+                }
+                for s in set_data
             ],
         }
         save(f"meta-{SET_NUM}.json", meta)
@@ -79,19 +90,14 @@ def fetch_meta() -> None:
         errors.append(f"meta: {exc}")
 
 
-def fetch_augments_and_artifacts() -> None:
-    """CDragon TFT JSON — extracts augments and artifact items."""
-    print("Fetching augments & artifacts from CDragon...")
+def fetch_augments_and_artifacts(data_en: dict) -> None:
+    """Extract augments and artifacts from CDragon TFT data."""
+    print("Fetching augments & artifacts...")
+    if not data_en:
+        errors.append("augments/artifacts: no CDragon data")
+        return
     try:
-        r = requests.get(
-            "https://raw.communitydragon.org/latest/cdragon/tft/en_us.json",
-            headers=HEADERS,
-            timeout=40,
-        )
-        r.raise_for_status()
-        full = r.json()
-
-        all_items = full.get("items", [])
+        all_items = data_en.get("items", [])
 
         augments = [
             {
@@ -126,26 +132,29 @@ def fetch_augments_and_artifacts() -> None:
         errors.append(f"augments/artifacts: {exc}")
 
 
-def fetch_locale(lang: str) -> None:
-    """CommunityDragon game locale strings."""
+def fetch_locale(data: dict, lang: str) -> None:
+    """Build a compact name/desc locale map from CDragon TFT data."""
     print(f"Fetching locale '{lang}'...")
-    lang_code = {
-        "ro": "ro_ro",
-        "en": "en_us",
-        "fr": "fr_fr",
-        "de": "de_de",
-        "es": "es_es",
-        "it": "it_it",
-        "pl": "pl_pl",
-    }.get(lang, f"{lang}_{lang}")
-    url = (
-        f"https://raw.communitydragon.org/latest/game/data/menu"
-        f"/{lang_code}/main.stringtable.json"
-    )
+    if not data:
+        errors.append(f"locale-{lang}: no CDragon data")
+        return
     try:
-        r = requests.get(url, headers=HEADERS, timeout=30)
-        r.raise_for_status()
-        save(f"locale-{lang}.json", r.json())
+        locale_map: dict[str, dict] = {}
+        for it in data.get("items", []):
+            api = it.get("apiName")
+            if api:
+                locale_map[api] = {"name": it.get("name"), "desc": it.get("desc")}
+        for s in data.get("setData", []):
+            for c in s.get("champions", []):
+                api = c.get("apiName")
+                if api:
+                    locale_map[api] = {"name": c.get("name"), "desc": c.get("squareIconPath")}
+            for t in s.get("traits", []):
+                api = t.get("apiName")
+                if api:
+                    locale_map[api] = {"name": t.get("name"), "desc": t.get("desc")}
+        save(f"locale-{lang}.json", locale_map)
+        print(f"  locale-{lang}: {len(locale_map)} entries")
     except Exception as exc:
         print(f"  ERROR locale {lang}: {exc}")
         errors.append(f"locale-{lang}: {exc}")
@@ -153,11 +162,18 @@ def fetch_locale(lang: str) -> None:
 
 if __name__ == "__main__":
     print(f"=== TFT Set {SET_NUM} data fetch ===\n")
+
+    print("Downloading CDragon en_us...")
+    data_en = fetch_cdragon("en_us")
+
+    print("Downloading CDragon ro_ro...")
+    data_ro = fetch_cdragon("ro_ro")
+
     fetch_challenger()
-    fetch_meta()
-    fetch_augments_and_artifacts()
-    fetch_locale("ro")
-    fetch_locale("en")
+    fetch_meta(data_en)
+    fetch_augments_and_artifacts(data_en)
+    fetch_locale(data_ro, "ro")
+    fetch_locale(data_en, "en")
 
     print()
     if errors:
