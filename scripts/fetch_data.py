@@ -150,7 +150,7 @@ def fetch_challenger_and_meta(trait_map: dict | None = None) -> None:
 
         try:
             ids = riot_get(
-                f"https://{REGIONAL}.api.riotgames.com/tft/match/v1/matches/by-puuid/{puuid}/ids?count=10"
+                f"https://{REGIONAL}.api.riotgames.com/tft/match/v1/matches/by-puuid/{puuid}/ids?count=20"
             )
             match_ids.update(ids)
         except Exception as exc:
