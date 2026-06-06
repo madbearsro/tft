@@ -126,12 +126,30 @@ def fetch_challenger_and_meta(trait_map: dict | None = None) -> None:
         },
     )
 
-    # --- Match IDs (top 30 jucatori, ultimele 10 meciuri fiecare) ---
-    print("Fetching match IDs pentru top 30...")
-    top30 = entries[:30]
+    # --- Grandmaster (pool suplimentar de jucatori) ---
+    print("Fetching Grandmaster EUW...")
+    try:
+        gm = riot_get(
+            f"https://{REGION}.api.riotgames.com/tft/league/v1/grandmaster?queue=RANKED_TFT"
+        )
+        gm_entries = sorted(
+            gm.get("entries", []),
+            key=lambda x: x.get("leaguePoints", 0),
+            reverse=True,
+        )
+        print(f"  {len(gm_entries)} jucatori Grandmaster")
+    except Exception as exc:
+        print(f"  WARN Grandmaster: {exc}")
+        gm_entries = []
+
+    # Top 30 Challenger + top 30 Grandmaster
+    all_entries = entries[:30] + gm_entries[:30]
+
+    # --- Match IDs ---
+    print(f"Fetching match IDs pentru {len(all_entries)} jucatori...")
     match_ids: set[str] = set()
 
-    for e in top30:
+    for e in all_entries:
         puuid = e.get("puuid")
 
         # Fallback: summoner endpoint daca puuid lipseste din entry
