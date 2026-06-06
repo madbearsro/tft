@@ -142,8 +142,8 @@ def fetch_challenger_and_meta(trait_map: dict | None = None) -> None:
         print(f"  WARN Grandmaster: {exc}")
         gm_entries = []
 
-    # Top 30 Challenger + top 30 Grandmaster
-    all_entries = entries[:30] + gm_entries[:30]
+    # Top 30 Challenger + top 100 Grandmaster
+    all_entries = entries[:30] + gm_entries[:100]
 
     # --- Match IDs ---
     print(f"Fetching match IDs pentru {len(all_entries)} jucatori...")
