@@ -1,6 +1,7 @@
 """Fetches TFT data from public APIs and saves JSON files to data/."""
 import json
 import os
+import re
 import sys
 import time
 from collections import defaultdict
@@ -49,8 +50,32 @@ def fetch_cdragon(lang: str) -> dict | None:
         return None
 
 
-def fetch_challenger_and_meta() -> None:
+def build_trait_name_map(data_en: dict | None) -> dict[str, str]:
+    """Construieste un map apiName -> displayName din CDragon, ca fallback."""
+    if not data_en:
+        return {}
+    result: dict[str, str] = {}
+    for s in data_en.get("setData", []):
+        for t in s.get("traits", []):
+            api = t.get("apiName", "")
+            name = t.get("name", "")
+            if api and name:
+                result[api] = name
+    return result
+
+
+def normalize_trait_name(raw: str, trait_map: dict[str, str]) -> str:
+    """Transforma API name in display name, cu fallback la strip prefix."""
+    if raw in trait_map:
+        return trait_map[raw]
+    # Curata prefix-uri de tipul TFT17_ASTrait -> ASTrait sau Set17_Challenger -> Challenger
+    cleaned = re.sub(r"^(?:TFT\d+_|Set\d+_)", "", raw)
+    return cleaned
+
+
+def fetch_challenger_and_meta(trait_map: dict | None = None) -> None:
     """Challenger leaderboard + meta comps din meciuri reale via Riot API."""
+    trait_map = trait_map or {}
     if not RIOT_KEY:
         print("  SKIP: RIOT_API_KEY nu e setat")
         save(f"challenger-euw-{SET_NUM}.json", {"entries": [], "error": "no_api_key"})
@@ -161,7 +186,9 @@ def fetch_challenger_and_meta() -> None:
             if not active_traits:
                 continue
 
-            sig = " + ".join(t["name"] for t in active_traits[:2])
+            sig = " + ".join(
+                normalize_trait_name(t["name"], trait_map) for t in active_traits[:2]
+            )
             s = comp_stats[sig]
             s["games"] += 1
             s["total_placement"] += placement
@@ -285,7 +312,8 @@ if __name__ == "__main__":
     print("Downloading CDragon ro_ro...")
     data_ro = fetch_cdragon("ro_ro")
 
-    fetch_challenger_and_meta()
+    trait_map = build_trait_name_map(data_en)
+    fetch_challenger_and_meta(trait_map)
     fetch_augments_and_artifacts(data_en)
     fetch_locale(data_ro, "ro")
     fetch_locale(data_en, "en")
