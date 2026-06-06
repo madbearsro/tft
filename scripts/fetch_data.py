@@ -8,6 +8,7 @@ import os
 import re
 import sys
 import time
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 import requests
@@ -115,6 +116,52 @@ def infer_tier(avg_place):
     return "C"
 
 
+# ── Patch start time ───────────────────────────────────────────────────────────
+
+def fetch_patch_start_time():
+    """Return (epoch_seconds, patch_version_str) for the current TFT patch release."""
+    try:
+        html_headers = {
+            "User-Agent": "Mozilla/5.0 (compatible; TFT-Helper/1.0)",
+            "Accept": "text/html",
+        }
+        index_url = "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/"
+        r = requests.get(index_url, headers=html_headers, timeout=15)
+        r.raise_for_status()
+        m = re.search(r'href="([^"]*teamfight-tactics-patch-[^"]+)"', r.text, re.IGNORECASE)
+        if not m:
+            return None, None
+        path = m.group(1)
+        article_url = (
+            f"https://teamfighttactics.leagueoflegends.com{path}"
+            if path.startswith("/") else path
+        )
+        r = requests.get(article_url, headers=html_headers, timeout=15)
+        r.raise_for_status()
+        date_m = re.search(r"(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.000Z)", r.text)
+        ver_m = re.search(r"Teamfight Tactics patch (\d+\.\d+)", r.text, re.IGNORECASE)
+        if not date_m:
+            return None, None
+        dt = datetime.fromisoformat(date_m.group(1).replace("Z", "+00:00"))
+        patch_ver = ver_m.group(1) if ver_m else None
+        epoch = int(dt.timestamp())
+        print(f"  Patch release: {date_m.group(1)} (epoch {epoch}), version: {patch_ver}")
+        return epoch, patch_ver
+    except Exception as exc:
+        print(f"  WARN fetch_patch_start_time: {exc}")
+        return None, None
+
+
+def last_wednesday_epoch():
+    """Fallback: epoch seconds for last Wednesday 06:00 UTC."""
+    utc_now = datetime.now(timezone.utc)
+    days_since_wed = (utc_now.weekday() - 2) % 7
+    last_wed = (utc_now - timedelta(days=days_since_wed)).replace(
+        hour=6, minute=0, second=0, microsecond=0
+    )
+    return int(last_wed.timestamp())
+
+
 # ── Main match analysis ─────────────────────────────────────────────────────────
 
 def fetch_matches_and_analyze():
@@ -122,6 +169,14 @@ def fetch_matches_and_analyze():
         print("  SKIP: RIOT_API_KEY not set")
         errors.append("challenger: RIOT_API_KEY missing")
         return
+
+    # Patch start time
+    patch_start, patch_version = fetch_patch_start_time()
+    if patch_start:
+        print(f"  Using patch start: {datetime.utcfromtimestamp(patch_start).strftime('%Y-%m-%d %H:%M UTC')}")
+    else:
+        patch_start = last_wednesday_epoch()
+        print(f"  Fallback to last Wednesday: {datetime.utcfromtimestamp(patch_start).strftime('%Y-%m-%d %H:%M UTC')}")
 
     # Challenger
     print(f"Fetching Challenger {REGION.upper()}...")
@@ -169,7 +224,8 @@ def fetch_matches_and_analyze():
             continue
         try:
             ids = riot_get(
-                f"https://{REGIONAL}.api.riotgames.com/tft/match/v1/matches/by-puuid/{puuid}/ids?count=20"
+                f"https://{REGIONAL}.api.riotgames.com/tft/match/v1/matches/by-puuid/{puuid}/ids"
+                f"?count=30&startTime={patch_start}"
             )
             match_ids.update(ids)
         except Exception as exc:
@@ -522,6 +578,8 @@ def fetch_matches_and_analyze():
             "challengerComps": challenger_comps,
             "scannedMatches": analyzed,
             "region": REGION,
+            "patchVersion": patch_version,
+            "patchStartTime": patch_start,
             "scrapedAt": int(time.time() * 1000),
         },
     )
