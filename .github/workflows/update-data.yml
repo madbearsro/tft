@@ -1,0 +1,68 @@
+name: Update TFT Data
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'   # la fiecare 6 ore
+  workflow_dispatch:          # sau manual din UI
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch TFT data
+        id: fetch
+        run: python scripts/fetch_data.py
+        env:
+          TFT_SET: '17'
+
+      - name: Commit & push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --staged --quiet; then
+            echo "Nicio modificare — skip commit"
+          else
+            git commit -m "chore: update TFT data [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+            git push
+          fi
+
+      - name: Notificare Discord
+        if: always()
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        run: |
+          if [ -z "$DISCORD_WEBHOOK" ]; then exit 0; fi
+          STATUS="${{ job.status }}"
+          if [ "$STATUS" = "success" ]; then
+            COLOR=3066993
+            MSG="Date TFT actualizate cu succes"
+            ICON="✅"
+          else
+            COLOR=15158332
+            MSG="Eroare la actualizarea datelor TFT"
+            ICON="❌"
+          fi
+          curl -sf -X POST "$DISCORD_WEBHOOK" \
+            -H "Content-Type: application/json" \
+            -d "{\"embeds\":[{
+              \"title\":\"TFT Helper — Data Update\",
+              \"description\":\"$ICON $MSG\",
+              \"color\":$COLOR,
+              \"footer\":{\"text\":\"$(date -u '+%Y-%m-%d %H:%M UTC')\"}
+            }]}"
