@@ -1,19 +1,21 @@
-"""Fetches TFT data from public APIs and saves JSON files to data/."""
+"""Fetches TFT data from Riot API and CDragon, saves JSON files to data/.
+
+Output format for challenger-{region}-{set}.json mirrors riotApi.js
+scanChallengerMatches so the frontend consumes it without transformation.
+"""
 import json
 import os
 import re
 import sys
 import time
-from collections import defaultdict
 from pathlib import Path
 
 import requests
 
 SET_NUM = os.environ.get("TFT_SET", "17")
 RIOT_KEY = os.environ.get("RIOT_API_KEY", "")
-REGION = os.environ.get("TFT_REGION", "kr")  # platform: euw1, kr, na1, etc.
+REGION = os.environ.get("TFT_REGION", "kr")
 
-# Riot routing: platform -> regional cluster
 REGIONAL = {
     "euw1": "europe", "eune1": "europe", "tr1": "europe", "ru": "europe",
     "kr": "asia", "jp1": "asia",
@@ -29,26 +31,25 @@ HEADERS = {
     "Accept": "application/json",
 }
 RIOT_HEADERS = {**HEADERS, "X-Riot-Token": RIOT_KEY}
-SLEEP = 1.5  # secunde intre call-uri Riot API (max 100/2min)
+SLEEP = 1.5
 
 errors = []
 
 
-def save(filename: str, data) -> None:
+def save(filename, data):
     path = DATA_DIR / filename
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"  saved {filename} ({path.stat().st_size // 1024} KB)")
 
 
-def riot_get(url: str) -> dict:
-    """GET cu rate limiting pentru Riot API."""
+def riot_get(url):
     time.sleep(SLEEP)
     r = requests.get(url, headers=RIOT_HEADERS, timeout=15)
     r.raise_for_status()
     return r.json()
 
 
-def fetch_cdragon(lang: str) -> dict | None:
+def fetch_cdragon(lang):
     url = f"https://raw.communitydragon.org/latest/cdragon/tft/{lang}.json"
     try:
         r = requests.get(url, headers=HEADERS, timeout=60)
@@ -60,40 +61,57 @@ def fetch_cdragon(lang: str) -> dict | None:
         return None
 
 
-def build_trait_name_map(data_en: dict | None) -> dict[str, str]:
-    """Construieste un map apiName -> displayName din CDragon, ca fallback."""
-    if not data_en:
-        return {}
-    result: dict[str, str] = {}
-    for s in data_en.get("setData", []):
-        for t in s.get("traits", []):
-            api = t.get("apiName", "")
-            name = t.get("name", "")
-            if api and name:
-                result[api] = name
-    return result
+# ── Name helpers (mirror of riotApi.js) ────────────────────────────────────────
+
+def augment_id_to_name(api_name):
+    if not api_name:
+        return ""
+    name = re.sub(r"^TFT\d*_Augment_", "", str(api_name), flags=re.IGNORECASE)
+    name = re.sub(r"([a-z])([A-Z])", r"\1 \2", name)
+    name = re.sub(r"([A-Z])([A-Z][a-z])", r"\1 \2", name)
+    name = re.sub(r"\s*3$", " III", name)
+    name = re.sub(r"\s*2$", " II", name)
+    name = re.sub(r"\s*1$", " I", name)
+    name = name.replace("Plus", "+").replace("Minus", "-")
+    return re.sub(r"\s+", " ", name).strip()
 
 
-def normalize_trait_name(raw: str, trait_map: dict[str, str]) -> str:
-    """Transforma API name in display name, cu fallback la strip prefix."""
-    if raw in trait_map:
-        return trait_map[raw]
-    # Curata prefix-uri de tipul TFT17_ASTrait -> ASTrait sau Set17_Challenger -> Challenger
-    cleaned = re.sub(r"^(?:TFT\d+_|Set\d+_)", "", raw)
-    return cleaned
+def is_thiefs_gloves(item_name):
+    return bool(re.search(
+        r"thief.?s\s*gloves|thiefsgloves",
+        str(item_name or "").replace("_", " "),
+        re.IGNORECASE,
+    ))
 
 
-def fetch_challenger_and_meta(trait_map: dict | None = None) -> None:
-    """Challenger leaderboard + meta comps din meciuri reale via Riot API."""
-    trait_map = trait_map or {}
+def is_trait_custom_item(item_name):
+    return bool(re.search(
+        r"emblem|spatula|tactician.?s\s*crown|trait",
+        str(item_name or "").replace("_", " "),
+        re.IGNORECASE,
+    ))
+
+
+def infer_tier(avg_place):
+    if avg_place < 3.2:
+        return "S"
+    if avg_place < 3.7:
+        return "A"
+    if avg_place < 4.2:
+        return "B"
+    return "C"
+
+
+# ── Main match analysis ─────────────────────────────────────────────────────────
+
+def fetch_matches_and_analyze():
     if not RIOT_KEY:
-        print("  SKIP: RIOT_API_KEY nu e setat")
-        save(f"challenger-euw-{SET_NUM}.json", {"entries": [], "error": "no_api_key"})
-        errors.append("challenger: RIOT_API_KEY lipsa")
+        print("  SKIP: RIOT_API_KEY not set")
+        errors.append("challenger: RIOT_API_KEY missing")
         return
 
-    # --- Leaderboard ---
-    print("Fetching Challenger EUW...")
+    # Challenger
+    print(f"Fetching Challenger {REGION.upper()}...")
     try:
         league = riot_get(
             f"https://{REGION}.api.riotgames.com/tft/league/v1/challenger?queue=RANKED_TFT"
@@ -103,56 +121,28 @@ def fetch_challenger_and_meta(trait_map: dict | None = None) -> None:
         errors.append(f"challenger: {exc}")
         return
 
-    entries = sorted(
-        league.get("entries", []),
-        key=lambda x: x.get("leaguePoints", 0),
-        reverse=True,
-    )
-    print(f"  {len(entries)} jucatori Challenger")
+    entries = sorted(league.get("entries", []), key=lambda x: x.get("leaguePoints", 0), reverse=True)
+    print(f"  {len(entries)} Challenger players")
 
-    save(
-        f"challenger-{REGION}-{SET_NUM}.json",
-        {
-            "tier": "CHALLENGER",
-            "entries": [
-                {
-                    "summonerName": e.get("summonerName", ""),
-                    "leaguePoints": e.get("leaguePoints"),
-                    "wins": e.get("wins"),
-                    "losses": e.get("losses"),
-                }
-                for e in entries[:50]
-            ],
-        },
-    )
-
-    # --- Grandmaster (pool suplimentar de jucatori) ---
-    print("Fetching Grandmaster EUW...")
+    # Grandmaster
+    print(f"Fetching Grandmaster {REGION.upper()}...")
     try:
         gm = riot_get(
             f"https://{REGION}.api.riotgames.com/tft/league/v1/grandmaster?queue=RANKED_TFT"
         )
-        gm_entries = sorted(
-            gm.get("entries", []),
-            key=lambda x: x.get("leaguePoints", 0),
-            reverse=True,
-        )
-        print(f"  {len(gm_entries)} jucatori Grandmaster")
+        gm_entries = sorted(gm.get("entries", []), key=lambda x: x.get("leaguePoints", 0), reverse=True)
+        print(f"  {len(gm_entries)} Grandmaster players")
     except Exception as exc:
         print(f"  WARN Grandmaster: {exc}")
         gm_entries = []
 
-    # Top 30 Challenger + top 100 Grandmaster
     all_entries = entries[:30] + gm_entries[:100]
 
-    # --- Match IDs ---
-    print(f"Fetching match IDs pentru {len(all_entries)} jucatori...")
-    match_ids: set[str] = set()
-
+    # Match IDs
+    print(f"Fetching match IDs for {len(all_entries)} players...")
+    match_ids: set = set()
     for e in all_entries:
         puuid = e.get("puuid")
-
-        # Fallback: summoner endpoint daca puuid lipseste din entry
         if not puuid:
             try:
                 summoner = riot_get(
@@ -162,10 +152,8 @@ def fetch_challenger_and_meta(trait_map: dict | None = None) -> None:
             except Exception as exc:
                 print(f"  WARN puuid: {exc}")
                 continue
-
         if not puuid:
             continue
-
         try:
             ids = riot_get(
                 f"https://{REGIONAL}.api.riotgames.com/tft/match/v1/matches/by-puuid/{puuid}/ids?count=20"
@@ -174,93 +162,324 @@ def fetch_challenger_and_meta(trait_map: dict | None = None) -> None:
         except Exception as exc:
             print(f"  WARN match IDs: {exc}")
 
-    print(f"  {len(match_ids)} meciuri unice")
+    print(f"  {len(match_ids)} unique matches found")
 
-    # --- Match details (max 200) ---
-    print("Fetching match details...")
-    matches = []
+    # Fetch & analyze
+    print("Fetching & analyzing match details...")
+
+    unit_stats: dict = {}
+    comp_stats: dict = {}
+    augment_stats: dict = {}
+
+    analyzed = 0
+    skipped = 0
+
     for match_id in list(match_ids)[:200]:
         try:
             match = riot_get(
                 f"https://{REGIONAL}.api.riotgames.com/tft/match/v1/matches/{match_id}"
             )
-            matches.append(match)
-        except Exception as exc:
-            print(f"  WARN {match_id}: {exc}")
+            info = match.get("info", {})
 
-    print(f"  Preluat {len(matches)} meciuri")
-
-    # --- Agregate comps ---
-    comp_stats: dict = defaultdict(
-        lambda: {
-            "games": 0,
-            "total_placement": 0,
-            "top4": 0,
-            "wins": 0,
-            "sample_units": [],
-            "augments": defaultdict(int),
-        }
-    )
-
-    for match in matches:
-        for p in match.get("info", {}).get("participants", []):
-            placement = p.get("placement", 9)
-
-            active_traits = sorted(
-                [t for t in p.get("traits", []) if t.get("style", 0) > 0],
-                key=lambda t: (t.get("style", 0), t.get("num_units", 0)),
-                reverse=True,
-            )
-            if not active_traits:
+            queue_id = info.get("queue_id")
+            if queue_id and queue_id != 1100:
+                skipped += 1
                 continue
 
-            sig = " + ".join(
-                normalize_trait_name(t["name"], trait_map) for t in active_traits[:2]
-            )
-            s = comp_stats[sig]
-            s["games"] += 1
-            s["total_placement"] += placement
-            if placement <= 4:
-                s["top4"] += 1
-            if placement == 1:
-                s["wins"] += 1
-            if not s["sample_units"]:
-                s["sample_units"] = [
-                    u.get("character_id") for u in p.get("units", [])[:8]
-                ]
-            for aug in p.get("augments", []):
-                s["augments"][aug] += 1
+            tft_set = info.get("tft_set_number")
+            if tft_set and str(tft_set) != SET_NUM:
+                skipped += 1
+                continue
 
-    meta_comps = []
-    for name, s in comp_stats.items():
-        if s["games"] < 3:
+            participants = info.get("participants", [])
+            if not participants:
+                skipped += 1
+                continue
+
+            for p in participants:
+                placement = p.get("placement", 9)
+                is_top4 = placement <= 4
+                units = p.get("units", [])
+                augments = p.get("augments", [])
+
+                comp_unit_ids = list({
+                    u["character_id"]
+                    for u in units
+                    if u.get("character_id", "").startswith(f"TFT{SET_NUM}_")
+                })
+                comp_key = ",".join(sorted(comp_unit_ids))
+
+                # Comp stats
+                if len(comp_unit_ids) >= 4 and comp_key:
+                    if comp_key not in comp_stats:
+                        comp_stats[comp_key] = {
+                            "top4": 0, "total": 0, "totalPlacement": 0,
+                            "items": {},
+                            "itemHolderGames": {},
+                            "thiefsGlovesGames": {},
+                            "augments": {},
+                            "threeStars": {},
+                        }
+                    cs = comp_stats[comp_key]
+                    cs["total"] += 1
+                    cs["totalPlacement"] += placement
+                    if is_top4:
+                        cs["top4"] += 1
+
+                    for aug in augments:
+                        if aug:
+                            cs["augments"][aug] = cs["augments"].get(aug, 0) + 1
+
+                    for unit in units:
+                        uid = unit.get("character_id", "")
+                        if uid not in comp_unit_ids:
+                            continue
+
+                        tier = unit.get("tier") or unit.get("star_level") or 0
+                        if tier >= 3:
+                            cs["threeStars"][uid] = cs["threeStars"].get(uid, 0) + 1
+
+                        item_names = unit.get("item_names") or unit.get("itemNames") or []
+                        item_names = [i for i in item_names if i]
+
+                        if uid not in cs["items"]:
+                            cs["items"][uid] = {}
+
+                        thiefs = next((i for i in item_names if is_thiefs_gloves(i)), None)
+                        if thiefs:
+                            cs["thiefsGlovesGames"][uid] = cs["thiefsGlovesGames"].get(uid, 0) + 1
+                            cs["items"][uid][thiefs] = cs["items"][uid].get(thiefs, 0) + 1
+                            continue
+
+                        has_trait_item = any(is_trait_custom_item(i) for i in item_names)
+                        if len(item_names) >= 3 or has_trait_item:
+                            cs["itemHolderGames"][uid] = cs["itemHolderGames"].get(uid, 0) + 1
+
+                        for item in item_names:
+                            cs["items"][uid][item] = cs["items"][uid].get(item, 0) + 1
+
+                # Unit stats (global)
+                for unit in units:
+                    uid = unit.get("character_id", "")
+                    if not uid.startswith(f"TFT{SET_NUM}_"):
+                        continue
+                    if uid not in unit_stats:
+                        unit_stats[uid] = {"top4": 0, "total": 0, "items": {}, "placements": []}
+                    unit_stats[uid]["total"] += 1
+                    unit_stats[uid]["placements"].append(placement)
+                    if is_top4:
+                        unit_stats[uid]["top4"] += 1
+                        for item in (unit.get("item_names") or unit.get("itemNames") or []):
+                            if item:
+                                unit_stats[uid]["items"][item] = unit_stats[uid]["items"].get(item, 0) + 1
+
+                # Augment stats (global)
+                for aug in augments:
+                    if not aug:
+                        continue
+                    if aug not in augment_stats:
+                        augment_stats[aug] = {"top4": 0, "total": 0, "totalPlacement": 0}
+                    augment_stats[aug]["total"] += 1
+                    augment_stats[aug]["totalPlacement"] += placement
+                    if is_top4:
+                        augment_stats[aug]["top4"] += 1
+
+            analyzed += 1
+            if analyzed % 10 == 0:
+                print(f"  Analyzed {analyzed} matches...")
+
+        except Exception as exc:
+            print(f"  WARN {match_id}: {exc}")
+            skipped += 1
+
+    print(f"  Analyzed {analyzed} matches, skipped {skipped}")
+
+    if analyzed == 0:
+        errors.append("No matches could be analyzed")
+        return
+
+    # Build unitOutput
+    unit_output = {}
+    for uid, stats in unit_stats.items():
+        if stats["total"] < 2:
             continue
-        meta_comps.append(
-            {
-                "name": name,
-                "games": s["games"],
-                "placement": round(s["total_placement"] / s["games"], 2),
-                "top4": round(s["top4"] / s["games"] * 100, 1),
-                "win": round(s["wins"] / s["games"] * 100, 1),
-                "units": s["sample_units"],
-                "top_augments": [
-                    aug
-                    for aug, _ in sorted(
-                        s["augments"].items(), key=lambda x: x[1], reverse=True
-                    )[:3]
-                ],
-            }
-        )
+        top_items = sorted(stats["items"].items(), key=lambda x: x[1], reverse=True)[:4]
+        unit_output[uid] = {
+            "top4Rate": round(stats["top4"] / stats["total"], 4),
+            "avgPlacement": round(sum(stats["placements"]) / len(stats["placements"]), 3),
+            "total": stats["total"],
+            "topItems": [{"name": name, "count": count} for name, count in top_items],
+        }
 
-    meta_comps.sort(key=lambda c: (c["placement"], -c["top4"]))
+    # Build augmentOutput
+    augment_output = []
+    for raw_name, stats in augment_stats.items():
+        if stats["total"] < 2:
+            continue
+        display_name = augment_id_to_name(raw_name)
+        if not display_name:
+            continue
+        augment_output.append({
+            "name": display_name,
+            "top4Rate": round(stats["top4"] / stats["total"], 4),
+            "avgPlacement": round(stats["totalPlacement"] / stats["total"], 3),
+            "appearances": stats["total"],
+        })
+    augment_output.sort(key=lambda x: x["top4Rate"], reverse=True)
+
+    # Build challengerComps
+    def build_challenger_comp(comp_key, cs):
+        champion_ids = [cid for cid in comp_key.split(",") if cid]
+        avg_place = cs["totalPlacement"] / cs["total"]
+        top4_rate = cs["top4"] / cs["total"]
+        holder_threshold = max(1, round(cs["total"] * 0.25))
+
+        items = {}
+        for champ_id, counts in cs["items"].items():
+            thiefs_count = cs["thiefsGlovesGames"].get(champ_id, 0)
+            holder_count = cs["itemHolderGames"].get(champ_id, 0)
+
+            if thiefs_count >= holder_threshold:
+                thiefs_item = next((n for n in counts if is_thiefs_gloves(n)), None)
+                if thiefs_item:
+                    items[champ_id] = [thiefs_item]
+                continue
+
+            if holder_count < holder_threshold:
+                continue
+
+            top_items = sorted(
+                [(n, c) for n, c in counts.items() if not is_thiefs_gloves(n)],
+                key=lambda x: x[1],
+                reverse=True,
+            )[:3]
+            if top_items:
+                items[champ_id] = [n for n, _ in top_items]
+
+        augments = []
+        for aug_raw, count in sorted(cs["augments"].items(), key=lambda x: x[1], reverse=True)[:6]:
+            display = augment_id_to_name(aug_raw)
+            if display:
+                augments.append({"name": display, "appearances": count, "fromChallenger": True})
+
+        three_stars = [
+            cid for cid, count in cs["threeStars"].items()
+            if count / cs["total"] >= 0.35
+        ]
+
+        roles = {}
+        for champ_id, item_list in items.items():
+            if item_list and not any(is_thiefs_gloves(i) for i in item_list):
+                roles[champ_id] = "Item holder"
+        for cid in three_stars:
+            roles[cid] = "3-star"
+
+        display_names = [
+            re.sub(r"^TFT\d+_", "", cid) for cid in champion_ids
+        ]
+
+        return {
+            "source": "TFT Challenger",
+            "sourceKind": "challenger",
+            "primarySource": "TFT Challenger",
+            "tier": infer_tier(avg_place),
+            "championIds": champion_ids,
+            "champions": display_names,
+            "count": cs["total"],
+            "avgPlace": round(avg_place, 2),
+            "top4Rate": round(top4_rate, 3),
+            "winRate": 0,
+            "style": f"{cs['total']} jocuri Challenger",
+            "items": items,
+            "augments": augments,
+            "roles": roles,
+            "threeStars": three_stars,
+            "positions": {},
+            "tips": [],
+            "sourceCount": 1,
+        }
+
+    sorted_entries = sorted(
+        comp_stats.items(),
+        key=lambda x: (
+            -x[1]["total"],
+            -len(x[1].get("augments", {})),
+            x[1]["totalPlacement"] / x[1]["total"] if x[1]["total"] > 0 else 9,
+        ),
+    )
+
+    comp_entries = [(k, v) for k, v in sorted_entries if v["total"] >= 2]
+    if len(comp_entries) < 10:
+        existing = {k for k, _ in comp_entries}
+        fill = [
+            (k, v)
+            for k, v in sorted_entries
+            if k not in existing and (len(v.get("augments", {})) > 0 or v["top4"] > 0)
+        ][: 20 - len(comp_entries)]
+        comp_entries = comp_entries + fill
+
+    challenger_comps = sorted(
+        [build_challenger_comp(k, v) for k, v in comp_entries],
+        key=lambda c: (-c["top4Rate"], c["avgPlace"], -c["count"]),
+    )[:20]
+
+    # Save challenger-{region}-{set}.json (primary source for frontend)
+    save(
+        f"challenger-{REGION}-{SET_NUM}.json",
+        {
+            "unitStats": unit_output,
+            "augmentStats": augment_output[:50],
+            "challengerComps": challenger_comps,
+            "scannedMatches": analyzed,
+            "source": {
+                "ladder": "TFT Challenger + Grandmaster",
+                "region": REGION,
+                "queue": "RANKED_TFT",
+            },
+        },
+    )
+    print(f"  {len(challenger_comps)} comps, {len(unit_output)} units, {len(augment_output)} augments")
+
+    # Save meta-{set}.json in scraped-meta format for useMetaScraper enrichment
+    meta_comps = [
+        {
+            "name": " + ".join(c["champions"][:2]) + " Comp",
+            "championIds": c["championIds"],
+            "champions": c["champions"],
+            "tier": c["tier"],
+            "avgPlace": c["avgPlace"],
+            "top4Rate": c["top4Rate"],
+            "count": c["count"],
+            "games": c["count"],
+            "items": c["items"],
+            "augments": c["augments"],
+            "source": "TFT Challenger KR",
+            "primarySource": "TFT Challenger KR",
+            "sourceKind": "challenger",
+            "sources": ["TFT Challenger KR"],
+            "sourceCount": 1,
+            "roles": c["roles"],
+            "threeStars": c["threeStars"],
+            "positions": {},
+            "tips": [],
+        }
+        for c in challenger_comps
+    ]
     save(
         f"meta-{SET_NUM}.json",
-        {"source": "challenger_matches", "comps": meta_comps[:30]},
+        {
+            "source": "challenger_matches_kr",
+            "comps": meta_comps,
+            "confirmedCount": 0,
+            "scrapedAt": int(time.time() * 1000),
+        },
     )
-    print(f"  Salvat {len(meta_comps[:30])} comps din {len(matches)} meciuri")
+    print(f"  Saved {len(meta_comps)} comps to meta-{SET_NUM}.json")
 
 
-def fetch_augments_and_artifacts(data_en: dict) -> None:
+# ── CDragon: augments, artifacts, locale ───────────────────────────────────────
+
+def fetch_augments_and_artifacts(data_en):
     print("Fetching augments & artifacts...")
     if not data_en:
         errors.append("augments/artifacts: no CDragon data")
@@ -301,13 +520,13 @@ def fetch_augments_and_artifacts(data_en: dict) -> None:
         errors.append(f"augments/artifacts: {exc}")
 
 
-def fetch_locale(data: dict, lang: str) -> None:
+def fetch_locale(data, lang):
     print(f"Fetching locale '{lang}'...")
     if not data:
         errors.append(f"locale-{lang}: no CDragon data")
         return
     try:
-        locale_map: dict[str, dict] = {}
+        locale_map: dict = {}
         for it in data.get("items", []):
             api = it.get("apiName")
             if api:
@@ -325,14 +544,14 @@ def fetch_locale(data: dict, lang: str) -> None:
                 if api:
                     locale_map[api] = {"name": t.get("name"), "desc": t.get("desc")}
         save(f"locale-{lang}.json", locale_map)
-        print(f"  locale-{lang}: {len(locale_map)} intrari")
+        print(f"  locale-{lang}: {len(locale_map)} entries")
     except Exception as exc:
         print(f"  ERROR locale {lang}: {exc}")
         errors.append(f"locale-{lang}: {exc}")
 
 
 if __name__ == "__main__":
-    print(f"=== TFT Set {SET_NUM} data fetch ===\n")
+    print(f"=== TFT Set {SET_NUM} data fetch ({REGION.upper()}) ===\n")
 
     print("Downloading CDragon en_us...")
     data_en = fetch_cdragon("en_us")
@@ -340,8 +559,11 @@ if __name__ == "__main__":
     print("Downloading CDragon ro_ro...")
     data_ro = fetch_cdragon("ro_ro")
 
-    trait_map = build_trait_name_map(data_en)
-    fetch_challenger_and_meta(trait_map)
+    if not data_en:
+        print("FATAL: CDragon en_us unavailable")
+        sys.exit(1)
+
+    fetch_matches_and_analyze()
     fetch_augments_and_artifacts(data_en)
     fetch_locale(data_ro, "ro")
     fetch_locale(data_en, "en")
