@@ -118,8 +118,18 @@ def infer_tier(avg_place):
 
 # ── Patch start time ───────────────────────────────────────────────────────────
 
+_MONTH_NUM = {
+    'january': 1, 'february': 2, 'march': 3, 'april': 4,
+    'may': 5, 'june': 6, 'july': 7, 'august': 8,
+    'september': 9, 'october': 10, 'november': 11, 'december': 12,
+}
+
 def fetch_patch_start_time():
-    """Return (epoch_seconds, patch_version_str) for the current TFT patch release."""
+    """Return (epoch_seconds, patch_version_str) for the current TFT patch.
+
+    If the article contains a Mid-Patch Updates section with a date heading,
+    returns the mid-patch date instead of the main patch release date.
+    """
     try:
         html_headers = {
             "User-Agent": "Mozilla/5.0 (compatible; TFT-Helper/1.0)",
@@ -138,15 +148,34 @@ def fetch_patch_start_time():
         )
         r = requests.get(article_url, headers=html_headers, timeout=15)
         r.raise_for_status()
+
         date_m = re.search(r"(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.000Z)", r.text)
         ver_m = re.search(r"Teamfight Tactics patch (\d+\.\d+)", r.text, re.IGNORECASE)
         if not date_m:
             return None, None
+
         dt = datetime.fromisoformat(date_m.group(1).replace("Z", "+00:00"))
         patch_ver = ver_m.group(1) if ver_m else None
-        epoch = int(dt.timestamp())
-        print(f"  Patch release: {date_m.group(1)} (epoch {epoch}), version: {patch_ver}")
-        return epoch, patch_ver
+        patch_epoch = int(dt.timestamp())
+        print(f"  Patch release: {date_m.group(1)} (epoch {patch_epoch}), version: {patch_ver}")
+
+        # Detect mid-patch date: look for month+day heading right after "Mid-Patch Updates"
+        midpatch_m = re.search(
+            r"mid-patch updates[\s\S]{0,400}"
+            r"\b(january|february|march|april|may|june|july|august|september|october|november|december)"
+            r"\s+(\d{1,2})(?:st|nd|rd|th)?\b",
+            r.text, re.IGNORECASE
+        )
+        if midpatch_m:
+            month = _MONTH_NUM[midpatch_m.group(1).lower()]
+            day = int(midpatch_m.group(2))
+            year = dt.year
+            midpatch_dt = datetime(year, month, day, 6, 0, 0, tzinfo=timezone.utc)
+            midpatch_epoch = int(midpatch_dt.timestamp())
+            print(f"  Mid-patch detected: {midpatch_dt.strftime('%Y-%m-%d')} (epoch {midpatch_epoch})")
+            return midpatch_epoch, patch_ver
+
+        return patch_epoch, patch_ver
     except Exception as exc:
         print(f"  WARN fetch_patch_start_time: {exc}")
         return None, None
