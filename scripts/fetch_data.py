@@ -35,6 +35,19 @@ SLEEP = 1.5
 
 errors = []
 
+# Units that start with these patterns are PvE / summons / not playable
+_PVE_RE = re.compile(
+    r"(?:Minion|Summon|PVE_|_PVE|Clone|Illusion|Training|Dragon(?:ling)?|Beacon|Dummy)",
+    re.IGNORECASE,
+)
+
+
+def is_pve_unit(character_id):
+    """Return True if the unit ID looks like a PvE/summon/non-playable unit."""
+    # Strip the set prefix then check
+    stripped = re.sub(r"^TFT\d+_", "", character_id)
+    return bool(_PVE_RE.search(stripped))
+
 
 def save(filename, data):
     path = DATA_DIR / filename
@@ -168,11 +181,13 @@ def fetch_matches_and_analyze():
     print("Fetching & analyzing match details...")
 
     unit_stats: dict = {}
+    # comp_stats keyed by "TraitA + TraitB" (top 2 active traits, sorted)
     comp_stats: dict = {}
     augment_stats: dict = {}
 
     analyzed = 0
     skipped = 0
+    debug_printed = False
 
     for match_id in list(match_ids)[:200]:
         try:
@@ -182,12 +197,12 @@ def fetch_matches_and_analyze():
             info = match.get("info", {})
 
             queue_id = info.get("queue_id")
-            if queue_id and queue_id != 1100:
+            if queue_id and queue_id not in (1100, 1090, 1130):
                 skipped += 1
                 continue
 
             tft_set = info.get("tft_set_number")
-            if tft_set and str(tft_set) != SET_NUM:
+            if tft_set and str(int(tft_set)) != SET_NUM:
                 skipped += 1
                 continue
 
@@ -196,24 +211,53 @@ def fetch_matches_and_analyze():
                 skipped += 1
                 continue
 
+            # Debug: print field names of first participant once
+            if not debug_printed and participants:
+                p0 = participants[0]
+                print(f"  DEBUG participant fields: {list(p0.keys())}")
+                aug_sample = (p0.get("augments") or p0.get("augmentIds") or p0.get("augment_ids") or [])
+                print(f"  DEBUG augments sample (first participant): {aug_sample[:3]}")
+                debug_printed = True
+
             for p in participants:
                 placement = p.get("placement", 9)
                 is_top4 = placement <= 4
                 units = p.get("units", [])
-                augments = p.get("augments", [])
 
-                comp_unit_ids = list({
-                    u["character_id"]
-                    for u in units
-                    if u.get("character_id", "").startswith(f"TFT{SET_NUM}_")
-                })
-                comp_key = ",".join(sorted(comp_unit_ids))
+                # Try multiple field names for augments
+                augments = (
+                    p.get("augments")
+                    or p.get("augmentIds")
+                    or p.get("augment_ids")
+                    or []
+                )
 
-                # Comp stats
-                if len(comp_unit_ids) >= 4 and comp_key:
+                # Filter out PvE/summon/non-playable units
+                playable_units = [
+                    u for u in units
+                    if (
+                        u.get("character_id", "").startswith(f"TFT{SET_NUM}_")
+                        and not is_pve_unit(u.get("character_id", ""))
+                    )
+                ]
+
+                # ── Trait-based comp key ────────────────────────────────────
+                traits_data = p.get("traits", [])
+                active_traits = sorted(
+                    [t for t in traits_data if t.get("style", 0) > 0],
+                    key=lambda t: (-t.get("style", 0), -t.get("num_units", 0)),
+                )
+                top_trait_names = [t["name"] for t in active_traits[:2]]
+                comp_key = " + ".join(sorted(top_trait_names)) if top_trait_names else None
+
+                # ── Comp stats (trait-based) ────────────────────────────────
+                if comp_key and len(playable_units) >= 4:
                     if comp_key not in comp_stats:
                         comp_stats[comp_key] = {
-                            "top4": 0, "total": 0, "totalPlacement": 0,
+                            "top4": 0,
+                            "total": 0,
+                            "totalPlacement": 0,
+                            "unit_counts": {},
                             "items": {},
                             "itemHolderGames": {},
                             "thiefsGlovesGames": {},
@@ -230,10 +274,12 @@ def fetch_matches_and_analyze():
                         if aug:
                             cs["augments"][aug] = cs["augments"].get(aug, 0) + 1
 
-                    for unit in units:
+                    for unit in playable_units:
                         uid = unit.get("character_id", "")
-                        if uid not in comp_unit_ids:
+                        if not uid:
                             continue
+
+                        cs["unit_counts"][uid] = cs["unit_counts"].get(uid, 0) + 1
 
                         tier = unit.get("tier") or unit.get("star_level") or 0
                         if tier >= 3:
@@ -258,10 +304,10 @@ def fetch_matches_and_analyze():
                         for item in item_names:
                             cs["items"][uid][item] = cs["items"][uid].get(item, 0) + 1
 
-                # Unit stats (global)
-                for unit in units:
+                # ── Global unit stats ───────────────────────────────────────
+                for unit in playable_units:
                     uid = unit.get("character_id", "")
-                    if not uid.startswith(f"TFT{SET_NUM}_"):
+                    if not uid:
                         continue
                     if uid not in unit_stats:
                         unit_stats[uid] = {"top4": 0, "total": 0, "items": {}, "placements": []}
@@ -273,7 +319,7 @@ def fetch_matches_and_analyze():
                             if item:
                                 unit_stats[uid]["items"][item] = unit_stats[uid]["items"].get(item, 0) + 1
 
-                # Augment stats (global)
+                # ── Global augment stats ────────────────────────────────────
                 for aug in augments:
                     if not aug:
                         continue
@@ -293,12 +339,13 @@ def fetch_matches_and_analyze():
             skipped += 1
 
     print(f"  Analyzed {analyzed} matches, skipped {skipped}")
+    print(f"  Comp keys found: {len(comp_stats)}, Augments found: {len(augment_stats)}")
 
     if analyzed == 0:
         errors.append("No matches could be analyzed")
         return
 
-    # Build unitOutput
+    # ── Build unitOutput ────────────────────────────────────────────────────────
     unit_output = {}
     for uid, stats in unit_stats.items():
         if stats["total"] < 2:
@@ -311,7 +358,7 @@ def fetch_matches_and_analyze():
             "topItems": [{"name": name, "count": count} for name, count in top_items],
         }
 
-    # Build augmentOutput
+    # ── Build augmentOutput ─────────────────────────────────────────────────────
     augment_output = []
     for raw_name, stats in augment_stats.items():
         if stats["total"] < 2:
@@ -327,15 +374,22 @@ def fetch_matches_and_analyze():
         })
     augment_output.sort(key=lambda x: x["top4Rate"], reverse=True)
 
-    # Build challengerComps
+    # ── Build challengerComps (trait-based) ─────────────────────────────────────
     def build_challenger_comp(comp_key, cs):
-        champion_ids = [cid for cid in comp_key.split(",") if cid]
+        # Top 8 most frequently seen champions in this trait group
+        top_units = sorted(cs["unit_counts"].items(), key=lambda x: x[1], reverse=True)[:8]
+        top_unit_ids = {uid for uid, _ in top_units}
+        champion_ids = [uid for uid, _ in top_units]
+
         avg_place = cs["totalPlacement"] / cs["total"]
         top4_rate = cs["top4"] / cs["total"]
         holder_threshold = max(1, round(cs["total"] * 0.25))
 
+        # Items: only for top units and only if they meet holder threshold
         items = {}
         for champ_id, counts in cs["items"].items():
+            if champ_id not in top_unit_ids:
+                continue
             thiefs_count = cs["thiefsGlovesGames"].get(champ_id, 0)
             holder_count = cs["itemHolderGames"].get(champ_id, 0)
 
@@ -356,17 +410,20 @@ def fetch_matches_and_analyze():
             if top_items:
                 items[champ_id] = [n for n, _ in top_items]
 
+        # Augments: top 6 by frequency
         augments = []
         for aug_raw, count in sorted(cs["augments"].items(), key=lambda x: x[1], reverse=True)[:6]:
             display = augment_id_to_name(aug_raw)
             if display:
                 augments.append({"name": display, "appearances": count, "fromChallenger": True})
 
+        # Three-stars
         three_stars = [
             cid for cid, count in cs["threeStars"].items()
-            if count / cs["total"] >= 0.35
+            if count / cs["total"] >= 0.35 and cid in top_unit_ids
         ]
 
+        # Roles
         roles = {}
         for champ_id, item_list in items.items():
             if item_list and not any(is_thiefs_gloves(i) for i in item_list):
@@ -374,9 +431,13 @@ def fetch_matches_and_analyze():
         for cid in three_stars:
             roles[cid] = "3-star"
 
-        display_names = [
-            re.sub(r"^TFT\d+_", "", cid) for cid in champion_ids
-        ]
+        # Display names: strip TFT17_ prefix
+        display_names = [re.sub(r"^TFT\d+_", "", uid) for uid in champion_ids]
+
+        # Comp name from the trait key
+        trait_display = " + ".join(
+            re.sub(r"^TFT\d*_", "", t) for t in comp_key.split(" + ")
+        )
 
         return {
             "source": "TFT Challenger",
@@ -389,7 +450,7 @@ def fetch_matches_and_analyze():
             "avgPlace": round(avg_place, 2),
             "top4Rate": round(top4_rate, 3),
             "winRate": 0,
-            "style": f"{cs['total']} jocuri Challenger",
+            "style": f"{cs['total']} jocuri · {trait_display}",
             "items": items,
             "augments": augments,
             "roles": roles,
@@ -399,31 +460,30 @@ def fetch_matches_and_analyze():
             "sourceCount": 1,
         }
 
+    # Sort by games desc, then avg placement asc
     sorted_entries = sorted(
         comp_stats.items(),
         key=lambda x: (
             -x[1]["total"],
-            -len(x[1].get("augments", {})),
             x[1]["totalPlacement"] / x[1]["total"] if x[1]["total"] > 0 else 9,
         ),
     )
 
-    comp_entries = [(k, v) for k, v in sorted_entries if v["total"] >= 2]
+    # Require at least 5 games for a comp to be meaningful
+    comp_entries = [(k, v) for k, v in sorted_entries if v["total"] >= 5]
+    print(f"  Comp groups with >= 5 games: {len(comp_entries)}")
+
+    # If fewer than 10 comps pass the threshold, lower to 3
     if len(comp_entries) < 10:
-        existing = {k for k, _ in comp_entries}
-        fill = [
-            (k, v)
-            for k, v in sorted_entries
-            if k not in existing and (len(v.get("augments", {})) > 0 or v["top4"] > 0)
-        ][: 20 - len(comp_entries)]
-        comp_entries = comp_entries + fill
+        comp_entries = [(k, v) for k, v in sorted_entries if v["total"] >= 3]
+        print(f"  Lowered threshold to 3 games: {len(comp_entries)} comp groups")
 
     challenger_comps = sorted(
-        [build_challenger_comp(k, v) for k, v in comp_entries],
+        [build_challenger_comp(k, v) for k, v in comp_entries[:30]],
         key=lambda c: (-c["top4Rate"], c["avgPlace"], -c["count"]),
     )[:20]
 
-    # Save challenger-{region}-{set}.json (primary source for frontend)
+    # Save challenger-{region}-{set}.json
     save(
         f"challenger-{REGION}-{SET_NUM}.json",
         {
@@ -440,10 +500,10 @@ def fetch_matches_and_analyze():
     )
     print(f"  {len(challenger_comps)} comps, {len(unit_output)} units, {len(augment_output)} augments")
 
-    # Save meta-{set}.json in scraped-meta format for useMetaScraper enrichment
+    # Save meta-{set}.json
     meta_comps = [
         {
-            "name": " + ".join(c["champions"][:2]) + " Comp",
+            "name": c["style"],
             "championIds": c["championIds"],
             "champions": c["champions"],
             "tier": c["tier"],
