@@ -2,11 +2,14 @@
 import json
 import os
 import sys
+import time
+from collections import defaultdict
 from pathlib import Path
 
 import requests
 
 SET_NUM = os.environ.get("TFT_SET", "17")
+RIOT_KEY = os.environ.get("RIOT_API_KEY", "")
 DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
 
@@ -14,6 +17,8 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; TFT-Helper/1.0; +https://github.com)",
     "Accept": "application/json",
 }
+RIOT_HEADERS = {**HEADERS, "X-Riot-Token": RIOT_KEY}
+SLEEP = 1.5  # secunde intre call-uri Riot API (max 100/2min)
 
 errors = []
 
@@ -24,8 +29,15 @@ def save(filename: str, data) -> None:
     print(f"  saved {filename} ({path.stat().st_size // 1024} KB)")
 
 
+def riot_get(url: str) -> dict:
+    """GET cu rate limiting pentru Riot API."""
+    time.sleep(SLEEP)
+    r = requests.get(url, headers=RIOT_HEADERS, timeout=15)
+    r.raise_for_status()
+    return r.json()
+
+
 def fetch_cdragon(lang: str) -> dict | None:
-    """Fetch full TFT data from CDragon for a given language."""
     url = f"https://raw.communitydragon.org/latest/cdragon/tft/{lang}.json"
     try:
         r = requests.get(url, headers=HEADERS, timeout=60)
@@ -37,65 +49,163 @@ def fetch_cdragon(lang: str) -> dict | None:
         return None
 
 
-def fetch_challenger() -> None:
-    """OP.GG public TFT challenger endpoint (EUW)."""
-    print("Fetching challenger...")
-    try:
-        r = requests.get(
-            "https://lol.op.gg/api/v2/tft/rankings",
-            params={"region": "euw", "tier": "challenger", "page": 1},
-            headers=HEADERS,
-            timeout=20,
-        )
-        r.raise_for_status()
-        save(f"challenger-euw-{SET_NUM}.json", r.json())
-    except Exception as exc:
-        print(f"  WARN challenger (non-fatal): {exc}")
-        # Salvam placeholder ca PHP-ul sa nu returneze 503
-        save(f"challenger-euw-{SET_NUM}.json", {"data": [], "error": "unavailable"})
-
-
-def fetch_meta(data_en: dict) -> None:
-    """Extract only the current set data from CDragon."""
-    print("Fetching meta...")
-    if not data_en:
-        errors.append("meta: no CDragon data")
+def fetch_challenger_and_meta() -> None:
+    """Challenger leaderboard + meta comps din meciuri reale via Riot API."""
+    if not RIOT_KEY:
+        print("  SKIP: RIOT_API_KEY nu e setat")
+        save(f"challenger-euw-{SET_NUM}.json", {"entries": [], "error": "no_api_key"})
+        errors.append("challenger: RIOT_API_KEY lipsa")
         return
+
+    # --- Leaderboard ---
+    print("Fetching Challenger EUW...")
     try:
-        set_num = int(SET_NUM)
-        set_data = data_en.get("setData", [])
-
-        # Pastreaza doar intrarile pentru setul curent
-        current = [s for s in set_data if s.get("number") == set_num]
-
-        # Dintre duplicate alege versiunea cu cei mai multi campioni
-        current.sort(key=lambda s: len(s.get("champions", [])), reverse=True)
-        best = current[0] if current else {}
-
-        meta = {
-            "source": "cdragon",
-            "number": best.get("number"),
-            "name": best.get("name"),
-            "traits": best.get("traits", []),
-            "champions": [
-                {
-                    "apiName": c.get("apiName"),
-                    "name": c.get("name"),
-                    "cost": c.get("cost"),
-                    "traits": c.get("traits", []),
-                    "icon": c.get("squareIconPath"),
-                }
-                for c in best.get("champions", [])
-            ],
-        }
-        save(f"meta-{SET_NUM}.json", meta)
+        league = riot_get(
+            "https://euw1.api.riotgames.com/tft/league/v1/challenger?queue=RANKED_TFT"
+        )
     except Exception as exc:
-        print(f"  ERROR meta: {exc}")
-        errors.append(f"meta: {exc}")
+        print(f"  ERROR: {exc}")
+        errors.append(f"challenger: {exc}")
+        return
+
+    entries = sorted(
+        league.get("entries", []),
+        key=lambda x: x.get("leaguePoints", 0),
+        reverse=True,
+    )
+    print(f"  {len(entries)} jucatori Challenger")
+
+    save(
+        f"challenger-euw-{SET_NUM}.json",
+        {
+            "tier": "CHALLENGER",
+            "entries": [
+                {
+                    "summonerName": e.get("summonerName", ""),
+                    "leaguePoints": e.get("leaguePoints"),
+                    "wins": e.get("wins"),
+                    "losses": e.get("losses"),
+                }
+                for e in entries[:50]
+            ],
+        },
+    )
+
+    # --- Match IDs (top 30 jucatori, ultimele 10 meciuri fiecare) ---
+    print("Fetching match IDs pentru top 30...")
+    top30 = entries[:30]
+    match_ids: set[str] = set()
+
+    for e in top30:
+        puuid = e.get("puuid")
+
+        # Fallback: summoner endpoint daca puuid lipseste din entry
+        if not puuid:
+            try:
+                summoner = riot_get(
+                    f"https://euw1.api.riotgames.com/tft/summoner/v1/summoners/{e['summonerId']}"
+                )
+                puuid = summoner.get("puuid")
+            except Exception as exc:
+                print(f"  WARN puuid: {exc}")
+                continue
+
+        if not puuid:
+            continue
+
+        try:
+            ids = riot_get(
+                f"https://europe.api.riotgames.com/tft/match/v1/matches/by-puuid/{puuid}/ids?count=10"
+            )
+            match_ids.update(ids)
+        except Exception as exc:
+            print(f"  WARN match IDs: {exc}")
+
+    print(f"  {len(match_ids)} meciuri unice")
+
+    # --- Match details (max 200) ---
+    print("Fetching match details...")
+    matches = []
+    for match_id in list(match_ids)[:200]:
+        try:
+            match = riot_get(
+                f"https://europe.api.riotgames.com/tft/match/v1/matches/{match_id}"
+            )
+            matches.append(match)
+        except Exception as exc:
+            print(f"  WARN {match_id}: {exc}")
+
+    print(f"  Preluat {len(matches)} meciuri")
+
+    # --- Agregate comps ---
+    comp_stats: dict = defaultdict(
+        lambda: {
+            "games": 0,
+            "total_placement": 0,
+            "top4": 0,
+            "wins": 0,
+            "sample_units": [],
+            "augments": defaultdict(int),
+        }
+    )
+
+    for match in matches:
+        for p in match.get("info", {}).get("participants", []):
+            placement = p.get("placement", 9)
+
+            active_traits = sorted(
+                [t for t in p.get("traits", []) if t.get("style", 0) > 0],
+                key=lambda t: (t.get("style", 0), t.get("num_units", 0)),
+                reverse=True,
+            )
+            if not active_traits:
+                continue
+
+            sig = " + ".join(t["name"] for t in active_traits[:2])
+            s = comp_stats[sig]
+            s["games"] += 1
+            s["total_placement"] += placement
+            if placement <= 4:
+                s["top4"] += 1
+            if placement == 1:
+                s["wins"] += 1
+            if not s["sample_units"]:
+                s["sample_units"] = [
+                    u.get("character_id") for u in p.get("units", [])[:8]
+                ]
+            for aug in p.get("augments", []):
+                s["augments"][aug] += 1
+
+    meta_comps = []
+    for name, s in comp_stats.items():
+        if s["games"] < 3:
+            continue
+        meta_comps.append(
+            {
+                "name": name,
+                "games": s["games"],
+                "placement": round(s["total_placement"] / s["games"], 2),
+                "top4": round(s["top4"] / s["games"] * 100, 1),
+                "win": round(s["wins"] / s["games"] * 100, 1),
+                "units": s["sample_units"],
+                "top_augments": [
+                    aug
+                    for aug, _ in sorted(
+                        s["augments"].items(), key=lambda x: x[1], reverse=True
+                    )[:3]
+                ],
+            }
+        )
+
+    meta_comps.sort(key=lambda c: (c["placement"], -c["top4"]))
+    save(
+        f"meta-{SET_NUM}.json",
+        {"source": "challenger_matches", "comps": meta_comps[:30]},
+    )
+    print(f"  Salvat {len(meta_comps[:30])} comps din {len(matches)} meciuri")
 
 
 def fetch_augments_and_artifacts(data_en: dict) -> None:
-    """Extract augments and artifacts from CDragon TFT data."""
     print("Fetching augments & artifacts...")
     if not data_en:
         errors.append("augments/artifacts: no CDragon data")
@@ -137,7 +247,6 @@ def fetch_augments_and_artifacts(data_en: dict) -> None:
 
 
 def fetch_locale(data: dict, lang: str) -> None:
-    """Build a compact name/desc locale map from CDragon TFT data."""
     print(f"Fetching locale '{lang}'...")
     if not data:
         errors.append(f"locale-{lang}: no CDragon data")
@@ -152,13 +261,16 @@ def fetch_locale(data: dict, lang: str) -> None:
             for c in s.get("champions", []):
                 api = c.get("apiName")
                 if api:
-                    locale_map[api] = {"name": c.get("name"), "desc": c.get("squareIconPath")}
+                    locale_map[api] = {
+                        "name": c.get("name"),
+                        "desc": c.get("squareIconPath"),
+                    }
             for t in s.get("traits", []):
                 api = t.get("apiName")
                 if api:
                     locale_map[api] = {"name": t.get("name"), "desc": t.get("desc")}
         save(f"locale-{lang}.json", locale_map)
-        print(f"  locale-{lang}: {len(locale_map)} entries")
+        print(f"  locale-{lang}: {len(locale_map)} intrari")
     except Exception as exc:
         print(f"  ERROR locale {lang}: {exc}")
         errors.append(f"locale-{lang}: {exc}")
@@ -173,8 +285,7 @@ if __name__ == "__main__":
     print("Downloading CDragon ro_ro...")
     data_ro = fetch_cdragon("ro_ro")
 
-    fetch_challenger()
-    fetch_meta(data_en)
+    fetch_challenger_and_meta()
     fetch_augments_and_artifacts(data_en)
     fetch_locale(data_ro, "ro")
     fetch_locale(data_en, "en")

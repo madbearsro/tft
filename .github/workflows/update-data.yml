@@ -32,6 +32,7 @@ jobs:
         run: python scripts/fetch_data.py
         env:
           TFT_SET: '17'
+          RIOT_API_KEY: ${{ secrets.RIOT_API_KEY }}
 
       - name: Commit & push
         run: |
