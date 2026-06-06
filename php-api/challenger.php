@@ -1,7 +1,7 @@
 <?php
 require_once '_config.php';
 
-$data = fetch_github_json('challenger-euw-' . TFT_SET . '.json');
+$data = fetch_github_json('challenger-' . TFT_REGION . '-' . TFT_SET . '.json');
 
 if ($data === null) {
     http_response_code(503);

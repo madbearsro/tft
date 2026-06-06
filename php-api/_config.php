@@ -3,6 +3,7 @@ define('GITHUB_USER', 'madbearsro');
 define('GITHUB_REPO', 'tft');
 define('GITHUB_BRANCH', 'main');
 define('TFT_SET', 17);
+define('TFT_REGION', 'kr');
 
 header('Content-Type: application/json; charset=utf-8');
 header('Access-Control-Allow-Origin: *');

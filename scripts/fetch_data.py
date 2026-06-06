@@ -11,6 +11,16 @@ import requests
 
 SET_NUM = os.environ.get("TFT_SET", "17")
 RIOT_KEY = os.environ.get("RIOT_API_KEY", "")
+REGION = os.environ.get("TFT_REGION", "kr")  # platform: euw1, kr, na1, etc.
+
+# Riot routing: platform -> regional cluster
+REGIONAL = {
+    "euw1": "europe", "eune1": "europe", "tr1": "europe", "ru": "europe",
+    "kr": "asia", "jp1": "asia",
+    "na1": "americas", "br1": "americas", "la1": "americas", "la2": "americas",
+    "oc1": "sea",
+}.get(REGION, "asia")
+
 DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
 
@@ -86,7 +96,7 @@ def fetch_challenger_and_meta(trait_map: dict | None = None) -> None:
     print("Fetching Challenger EUW...")
     try:
         league = riot_get(
-            "https://euw1.api.riotgames.com/tft/league/v1/challenger?queue=RANKED_TFT"
+            f"https://{REGION}.api.riotgames.com/tft/league/v1/challenger?queue=RANKED_TFT"
         )
     except Exception as exc:
         print(f"  ERROR: {exc}")
@@ -101,7 +111,7 @@ def fetch_challenger_and_meta(trait_map: dict | None = None) -> None:
     print(f"  {len(entries)} jucatori Challenger")
 
     save(
-        f"challenger-euw-{SET_NUM}.json",
+        f"challenger-{REGION}-{SET_NUM}.json",
         {
             "tier": "CHALLENGER",
             "entries": [
@@ -128,7 +138,7 @@ def fetch_challenger_and_meta(trait_map: dict | None = None) -> None:
         if not puuid:
             try:
                 summoner = riot_get(
-                    f"https://euw1.api.riotgames.com/tft/summoner/v1/summoners/{e['summonerId']}"
+                    f"https://{REGION}.api.riotgames.com/tft/summoner/v1/summoners/{e['summonerId']}"
                 )
                 puuid = summoner.get("puuid")
             except Exception as exc:
@@ -140,7 +150,7 @@ def fetch_challenger_and_meta(trait_map: dict | None = None) -> None:
 
         try:
             ids = riot_get(
-                f"https://europe.api.riotgames.com/tft/match/v1/matches/by-puuid/{puuid}/ids?count=10"
+                f"https://{REGIONAL}.api.riotgames.com/tft/match/v1/matches/by-puuid/{puuid}/ids?count=10"
             )
             match_ids.update(ids)
         except Exception as exc:
@@ -154,7 +164,7 @@ def fetch_challenger_and_meta(trait_map: dict | None = None) -> None:
     for match_id in list(match_ids)[:200]:
         try:
             match = riot_get(
-                f"https://europe.api.riotgames.com/tft/match/v1/matches/{match_id}"
+                f"https://{REGIONAL}.api.riotgames.com/tft/match/v1/matches/{match_id}"
             )
             matches.append(match)
         except Exception as exc:
