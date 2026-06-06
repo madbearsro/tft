@@ -50,8 +50,9 @@ def fetch_challenger() -> None:
         r.raise_for_status()
         save(f"challenger-euw-{SET_NUM}.json", r.json())
     except Exception as exc:
-        print(f"  WARN challenger: {exc}")
-        errors.append(f"challenger: {exc}")
+        print(f"  WARN challenger (non-fatal): {exc}")
+        # Salvam placeholder ca PHP-ul sa nu returneze 503
+        save(f"challenger-euw-{SET_NUM}.json", {"data": [], "error": "unavailable"})
 
 
 def fetch_meta(data_en: dict) -> None:
