@@ -2,7 +2,7 @@ name: Update TFT Data
 
 on:
   schedule:
-    - cron: '0 */6 * * *'   # la fiecare 6 ore
+    - cron: '0 * * * *'     # la fiecare ora
   workflow_dispatch:          # sau manual din UI
 
 permissions:
