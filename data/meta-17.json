@@ -2,155 +2,101 @@
   "source": "challenger_matches",
   "comps": [
     {
-      "name": "Meeple + Dark Lady",
-      "games": 3,
-      "placement": 1.67,
-      "top4": 100.0,
-      "win": 33.3,
-      "units": [
-        "TFT17_Poppy",
-        "TFT17_Gnar",
-        "TFT17_Milio",
-        "TFT17_IvernMinion",
-        "TFT17_Fizz",
-        "TFT17_Rammus",
-        "TFT17_Corki",
-        "TFT17_Galio"
-      ],
-      "top_augments": []
-    },
-    {
-      "name": "Vanguard + Party Animal",
-      "games": 10,
-      "placement": 1.9,
-      "top4": 100.0,
-      "win": 60.0,
-      "units": [
-        "TFT17_Leona",
-        "TFT17_IvernMinion",
-        "TFT17_Mordekaiser",
-        "TFT17_Illaoi",
-        "TFT17_Karma",
-        "TFT17_AurelionSol",
-        "TFT17_Nunu",
-        "TFT17_Bard"
-      ],
-      "top_augments": []
-    },
-    {
-      "name": "N.O.V.A. + Divine Duelist",
-      "games": 5,
-      "placement": 2.2,
-      "top4": 80.0,
-      "win": 40.0,
-      "units": [
-        "TFT17_Caitlyn",
-        "TFT17_Aatrox",
-        "TFT17_Akali",
-        "TFT17_Maokai",
-        "TFT17_Rhaast",
-        "TFT17_Kindred",
-        "TFT17_MasterYi",
-        "TFT17_Fiora"
-      ],
-      "top_augments": []
-    },
-    {
-      "name": "Brawler + Marauder",
-      "games": 3,
-      "placement": 2.33,
-      "top4": 100.0,
-      "win": 33.3,
-      "units": [
-        "TFT17_Belveth",
-        "TFT17_Gragas",
-        "TFT17_Maokai",
-        "TFT17_Urgot",
-        "TFT17_Kindred",
-        "TFT17_MasterYi",
-        "TFT17_TahmKench",
-        "TFT17_Fiora"
-      ],
-      "top_augments": []
-    },
-    {
-      "name": "Oracle + Mecha",
-      "games": 3,
-      "placement": 2.33,
-      "top4": 100.0,
-      "win": 33.3,
-      "units": [
-        "TFT17_Mordekaiser",
-        "TFT17_Urgot",
-        "TFT17_Karma",
-        "TFT17_AurelionSol",
-        "TFT17_Galio",
-        "TFT17_Nunu",
-        "TFT17_TahmKench",
-        "TFT17_Bard"
-      ],
-      "top_augments": []
-    },
-    {
-      "name": "Arbiter + Redeemer",
-      "games": 5,
-      "placement": 2.8,
-      "top4": 100.0,
-      "win": 20.0,
-      "units": [
-        "TFT17_Leona",
-        "TFT17_Jinx",
-        "TFT17_IvernMinion",
-        "TFT17_Illaoi",
-        "TFT17_Aurora",
-        "TFT17_Diana",
-        "TFT17_Rhaast",
-        "TFT17_Kindred"
-      ],
-      "top_augments": []
-    },
-    {
-      "name": "Brawler + Psionic",
-      "games": 5,
-      "placement": 2.8,
-      "top4": 80.0,
-      "win": 20.0,
-      "units": [
-        "TFT17_Belveth",
-        "TFT17_Gragas",
-        "TFT17_Maokai",
-        "TFT17_Urgot",
-        "TFT17_Kindred",
-        "TFT17_MasterYi",
-        "TFT17_TahmKench",
-        "TFT17_Fiora"
-      ],
-      "top_augments": []
-    },
-    {
-      "name": "Psionic + Redeemer",
+      "name": "Psionic + Party Animal",
       "games": 4,
-      "placement": 3.0,
+      "placement": 2.25,
       "top4": 100.0,
       "win": 25.0,
       "units": [
-        "TFT17_Chogath",
-        "TFT17_Pyke",
+        "TFT17_Leona",
         "TFT17_Gragas",
-        "TFT17_Urgot",
-        "TFT17_Rhaast",
-        "TFT17_Karma",
-        "TFT17_MasterYi",
+        "TFT17_Mordekaiser",
+        "TFT17_Viktor",
+        "TFT17_AurelionSol",
+        "TFT17_Nunu",
+        "TFT17_Nunu",
+        "TFT17_Blitzcrank"
+      ],
+      "top_augments": []
+    },
+    {
+      "name": "Eradicator + Bulwark",
+      "games": 5,
+      "placement": 2.4,
+      "top4": 100.0,
+      "win": 20.0,
+      "units": [
+        "TFT17_Aatrox",
+        "TFT17_Mordekaiser",
+        "TFT17_Maokai",
+        "TFT17_Nunu",
+        "TFT17_Xayah",
+        "TFT17_TahmKench",
+        "TFT17_Bard",
+        "TFT17_Jhin"
+      ],
+      "top_augments": []
+    },
+    {
+      "name": "Timebreaker + Eradicator",
+      "games": 5,
+      "placement": 2.4,
+      "top4": 100.0,
+      "win": 40.0,
+      "units": [
+        "TFT17_Ezreal",
+        "TFT17_Chogath",
+        "TFT17_RekSai",
+        "TFT17_Milio",
+        "TFT17_Pantheon",
+        "TFT17_Riven",
+        "TFT17_Xayah",
         "TFT17_TahmKench"
       ],
       "top_augments": []
     },
     {
-      "name": "Divine Duelist + Dark Lady",
-      "games": 3,
-      "placement": 3.0,
+      "name": "Redeemer + Bulwark",
+      "games": 13,
+      "placement": 2.46,
+      "top4": 76.9,
+      "win": 38.5,
+      "units": [
+        "TFT17_Aatrox",
+        "TFT17_TwistedFate",
+        "TFT17_Jax",
+        "TFT17_Milio",
+        "TFT17_Pantheon",
+        "TFT17_Maokai",
+        "TFT17_Lulu",
+        "TFT17_Rhaast"
+      ],
+      "top_augments": []
+    },
+    {
+      "name": "Arbiter + Party Animal",
+      "games": 7,
+      "placement": 2.57,
       "top4": 100.0,
-      "win": 0.0,
+      "win": 28.6,
+      "units": [
+        "TFT17_Leona",
+        "TFT17_Zoe",
+        "TFT17_IvernMinion",
+        "TFT17_Mordekaiser",
+        "TFT17_Illaoi",
+        "TFT17_Karma",
+        "TFT17_Galio",
+        "TFT17_Leblanc"
+      ],
+      "top_augments": []
+    },
+    {
+      "name": "Divine Duelist + Dark Lady",
+      "games": 7,
+      "placement": 2.57,
+      "top4": 85.7,
+      "win": 14.3,
       "units": [
         "TFT17_Belveth",
         "TFT17_Gragas",
@@ -164,11 +110,118 @@
       "top_augments": []
     },
     {
-      "name": "Marauder + Divine Duelist",
-      "games": 9,
+      "name": "Psionic + Redeemer",
+      "games": 4,
+      "placement": 2.75,
+      "top4": 100.0,
+      "win": 25.0,
+      "units": [
+        "TFT17_Pyke",
+        "TFT17_Gragas",
+        "TFT17_Gwen",
+        "TFT17_IvernMinion",
+        "TFT17_Pantheon",
+        "TFT17_Kaisa",
+        "TFT17_Rhaast",
+        "TFT17_Sona"
+      ],
+      "top_augments": []
+    },
+    {
+      "name": "Arbiter + Redeemer",
+      "games": 6,
+      "placement": 2.83,
+      "top4": 83.3,
+      "win": 50.0,
+      "units": [
+        "TFT17_Leona",
+        "TFT17_Zoe",
+        "TFT17_IvernMinion",
+        "TFT17_Mordekaiser",
+        "TFT17_Illaoi",
+        "TFT17_Rhaast",
+        "TFT17_Karma",
+        "TFT17_Nunu"
+      ],
+      "top_augments": []
+    },
+    {
+      "name": "Stargazer + Dark Lady",
+      "games": 3,
       "placement": 3.0,
-      "top4": 88.9,
-      "win": 11.1,
+      "top4": 100.0,
+      "win": 0.0,
+      "units": [
+        "TFT17_Aatrox",
+        "TFT17_TwistedFate",
+        "TFT17_Jax",
+        "TFT17_Milio",
+        "TFT17_Pantheon",
+        "TFT17_Maokai",
+        "TFT17_Lulu",
+        "TFT17_Rhaast"
+      ],
+      "top_augments": []
+    },
+    {
+      "name": "Brawler + Psionic",
+      "games": 3,
+      "placement": 3.0,
+      "top4": 66.7,
+      "win": 33.3,
+      "units": [
+        "TFT17_RekSai",
+        "TFT17_Pyke",
+        "TFT17_Gragas",
+        "TFT17_Pantheon",
+        "TFT17_Maokai",
+        "TFT17_Urgot",
+        "TFT17_MasterYi",
+        "TFT17_TahmKench"
+      ],
+      "top_augments": []
+    },
+    {
+      "name": "Psionic + Oracle",
+      "games": 3,
+      "placement": 3.0,
+      "top4": 66.7,
+      "win": 0.0,
+      "units": [
+        "TFT17_Pyke",
+        "TFT17_Gragas",
+        "TFT17_Pantheon",
+        "TFT17_Maokai",
+        "TFT17_Viktor",
+        "TFT17_MasterYi",
+        "TFT17_TahmKench"
+      ],
+      "top_augments": []
+    },
+    {
+      "name": "Dark Lady + Redeemer",
+      "games": 6,
+      "placement": 3.17,
+      "top4": 83.3,
+      "win": 16.7,
+      "units": [
+        "TFT17_Lissandra",
+        "TFT17_Mordekaiser",
+        "TFT17_Illaoi",
+        "TFT17_Rhaast",
+        "TFT17_Nami",
+        "TFT17_Morgana",
+        "TFT17_Bard",
+        "TFT17_Sona"
+      ],
+      "top_augments": []
+    },
+    {
+      "name": "Marauder + Divine Duelist",
+      "games": 8,
+      "placement": 3.25,
+      "top4": 75.0,
+      "win": 12.5,
       "units": [
         "TFT17_Belveth",
         "TFT17_Akali",
@@ -182,38 +235,20 @@
       "top_augments": []
     },
     {
-      "name": "Sniper + Party Animal",
-      "games": 3,
-      "placement": 3.0,
-      "top4": 66.7,
-      "win": 66.7,
+      "name": "N.O.V.A. + Divine Duelist",
+      "games": 8,
+      "placement": 3.25,
+      "top4": 75.0,
+      "win": 37.5,
       "units": [
-        "TFT17_Ezreal",
-        "TFT17_Gnar",
-        "TFT17_Mordekaiser",
-        "TFT17_Rammus",
-        "TFT17_Nunu",
-        "TFT17_Xayah",
-        "TFT17_Bard",
-        "TFT17_Jhin"
-      ],
-      "top_augments": []
-    },
-    {
-      "name": "Redeemer + Bulwark",
-      "games": 7,
-      "placement": 3.14,
-      "top4": 71.4,
-      "win": 28.6,
-      "units": [
+        "TFT17_Caitlyn",
+        "TFT17_Aatrox",
+        "TFT17_Akali",
         "TFT17_Milio",
-        "TFT17_Fizz",
-        "TFT17_Rhaast",
-        "TFT17_Rammus",
-        "TFT17_Corki",
-        "TFT17_Riven",
-        "TFT17_Bard",
-        "TFT17_Sona"
+        "TFT17_Pantheon",
+        "TFT17_Maokai",
+        "TFT17_Kindred",
+        "TFT17_Fiora"
       ],
       "top_augments": []
     },
@@ -236,16 +271,16 @@
       "top_augments": []
     },
     {
-      "name": "Dark Lady + Redeemer",
-      "games": 14,
-      "placement": 3.36,
-      "top4": 64.3,
-      "win": 21.4,
+      "name": "Bulwark + Meeple",
+      "games": 15,
+      "placement": 3.27,
+      "top4": 80.0,
+      "win": 13.3,
       "units": [
+        "TFT17_Poppy",
         "TFT17_Milio",
         "TFT17_IvernMinion",
         "TFT17_Fizz",
-        "TFT17_Rhaast",
         "TFT17_Rammus",
         "TFT17_Corki",
         "TFT17_Galio",
@@ -254,289 +289,254 @@
       "top_augments": []
     },
     {
-      "name": "Shepherd + Party Animal",
-      "games": 8,
-      "placement": 3.38,
-      "top4": 75.0,
+      "name": "N.O.V.A. + Redeemer",
+      "games": 3,
+      "placement": 3.33,
+      "top4": 100.0,
       "win": 0.0,
       "units": [
-        "TFT17_Teemo",
-        "TFT17_Lissandra",
-        "TFT17_IvernMinion",
-        "TFT17_Mordekaiser",
-        "TFT17_Illaoi",
-        "TFT17_Nunu",
-        "TFT17_Leblanc",
-        "TFT17_Blitzcrank"
-      ],
-      "top_augments": []
-    },
-    {
-      "name": "Timebreaker + Eradicator",
-      "games": 4,
-      "placement": 3.5,
-      "top4": 50.0,
-      "win": 25.0,
-      "units": [
-        "TFT17_Ezreal",
-        "TFT17_Chogath",
-        "TFT17_Lissandra",
-        "TFT17_Milio",
-        "TFT17_Pantheon",
+        "TFT17_Poppy",
+        "TFT17_Caitlyn",
+        "TFT17_Aatrox",
+        "TFT17_Akali",
         "TFT17_Maokai",
-        "TFT17_Kaisa",
-        "TFT17_Riven"
+        "TFT17_Urgot",
+        "TFT17_Rhaast",
+        "TFT17_Rammus"
       ],
       "top_augments": []
     },
     {
       "name": "Party Animal + Eradicator",
       "games": 55,
-      "placement": 3.55,
-      "top4": 67.3,
-      "win": 34.5,
+      "placement": 3.33,
+      "top4": 69.1,
+      "win": 27.3,
       "units": [
-        "TFT17_Gwen",
-        "TFT17_Samira",
-        "TFT17_Samira",
-        "TFT17_Ornn",
-        "TFT17_Ornn",
-        "TFT17_Nami",
+        "TFT17_Jax",
+        "TFT17_Rhaast",
+        "TFT17_Karma",
+        "TFT17_Galio",
+        "TFT17_Nunu",
+        "TFT17_Xayah",
         "TFT17_Jhin",
         "TFT17_Blitzcrank"
       ],
       "top_augments": []
     },
     {
-      "name": "Redeemer + Meeple",
-      "games": 21,
-      "placement": 3.57,
-      "top4": 81.0,
-      "win": 4.8,
-      "units": [
-        "TFT17_Poppy",
-        "TFT17_Milio",
-        "TFT17_IvernMinion",
-        "TFT17_Fizz",
-        "TFT17_Rhaast",
-        "TFT17_Rammus",
-        "TFT17_Corki",
-        "TFT17_Galio"
-      ],
-      "top_augments": []
-    },
-    {
-      "name": "Dark Star + Factory New",
-      "games": 7,
-      "placement": 3.57,
-      "top4": 57.1,
-      "win": 28.6,
-      "units": [
-        "TFT17_Chogath",
-        "TFT17_Lissandra",
-        "TFT17_Mordekaiser",
-        "TFT17_Kaisa",
-        "TFT17_Karma",
-        "TFT17_Nunu",
-        "TFT17_TahmKench",
-        "TFT17_Graves"
-      ],
-      "top_augments": []
-    },
-    {
-      "name": "Eradicator + Redeemer",
-      "games": 24,
-      "placement": 3.58,
-      "top4": 66.7,
-      "win": 20.8,
-      "units": [
-        "TFT17_Aatrox",
-        "TFT17_Jax",
-        "TFT17_Maokai",
-        "TFT17_Rhaast",
-        "TFT17_Nunu",
-        "TFT17_Xayah",
-        "TFT17_TahmKench",
-        "TFT17_Jhin"
-      ],
-      "top_augments": []
-    },
-    {
-      "name": "Space Groove + Party Animal",
-      "games": 103,
-      "placement": 3.61,
-      "top4": 69.9,
-      "win": 16.5,
-      "units": [
-        "TFT17_Teemo",
-        "TFT17_Nasus",
-        "TFT17_Gwen",
-        "TFT17_Pantheon",
-        "TFT17_Samira",
-        "TFT17_Ornn",
-        "TFT17_Ornn",
-        "TFT17_Nami"
-      ],
-      "top_augments": []
-    },
-    {
-      "name": "N.O.V.A. + Bulwark",
+      "name": "Brawler + Primordian",
       "games": 3,
-      "placement": 3.67,
+      "placement": 3.33,
       "top4": 66.7,
       "win": 0.0,
       "units": [
-        "TFT17_Aatrox",
+        "TFT17_RekSai",
         "TFT17_Belveth",
+        "TFT17_Jinx",
         "TFT17_Akali",
         "TFT17_Gragas",
+        "TFT17_Pantheon",
         "TFT17_Maokai",
-        "TFT17_Urgot",
-        "TFT17_Kindred",
-        "TFT17_MasterYi"
-      ],
-      "top_augments": []
-    },
-    {
-      "name": "Meeple + Fateweaver",
-      "games": 3,
-      "placement": 3.67,
-      "top4": 66.7,
-      "win": 33.3,
-      "units": [
-        "TFT17_Poppy",
-        "TFT17_Milio",
-        "TFT17_IvernMinion",
-        "TFT17_Fizz",
-        "TFT17_Rammus",
-        "TFT17_Corki",
-        "TFT17_Galio"
-      ],
-      "top_augments": []
-    },
-    {
-      "name": "Space Groove + Eradicator",
-      "games": 3,
-      "placement": 3.67,
-      "top4": 66.7,
-      "win": 0.0,
-      "units": [
-        "TFT17_Teemo",
-        "TFT17_Nasus",
-        "TFT17_Gwen",
-        "TFT17_Samira",
-        "TFT17_Ornn",
-        "TFT17_Rammus",
-        "TFT17_Nami",
-        "TFT17_Jhin"
+        "TFT17_Rhaast"
       ],
       "top_augments": []
     },
     {
       "name": "Stargazer + Party Animal",
-      "games": 18,
-      "placement": 3.67,
-      "top4": 55.6,
-      "win": 16.7,
+      "games": 28,
+      "placement": 3.5,
+      "top4": 67.9,
+      "win": 17.9,
       "units": [
+        "TFT17_Aatrox",
         "TFT17_Jax",
         "TFT17_Maokai",
+        "TFT17_Lulu",
         "TFT17_Rhaast",
-        "TFT17_Nunu",
         "TFT17_Xayah",
         "TFT17_TahmKench",
-        "TFT17_Jhin",
-        "TFT17_Blitzcrank"
-      ],
-      "top_augments": []
-    },
-    {
-      "name": "Dark Star + Party Animal",
-      "games": 34,
-      "placement": 3.74,
-      "top4": 64.7,
-      "win": 14.7,
-      "units": [
-        "TFT17_Chogath",
-        "TFT17_Mordekaiser",
-        "TFT17_Rhaast",
-        "TFT17_Karma",
-        "TFT17_Galio",
-        "TFT17_TahmKench",
-        "TFT17_Bard",
         "TFT17_Jhin"
       ],
       "top_augments": []
     },
     {
-      "name": "Psionic + Party Animal",
-      "games": 4,
-      "placement": 3.75,
-      "top4": 75.0,
-      "win": 0.0,
+      "name": "Divine Duelist + Eradicator",
+      "games": 6,
+      "placement": 3.5,
+      "top4": 66.7,
+      "win": 33.3,
       "units": [
-        "TFT17_Pyke",
-        "TFT17_IvernMinion",
-        "TFT17_Mordekaiser",
-        "TFT17_Illaoi",
-        "TFT17_Viktor",
-        "TFT17_Nunu",
-        "TFT17_Bard",
-        "TFT17_Blitzcrank"
-      ],
-      "top_augments": []
-    },
-    {
-      "name": "Timebreaker + Redeemer",
-      "games": 4,
-      "placement": 3.75,
-      "top4": 75.0,
-      "win": 0.0,
-      "units": [
-        "TFT17_Aatrox",
-        "TFT17_Ezreal",
-        "TFT17_Jax",
-        "TFT17_Pantheon",
+        "TFT17_Belveth",
+        "TFT17_Gragas",
+        "TFT17_Maokai",
+        "TFT17_Urgot",
         "TFT17_Rhaast",
-        "TFT17_Nunu",
-        "TFT17_Riven",
-        "TFT17_Xayah"
+        "TFT17_Kindred",
+        "TFT17_MasterYi",
+        "TFT17_TahmKench"
       ],
       "top_augments": []
     },
     {
-      "name": "Meeple + Shepherd",
-      "games": 4,
-      "placement": 3.75,
-      "top4": 75.0,
-      "win": 25.0,
+      "name": "Divine Duelist + Redeemer",
+      "games": 10,
+      "placement": 3.6,
+      "top4": 70.0,
+      "win": 10.0,
+      "units": [
+        "TFT17_Belveth",
+        "TFT17_Gragas",
+        "TFT17_Maokai",
+        "TFT17_Urgot",
+        "TFT17_Rhaast",
+        "TFT17_Kindred",
+        "TFT17_MasterYi",
+        "TFT17_TahmKench"
+      ],
+      "top_augments": []
+    },
+    {
+      "name": "Dark Lady + Meeple",
+      "games": 5,
+      "placement": 3.6,
+      "top4": 60.0,
+      "win": 20.0,
       "units": [
         "TFT17_Poppy",
-        "TFT17_Veigar",
-        "TFT17_Lissandra",
+        "TFT17_Milio",
         "TFT17_IvernMinion",
-        "TFT17_Mordekaiser",
-        "TFT17_Illaoi",
         "TFT17_Rammus",
+        "TFT17_Corki",
+        "TFT17_Corki",
+        "TFT17_Galio",
+        "TFT17_Riven"
+      ],
+      "top_augments": []
+    },
+    {
+      "name": "Eradicator + Dark Lady",
+      "games": 13,
+      "placement": 3.62,
+      "top4": 76.9,
+      "win": 23.1,
+      "units": [
+        "TFT17_Poppy",
+        "TFT17_Gnar",
+        "TFT17_IvernMinion",
+        "TFT17_Rammus",
+        "TFT17_Karma",
+        "TFT17_Galio",
+        "TFT17_Morgana",
+        "TFT17_Bard"
+      ],
+      "top_augments": []
+    },
+    {
+      "name": "Brawler + Divine Duelist",
+      "games": 14,
+      "placement": 3.64,
+      "top4": 64.3,
+      "win": 14.3,
+      "units": [
+        "TFT17_RekSai",
+        "TFT17_Belveth",
+        "TFT17_Gragas",
+        "TFT17_Maokai",
+        "TFT17_Urgot",
+        "TFT17_MasterYi",
+        "TFT17_TahmKench",
+        "TFT17_Fiora"
+      ],
+      "top_augments": []
+    },
+    {
+      "name": "Space Groove + Party Animal",
+      "games": 84,
+      "placement": 3.65,
+      "top4": 66.7,
+      "win": 19.0,
+      "units": [
+        "TFT17_Nasus",
+        "TFT17_Gwen",
+        "TFT17_Pantheon",
+        "TFT17_Samira",
+        "TFT17_Ornn",
+        "TFT17_Nami",
+        "TFT17_Riven",
+        "TFT17_TahmKench"
+      ],
+      "top_augments": []
+    },
+    {
+      "name": "Brawler + Marauder",
+      "games": 3,
+      "placement": 3.67,
+      "top4": 66.7,
+      "win": 0.0,
+      "units": [
+        "TFT17_RekSai",
+        "TFT17_Belveth",
+        "TFT17_Akali",
+        "TFT17_Gragas",
+        "TFT17_Maokai",
+        "TFT17_Urgot",
+        "TFT17_MasterYi",
+        "TFT17_TahmKench"
+      ],
+      "top_augments": []
+    },
+    {
+      "name": "Dark Star + Party Animal",
+      "games": 28,
+      "placement": 3.68,
+      "top4": 64.3,
+      "win": 25.0,
+      "units": [
+        "TFT17_Ezreal",
+        "TFT17_Chogath",
+        "TFT17_Lissandra",
+        "TFT17_Mordekaiser",
+        "TFT17_Pantheon",
+        "TFT17_Maokai",
+        "TFT17_Karma",
+        "TFT17_Jhin"
+      ],
+      "top_augments": []
+    },
+    {
+      "name": "Redeemer + Meeple",
+      "games": 26,
+      "placement": 3.73,
+      "top4": 65.4,
+      "win": 3.8,
+      "units": [
+        "TFT17_Poppy",
+        "TFT17_Milio",
+        "TFT17_IvernMinion",
+        "TFT17_Fizz",
+        "TFT17_Rhaast",
+        "TFT17_Rammus",
+        "TFT17_Corki",
         "TFT17_Galio"
       ],
       "top_augments": []
     },
     {
-      "name": "Shepherd + Arbiter",
+      "name": "Commander + Shepherd",
       "games": 4,
       "placement": 3.75,
-      "top4": 75.0,
+      "top4": 50.0,
       "win": 0.0,
       "units": [
         "TFT17_Leona",
-        "TFT17_Lissandra",
-        "TFT17_Zoe",
         "TFT17_IvernMinion",
         "TFT17_Mordekaiser",
         "TFT17_Illaoi",
-        "TFT17_Rhaast",
-        "TFT17_Leblanc"
+        "TFT17_Galio",
+        "TFT17_Nunu",
+        "TFT17_Leblanc",
+        "TFT17_Sona"
       ],
       "top_augments": []
     }
