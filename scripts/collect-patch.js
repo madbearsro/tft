@@ -1,10 +1,4 @@
 #!/usr/bin/env node
-/**
- * TFT Patch Notes Collector
- * Scrapes latest TFT patch notes from Riot's website and saves to data/patch.json
- * Usage: node scripts/collect-patch.js [--data-dir data]
- */
-
 import { writeFileSync, mkdirSync, existsSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'

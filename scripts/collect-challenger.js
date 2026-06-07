@@ -1,10 +1,4 @@
 #!/usr/bin/env node
-/**
- * TFT Challenger Data Collector
- * Extrage date din OP.GG si salveaza in data/challenger-{region}-{set}.json
- * Usage: node scripts/collect-challenger.js [--region euw] [--set 17] [--limit 30]
- */
-
 import { writeFileSync, mkdirSync, existsSync, readFileSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
@@ -13,7 +7,6 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 const ROOT = join(__dirname, '..')
 
-// --- CLI args ---
 const args = process.argv.slice(2)
 function getArg(name, def) {
   const idx = args.indexOf(`--${name}`)
@@ -25,7 +18,6 @@ const LIMIT  = Number(getArg('limit', '30'))
 const DATA_DIR_ARG = getArg('data-dir', null)
 const CONCURRENCY = 4
 
-// --- Discord ---
 const DISCORD_WEBHOOK = process.env.DISCORD_WEBHOOK
 
 async function sendDiscord(content) {
@@ -39,7 +31,6 @@ async function sendDiscord(content) {
   } catch {}
 }
 
-// --- HTTP helpers ---
 const HEADERS = {
   'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -75,7 +66,6 @@ async function safePost(url, body, extraHeaders = {}) {
   }
 }
 
-// --- Batch concurrency ---
 async function runBatched(items, fn, concurrency) {
   const results = []
   for (let i = 0; i < items.length; i += concurrency) {
@@ -86,10 +76,7 @@ async function runBatched(items, fn, concurrency) {
   return results
 }
 
-// --- OP.GG constants ---
 const OPGG_MATCH_ACTION = '408275cb92fed10d7ca8ba8aac30d76033f7f72ac7'
-
-// --- Helper functions (extrase din vite.config.js) ---
 
 function buildNextRouterStateTree(profileRegion, slug) {
   return encodeURIComponent(JSON.stringify([
@@ -440,7 +427,6 @@ async function fetchProfileWithFallbacks(player, summoner, debugActionBody) {
   const profileHtml = await profileRes.text()
   const profile = parseProfile(profileHtml, player.slug)
 
-  // Fallback 1: RSC fetch
   if (!profile.matches?.length) {
     const rscHeaders = { 'Accept': 'text/x-component', 'RSC': '1', 'Next-Router-Prefetch': '1' }
     for (const rscUrl of [`${profileUrl}?_rsc=tfthelper`, `${baseProfileUrl}?_rsc=tfthelper`]) {
@@ -451,7 +437,6 @@ async function fetchProfileWithFallbacks(player, summoner, debugActionBody) {
     }
   }
 
-  // Fallback 2: Next-Action POST
   if (!profile.matches?.length) {
     const decodedSlug = decodeURIComponent(player.slug)
     const splitIdx = decodedSlug.lastIndexOf('-')
@@ -485,7 +470,6 @@ async function fetchProfileWithFallbacks(player, summoner, debugActionBody) {
   return profile
 }
 
-// --- Main collection ---
 async function collect() {
   console.log(`[challenger] Incep colectarea: region=${REGION} set=${SET} limit=${LIMIT}`)
 
@@ -549,7 +533,6 @@ async function collect() {
 
   await runBatched(slugs, processPlayer, CONCURRENCY)
 
-  // Daca nu avem meciuri individuale, folosim aggregate ca fallback
   if (scannedMatches === 0 && aggregateMatches > 0) {
     Object.values(aggregateUnits).forEach(u => mergeUnit(units, u))
     Object.values(aggregateTraits).forEach(t => mergeTrait(traits, t))
@@ -599,7 +582,6 @@ async function collect() {
     scrapedAt: Date.now(),
   }
 
-  // Salveaza in fisier
   if (!existsSync(dataDir)) mkdirSync(dataDir, { recursive: true })
   const outPath = join(dataDir, `challenger-${REGION}-${SET}.json`)
   writeFileSync(outPath, JSON.stringify(result, null, 2))

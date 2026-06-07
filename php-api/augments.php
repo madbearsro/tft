@@ -9,7 +9,6 @@ if ($raw === null) sendError('Augments data not available yet');
 $data = json_decode($raw, true);
 if (!$data) sendError('Date invalide');
 
-// Converteste icon path relativ CDragon in URL proxied local
 function proxyIcon($path) {
     if (!$path) return null;
     $p = strtolower(str_replace('.tex', '.png', $path));

@@ -1,7 +1,3 @@
-// Parser multi-sursa pentru site-uri TFT meta
-// Surse suportate: tactics.tools, lolchess.gg, metatft, tftacademy, op.gg
-
-// ── Helpers ────────────────────────────────────────────────────────────────────
 export function extractNextData(html) {
   const match = html.match(/<script id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/)
   if (!match) return null
@@ -123,30 +119,20 @@ function buildKnownChampionLookup(knownChampions = []) {
 }
 
 
-// Converteste un augment apiName in display name
-// TFT_Augment_LateGameScaling → "Late Game Scaling"
-// TFT6_Augment_Electrocharge1 → "Electrocharge I"
-// TFT_Augment_HedgeFundPlus   → "Hedge Fund+"
 export function augmentIdToName(apiName) {
   if (!apiName) return ''
   let n = apiName
     .replace(/^TFT\d*_Augment_/i, '')
-    // Underscore → space (ex: Slammin_Plus → Slammin Plus)
     .replace(/_/g, ' ')
     .replace(/([a-z])([A-Z])/g, '$1 $2')
     .replace(/([A-Z])([A-Z][a-z])/g, '$1 $2')
     .replace(/\s+/g, ' ')
     .trim()
-  // Sufixe numerice → tier roman
   n = n.replace(/\s*3$/, ' III').replace(/\s*2$/, ' II').replace(/\s*1$/, ' I')
-  // Plus/Minus
   n = n.replace(/\s*Plus$/, '+').replace(/\s*Minus$/, '-')
   return n
 }
 
-// ── Parser tactics.tools ───────────────────────────────────────────────────────
-// Structure: pageProps.initialData.groups[].full.comps[]
-// comp: { units: ["TFT17_X",...], count, place, top4, win }
 export function parseTacticsTools(json) {
   const groups = json?.pageProps?.initialData?.groups
     ?? json?.initialData?.groups
@@ -183,11 +169,6 @@ export function parseTacticsTools(json) {
   return comps.sort((a, b) => a.avgPlace - b.avgPlace)
 }
 
-// ── Parser lolchess.gg ─────────────────────────────────────────────────────────
-// Structure:
-//   q[0]: { champions: [{key, ingameKey, name}] }        → lookup champ key→TFT17_X
-//   q[2]: { items: [{key, ingameKey}] }                  → lookup item key→TFT_Item_X
-//   q[3]: { guideDecks: [{name, data:{slots:[{champion, star, items}]}}] }
 export function parseLolchess(json) {
   const queries = json?.pageProps?.dehydratedState?.queries
     ?? json?.dehydratedState?.queries
@@ -195,9 +176,8 @@ export function parseLolchess(json) {
 
   if (!queries.length) return []
 
-  // Build lookup tables din queries
-  const champMap = {}  // "Pyke" → "TFT17_Pyke"
-  const itemMap  = {}  // "ProwlersClaw" → ingameKey
+  const champMap = {}
+  const itemMap  = {}
   let guideDecks = []
 
   for (const q of queries) {
@@ -225,14 +205,11 @@ export function parseLolchess(json) {
     const slots = deck.data?.slots ?? []
     if (slots.length < 4) continue
 
-    // Rezolva champion IDs
     const championIds = slots
       .map(s => {
         const resolved = champMap[s.champion]
-        // Daca nu e in map, incearca sa construiasca ID-ul direct
         if (resolved) return resolved
         if (s.champion?.startsWith('TFT')) return s.champion
-        // Cauta case-insensitive
         const key = Object.keys(champMap).find(k => k.toLowerCase() === (s.champion ?? '').toLowerCase())
         return key ? champMap[key] : null
       })
@@ -244,7 +221,6 @@ export function parseLolchess(json) {
     if (seenKeys.has(setKey)) continue
     seenKeys.add(setKey)
 
-    // Items per champion: champId → [itemIngameKey, ...]
     const itemsPerChamp = {}
     const positions = {}
     slots.forEach(s => {
@@ -261,7 +237,6 @@ export function parseLolchess(json) {
       if (resolved.length > 0) itemsPerChamp[champId] = resolved
     })
 
-    // 3-star recommendations
     const threeStars = slots
       .filter(s => s.star >= 3)
       .map(s => champMap[s.champion])
@@ -279,7 +254,6 @@ export function parseLolchess(json) {
       else if ((s.items ?? []).length >= 2) roles[champId] = 'Item holder'
     })
 
-    // Augmente din deck (daca exista)
     const augments = (deck.data?.augments ?? deck.augments ?? [])
       .map(a => typeof a === 'string' ? a : a?.key ?? a?.apiName ?? a?.name ?? '')
       .filter(Boolean)
@@ -299,7 +273,6 @@ export function parseLolchess(json) {
       ...extractTipsFromValue(deck.data?.positioning),
     ])
 
-    // Source URL
     const deckSlug = deck.slug ?? deck.id ?? null
     const sourceUrl = deckSlug ? `https://lolchess.gg/guide/${deckSlug}` : null
 
@@ -328,10 +301,7 @@ export function parseLolchess(json) {
   return comps
 }
 
-// ── Parser blitz.gg ───────────────────────────────────────────────────────────
-// Blitz poate folosi diferite structuri — incercam mai multe formate
 export function parseBlitz(json) {
-  // Format 1: data.comps[] sau data.teamComps[]
   const root = json?.pageProps ?? json?.props?.pageProps ?? json
   const rawComps =
     root?.comps ?? root?.teamComps ?? root?.compositions ??
@@ -366,9 +336,7 @@ export function parseBlitz(json) {
   return []
 }
 
-// ── Parser mobalytics ─────────────────────────────────────────────────────────
 export function parseMobalytics(json) {
-  // Mobalytics structura: data.tftTeamComps[] sau similar
   const root = json?.data ?? json?.pageProps?.data ?? json?.props?.pageProps ?? json
   const rawComps =
     root?.tftTeamComps ?? root?.comps ?? root?.teamComps ??
@@ -378,7 +346,6 @@ export function parseMobalytics(json) {
 
   return rawComps
     .map(c => {
-      // Mobalytics poate folosi champion keys sau IDs
       const units = (c.champions ?? c.units ?? c.tftChampions ?? [])
         .map(u => {
           if (typeof u === 'string') return u
@@ -409,9 +376,6 @@ export function parseMobalytics(json) {
     .sort((a, b) => a.avgPlace - b.avgPlace)
 }
 
-// ── Parser u.gg (Apollo GraphQL cache) ────────────────────────────────────────
-// u.gg expune { championData, __APOLLO_STATE__ } via /_next/data/.../en/tft/comps.json
-// Apollo normalized cache: cheia "TypeName:id" — IDs TFT sunt adesea IN cheia __ref
 export function parseUgg(json) {
   const apolloState =
     json?.__APOLLO_STATE__ ??
@@ -425,7 +389,6 @@ export function parseUgg(json) {
   const typeNames = [...new Set(allKeys.map(k => k.split(':')[0]))]
   console.log(`[scraper] u.gg Apollo entries: ${allKeys.length}, types: [${typeNames.slice(0, 8).join(', ')}]`)
 
-  // Construim un index: TFT17_X → obiect din Apollo cache (via cheia TypeName:TFT17_X)
   const unitById = {}
   for (const key of allKeys) {
     const m = key.match(/^[^:]+:(TFT\d+_\w+)$/)
@@ -446,11 +409,9 @@ export function parseUgg(json) {
     const candidates = fieldNames.map(f => o[f]).filter(Array.isArray)
 
     for (const arr of candidates) {
-      // Strategia 1: valoare string TFT directa
       const direct = arr.map(u => typeof u === 'string' && u.match(/^TFT\d+_/) ? u : null).filter(Boolean)
       if (direct.length >= 4) return direct
 
-      // Strategia 2: extrage ID din cheia __ref ("TypeName:TFT17_X")
       const fromRef = arr.map(u => {
         if (!u?.__ref) return null
         const m = u.__ref.match(/TFT\d+_\w+/)
@@ -458,7 +419,6 @@ export function parseUgg(json) {
       }).filter(Boolean)
       if (fromRef.length >= 4) return fromRef
 
-      // Strategia 3: rezolva ref si cauta camp in obiect
       const resolved = arr.map(u => {
         const r = resolveRef(u)
         if (!r) return null
@@ -501,7 +461,6 @@ export function parseUgg(json) {
   return comps.sort((a, b) => a.avgPlace - b.avgPlace)
 }
 
-// ── Parser lolalytics ─────────────────────────────────────────────────────────
 export function parseLolalytics(json) {
   const root = json?.pageProps ?? json?.data ?? json
   const rawComps =
@@ -532,16 +491,10 @@ export function parseLolalytics(json) {
     .sort((a, b) => a.avgPlace - b.avgPlace)
 }
 
-// ── Parser MetaTFT (API direct) ────────────────────────────────────────────────
-// Sursa: GET https://api-hc.metatft.com/tft-comps-api/comp_options
-// Structura: { results: { options: { "409000": { "8": [{units_list:"TFT17_X&TFT17_Y&...", count, avg}] } } } }
-// buildsJson: GET https://api-hc.metatft.com/tft-comps-api/comp_builds
-// Structura: { results: { "409000": { builds: [{unit, buildName:[items], score, num_items}] } } }
 export function parseMetaTFTApi(json, buildsJson = null, detailsMap = {}, augmentsMap = {}) {
   const options = json?.results?.options
   if (!options) return []
 
-  // Construieste map: clusterId → { unitId → {items, score} } din comp_builds
   const buildsMap = {}
   if (buildsJson?.results) {
     for (const [clusterId, clusterData] of Object.entries(buildsJson.results)) {
@@ -563,14 +516,11 @@ export function parseMetaTFTApi(json, buildsJson = null, detailsMap = {}, augmen
   const comps = []
   const seenKeys = new Set()
 
-  // Folosim Object.entries pentru a pastra clusterId si putea lookup in buildsMap
   for (const [clusterId, sizeGroups] of Object.entries(options)) {
-    // Preia marimea optima: 8 > 7 > 9
     for (const size of ['8', '7', '9', '6', '10']) {
       const list = sizeGroups[size]
       if (!Array.isArray(list) || list.length === 0) continue
 
-      // Ia comp-ul cu count maxim (cel mai reprezentativ) din cele cu avg bun
       const valid = list.filter(c => c.count >= 100 && c.avg < 4.5)
       if (valid.length === 0) continue
 
@@ -584,7 +534,6 @@ export function parseMetaTFTApi(json, buildsJson = null, detailsMap = {}, augmen
 
       const avgPlace = best.avg ?? 5
 
-      // Extrage items din comp_builds (BIS items per unit pentru acest cluster)
       const clusterBuilds = buildsMap[clusterId] ?? {}
       const items = {}
       const roles = {}
@@ -597,7 +546,6 @@ export function parseMetaTFTApi(json, buildsJson = null, detailsMap = {}, augmen
         }
       }
 
-      // Fallback: extrage din camp-urile comp_options best (de obicei gol, dar pentru compatibilitate)
       const fallback = buildMetaTftRoleData(best, units)
       for (const [champId, champItems] of Object.entries(fallback.items)) {
         if (!items[champId]) {
@@ -606,7 +554,6 @@ export function parseMetaTFTApi(json, buildsJson = null, detailsMap = {}, augmen
         }
       }
 
-      // 3-star + pozitionare din comp_details
       const clusterDetails = detailsMap[clusterId]
       const rawThreeStars = clusterDetails?.threeStars ?? fallback.threeStars
       const threeStars = rawThreeStars.filter(u => units.includes(u))
@@ -614,7 +561,6 @@ export function parseMetaTFTApi(json, buildsJson = null, detailsMap = {}, augmen
         roles[unit] = '3-star'
       }
 
-      // Pozitionare: { unitId: {row, col} } pentru unitatile din comp
       const rawPositions = clusterDetails?.positions ?? {}
       const positions = {}
       for (const unit of units) {
@@ -651,7 +597,6 @@ export function parseMetaTFTApi(json, buildsJson = null, detailsMap = {}, augmen
   return comps.sort((a, b) => a.avgPlace - b.avgPlace)
 }
 
-// ── Parser MetaTFT (fallback Next.js scrape, structura veche) ─────────────────
 export function parseMetaTFT(json) {
   const data = json?.pageProps ?? json?.props?.pageProps ?? json
   if (!data) return []
@@ -687,11 +632,6 @@ export function parseMetaTFT(json) {
   return comps.sort((a, b) => a.avgPlace - b.avgPlace)
 }
 
-// ── Parser TFTAcademy (HTML server-rendered SvelteKit) ────────────────────────
-// Sursa: GET https://tftacademy.com/tierlist/comps
-// Datele sunt inline in script-ul de hidratare SvelteKit ca JS object literals.
-// Campul finalComp:[{apiName:"TFT17_X",items:[...],stars:N}] contine comp-ul final.
-// Tier ("S"/"A"/"B"/"C") si style ("Fast 9", "Slow Roll 6" etc.) sunt la ~2200 chars distanta.
 export function parseTftAcademy(html) {
   if (typeof html !== 'string' || !html.includes('finalComp:[{apiName:"TFT17_')) return []
 
@@ -781,7 +721,6 @@ export function parseTftAcademy(html) {
     if (seenKeys.has(champKey) || units.length < 4) { pos = idx + arr.length; continue }
     seenKeys.add(champKey)
 
-    // Lookback 4000 chars — suficient pentru campul tips[] care poate fi lung
     const lb = html.slice(Math.max(0, idx - 4000), idx)
     const tierM  = compObj.match(/tier:"([SABC][+-]?)"/) ?? lb.match(/tier:"([SABC][+-]?)"/)
     const styleM = compObj.match(/style:"([^"]{2,40})"/) ?? lb.match(/style:"([^"]{2,40})"/)
@@ -789,8 +728,6 @@ export function parseTftAcademy(html) {
     const mainM  = compObj.match(/mainChampion:\{apiName:"(TFT17_[^"]+)"/) ?? lb.match(/mainChampion:\{apiName:"(TFT17_[^"]+)"/)
     const slugM  = compObj.match(/compSlug:"([^"]+)"/) ?? lb.match(/compSlug:"([^"]+)"/)
 
-    // overlayAugments = augmentele recomandate specific pentru comp (curated de autori)
-    // Cauta DUPA idx in urmatoarele 4000 chars (sunt dupa finalComp in obiect)
     const after = html.slice(idx, Math.min(idx + arr.length + 4000, html.length))
     const overlayAugM = after.match(/overlayAugments:\[([^\]]*)\]/)
     const augments = overlayAugM
@@ -800,7 +737,6 @@ export function parseTftAcademy(html) {
 
     const tips = extractTftAcademyTips(compObj)
 
-    // TFTAcademy foloseste S/A/B/C — mapam la tiers standard
     const rawTier = tierM?.[1] ?? 'A'
     const tier = rawTier.startsWith('S') ? 'S' : rawTier.startsWith('A') ? 'A' : rawTier.startsWith('B') ? 'B' : 'C'
 
@@ -836,10 +772,6 @@ export function parseTftAcademy(html) {
   return comps
 }
 
-// ── Combinare date din mai multe surse ─────────────────────────────────────────
-// Parser OP.GG TFT meta comps.
-// Sursa: GET https://op.gg/tft/meta-trends/comps
-// Pagina este server-rendered si contine nume comp, avg place/top4/pick si unitati vizibile.
 export function parseOpggTft(html, knownChampions = []) {
   if (typeof html !== 'string' || !html.includes('op.gg')) return []
 
@@ -1165,7 +1097,6 @@ export function combineComps(compLists) {
   })
 }
 
-// ── Parser principal ────────────────────────────────────────────────────────────
 export function parseMetaPage(rawInput) {
   let json
   try {

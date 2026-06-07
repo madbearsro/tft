@@ -1,10 +1,4 @@
 #!/usr/bin/env node
-/**
- * TFT Meta Comps Collector
- * Extrage comp-uri meta din metatft, tftacademy, op.gg si le salveaza in data/meta-{set}.json
- * Usage: node scripts/collect-meta.js [--set 17]
- */
-
 import { writeFileSync, mkdirSync, existsSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
@@ -55,7 +49,6 @@ async function safeFetch(url, extra = {}) {
   } catch (e) { console.warn(`[meta] ${url} → ${e.message}`); return null }
 }
 
-// Importa parserii din scripts/parseMetaSite.js
 const { parseMetaPage, extractNextBuildId, combineComps, parseMetaTFTApi, parseTftAcademy, parseOpggTft, augmentIdToName } =
   await import('./parseMetaSite.js')
 

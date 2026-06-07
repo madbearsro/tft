@@ -1,14 +1,11 @@
 <?php
-// Proxy pentru imagini CDragon — ascunde sursa externa din JSON
 $p = trim($_GET['p'] ?? '');
 
-// Validare stricta: doar caractere safe pt un path de fisier
 if (!$p || !preg_match('/^[a-z0-9\/_.@%-]+$/i', $p)) {
     http_response_code(400);
     exit;
 }
 
-// Nu permite path traversal
 if (strpos($p, '..') !== false || strpos($p, '\\') !== false) {
     http_response_code(400);
     exit;
@@ -18,9 +15,8 @@ $cacheDir = __DIR__ . '/cache/img';
 $cacheKey  = md5($p);
 $cacheFile = "{$cacheDir}/{$cacheKey}.bin";
 $metaFile  = "{$cacheDir}/{$cacheKey}.meta";
-$CACHE_TTL = 86400; // 24h
+$CACHE_TTL = 86400;
 
-// Serveste din cache daca e valid
 if (is_file($cacheFile) && is_file($metaFile) && (time() - filemtime($cacheFile)) < $CACHE_TTL) {
     $meta = json_decode(file_get_contents($metaFile), true);
     header('Content-Type: ' . ($meta['ct'] ?? 'image/png'));
@@ -56,12 +52,10 @@ if ($data === false) {
     exit;
 }
 
-// Determina Content-Type din extensie
 $ext = strtolower(pathinfo($p, PATHINFO_EXTENSION));
 $ct  = ['png' => 'image/png', 'jpg' => 'image/jpeg', 'jpeg' => 'image/jpeg',
         'gif' => 'image/gif', 'webp' => 'image/webp'][$ext] ?? 'image/png';
 
-// Salveaza in cache
 if (!is_dir($cacheDir)) mkdir($cacheDir, 0755, true);
 file_put_contents($cacheFile, $data);
 file_put_contents($metaFile, json_encode(['ct' => $ct]));
