@@ -359,7 +359,7 @@ def fetch_matches_and_analyze():
                             "items": {},
                             "itemHolderGames": {},
                             "thiefsGlovesGames": {},
-                            "augments": {},
+                            "augmentStats": {},
                             "threeStars": {},
                         }
                     cs = comp_stats[comp_key]
@@ -370,7 +370,12 @@ def fetch_matches_and_analyze():
 
                     for aug in augments:
                         if aug:
-                            cs["augments"][aug] = cs["augments"].get(aug, 0) + 1
+                            if aug not in cs["augmentStats"]:
+                                cs["augmentStats"][aug] = {"top4": 0, "total": 0, "totalPlacement": 0}
+                            cs["augmentStats"][aug]["total"] += 1
+                            cs["augmentStats"][aug]["totalPlacement"] += placement
+                            if is_top4:
+                                cs["augmentStats"][aug]["top4"] += 1
 
                     for unit in playable_units:
                         uid = unit.get("character_id", "")
@@ -508,12 +513,30 @@ def fetch_matches_and_analyze():
             if top_items:
                 items[champ_id] = [n for n, _ in top_items]
 
-        # Augments: top 6 by frequency
+        # Augments: top augments by Bayesian-smoothed top4 lift
+        # Minimum 3 appearances in this comp; sort by smoothed top4Rate
+        _PRIOR = 30   # smaller prior for comp-specific stats (sample sizes < global)
+        _GLOBAL_TOP4 = 0.50
         augments = []
-        for aug_raw, count in sorted(cs["augments"].items(), key=lambda x: x[1], reverse=True)[:6]:
+        for aug_raw, stats in cs["augmentStats"].items():
+            if stats["total"] < 3:
+                continue
             display = augment_id_to_name(aug_raw)
-            if display:
-                augments.append({"name": display, "appearances": count, "fromChallenger": True})
+            if not display:
+                continue
+            raw_top4 = stats["top4"] / stats["total"]
+            smoothed = (stats["total"] * raw_top4 + _PRIOR * _GLOBAL_TOP4) / (stats["total"] + _PRIOR)
+            augments.append({
+                "apiName": aug_raw,
+                "name": display,
+                "top4Rate": round(raw_top4, 3),
+                "avgPlacement": round(stats["totalPlacement"] / stats["total"], 3),
+                "appearances": stats["total"],
+                "smoothedTop4": round(smoothed, 3),
+                "fromChallenger": True,
+            })
+        augments.sort(key=lambda a: a["smoothedTop4"], reverse=True)
+        augments = augments[:6]
 
         # Three-stars
         three_stars = [
