@@ -22,11 +22,8 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install deps
-        run: cd site && npm install --ignore-scripts 2>/dev/null || true
-
       - name: Collect Meta
-        run: node site/scripts/collect-meta.js --set 17 --data-dir data
+        run: node scripts/collect-meta.js --set 17 --data-dir data
         continue-on-error: true
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
@@ -49,11 +46,8 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install deps
-        run: cd site && npm install --ignore-scripts 2>/dev/null || true
-
       - name: Collect EUW
-        run: node site/scripts/collect-challenger.js --region euw --set 17 --limit 30 --data-dir data
+        run: node scripts/collect-challenger.js --region euw --set 17 --limit 30 --data-dir data
         continue-on-error: true
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
