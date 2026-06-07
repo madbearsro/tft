@@ -1,11 +1,993 @@
 {
-  "title": "TFT Patch Notes",
-  "publishedAt": null,
-  "buffs": [],
-  "nerfs": [],
-  "adjusted": [],
-  "hasMidPatch": false,
-  "latestBuffs": [],
-  "latestNerfs": [],
-  "latestAdjusted": []
+  "title": "Teamfight Tactics patch 17.4",
+  "publishedAt": "2026-05-27T18:00:00.000Z",
+  "latestUpdateHeading": "JUNE 1ST",
+  "buffs": [
+    {
+      "entity": "Ezreal Base AD",
+      "text": "Ezreal Base AD: 40 ⇒ 45",
+      "type": "buff",
+      "section": "CHAMPIONS",
+      "midPatch": true
+    },
+    {
+      "entity": "Aurelion Sol Mech Ability Damage",
+      "text": "Aurelion Sol Mech Ability Damage: 82/123 AP ⇒ 86/130 AP",
+      "type": "buff",
+      "section": "CHAMPIONS",
+      "midPatch": true
+    },
+    {
+      "entity": "Morgana Mana",
+      "text": "Morgana Mana: 30/90 ⇒ 30/80",
+      "type": "buff",
+      "section": "CHAMPIONS",
+      "midPatch": true
+    },
+    {
+      "entity": "Arbiter, Gain Leona, Spend 50 Mana",
+      "text": "Arbiter, Gain Leona, Spend 50 Mana: 12/20% ⇒ 10/15%",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": true
+    },
+    {
+      "entity": "Arbiter, Gain Leona, Every 4 Seconds",
+      "text": "Arbiter, Gain Leona, Every 4 Seconds: 15/22% ⇒ 14/18%",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": true
+    },
+    {
+      "entity": "Space Groove (3) Groove Duration",
+      "text": "Space Groove (3) Groove Duration: 3s ⇒ 4s",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": true
+    },
+    {
+      "entity": "Space Groove Heal Per Groovian",
+      "text": "Space Groove Heal Per Groovian: 8.5% max HP ⇒ 9.5% max HP",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": true
+    },
+    {
+      "entity": "Space Groove AS Per Groovian",
+      "text": "Space Groove AS Per Groovian: 11% ⇒ 12%",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": true
+    },
+    {
+      "entity": "Stargazer Huntress Base AS",
+      "text": "Stargazer Huntress Base AS: 12% ⇒ 15%",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": true
+    },
+    {
+      "entity": "Stargazer Medallion Base Damage Amp",
+      "text": "Stargazer Medallion Base Damage Amp: 12% ⇒ 15%",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": true
+    },
+    {
+      "entity": "Challenger Attack Speed",
+      "text": "Challenger Attack Speed: 15/22/40/55% ⇒ 15/28/42/55%",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Dark Star (6) Bonus",
+      "text": "Dark Star (6) Bonus: 85% ⇒ 70%",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Dark Star (6) Mini Dark Hole HP",
+      "text": "Dark Star (6) Mini Dark Hole HP: 30% of Dark Star HP ⇒ 25% of Dark Star HP",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "N.O.V.A (5) NOVA Bonuses",
+      "text": "N.O.V.A (5) NOVA Bonuses: Aatrox Damage: 50% of spell damage ⇒ 65% of spell damage",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Akali Bonus Bleed Per Shuriken",
+      "text": "Akali Bonus Bleed Per Shuriken: 10% ⇒ 12%",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Akali Bleed Damage",
+      "text": "Akali Bleed Damage: 10/14/18 AD ⇒ 12/18/24 AD",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Kindred Damage Amp",
+      "text": "Kindred Damage Amp: 5% ⇒ 10%",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Meeple Emblem Bonus",
+      "text": "Meeple Emblem Bonus: 1 Mana Regen Per Meep ⇒ 50 Health + 4% Damage Amp Per Meep",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Sniper Baseline Damage Amp",
+      "text": "Sniper Baseline Damage Amp: 18/24/28% ⇒ 18/25/35%",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Space Groove 7 Space Groove Bonus",
+      "text": "Space Groove 7 Space Groove Bonus: 10% ⇒ 15%",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Stargazer Fountain Stargazer Healing",
+      "text": "Stargazer Fountain Stargazer Healing: 2.5% ⇒ 3%",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Stargazer Fountain (5) Bonus AD/AP Per 2s",
+      "text": "Stargazer Fountain (5) Bonus AD/AP Per 2s: 7% ⇒ 9%",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Stargazer Huntress Stargazer Attack Speed",
+      "text": "Stargazer Huntress Stargazer Attack Speed: 12/35/55% ⇒ 15/45/70%",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Stargazer Huntress Mark Number",
+      "text": "Stargazer Huntress Mark Number: 3/5/7 ⇒ 3/5/9",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Adjusted Combinations",
+      "text": "Adjusted Combinations: Every 3 Attacks: Gain Ability Power: 5/8 ⇒ 6/9",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Gain Attack Speed",
+      "text": "Gain Attack Speed: 3/5% ⇒ 4/6%",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Every 4 Seconds",
+      "text": "Every 4 Seconds: Gain Attack Speed: 11/17% ⇒ 14/20%",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "For each Interest you would gain",
+      "text": "For each Interest you would gain: Gain Resists: 12/18 ⇒ 14/22",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Shield Duration",
+      "text": "Shield Duration: 4s ⇒ 8s",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Gain Attack Speed",
+      "text": "Gain Attack Speed: 30/45% ⇒ 35/55%",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Leona Chance",
+      "text": "Leona Chance: 50/100% ⇒ 70/125%",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Gold Chance",
+      "text": "Gold Chance: 22% ⇒ 30%",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "For Each Arbiter Star Level",
+      "text": "For Each Arbiter Star Level: Gain Attack Speed: 7/8% ⇒ 8/9%",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Aatrox Heal",
+      "text": "Aatrox Heal: 300/375/575 AP ⇒ 325/400/650 AP",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Twisted Fate Minimum Damage AP",
+      "text": "Twisted Fate Minimum Damage AP: 180/270/405/690 ⇒ 190/285/430/730",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Twisted Fate Maximum Damage AP",
+      "text": "Twisted Fate Maximum Damage AP: 360/540/810/1380 ⇒ 380/570/860/1460",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Bel’Veth Spell Damage AD",
+      "text": "Bel’Veth Spell Damage AD: 18/27/41/69 ⇒ 20/30/45/77",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Gnar Base AS",
+      "text": "Gnar Base AS: 0.7 ⇒ 0.75",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Gwen Resists",
+      "text": "Gwen Resists: 45 ⇒ 50",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Gwen Single Target Damage AP",
+      "text": "Gwen Single Target Damage AP: 145/220/380/650 ⇒ 145/220/410/700",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Jax Flat Damage Reduction",
+      "text": "Jax Flat Damage Reduction: 15/20/25 AP ⇒ 20/25/30 (no AP scaling)",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Zoe Spell Damage",
+      "text": "Zoe Spell Damage: 68/102/153% AP ⇒ 73/110/180 AP",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Aurora Split Damage AP",
+      "text": "Aurora Split Damage AP: 370/555/890 AP ⇒ 400/600/960 AP",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Miss Fortune (Replicator) Spell Damage",
+      "text": "Miss Fortune (Replicator) Spell Damage: 250/375/600 AD ⇒ 275/415/660 AD",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Ornn Base Health",
+      "text": "Ornn Base Health: 850 ⇒ 950",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Viktor Spell Damage",
+      "text": "Viktor Spell Damage: 185/275/475 AP ⇒ 190/290/500 AP",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Morgana Shield HP Scalar",
+      "text": "Morgana Shield HP Scalar: 10% ⇒ 15%",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Nami Mana",
+      "text": "Nami Mana: 25/70 ⇒ 20/65",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Xayah Base AD",
+      "text": "Xayah Base AD: 50 ⇒ 52",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Xayah Spell Main Target Damage",
+      "text": "Xayah Spell Main Target Damage: 10/15% AD ⇒ 25/40% AD",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Graves Base AS",
+      "text": "Graves Base AS: 0.7 ⇒ 0.75",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Graves Laser Ballistics Falloff Per Target",
+      "text": "Graves Laser Ballistics Falloff Per Target: 40% ⇒ 60%",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Shen Mana",
+      "text": "Shen Mana: 10/70 ⇒ 20/70",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Shen Spell Damage",
+      "text": "Shen Spell Damage: 20/30 AP ⇒ 25/40 AP",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Zed Clone Health %",
+      "text": "Zed Clone Health %: 33/40% ⇒ 33/45%",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Zed Mana",
+      "text": "Zed Mana: 50/100 ⇒ 40/100",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Shieldmaiden (Leona) Mana",
+      "text": "Shieldmaiden (Leona) Mana: 10/40 ⇒ 20/50",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "One Two Three Num 1-costs",
+      "text": "One Two Three Num 1-costs: 1 ⇒ 2",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Booster Pack Total Value",
+      "text": "Booster Pack Total Value: 10g ⇒ 12g",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Charge Transfer I Damage Amp",
+      "text": "Charge Transfer I Damage Amp: 5% ⇒ 7%",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Charge Transfer II Damage Amp",
+      "text": "Charge Transfer II Damage Amp: 8% ⇒ 10%",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Climb the Ladder I Stats",
+      "text": "Climb the Ladder I Stats: 3 ⇒ 3.5",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Climb the Ladder II Stats",
+      "text": "Climb the Ladder II Stats: 5 ⇒ 6",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Heroic Grab Bag Gold",
+      "text": "Heroic Grab Bag Gold: 4 ⇒ 5",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Heart of Steel Health Per Growth",
+      "text": "Heart of Steel Health Per Growth: 12 ⇒ 16",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Heart of the Swarm Apex Primordian AS",
+      "text": "Heart of the Swarm Apex Primordian AS: 0.6 ⇒ 0.9",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Heart of the Swarm Apex Primordian Mana",
+      "text": "Heart of the Swarm Apex Primordian Mana: 30/100 ⇒ 30/90",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Luxury Subscription Gold Per Trigger",
+      "text": "Luxury Subscription Gold Per Trigger: 5 ⇒ 7",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Timestream Health Per Reroll",
+      "text": "Timestream Health Per Reroll: 2 ⇒ 7",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Radiant Adaptive Helm Non-Tank AD/AP",
+      "text": "Radiant Adaptive Helm Non-Tank AD/AP: 25 ⇒ 40",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Radiant Adaptive Helm Mana Regen",
+      "text": "Radiant Adaptive Helm Mana Regen: 6 ⇒ 7",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Radiant Dragon’s Claw Percent Max Health",
+      "text": "Radiant Dragon’s Claw Percent Max Health: 22% ⇒ 28%",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Radiant Guinsoo’s Rageblade Attack Speed Per Second",
+      "text": "Radiant Guinsoo’s Rageblade Attack Speed Per Second: 14% ⇒ 16%",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Radiant Nashor’s Tooth On-Crit Mana On Attack",
+      "text": "Radiant Nashor’s Tooth On-Crit Mana On Attack: 8 ⇒ 6",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Blighting Jewel MR Reduction",
+      "text": "Blighting Jewel MR Reduction: 4 ⇒ 6",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Ekko’s Patience Damage Amp",
+      "text": "Ekko’s Patience Damage Amp: 40% ⇒ 45%",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Luden’s Tempest AD/AP",
+      "text": "Luden’s Tempest AD/AP: 55% ⇒ 60%",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Yasuo’s Bladework Attack Speed",
+      "text": "Yasuo’s Bladework Attack Speed: 10% ⇒ 20%",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Arbiter Emblem Attack Speed",
+      "text": "Arbiter Emblem Attack Speed: 20% ⇒ 30%",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Star Guardian Prismatic Breakpoint 10 ⇒ 11",
+      "text": "Star Guardian Prismatic Breakpoint 10 ⇒ 11",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Soul Fighter Prismatic Breakpoint 10 ⇒ 11",
+      "text": "Soul Fighter Prismatic Breakpoint 10 ⇒ 11",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    }
+  ],
+  "nerfs": [
+    {
+      "entity": "Talon Ability Damage",
+      "text": "Talon Ability Damage: 430/645/1000 AD ⇒ 400/600/1000 AD",
+      "type": "nerf",
+      "section": "CHAMPIONS",
+      "midPatch": true
+    },
+    {
+      "entity": "Zoe Ability Damage",
+      "text": "Zoe Ability Damage: 73/110/180% AP ⇒ 68/102/180 AP",
+      "type": "nerf",
+      "section": "CHAMPIONS",
+      "midPatch": true
+    },
+    {
+      "entity": "Xayah Base AD",
+      "text": "Xayah Base AD: 52 ⇒ 49",
+      "type": "nerf",
+      "section": "CHAMPIONS",
+      "midPatch": true
+    },
+    {
+      "entity": "Blitzcrank max Mana nerf",
+      "text": "Blitzcrank max Mana nerf: 20/100 ⇒ 30/120",
+      "type": "nerf",
+      "section": "CHAMPIONS",
+      "midPatch": true
+    },
+    {
+      "entity": "Vex Ability Damage",
+      "text": "Vex Ability Damage: 30/45 AP ⇒ 27/40 AP",
+      "type": "nerf",
+      "section": "CHAMPIONS",
+      "midPatch": true
+    },
+    {
+      "entity": "Arbiter, Gain Leona, Every 3 Attacks",
+      "text": "Arbiter, Gain Leona, Every 3 Attacks: 10/18% ⇒ 8/12%",
+      "type": "nerf",
+      "section": "TRAITS",
+      "midPatch": true
+    },
+    {
+      "entity": "Arbiter, Gain Leona, Each Interest",
+      "text": "Arbiter, Gain Leona, Each Interest: 20/30% ⇒ 20/25%",
+      "type": "nerf",
+      "section": "TRAITS",
+      "midPatch": true
+    },
+    {
+      "entity": "Ekko’s Patience (Artifact) has been temporarily disabled due to a bug.",
+      "text": "Ekko’s Patience (Artifact) has been temporarily disabled due to a bug.",
+      "type": "nerf",
+      "section": "AUGMENTS",
+      "midPatch": true
+    },
+    {
+      "entity": "Ekko’s Boon",
+      "text": "Ekko’s Boon: Specialist Star Damage: 85 ⇒ 70",
+      "type": "nerf",
+      "section": "GOD BOON",
+      "midPatch": false
+    },
+    {
+      "entity": "Chest of Greed disabled due to a bug",
+      "text": "Chest of Greed disabled due to a bug",
+      "type": "nerf",
+      "section": "GOD BOON",
+      "midPatch": false
+    },
+    {
+      "entity": "Kindred Mark Timer",
+      "text": "Kindred Mark Timer: 5s ⇒ 4.5s",
+      "type": "nerf",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Stargazer Huntress Teamwide Attack Speed",
+      "text": "Stargazer Huntress Teamwide Attack Speed: 15% ⇒ 12%",
+      "type": "nerf",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Stargazer Serpent Magic Damage",
+      "text": "Stargazer Serpent Magic Damage: 25/40/60% ⇒ 20/40/60%",
+      "type": "nerf",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Stargazer Mountain Attack Speed",
+      "text": "Stargazer Mountain Attack Speed: 10% ⇒ 8%",
+      "type": "nerf",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Stargazer Mountain Durability",
+      "text": "Stargazer Mountain Durability: 6% ⇒ 5%",
+      "type": "nerf",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "If you rerolled last combat",
+      "text": "If you rerolled last combat: Gain Ability Power: 30/45 ⇒ 25/40",
+      "type": "nerf",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Lulu Mountain Spell Stun Duration",
+      "text": "Lulu Mountain Spell Stun Duration: 0.5s ⇒ 0.25s",
+      "type": "nerf",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Rhaast Redeemer Attack Speed",
+      "text": "Rhaast Redeemer Attack Speed: 2/2.5/3% ⇒ 2/2/2%",
+      "type": "nerf",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Rhaast Redeemer Bonus Resists",
+      "text": "Rhaast Redeemer Bonus Resists: 2/2.5/3 ⇒ 2/2/2",
+      "type": "nerf",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Corki Missile Damage",
+      "text": "Corki Missile Damage: 30/44% AD ⇒ 28/42% AD",
+      "type": "nerf",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Corki Meeple Rocket Damage",
+      "text": "Corki Meeple Rocket Damage: 120/180% AD ⇒ 110/165% AD",
+      "type": "nerf",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Morgana Range",
+      "text": "Morgana Range: 2 ⇒ 1",
+      "type": "nerf",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Fiora Spell True Damage",
+      "text": "Fiora Spell True Damage: 40/60 AD ⇒ 37/56 AD",
+      "type": "nerf",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Self-Destruct (Gragas) Spell Damage AP",
+      "text": "Self-Destruct (Gragas) Spell Damage AP: 280/420/630 AP ⇒ 250/375/600 AP",
+      "type": "nerf",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Reach for the Stars (Jax) Spell Damage",
+      "text": "Reach for the Stars (Jax) Spell Damage: 170/250/450 AP ⇒ 160/240/420 AP",
+      "type": "nerf",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Hard Commit Gold Per Stage",
+      "text": "Hard Commit Gold Per Stage: 4 ⇒ 3",
+      "type": "nerf",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Group Hug I Resists",
+      "text": "Group Hug I Resists: 7 ⇒ 6",
+      "type": "nerf",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Group Hug II Resists",
+      "text": "Group Hug II Resists: 10 ⇒ 9",
+      "type": "nerf",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Kahunahuna Bonus True Damage",
+      "text": "Kahunahuna Bonus True Damage: 125% AD ⇒ 100% AD",
+      "type": "nerf",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Sweet Treats Health Per Item",
+      "text": "Sweet Treats Health Per Item: 20 ⇒ 16",
+      "type": "nerf",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Radiant Gargoyle’s Stoneplate Resists Per Enemy",
+      "text": "Radiant Gargoyle’s Stoneplate Resists Per Enemy: 25 ⇒ 20",
+      "type": "nerf",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Rogue Emblem Omnivamp",
+      "text": "Rogue Emblem Omnivamp: 40% ⇒ 25%",
+      "type": "nerf",
+      "section": "AUGMENTS",
+      "midPatch": false
+    }
+  ],
+  "adjusted": [
+    {
+      "entity": "Misfits no longer offered on 4-2",
+      "text": "Misfits no longer offered on 4-2",
+      "type": "adjusted",
+      "section": "AUGMENTS",
+      "midPatch": true
+    },
+    {
+      "entity": "Removed Inputs",
+      "text": "Removed Inputs: First time an Arbiter drops below 40% Health",
+      "type": "adjusted",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Removed Outputs",
+      "text": "Removed Outputs: Arbiters gain Mana",
+      "type": "adjusted",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Hold the Line Bonus AD",
+      "text": "Hold the Line Bonus AD: 9% ⇒ 8%, Bonus AP: 10% ⇒ 9%",
+      "type": "adjusted",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Mace’s Will No longer offered on 2-1",
+      "text": "Mace’s Will No longer offered on 2-1",
+      "type": "adjusted",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Sunfire Board No longer offered on 2-1",
+      "text": "Sunfire Board No longer offered on 2-1",
+      "type": "adjusted",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Dark Star 6’s mini Black Holes no longer benefit from Exiles and Two Tanky",
+      "text": "Dark Star 6’s mini Black Holes no longer benefit from Exiles and Two Tanky",
+      "type": "adjusted",
+      "section": "AUGMENTS",
+      "midPatch": false
+    }
+  ],
+  "latestBuffs": [
+    {
+      "entity": "Ezreal Base AD",
+      "text": "Ezreal Base AD: 40 ⇒ 45",
+      "type": "buff",
+      "section": "CHAMPIONS",
+      "midPatch": true
+    },
+    {
+      "entity": "Aurelion Sol Mech Ability Damage",
+      "text": "Aurelion Sol Mech Ability Damage: 82/123 AP ⇒ 86/130 AP",
+      "type": "buff",
+      "section": "CHAMPIONS",
+      "midPatch": true
+    },
+    {
+      "entity": "Morgana Mana",
+      "text": "Morgana Mana: 30/90 ⇒ 30/80",
+      "type": "buff",
+      "section": "CHAMPIONS",
+      "midPatch": true
+    },
+    {
+      "entity": "Arbiter, Gain Leona, Spend 50 Mana",
+      "text": "Arbiter, Gain Leona, Spend 50 Mana: 12/20% ⇒ 10/15%",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": true
+    },
+    {
+      "entity": "Arbiter, Gain Leona, Every 4 Seconds",
+      "text": "Arbiter, Gain Leona, Every 4 Seconds: 15/22% ⇒ 14/18%",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": true
+    },
+    {
+      "entity": "Space Groove (3) Groove Duration",
+      "text": "Space Groove (3) Groove Duration: 3s ⇒ 4s",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": true
+    },
+    {
+      "entity": "Space Groove Heal Per Groovian",
+      "text": "Space Groove Heal Per Groovian: 8.5% max HP ⇒ 9.5% max HP",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": true
+    },
+    {
+      "entity": "Space Groove AS Per Groovian",
+      "text": "Space Groove AS Per Groovian: 11% ⇒ 12%",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": true
+    },
+    {
+      "entity": "Stargazer Huntress Base AS",
+      "text": "Stargazer Huntress Base AS: 12% ⇒ 15%",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": true
+    },
+    {
+      "entity": "Stargazer Medallion Base Damage Amp",
+      "text": "Stargazer Medallion Base Damage Amp: 12% ⇒ 15%",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": true
+    }
+  ],
+  "latestNerfs": [
+    {
+      "entity": "Talon Ability Damage",
+      "text": "Talon Ability Damage: 430/645/1000 AD ⇒ 400/600/1000 AD",
+      "type": "nerf",
+      "section": "CHAMPIONS",
+      "midPatch": true
+    },
+    {
+      "entity": "Zoe Ability Damage",
+      "text": "Zoe Ability Damage: 73/110/180% AP ⇒ 68/102/180 AP",
+      "type": "nerf",
+      "section": "CHAMPIONS",
+      "midPatch": true
+    },
+    {
+      "entity": "Xayah Base AD",
+      "text": "Xayah Base AD: 52 ⇒ 49",
+      "type": "nerf",
+      "section": "CHAMPIONS",
+      "midPatch": true
+    },
+    {
+      "entity": "Blitzcrank max Mana nerf",
+      "text": "Blitzcrank max Mana nerf: 20/100 ⇒ 30/120",
+      "type": "nerf",
+      "section": "CHAMPIONS",
+      "midPatch": true
+    },
+    {
+      "entity": "Vex Ability Damage",
+      "text": "Vex Ability Damage: 30/45 AP ⇒ 27/40 AP",
+      "type": "nerf",
+      "section": "CHAMPIONS",
+      "midPatch": true
+    },
+    {
+      "entity": "Arbiter, Gain Leona, Every 3 Attacks",
+      "text": "Arbiter, Gain Leona, Every 3 Attacks: 10/18% ⇒ 8/12%",
+      "type": "nerf",
+      "section": "TRAITS",
+      "midPatch": true
+    },
+    {
+      "entity": "Arbiter, Gain Leona, Each Interest",
+      "text": "Arbiter, Gain Leona, Each Interest: 20/30% ⇒ 20/25%",
+      "type": "nerf",
+      "section": "TRAITS",
+      "midPatch": true
+    },
+    {
+      "entity": "Ekko’s Patience (Artifact) has been temporarily disabled due to a bug.",
+      "text": "Ekko’s Patience (Artifact) has been temporarily disabled due to a bug.",
+      "type": "nerf",
+      "section": "AUGMENTS",
+      "midPatch": true
+    }
+  ],
+  "latestAdjusted": [
+    {
+      "entity": "Misfits no longer offered on 4-2",
+      "text": "Misfits no longer offered on 4-2",
+      "type": "adjusted",
+      "section": "AUGMENTS",
+      "midPatch": true
+    }
+  ],
+  "hasMidPatch": true,
+  "updatedAt": "2026-06-07T15:40:25.391Z",
+  "sourceUrl": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-17-4"
 }

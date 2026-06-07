@@ -260,6 +260,24 @@ function getLastWednesdayMs() {
   return start.getTime()
 }
 
+function getPatchStartMs(dataDir) {
+  try {
+    const patchPath = join(dataDir, 'patch.json')
+    if (existsSync(patchPath)) {
+      const patch = JSON.parse(readFileSync(patchPath, 'utf8'))
+      if (patch.publishedAt) {
+        const ms = new Date(patch.publishedAt).getTime()
+        if (!isNaN(ms) && ms > 0) {
+          console.log(`[challenger] Patch start din patch.json: ${patch.publishedAt}`)
+          return ms
+        }
+      }
+    }
+  } catch {}
+  console.log('[challenger] Fallback la getLastWednesdayMs()')
+  return getLastWednesdayMs()
+}
+
 function rankedBucket(group) {
   if (!group) return {}
   return group['1100'] ?? group[1100] ?? group.RANKED ?? group.ranked ?? group
@@ -481,7 +499,8 @@ async function collect() {
   const slugs = parseLeaderboard(leaderboardHtml, LIMIT)
   console.log(`[challenger] ${slugs.length} profile gasite`)
 
-  const patchStartMs = getLastWednesdayMs()
+  const dataDir = DATA_DIR_ARG ? join(process.cwd(), DATA_DIR_ARG) : join(ROOT, 'data')
+  const patchStartMs = getPatchStartMs(dataDir)
   const units = {}, traits = {}
   const aggregateUnits = {}, aggregateTraits = {}
   const profiles = []
@@ -581,7 +600,6 @@ async function collect() {
   }
 
   // Salveaza in fisier
-  const dataDir = DATA_DIR_ARG ? join(process.cwd(), DATA_DIR_ARG) : join(ROOT, 'data')
   if (!existsSync(dataDir)) mkdirSync(dataDir, { recursive: true })
   const outPath = join(dataDir, `challenger-${REGION}-${SET}.json`)
   writeFileSync(outPath, JSON.stringify(result, null, 2))
