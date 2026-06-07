@@ -2,7 +2,7 @@ name: Collect TFT Meta & Challenger
 
 on:
   schedule:
-    - cron: '*/30 * * * *'   # la fiecare 30 minute
+    - cron: '15 * * * *'     # la fiecare ora (la :15)
   workflow_dispatch:
 
 permissions:
