@@ -24,6 +24,10 @@
       "region": "euw"
     },
     {
+      "slug": "TH%20Hypno-6666",
+      "region": "euw"
+    },
+    {
       "slug": "Loescher-yerba",
       "region": "euw"
     },
@@ -32,7 +36,7 @@
       "region": "euw"
     },
     {
-      "slug": "TH%20Hypno-6666",
+      "slug": "PMK%20stinkyabuser-EUW",
       "region": "euw"
     },
     {
@@ -40,27 +44,23 @@
       "region": "euw"
     },
     {
-      "slug": "A%20boy%20has%20noname-717",
-      "region": "euw"
-    },
-    {
-      "slug": "PMK%20stinkyabuser-EUW",
-      "region": "euw"
-    },
-    {
       "slug": "Nuryy7-EUW",
       "region": "euw"
     },
     {
-      "slug": "xus0o-2c2w",
-      "region": "euw"
-    },
-    {
-      "slug": "JustPaz-Smoge",
+      "slug": "A%20boy%20has%20noname-717",
       "region": "euw"
     },
     {
       "slug": "IZI%20Lyyyress-EUW",
+      "region": "euw"
+    },
+    {
+      "slug": "sova2332-J34",
+      "region": "euw"
+    },
+    {
+      "slug": "JustPaz-Smoge",
       "region": "euw"
     },
     {
@@ -72,15 +72,15 @@
       "region": "euw"
     },
     {
-      "slug": "whyyoumadpro-EUW",
-      "region": "euw"
-    },
-    {
-      "slug": "i%20am%20patoska-EUW",
-      "region": "euw"
-    },
-    {
       "slug": "PapyScotch-EUW",
+      "region": "euw"
+    },
+    {
+      "slug": "xus0o-2c2w",
+      "region": "euw"
+    },
+    {
+      "slug": "whyyoumadpro-EUW",
       "region": "euw"
     },
     {
@@ -92,11 +92,15 @@
       "region": "euw"
     },
     {
-      "slug": "G2%20Canbizz-EUW61",
+      "slug": "ImS%C3%B8Fresh-EUW",
       "region": "euw"
     },
     {
-      "slug": "ImS%C3%B8Fresh-EUW",
+      "slug": "i%20am%20patoska-EUW",
+      "region": "euw"
+    },
+    {
+      "slug": "ZBROJS0N-EUW",
       "region": "euw"
     },
     {
@@ -104,15 +108,11 @@
       "region": "euw"
     },
     {
+      "slug": "G2%20Canbizz-EUW61",
+      "region": "euw"
+    },
+    {
       "slug": "DataTFT%20%20HoroX-335",
-      "region": "euw"
-    },
-    {
-      "slug": "sova2332-J34",
-      "region": "euw"
-    },
-    {
-      "slug": "ZBROJS0N-EUW",
       "region": "euw"
     },
     {
@@ -1008,13 +1008,13 @@
       "items": {
         "TFT17_Milio": [
           "TFT_Item_Morellonomicon",
-          "TFT_Item_LastWhisper",
-          "TFT_Item_NeedlesslyLargeRod"
+          "TFT_Item_NeedlesslyLargeRod",
+          "TFT_Item_LastWhisper"
         ],
         "TFT17_IvernMinion": [
           "TFT17_AnimaSquadItem_Tier0_SparkingPrototype",
-          "TFT17_Item_AnimaSquadEmblemItem",
-          "TFT_Item_TacticiansRing"
+          "TFT_Item_GiantsBelt",
+          "TFT17_Item_AnimaSquadEmblemItem"
         ],
         "TFT17_Fizz": [
           "TFT_Item_RedBuff",
@@ -1041,15 +1041,15 @@
           "TFT_Item_InfinityEdge",
           "TFT_Item_UnstableConcoction"
         ],
-        "TFT17_Poppy": [
-          "TFT_Item_ThiefsGloves",
-          "TFT_Item_RapidFireCannon",
-          "TFT_Item_BlueBuff"
-        ],
         "TFT17_Rhaast": [
           "TFT_Item_RedBuff",
           "TFT_Item_FrozenHeart",
           "TFT17_AnimaSquadItem_Tier1_TentacleSlam"
+        ],
+        "TFT17_Poppy": [
+          "TFT_Item_RedBuff",
+          "TFT_Item_ThiefsGloves",
+          "TFT_Item_RapidFireCannon"
         ]
       },
       "roles": {},
@@ -1331,32 +1331,32 @@
         "TFT17_Nunu": [
           "TFT_Item_FrozenHeart",
           "TFT_Item_RedBuff",
-          "TFT_Item_BrambleVest"
+          "TFT_Item_AdaptiveHelm"
         ],
-        "TFT17_Fiora": [
-          "TFT_Item_GuardianAngel",
-          "TFT_Item_Quicksilver",
-          "TFT_Item_PowerGauntlet"
+        "TFT17_Blitzcrank": [
+          "TFT_Item_RabadonsDeathcap",
+          "TFT_Item_EmptyBag",
+          "TFT_Item_BlueBuff"
         ],
         "TFT17_Vex": [
           "TFT_Item_GuinsoosRageblade",
           "TFT_Item_HextechGunblade",
           "TFT_Item_RapidFireCannon"
         ],
-        "TFT17_Shen": [
-          "TFT_Item_ThiefsGloves",
-          "TFT_Item_AdaptiveHelm",
-          "TFT_Item_WarmogsArmor"
-        ],
         "TFT17_Graves": [
           "TFT_Item_SteraksGage",
           "TFT_Item_ThiefsGloves",
           "TFT_Item_InfinityEdge"
         ],
-        "TFT17_Blitzcrank": [
-          "TFT_Item_RabadonsDeathcap",
-          "TFT_Item_EmptyBag",
-          "TFT_Item_BlueBuff"
+        "TFT17_Fiora": [
+          "TFT_Item_GuardianAngel",
+          "TFT_Item_Quicksilver",
+          "TFT_Item_PowerGauntlet"
+        ],
+        "TFT17_Shen": [
+          "TFT_Item_ThiefsGloves",
+          "TFT_Item_AdaptiveHelm",
+          "TFT_Item_WarmogsArmor"
         ],
         "TFT17_Akali": [
           "TFT_Item_ThiefsGloves",
@@ -1425,13 +1425,13 @@
           "TFT_Item_WarmogsArmor",
           "TFT_Item_Redemption"
         ],
+        "TFT17_Jax": [
+          "TFT_Item_GargoyleStoneplate",
+          "TFT_Item_Crownguard",
+          "TFT_Item_DragonsClaw"
+        ],
         "TFT17_Aatrox": [
           "TFT17_Item_StargazerEmblemItem"
-        ],
-        "TFT17_Jax": [
-          "TFT_Item_ThiefsGloves",
-          "TFT_Item_BrambleVest",
-          "TFT_Item_StatikkShiv"
         ],
         "TFT17_Maokai": [
           "TFT17_Item_StargazerEmblemItem",
@@ -1866,8 +1866,8 @@
         ],
         "TFT17_TahmKench": [
           "TFT_Item_GargoyleStoneplate",
-          "TFT_Item_RedBuff",
-          "TFT_Item_WarmogsArmor"
+          "TFT_Item_WarmogsArmor",
+          "TFT_Item_RedBuff"
         ],
         "TFT17_Fiora": [
           "TFT_Item_GuardianAngel",
@@ -2271,6 +2271,80 @@
     },
     {
       "championIds": [
+        "TFT17_Blitzcrank",
+        "TFT17_Illaoi",
+        "TFT17_IvernMinion",
+        "TFT17_Karma",
+        "TFT17_Mordekaiser",
+        "TFT17_Nunu",
+        "TFT17_Rhaast",
+        "TFT17_Sona",
+        "TFT17_Summon",
+        "TFT17_Vex"
+      ],
+      "champions": [
+        "Blitzcrank",
+        "Illaoi",
+        "Ivern Minion",
+        "Karma",
+        "Mordekaiser",
+        "Nunu",
+        "Rhaast",
+        "Sona",
+        "Summon",
+        "Vex"
+      ],
+      "count": 3,
+      "top4Rate": 0,
+      "avgPlace": 7.333333333333333,
+      "winRate": 0,
+      "items": {
+        "TFT17_Illaoi": [
+          "TFT_Item_Crownguard",
+          "TFT_Item_WarmogsArmor",
+          "TFT_Item_DragonsClaw"
+        ],
+        "TFT17_Nunu": [
+          "TFT_Item_IonicSpark",
+          "TFT_Item_RedBuff",
+          "TFT_Item_FrozenHeart"
+        ],
+        "TFT17_Vex": [
+          "TFT_Item_GuinsoosRageblade",
+          "TFT_Item_JeweledGauntlet",
+          "TFT_Item_MadredsBloodrazor"
+        ],
+        "TFT17_Karma": [
+          "TFT_Item_MadredsBloodrazor"
+        ],
+        "TFT17_Blitzcrank": [
+          "TFT_Item_ThiefsGloves",
+          "TFT_Item_TitansResolve",
+          "TFT_Item_GuardianAngel"
+        ],
+        "TFT17_Sona": [
+          "TFT_Item_ThiefsGloves",
+          "TFT_Item_AdaptiveHelm",
+          "TFT_Item_BlueBuff"
+        ],
+        "TFT17_Rhaast": [
+          "TFT_Item_RedBuff"
+        ]
+      },
+      "roles": {},
+      "threeStars": [],
+      "augments": [],
+      "positions": {},
+      "tips": [],
+      "source": "op.gg",
+      "primarySource": "op.gg",
+      "sourceKind": "challenger",
+      "sourceCount": 1,
+      "style": "3 jocuri OP.GG Challenger",
+      "tier": "B"
+    },
+    {
+      "championIds": [
         "TFT17_Aatrox",
         "TFT17_Belveth",
         "TFT17_Kindred",
@@ -2328,6 +2402,79 @@
         "TFT17_Belveth": [
           "TFT_Item_GuinsoosRageblade",
           "TFT_Item_SparringGloves"
+        ]
+      },
+      "roles": {},
+      "threeStars": [],
+      "augments": [],
+      "positions": {},
+      "tips": [],
+      "source": "op.gg",
+      "primarySource": "op.gg",
+      "sourceKind": "challenger",
+      "sourceCount": 1,
+      "style": "3 jocuri OP.GG Challenger",
+      "tier": "S"
+    },
+    {
+      "championIds": [
+        "TFT17_Bard",
+        "TFT17_Corki",
+        "TFT17_Fizz",
+        "TFT17_Galio",
+        "TFT17_IvernMinion",
+        "TFT17_Milio",
+        "TFT17_Poppy",
+        "TFT17_Rammus",
+        "TFT17_Riven"
+      ],
+      "champions": [
+        "Bard",
+        "Corki",
+        "Fizz",
+        "Galio",
+        "Ivern Minion",
+        "Milio",
+        "Poppy",
+        "Rammus",
+        "Riven"
+      ],
+      "count": 3,
+      "top4Rate": 1,
+      "avgPlace": 3.6666666666666665,
+      "winRate": 0,
+      "items": {
+        "TFT17_Milio": [
+          "TFT_Item_RapidFireCannon",
+          "TFT_Item_SpearOfShojin",
+          "TFT_Item_StatikkShiv"
+        ],
+        "TFT17_Fizz": [
+          "TFT17_Item_StargazerEmblemItem"
+        ],
+        "TFT17_Rammus": [
+          "TFT_Item_GargoyleStoneplate",
+          "TFT_Item_Crownguard",
+          "TFT_Item_Redemption"
+        ],
+        "TFT17_Corki": [
+          "TFT_Item_Deathblade",
+          "TFT_Item_LastWhisper",
+          "TFT9_Item_OrnnHorizonFocus"
+        ],
+        "TFT17_Galio": [
+          "TFT_Item_SteraksGage",
+          "TFT17_EkkoOffering_AnomalyItem"
+        ],
+        "TFT17_Riven": [
+          "TFT_Item_Bloodthirster",
+          "TFT_Item_InfinityEdge",
+          "TFT5_Item_ThiefsGlovesRadiant"
+        ],
+        "TFT17_Bard": [
+          "TFT_Item_PowerGauntlet",
+          "TFT17_Item_PulsefireEmblemItem",
+          "TFT_Item_RapidFireCannon"
         ]
       },
       "roles": {},
@@ -2416,153 +2563,6 @@
           "TFT_Item_StatikkShiv",
           "TFT_Item_BlueBuff",
           "TFT_Item_ThiefsGloves"
-        ]
-      },
-      "roles": {},
-      "threeStars": [],
-      "augments": [],
-      "positions": {},
-      "tips": [],
-      "source": "op.gg",
-      "primarySource": "op.gg",
-      "sourceKind": "challenger",
-      "sourceCount": 1,
-      "style": "3 jocuri OP.GG Challenger",
-      "tier": "S"
-    },
-    {
-      "championIds": [
-        "TFT17_Blitzcrank",
-        "TFT17_Illaoi",
-        "TFT17_IvernMinion",
-        "TFT17_Karma",
-        "TFT17_Mordekaiser",
-        "TFT17_Nunu",
-        "TFT17_Rhaast",
-        "TFT17_Sona",
-        "TFT17_Summon",
-        "TFT17_Vex"
-      ],
-      "champions": [
-        "Blitzcrank",
-        "Illaoi",
-        "Ivern Minion",
-        "Karma",
-        "Mordekaiser",
-        "Nunu",
-        "Rhaast",
-        "Sona",
-        "Summon",
-        "Vex"
-      ],
-      "count": 3,
-      "top4Rate": 0,
-      "avgPlace": 7.333333333333333,
-      "winRate": 0,
-      "items": {
-        "TFT17_Karma": [
-          "TFT_Item_MadredsBloodrazor"
-        ],
-        "TFT17_Nunu": [
-          "TFT_Item_FrozenHeart",
-          "TFT17_EkkoOffering_AnomalyItem",
-          "TFT_Item_Crownguard"
-        ],
-        "TFT17_Blitzcrank": [
-          "TFT_Item_ThiefsGloves",
-          "TFT_Item_TitansResolve",
-          "TFT_Item_GuardianAngel"
-        ],
-        "TFT17_Sona": [
-          "TFT_Item_ThiefsGloves",
-          "TFT_Item_AdaptiveHelm",
-          "TFT_Item_BlueBuff"
-        ],
-        "TFT17_Vex": [
-          "TFT_Item_GuinsoosRageblade",
-          "TFT_Item_MadredsBloodrazor",
-          "TFT_Item_JeweledGauntlet"
-        ],
-        "TFT17_Illaoi": [
-          "TFT_Item_Crownguard",
-          "TFT_Item_WarmogsArmor",
-          "TFT_Item_DragonsClaw"
-        ],
-        "TFT17_Rhaast": [
-          "TFT_Item_RedBuff"
-        ]
-      },
-      "roles": {},
-      "threeStars": [],
-      "augments": [],
-      "positions": {},
-      "tips": [],
-      "source": "op.gg",
-      "primarySource": "op.gg",
-      "sourceKind": "challenger",
-      "sourceCount": 1,
-      "style": "3 jocuri OP.GG Challenger",
-      "tier": "B"
-    },
-    {
-      "championIds": [
-        "TFT17_Bard",
-        "TFT17_Corki",
-        "TFT17_Fizz",
-        "TFT17_Galio",
-        "TFT17_IvernMinion",
-        "TFT17_Milio",
-        "TFT17_Poppy",
-        "TFT17_Rammus",
-        "TFT17_Riven"
-      ],
-      "champions": [
-        "Bard",
-        "Corki",
-        "Fizz",
-        "Galio",
-        "Ivern Minion",
-        "Milio",
-        "Poppy",
-        "Rammus",
-        "Riven"
-      ],
-      "count": 3,
-      "top4Rate": 1,
-      "avgPlace": 3.6666666666666665,
-      "winRate": 0,
-      "items": {
-        "TFT17_Milio": [
-          "TFT_Item_RapidFireCannon",
-          "TFT_Item_SpearOfShojin",
-          "TFT_Item_StatikkShiv"
-        ],
-        "TFT17_Fizz": [
-          "TFT17_Item_StargazerEmblemItem"
-        ],
-        "TFT17_Rammus": [
-          "TFT_Item_GargoyleStoneplate",
-          "TFT_Item_Crownguard",
-          "TFT_Item_Redemption"
-        ],
-        "TFT17_Corki": [
-          "TFT_Item_Deathblade",
-          "TFT_Item_LastWhisper",
-          "TFT9_Item_OrnnHorizonFocus"
-        ],
-        "TFT17_Galio": [
-          "TFT_Item_SteraksGage",
-          "TFT17_EkkoOffering_AnomalyItem"
-        ],
-        "TFT17_Riven": [
-          "TFT_Item_Bloodthirster",
-          "TFT_Item_InfinityEdge",
-          "TFT5_Item_ThiefsGlovesRadiant"
-        ],
-        "TFT17_Bard": [
-          "TFT_Item_PowerGauntlet",
-          "TFT17_Item_PulsefireEmblemItem",
-          "TFT_Item_RapidFireCannon"
         ]
       },
       "roles": {},
@@ -3069,6 +3069,6 @@
       "tier": "B"
     }
   ],
-  "updatedAt": "2026-06-07T15:45:20.840Z",
-  "scrapedAt": 1780847120840
+  "updatedAt": "2026-06-07T18:20:42.151Z",
+  "scrapedAt": 1780856442151
 }
