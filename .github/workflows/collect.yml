@@ -1,0 +1,70 @@
+name: Collect TFT Meta & Challenger
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'   # la fiecare 30 minute
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  collect-meta:
+    name: Meta Comps
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install deps
+        run: cd site && npm install --ignore-scripts 2>/dev/null || true
+
+      - name: Collect Meta
+        run: node site/scripts/collect-meta.js --set 17 --data-dir data
+        continue-on-error: true
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: Commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --staged --quiet || git commit -m "chore: meta data [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          git push
+
+  collect-challenger:
+    name: Challenger EUW
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install deps
+        run: cd site && npm install --ignore-scripts 2>/dev/null || true
+
+      - name: Collect EUW
+        run: node site/scripts/collect-challenger.js --region euw --set 17 --limit 30 --data-dir data
+        continue-on-error: true
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: Collect KR
+        run: node site/scripts/collect-challenger.js --region kr --set 17 --limit 30 --data-dir data
+        continue-on-error: true
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: Commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --staged --quiet || git commit -m "chore: challenger data [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          git push
