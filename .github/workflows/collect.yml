@@ -55,12 +55,6 @@ jobs:
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
 
-      - name: Collect KR
-        run: node site/scripts/collect-challenger.js --region kr --set 17 --limit 30 --data-dir data
-        continue-on-error: true
-        env:
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-
       - name: Commit
         run: |
           git config user.name  "github-actions[bot]"
