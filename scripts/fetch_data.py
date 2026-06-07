@@ -637,42 +637,6 @@ def fetch_matches_and_analyze():
     )
     print(f"  {len(challenger_comps)} comps, {len(unit_output)} units, {len(augment_output)} augments")
 
-    # Save meta-{set}.json
-    meta_comps = [
-        {
-            "name": c["style"],
-            "championIds": c["championIds"],
-            "champions": c["champions"],
-            "tier": c["tier"],
-            "avgPlace": c["avgPlace"],
-            "top4Rate": c["top4Rate"],
-            "count": c["count"],
-            "games": c["count"],
-            "items": c["items"],
-            "augments": c["augments"],
-            "source": "TFT Challenger KR",
-            "primarySource": "TFT Challenger KR",
-            "sourceKind": "challenger",
-            "sources": ["TFT Challenger KR"],
-            "sourceCount": 1,
-            "roles": c["roles"],
-            "threeStars": c["threeStars"],
-            "positions": {},
-            "tips": [],
-        }
-        for c in challenger_comps
-    ]
-    save(
-        f"meta-{SET_NUM}.json",
-        {
-            "source": "challenger_matches_kr",
-            "comps": meta_comps,
-            "confirmedCount": 0,
-            "scrapedAt": int(time.time() * 1000),
-        },
-    )
-    print(f"  Saved {len(meta_comps)} comps to meta-{SET_NUM}.json")
-
 
 # ── CDragon: augments, artifacts, locale ───────────────────────────────────────
 
