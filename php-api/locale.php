@@ -1,16 +1,10 @@
 <?php
-require_once '_config.php';
+require_once __DIR__ . '/_config.php';
 
-$allowed = ['ro', 'en', 'fr', 'de', 'es', 'it', 'pl'];
-$lang = $_GET['lang'] ?? 'en';
-if (!in_array($lang, $allowed, true)) $lang = 'en';
+$lang = preg_replace('/[^a-z]/', '', strtolower($_GET['lang'] ?? 'en'));
+if (!in_array($lang, ['ro', 'en'])) sendError('Invalid lang', 400);
 
-$data = fetch_github_json('locale-' . $lang . '.json');
+$data = fetchFromGithub("locale-{$lang}.json");
+if ($data === null) sendError('Locale data not available yet');
 
-if ($data === null) {
-    http_response_code(503);
-    echo json_encode(['error' => 'Locale indisponibil']);
-    exit;
-}
-
-echo json_encode($data);
+sendJson($data);

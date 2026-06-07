@@ -1,12 +1,23 @@
 <?php
-require_once '_config.php';
+require_once __DIR__ . '/_config.php';
 
-$data = fetch_github_json('artifacts-' . TFT_SET . '.json');
+$set = intval($_GET['set'] ?? 17);
 
-if ($data === null) {
-    http_response_code(503);
-    echo json_encode(['error' => 'Date indisponibile']);
-    exit;
+$raw = fetchFromGithub("artifacts-{$set}.json");
+if ($raw === null) sendError('Artifacts data not available yet');
+
+$data = json_decode($raw, true);
+if (!$data) sendError('Date invalide');
+
+function proxyArtifactIcon($path) {
+    if (!$path) return null;
+    $p = strtolower(str_replace('.tex', '.png', $path));
+    return '/api/img.php?p=' . rawurlencode($p);
 }
 
-echo json_encode($data);
+foreach ($data as &$item) {
+    if (isset($item['icon'])) $item['icon'] = proxyArtifactIcon($item['icon']);
+}
+unset($item);
+
+sendJson(json_encode($data));
