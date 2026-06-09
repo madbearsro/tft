@@ -1,571 +1,319 @@
 {
-  "title": "Teamfight Tactics patch 17.4",
-  "publishedAt": "2026-05-27T18:00:00.000Z",
-  "latestUpdateHeading": "JUNE 1ST",
+  "title": "Teamfight Tactics patch 17.5",
+  "publishedAt": "2026-06-09T18:00:00.000Z",
+  "latestUpdateHeading": null,
   "buffs": [
     {
-      "entity": "Ezreal Base AD",
-      "text": "Ezreal Base AD: 40 ⇒ 45",
+      "entity": "Soraka Shield Blessing 450/550/650/800/800 ⇒ 500/600/700/800/900",
+      "text": "Soraka Shield Blessing 450/550/650/800/800 ⇒ 500/600/700/800/900",
       "type": "buff",
-      "section": "CHAMPIONS",
-      "midPatch": true
+      "section": "SYSTEMS",
+      "midPatch": false
     },
     {
-      "entity": "Aurelion Sol Mech Ability Damage",
-      "text": "Aurelion Sol Mech Ability Damage: 82/123 AP ⇒ 86/130 AP",
+      "entity": "Aurelion Sol Low HP Quest 18 gold ⇒ 21 gold",
+      "text": "Aurelion Sol Low HP Quest 18 gold ⇒ 21 gold",
       "type": "buff",
-      "section": "CHAMPIONS",
-      "midPatch": true
+      "section": "SYSTEMS",
+      "midPatch": false
     },
     {
-      "entity": "Morgana Mana",
-      "text": "Morgana Mana: 30/90 ⇒ 30/80",
-      "type": "buff",
-      "section": "CHAMPIONS",
-      "midPatch": true
-    },
-    {
-      "entity": "Arbiter, Gain Leona, Spend 50 Mana",
-      "text": "Arbiter, Gain Leona, Spend 50 Mana: 12/20% ⇒ 10/15%",
-      "type": "buff",
-      "section": "TRAITS",
-      "midPatch": true
-    },
-    {
-      "entity": "Arbiter, Gain Leona, Every 4 Seconds",
-      "text": "Arbiter, Gain Leona, Every 4 Seconds: 15/22% ⇒ 14/18%",
-      "type": "buff",
-      "section": "TRAITS",
-      "midPatch": true
-    },
-    {
-      "entity": "Space Groove (3) Groove Duration",
-      "text": "Space Groove (3) Groove Duration: 3s ⇒ 4s",
-      "type": "buff",
-      "section": "TRAITS",
-      "midPatch": true
-    },
-    {
-      "entity": "Space Groove Heal Per Groovian",
-      "text": "Space Groove Heal Per Groovian: 8.5% max HP ⇒ 9.5% max HP",
-      "type": "buff",
-      "section": "TRAITS",
-      "midPatch": true
-    },
-    {
-      "entity": "Space Groove AS Per Groovian",
-      "text": "Space Groove AS Per Groovian: 11% ⇒ 12%",
-      "type": "buff",
-      "section": "TRAITS",
-      "midPatch": true
-    },
-    {
-      "entity": "Stargazer Huntress Base AS",
-      "text": "Stargazer Huntress Base AS: 12% ⇒ 15%",
-      "type": "buff",
-      "section": "TRAITS",
-      "midPatch": true
-    },
-    {
-      "entity": "Stargazer Medallion Base Damage Amp",
-      "text": "Stargazer Medallion Base Damage Amp: 12% ⇒ 15%",
-      "type": "buff",
-      "section": "TRAITS",
-      "midPatch": true
-    },
-    {
-      "entity": "Challenger Attack Speed",
-      "text": "Challenger Attack Speed: 15/22/40/55% ⇒ 15/28/42/55%",
+      "entity": "Arbiter, Every 3 Attacks, Gain Armor",
+      "text": "Arbiter, Every 3 Attacks, Gain Armor: 12/18 ⇒ 10/16",
       "type": "buff",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Dark Star (6) Bonus",
-      "text": "Dark Star (6) Bonus: 85% ⇒ 70%",
+      "entity": "Arbiter, Spend 50 Mana, Gain Leona",
+      "text": "Arbiter, Spend 50 Mana, Gain Leona: 10/15% ⇒ 9/12%",
       "type": "buff",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Dark Star (6) Mini Dark Hole HP",
-      "text": "Dark Star (6) Mini Dark Hole HP: 30% of Dark Star HP ⇒ 25% of Dark Star HP",
+      "entity": "Meeple Flat HP bonus",
+      "text": "Meeple Flat HP bonus: 100/400/400/500 ⇒ 100/350/450/550",
       "type": "buff",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "N.O.V.A (5) NOVA Bonuses",
-      "text": "N.O.V.A (5) NOVA Bonuses: Aatrox Damage: 50% of spell damage ⇒ 65% of spell damage",
+      "entity": "Meeple (10) Meeplord Abilities",
+      "text": "Meeple (10) Meeplord Abilities: Big Slam Primary Damage: 1100 AP ⇒ 1500 AP, AoE Slam Damage: 700 AP ⇒ 1000 AP, Stun Duration: 1.5s ⇒ 3s, Stun Spell Damage: 150 AP ⇒ 400 AP",
       "type": "buff",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Akali Bonus Bleed Per Shuriken",
-      "text": "Akali Bonus Bleed Per Shuriken: 10% ⇒ 12%",
+      "entity": "Tier 1 Items",
+      "text": "Tier 1 Items: Guiding Hex Aurora AP: 9 ⇒ 12",
       "type": "buff",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Akali Bleed Damage",
-      "text": "Akali Bleed Damage: 10/14/18 AD ⇒ 12/18/24 AD",
+      "entity": "Tier 1 Items",
+      "text": "Tier 1 Items: Rocket Barrage Attack Damage: 10% ⇒ 15%, Jinx Bonus Damage: 35% ⇒ 40%",
       "type": "buff",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Kindred Damage Amp",
-      "text": "Kindred Damage Amp: 5% ⇒ 10%",
+      "entity": "Tier 1 Items",
+      "text": "Tier 1 Items: Savage Slicer Briar Bonus Hits: 10 ⇒ 15",
       "type": "buff",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Meeple Emblem Bonus",
-      "text": "Meeple Emblem Bonus: 1 Mana Regen Per Meep ⇒ 50 Health + 4% Damage Amp Per Meep",
+      "entity": "Tier 1 Items",
+      "text": "Tier 1 Items: Tentacle Slam Illaoi Bonus Effectiveness: 35% ⇒ 45%",
       "type": "buff",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Sniper Baseline Damage Amp",
-      "text": "Sniper Baseline Damage Amp: 18/24/28% ⇒ 18/25/35%",
+      "entity": "Tier 2 Items",
+      "text": "Tier 2 Items: The Annihilator Damage Store: 20% ⇒ 25%, Mana Regen: 3 ⇒ 5",
       "type": "buff",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Space Groove 7 Space Groove Bonus",
-      "text": "Space Groove 7 Space Groove Bonus: 10% ⇒ 15%",
+      "entity": "Tier 2 Items",
+      "text": "Tier 2 Items: Searing Shortbow, Ability Power: 40 ⇒ 45, Attack Damage: 10% ⇒ 15%",
       "type": "buff",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Stargazer Fountain Stargazer Healing",
-      "text": "Stargazer Fountain Stargazer Healing: 2.5% ⇒ 3%",
+      "entity": "Tier 2 Items",
+      "text": "Tier 2 Items: UwU Blaster Attack Damage: 25% ⇒ 30%",
       "type": "buff",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Stargazer Fountain (5) Bonus AD/AP Per 2s",
-      "text": "Stargazer Fountain (5) Bonus AD/AP Per 2s: 7% ⇒ 9%",
+      "entity": "Tier 3 Items",
+      "text": "Tier 3 Items: Evolved Embershot Ability Power: 40 ⇒ 45",
       "type": "buff",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Stargazer Huntress Stargazer Attack Speed",
-      "text": "Stargazer Huntress Stargazer Attack Speed: 12/35/55% ⇒ 15/45/70%",
+      "entity": "Caitlyn Headshot Damage AD",
+      "text": "Caitlyn Headshot Damage AD: 170/255/510/875 ⇒ 190/285/540/925",
       "type": "buff",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Stargazer Huntress Mark Number",
-      "text": "Stargazer Huntress Mark Number: 3/5/7 ⇒ 3/5/9",
+      "entity": "Ezreal Ability Damage AD",
+      "text": "Ezreal Ability Damage AD: 160/240/365/620 AD ⇒ 170/255/380/650 AD",
       "type": "buff",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Adjusted Combinations",
-      "text": "Adjusted Combinations: Every 3 Attacks: Gain Ability Power: 5/8 ⇒ 6/9",
+      "entity": "Nasus Flat Health gained",
+      "text": "Nasus Flat Health gained: 250/350/550/750 ⇒ 300/400/600/800",
       "type": "buff",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Gain Attack Speed",
-      "text": "Gain Attack Speed: 3/5% ⇒ 4/6%",
+      "entity": "Teemo Spell Damage",
+      "text": "Teemo Spell Damage: 65/95/170/300 ⇒ 70/105/190/325",
       "type": "buff",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Every 4 Seconds",
-      "text": "Every 4 Seconds: Gain Attack Speed: 11/17% ⇒ 14/20%",
+      "entity": "Veigar Spell Damage AP",
+      "text": "Veigar Spell Damage AP: 310/465/700/1190 ⇒ 330/495/750/1200",
       "type": "buff",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "For each Interest you would gain",
-      "text": "For each Interest you would gain: Gain Resists: 12/18 ⇒ 14/22",
+      "entity": "Akali Spell Damage AD",
+      "text": "Akali Spell Damage AD: 37/56/84 ⇒ 39/59/88",
       "type": "buff",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Shield Duration",
-      "text": "Shield Duration: 4s ⇒ 8s",
+      "entity": "Gwen AoE Spell Damage",
+      "text": "Gwen AoE Spell Damage: 75/110/190 AP ⇒ 75/110/215 AP",
       "type": "buff",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Gain Attack Speed",
-      "text": "Gain Attack Speed: 30/45% ⇒ 35/55%",
+      "entity": "Mordekaiser Initial Shield",
+      "text": "Mordekaiser Initial Shield: 300/375/500 ⇒ 350/425/550",
       "type": "buff",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Leona Chance",
-      "text": "Leona Chance: 50/100% ⇒ 70/125%",
+      "entity": "Fizz Dash Damage AP",
+      "text": "Fizz Dash Damage AP: 120/180/290 ⇒ 140/210/310",
       "type": "buff",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Gold Chance",
-      "text": "Gold Chance: 22% ⇒ 30%",
+      "entity": "Kindred Base AD",
+      "text": "Kindred Base AD: 55 ⇒ 58",
       "type": "buff",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "For Each Arbiter Star Level",
-      "text": "For Each Arbiter Star Level: Gain Attack Speed: 7/8% ⇒ 8/9%",
+      "entity": "LeBlanc Sigil Damage",
+      "text": "LeBlanc Sigil Damage: 80/120 ⇒ 85/130",
       "type": "buff",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Aatrox Heal",
-      "text": "Aatrox Heal: 300/375/575 AP ⇒ 325/400/650 AP",
+      "entity": "Rammus Mana buff 20/90 ⇒ 20/80",
+      "text": "Rammus Mana buff 20/90 ⇒ 20/80",
       "type": "buff",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Twisted Fate Minimum Damage AP",
-      "text": "Twisted Fate Minimum Damage AP: 180/270/405/690 ⇒ 190/285/430/730",
+      "entity": "Vex Spell Damage",
+      "text": "Vex Spell Damage: 130/195 AP ⇒ 140/210 AP",
       "type": "buff",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Twisted Fate Maximum Damage AP",
-      "text": "Twisted Fate Maximum Damage AP: 360/540/810/1380 ⇒ 380/570/860/1460",
-      "type": "buff",
-      "section": "TRAITS",
-      "midPatch": false
-    },
-    {
-      "entity": "Bel’Veth Spell Damage AD",
-      "text": "Bel’Veth Spell Damage AD: 18/27/41/69 ⇒ 20/30/45/77",
-      "type": "buff",
-      "section": "TRAITS",
-      "midPatch": false
-    },
-    {
-      "entity": "Gnar Base AS",
-      "text": "Gnar Base AS: 0.7 ⇒ 0.75",
-      "type": "buff",
-      "section": "TRAITS",
-      "midPatch": false
-    },
-    {
-      "entity": "Gwen Resists",
-      "text": "Gwen Resists: 45 ⇒ 50",
-      "type": "buff",
-      "section": "TRAITS",
-      "midPatch": false
-    },
-    {
-      "entity": "Gwen Single Target Damage AP",
-      "text": "Gwen Single Target Damage AP: 145/220/380/650 ⇒ 145/220/410/700",
-      "type": "buff",
-      "section": "TRAITS",
-      "midPatch": false
-    },
-    {
-      "entity": "Jax Flat Damage Reduction",
-      "text": "Jax Flat Damage Reduction: 15/20/25 AP ⇒ 20/25/30 (no AP scaling)",
-      "type": "buff",
-      "section": "TRAITS",
-      "midPatch": false
-    },
-    {
-      "entity": "Zoe Spell Damage",
-      "text": "Zoe Spell Damage: 68/102/153% AP ⇒ 73/110/180 AP",
-      "type": "buff",
-      "section": "TRAITS",
-      "midPatch": false
-    },
-    {
-      "entity": "Aurora Split Damage AP",
-      "text": "Aurora Split Damage AP: 370/555/890 AP ⇒ 400/600/960 AP",
-      "type": "buff",
-      "section": "TRAITS",
-      "midPatch": false
-    },
-    {
-      "entity": "Miss Fortune (Replicator) Spell Damage",
-      "text": "Miss Fortune (Replicator) Spell Damage: 250/375/600 AD ⇒ 275/415/660 AD",
-      "type": "buff",
-      "section": "TRAITS",
-      "midPatch": false
-    },
-    {
-      "entity": "Ornn Base Health",
-      "text": "Ornn Base Health: 850 ⇒ 950",
-      "type": "buff",
-      "section": "TRAITS",
-      "midPatch": false
-    },
-    {
-      "entity": "Viktor Spell Damage",
-      "text": "Viktor Spell Damage: 185/275/475 AP ⇒ 190/290/500 AP",
-      "type": "buff",
-      "section": "TRAITS",
-      "midPatch": false
-    },
-    {
-      "entity": "Morgana Shield HP Scalar",
-      "text": "Morgana Shield HP Scalar: 10% ⇒ 15%",
-      "type": "buff",
-      "section": "TRAITS",
-      "midPatch": false
-    },
-    {
-      "entity": "Nami Mana",
-      "text": "Nami Mana: 25/70 ⇒ 20/65",
-      "type": "buff",
-      "section": "TRAITS",
-      "midPatch": false
-    },
-    {
-      "entity": "Xayah Base AD",
-      "text": "Xayah Base AD: 50 ⇒ 52",
-      "type": "buff",
-      "section": "TRAITS",
-      "midPatch": false
-    },
-    {
-      "entity": "Xayah Spell Main Target Damage",
-      "text": "Xayah Spell Main Target Damage: 10/15% AD ⇒ 25/40% AD",
-      "type": "buff",
-      "section": "TRAITS",
-      "midPatch": false
-    },
-    {
-      "entity": "Graves Base AS",
-      "text": "Graves Base AS: 0.7 ⇒ 0.75",
-      "type": "buff",
-      "section": "TRAITS",
-      "midPatch": false
-    },
-    {
-      "entity": "Graves Laser Ballistics Falloff Per Target",
-      "text": "Graves Laser Ballistics Falloff Per Target: 40% ⇒ 60%",
-      "type": "buff",
-      "section": "TRAITS",
-      "midPatch": false
-    },
-    {
-      "entity": "Shen Mana",
-      "text": "Shen Mana: 10/70 ⇒ 20/70",
-      "type": "buff",
-      "section": "TRAITS",
-      "midPatch": false
-    },
-    {
-      "entity": "Shen Spell Damage",
-      "text": "Shen Spell Damage: 20/30 AP ⇒ 25/40 AP",
-      "type": "buff",
-      "section": "TRAITS",
-      "midPatch": false
-    },
-    {
-      "entity": "Zed Clone Health %",
-      "text": "Zed Clone Health %: 33/40% ⇒ 33/45%",
-      "type": "buff",
-      "section": "TRAITS",
-      "midPatch": false
-    },
-    {
-      "entity": "Zed Mana",
-      "text": "Zed Mana: 50/100 ⇒ 40/100",
-      "type": "buff",
-      "section": "TRAITS",
-      "midPatch": false
-    },
-    {
-      "entity": "Shieldmaiden (Leona) Mana",
-      "text": "Shieldmaiden (Leona) Mana: 10/40 ⇒ 20/50",
+      "entity": "Bonk! (Nasus) Spell Damage",
+      "text": "Bonk! (Nasus) Spell Damage: 280/420/670/1000 AD ⇒ 290/435/730/1250 AD",
       "type": "buff",
       "section": "AUGMENTS",
       "midPatch": false
     },
     {
-      "entity": "One Two Three Num 1-costs",
-      "text": "One Two Three Num 1-costs: 1 ⇒ 2",
+      "entity": "Buried Treasures Rounds of Items",
+      "text": "Buried Treasures Rounds of Items: 4 ⇒ 5",
       "type": "buff",
       "section": "AUGMENTS",
       "midPatch": false
     },
     {
-      "entity": "Booster Pack Total Value",
-      "text": "Booster Pack Total Value: 10g ⇒ 12g",
+      "entity": "Call to Chaos",
+      "text": "Call to Chaos: Radiant Lucky Item Chest + 15g ⇒ Radiant Lucky Item Chest + 8g, 58 Gold ⇒ 52 Gold, 64 XP ⇒ 58 XP, Rerolls: 40 ⇒ 36",
       "type": "buff",
       "section": "AUGMENTS",
       "midPatch": false
     },
     {
-      "entity": "Charge Transfer I Damage Amp",
-      "text": "Charge Transfer I Damage Amp: 5% ⇒ 7%",
+      "entity": "Continuous Conjuration Magic Damage Needed",
+      "text": "Continuous Conjuration Magic Damage Needed: 38,000 ⇒ 42,000",
       "type": "buff",
       "section": "AUGMENTS",
       "midPatch": false
     },
     {
-      "entity": "Charge Transfer II Damage Amp",
-      "text": "Charge Transfer II Damage Amp: 8% ⇒ 10%",
+      "entity": "Climb the Ladder Bonus AD/AP",
+      "text": "Climb the Ladder Bonus AD/AP: 6% ⇒ 7%",
       "type": "buff",
       "section": "AUGMENTS",
       "midPatch": false
     },
     {
-      "entity": "Climb the Ladder I Stats",
-      "text": "Climb the Ladder I Stats: 3 ⇒ 3.5",
+      "entity": "Cry Me a River Enhanced Mana Regen",
+      "text": "Cry Me a River Enhanced Mana Regen: 3 ⇒ 4",
       "type": "buff",
       "section": "AUGMENTS",
       "midPatch": false
     },
     {
-      "entity": "Climb the Ladder II Stats",
-      "text": "Climb the Ladder II Stats: 5 ⇒ 6",
+      "entity": "Early Learnings Initial AD/AP",
+      "text": "Early Learnings Initial AD/AP: 1% ⇒ 8%",
       "type": "buff",
       "section": "AUGMENTS",
       "midPatch": false
     },
     {
-      "entity": "Heroic Grab Bag Gold",
-      "text": "Heroic Grab Bag Gold: 4 ⇒ 5",
+      "entity": "Forge a Friend Gold",
+      "text": "Forge a Friend Gold: 2 ⇒ 5",
       "type": "buff",
       "section": "AUGMENTS",
       "midPatch": false
     },
     {
-      "entity": "Heart of Steel Health Per Growth",
-      "text": "Heart of Steel Health Per Growth: 12 ⇒ 16",
+      "entity": "Healing Orbs I/II Heal",
+      "text": "Healing Orbs I/II Heal: 220/500 ⇒ 250/575",
       "type": "buff",
       "section": "AUGMENTS",
       "midPatch": false
     },
     {
-      "entity": "Heart of the Swarm Apex Primordian AS",
-      "text": "Heart of the Swarm Apex Primordian AS: 0.6 ⇒ 0.9",
+      "entity": "Heart of the Swarm (Primordian) Initial Briars",
+      "text": "Heart of the Swarm (Primordian) Initial Briars: 1 ⇒ 3",
       "type": "buff",
       "section": "AUGMENTS",
       "midPatch": false
     },
     {
-      "entity": "Heart of the Swarm Apex Primordian Mana",
-      "text": "Heart of the Swarm Apex Primordian Mana: 30/100 ⇒ 30/90",
+      "entity": "Sunfire Board Duration",
+      "text": "Sunfire Board Duration: 15s ⇒ 18s",
       "type": "buff",
       "section": "AUGMENTS",
       "midPatch": false
     },
     {
-      "entity": "Luxury Subscription Gold Per Trigger",
-      "text": "Luxury Subscription Gold Per Trigger: 5 ⇒ 7",
+      "entity": "Tiny, but Deadly Attack Speed",
+      "text": "Tiny, but Deadly Attack Speed: 30% ⇒ 33%",
       "type": "buff",
       "section": "AUGMENTS",
       "midPatch": false
     },
     {
-      "entity": "Timestream Health Per Reroll",
-      "text": "Timestream Health Per Reroll: 2 ⇒ 7",
+      "entity": "U.R.F Attack Speed",
+      "text": "U.R.F Attack Speed: 15% ⇒ 20%, Mana Regen: 2 ⇒ 3",
       "type": "buff",
       "section": "AUGMENTS",
       "midPatch": false
     },
     {
-      "entity": "Radiant Adaptive Helm Non-Tank AD/AP",
-      "text": "Radiant Adaptive Helm Non-Tank AD/AP: 25 ⇒ 40",
+      "entity": "Win Out Initial XP",
+      "text": "Win Out Initial XP: 6 ⇒ 10",
       "type": "buff",
       "section": "AUGMENTS",
       "midPatch": false
     },
     {
-      "entity": "Radiant Adaptive Helm Mana Regen",
-      "text": "Radiant Adaptive Helm Mana Regen: 6 ⇒ 7",
+      "entity": "Protector's Vow Shield Amount",
+      "text": "Protector's Vow Shield Amount: 40% ⇒ 50%",
       "type": "buff",
       "section": "AUGMENTS",
       "midPatch": false
     },
     {
-      "entity": "Radiant Dragon’s Claw Percent Max Health",
-      "text": "Radiant Dragon’s Claw Percent Max Health: 22% ⇒ 28%",
+      "entity": "Quicksilver Base AS",
+      "text": "Quicksilver Base AS: 30% ⇒ 40%",
       "type": "buff",
       "section": "AUGMENTS",
       "midPatch": false
     },
     {
-      "entity": "Radiant Guinsoo’s Rageblade Attack Speed Per Second",
-      "text": "Radiant Guinsoo’s Rageblade Attack Speed Per Second: 14% ⇒ 16%",
+      "entity": "Rageblade Base AS",
+      "text": "Rageblade Base AS: 20% ⇒ 25%",
       "type": "buff",
       "section": "AUGMENTS",
       "midPatch": false
     },
     {
-      "entity": "Radiant Nashor’s Tooth On-Crit Mana On Attack",
-      "text": "Radiant Nashor’s Tooth On-Crit Mana On Attack: 8 ⇒ 6",
-      "type": "buff",
-      "section": "AUGMENTS",
-      "midPatch": false
-    },
-    {
-      "entity": "Blighting Jewel MR Reduction",
-      "text": "Blighting Jewel MR Reduction: 4 ⇒ 6",
-      "type": "buff",
-      "section": "AUGMENTS",
-      "midPatch": false
-    },
-    {
-      "entity": "Ekko’s Patience Damage Amp",
-      "text": "Ekko’s Patience Damage Amp: 40% ⇒ 45%",
-      "type": "buff",
-      "section": "AUGMENTS",
-      "midPatch": false
-    },
-    {
-      "entity": "Luden’s Tempest AD/AP",
-      "text": "Luden’s Tempest AD/AP: 55% ⇒ 60%",
-      "type": "buff",
-      "section": "AUGMENTS",
-      "midPatch": false
-    },
-    {
-      "entity": "Yasuo’s Bladework Attack Speed",
-      "text": "Yasuo’s Bladework Attack Speed: 10% ⇒ 20%",
-      "type": "buff",
-      "section": "AUGMENTS",
-      "midPatch": false
-    },
-    {
-      "entity": "Arbiter Emblem Attack Speed",
-      "text": "Arbiter Emblem Attack Speed: 20% ⇒ 30%",
-      "type": "buff",
-      "section": "AUGMENTS",
-      "midPatch": false
-    },
-    {
-      "entity": "Star Guardian Prismatic Breakpoint 10 ⇒ 11",
-      "text": "Star Guardian Prismatic Breakpoint 10 ⇒ 11",
-      "type": "buff",
-      "section": "AUGMENTS",
-      "midPatch": false
-    },
-    {
-      "entity": "Soul Fighter Prismatic Breakpoint 10 ⇒ 11",
-      "text": "Soul Fighter Prismatic Breakpoint 10 ⇒ 11",
+      "entity": "Red Buff Attack Speed",
+      "text": "Red Buff Attack Speed: 90% ⇒ 80%",
       "type": "buff",
       "section": "AUGMENTS",
       "midPatch": false
@@ -573,225 +321,169 @@
   ],
   "nerfs": [
     {
-      "entity": "Talon Ability Damage",
-      "text": "Talon Ability Damage: 430/645/1000 AD ⇒ 400/600/1000 AD",
-      "type": "nerf",
-      "section": "CHAMPIONS",
-      "midPatch": true
-    },
-    {
-      "entity": "Zoe Ability Damage",
-      "text": "Zoe Ability Damage: 73/110/180% AP ⇒ 68/102/180 AP",
-      "type": "nerf",
-      "section": "CHAMPIONS",
-      "midPatch": true
-    },
-    {
-      "entity": "Xayah Base AD",
-      "text": "Xayah Base AD: 52 ⇒ 49",
-      "type": "nerf",
-      "section": "CHAMPIONS",
-      "midPatch": true
-    },
-    {
-      "entity": "Blitzcrank max Mana nerf",
-      "text": "Blitzcrank max Mana nerf: 20/100 ⇒ 30/120",
-      "type": "nerf",
-      "section": "CHAMPIONS",
-      "midPatch": true
-    },
-    {
-      "entity": "Vex Ability Damage",
-      "text": "Vex Ability Damage: 30/45 AP ⇒ 27/40 AP",
-      "type": "nerf",
-      "section": "CHAMPIONS",
-      "midPatch": true
-    },
-    {
-      "entity": "Arbiter, Gain Leona, Every 3 Attacks",
-      "text": "Arbiter, Gain Leona, Every 3 Attacks: 10/18% ⇒ 8/12%",
-      "type": "nerf",
-      "section": "TRAITS",
-      "midPatch": true
-    },
-    {
-      "entity": "Arbiter, Gain Leona, Each Interest",
-      "text": "Arbiter, Gain Leona, Each Interest: 20/30% ⇒ 20/25%",
-      "type": "nerf",
-      "section": "TRAITS",
-      "midPatch": true
-    },
-    {
-      "entity": "Ekko’s Patience (Artifact) has been temporarily disabled due to a bug.",
-      "text": "Ekko’s Patience (Artifact) has been temporarily disabled due to a bug.",
-      "type": "nerf",
-      "section": "AUGMENTS",
-      "midPatch": true
-    },
-    {
-      "entity": "Ekko’s Boon",
-      "text": "Ekko’s Boon: Specialist Star Damage: 85 ⇒ 70",
-      "type": "nerf",
-      "section": "GOD BOON",
-      "midPatch": false
-    },
-    {
-      "entity": "Chest of Greed disabled due to a bug",
-      "text": "Chest of Greed disabled due to a bug",
-      "type": "nerf",
-      "section": "GOD BOON",
-      "midPatch": false
-    },
-    {
-      "entity": "Kindred Mark Timer",
-      "text": "Kindred Mark Timer: 5s ⇒ 4.5s",
+      "entity": "Arbiter, Every 3 Attacks, Gain Leona",
+      "text": "Arbiter, Every 3 Attacks, Gain Leona: 8/12% ⇒ 5/8%",
       "type": "nerf",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Stargazer Huntress Teamwide Attack Speed",
-      "text": "Stargazer Huntress Teamwide Attack Speed: 15% ⇒ 12%",
+      "entity": "Space Groove Health Regen Per Groovian",
+      "text": "Space Groove Health Regen Per Groovian: 0.95% ⇒ 0.85%",
       "type": "nerf",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Stargazer Serpent Magic Damage",
-      "text": "Stargazer Serpent Magic Damage: 25/40/60% ⇒ 20/40/60%",
+      "entity": "Stargazer, Serpent Poison Damage",
+      "text": "Stargazer, Serpent Poison Damage: 20/40/60% ⇒ 18/35/50%",
       "type": "nerf",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Stargazer Mountain Attack Speed",
-      "text": "Stargazer Mountain Attack Speed: 10% ⇒ 8%",
+      "entity": "300 Anima Tech",
+      "text": "300 Anima Tech: 2* Illaoi + 7 gold ⇒ 2* Illaoi + 3 gold",
       "type": "nerf",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Stargazer Mountain Durability",
-      "text": "Stargazer Mountain Durability: 6% ⇒ 5%",
+      "entity": "300 Anima Tech",
+      "text": "300 Anima Tech: 2* Aurora + 7 gold ⇒ 2* Aurora + 3 gold",
       "type": "nerf",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "If you rerolled last combat",
-      "text": "If you rerolled last combat: Gain Ability Power: 30/45 ⇒ 25/40",
+      "entity": "300 Anima Tech",
+      "text": "300 Anima Tech: 3* Briar + 7 gold ⇒ 3* Briar + 3 gold",
       "type": "nerf",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Lulu Mountain Spell Stun Duration",
-      "text": "Lulu Mountain Spell Stun Duration: 0.5s ⇒ 0.25s",
+      "entity": "300 Anima Tech",
+      "text": "300 Anima Tech: 2* Jinx + 15 gold ⇒ 2* Jinx + 7 gold",
       "type": "nerf",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Rhaast Redeemer Attack Speed",
-      "text": "Rhaast Redeemer Attack Speed: 2/2.5/3% ⇒ 2/2/2%",
+      "entity": "500 Anima Tech",
+      "text": "500 Anima Tech: 2 Tier 2 Items + 10g + 6 Lesser Duplicators ⇒ 2 Tier 2 Items + 2* Fiora + 2* Aurora + 3* Briar",
       "type": "nerf",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Rhaast Redeemer Bonus Resists",
-      "text": "Rhaast Redeemer Bonus Resists: 2/2.5/3 ⇒ 2/2/2",
+      "entity": "Gwen Attack Speed",
+      "text": "Gwen Attack Speed: 0.85 ⇒ 0.8",
       "type": "nerf",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Corki Missile Damage",
-      "text": "Corki Missile Damage: 30/44% AD ⇒ 28/42% AD",
+      "entity": "Ornn Groove Duration",
+      "text": "Ornn Groove Duration: 3s ⇒ 2.5s",
       "type": "nerf",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Corki Meeple Rocket Damage",
-      "text": "Corki Meeple Rocket Damage: 120/180% AD ⇒ 110/165% AD",
+      "entity": "Rammus Meeple bonus Damage Reduction per Meep",
+      "text": "Rammus Meeple bonus Damage Reduction per Meep: 4 ⇒ 3",
       "type": "nerf",
       "section": "TRAITS",
       "midPatch": false
     },
     {
-      "entity": "Morgana Range",
-      "text": "Morgana Range: 2 ⇒ 1",
-      "type": "nerf",
-      "section": "TRAITS",
-      "midPatch": false
-    },
-    {
-      "entity": "Fiora Spell True Damage",
-      "text": "Fiora Spell True Damage: 40/60 AD ⇒ 37/56 AD",
-      "type": "nerf",
-      "section": "TRAITS",
-      "midPatch": false
-    },
-    {
-      "entity": "Self-Destruct (Gragas) Spell Damage AP",
-      "text": "Self-Destruct (Gragas) Spell Damage AP: 280/420/630 AP ⇒ 250/375/600 AP",
+      "entity": "A Magic Roll Pile of Champions",
+      "text": "A Magic Roll Pile of Champions: Number of 2* 3-costs: 2 ⇒ 1, Number of 2* 2-costs: 1 ⇒ 2, Number of 2* 1-costs: 0 ⇒ 1",
       "type": "nerf",
       "section": "AUGMENTS",
       "midPatch": false
     },
     {
-      "entity": "Reach for the Stars (Jax) Spell Damage",
-      "text": "Reach for the Stars (Jax) Spell Damage: 170/250/450 AP ⇒ 160/240/420 AP",
+      "entity": "Late Game Specialist Gold",
+      "text": "Late Game Specialist Gold: 36 ⇒ 30",
       "type": "nerf",
       "section": "AUGMENTS",
       "midPatch": false
     },
     {
-      "entity": "Hard Commit Gold Per Stage",
-      "text": "Hard Commit Gold Per Stage: 4 ⇒ 3",
+      "entity": "Level Up! Initial XP",
+      "text": "Level Up! Initial XP: 10 ⇒ 6",
       "type": "nerf",
       "section": "AUGMENTS",
       "midPatch": false
     },
     {
-      "entity": "Group Hug I Resists",
-      "text": "Group Hug I Resists: 7 ⇒ 6",
+      "entity": "Little Buddies Health",
+      "text": "Little Buddies Health: 55 ⇒ 65, Attack Speed: 6% ⇒ 7%",
       "type": "nerf",
       "section": "AUGMENTS",
       "midPatch": false
     },
     {
-      "entity": "Group Hug II Resists",
-      "text": "Group Hug II Resists: 10 ⇒ 9",
+      "entity": "Risky Moves Gold",
+      "text": "Risky Moves Gold: 30 ⇒ 26",
       "type": "nerf",
       "section": "AUGMENTS",
       "midPatch": false
     },
     {
-      "entity": "Kahunahuna Bonus True Damage",
-      "text": "Kahunahuna Bonus True Damage: 125% AD ⇒ 100% AD",
+      "entity": "Savings Account Initial Gold",
+      "text": "Savings Account Initial Gold: 4 ⇒ 2",
       "type": "nerf",
       "section": "AUGMENTS",
       "midPatch": false
     },
     {
-      "entity": "Sweet Treats Health Per Item",
-      "text": "Sweet Treats Health Per Item: 20 ⇒ 16",
+      "entity": "Slammin'+ Initial Gold",
+      "text": "Slammin'+ Initial Gold: 8 ⇒ 4",
       "type": "nerf",
       "section": "AUGMENTS",
       "midPatch": false
     },
     {
-      "entity": "Radiant Gargoyle’s Stoneplate Resists Per Enemy",
-      "text": "Radiant Gargoyle’s Stoneplate Resists Per Enemy: 25 ⇒ 20",
+      "entity": "Upward Mobility Rerolls per Level",
+      "text": "Upward Mobility Rerolls per Level: 2 ⇒ 1",
       "type": "nerf",
       "section": "AUGMENTS",
       "midPatch": false
     },
     {
-      "entity": "Rogue Emblem Omnivamp",
-      "text": "Rogue Emblem Omnivamp: 40% ⇒ 25%",
+      "entity": "The Collector Attack Damage",
+      "text": "The Collector Attack Damage: 40% ⇒ 35%",
+      "type": "nerf",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Mogul's Mail Health Per Stack",
+      "text": "Mogul's Mail Health Per Stack: 8 ⇒ 5",
+      "type": "nerf",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Deathblade Attack Damage",
+      "text": "Deathblade Attack Damage: 110% ⇒ 100%",
+      "type": "nerf",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Morellonomicon Ability Power",
+      "text": "Morellonomicon Ability Power: 40 ⇒ 35",
+      "type": "nerf",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Rabadon's Deathcap Ability Power",
+      "text": "Rabadon's Deathcap Ability Power: 110% ⇒ 100%",
       "type": "nerf",
       "section": "AUGMENTS",
       "midPatch": false
@@ -799,195 +491,510 @@
   ],
   "adjusted": [
     {
-      "entity": "Misfits no longer offered on 4-2",
-      "text": "Misfits no longer offered on 4-2",
+      "entity": "LeBlanc's Stage 3 Augments Removed",
+      "text": "LeBlanc's Stage 3 Augments Removed",
       "type": "adjusted",
-      "section": "AUGMENTS",
-      "midPatch": true
-    },
-    {
-      "entity": "Removed Inputs",
-      "text": "Removed Inputs: First time an Arbiter drops below 40% Health",
-      "type": "adjusted",
-      "section": "TRAITS",
-      "midPatch": false
-    },
-    {
-      "entity": "Removed Outputs",
-      "text": "Removed Outputs: Arbiters gain Mana",
-      "type": "adjusted",
-      "section": "TRAITS",
-      "midPatch": false
-    },
-    {
-      "entity": "Hold the Line Bonus AD",
-      "text": "Hold the Line Bonus AD: 9% ⇒ 8%, Bonus AP: 10% ⇒ 9%",
-      "type": "adjusted",
-      "section": "AUGMENTS",
-      "midPatch": false
-    },
-    {
-      "entity": "Mace’s Will No longer offered on 2-1",
-      "text": "Mace’s Will No longer offered on 2-1",
-      "type": "adjusted",
-      "section": "AUGMENTS",
-      "midPatch": false
-    },
-    {
-      "entity": "Sunfire Board No longer offered on 2-1",
-      "text": "Sunfire Board No longer offered on 2-1",
-      "type": "adjusted",
-      "section": "AUGMENTS",
-      "midPatch": false
-    },
-    {
-      "entity": "Dark Star 6’s mini Black Holes no longer benefit from Exiles and Two Tanky",
-      "text": "Dark Star 6’s mini Black Holes no longer benefit from Exiles and Two Tanky",
-      "type": "adjusted",
-      "section": "AUGMENTS",
+      "section": "SYSTEMS",
       "midPatch": false
     }
   ],
   "latestBuffs": [
     {
-      "entity": "Ezreal Base AD",
-      "text": "Ezreal Base AD: 40 ⇒ 45",
+      "entity": "Soraka Shield Blessing 450/550/650/800/800 ⇒ 500/600/700/800/900",
+      "text": "Soraka Shield Blessing 450/550/650/800/800 ⇒ 500/600/700/800/900",
       "type": "buff",
-      "section": "CHAMPIONS",
-      "midPatch": true
+      "section": "SYSTEMS",
+      "midPatch": false
     },
     {
-      "entity": "Aurelion Sol Mech Ability Damage",
-      "text": "Aurelion Sol Mech Ability Damage: 82/123 AP ⇒ 86/130 AP",
+      "entity": "Aurelion Sol Low HP Quest 18 gold ⇒ 21 gold",
+      "text": "Aurelion Sol Low HP Quest 18 gold ⇒ 21 gold",
       "type": "buff",
-      "section": "CHAMPIONS",
-      "midPatch": true
+      "section": "SYSTEMS",
+      "midPatch": false
     },
     {
-      "entity": "Morgana Mana",
-      "text": "Morgana Mana: 30/90 ⇒ 30/80",
-      "type": "buff",
-      "section": "CHAMPIONS",
-      "midPatch": true
-    },
-    {
-      "entity": "Arbiter, Gain Leona, Spend 50 Mana",
-      "text": "Arbiter, Gain Leona, Spend 50 Mana: 12/20% ⇒ 10/15%",
+      "entity": "Arbiter, Every 3 Attacks, Gain Armor",
+      "text": "Arbiter, Every 3 Attacks, Gain Armor: 12/18 ⇒ 10/16",
       "type": "buff",
       "section": "TRAITS",
-      "midPatch": true
+      "midPatch": false
     },
     {
-      "entity": "Arbiter, Gain Leona, Every 4 Seconds",
-      "text": "Arbiter, Gain Leona, Every 4 Seconds: 15/22% ⇒ 14/18%",
+      "entity": "Arbiter, Spend 50 Mana, Gain Leona",
+      "text": "Arbiter, Spend 50 Mana, Gain Leona: 10/15% ⇒ 9/12%",
       "type": "buff",
       "section": "TRAITS",
-      "midPatch": true
+      "midPatch": false
     },
     {
-      "entity": "Space Groove (3) Groove Duration",
-      "text": "Space Groove (3) Groove Duration: 3s ⇒ 4s",
+      "entity": "Meeple Flat HP bonus",
+      "text": "Meeple Flat HP bonus: 100/400/400/500 ⇒ 100/350/450/550",
       "type": "buff",
       "section": "TRAITS",
-      "midPatch": true
+      "midPatch": false
     },
     {
-      "entity": "Space Groove Heal Per Groovian",
-      "text": "Space Groove Heal Per Groovian: 8.5% max HP ⇒ 9.5% max HP",
+      "entity": "Meeple (10) Meeplord Abilities",
+      "text": "Meeple (10) Meeplord Abilities: Big Slam Primary Damage: 1100 AP ⇒ 1500 AP, AoE Slam Damage: 700 AP ⇒ 1000 AP, Stun Duration: 1.5s ⇒ 3s, Stun Spell Damage: 150 AP ⇒ 400 AP",
       "type": "buff",
       "section": "TRAITS",
-      "midPatch": true
+      "midPatch": false
     },
     {
-      "entity": "Space Groove AS Per Groovian",
-      "text": "Space Groove AS Per Groovian: 11% ⇒ 12%",
+      "entity": "Tier 1 Items",
+      "text": "Tier 1 Items: Guiding Hex Aurora AP: 9 ⇒ 12",
       "type": "buff",
       "section": "TRAITS",
-      "midPatch": true
+      "midPatch": false
     },
     {
-      "entity": "Stargazer Huntress Base AS",
-      "text": "Stargazer Huntress Base AS: 12% ⇒ 15%",
+      "entity": "Tier 1 Items",
+      "text": "Tier 1 Items: Rocket Barrage Attack Damage: 10% ⇒ 15%, Jinx Bonus Damage: 35% ⇒ 40%",
       "type": "buff",
       "section": "TRAITS",
-      "midPatch": true
+      "midPatch": false
     },
     {
-      "entity": "Stargazer Medallion Base Damage Amp",
-      "text": "Stargazer Medallion Base Damage Amp: 12% ⇒ 15%",
+      "entity": "Tier 1 Items",
+      "text": "Tier 1 Items: Savage Slicer Briar Bonus Hits: 10 ⇒ 15",
       "type": "buff",
       "section": "TRAITS",
-      "midPatch": true
+      "midPatch": false
+    },
+    {
+      "entity": "Tier 1 Items",
+      "text": "Tier 1 Items: Tentacle Slam Illaoi Bonus Effectiveness: 35% ⇒ 45%",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Tier 2 Items",
+      "text": "Tier 2 Items: The Annihilator Damage Store: 20% ⇒ 25%, Mana Regen: 3 ⇒ 5",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Tier 2 Items",
+      "text": "Tier 2 Items: Searing Shortbow, Ability Power: 40 ⇒ 45, Attack Damage: 10% ⇒ 15%",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Tier 2 Items",
+      "text": "Tier 2 Items: UwU Blaster Attack Damage: 25% ⇒ 30%",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Tier 3 Items",
+      "text": "Tier 3 Items: Evolved Embershot Ability Power: 40 ⇒ 45",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Caitlyn Headshot Damage AD",
+      "text": "Caitlyn Headshot Damage AD: 170/255/510/875 ⇒ 190/285/540/925",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Ezreal Ability Damage AD",
+      "text": "Ezreal Ability Damage AD: 160/240/365/620 AD ⇒ 170/255/380/650 AD",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Nasus Flat Health gained",
+      "text": "Nasus Flat Health gained: 250/350/550/750 ⇒ 300/400/600/800",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Teemo Spell Damage",
+      "text": "Teemo Spell Damage: 65/95/170/300 ⇒ 70/105/190/325",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Veigar Spell Damage AP",
+      "text": "Veigar Spell Damage AP: 310/465/700/1190 ⇒ 330/495/750/1200",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Akali Spell Damage AD",
+      "text": "Akali Spell Damage AD: 37/56/84 ⇒ 39/59/88",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Gwen AoE Spell Damage",
+      "text": "Gwen AoE Spell Damage: 75/110/190 AP ⇒ 75/110/215 AP",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Mordekaiser Initial Shield",
+      "text": "Mordekaiser Initial Shield: 300/375/500 ⇒ 350/425/550",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Fizz Dash Damage AP",
+      "text": "Fizz Dash Damage AP: 120/180/290 ⇒ 140/210/310",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Kindred Base AD",
+      "text": "Kindred Base AD: 55 ⇒ 58",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "LeBlanc Sigil Damage",
+      "text": "LeBlanc Sigil Damage: 80/120 ⇒ 85/130",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Rammus Mana buff 20/90 ⇒ 20/80",
+      "text": "Rammus Mana buff 20/90 ⇒ 20/80",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Vex Spell Damage",
+      "text": "Vex Spell Damage: 130/195 AP ⇒ 140/210 AP",
+      "type": "buff",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Bonk! (Nasus) Spell Damage",
+      "text": "Bonk! (Nasus) Spell Damage: 280/420/670/1000 AD ⇒ 290/435/730/1250 AD",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Buried Treasures Rounds of Items",
+      "text": "Buried Treasures Rounds of Items: 4 ⇒ 5",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Call to Chaos",
+      "text": "Call to Chaos: Radiant Lucky Item Chest + 15g ⇒ Radiant Lucky Item Chest + 8g, 58 Gold ⇒ 52 Gold, 64 XP ⇒ 58 XP, Rerolls: 40 ⇒ 36",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Continuous Conjuration Magic Damage Needed",
+      "text": "Continuous Conjuration Magic Damage Needed: 38,000 ⇒ 42,000",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Climb the Ladder Bonus AD/AP",
+      "text": "Climb the Ladder Bonus AD/AP: 6% ⇒ 7%",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Cry Me a River Enhanced Mana Regen",
+      "text": "Cry Me a River Enhanced Mana Regen: 3 ⇒ 4",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Early Learnings Initial AD/AP",
+      "text": "Early Learnings Initial AD/AP: 1% ⇒ 8%",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Forge a Friend Gold",
+      "text": "Forge a Friend Gold: 2 ⇒ 5",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Healing Orbs I/II Heal",
+      "text": "Healing Orbs I/II Heal: 220/500 ⇒ 250/575",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Heart of the Swarm (Primordian) Initial Briars",
+      "text": "Heart of the Swarm (Primordian) Initial Briars: 1 ⇒ 3",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Sunfire Board Duration",
+      "text": "Sunfire Board Duration: 15s ⇒ 18s",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Tiny, but Deadly Attack Speed",
+      "text": "Tiny, but Deadly Attack Speed: 30% ⇒ 33%",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "U.R.F Attack Speed",
+      "text": "U.R.F Attack Speed: 15% ⇒ 20%, Mana Regen: 2 ⇒ 3",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Win Out Initial XP",
+      "text": "Win Out Initial XP: 6 ⇒ 10",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Protector's Vow Shield Amount",
+      "text": "Protector's Vow Shield Amount: 40% ⇒ 50%",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Quicksilver Base AS",
+      "text": "Quicksilver Base AS: 30% ⇒ 40%",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Rageblade Base AS",
+      "text": "Rageblade Base AS: 20% ⇒ 25%",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Red Buff Attack Speed",
+      "text": "Red Buff Attack Speed: 90% ⇒ 80%",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
     }
   ],
   "latestNerfs": [
     {
-      "entity": "Talon Ability Damage",
-      "text": "Talon Ability Damage: 430/645/1000 AD ⇒ 400/600/1000 AD",
-      "type": "nerf",
-      "section": "CHAMPIONS",
-      "midPatch": true
-    },
-    {
-      "entity": "Zoe Ability Damage",
-      "text": "Zoe Ability Damage: 73/110/180% AP ⇒ 68/102/180 AP",
-      "type": "nerf",
-      "section": "CHAMPIONS",
-      "midPatch": true
-    },
-    {
-      "entity": "Xayah Base AD",
-      "text": "Xayah Base AD: 52 ⇒ 49",
-      "type": "nerf",
-      "section": "CHAMPIONS",
-      "midPatch": true
-    },
-    {
-      "entity": "Blitzcrank max Mana nerf",
-      "text": "Blitzcrank max Mana nerf: 20/100 ⇒ 30/120",
-      "type": "nerf",
-      "section": "CHAMPIONS",
-      "midPatch": true
-    },
-    {
-      "entity": "Vex Ability Damage",
-      "text": "Vex Ability Damage: 30/45 AP ⇒ 27/40 AP",
-      "type": "nerf",
-      "section": "CHAMPIONS",
-      "midPatch": true
-    },
-    {
-      "entity": "Arbiter, Gain Leona, Every 3 Attacks",
-      "text": "Arbiter, Gain Leona, Every 3 Attacks: 10/18% ⇒ 8/12%",
+      "entity": "Arbiter, Every 3 Attacks, Gain Leona",
+      "text": "Arbiter, Every 3 Attacks, Gain Leona: 8/12% ⇒ 5/8%",
       "type": "nerf",
       "section": "TRAITS",
-      "midPatch": true
+      "midPatch": false
     },
     {
-      "entity": "Arbiter, Gain Leona, Each Interest",
-      "text": "Arbiter, Gain Leona, Each Interest: 20/30% ⇒ 20/25%",
+      "entity": "Space Groove Health Regen Per Groovian",
+      "text": "Space Groove Health Regen Per Groovian: 0.95% ⇒ 0.85%",
       "type": "nerf",
       "section": "TRAITS",
-      "midPatch": true
+      "midPatch": false
     },
     {
-      "entity": "Ekko’s Patience (Artifact) has been temporarily disabled due to a bug.",
-      "text": "Ekko’s Patience (Artifact) has been temporarily disabled due to a bug.",
+      "entity": "Stargazer, Serpent Poison Damage",
+      "text": "Stargazer, Serpent Poison Damage: 20/40/60% ⇒ 18/35/50%",
+      "type": "nerf",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "300 Anima Tech",
+      "text": "300 Anima Tech: 2* Illaoi + 7 gold ⇒ 2* Illaoi + 3 gold",
+      "type": "nerf",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "300 Anima Tech",
+      "text": "300 Anima Tech: 2* Aurora + 7 gold ⇒ 2* Aurora + 3 gold",
+      "type": "nerf",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "300 Anima Tech",
+      "text": "300 Anima Tech: 3* Briar + 7 gold ⇒ 3* Briar + 3 gold",
+      "type": "nerf",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "300 Anima Tech",
+      "text": "300 Anima Tech: 2* Jinx + 15 gold ⇒ 2* Jinx + 7 gold",
+      "type": "nerf",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "500 Anima Tech",
+      "text": "500 Anima Tech: 2 Tier 2 Items + 10g + 6 Lesser Duplicators ⇒ 2 Tier 2 Items + 2* Fiora + 2* Aurora + 3* Briar",
+      "type": "nerf",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Gwen Attack Speed",
+      "text": "Gwen Attack Speed: 0.85 ⇒ 0.8",
+      "type": "nerf",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Ornn Groove Duration",
+      "text": "Ornn Groove Duration: 3s ⇒ 2.5s",
+      "type": "nerf",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "Rammus Meeple bonus Damage Reduction per Meep",
+      "text": "Rammus Meeple bonus Damage Reduction per Meep: 4 ⇒ 3",
+      "type": "nerf",
+      "section": "TRAITS",
+      "midPatch": false
+    },
+    {
+      "entity": "A Magic Roll Pile of Champions",
+      "text": "A Magic Roll Pile of Champions: Number of 2* 3-costs: 2 ⇒ 1, Number of 2* 2-costs: 1 ⇒ 2, Number of 2* 1-costs: 0 ⇒ 1",
       "type": "nerf",
       "section": "AUGMENTS",
-      "midPatch": true
+      "midPatch": false
+    },
+    {
+      "entity": "Late Game Specialist Gold",
+      "text": "Late Game Specialist Gold: 36 ⇒ 30",
+      "type": "nerf",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Level Up! Initial XP",
+      "text": "Level Up! Initial XP: 10 ⇒ 6",
+      "type": "nerf",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Little Buddies Health",
+      "text": "Little Buddies Health: 55 ⇒ 65, Attack Speed: 6% ⇒ 7%",
+      "type": "nerf",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Risky Moves Gold",
+      "text": "Risky Moves Gold: 30 ⇒ 26",
+      "type": "nerf",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Savings Account Initial Gold",
+      "text": "Savings Account Initial Gold: 4 ⇒ 2",
+      "type": "nerf",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Slammin'+ Initial Gold",
+      "text": "Slammin'+ Initial Gold: 8 ⇒ 4",
+      "type": "nerf",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Upward Mobility Rerolls per Level",
+      "text": "Upward Mobility Rerolls per Level: 2 ⇒ 1",
+      "type": "nerf",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "The Collector Attack Damage",
+      "text": "The Collector Attack Damage: 40% ⇒ 35%",
+      "type": "nerf",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Mogul's Mail Health Per Stack",
+      "text": "Mogul's Mail Health Per Stack: 8 ⇒ 5",
+      "type": "nerf",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Deathblade Attack Damage",
+      "text": "Deathblade Attack Damage: 110% ⇒ 100%",
+      "type": "nerf",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Morellonomicon Ability Power",
+      "text": "Morellonomicon Ability Power: 40 ⇒ 35",
+      "type": "nerf",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Rabadon's Deathcap Ability Power",
+      "text": "Rabadon's Deathcap Ability Power: 110% ⇒ 100%",
+      "type": "nerf",
+      "section": "AUGMENTS",
+      "midPatch": false
     }
   ],
   "latestAdjusted": [
     {
-      "entity": "Misfits no longer offered on 4-2",
-      "text": "Misfits no longer offered on 4-2",
+      "entity": "LeBlanc's Stage 3 Augments Removed",
+      "text": "LeBlanc's Stage 3 Augments Removed",
       "type": "adjusted",
-      "section": "AUGMENTS",
-      "midPatch": true
+      "section": "SYSTEMS",
+      "midPatch": false
     }
   ],
-  "hasMidPatch": true,
-  "updatedAt": "2026-06-09T17:49:12.917Z",
-  "sourceUrl": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-17-4"
+  "hasMidPatch": false,
+  "updatedAt": "2026-06-09T18:24:48.906Z",
+  "sourceUrl": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-17-5"
 }
