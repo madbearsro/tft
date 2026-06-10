@@ -3153,7 +3153,7 @@
   },
   "TFT17_Item_PsyOps_ChemicalCapacitorMod": {
     "name": "Matrice malware",
-    "desc": "<spellPassive>Campion de atac:</spellPassive> provocarea de daune fizice împotriva inamicilor reduce armura țintei cu @ResistReduce@.<br><br><spellPassive>Campion de magic:</spellPassive> provocarea de daune magice împotriva inamicilor reduce rezistența la magie a țintei cu @MRReduction@. <br><br><rules>Utilizatori recomandați: Master Yi și Pyke.<br>Timp de reactivare daune abilitate: @Cooldown@ secunde.</rules>"
+    "desc": "<spellPassive>Campion de atac:</spellPassive> provocarea de daune fizice împotriva inamicilor reduce armura țintei cu @ResistReduce@.<br><br><spellPassive>Campion magic:</spellPassive> provocarea de daune magice împotriva inamicilor reduce rezistența la magie a țintei cu @MRReduction@. <br><br><rules>Utilizatori recomandați: Master Yi și Pyke.<br>Timp de reactivare daune abilitate: @Cooldown@ secunde.</rules>"
   },
   "TFT17_Item_PsyOps_TargetlockMod": {
     "name": "Optică de fixare a țintei",
@@ -6751,6 +6751,418 @@
     "name": "Jurământul protectorului",
     "desc": "Începutul luptei: oferă @CombatStartMana@ mană.<br><br>La @HealthThreshold@% viață, oferă @TriggerMana@ mană și un scut egal cu @ShieldHealthPercent@% din viața maximă."
   },
+  "TFTEvent5YR_Explorer_TotalArmorQuest": {
+    "name": "Un campion acumulează @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ armură într-o luptă împotriva jucătorilor.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_DamageDealtQuest": {
+    "name": "Un campion provoacă @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ daune într-o luptă.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_BrockSurviveQuest": {
+    "name": "Brock supraviețuiește @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ lupte împotriva jucătorilor.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_BuyXPQuest": {
+    "name": "Cumpără @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ XP.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_ShopRerollHardQuest": {
+    "name": "Reîncarcă magazinul de @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ ori.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_Lose2Quest": {
+    "name": "Pierde @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ lupte împotriva jucătorilor.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_ClearMindQuest": {
+    "name": "Deține o bancă goală la sfârșitul luptei timp de @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ runde.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_BuyXPHardQuest": {
+    "name": "Cumpără @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ XP.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_2Star4CostTankQuest": {
+    "name": "Trimite în luptă un tanc de 4 aur și 2 stele.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_WinStreakShortQuest": {
+    "name": "Câștigă @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ lupte împotriva jucătorilor la rând.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_BuyXPMediumQuest": {
+    "name": "Cumpără @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ XP.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_2Star3CostDamageQuest": {
+    "name": "Trimite în luptă un mag de 3 aur și 2 stele.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_LoseBigStreakQuest": {
+    "name": "Pierde @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ lupte împotriva jucătorilor la rând.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_DamageBlockedQuest": {
+    "name": "Un campion blochează @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ daune într-o luptă.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_Cashout": {
+    "name": "<b>Cheltuie toate %i:Set16Ixtal%. Începe o misiune nouă runda următoare!</b>",
+    "desc": "Total %i:Set16Ixtal%: <b>@TFTUnitProperty.:TFT16_Explorer_CurrentExplorerPoints@</b><br>Valoare estimată: ~<b>@TFTUnitProperty.:TFT16_Explorer_CurrentCashoutLevel@</b> aur"
+  },
+  "TFTEvent5YR_Explorer_EarnInterestQuest": {
+    "name": "Câștigă @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ dobândă.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_ShopRerollQuest": {
+    "name": "Reîncarcă magazinul de @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ ori.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_ZeroGoldQuest": {
+    "name": "Începe lupta cu zero aur de @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ ori.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_KillQuest": {
+    "name": "Ucide @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ inamici.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_3Star1CostFighterQuest": {
+    "name": "Trimite în luptă un non-tanc de 1 aur și 3 stele.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_ShopRerollMediumQuest": {
+    "name": "Reîncarcă magazinul de @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ ori.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_TotalMRQuest": {
+    "name": "Un campion acumulează @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ rezistență la magie într-o luptă.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_LoseQuest": {
+    "name": "Pierde @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ lupte împotriva jucătorilor.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_LowHealthQuest": {
+    "name": "Deține mai puțin de @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ viață a jucătorului.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_WinLateQuest": {
+    "name": "Câștigă @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ lupte împotriva jucătorilor.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_TotalGoldQuest": {
+    "name": "Deține cel puțin @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ aur la sfârșitul luptei.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_ChampsDiedQuest": {
+    "name": "Pierde @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ unități în lupte împotriva jucătorilor.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_LoseSmallStreakQuest": {
+    "name": "Pierde @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ lupte împotriva jucătorilor la rând.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_1UnitAliveQuest": {
+    "name": "Câștigă @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ lupte împotriva jucătorilor cu doar 1 unitate rămasă în viață.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_LevelUpQuest": {
+    "name": "Atinge nivelul @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_2CostTankSurviveQuest": {
+    "name": "Un tanc de 2 aur supraviețuiește unei lupte împotriva unui jucător timp de @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ secunde.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_2Star2CostTankQuest": {
+    "name": "Trimite în luptă un tanc de 2 aur și 2 stele.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_1HPQuest": {
+    "name": "Deține exact @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ viață a jucătorului.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_LowStreakShortQuest": {
+    "name": "Alternează victoriile și înfrângerile timp de @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ lupte împotriva jucătorilor.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_BigHealthLossQuest": {
+    "name": "Deține mai puțin de @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ viață a jucătorului.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_ClutteredMindQuest": {
+    "name": "Deține o bancă plină la sfârșitul luptei timp de @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ runde.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_123CostQuest": {
+    "name": "Trimite în luptă un campion de 1 aur, 2 aur și 3 aur pentru @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ lupte împotriva jucătorilor.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_1CostFighterTakedownQuest": {
+    "name": "Un luptător sau un asasin de 1 aur reușește @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ doborâri într-o luptă împotriva jucătorilor.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_LoseHardQuest": {
+    "name": "Pierde @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ lupte împotriva jucătorilor.",
+    "desc": "Recompensă: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Item_MaestrosBaton": {
+    "name": "Baston de maestru",
+    "desc": "Deținătorul are o viteză de atac fixă de @TFTTrait.TFTEvent5YR_Maestro.:JhinAttackSpeed@ și fiecare @TFTTrait.TFTEvent5YR_Maestro.:BonusAttackSpeed@% de viteză de atac bonus se transformă în @TFTTrait.TFTEvent5YR_Maestro.:BonusAttackDamage@% daune din atac.<br><br>După ce invoci 4 ''Puști pentru punctul culminant'', acestea încep să tragă cu aceeași viteză ca deținătorul, provocând daune fizice în valoare de @TFTTrait.TFTEvent5YR_Maestro.:RifleADScalar*100@% %i:scaleAD% + @TFTTrait.TFTEvent5YR_Maestro.:RifleAPScalar*100@% %i:scaleAP%. <br><br>Fiecare a 4-a rafală este <tftEvent5YRHarmonic>armonică</tftEvent5YRHarmonic> și provoacă @TFTUnitProperty.item:TFTEvent5YR_Maestro_HarmonicDamage_BatonTooltip*100@% din daunele pe care deținătorul și ''Puștile'' sale le-au provocat de la ultima rafală armonică."
+  },
+  "TFTEvent_5YR_Item_TraitMascotActivator": {
+    "name": "Mascotă",
+    "desc": "Echipa ta își reface un procent din viața maximă la fiecare @TFTTrait.TFTEvent5YR_Mascot.1:Seconds@ secunde.<br><br>Când mor, campionii se retrag pe margine ca să facă galerie echipei. Vindecarea echipei tale crește pentru fiecare campion care face galerie.<br><br><row> (@TFTTrait.TFTEvent5YR_Mascot.1:MinUnits@) @TFTTrait.TFTEvent5YR_Mascot.1:BaseHealthRegen@% %i:scaleHealth% de bază, @TFTTrait.TFTEvent5YR_Mascot.1:HealthRegenPerMascot@% %i:scaleHealth% per campion care face galerie</row><br><row> (@TFTTrait.TFTEvent5YR_Mascot.2:MinUnits@) @TFTTrait.TFTEvent5YR_Mascot.2:BaseHealthRegen@% %i:scaleHealth% de bază, @TFTTrait.TFTEvent5YR_Mascot.2:HealthRegenPerMascot@% %i:scaleHealth% per campion care face galerie</row>"
+  },
+  "TFTEvent5YR_Storyweaver7_Support": {
+    "name": "Tomul tămăduirii",
+    "desc": "La fiecare @Duration@ secunde, învie cel mai puternic aliat care nu a fost înviat încă, cu @HPPercent*100@% din viața sa maximă."
+  },
+  "TFTEvent_5YR_Item_TraitDragonlordActivator": {
+    "name": "Lord al dragonilor",
+    "desc": "După @TFTTrait.TFTEvent5YR_Dragonlord.1:FirstDelay@ secunde de luptă, dragonul lovește tabla, provocându-le <trueDamage>daune reale</trueDamage> tuturor inamicilor și amețindu-i. Aliații primesc viteză de atac pentru restul luptei.<br><br><row>(@TFTTrait.TFTEvent5YR_Dragonlord.1:MinUnits@) @TFTTrait.TFTEvent5YR_Dragonlord.1:TrueDamageHPRatio*100@% %i:scaleHealth% daune, amețire timp de @TFTTrait.TFTEvent5YR_Dragonlord.1:StunDuration@ secunde, @TFTTrait.TFTEvent5YR_Dragonlord.1:AttackSpeedBuff*100@% %i:scaleAS%.</row><br><row>(@TFTTrait.TFTEvent5YR_Dragonlord.2:MinUnits@) @TFTTrait.TFTEvent5YR_Dragonlord.2:TrueDamageHPRatio*100@% %i:scaleHealth% daune, amețire timp de @TFTTrait.TFTEvent5YR_Dragonlord.2:StunDuration@ secunde, @TFTTrait.TFTEvent5YR_Dragonlord.2:AttackSpeedBuff*100@% %i:scaleAS%.<br>După încă @TFTTrait.TFTEvent5YR_Dragonlord.2:SecondDelay@ secunde, dragonul lovește din nou.</row><br><br>"
+  },
+  "TFTEvent_5YR_Item_TraitSocialiteActivator": {
+    "name": "Monden",
+    "desc": "Primești un hexagon iluminat.<br>Începutul luptei: unitatea aflată pe hexagonul iluminat primește atribute bonus.<br><br><row>(@TFTTrait.TFTEvent5YR_Socialite.1:MinUnits@) @TFTTrait.TFTEvent5YR_Socialite.1:DamagePercent*100@% %i:scaleDA% și @TFTTrait.TFTEvent5YR_Socialite.1:ManaPerSecond@&nbsp;%i:scaleMana% pe secundă.</row><br><row>(@TFTTrait.TFTEvent5YR_Socialite.2:MinUnits@) @TFTTrait.TFTEvent5YR_Socialite.2:DamagePercent*100@% %i:scaleDA%, @TFTTrait.TFTEvent5YR_Socialite.2:ManaPerSecond@&nbsp;%i:scaleMana% pe secundă și @TFTTrait.TFTEvent5YR_Socialite.2:OmnivampPercent*100@% %i:scaleSV%. Primești încă un hexagon iluminat.</row>"
+  },
+  "TFTEvent_5YR_Item_TraitPentakillActivator": {
+    "name": "Pentakill",
+    "desc": "Echipa ta primește @TFTTrait.TFTEvent5YR_Pentakill.1:Damage_Reduction*100@% durabilitate și amplificarea daunelor. Pentru fiecare ucidere de campion, un campion din echipa ta se dezlănțuie, crescând această amplificare a daunelor bonus cu @TFTTrait.TFTEvent5YR_Pentakill.:Kill_Bonus*100@%.<br><br>La a @TFTTrait.TFTEvent5YR_Pentakill.:Kill_Count@-a ucidere, toată echipa voastră se dezlănțuie și primește viteză de atac.<br><br><row>(@TFTTrait.TFTEvent5YR_Pentakill.1:MinUnits@) @TFTTrait.TFTEvent5YR_Pentakill.1:Bonus_Damage*100@% %i:scaleDA%, @TFTTrait.TFTEvent5YR_Pentakill.1:Attack_Speed*100@% viteză de atac după o ucidere Pentakill.</row><br><row>(@TFTTrait.TFTEvent5YR_Pentakill.2:MinUnits@) @TFTTrait.TFTEvent5YR_Pentakill.2:Bonus_Damage*100@% %i:scaleDA%, @TFTTrait.TFTEvent5YR_Pentakill.2:Attack_Speed*100@% viteză de atac după o ucidere Pentakill.</row>"
+  },
+  "TFTEvent5YR_Storyweaver7_AP": {
+    "name": "Tomul puterii",
+    "desc": "Kayle provoacă cu @DamageAmpPercent*100@% mai multe daune. Când își folosește abilitatea, lansează două valuri."
+  },
+  "TFTEvent5YR_Storyweaver7_AS": {
+    "name": "Tomul agilității",
+    "desc": "Kayle provoacă cu @DamageAmpPercent*100@% mai multe daune. Atacurile ei lovesc acum pe o rază de @HexRadius@ hexagoane în jurul țintei."
+  },
+  "TFTEvent_5YR_Item_TraitMountainActivator": {
+    "name": "Munți",
+    "desc": "Primești 2 hexagoane ale muntelui pe rândul din față.<br>Începutul luptei: unitățile situate pe un hexagon al muntelui primesc un scut și viață bonus permanentă.<br><br><row>(@TFTTrait.TFTEvent5YR_Mountain.1:MinUnits@) @TFTTrait.TFTEvent5YR_Mountain.1:ShieldValue@ scut, @TFTTrait.TFTEvent5YR_Mountain.1:PermBonusHealth@ %i:scaleHealth%. </row><br><row>(@TFTTrait.TFTEvent5YR_Mountain.2:MinUnits@) @TFTTrait.TFTEvent5YR_Mountain.2:ShieldValue@ scut, @TFTTrait.TFTEvent5YR_Mountain.2:PermBonusHealth@ %i:scaleHealth%. Toate hexagoanele de pe primul rând devin hexagoane ale muntelui.</row>"
+  },
+  "TFTEvent5YR_Item_Nitro_ChromeCounter": {
+    "name": "Crom",
+    "desc": "<TFTTrackerLabel>Crom total: @TFTUnitProperty.item:TFTEvent5YR_Nitro_TotalScrap@<br>Bonusuri totale: @TFTUnitProperty.item:TFTEvent5YR_Nitro_TotalBonusAP@% %i:scaleAP% / @TFTUnitProperty.item:TFTEvent5YR_Nitro_TotalBonusHP@ %i:scaleHealth%</TFTTrackerLabel>"
+  },
+  "TFTEvent_5YR_Item_TraitShimmerscaleActivator": {
+    "name": "Solzi sclipitori",
+    "desc": "Primești obiecte solzi sclipitori, care oferă aur și măresc puterea echipei.<br><br><row>(@TFTTrait.TFTEvent5YR_Shimmerscale.1:MinUnits@)Primești ''Toiagul alchimistului''. În etapa @TFTTrait.TFTEvent5YR_Shimmerscale.1:SecondItemStage@-@TFTTrait.TFTEvent5YR_Shimmerscale.1:SecondItemRound@, primești ''Securea lui Draven''.</row><br><row>(@TFTTrait.TFTEvent5YR_Shimmerscale.2:MinUnits@)Primești ''Coroana campionilor''.</row>"
+  },
+  "TFTEvent_5YR_Item_TraitIxtalActivator": {
+    "name": "Ixtal",
+    "desc": "<row>(@TFTTrait.TFTEvent5YR_Ixtal.1:MinUnits@) Îndeplinește misiuni pentru a câștiga frânturi solare (%i:Set16Ixtal%) și cheltuie-le pentru&nbsp;recompense!</row><br><row>(@TFTTrait.TFTEvent5YR_Ixtal.2:MinUnits@) Refă 2 viață a jucătorului la începutul luptei împotriva unui jucător. Găsești @TFTTrait.TFTEvent5YR_Ixtal.2:BonusClues@ %i:Set16Ixtal% la sfârșitul luptei și acum îl poți debloca pe Brock când ajungi la 500 %i:Set16Ixtal%!</row><br><br><rules>Când îndeplinești o misiune înainte de sfârșitul luptei, primești una nouă la începutul următoarei runde.</rules><br><br>Total frânturi solare câștigate: @TFTUnitProperty.trait:TFTEvent5YR_Explorer_TotalExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent_5YR_Item_TraitTheCrewActivator": {
+    "name": "Echipajul",
+    "desc": "Îl invoci pe <i>Nocturnus</i> să te ajute în luptă! Acesta lansează un proiectil care provoacă @TFTTrait.TFTEvent5YR_TheCrew.1:BaseRocketDamage@ daune magice la fiecare @TFTTrait.TFTEvent5YR_TheCrew.1:BaseDamageThreshold@ daune provocate de echipa ta.<br><br>Campionii de 2 aur și mai mult devin membri ai echipajului după ce ajung la 3 stele. Primiți bonusuri suplimentare pentru fiecare membru al echipajului.<br><br><row>(@TFTTrait.TFTEvent5YR_TheCrew.1:MinUnits@) Maximum 2 membri ai echipajului.</row><br><row>(@TFTTrait.TFTEvent5YR_TheCrew.2:MinUnits@) Maximum 4 membri ai echipajului.</row><br><br><tftActiveRank enabled=TFTEvent5YR_Trait_WildcardCrew_Bonus1Active default=false alternate=TFTGuildInactive>(1x <ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus1Active>%i:3StarEnabled%</ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus1Active>): + @TFTTrait.TFTEvent5YR_TheCrew.1:OnARollRolls@ reîncărcări gratuite când crești nivelul de stele al unei unități pe care ai trimis-o în ultima luptă.</tftActiveRank><br><tftActiveRank enabled=TFTEvent5YR_Trait_WildcardCrew_Bonus2Active default=false alternate=TFTGuildInactive>(2x <ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus2Active>%i:3StarEnabled%</ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus2Active>): rachetele provoacă <magicDamage>@TFTTrait.TFTEvent5YR_TheCrew.1:UpgradedRocketDamage@</magicDamage> daune.</tftActiveRank><br><tftActiveRank enabled=TFTEvent5YR_Trait_WildcardCrew_Bonus3Active default=false alternate=TFTGuildInactive>(3x <ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus3Active>%i:3StarEnabled%</ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus3Active>): + @TFTTrait.TFTEvent5YR_TheCrew.1:FreeRerollsPerRound@ reîncărcări gratuite / rundă.</tftActiveRank><br><tftActiveRank enabled=TFTEvent5YR_Trait_WildcardCrew_Bonus4Active default=false alternate=TFTGuildInactive>(4x <ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus4Active>%i:3StarEnabled%</ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus4Active>): rachetele trag la fiecare @TFTTrait.TFTEvent5YR_TheCrew.1:UpgradedDamageThreshold@ daune provocate. Primești @TFTTrait.TFTEvent5YR_TheCrew.1:XPPerRound@ XP per rundă.</tftActiveRank>"
+  },
+  "TFTEvent_5YR_Item_TraitHoneymancyActivator": {
+    "name": "Mieromanție",
+    "desc": "Campionii tăi primesc albine care le provoacă daune magice țintelor la fiecare @TFTTrait.TFTEvent5YR_Honeymancy:Period@ secunde. Daunele albinelor sunt în funcție de daunele provocate și suferite de campionul gazdă, plus o valoare fixă pentru fiecare albină.<br><br>Când un campion moare, lasă în urmă @TFTTrait.TFTEvent5YR_Honeymancy:NumTransfers@ albine care urmăresc campionii din apropiere pentru restul luptei.<br><br><row>(@TFTTrait.TFTEvent5YR_Honeymancy.1:MinUnits@) @TFTTrait.TFTEvent5YR_Honeymancy.1:MiniCount@ albine, @TFTTrait.TFTEvent5YR_Honeymancy.1:BonusDamage*100@% daune provocate, @TFTTrait.TFTEvent5YR_Honeymancy.1:DamageReceived*100@% daune suferite, @TFTTrait.TFTEvent5YR_Honeymancy.1:DamagePerMini@ daune per albină.</row><br><row>(@TFTTrait.TFTEvent5YR_Honeymancy.2:MinUnits@) @TFTTrait.TFTEvent5YR_Honeymancy.2:MiniCount@ albine, @TFTTrait.TFTEvent5YR_Honeymancy.2:BonusDamage*100@% daune provocate, @TFTTrait.TFTEvent5YR_Honeymancy.2:DamageReceived*100@% daune suferite, @TFTTrait.TFTEvent5YR_Honeymancy.2:DamagePerMini@ daune per albină.</row>"
+  },
+  "TFTEvent_5YR_Item_TraitConquerorActivator": {
+    "name": "Cuceritor",
+    "desc": "Doborârile echipei tale oferă cumuluri de ''Cucerire''. După ce primești suficientă ''Cucerire'', deschizi un ''Cufăr de război'' plin cu recompense!<br><br>Echipa ta primește daune din atac și puterea abilităților, valoare ce crește cu @TFTTrait.TFTEvent5YR_Conqueror:PercentIncreasePerChest*100@% pentru fiecare ''Cufăr de război'' deschis.<br><br><row>(@TFTTrait.TFTEvent5YR_Conqueror.1:MinUnits@) @TFTTrait.TFTEvent5YR_Conqueror.1:ADAPBase*100@%&nbsp;%i:scaleAD%%i:scaleAP%; @TFTTrait.TFTEvent5YR_Conqueror.1:StacksPerKill@x&nbsp;''Cucerire''</row><br><row>(@TFTTrait.TFTEvent5YR_Conqueror.2:MinUnits@) @TFTTrait.TFTEvent5YR_Conqueror.2:ADAPBase*100@%&nbsp;%i:scaleAD%%i:scaleAP%; @TFTTrait.TFTEvent5YR_Conqueror.2:StacksPerKill@x&nbsp;''Cucerire''</row><br><br><rules>''Cufere de război'' deschise: @TFTUnitProperty.trait:TFTEvent5YR_Conqueror_ChestsCompleted@</rules><br><rules>Atribute actuale: @TFTUnitProperty.trait:TFTEvent5YR_Conqueror_CurrentADAP@%&nbsp;%i:scaleAD%%i:scaleAP%</rules><br>"
+  },
+  "TFTEvent_5YR_Item_TraitPunkActivator": {
+    "name": "Punk",
+    "desc": "Echipa ta primește viață bonus, daune din atac și puterea abilităților, valoare ce crește cu 1% de fiecare dată când cheltui aur pe o reîncărcare a magazinului.<br><br>După fiecare luptă, prima reîncărcare a magazinului din acea rundă costă 1 aur. Prima reîncărcare din fiecare rundă oferă @TFTTrait.TFTEvent5YR_Punk:FIRST_ROLL_BONUS@% bonus!<br><br><row>(@TFTTrait.TFTEvent5YR_Punk.1:MinUnits@)@TFTTrait.TFTEvent5YR_Punk.1:BONUS_HEALTH@ %i:scaleHealth% și @TFTTrait.TFTEvent5YR_Punk.1:BONUS_AD_AP*100@% %i:scaleAD%%i:scaleAP%</row><br><row>(@TFTTrait.TFTEvent5YR_Punk.2:MinUnits@)@TFTTrait.TFTEvent5YR_Punk.2:BONUS_HEALTH@ %i:scaleHealth% și @TFTTrait.TFTEvent5YR_Punk.2:BONUS_AD_AP*100@% %i:scaleAD%%i:scaleAP%</row><br><br>Bonus actual: @TFTUnitProperty.trait:TFTEvent5YR_Punk_CurrentBonus@%<br>@TFTUnitProperty.trait:TFTEvent5YR_Punk_CurrentHealthBonus@ %i:scaleHealth% și @TFTUnitProperty.trait:TFTEvent5YR_Punk_CurrentADBonus@% %i:scaleAD%%i:scaleAP%"
+  },
+  "TFTEvent_5YR_Item_TraitStoryweaverActivator": {
+    "name": "Țesător de povești",
+    "desc": "Invoci o eroină numită Kayle și o evoluezi pe măsură ce crești în nivel!<br><br><row>(@TFTTrait.TFTEvent5YR_Storyweaver.1:MinUnits@) Când ajungi la nivelul @TFTTrait.TFTEvent5YR_Storyweaver:FirstArmoryLevel@, Kayle se îmbunătățește la 2 stele. Alege un efect de sprijin.</row><br><row>(@TFTTrait.TFTEvent5YR_Storyweaver.2:MinUnits@) Kayle evoluează din nou la nivelurile @TFTTrait.TFTEvent5YR_Storyweaver:SecondArmoryLevel@, @TFTTrait.TFTEvent5YR_Storyweaver:ThirdArmoryLevel@ și @TFTTrait.TFTEvent5YR_Storyweaver:FourStarUpgradeLevel@:<br>Nivelul @TFTTrait.TFTEvent5YR_Storyweaver:SecondArmoryLevel@: alege un efect pentru luptă. <br>Nivelul @TFTTrait.TFTEvent5YR_Storyweaver:ThirdArmoryLevel@: Kayle se îmbunătățește la 3 stele. Alege un efect pentru luptă.<br>Nivelul @TFTTrait.TFTEvent5YR_Storyweaver:FourStarUpgradeLevel@: Kayle se îmbunătățește la 4 stele.</row><br>"
+  },
+  "TFTEvent_5YR_Item_TraitGlacialActivator": {
+    "name": "Glacial",
+    "desc": "Primești un ''Ciocan glacial''. Atacurile de bază ale campionilor echipați cu un ''Ciocan'' au @TFTTrait.TFTEvent5YR_Glacial.1:ProcPercent*100@% șanse să amețească ținta timp de @TFTTrait.TFTEvent5YR_Glacial.1:StunDuration@ secunde și să provoace daune magice bonus. <br><br><row>(@TFTTrait.TFTEvent5YR_Glacial.1:MinUnits@) @TFTTrait.TFTEvent5YR_Glacial.1:BonusDamage@ daune magice.</row><br><row>(@TFTTrait.TFTEvent5YR_Glacial.2:MinUnits@) @TFTTrait.TFTEvent5YR_Glacial.2:BonusDamage@ daune magice. Primești încă un ''Ciocan glacial''.</row>"
+  },
+  "TFTEvent_5YR_Item_TraitMechPilotActivator": {
+    "name": "Pilot Mecha",
+    "desc": "Folosește ''Selectorul de pilot'' pentru a alege un pilot. Începutul luptei: pilotul sare într-un robot Mecha.<br><br>Robotul Mecha are aceleași caracteristici și obiecte ca pilotul și primește un procent din daunele din atac și viața maximă ale pilotului. Când robotul Mecha moare, pilotul/piloții sunt ejectați cu @TFTTrait.TFTEvent5YR_MechPilot.1:EjectedPilotHealthPercent@% din viața lor maximă.<br><br><row>(@TFTTrait.TFTEvent5YR_MechPilot.1:MinUnits@) Mini-Mecha: @TFTTrait.TFTEvent5YR_MechPilot.1:MechCombinedADRatio*100@% %i:scaleAD%%i:scaleHealth%</row> <br><row>(@TFTTrait.TFTEvent5YR_MechPilot.2:MinUnits@) Super-Mecha: @TFTTrait.TFTEvent5YR_MechPilot.2:MechCombinedADRatio*100@% %i:scaleAD%%i:scaleHealth%. Cele mai apropiate 2 unități de pilot sar și ele în robotul Mecha. </row>"
+  },
+  "TFTEvent_5YR_Item_TraitPyroActivator": {
+    "name": "Piromant",
+    "desc": "Echipa ta primește @TFTTrait.TFTEvent5YR_Pyro:BaseASPct@% %i:scaleAS% viteză de atac.<br><br>Pentru fiecare asasinat, echipa ta creează un tăciune infernal, pe care-l poți aduna în următoarea rundă. Pentru fiecare @TFTTrait.TFTEvent5YR_Pyro:NumCinders@ tăciuni pe care îi aduni, echipa ta primește încă @TFTTrait.TFTEvent5YR_Pyro:ASPctPerNumCinders@% %i:scaleAS%.<br><br><row>(@TFTTrait.TFTEvent5YR_Pyro.1:MinUnits@) @TFTTrait.TFTEvent5YR_Pyro.1:NumCindersPerKill@ tăciune infernal per inamic.</row><br><row>(@TFTTrait.TFTEvent5YR_Pyro.2:MinUnits@) @TFTTrait.TFTEvent5YR_Pyro.2:NumCindersPerKill@ tăciuni infernali per inamic și execută inamicii care au sub @TFTTrait.TFTEvent5YR_Pyro.2:ExecutePct@% viață.</row><br><br>Tăciuni adunați: @TFTUnitProperty.trait:TFTEvent5YR_PyroCindersCollected@<br>%i:scaleAS% echipă: @TFTUnitProperty.trait:TFTEvent5YR_PyroAttackSpeed@%"
+  },
+  "TFTEvent_5YR_Item_TraitJazzActivator": {
+    "name": "Jazz",
+    "desc": "Pentru fiecare caracteristică activă, echipa ta primește viață bonus și amplificarea daunelor.<br><rules>(Exclude caracteristicile unice și aniversare)</rules><br><br><row>(@TFTTrait.TFTEvent5YR_Jazz.1:MinUnits@) @TFTTrait.TFTEvent5YR_Jazz.1:BonusHealth*100@% %i:scaleHealth%, @TFTTrait.TFTEvent5YR_Jazz.1:BonusDamage*100@% %i:scaleDA%</row><br><row>(@TFTTrait.TFTEvent5YR_Jazz.2:MinUnits@) @TFTTrait.TFTEvent5YR_Jazz.2:BonusHealth*100@% %i:scaleHealth%, @TFTTrait.TFTEvent5YR_Jazz.2:BonusDamage*100@% %i:scaleDA%</row><br><br>Viață bonus: @TFTUnitProperty.trait:TFT10_Trait_Jazz_TraitTracker_CurrentBonus@%<br>Amplificarea daunelor bonus: @TFTUnitProperty.trait:TFT10_Trait_Jazz_TraitTracker_CurrentBonus_Damage@%"
+  },
+  "TFTEvent5YR_Consumable_Overlord_OverlordMarker": {
+    "name": "Selector de comandant",
+    "desc": "Folosește obiectul pe un campion pentru a-l transforma în comandant"
+  },
+  "TFTEvent_5YR_Item_TraitDemaciaActivator": {
+    "name": "Demacia",
+    "desc": "De fiecare dată când echipa ta pierde @TFTTrait.TFTEvent5YR_Demacia.1:MaxHealthLost*100@% viață maximă, aceasta se mobilizează, reducându-și costul de mană cu @TFTTrait.TFTEvent5YR_Demacia.1:ManaReductionPct*100@%. Echipa ta primește armură și rezistență la magie.<br><br><row>(@TFTTrait.TFTEvent5YR_Demacia.1:MinUnits@) @TFTTrait.TFTEvent5YR_Demacia.1:ArmorMR@&nbsp;%i:scaleArmor%%i:scaleMR%</row><br><row>(@TFTTrait.TFTEvent5YR_Demacia.2:MinUnits@) @TFTTrait.TFTEvent5YR_Demacia.2:ArmorMR@&nbsp;%i:scaleArmor%%i:scaleMR%. Îl deblochezi pe Galio. La mobilizare, reduci costurile de mană ale echipei tale cu @TFTTrait.TFTEvent5YR_Demacia.2:ManaReductionPctPerGalioItem*100@% pentru fiecare obiect echipat de cel mai puternic Galio și nimicești inamicii, provocându-le daune egale cu @TFTTrait.TFTEvent5YR_Demacia.2:EnemyTrueDamage*100@% din viața lor&nbsp;maximă.</row><br><br>"
+  },
+  "TFTEvent_5YR_Item_TraitRebelActivator": {
+    "name": "Rebel",
+    "desc": "Echipa ta primește un scut și amplificarea daunelor pentru fiecare aliat adiacent.<br><br><row>(@TFTTrait.TFTEvent5YR_Rebel.1:MinUnits@) @TFTTrait.TFTEvent5YR_Rebel.1:ShieldAmount@ Scut de @TFTTrait.TFTEvent5YR_Rebel.1:ShieldDuration@ secunde, @TFTTrait.TFTEvent5YR_Rebel.1:DamageAmp@% %i:scaleDA%</row><br><row>(@TFTTrait.TFTEvent5YR_Rebel.2:MinUnits@) @TFTTrait.TFTEvent5YR_Rebel.2:ShieldAmount@ Scut de @TFTTrait.TFTEvent5YR_Rebel.2:ShieldDuration@ secunde, @TFTTrait.TFTEvent5YR_Rebel.2:DamageAmp@% %i:scaleDA%</row>"
+  },
+  "TFTEvent5YR_Storyweaver3_AP": {
+    "name": "Talismanul tăriei",
+    "desc": "Le oferă lui Kayle și aliaților adiacenți ei de pe același rând @APAmt@ puterea abilităților."
+  },
+  "TFTEvent5YR_Storyweaver3_AS": {
+    "name": "Talismanul vitezei",
+    "desc": "Le oferă lui Kayle și aliaților adiacenți ei de pe același rând @ASAmt*100@% viteză de atac."
+  },
+  "TFTEvent_5YR_Item_TraitMaestroActivator": {
+    "name": "Maestru",
+    "desc": "Primești un ''Baston de maestru''.<br>Deținătorul are viteză de atac fixă și transformă viteza de atac bonus în daune din atac.<br><br>La fiecare @TFTTrait.TFTEvent5YR_Maestro.1:NumAutosToSpawnJhinGun@ atacuri, maestrul invocă o ''Pușcă pentru punctul culminant'' într-unul dintre locurile libere de pe bancă, până la 4. După ce invocă 4, acestea trag cu aceeași viteză ca maestrul și provoacă daune fizice. <br>Fiecare a 4-a rafală este <tftEvent5YRHarmonic>armonică</tftEvent5YRHarmonic>, provocând un procent din daunele totale pe care maestrul și ''Puștile'' sale le-au provocat de la ultima rafală armonică.<br><br><row>(@TFTTrait.TFTEvent5YR_Maestro.1:MinUnits@) @TFTTrait.TFTEvent5YR_Maestro.1:EmpoweredShotEchoDamagePercentage*100@% daune <tftEvent5YRHarmonic>armonice</tftEvent5YRHarmonic>.</row><br><row>(@TFTTrait.TFTEvent5YR_Maestro.2:MinUnits@) @TFTTrait.TFTEvent5YR_Maestro.2:EmpoweredShotEchoDamagePercentage*100@% daune <tftEvent5YRHarmonic>armonice</tftEvent5YRHarmonic>. <br>Maestrul poate invoca mai mult de 4 ''Puști''. Începutul luptei: invocă 1 ''Pușcă'' într-un loc liber de pe bancă.</row>"
+  },
+  "TFTEvent5YR_Consumable_MechPilot_PilotMarker": {
+    "name": "Selector de pilot",
+    "desc": "Folosește acest obiect pe un campion pentru a-l face pilotul Mecha.<br><br><tftitemrules> [Nu poate fi folosit pe campionii aflați în luptă.]</tftitemrules><br><tftitemrules> [Folosiri nelimitate.]</tftitemrules>"
+  },
+  "TFTEvent_5YR_Item_TraitEmpressActivator": {
+    "name": "Împărăteasă",
+    "desc": "Primești o ''Coroană de lavandă''. După primele @TFTTrait.TFTEvent5YR_Empress.1:DelayForInitialCoralSpawn@ secunde de luptă, invoci un coral din Vid lângă ținta actuală a deținătorului.<br>Deținătorul se deplasează instantaneu în locația coralului și îl consumă, primind viață maximă, daune din atac și puterea abilităților și provocându-le daune magice inamicilor aflați la cel mult @TFTTrait.TFTEvent5YR_Empress.1:HexRange@ hexagoane.<br><br><row>(@TFTTrait.TFTEvent5YR_Empress.1:MinUnits@) Coralul oferă o creștere de @TFTTrait.TFTEvent5YR_Empress.1:PercentBonusMaxHealth*100@% a vieții maxime, @TFTTrait.TFTEvent5YR_Empress.1:BonusAD*100@% %i:scaleAD% %i:scaleAP%.</row><br><row>(@TFTTrait.TFTEvent5YR_Empress.2:MinUnits@) Uciderile lasă acum în urmă corali suplimentari din Vid. Primul coral oferă o creștere de @TFTTrait.TFTEvent5YR_Empress.2:PercentBonusMaxHealth*100@% a vieții maxime și @TFTTrait.TFTEvent5YR_Empress.2:BonusAD*100@% %i:scaleAD% %i:scaleAP%; consumarea coralilor suplimentari vindecă deținătorul în valoare de @TFTTrait.TFTEvent5YR_Empress.2:PercentHealthHeal*100@% %i:scaleHealth% și oferă încă @TFTTrait.TFTEvent5YR_Empress.2:StackingBonusAD*100@% %i:scaleAD% %i:scaleAP%.</row>"
+  },
+  "TFTEvent5YR_Item_SevikasJinxedArm": {
+    "name": "Brațul făcut de Jinx al Sevikăi",
+    "desc": "În momentele indicate de caracteristica miză mare, reîncarcă o modificare aleatorie a lui Jinx:<br>– rachetă: lansează @TFTUnitProperty.item:TFTEvent5YR_HighRoller_NumRockets@ rachete spre inamici aleatorii, provocându-le<br>daune fizice în valoare de @TFTTrait.TFTEvent5YR_HighRoller.1:Spell1RocketADScalar*100@% din daunele din atac + @TFTTrait.TFTEvent5YR_HighRoller.1:Spell1RocketAPScalar*100@% din puterea abilităților per rachetă.<br>– scut: oferă un scut în valoare de @TFTUnitProperty.item:TFTEvent5YR_HighRoller_ShieldFlatAmount@ + @TFTUnitProperty.item:TFTEvent5YR_HighRoller_ShieldMaxHPPercentage@% din viața maximă timp de @TFTTrait.TFTEvent5YR_HighRoller.1:Spell2ShieldDuration@ secunde.<br>– aur: oferă @TFTUnitProperty.item:TFTEvent5YR_HighRoller_GoldAmount@ aur.<br>"
+  },
+  "TFTEvent5YR_Item_ShimmerscaleGoldmancersStaff": {
+    "name": "Toiagul alchimistului",
+    "desc": "Oferă %i:scaleAP% @AbilityPowerPerGold@ puterea abilităților per %i:goldCoins% aur din bancă (până la %i:goldCoins% @AbilityPowerGoldMax@) și ai @OnKillProcChance*100@% șanse să primești %i:goldCoins% @OnKillProcGold@ aur la uciderea unui inamic.<br><br><tftitemrules>Aur generat în acest joc: @TFTUnitProperty.item:TFT_Item_GoldGenerated@</tftitemrules>"
+  },
+  "TFTEvent_5YR_Item_TraitElderwoodActivator": {
+    "name": "Spirit al pădurii",
+    "desc": "La fiecare @TFTTrait.TFTEvent5YR_Elderwood.1:TickRate@ secunde, echipa ta crește în dimensiune și primește atribute bonus. Efectul se cumulează de maximum @TFTTrait.TFTEvent5YR_Elderwood.1:MaxStacks@ ori.<br><br><row>(@TFTTrait.TFTEvent5YR_Elderwood.1:MinUnits@) @TFTTrait.TFTEvent5YR_Elderwood.1:BonusResists@&nbsp;%i:scaleArmor%%i:scaleMR%, @TFTTrait.TFTEvent5YR_Elderwood.1:BonusADSP@&nbsp;%i:scaleAP%%i:scaleAD%</row><br><row>(@TFTTrait.TFTEvent5YR_Elderwood.2:MinUnits@) @TFTTrait.TFTEvent5YR_Elderwood.2:BonusResists@&nbsp;%i:scaleArmor%%i:scaleMR%, @TFTTrait.TFTEvent5YR_Elderwood.2:BonusADSP@&nbsp;%i:scaleAP%%i:scaleAD%</row>"
+  },
+  "TFTEvent5YR_Item_GlacialMallet": {
+    "name": "Ciocan glacial",
+    "desc": "Atacurile au @TFTUnitProperty.item:TFTEvent5YR_Glacial_StunChance@% șanse să amețească inamicii timp de @TFTTrait.TFTEvent5YR_Glacial.1:StunDuration@ secundă și să provoace @TFTUnitProperty.item:TFTEvent5YR_Glacial_BonusDamage@ daune magice bonus.<br><br><tftitemrules>[Unic – doar 1 per campion]</tftitemrules>"
+  },
+  "TFTEvent_5YR_Item_TraitBossActivator": {
+    "name": "Bătăușul-șef",
+    "desc": "Primești ''Pumnii șefului''. Când viața deținătorului scade prima oară sub @TFTTrait.TFTEvent5YR_Boss.1:HealthThreshold*100@%, acesta devine bătăușul-șef, părăsește lupta și începe să facă abdomene. Fiecare abdomen reface viață maximă și oferă viteză de atac. <br><br><row>(@TFTTrait.TFTEvent5YR_Boss.1:MinUnits@) @TFTTrait.TFTEvent5YR_Boss.1:HealPercent*100@% %i:scaleHealth%, @TFTTrait.TFTEvent5YR_Boss.1:AttackSpeedPercent*100@% %i:scaleAS%.</row><br><row>(@TFTTrait.TFTEvent5YR_Boss.2:MinUnits@) @TFTTrait.TFTEvent5YR_Boss.2:HealPercent*100@% %i:scaleHealth%, @TFTTrait.TFTEvent5YR_Boss.2:AttackSpeedPercent*100@% %i:scaleAS%. Dacă ajunge la viață completă, revine în luptă în forță, iar atacurile și abilitățile sale provoacă daune reale în valoare de @TFTTrait.TFTEvent5YR_Boss.2:TrueDamagePercentage*100@% din daune.</row>"
+  },
+  "TFTEvent_5YR_Item_TraitYordleActivator": {
+    "name": "Yordle",
+    "desc": "După fiecare luptă împotriva jucătorilor, primești o ''Punguță yordle'' plină de recompense de-ale yordelilor!<br><br><row>(@TFTTrait.TFTEvent5YR_Yordle.1:MinUnits@) Primești o ''Punguță yordle''!</row><br><row>(@TFTTrait.TFTEvent5YR_Yordle.2:MinUnits@) Dacă ai cel puțin @TFTTrait.TFTEvent5YR_Yordle.2:NumOfThreeStarsNeeded@ campioni de 3 stele, ''Punguța yordle'' va conține un lord yordle.</row>"
+  },
+  "TFTEvent_5YR_Item_TraitPhantomActivator": {
+    "name": "Fantomă",
+    "desc": "Începutul luptei: anumiți inamici aleși aleatoriu au viața redusă.<br><br><row>(@TFTTrait.TFTEvent5YR_Phantom.1:MinUnits@) Setează @TFTTrait.TFTEvent5YR_Phantom.1:NumUnitsToReduce@ viața inamicului la @TFTTrait.TFTEvent5YR_Phantom.1:PercentHealth*100@% viață maximă.</row><br><row>(@TFTTrait.TFTEvent5YR_Phantom.2:MinUnits@) Setează @TFTTrait.TFTEvent5YR_Phantom.2:NumUnitsToReduce@ viața inamicului la @TFTTrait.TFTEvent5YR_Phantom.2:FlatHealth@.</row>"
+  },
+  "TFTEvent_5YR_Item_TraitNitroActivator": {
+    "name": "Nitro",
+    "desc": "După fiecare luptă împotriva unui jucător, campionii tăi oferă crom către R-080T, în funcție de nivelul lor de stele. Fiecare cumul de crom oferă @TFTTrait.TFTEvent5YR_Nitro.:HealthPerScrap@ viață și @TFTTrait.TFTEvent5YR_Nitro.:APPerScrap@ puterea abilităților. <br><br><row>(@TFTTrait.TFTEvent5YR_Nitro.1:MinUnits@) Invoci R-080T!</row><br><row>(@TFTTrait.TFTEvent5YR_Nitro.2:MinUnits@) Îmbunătățești R-080T în T-43X! La @TFTTrait.TFTEvent5YR_Nitro.:FourStarScrapThreshold@ crom, îmbunătățești T-43X pentru a trage cu un laser uriaș!</row><br><br><rules>Crom per stea: @TFTTrait.TFTEvent5YR_Nitro.:ScrapPerOneStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerTwoStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerThreeStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerFourStar@</rules>"
+  },
+  "TFTEvent_5YR_Item_TraitHellionActivator": {
+    "name": "Năpastă",
+    "desc": "De fiecare dată când moare un campion aliat, o copie (cu o stea mai slabă) echipată cu ''Buff-ul roșu'' va sări dintr-un portal al năpastei și se va alătura luptei!<br><br><row>(@TFTTrait.TFTEvent5YR_Hellion.1:MinUnits@) Primii @TFTTrait.TFTEvent5YR_Hellion.1:NumOfUnits@ campioni</row><br><row>(@TFTTrait.TFTEvent5YR_Hellion.2:MinUnits@) Primii @TFTTrait.TFTEvent5YR_Hellion.2:NumOfUnits@ campioni</row>"
+  },
+  "TFTEvent5YR_Storyweaver5_AS": {
+    "name": "Pergamentul rapidității",
+    "desc": "Atacurile îi oferă lui Kayle @ASAmt*100@% viteză de atac cumulativă."
+  },
+  "TFTEvent5YR_Storyweaver5_AP": {
+    "name": "Pergamentul forței",
+    "desc": "Abilitatea lui Kayle are efect într-o zonă mai mare și provoacă cu @APAmt*100@% mai multe daune."
+  },
+  "TFTEvent_5YR_Item_TraitCrystalActivator": {
+    "name": "Cristal",
+    "desc": "Tancurile tale au o cantitate maximă de daune pe care o pot suferi dintr-un singur atac sau o singură abilitate în primele câteva secunde de luptă.<br><br><row>(@TFTTrait.TFTEvent5YR_Crystal.1:MinUnits@) @TFTTrait.TFTEvent5YR_Crystal.1:DamageThreshold@ daune maxime, @TFTTrait.TFTEvent5YR_Crystal.1:Duration@ secunde.</row><br><row>(@TFTTrait.TFTEvent5YR_Crystal.2:MinUnits@) @TFTTrait.TFTEvent5YR_Crystal.2:DamageThreshold@ daune maxime, @TFTTrait.TFTEvent5YR_Crystal.2:Duration@ secunde.</row>"
+  },
+  "TFTEvent5YR_Storyweaver3_Support": {
+    "name": "Talismanul salvării",
+    "desc": "Atacurile și abilitățile lui Kayle care provoacă daune <TFTKeyword>fragmentează</TFTKeyword> și <TFTKeyword>sfâșie</TFTKeyword> inamicii cu @ResistPercent*100@% timp de @Duration@ secunde."
+  },
+  "TFTEvent_5YR_Item_TraitBilgewaterActivator": {
+    "name": "Bilgewater",
+    "desc": "Atacurile și abilitățile echipei tale însemnează inamicii. Însemnul înmagazinează un anumit procent din daunele provocate inamicului.<br><br>După @TFTTrait.TFTEvent5YR_Bilgewater.1:BarrageInterval@ secunde, inamicii însemnați sunt loviți de o ghiulea care le provoacă <physicalDamage>daune fizice</physicalDamage> egale cu daunele înmagazinate, plus o valoare fixă.<br><br><row>(@TFTTrait.TFTEvent5YR_Bilgewater.1:MinUnits@) @TFTTrait.TFTEvent5YR_Bilgewater.1:Damage@ + @TFTTrait.TFTEvent5YR_Bilgewater.1:DamagePercent@% din daunele provocate</row><br><row>(@TFTTrait.TFTEvent5YR_Bilgewater.2:MinUnits@) @TFTTrait.TFTEvent5YR_Bilgewater.2:Damage@ + @TFTTrait.TFTEvent5YR_Bilgewater.2:DamagePercent@% din daunele provocate. Fiecare a @TFTTrait.TFTEvent5YR_Bilgewater.2:ShotsUntilTreasure@-a ghiulea este înlocuită cu un cufăr care oferă aur!</row>"
+  },
+  "TFTEvent_5YR_Item_TraitHackerActivator": {
+    "name": "Hacker",
+    "desc": "Echipa ta primește omni-vampirism și invocă un H4ckerr!m. Inamicii prin care trece sunt H4cku1ți și pierd @TFTTrait.TFTEvent5YR_Hacker.1:PercentArmorToRemove*100@% din armură și din rezistența la magie. <br><br><row>(@TFTTrait.TFTEvent5YR_Hacker.1:MinUnits@) @TFTTrait.TFTEvent5YR_Hacker.1:Omnivamp*100@% %i:scaleSV%</row><br><row>(@TFTTrait.TFTEvent5YR_Hacker.2:MinUnits@) @TFTTrait.TFTEvent5YR_Hacker.2:Omnivamp*100@% %i:scaleSV%, ȘI vezi cine e următorul tău adversar. Primiți un hexagon al călărețului, care trimite unitatea sa în linia din spate inamică la începutul luptei. Călărețul primește în schimb @TFTTrait.TFTEvent5YR_Hacker.2:Horsevamp*100@% %i:scaleSV% și uciderile sale au @TFTTrait.TFTEvent5YR_Hacker.2:PercentChanceToDropGoldOnKill*100@% șanse să ofere 1 aur.<br><br>Aur câștigat în total: @TFTUnitProperty.trait:TFTEvent5YR_Hacker_RiderGold_Earned@</row>"
+  },
+  "TFTEvent_5YR_Item_TraitFatedActivator": {
+    "name": "Sortit",
+    "desc": "Trage un campion peste altul pentru a-i transforma în pereche și a debloca un <TFTBonus>bonus pentru sortiți</TFTBonus>, în funcție de rolul campionilor.<br><br><row>(@TFTTrait.TFTEvent5YR_Fated.1:MinUnits@) Perechea primește bonusul sortiților și @TFTTrait.TFTEvent5YR_Fated.1:PairHPBonus*100@% viață maximă. </row><br><row>(@TFTTrait.TFTEvent5YR_Fated.2:MinUnits@) TOATE unitățile primesc bonusul sortiților. Perechea primește @TFTTrait.TFTEvent5YR_Fated.1:PairHPBonus*100@% viață maximă și @TFTTrait.TFTEvent5YR_Fated.2:PairBondIncreasePercent*100@% din bonusul sortiților. </row><br><br>Bonusurile sortiților:<br><ShowIf.TFTEvent5YR_Trait_Fated_AssassinActive><status>Asasini</status>: scut de @TFTTrait.TFTEvent5YR_Fated.1:YasuoBuffBonus@ la începutul luptei</ShowIf.TFTEvent5YR_Trait_Fated_AssassinActive><br><ShowIf.TFTEvent5YR_Trait_Fated_CasterActive><status>Magi</status>: @TFTTrait.TFTEvent5YR_Fated.1:AhriBuffBonus*100@% %i:scaleAD% %i:scaleAP%</ShowIf.TFTEvent5YR_Trait_Fated_CasterActive><br><ShowIf.TFTEvent5YR_Trait_Fated_FighterActive><status>Luptători</status>: @TFTTrait.TFTEvent5YR_Fated.1:SettBuffBonus*100@% %i:scaleSV%</ShowIf.TFTEvent5YR_Trait_Fated_FighterActive><br><ShowIf.TFTEvent5YR_Trait_Fated_MarksmanActive><status>Țintași</status>: @TFTTrait.TFTEvent5YR_Fated.1:KindredBuffBonus*100@% %i:scaleAS%</ShowIf.TFTEvent5YR_Trait_Fated_MarksmanActive><br><ShowIf.TFTEvent5YR_Trait_Fated_SpecialistActive><status>Specialiști</status>: provoacă @TFTTrait.TFTEvent5YR_Fated.1:SyndraBuffBonus*100@% din daune ca daune reale</ShowIf.TFTEvent5YR_Trait_Fated_SpecialistActive><br><ShowIf.TFTEvent5YR_Trait_Fated_TankActive><status>Tancuri</status>: @TFTTrait.TFTEvent5YR_Fated.1:ThreshBuffBonus@ %i:scaleArmor% %i:scaleMR%</ShowIf.TFTEvent5YR_Trait_Fated_TankActive><br><br>Unitățile tale pot beneficia doar de o singură instanță a unui anumit bonus al sortiților."
+  },
+  "TFTEvent_5YR_Item_TraitPreserverActivator": {
+    "name": "Reînnoitor",
+    "desc": "Echipa ta își reface un procentaj din viața maximă la fiecare @TFTTrait.TFTEvent5YR_Preserver.1:Duration@ secunde. Dacă un campion are viața completă, își reface mană.<br><br><row> (@TFTTrait.TFTEvent5YR_Preserver.1:MinUnits@) @TFTTrait.TFTEvent5YR_Preserver.1:HealthPct*100@% %i:scaleHealth% sau @TFTTrait.TFTEvent5YR_Preserver.1:ManaPct*100@% %i:scaleMana%.</row><br><row> (@TFTTrait.TFTEvent5YR_Preserver.2:MinUnits@) @TFTTrait.TFTEvent5YR_Preserver.2:HealthPct*100@% %i:scaleHealth% și @TFTTrait.TFTEvent5YR_Preserver.2:ManaPct*100@% %i:scaleMana%. Obții mereu ambele.</row><br><br>"
+  },
+  "TFTEvent_5YR_Item_TraitHighRollerActivator": {
+    "name": "Miză mare",
+    "desc": "Primești ''Brațul făcut de Jinx al Sevikăi''!<br><br>Începutul luptei: reîncarcă o modificare aleatorie a lui Jinx. Reîncarcă alta:<br><row>(@TFTTrait.TFTEvent5YR_HighRoller.1:MinUnits@) după @TFTTrait.TFTEvent5YR_HighRoller.1:RollingFrequency@ secunde.</row><br><row>(@TFTTrait.TFTEvent5YR_HighRoller.2:MinUnits@) la fiecare @TFTTrait.TFTEvent5YR_HighRoller.2:RollingFrequency@ secunde. Modificările sunt mai puternice, iar deținătorul poate obține acum ''Potul lui Jinx''!</row><br><br>Modificări:<br>- Rachetă: lansează rachete către inamici aleatorii. <br>-Scut: oferă un scut timp de @TFTTrait.TFTEvent5YR_HighRoller.1:Spell2ShieldDuration@ secunde.<br>- Monedă: primești aur.<br><br>Rachete lansate: @TFTUnitProperty.trait:TFTEvent5YR_HighRoller_RocketsFired@<br>Scuturi primite: @TFTUnitProperty.trait:TFTEvent5YR_HighRoller_ShieldsGained@<br>Aur obținut: @TFTUnitProperty.trait:TFTEvent5YR_HighRoller_GoldGained@<br>Poturi obținute: @TFTUnitProperty.trait:TFTEvent5YR_HighRoller_JackpotsHit@"
+  },
+  "TFTEvent5YR_Item_BossKnuckles": {
+    "name": "Pumnii șefului",
+    "desc": "O dată pe rundă, la 60% viață, devine bătăușul-șef, părăsește lupta și începe să facă abdomene. Fiecare abdomen reface @TFTUnitProperty.item:TFTEvent5YR_Boss_HealPercent@% din viața maximă și oferă @TFTUnitProperty.item:TFTEvent5YR_Boss_AttackSpeedPercent@% viteză de atac. Dacă toți aliații săi mor, bătăușul-șef revine imediat în luptă.<br><br><tftitemrules>[Unic – doar 1 per campion]</tftitemrules>"
+  },
+  "TFTEvent_5YR_Item_TraitTrainerActivator": {
+    "name": "Îmblânzitor",
+    "desc": "După luptă, primii 3 campioni care sunt cel mai aproape de Nomsy o hrănesc cu 1 gustare per nivel de stele, adăugându-i viață și puterea abilităților. Nivelul de stele al lui Nomsy crește la fiecare 25 de gustări!<br><br><row>(@TFTTrait.TFTEvent5YR_Trainer.1:MinUnits@) O invocă pe Nomsy!</row><br><row>(@TFTTrait.TFTEvent5YR_Trainer.2:MinUnits@) Abilitatea lui Nomsy provoacă @TFTTrait.TFTEvent5YR_Trainer.2:DamageInc*100@% daune bonus</row>"
+  },
+  "TFTEvent_5YR_Item_TraitShurimaActivator": {
+    "name": "Shurima",
+    "desc": "Începutul luptei: anumiți campioni sunt iluminați și primesc @TFTTrait.TFTEvent5YR_Shurima.1:BonusHealthPercent*100@% viață maximă %i:scaleHealth% și @TFTTrait.TFTEvent5YR_Shurima.1:BonusASPercent*100@% viteză de atac %i:scaleAS%.<br><br><row>(@TFTTrait.TFTEvent5YR_Shurima.1:MinUnits@) Cel mai puternic campion este iluminat după @TFTTrait.TFTEvent5YR_Shurima.1:SecondsToAscend@ secunde. </row><br><row>(@TFTTrait.TFTEvent5YR_Shurima.2:MinUnits@) Cei mai puternici @TFTTrait.TFTEvent5YR_Shurima.2:NumUnitsToAscend@ campioni sunt iluminați imediat.</row><br>"
+  },
+  "TFTEvent5YR_Item_LavenderCrown": {
+    "name": "Coroana levănțicii",
+    "desc": "Când deținătorul consumă un coral din Vid, se deplasează instantaneu în locația acestuia și le provoacă @TFTTrait.TFTEvent5YR_Empress.1:PercentADDamage*100@% %i:scaleAD% + @TFTTrait.TFTEvent5YR_Empress.1:PercentAPDamage*100@% %i:scaleAP% daune magice inamicilor aflați pe o rază de @TFTTrait.TFTEvent5YR_Empress.1:HexRange@ hexagoane.<br><br>Consumarea primului coral din Vid crește viața maximă a deținătorului cu @TFTUnitProperty.item:TFTEvent5YR_Empress_FirstCoralHealthPercentageIncrease@% și oferă @TFTUnitProperty.item:TFTEvent5YR_Empress_FirstCoralADIncrease@% %i:scaleAD% și @TFTUnitProperty.item:TFTEvent5YR_Empress_FirstCoralAPIncrease@% %i:scaleAP%.<br><br>@TFTUnitProperty.item:TFTEvent5YR_Empress_PrismaticItemTooltipFooter@"
+  },
+  "TFTEvent_5YR_Item_TraitOverlordActivator": {
+    "name": "Comandant",
+    "desc": "Folosește ''Selectorul de comandant'' pentru a alege un comandant.<br><br>Comandantul mușcă din unitatea aflată pe hexagonul din spatele lui, provocându-i daune reale acelei unități.<br>Comandantul primește o cantitate de viață egală cu daunele provocate de mușcătură și obține un procent din daunele din atac și puterea abilităților acelei unități.<br><br><row>(@TFTTrait.TFTEvent5YR_Overlord.1:MinUnits@) Daune reale de @TFTTrait.TFTEvent5YR_Overlord.1:HPPercentDamage*100@% din viața maximă, @TFTTrait.TFTEvent5YR_Overlord.1:PercentADAPGain*100@% %i:scaleAD%%i:scaleAP%</row> <br><row>(@TFTTrait.TFTEvent5YR_Overlord.2:MinUnits@) Daune reale de @TFTTrait.TFTEvent5YR_Overlord.2:HPPercentDamage*100@% din viața maximă, @TFTTrait.TFTEvent5YR_Overlord.2:PercentADAPGain*100@% %i:scaleAD%%i:scaleAP%. <br>Mușcă din două unități. Daunele provocate de atacurile și abilitățile comandantului <TFTKeyword>fragmentează</TFTKeyword> cu 30%, <TFTKeyword>sfâșie</TFTKeyword> cu 30%, <TFTKeyword>slăbesc</TFTKeyword> cu @TFTTrait.TFTEvent5YR_Overlord.2:EnemyDamageReduction*100@% și <TFTKeyword>rănesc</TFTKeyword> cu 33% inamicii timp de @TFTTrait.TFTEvent5YR_Overlord.2:DebuffDuration@ secunde. Aceste efecte nu se cumulează.</row><br><br><tftitemrules><tftbold>Fragmentare</tftbold>: reduce rezistența la magie<br><tftbold>Sfâșiere</tftbold>: reduce armura<br><tftbold>Slăbire</tftbold>: reduce daunele provocate<br><tftbold>Rănire</tftbold>: reduce vindecarea primită</tftitemrules><br>"
+  },
+  "TFTEvent5YR_Item_TrainerSnax": {
+    "name": "Gustare delicioasă",
+    "desc": "Nomsy trebuie să mai mănânce atâtea gustări pentru a crește în nivel!<br><br><tftitemrules>[Acesta nu este considerat un obiect.]</tftitemrules>"
+  },
+  "TFTEvent5YR_Item_ShimmerscaleDravensAxe": {
+    "name": "Securea lui Draven",
+    "desc": "Deținătorul primește %i:scaleAD% @AttackDamagePerGold@% daune din atac per %i:goldCoins% aur din bancă (până la %i:goldCoins% @AttackDamageGoldLimit@ aur).<br><br>Atacurile oferă @StacksPerAttack@ cumul, de până la @CashoutStacks@ ori. La cumuluri maxime, oferă %i:goldCoins% @CashoutGold@ aur.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules><br><tftitemrules>Aur generat în acest meci: @TFTUnitProperty.item:TFT_Item_GoldGenerated@</tftitemrules>"
+  },
+  "TFTEvent_5YR_Item_TraitImperialActivator": {
+    "name": "Imperial",
+    "desc": "Începutul luptei: anumiți campioni primesc @TFTTrait.TFTEvent5YR_Imperial.1:DamageAmp*100@% %i:scaleDA%.<br><br><row>(@TFTTrait.TFTEvent5YR_Imperial.1:MinUnits@) @TFTTrait.TFTEvent5YR_Imperial.1:NumOfUnits@ campioni aleatorii.</row><br><row>(@TFTTrait.TFTEvent5YR_Imperial.2:MinUnits@) @TFTTrait.TFTEvent5YR_Imperial.2:NumOfUnits@ campioni aleatorii.</row>"
+  },
+  "TFTEvent_5YR_Item_TraitCovenActivator": {
+    "name": "Sabat",
+    "desc": "Unitatea cea mai apropiată de centrul echipei este aleasă ca lider al vrăjitoarelor, primind puterea abilităților bonus.<br><br>Când echipa ta folosește o abilitate, liderul vrăjitoarelor primește mană.<br><br><row>(@TFTTrait.TFTEvent5YR_Coven.1:MinUnits@) @TFTTrait.TFTEvent5YR_Coven.1:AbilityPower@ %i:scaleAP%,  @TFTTrait.TFTEvent5YR_Coven.1:ManaToGive@ %i:scaleMana% </row><br><row>(@TFTTrait.TFTEvent5YR_Coven.2:MinUnits@) @TFTTrait.TFTEvent5YR_Coven.2:AbilityPower@ %i:scaleAP%,  @TFTTrait.TFTEvent5YR_Coven.2:ManaToGive@ %i:scaleMana% </row>"
+  },
+  "TFTEvent5YR_Item_ShimmerscaleCrownOfChampions": {
+    "name": "Coroana campionilor",
+    "desc": "La fiecare @SecondsForEmpoweredAttack@ secunde, următorul atac provoacă daune reale în valoare de @AttackGoldMultiplier@ x %i:goldCoins% aurul din bancă.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules><br><tftitemrules>Nu provoacă daune dacă ai 0 aur.</tftitemrules>"
+  },
+  "TFTEvent_5YR_Item_TraitGhostlyActivator": {
+    "name": "Fantomă",
+    "desc": "Când provoacă sau suferă daune de @TFTTrait.TFTEvent5YR_Ghostly:NumInstances@ ori, unitățile trimit @TFTTrait.TFTEvent5YR_Ghostly:NumSpectres@ spectre să bântuie inamicii din apropiere și își vindecă @TFTTrait.TFTEvent5YR_Ghostly:HealingPercent*100@%&nbsp;din viața maximă la fiecare @TFTTrait.TFTEvent5YR_Ghostly:TickRate@ secunde. <br><br>Inamicii bântuiți suferă daune bonus pentru fiecare spectru care îi bântuie și le transferă aliaților spectrele atunci când mor.<br><br><row>(@TFTTrait.TFTEvent5YR_Ghostly.1:MinUnits@) @TFTTrait.TFTEvent5YR_Ghostly.1:DamagePercent*100@% per spectru</row><br><row>(@TFTTrait.TFTEvent5YR_Ghostly.2:MinUnits@) @TFTTrait.TFTEvent5YR_Ghostly.2:DamagePercent*100@% per spectru</row>"
+  },
+  "TFTEvent_5YR_Item_TraitLaserCorpsActivator": {
+    "name": "LaserCorps",
+    "desc": "Echipa ta primește drone cu laser. Când o unitate atacă sau este lovită cu un atac, drona sa îi provoacă daune magice țintei (timp de reactivare: @TFTTrait.TFTEvent5YR_LaserCorps.1:ICD@ sec.). La moartea deținătorului, drona este reatribuită altui coechipier.<br><br><row>(@TFTTrait.TFTEvent5YR_LaserCorps.1:MinUnits@) @TFTTrait.TFTEvent5YR_LaserCorps.1:MagicDamage@ daune magice. </row><br><row>(@TFTTrait.TFTEvent5YR_LaserCorps.2:MinUnits@) @TFTTrait.TFTEvent5YR_LaserCorps.2:MagicDamage@ daune magice. Toate unitățile primesc o dronă suplimentară.</row><br>"
+  },
+  "TFTEvent_SF_Item_PowerUp_Rank4": {
+    "name": "Coroana sufletelor",
+    "desc": "Împiedică prima moarte a deținătorului. După ce învie (după 2 secunde), deținătorul scapă de toate efectele negative și primește <active>@TFTUnitProperty.item:TFT_Event_SF_SoulCrownHealthRestore@</active> viață (puterea sufletului dublată).<br><br>Adaugă +1 la ultima caracteristică din listă (cu excepția caracteristicilor unice).<br><br><tftitemrules> [Nu poate fi folosit pe campionii aflați în luptă.]</tftitemrules><br><tftitemrules> [Folosiri nelimitate.]</tftitemrules>"
+  },
+  "TFTEvent_SF_Item_PowerUp_Rank1": {
+    "name": "Coroana imperfectă a sufletelor",
+    "desc": "Adaugă +1 la ultima caracteristică din listă (cu excepția caracteristicilor unice).<br><br><tftitemrules>Un efect nou se deblochează odată cu startul turneului (4-1).</tftitemrules><br><br><tftitemrules> [Nu poate fi folosit pe campionii aflați în luptă.]</tftitemrules><br><tftitemrules> [Folosiri nelimitate.]</tftitemrules>"
+  },
+  "TFTEventCT_Item_HextechSniper": {
+    "name": "Pușcă hextech cu lunetă",
+    "desc": "Începutul luptei: trage un glonț de lunetist care execută instantaneu inamicii."
+  },
+  "TFTEventCT_Encounter_ChoiceItem_RandomComponents": {
+    "name": "Primești 2 componente de obiect aleatorii.",
+    "desc": null
+  },
+  "TFTEventCT_Encounter_ChoiceItem_Recombobulate": {
+    "name": "Recombină-ți tabla. Primești o ''Refăurire''. ",
+    "desc": null
+  },
   "TFT14_CypherItem_Golem_KineticLauncherRockets": {
     "name": "Lansator de rachete cinetice",
     "desc": "Când atacă, aruncă în sus inamicii."
@@ -8006,194 +8418,6 @@
   "TFT15_General_Consumable_Debuff": {
     "name": "tft15_General_itemname_Debuff",
     "desc": "tft15_General_itemdescription_Debuff"
-  },
-  "TFTEvent_5YR_Item_TraitMascotActivator": {
-    "name": "Mascotă",
-    "desc": "Echipa ta își reface un procent din viața maximă la fiecare @TFTTrait.TFTEvent5YR_Mascot.1:Seconds@ secunde.<br><br>Când mor, campionii se retrag pe margine ca să facă galerie echipei. Vindecarea echipei tale crește pentru fiecare campion care face galerie.<br><br><row> (@TFTTrait.TFTEvent5YR_Mascot.1:MinUnits@) @TFTTrait.TFTEvent5YR_Mascot.1:BaseHealthRegen@% %i:scaleHealth% de bază, @TFTTrait.TFTEvent5YR_Mascot.1:HealthRegenPerMascot@% %i:scaleHealth% per campion care face galerie</row><br><row> (@TFTTrait.TFTEvent5YR_Mascot.2:MinUnits@) @TFTTrait.TFTEvent5YR_Mascot.2:BaseHealthRegen@% %i:scaleHealth% de bază, @TFTTrait.TFTEvent5YR_Mascot.2:HealthRegenPerMascot@% %i:scaleHealth% per campion care face galerie</row>"
-  },
-  "TFTEvent5YR_Storyweaver7_Support": {
-    "name": "Tomul tămăduirii",
-    "desc": "La fiecare @Duration@ secunde, învie cel mai puternic aliat care nu a fost înviat încă, cu @HPPercent*100@% din viața sa maximă."
-  },
-  "TFTEvent_5YR_Item_TraitDragonlordActivator": {
-    "name": "Lord al dragonilor",
-    "desc": "După @TFTTrait.TFTEvent5YR_Dragonlord.1:FirstDelay@ secunde de luptă, dragonul lovește tabla, provocându-le <trueDamage>daune reale</trueDamage> tuturor inamicilor și amețindu-i. Aliații primesc viteză de atac pentru restul luptei.<br><br><row>(@TFTTrait.TFTEvent5YR_Dragonlord.1:MinUnits@) @TFTTrait.TFTEvent5YR_Dragonlord.1:TrueDamageHPRatio*100@% %i:scaleHealth% daune, amețire timp de @TFTTrait.TFTEvent5YR_Dragonlord.1:StunDuration@ secunde, @TFTTrait.TFTEvent5YR_Dragonlord.1:AttackSpeedBuff*100@% %i:scaleAS%.</row><br><row>(@TFTTrait.TFTEvent5YR_Dragonlord.2:MinUnits@) @TFTTrait.TFTEvent5YR_Dragonlord.2:TrueDamageHPRatio*100@% %i:scaleHealth% daune, amețire timp de @TFTTrait.TFTEvent5YR_Dragonlord.2:StunDuration@ secunde, @TFTTrait.TFTEvent5YR_Dragonlord.2:AttackSpeedBuff*100@% %i:scaleAS%.<br>După încă @TFTTrait.TFTEvent5YR_Dragonlord.2:SecondDelay@ secunde, dragonul lovește din nou.</row><br><br>"
-  },
-  "TFTEvent_5YR_Item_TraitSocialiteActivator": {
-    "name": "Monden",
-    "desc": "Primești un hexagon iluminat.<br>Începutul luptei: unitatea aflată pe hexagonul iluminat primește atribute bonus.<br><br><row>(@TFTTrait.TFTEvent5YR_Socialite.1:MinUnits@) @TFTTrait.TFTEvent5YR_Socialite.1:DamagePercent*100@% %i:scaleDA% și @TFTTrait.TFTEvent5YR_Socialite.1:ManaPerSecond@&nbsp;%i:scaleMana% pe secundă.</row><br><row>(@TFTTrait.TFTEvent5YR_Socialite.2:MinUnits@) @TFTTrait.TFTEvent5YR_Socialite.2:DamagePercent*100@% %i:scaleDA%, @TFTTrait.TFTEvent5YR_Socialite.2:ManaPerSecond@&nbsp;%i:scaleMana% pe secundă și @TFTTrait.TFTEvent5YR_Socialite.2:OmnivampPercent*100@% %i:scaleSV%. Primești încă un hexagon iluminat.</row>"
-  },
-  "TFTEvent5YR_Storyweaver7_AP": {
-    "name": "Tomul puterii",
-    "desc": "Kayle provoacă cu @DamageAmpPercent*100@% mai multe daune. Când își folosește abilitatea, lansează două valuri."
-  },
-  "TFTEvent5YR_Storyweaver7_AS": {
-    "name": "Tomul agilității",
-    "desc": "Kayle provoacă cu @DamageAmpPercent*100@% mai multe daune. Atacurile ei lovesc acum pe o rază de @HexRadius@ hexagoane în jurul țintei."
-  },
-  "TFTEvent_5YR_Item_TraitMountainActivator": {
-    "name": "Munți",
-    "desc": "Primești 2 hexagoane ale muntelui pe rândul din față.<br>Începutul luptei: unitățile situate pe un hexagon al muntelui primesc un scut și viață bonus permanentă.<br><br><row>(@TFTTrait.TFTEvent5YR_Mountain.1:MinUnits@) @TFTTrait.TFTEvent5YR_Mountain.1:ShieldValue@ scut, @TFTTrait.TFTEvent5YR_Mountain.1:PermBonusHealth@ %i:scaleHealth%. </row><br><row>(@TFTTrait.TFTEvent5YR_Mountain.2:MinUnits@) @TFTTrait.TFTEvent5YR_Mountain.2:ShieldValue@ scut, @TFTTrait.TFTEvent5YR_Mountain.2:PermBonusHealth@ %i:scaleHealth%. Toate hexagoanele de pe primul rând devin hexagoane ale muntelui.</row>"
-  },
-  "TFTEvent_5YR_Item_TraitShimmerscaleActivator": {
-    "name": "Solzi sclipitori",
-    "desc": "Primești obiecte solzi sclipitori, care oferă aur și măresc puterea echipei.<br><br><row>(@TFTTrait.TFTEvent5YR_Shimmerscale.1:MinUnits@)Primești ''Toiagul alchimistului''. În etapa @TFTTrait.TFTEvent5YR_Shimmerscale.1:SecondItemStage@-@TFTTrait.TFTEvent5YR_Shimmerscale.1:SecondItemRound@, primești ''Securea lui Draven''.</row><br><row>(@TFTTrait.TFTEvent5YR_Shimmerscale.2:MinUnits@)Primești ''Coroana campionilor''.</row>"
-  },
-  "TFTEvent_5YR_Item_TraitConquerorActivator": {
-    "name": "Cuceritor",
-    "desc": "Doborârile echipei tale oferă cumuluri de ''Cucerire''. După ce primești suficientă ''Cucerire'', deschizi un ''Cufăr de război'' plin cu recompense!<br><br>Echipa ta primește daune din atac și puterea abilităților, valoare ce crește cu @TFTTrait.TFTEvent5YR_Conqueror:PercentIncreasePerChest*100@% pentru fiecare ''Cufăr de război'' deschis.<br><br><row>(@TFTTrait.TFTEvent5YR_Conqueror.1:MinUnits@) @TFTTrait.TFTEvent5YR_Conqueror.1:ADAPBase*100@%&nbsp;%i:scaleAD%%i:scaleAP%; @TFTTrait.TFTEvent5YR_Conqueror.1:StacksPerKill@x&nbsp;''Cucerire''</row><br><row>(@TFTTrait.TFTEvent5YR_Conqueror.2:MinUnits@) @TFTTrait.TFTEvent5YR_Conqueror.2:ADAPBase*100@%&nbsp;%i:scaleAD%%i:scaleAP%; @TFTTrait.TFTEvent5YR_Conqueror.2:StacksPerKill@x&nbsp;''Cucerire''</row><br><br><rules>''Cufere de război'' deschise: @TFTUnitProperty.trait:TFTEvent5YR_Conqueror_ChestsCompleted@</rules><br><rules>Atribute actuale: @TFTUnitProperty.trait:TFTEvent5YR_Conqueror_CurrentADAP@%&nbsp;%i:scaleAD%%i:scaleAP%</rules><br>"
-  },
-  "TFTEvent_5YR_Item_TraitPunkActivator": {
-    "name": "Punk",
-    "desc": "Echipa ta primește viață bonus, daune din atac și puterea abilităților, valoare ce crește cu 1% de fiecare dată când cheltui aur pe o reîncărcare a magazinului.<br><br>După fiecare luptă, prima reîncărcare a magazinului din acea rundă costă 1 aur. Prima reîncărcare din fiecare rundă oferă @TFTTrait.TFTEvent5YR_Punk:FIRST_ROLL_BONUS@% bonus!<br><br><row>(@TFTTrait.TFTEvent5YR_Punk.1:MinUnits@)@TFTTrait.TFTEvent5YR_Punk.1:BONUS_HEALTH@ %i:scaleHealth% și @TFTTrait.TFTEvent5YR_Punk.1:BONUS_AD_AP*100@% %i:scaleAD%%i:scaleAP%</row><br><row>(@TFTTrait.TFTEvent5YR_Punk.2:MinUnits@)@TFTTrait.TFTEvent5YR_Punk.2:BONUS_HEALTH@ %i:scaleHealth% și @TFTTrait.TFTEvent5YR_Punk.2:BONUS_AD_AP*100@% %i:scaleAD%%i:scaleAP%</row><br><br>Bonus actual: @TFTUnitProperty.trait:TFTEvent5YR_Punk_CurrentBonus@%<br>@TFTUnitProperty.trait:TFTEvent5YR_Punk_CurrentHealthBonus@ %i:scaleHealth% și @TFTUnitProperty.trait:TFTEvent5YR_Punk_CurrentADBonus@% %i:scaleAD%%i:scaleAP%"
-  },
-  "TFTEvent_5YR_Item_TraitStoryweaverActivator": {
-    "name": "Țesător de povești",
-    "desc": "Invoci o eroină numită Kayle și o evoluezi pe măsură ce crești în nivel!<br><br><row>(@TFTTrait.TFTEvent5YR_Storyweaver.1:MinUnits@) Când ajungi la nivelul @TFTTrait.TFTEvent5YR_Storyweaver:FirstArmoryLevel@, Kayle se îmbunătățește la 2 stele. Alege un efect de sprijin.</row><br><row>(@TFTTrait.TFTEvent5YR_Storyweaver.2:MinUnits@) Kayle evoluează din nou la nivelurile @TFTTrait.TFTEvent5YR_Storyweaver:SecondArmoryLevel@, @TFTTrait.TFTEvent5YR_Storyweaver:ThirdArmoryLevel@ și @TFTTrait.TFTEvent5YR_Storyweaver:FourStarUpgradeLevel@:<br>Nivelul @TFTTrait.TFTEvent5YR_Storyweaver:SecondArmoryLevel@: alege un efect pentru luptă. <br>Nivelul @TFTTrait.TFTEvent5YR_Storyweaver:ThirdArmoryLevel@: Kayle se îmbunătățește la 3 stele. Alege un efect pentru luptă.<br>Nivelul @TFTTrait.TFTEvent5YR_Storyweaver:FourStarUpgradeLevel@: Kayle se îmbunătățește la 4 stele.</row><br>"
-  },
-  "TFTEvent_5YR_Item_TraitGlacialActivator": {
-    "name": "Glacial",
-    "desc": "Primești un ''Ciocan glacial''. Atacurile de bază ale campionilor echipați cu un ''Ciocan'' au @TFTTrait.TFTEvent5YR_Glacial.1:ProcPercent*100@% șanse să amețească ținta timp de @TFTTrait.TFTEvent5YR_Glacial.1:StunDuration@ secunde și să provoace daune magice bonus. <br><br><row>(@TFTTrait.TFTEvent5YR_Glacial.1:MinUnits@) @TFTTrait.TFTEvent5YR_Glacial.1:BonusDamage@ daune magice.</row><br><row>(@TFTTrait.TFTEvent5YR_Glacial.2:MinUnits@) @TFTTrait.TFTEvent5YR_Glacial.2:BonusDamage@ daune magice. Primești încă un ''Ciocan glacial''.</row>"
-  },
-  "TFTEvent_5YR_Item_TraitMechPilotActivator": {
-    "name": "Pilot Mecha",
-    "desc": "Folosește ''Selectorul de pilot'' pentru a alege un pilot. Începutul luptei: pilotul sare într-un robot Mecha.<br><br>Robotul Mecha are aceleași caracteristici și obiecte ca pilotul și primește un procent din daunele din atac și viața maximă ale pilotului. Când robotul Mecha moare, pilotul/piloții sunt ejectați cu @TFTTrait.TFTEvent5YR_MechPilot.1:EjectedPilotHealthPercent@% din viața lor maximă.<br><br><row>(@TFTTrait.TFTEvent5YR_MechPilot.1:MinUnits@) Mini Mecha: @TFTTrait.TFTEvent5YR_MechPilot.1:MechCombinedADRatio*100@% %i:scaleAD%%i:scaleHealth%</row> <br><row>(@TFTTrait.TFTEvent5YR_MechPilot.2:MinUnits@) Super Mecha: @TFTTrait.TFTEvent5YR_MechPilot.2:MechCombinedADRatio*100@% %i:scaleAD%%i:scaleHealth%. Cele mai apropiate 2 unități de pilot sar și ele în robotul Mecha. </row>"
-  },
-  "TFTEvent_5YR_Item_TraitPyroActivator": {
-    "name": "Piromant",
-    "desc": "Echipa ta primește @TFTTrait.TFTEvent5YR_Pyro:BaseASPct@% %i:scaleAS% viteză de atac.<br><br>Pentru fiecare asasinat, echipa ta creează un tăciune infernal, pe care-l poți aduna în următoarea rundă. Pentru fiecare @TFTTrait.TFTEvent5YR_Pyro:NumCinders@ tăciuni pe care îi aduni, echipa ta primește încă @TFTTrait.TFTEvent5YR_Pyro:ASPctPerNumCinders@% %i:scaleAS%.<br><br><row>(@TFTTrait.TFTEvent5YR_Pyro.1:MinUnits@) @TFTTrait.TFTEvent5YR_Pyro.1:NumCindersPerKill@ tăciune infernal per inamic.</row><br><row>(@TFTTrait.TFTEvent5YR_Pyro.2:MinUnits@) @TFTTrait.TFTEvent5YR_Pyro.2:NumCindersPerKill@ tăciuni infernali per inamic și execută inamicii care au sub @TFTTrait.TFTEvent5YR_Pyro.2:ExecutePct@% viață.</row><br><br>Tăciuni adunați: @TFTUnitProperty.trait:TFTEvent5YR_PyroCindersCollected@<br>%i:scaleAS% echipă: @TFTUnitProperty.trait:TFTEvent5YR_PyroAttackSpeed@%"
-  },
-  "TFTEvent_5YR_Item_TraitJazzActivator": {
-    "name": "Jazz",
-    "desc": "Pentru fiecare caracteristică activă, echipa ta primește viață bonus și amplificarea daunelor.<br><rules>(Exclude caracteristicile unice și aniversare)</rules><br><br><row>(@TFTTrait.TFTEvent5YR_Jazz.1:MinUnits@) @TFTTrait.TFTEvent5YR_Jazz.1:BonusHealth*100@% %i:scaleHealth%, @TFTTrait.TFTEvent5YR_Jazz.1:BonusDamage*100@% %i:scaleDA%</row><br><row>(@TFTTrait.TFTEvent5YR_Jazz.2:MinUnits@) @TFTTrait.TFTEvent5YR_Jazz.2:BonusHealth*100@% %i:scaleHealth%, @TFTTrait.TFTEvent5YR_Jazz.2:BonusDamage*100@% %i:scaleDA%</row><br><br>Viață bonus: @TFTUnitProperty.trait:TFT10_Trait_Jazz_TraitTracker_CurrentBonus@%<br>Amplificarea daunelor bonus: @TFTUnitProperty.trait:TFT10_Trait_Jazz_TraitTracker_CurrentBonus_Damage@%"
-  },
-  "TFTEvent_5YR_Item_TraitRebelActivator": {
-    "name": "Rebel",
-    "desc": "Echipa ta primește un scut și amplificarea daunelor pentru fiecare aliat adiacent.<br><br><row>(@TFTTrait.TFTEvent5YR_Rebel.1:MinUnits@) @TFTTrait.TFTEvent5YR_Rebel.1:ShieldAmount@ Scut de @TFTTrait.TFTEvent5YR_Rebel.1:ShieldDuration@ secunde, @TFTTrait.TFTEvent5YR_Rebel.1:DamageAmp@% %i:scaleDA%</row><br><row>(@TFTTrait.TFTEvent5YR_Rebel.2:MinUnits@) @TFTTrait.TFTEvent5YR_Rebel.2:ShieldAmount@ Scut de @TFTTrait.TFTEvent5YR_Rebel.2:ShieldDuration@ secunde, @TFTTrait.TFTEvent5YR_Rebel.2:DamageAmp@% %i:scaleDA%</row>"
-  },
-  "TFTEvent5YR_Storyweaver3_AP": {
-    "name": "Talismanul tăriei",
-    "desc": "Le oferă lui Kayle și aliaților adiacenți ei de pe același rând @APAmt@ puterea abilităților la începutul luptei."
-  },
-  "TFTEvent5YR_Storyweaver3_AS": {
-    "name": "Talismanul vitezei",
-    "desc": "Le oferă lui Kayle și aliaților adiacenți ei de pe același rând @ASAmt*100@% viteză de atac la începutul luptei."
-  },
-  "TFTEvent5YR_Consumable_MechPilot_PilotMarker": {
-    "name": "Selector de pilot",
-    "desc": "Folosește acest obiect pe un campion pentru a-l face pilotul Mecha.<br><br><tftitemrules> [Nu poate fi folosit pe campionii aflați în luptă.]</tftitemrules><br><tftitemrules> [Folosiri nelimitate.]</tftitemrules>"
-  },
-  "TFTEvent5YR_Item_SevikasJinxedArm": {
-    "name": "Brațul făcut de Jinx al Sevikăi",
-    "desc": "În momentele indicate de caracteristica miză mare, reîncarcă o modificare aleatorie a lui Jinx:<br>– rachetă: lansează @TFTUnitProperty.item:TFTEvent5YR_HighRoller_NumRockets@ rachete spre inamici aleatorii, provocându-le<br>daune fizice în valoare de @TFTTrait.TFTEvent5YR_HighRoller.1:Spell1RocketADScalar*100@% din daunele din atac + @TFTTrait.TFTEvent5YR_HighRoller.1:Spell1RocketAPScalar*100@% din puterea abilităților per rachetă.<br>– scut: oferă un scut în valoare de @TFTUnitProperty.item:TFTEvent5YR_HighRoller_ShieldFlatAmount@ + @TFTUnitProperty.item:TFTEvent5YR_HighRoller_ShieldMaxHPPercentage@% din viața maximă timp de @TFTTrait.TFTEvent5YR_HighRoller.1:Spell2ShieldDuration@ secunde.<br>– aur: oferă @TFTUnitProperty.item:TFTEvent5YR_HighRoller_GoldAmount@ aur.<br>"
-  },
-  "TFTEvent5YR_Item_ShimmerscaleGoldmancersStaff": {
-    "name": "Toiagul alchimistului",
-    "desc": "Oferă %i:scaleAP% @AbilityPowerPerGold@ puterea abilităților per %i:goldCoins% aur din bancă (până la %i:goldCoins% @AbilityPowerGoldMax@) și ai @OnKillProcChance*100@% șanse să primești %i:goldCoins% @OnKillProcGold@ aur la uciderea unui inamic.<br><br><tftitemrules>Aur generat în acest joc: @TFTUnitProperty.item:TFT_Item_GoldGenerated@</tftitemrules>"
-  },
-  "TFTEvent_5YR_Item_TraitElderwoodActivator": {
-    "name": "Spirit al pădurii",
-    "desc": "La fiecare @TFTTrait.TFTEvent5YR_Elderwood.1:TickRate@ secunde, echipa ta crește în dimensiune și primește atribute bonus. Efectul se cumulează de maximum @TFTTrait.TFTEvent5YR_Elderwood.1:MaxStacks@ ori.<br><br><row>(@TFTTrait.TFTEvent5YR_Elderwood.1:MinUnits@) @TFTTrait.TFTEvent5YR_Elderwood.1:BonusResists@&nbsp;%i:scaleArmor%%i:scaleMR%, @TFTTrait.TFTEvent5YR_Elderwood.1:BonusADSP@&nbsp;%i:scaleAP%%i:scaleAD%</row><br><row>(@TFTTrait.TFTEvent5YR_Elderwood.2:MinUnits@) @TFTTrait.TFTEvent5YR_Elderwood.2:BonusResists@&nbsp;%i:scaleArmor%%i:scaleMR%, @TFTTrait.TFTEvent5YR_Elderwood.2:BonusADSP@&nbsp;%i:scaleAP%%i:scaleAD%</row>"
-  },
-  "TFTEvent5YR_Item_GlacialMallet": {
-    "name": "Ciocan glacial",
-    "desc": "Atacurile au @TFTUnitProperty.item:TFTEvent5YR_Glacial_StunChance@% șanse să amețească inamicii timp de @TFTTrait.TFTEvent5YR_Glacial.1:StunDuration@ secundă și să provoace @TFTUnitProperty.item:TFTEvent5YR_Glacial_BonusDamage@ daune magice bonus.<br><br><tftitemrules>[Unic – doar 1 per campion]</tftitemrules>"
-  },
-  "TFTEvent_5YR_Item_TraitBossActivator": {
-    "name": "Bătăușul-șef",
-    "desc": "Primești ''Pumnii șefului''. Când viața deținătorului scade prima oară sub @TFTTrait.TFTEvent5YR_Boss.1:HealthThreshold*100@%, acesta devine bătăușul-șef, părăsește lupta și începe să facă abdomene. Fiecare abdomen reface viață maximă și oferă viteză de atac. <br><br><row>(@TFTTrait.TFTEvent5YR_Boss.1:MinUnits@) @TFTTrait.TFTEvent5YR_Boss.1:HealPercent*100@% %i:scaleHealth%, @TFTTrait.TFTEvent5YR_Boss.1:AttackSpeedPercent*100@% %i:scaleAS%.</row><br><row>(@TFTTrait.TFTEvent5YR_Boss.2:MinUnits@) @TFTTrait.TFTEvent5YR_Boss.2:HealPercent*100@% %i:scaleHealth%, @TFTTrait.TFTEvent5YR_Boss.2:AttackSpeedPercent*100@% %i:scaleAS%. Dacă ajunge la viață completă, revine în luptă în forță, iar atacurile și abilitățile sale provoacă daune reale în valoare de @TFTTrait.TFTEvent5YR_Boss.2:TrueDamagePercentage*100@% din daune.</row>"
-  },
-  "TFTEvent_5YR_Item_TraitYordleActivator": {
-    "name": "Yordle",
-    "desc": "După fiecare luptă împotriva unui jucător, un campion de 1, 2 sau 3 aur care se potrivește în general echipei tale este adăugat gratuit pe bancă.<br><br><row>(@TFTTrait.TFTEvent5YR_Yordle.1:MinUnits@) Primești campioni!</row><br><row>(@TFTTrait.TFTEvent5YR_Yordle.2:MinUnits@) Dacă ai @TFTTrait.TFTEvent5YR_Yordle.2:NumOfThreeStarsNeeded@ sau mai mulți campioni de 3 stele, primești în schimb un lord yordle.</row>"
-  },
-  "TFTEvent_5YR_Item_TraitPhantomActivator": {
-    "name": "Fantomă",
-    "desc": "Începutul luptei: anumiți inamici aleși aleatoriu au viața redusă.<br><br><row>(@TFTTrait.TFTEvent5YR_Phantom.1:MinUnits@) Setează @TFTTrait.TFTEvent5YR_Phantom.1:NumUnitsToReduce@ viața inamicului la @TFTTrait.TFTEvent5YR_Phantom.1:PercentHealth*100@% viață maximă.</row><br><row>(@TFTTrait.TFTEvent5YR_Phantom.2:MinUnits@) Setează @TFTTrait.TFTEvent5YR_Phantom.2:NumUnitsToReduce@ viața inamicului la @TFTTrait.TFTEvent5YR_Phantom.2:FlatHealth@.</row>"
-  },
-  "TFTEvent_5YR_Item_TraitHellionActivator": {
-    "name": "Năpastă",
-    "desc": "De fiecare dată când moare un campion aliat, o copie (cu o stea mai slabă) echipată cu ''Buff-ul roșu'' va sări dintr-un portal al năpastei și se va alătura luptei!<br><br><row>(@TFTTrait.TFTEvent5YR_Hellion.1:MinUnits@) Primii @TFTTrait.TFTEvent5YR_Hellion.1:NumOfUnits@ campioni</row><br><row>(@TFTTrait.TFTEvent5YR_Hellion.2:MinUnits@) Primii @TFTTrait.TFTEvent5YR_Hellion.2:NumOfUnits@ campioni</row>"
-  },
-  "TFTEvent5YR_Storyweaver5_AS": {
-    "name": "Pergamentul rapidității",
-    "desc": "Atacurile îi oferă lui Kayle @ASAmt*100@% viteză de atac cumulativă."
-  },
-  "TFTEvent5YR_Storyweaver5_AP": {
-    "name": "Pergamentul forței",
-    "desc": "Abilitatea lui Kayle are efect într-o zonă mai mare și provoacă cu @APAmt*100@% mai multe daune."
-  },
-  "TFTEvent5YR_Storyweaver3_Support": {
-    "name": "Talismanul salvării",
-    "desc": "Atacurile și abilitățile lui Kayle care provoacă daune <TFTKeyword>fragmentează</TFTKeyword> și <TFTKeyword>sfâșie</TFTKeyword> inamicii cu @ResistPercent*100@% timp de @Duration@ secunde."
-  },
-  "TFTEvent_5YR_Item_TraitBilgewaterActivator": {
-    "name": "Bilgewater",
-    "desc": "Atacurile și abilitățile echipei tale însemnează inamicii. Însemnul înmagazinează un anumit procent din daunele provocate inamicului.<br><br>După @TFTTrait.TFTEvent5YR_Bilgewater.1:BarrageInterval@ secunde, inamicii însemnați sunt loviți de o ghiulea care le provoacă <physicalDamage>daune fizice</physicalDamage> egale cu daunele înmagazinate, plus o valoare fixă.<br><br><row>(@TFTTrait.TFTEvent5YR_Bilgewater.1:MinUnits@) @TFTTrait.TFTEvent5YR_Bilgewater.1:Damage@ + @TFTTrait.TFTEvent5YR_Bilgewater.1:DamagePercent@% din daunele provocate</row><br><row>(@TFTTrait.TFTEvent5YR_Bilgewater.2:MinUnits@) @TFTTrait.TFTEvent5YR_Bilgewater.2:Damage@ + @TFTTrait.TFTEvent5YR_Bilgewater.2:DamagePercent@% din daunele provocate. Fiecare a @TFTTrait.TFTEvent5YR_Bilgewater.2:ShotsUntilTreasure@-a ghiulea este înlocuită cu un cufăr care oferă aur!</row>"
-  },
-  "TFTEvent_5YR_Item_TraitPreserverActivator": {
-    "name": "Salvator",
-    "desc": "Echipa ta își reface un procentaj din viața maximă la fiecare @TFTTrait.TFTEvent5YR_Preserver.1:Duration@ secunde. Dacă un campion are viața completă, își reface mană.<br><br><row> (@TFTTrait.TFTEvent5YR_Preserver.1:MinUnits@) @TFTTrait.TFTEvent5YR_Preserver.1:HealthPct*100@% %i:scaleHealth% sau @TFTTrait.TFTEvent5YR_Preserver.1:ManaPct*100@% %i:scaleMana%.</row><br><row> (@TFTTrait.TFTEvent5YR_Preserver.2:MinUnits@) @TFTTrait.TFTEvent5YR_Preserver.2:HealthPct*100@% %i:scaleHealth% și @TFTTrait.TFTEvent5YR_Preserver.2:ManaPct*100@% %i:scaleMana%. Obții mereu ambele.</row><br><br>"
-  },
-  "TFTEvent_5YR_Item_TraitHighRollerActivator": {
-    "name": "Miză mare",
-    "desc": "Primești ''Brațul făcut de Jinx al Sevikăi''!<br><br>Începutul luptei: reîncarcă o modificare aleatorie a lui Jinx. Reîncarcă alta:<br><row>(@TFTTrait.TFTEvent5YR_HighRoller.1:MinUnits@) după @TFTTrait.TFTEvent5YR_HighRoller.1:RollingFrequency@ secunde.</row><br><row>(@TFTTrait.TFTEvent5YR_HighRoller.2:MinUnits@) la fiecare @TFTTrait.TFTEvent5YR_HighRoller.2:RollingFrequency@ secunde. Modificările sunt mai puternice, iar deținătorul poate obține acum ''Potul lui Jinx''!</row><br><br>Modificări:<br>- Rachetă: lansează rachete către inamici aleatorii. <br>-Scut: oferă un scut timp de @TFTTrait.TFTEvent5YR_HighRoller.1:Spell2ShieldDuration@ secunde.<br>- Monedă: primești aur.<br><br>Rachete lansate: @TFTUnitProperty.trait:TFTEvent5YR_HighRoller_RocketsFired@<br>Scuturi primite: @TFTUnitProperty.trait:TFTEvent5YR_HighRoller_ShieldsGained@<br>Aur obținut: @TFTUnitProperty.trait:TFTEvent5YR_HighRoller_GoldGained@<br>Poturi obținute: @TFTUnitProperty.trait:TFTEvent5YR_HighRoller_JackpotsHit@"
-  },
-  "TFTEvent5YR_Item_BossKnuckles": {
-    "name": "Pumnii șefului",
-    "desc": "O dată pe rundă, la 60% viață, devine bătăușul-șef, părăsește lupta și începe să facă abdomene. Fiecare abdomen reface @TFTUnitProperty.item:TFTEvent5YR_Boss_HealPercent@% din viața maximă și oferă @TFTUnitProperty.item:TFTEvent5YR_Boss_AttackSpeedPercent@% viteză de atac. Dacă toți aliații săi mor, bătăușul-șef revine imediat în luptă.<br><br><tftitemrules>[Unic – doar 1 per campion]</tftitemrules>"
-  },
-  "TFTEvent_5YR_Item_TraitTrainerActivator": {
-    "name": "Îmblânzitor",
-    "desc": "După luptă, primii 3 campioni care sunt cel mai aproape de Nomsy o hrănesc cu 1 gustare per nivel de stele, adăugându-i viață și puterea abilităților. Nivelul de stele al lui Nomsy crește la fiecare 25 de gustări!<br><br><row>(@TFTTrait.TFTEvent5YR_Trainer.1:MinUnits@) O invocă pe Nomsy!</row><br><row>(@TFTTrait.TFTEvent5YR_Trainer.2:MinUnits@) Abilitatea lui Nomsy provoacă @TFTTrait.TFTEvent5YR_Trainer.2:DamageInc*100@% daune bonus</row>"
-  },
-  "TFTEvent_5YR_Item_TraitShurimaActivator": {
-    "name": "Shurima",
-    "desc": "Începutul luptei: anumiți campioni sunt iluminați și primesc @TFTTrait.TFTEvent5YR_Shurima.1:BonusHealthPercent*100@% viață maximă %i:scaleHealth% și @TFTTrait.TFTEvent5YR_Shurima.1:BonusASPercent*100@% viteză de atac %i:scaleAS%.<br><br><row>(@TFTTrait.TFTEvent5YR_Shurima.1:MinUnits@) Cel mai puternic campion este iluminat după @TFTTrait.TFTEvent5YR_Shurima.1:SecondsToAscend@ secunde. </row><br><row>(@TFTTrait.TFTEvent5YR_Shurima.2:MinUnits@) Cei mai puternici @TFTTrait.TFTEvent5YR_Shurima.2:NumUnitsToAscend@ campioni sunt iluminați imediat.</row><br>"
-  },
-  "TFTEvent5YR_Item_TrainerSnax": {
-    "name": "Gustare delicioasă",
-    "desc": "Nomsy trebuie să mai mănânce atâtea gustări pentru a crește în nivel!<br><br><tftitemrules>[Acesta nu este considerat un obiect.]</tftitemrules>"
-  },
-  "TFTEvent5YR_Item_ShimmerscaleDravensAxe": {
-    "name": "Securea lui Draven",
-    "desc": "Deținătorul primește %i:scaleAD% @AttackDamagePerGold@% daune din atac per %i:goldCoins% aur din bancă (până la %i:goldCoins% @AttackDamageGoldLimit@ aur).<br><br>Atacurile oferă @StacksPerAttack@ cumul, de până la @CashoutStacks@ ori. La cumuluri maxime, oferă %i:goldCoins% @CashoutGold@ aur.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules><br><tftitemrules>Aur generat în acest meci: @TFTUnitProperty.item:TFT_Item_GoldGenerated@</tftitemrules>"
-  },
-  "TFTEvent_5YR_Item_TraitImperialActivator": {
-    "name": "Imperial",
-    "desc": "Începutul luptei: anumiți campioni primesc @TFTTrait.TFTEvent5YR_Imperial.1:DamageAmp*100@% %i:scaleDA%.<br><br><row>(@TFTTrait.TFTEvent5YR_Imperial.1:MinUnits@) @TFTTrait.TFTEvent5YR_Imperial.1:NumOfUnits@ campioni aleatorii.</row><br><row>(@TFTTrait.TFTEvent5YR_Imperial.2:MinUnits@) @TFTTrait.TFTEvent5YR_Imperial.2:NumOfUnits@ campioni aleatorii.</row>"
-  },
-  "TFTEvent_5YR_Item_TraitCovenActivator": {
-    "name": "Sabat",
-    "desc": "Unitatea cea mai apropiată de centrul echipei este aleasă ca lider al vrăjitoarelor, primind puterea abilităților bonus.<br><br>Când echipa ta folosește o abilitate, liderul vrăjitoarelor primește mană.<br><br><row>(@TFTTrait.TFTEvent5YR_Coven.1:MinUnits@) @TFTTrait.TFTEvent5YR_Coven.1:AbilityPower@ %i:scaleAP%,  @TFTTrait.TFTEvent5YR_Coven.1:ManaToGive@ %i:scaleMana% </row><br><row>(@TFTTrait.TFTEvent5YR_Coven.2:MinUnits@) @TFTTrait.TFTEvent5YR_Coven.2:AbilityPower@ %i:scaleAP%,  @TFTTrait.TFTEvent5YR_Coven.2:ManaToGive@ %i:scaleMana% </row>"
-  },
-  "TFTEvent5YR_Item_ShimmerscaleCrownOfChampions": {
-    "name": "Coroana campionilor",
-    "desc": "La fiecare @SecondsForEmpoweredAttack@ secunde, următorul atac provoacă daune reale în valoare de @AttackGoldMultiplier@ x %i:goldCoins% aurul din bancă.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules><br><tftitemrules>Nu provoacă daune dacă ai 0 aur.</tftitemrules>"
-  },
-  "TFTEvent_5YR_Item_TraitLaserCorpsActivator": {
-    "name": "LaserCorps",
-    "desc": "Echipa ta primește drone cu laser. Când o unitate atacă sau este lovită cu un atac, drona sa îi provoacă daune magice țintei (timp de reactivare: @TFTTrait.TFTEvent5YR_LaserCorps.1:ICD@ sec.). La moartea deținătorului, drona este reatribuită altui coechipier.<br><br><row>(@TFTTrait.TFTEvent5YR_LaserCorps.1:MinUnits@) @TFTTrait.TFTEvent5YR_LaserCorps.1:MagicDamage@ daune magice. </row><br><row>(@TFTTrait.TFTEvent5YR_LaserCorps.2:MinUnits@) @TFTTrait.TFTEvent5YR_LaserCorps.2:MagicDamage@ daune magice. Toate unitățile primesc o dronă suplimentară.</row><br>"
-  },
-  "TFTEvent_SF_Item_PowerUp_Rank4": {
-    "name": "Coroana sufletelor",
-    "desc": "Împiedică prima moarte a deținătorului. După ce învie (după 2 secunde), deținătorul scapă de toate efectele negative și primește <active>@TFTUnitProperty.item:TFT_Event_SF_SoulCrownHealthRestore@</active> viață (puterea sufletului dublată).<br><br>Adaugă +1 la ultima caracteristică din listă (cu excepția caracteristicilor unice).<br><br><tftitemrules> [Nu poate fi folosit pe campionii aflați în luptă.]</tftitemrules><br><tftitemrules> [Folosiri nelimitate.]</tftitemrules>"
-  },
-  "TFTEvent_SF_Item_PowerUp_Rank1": {
-    "name": "Coroana imperfectă a sufletelor",
-    "desc": "Adaugă +1 la ultima caracteristică din listă (cu excepția caracteristicilor unice).<br><br><tftitemrules>Un efect nou se deblochează odată cu startul turneului (4-1).</tftitemrules><br><br><tftitemrules> [Nu poate fi folosit pe campionii aflați în luptă.]</tftitemrules><br><tftitemrules> [Folosiri nelimitate.]</tftitemrules>"
-  },
-  "TFTEventCT_Item_HextechSniper": {
-    "name": "Pușcă hextech cu lunetă",
-    "desc": "Începutul luptei: trage un glonț de lunetist care execută instantaneu inamicii."
-  },
-  "TFTEventCT_Encounter_ChoiceItem_RandomComponents": {
-    "name": "Primești 2 componente de obiect aleatorii.",
-    "desc": null
-  },
-  "TFTEventCT_Encounter_ChoiceItem_Recombobulate": {
-    "name": "Recombină-ți tabla. Primești o ''Refăurire''. ",
-    "desc": null
   },
   "TFT7_Item_Trainer_Heimerdinger": {
     "name": "tft_item_name_TFT7_Item_Trainer_Heimerdinger",
@@ -13673,7 +13897,7 @@
   },
   "TFT6_Augment_ForceOfNature": {
     "name": "Recrut nou",
-    "desc": "Primești +@MaxArmySizeIncrease@ dimensiune maximă a echipei și @NumUnits@ campioni de patru aur."
+    "desc": "Primești +@MaxArmySizeIncrease@ dimensiune maximă a echipei și @NumUnits@ campion de patru aur."
   },
   "TFT9_Augment_CyberneticLeech2": {
     "name": "Lipitoare cibernetică II",
@@ -19106,6 +19330,170 @@
   "TFT5_Dawnbringer": {
     "name": "Întruparea Luminii",
     "desc": "O dată pe rundă, la @FirstThreshold@% viață, întrupările Luminii se vindecă rapid. Când se vindecă, toate întrupările Luminii aliate primesc @BonusDamage@% daune bonus.<br><br><expandRow>(@MinUnits@) @PercentOfMaximumHealth@% din %i:scaleHealth% maximă</expandRow>."
+  },
+  "TFTEvent5YR_SuperMech": {
+    "name": "Super Mecha",
+    "desc": null
+  },
+  "TFTEvent5YR_Veigar": {
+    "name": "Veigar",
+    "desc": null
+  },
+  "TFTEvent5YR_Kayle": {
+    "name": "Kayle",
+    "desc": null
+  },
+  "TFTEvent5YR_HighRollerDamageTracker": {
+    "name": "Brațul făcut de Jinx al Sevikăi",
+    "desc": null
+  },
+  "TFTEvent5YR_PenguGarenNPC": {
+    "name": "Garen Pingu",
+    "desc": null
+  },
+  "TFTEvent5YR_Nitro_SummonLevel2": {
+    "name": "R-080T",
+    "desc": null
+  },
+  "TFTEvent5YR_Nitro_SummonLevel4": {
+    "name": "T-43X",
+    "desc": null
+  },
+  "TFTEvent5YR_Galio": {
+    "name": "Galio",
+    "desc": null
+  },
+  "TFTEvent5YR_IxtalProp": {
+    "name": null,
+    "desc": null
+  },
+  "TFTEvent5YR_Brock": {
+    "name": "Brock",
+    "desc": null
+  },
+  "TFTEvent5YR_Hecarim": {
+    "name": "Hackerim",
+    "desc": null
+  },
+  "TFTEvent5YR_Ixtal": {
+    "name": "Ixtal",
+    "desc": "<row>(@TFTTrait.TFTEvent5YR_Ixtal.1:MinUnits@) Îndeplinește misiuni pentru a câștiga frânturi solare (%i:Set16Ixtal%) și cheltuie-le pentru&nbsp;recompense!</row><br><row>(@TFTTrait.TFTEvent5YR_Ixtal.2:MinUnits@) Refă 2 viață a jucătorului la începutul luptei împotriva unui jucător. Găsești @TFTTrait.TFTEvent5YR_Ixtal.2:BonusClues@ %i:Set16Ixtal% la sfârșitul luptei și acum îl poți debloca pe Brock când ajungi la 500 %i:Set16Ixtal%!</row><br><br><rules>Când îndeplinești o misiune înainte de sfârșitul luptei, primești una nouă la începutul următoarei runde.</rules><br><br>Total frânturi solare câștigate: @TFTUnitProperty.trait:TFTEvent5YR_Explorer_TotalExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Shimmerscale": {
+    "name": "Solzi sclipitori",
+    "desc": "Primești obiecte solzi sclipitori, care oferă aur și măresc puterea echipei.<br><br><row>(@TFTTrait.TFTEvent5YR_Shimmerscale.1:MinUnits@)Primești ''Toiagul alchimistului''. În etapa @TFTTrait.TFTEvent5YR_Shimmerscale.1:SecondItemStage@-@TFTTrait.TFTEvent5YR_Shimmerscale.1:SecondItemRound@, primești ''Securea lui Draven''.</row><br><row>(@TFTTrait.TFTEvent5YR_Shimmerscale.2:MinUnits@)Primești ''Coroana campionilor''.</row>"
+  },
+  "TFTEvent5YR_Honeymancy": {
+    "name": "Mieromanție",
+    "desc": "Campionii tăi primesc albine care le provoacă daune magice țintelor la fiecare @TFTTrait.TFTEvent5YR_Honeymancy:Period@ secunde. Daunele albinelor sunt în funcție de daunele provocate și suferite de campionul gazdă, plus o valoare fixă pentru fiecare albină.<br><br>Când un campion moare, lasă în urmă @TFTTrait.TFTEvent5YR_Honeymancy:NumTransfers@ albine care urmăresc campionii din apropiere pentru restul luptei.<br><br><row>(@TFTTrait.TFTEvent5YR_Honeymancy.1:MinUnits@) @TFTTrait.TFTEvent5YR_Honeymancy.1:MiniCount@ albine, @TFTTrait.TFTEvent5YR_Honeymancy.1:BonusDamage*100@% daune provocate, @TFTTrait.TFTEvent5YR_Honeymancy.1:DamageReceived*100@% daune suferite, @TFTTrait.TFTEvent5YR_Honeymancy.1:DamagePerMini@ daune per albină.</row><br><row>(@TFTTrait.TFTEvent5YR_Honeymancy.2:MinUnits@) @TFTTrait.TFTEvent5YR_Honeymancy.2:MiniCount@ albine, @TFTTrait.TFTEvent5YR_Honeymancy.2:BonusDamage*100@% daune provocate, @TFTTrait.TFTEvent5YR_Honeymancy.2:DamageReceived*100@% daune suferite, @TFTTrait.TFTEvent5YR_Honeymancy.2:DamagePerMini@ daune per albină.</row>"
+  },
+  "TFTEvent5YR_Phantom": {
+    "name": "Fantomă",
+    "desc": "Începutul luptei: anumiți inamici aleși aleatoriu au viața redusă.<br><br><row>(@TFTTrait.TFTEvent5YR_Phantom.1:MinUnits@) Setează @TFTTrait.TFTEvent5YR_Phantom.1:NumUnitsToReduce@ viața inamicului la @TFTTrait.TFTEvent5YR_Phantom.1:PercentHealth*100@% viață maximă.</row><br><row>(@TFTTrait.TFTEvent5YR_Phantom.2:MinUnits@) Setează @TFTTrait.TFTEvent5YR_Phantom.2:NumUnitsToReduce@ viața inamicului la @TFTTrait.TFTEvent5YR_Phantom.2:FlatHealth@.</row>"
+  },
+  "TFTEvent5YR_Crystal": {
+    "name": "Cristal",
+    "desc": "Tancurile tale au o cantitate maximă de daune pe care o pot suferi dintr-un singur atac sau o singură abilitate în primele câteva secunde de luptă.<br><br><row>(@TFTTrait.TFTEvent5YR_Crystal.1:MinUnits@) @TFTTrait.TFTEvent5YR_Crystal.1:DamageThreshold@ daune maxime, @TFTTrait.TFTEvent5YR_Crystal.1:Duration@ secunde.</row><br><row>(@TFTTrait.TFTEvent5YR_Crystal.2:MinUnits@) @TFTTrait.TFTEvent5YR_Crystal.2:DamageThreshold@ daune maxime, @TFTTrait.TFTEvent5YR_Crystal.2:Duration@ secunde.</row>"
+  },
+  "TFTEvent5YR_Mascot": {
+    "name": "Mascotă",
+    "desc": "Echipa ta își reface un procent din viața maximă la fiecare @TFTTrait.TFTEvent5YR_Mascot.1:Seconds@ secunde.<br><br>Când mor, campionii se retrag pe margine ca să facă galerie echipei. Vindecarea echipei tale crește pentru fiecare campion care face galerie.<br><br><row> (@TFTTrait.TFTEvent5YR_Mascot.1:MinUnits@) @TFTTrait.TFTEvent5YR_Mascot.1:BaseHealthRegen@% %i:scaleHealth% de bază, @TFTTrait.TFTEvent5YR_Mascot.1:HealthRegenPerMascot@% %i:scaleHealth% per campion care face galerie</row><br><row> (@TFTTrait.TFTEvent5YR_Mascot.2:MinUnits@) @TFTTrait.TFTEvent5YR_Mascot.2:BaseHealthRegen@% %i:scaleHealth% de bază, @TFTTrait.TFTEvent5YR_Mascot.2:HealthRegenPerMascot@% %i:scaleHealth% per campion care face galerie</row>"
+  },
+  "TFTEvent5YR_Glacial": {
+    "name": "Glacial",
+    "desc": "Primești un ''Ciocan glacial''. Atacurile de bază ale campionilor echipați cu un ''Ciocan'' au @TFTTrait.TFTEvent5YR_Glacial.1:ProcPercent*100@% șanse să amețească ținta timp de @TFTTrait.TFTEvent5YR_Glacial.1:StunDuration@ secunde și să provoace daune magice bonus. <br><br><row>(@TFTTrait.TFTEvent5YR_Glacial.1:MinUnits@) @TFTTrait.TFTEvent5YR_Glacial.1:BonusDamage@ daune magice.</row><br><row>(@TFTTrait.TFTEvent5YR_Glacial.2:MinUnits@) @TFTTrait.TFTEvent5YR_Glacial.2:BonusDamage@ daune magice. Primești încă un ''Ciocan glacial''.</row>"
+  },
+  "TFTEvent5YR_Yordle": {
+    "name": "Yordle",
+    "desc": "După fiecare luptă împotriva jucătorilor, primești o ''Punguță yordle'' plină de recompense de-ale yordelilor!<br><br><row>(@TFTTrait.TFTEvent5YR_Yordle.1:MinUnits@) Primești o ''Punguță yordle''!</row><br><row>(@TFTTrait.TFTEvent5YR_Yordle.2:MinUnits@) Dacă ai cel puțin @TFTTrait.TFTEvent5YR_Yordle.2:NumOfThreeStarsNeeded@ campioni de 3 stele, ''Punguța yordle'' va conține un lord yordle.</row>"
+  },
+  "TFTEvent5YR_Preserver": {
+    "name": "Reînnoitor",
+    "desc": "Echipa ta își reface un procentaj din viața maximă la fiecare @TFTTrait.TFTEvent5YR_Preserver.1:Duration@ secunde. Dacă un campion are viața completă, își reface mană.<br><br><row> (@TFTTrait.TFTEvent5YR_Preserver.1:MinUnits@) @TFTTrait.TFTEvent5YR_Preserver.1:HealthPct*100@% %i:scaleHealth% sau @TFTTrait.TFTEvent5YR_Preserver.1:ManaPct*100@% %i:scaleMana%.</row><br><row> (@TFTTrait.TFTEvent5YR_Preserver.2:MinUnits@) @TFTTrait.TFTEvent5YR_Preserver.2:HealthPct*100@% %i:scaleHealth% și @TFTTrait.TFTEvent5YR_Preserver.2:ManaPct*100@% %i:scaleMana%. Obții mereu ambele.</row><br><br>"
+  },
+  "TFTEvent5YR_Demacia": {
+    "name": "Demacia",
+    "desc": "De fiecare dată când echipa ta pierde @TFTTrait.TFTEvent5YR_Demacia.1:MaxHealthLost*100@% viață maximă, aceasta se mobilizează, reducându-și costul de mană cu @TFTTrait.TFTEvent5YR_Demacia.1:ManaReductionPct*100@%. Echipa ta primește armură și rezistență la magie.<br><br><row>(@TFTTrait.TFTEvent5YR_Demacia.1:MinUnits@) @TFTTrait.TFTEvent5YR_Demacia.1:ArmorMR@&nbsp;%i:scaleArmor%%i:scaleMR%</row><br><row>(@TFTTrait.TFTEvent5YR_Demacia.2:MinUnits@) @TFTTrait.TFTEvent5YR_Demacia.2:ArmorMR@&nbsp;%i:scaleArmor%%i:scaleMR%. Îl deblochezi pe Galio. La mobilizare, reduci costurile de mană ale echipei tale cu @TFTTrait.TFTEvent5YR_Demacia.2:ManaReductionPctPerGalioItem*100@% pentru fiecare obiect echipat de cel mai puternic Galio și nimicești inamicii, provocându-le daune egale cu @TFTTrait.TFTEvent5YR_Demacia.2:EnemyTrueDamage*100@% din viața lor&nbsp;maximă.</row><br><br>"
+  },
+  "TFTEvent5YR_YordleLord": {
+    "name": "Lord yordle",
+    "desc": "Lordul yordle Veigar și furicornii săi dau buzna la petrecerea lui Pingu!"
+  },
+  "TFTEvent5YR_Hacker": {
+    "name": "Hacker",
+    "desc": "Echipa ta primește omni-vampirism și invocă un H4ckerr!m. Inamicii prin care trece sunt H4cku1ți și pierd @TFTTrait.TFTEvent5YR_Hacker.1:PercentArmorToRemove*100@% din armură și din rezistența la magie. <br><br><row>(@TFTTrait.TFTEvent5YR_Hacker.1:MinUnits@) @TFTTrait.TFTEvent5YR_Hacker.1:Omnivamp*100@% %i:scaleSV%</row><br><row>(@TFTTrait.TFTEvent5YR_Hacker.2:MinUnits@) @TFTTrait.TFTEvent5YR_Hacker.2:Omnivamp*100@% %i:scaleSV%, ȘI vezi cine e următorul tău adversar. Primiți un hexagon al călărețului, care trimite unitatea sa în linia din spate inamică la începutul luptei. Călărețul primește în schimb @TFTTrait.TFTEvent5YR_Hacker.2:Horsevamp*100@% %i:scaleSV% și uciderile sale au @TFTTrait.TFTEvent5YR_Hacker.2:PercentChanceToDropGoldOnKill*100@% șanse să ofere 1 aur.<br><br>Aur câștigat în total: @TFTUnitProperty.trait:TFTEvent5YR_Hacker_RiderGold_Earned@</row>"
+  },
+  "TFTEvent5YR_Storyweaver": {
+    "name": "Țesător de povești",
+    "desc": "Invoci o eroină numită Kayle și o evoluezi pe măsură ce crești în nivel!<br><br><row>(@TFTTrait.TFTEvent5YR_Storyweaver.1:MinUnits@) Când ajungi la nivelul @TFTTrait.TFTEvent5YR_Storyweaver:FirstArmoryLevel@, Kayle se îmbunătățește la 2 stele. Alege un efect de sprijin.</row><br><row>(@TFTTrait.TFTEvent5YR_Storyweaver.2:MinUnits@) Kayle evoluează din nou la nivelurile @TFTTrait.TFTEvent5YR_Storyweaver:SecondArmoryLevel@, @TFTTrait.TFTEvent5YR_Storyweaver:ThirdArmoryLevel@ și @TFTTrait.TFTEvent5YR_Storyweaver:FourStarUpgradeLevel@:<br>Nivelul @TFTTrait.TFTEvent5YR_Storyweaver:SecondArmoryLevel@: alege un efect pentru luptă. <br>Nivelul @TFTTrait.TFTEvent5YR_Storyweaver:ThirdArmoryLevel@: Kayle se îmbunătățește la 3 stele. Alege un efect pentru luptă.<br>Nivelul @TFTTrait.TFTEvent5YR_Storyweaver:FourStarUpgradeLevel@: Kayle se îmbunătățește la 4 stele.</row><br>"
+  },
+  "TFTEvent5YR_Pyro": {
+    "name": "Piromant",
+    "desc": "Echipa ta primește @TFTTrait.TFTEvent5YR_Pyro:BaseASPct@% %i:scaleAS% viteză de atac.<br><br>Pentru fiecare asasinat, echipa ta creează un tăciune infernal, pe care-l poți aduna în următoarea rundă. Pentru fiecare @TFTTrait.TFTEvent5YR_Pyro:NumCinders@ tăciuni pe care îi aduni, echipa ta primește încă @TFTTrait.TFTEvent5YR_Pyro:ASPctPerNumCinders@% %i:scaleAS%.<br><br><row>(@TFTTrait.TFTEvent5YR_Pyro.1:MinUnits@) @TFTTrait.TFTEvent5YR_Pyro.1:NumCindersPerKill@ tăciune infernal per inamic.</row><br><row>(@TFTTrait.TFTEvent5YR_Pyro.2:MinUnits@) @TFTTrait.TFTEvent5YR_Pyro.2:NumCindersPerKill@ tăciuni infernali per inamic și execută inamicii care au sub @TFTTrait.TFTEvent5YR_Pyro.2:ExecutePct@% viață.</row><br><br>Tăciuni adunați: @TFTUnitProperty.trait:TFTEvent5YR_PyroCindersCollected@<br>%i:scaleAS% echipă: @TFTUnitProperty.trait:TFTEvent5YR_PyroAttackSpeed@%"
+  },
+  "TFTEvent5YR_Nitro": {
+    "name": "Nitro",
+    "desc": "După fiecare luptă împotriva unui jucător, campionii tăi oferă crom către R-080T, în funcție de nivelul lor de stele. Fiecare cumul de crom oferă @TFTTrait.TFTEvent5YR_Nitro.:HealthPerScrap@ viață și @TFTTrait.TFTEvent5YR_Nitro.:APPerScrap@ puterea abilităților. <br><br><row>(@TFTTrait.TFTEvent5YR_Nitro.1:MinUnits@) Invoci R-080T!</row><br><row>(@TFTTrait.TFTEvent5YR_Nitro.2:MinUnits@) Îmbunătățești R-080T în T-43X! La @TFTTrait.TFTEvent5YR_Nitro.:FourStarScrapThreshold@ crom, îmbunătățești T-43X pentru a trage cu un laser uriaș!</row><br><br><rules>Crom per stea: @TFTTrait.TFTEvent5YR_Nitro.:ScrapPerOneStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerTwoStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerThreeStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerFourStar@</rules>"
+  },
+  "TFTEvent5YR_Mountain": {
+    "name": "Munți",
+    "desc": "Primești 2 hexagoane ale muntelui pe rândul din față.<br>Începutul luptei: unitățile situate pe un hexagon al muntelui primesc un scut și viață bonus permanentă.<br><br><row>(@TFTTrait.TFTEvent5YR_Mountain.1:MinUnits@) @TFTTrait.TFTEvent5YR_Mountain.1:ShieldValue@ scut, @TFTTrait.TFTEvent5YR_Mountain.1:PermBonusHealth@ %i:scaleHealth%. </row><br><row>(@TFTTrait.TFTEvent5YR_Mountain.2:MinUnits@) @TFTTrait.TFTEvent5YR_Mountain.2:ShieldValue@ scut, @TFTTrait.TFTEvent5YR_Mountain.2:PermBonusHealth@ %i:scaleHealth%. Toate hexagoanele de pe primul rând devin hexagoane ale muntelui.</row>"
+  },
+  "TFTEvent5YR_Elderwood": {
+    "name": "Spirit al pădurii",
+    "desc": "La fiecare @TFTTrait.TFTEvent5YR_Elderwood.1:TickRate@ secunde, echipa ta crește în dimensiune și primește atribute bonus. Efectul se cumulează de maximum @TFTTrait.TFTEvent5YR_Elderwood.1:MaxStacks@ ori.<br><br><row>(@TFTTrait.TFTEvent5YR_Elderwood.1:MinUnits@) @TFTTrait.TFTEvent5YR_Elderwood.1:BonusResists@&nbsp;%i:scaleArmor%%i:scaleMR%, @TFTTrait.TFTEvent5YR_Elderwood.1:BonusADSP@&nbsp;%i:scaleAP%%i:scaleAD%</row><br><row>(@TFTTrait.TFTEvent5YR_Elderwood.2:MinUnits@) @TFTTrait.TFTEvent5YR_Elderwood.2:BonusResists@&nbsp;%i:scaleArmor%%i:scaleMR%, @TFTTrait.TFTEvent5YR_Elderwood.2:BonusADSP@&nbsp;%i:scaleAP%%i:scaleAD%</row>"
+  },
+  "TFTEvent5YR_Conqueror": {
+    "name": "Cuceritor",
+    "desc": "Doborârile echipei tale oferă cumuluri de ''Cucerire''. După ce primești suficientă ''Cucerire'', deschizi un ''Cufăr de război'' plin cu recompense!<br><br>Echipa ta primește daune din atac și puterea abilităților, valoare ce crește cu @TFTTrait.TFTEvent5YR_Conqueror:PercentIncreasePerChest*100@% pentru fiecare ''Cufăr de război'' deschis.<br><br><row>(@TFTTrait.TFTEvent5YR_Conqueror.1:MinUnits@) @TFTTrait.TFTEvent5YR_Conqueror.1:ADAPBase*100@%&nbsp;%i:scaleAD%%i:scaleAP%; @TFTTrait.TFTEvent5YR_Conqueror.1:StacksPerKill@x&nbsp;''Cucerire''</row><br><row>(@TFTTrait.TFTEvent5YR_Conqueror.2:MinUnits@) @TFTTrait.TFTEvent5YR_Conqueror.2:ADAPBase*100@%&nbsp;%i:scaleAD%%i:scaleAP%; @TFTTrait.TFTEvent5YR_Conqueror.2:StacksPerKill@x&nbsp;''Cucerire''</row><br><br><rules>''Cufere de război'' deschise: @TFTUnitProperty.trait:TFTEvent5YR_Conqueror_ChestsCompleted@</rules><br><rules>Atribute actuale: @TFTUnitProperty.trait:TFTEvent5YR_Conqueror_CurrentADAP@%&nbsp;%i:scaleAD%%i:scaleAP%</rules><br>"
+  },
+  "TFTEvent5YR_Heroic": {
+    "name": "Eroic",
+    "desc": "Galio nu poate fi trimis în luptă. În schimb, caracteristicile lui sunt luate în calcul de pe bancă și, când echipa ta se mobilizează, se alătură luptei. <br><br>La aterizare, creează o undă de șoc de @HexRadius@ hex. care provoacă daune magice egale cu @PercentMaxHP*100@% din viața lui maximă. Inamicii loviți sunt aruncați în sus timp de @KnockupDuration@ secunde, iar efectul scade în intensitate în funcție de distanța față de epicentru."
+  },
+  "TFTEvent5YR_Fated": {
+    "name": "Sortit",
+    "desc": "Trage un campion peste altul pentru a-i transforma în pereche și a debloca un <TFTBonus>bonus pentru sortiți</TFTBonus>, în funcție de rolul campionilor.<br><br><row>(@TFTTrait.TFTEvent5YR_Fated.1:MinUnits@) Perechea primește bonusul sortiților și @TFTTrait.TFTEvent5YR_Fated.1:PairHPBonus*100@% viață maximă. </row><br><row>(@TFTTrait.TFTEvent5YR_Fated.2:MinUnits@) TOATE unitățile primesc bonusul sortiților. Perechea primește @TFTTrait.TFTEvent5YR_Fated.1:PairHPBonus*100@% viață maximă și @TFTTrait.TFTEvent5YR_Fated.2:PairBondIncreasePercent*100@% din bonusul sortiților. </row><br><br>Bonusurile sortiților<br><ShowIf.TFTEvent5YR_Trait_Fated_AssassinActive><status>Asasini</status>: scut de @TFTTrait.TFTEvent5YR_Fated.1:YasuoBuffBonus@ la începutul luptei</ShowIf.TFTEvent5YR_Trait_Fated_AssassinActive><ShowIfNot.TFTEvent5YR_Trait_Fated_AssassinActive><TFTGuildInactive>Asasini: scut de @TFTTrait.TFTEvent5YR_Fated.1:YasuoBuffBonus@ la începutul luptei</TFTGuildInactive></ShowIfNot.TFTEvent5YR_Trait_Fated_AssassinActive><br><ShowIf.TFTEvent5YR_Trait_Fated_CasterActive><status>Magi</status>: @TFTTrait.TFTEvent5YR_Fated.1:AhriBuffBonus*100@% %i:scaleAD% %i:scaleAP%</ShowIf.TFTEvent5YR_Trait_Fated_CasterActive><ShowIfNot.TFTEvent5YR_Trait_Fated_CasterActive><TFTGuildInactive>Magi: @TFTTrait.TFTEvent5YR_Fated.1:AhriBuffBonus*100@% %i:scaleAD% %i:scaleAP%</TFTGuildInactive></ShowIfNot.TFTEvent5YR_Trait_Fated_CasterActive><br><ShowIf.TFTEvent5YR_Trait_Fated_FighterActive><status>Luptători</status>: @TFTTrait.TFTEvent5YR_Fated.1:SettBuffBonus*100@% %i:scaleSV%</ShowIf.TFTEvent5YR_Trait_Fated_FighterActive><ShowIfNot.TFTEvent5YR_Trait_Fated_FighterActive><TFTGuildInactive>Luptători: @TFTTrait.TFTEvent5YR_Fated.1:SettBuffBonus*100@% %i:scaleSV%</TFTGuildInactive></ShowIfNot.TFTEvent5YR_Trait_Fated_FighterActive><br><ShowIf.TFTEvent5YR_Trait_Fated_MarksmanActive><status>Țintași</status>: @TFTTrait.TFTEvent5YR_Fated.1:KindredBuffBonus*100@% %i:scaleAS%</ShowIf.TFTEvent5YR_Trait_Fated_MarksmanActive><ShowIfNot.TFTEvent5YR_Trait_Fated_MarksmanActive><TFTGuildInactive>Țintași: @TFTTrait.TFTEvent5YR_Fated.1:KindredBuffBonus*100@% %i:scaleAS%</TFTGuildInactive></ShowIfNot.TFTEvent5YR_Trait_Fated_MarksmanActive><br><ShowIf.TFTEvent5YR_Trait_Fated_SpecialistActive><status>Specialiști</status>: provoacă @TFTTrait.TFTEvent5YR_Fated.1:SyndraBuffBonus*100@% din daune ca daune reale</ShowIf.TFTEvent5YR_Trait_Fated_SpecialistActive><ShowIfNot.TFTEvent5YR_Trait_Fated_SpecialistActive><TFTGuildInactive>Specialiști: Deal @TFTTrait.TFTEvent5YR_Fated.1:SyndraBuffBonus*100@% din daune ca daune reale</TFTGuildInactive></ShowIfNot.TFTEvent5YR_Trait_Fated_SpecialistActive><br><ShowIf.TFTEvent5YR_Trait_Fated_TankActive><status>Tancuri</status>: @TFTTrait.TFTEvent5YR_Fated.1:ThreshBuffBonus@ %i:scaleArmor% %i:scaleMR%</ShowIf.TFTEvent5YR_Trait_Fated_TankActive><ShowIfNot.TFTEvent5YR_Trait_Fated_TankActive><TFTGuildInactive>Tancuri: @TFTTrait.TFTEvent5YR_Fated.1:ThreshBuffBonus@ %i:scaleArmor% %i:scaleMR%</TFTGuildInactive></ShowIfNot.TFTEvent5YR_Trait_Fated_TankActive><br><br>Unitățile tale pot beneficia doar de o singură instanță a unui anumit bonus al sortiților."
+  },
+  "TFTEvent5YR_Maestro": {
+    "name": "Maestru",
+    "desc": "Primești un ''Baston de maestru''.<br>Deținătorul are viteză de atac fixă și transformă viteza de atac bonus în daune din atac.<br><br>La fiecare @TFTTrait.TFTEvent5YR_Maestro.1:NumAutosToSpawnJhinGun@ atacuri, maestrul invocă o ''Pușcă pentru punctul culminant'' într-unul dintre locurile libere de pe bancă, până la 4. După ce invocă 4, acestea trag cu aceeași viteză ca maestrul și provoacă daune fizice. <br>Fiecare a 4-a rafală este <tftEvent5YRHarmonic>armonică</tftEvent5YRHarmonic>, provocând un procent din daunele totale pe care maestrul și ''Puștile'' sale le-au provocat de la ultima rafală armonică.<br><br><row>(@TFTTrait.TFTEvent5YR_Maestro.1:MinUnits@) @TFTTrait.TFTEvent5YR_Maestro.1:EmpoweredShotEchoDamagePercentage*100@% daune <tftEvent5YRHarmonic>armonice</tftEvent5YRHarmonic>.</row><br><row>(@TFTTrait.TFTEvent5YR_Maestro.2:MinUnits@) @TFTTrait.TFTEvent5YR_Maestro.2:EmpoweredShotEchoDamagePercentage*100@% daune <tftEvent5YRHarmonic>armonice</tftEvent5YRHarmonic>. <br>Maestrul poate invoca mai mult de 4 ''Puști''. Începutul luptei: invocă 1 ''Pușcă'' într-un loc liber de pe bancă.</row>"
+  },
+  "TFTEvent5YR_TheCrew": {
+    "name": "Echipajul",
+    "desc": "Îl invoci pe <i>Nocturnus</i> să te ajute în luptă! Acesta lansează un proiectil care provoacă @TFTTrait.TFTEvent5YR_TheCrew.1:BaseRocketDamage@ daune magice la fiecare @TFTTrait.TFTEvent5YR_TheCrew.1:BaseDamageThreshold@ daune provocate de echipa ta.<br><br>Campionii de 2 aur și mai mult devin membri ai echipajului după ce ajung la 3 stele. Primiți bonusuri suplimentare pentru fiecare membru al echipajului.<br><br><row>(@TFTTrait.TFTEvent5YR_TheCrew.1:MinUnits@) Maximum 2 membri ai echipajului.</row><br><row>(@TFTTrait.TFTEvent5YR_TheCrew.2:MinUnits@) Maximum 4 membri ai echipajului.</row><br><br><tftActiveRank enabled=TFTEvent5YR_Trait_WildcardCrew_Bonus1Active default=false alternate=TFTGuildInactive>(1x <ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus1Active>%i:3StarEnabled%</ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus1Active><ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus1Active>%i:3StarDisabled%</ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus1Active>): + @TFTTrait.TFTEvent5YR_TheCrew.1:OnARollRolls@ reîncărcări gratuite când crești nivelul de stele al unei unități pe care ai trimis-o în ultima luptă.</tftActiveRank><br><tftActiveRank enabled=TFTEvent5YR_Trait_WildcardCrew_Bonus2Active default=false alternate=TFTGuildInactive>(2x <ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus2Active>%i:3StarEnabled%</ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus2Active><ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus2Active>%i:3StarDisabled%</ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus2Active>): rachetele provoacă <magicDamage>@TFTTrait.TFTEvent5YR_TheCrew.1:UpgradedRocketDamage@</magicDamage> daune.</tftActiveRank><br><tftActiveRank enabled=TFTEvent5YR_Trait_WildcardCrew_Bonus3Active default=false alternate=TFTGuildInactive>(3x <ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus3Active>%i:3StarEnabled%</ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus3Active><ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus3Active>%i:3StarDisabled%</ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus3Active>): + @TFTTrait.TFTEvent5YR_TheCrew.1:FreeRerollsPerRound@ reîncărcări gratuite / rundă.</tftActiveRank><br><tftActiveRank enabled=TFTEvent5YR_Trait_WildcardCrew_Bonus4Active default=false alternate=TFTGuildInactive>(4x <ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus4Active>%i:3StarEnabled%</ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus4Active><ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus4Active>%i:3StarDisabled%</ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus4Active>): rachetele trag la fiecare @TFTTrait.TFTEvent5YR_TheCrew.1:UpgradedDamageThreshold@ daune provocate. Primești @TFTTrait.TFTEvent5YR_TheCrew.1:XPPerRound@ XP per rundă.</tftActiveRank>"
+  },
+  "TFTEvent5YR_Bilgewater": {
+    "name": "Bilgewater",
+    "desc": "Atacurile și abilitățile echipei tale însemnează inamicii. Însemnul înmagazinează un anumit procent din daunele provocate inamicului.<br><br>După @TFTTrait.TFTEvent5YR_Bilgewater.1:BarrageInterval@ secunde, inamicii însemnați sunt loviți de o ghiulea care le provoacă <physicalDamage>daune fizice</physicalDamage> egale cu daunele înmagazinate, plus o valoare fixă.<br><br><row>(@TFTTrait.TFTEvent5YR_Bilgewater.1:MinUnits@) @TFTTrait.TFTEvent5YR_Bilgewater.1:Damage@ + @TFTTrait.TFTEvent5YR_Bilgewater.1:DamagePercent@% din daunele provocate</row><br><row>(@TFTTrait.TFTEvent5YR_Bilgewater.2:MinUnits@) @TFTTrait.TFTEvent5YR_Bilgewater.2:Damage@ + @TFTTrait.TFTEvent5YR_Bilgewater.2:DamagePercent@% din daunele provocate. Fiecare a @TFTTrait.TFTEvent5YR_Bilgewater.2:ShotsUntilTreasure@-a ghiulea este înlocuită cu un cufăr care oferă aur!</row>"
+  },
+  "TFTEvent5YR_Pentakill": {
+    "name": "Pentakill",
+    "desc": "Echipa ta primește @TFTTrait.TFTEvent5YR_Pentakill.1:Damage_Reduction*100@% durabilitate și amplificarea daunelor. Pentru fiecare ucidere de campion, un campion din echipa ta se dezlănțuie, crescând această amplificare a daunelor bonus cu @TFTTrait.TFTEvent5YR_Pentakill.:Kill_Bonus*100@%.<br><br>La a @TFTTrait.TFTEvent5YR_Pentakill.:Kill_Count@-a ucidere, toată echipa voastră se dezlănțuie și primește viteză de atac.<br><br><row>(@TFTTrait.TFTEvent5YR_Pentakill.1:MinUnits@) @TFTTrait.TFTEvent5YR_Pentakill.1:Bonus_Damage*100@% %i:scaleDA%, @TFTTrait.TFTEvent5YR_Pentakill.1:Attack_Speed*100@% viteză de atac după o ucidere Pentakill.</row><br><row>(@TFTTrait.TFTEvent5YR_Pentakill.2:MinUnits@) @TFTTrait.TFTEvent5YR_Pentakill.2:Bonus_Damage*100@% %i:scaleDA%, @TFTTrait.TFTEvent5YR_Pentakill.2:Attack_Speed*100@% viteză de atac după o ucidere Pentakill.</row>"
+  },
+  "TFTEvent5YR_HighRoller": {
+    "name": "Miză mare",
+    "desc": "Primești ''Brațul făcut de Jinx al Sevikăi''!<br><br>Începutul luptei: reîncarcă o modificare aleatorie a lui Jinx. Reîncarcă alta:<br><row>(@TFTTrait.TFTEvent5YR_HighRoller.1:MinUnits@) după @TFTTrait.TFTEvent5YR_HighRoller.1:RollingFrequency@ secunde.</row><br><row>(@TFTTrait.TFTEvent5YR_HighRoller.2:MinUnits@) la fiecare @TFTTrait.TFTEvent5YR_HighRoller.2:RollingFrequency@ secunde. Modificările sunt mai puternice, iar deținătorul poate obține acum ''Potul lui Jinx''!</row><br><br>Modificări:<br>- Rachetă: lansează rachete către inamici aleatorii. <br>-Scut: oferă un scut timp de @TFTTrait.TFTEvent5YR_HighRoller.1:Spell2ShieldDuration@ secunde.<br>- Monedă: primești aur.<br><br>Rachete lansate: @TFTUnitProperty.trait:TFTEvent5YR_HighRoller_RocketsFired@<br>Scuturi primite: @TFTUnitProperty.trait:TFTEvent5YR_HighRoller_ShieldsGained@<br>Aur obținut: @TFTUnitProperty.trait:TFTEvent5YR_HighRoller_GoldGained@<br>Poturi obținute: @TFTUnitProperty.trait:TFTEvent5YR_HighRoller_JackpotsHit@"
+  },
+  "TFTEvent5YR_MechPilot": {
+    "name": "Pilot Mecha",
+    "desc": "Folosește ''Selectorul de pilot'' pentru a alege un pilot. Începutul luptei: pilotul sare într-un robot Mecha.<br><br>Robotul Mecha are aceleași caracteristici și obiecte ca pilotul și primește un procent din daunele din atac și viața maximă ale pilotului. Când robotul Mecha moare, pilotul/piloții sunt ejectați cu @TFTTrait.TFTEvent5YR_MechPilot.1:EjectedPilotHealthPercent@% din viața lor maximă.<br><br><row>(@TFTTrait.TFTEvent5YR_MechPilot.1:MinUnits@) Mini-Mecha: @TFTTrait.TFTEvent5YR_MechPilot.1:MechCombinedADRatio*100@% %i:scaleAD%%i:scaleHealth%</row> <br><row>(@TFTTrait.TFTEvent5YR_MechPilot.2:MinUnits@) Super-Mecha: @TFTTrait.TFTEvent5YR_MechPilot.2:MechCombinedADRatio*100@% %i:scaleAD%%i:scaleHealth%. Cele mai apropiate 2 unități de pilot sar și ele în robotul Mecha. </row>"
+  },
+  "TFTEvent5YR_Coven": {
+    "name": "Vrăjitoare",
+    "desc": "Unitatea cea mai apropiată de centrul echipei este aleasă ca lider al vrăjitoarelor, primind puterea abilităților bonus.<br><br>Când echipa ta folosește o abilitate, liderul vrăjitoarelor primește mană.<br><br><row>(@TFTTrait.TFTEvent5YR_Coven.1:MinUnits@) @TFTTrait.TFTEvent5YR_Coven.1:AbilityPower@ %i:scaleAP%,  @TFTTrait.TFTEvent5YR_Coven.1:ManaToGive@ %i:scaleMana% </row><br><row>(@TFTTrait.TFTEvent5YR_Coven.2:MinUnits@) @TFTTrait.TFTEvent5YR_Coven.2:AbilityPower@ %i:scaleAP%,  @TFTTrait.TFTEvent5YR_Coven.2:ManaToGive@ %i:scaleMana% </row>"
+  },
+  "TFTEvent5YR_Overlord": {
+    "name": "Comandant",
+    "desc": "Folosește ''Selectorul de comandant'' pentru a alege un comandant.<br><br>Comandantul mușcă din unitatea aflată pe hexagonul din spatele lui, provocându-i daune reale acelei unități.<br>Comandantul primește o cantitate de viață egală cu daunele provocate de mușcătură și obține un procent din daunele din atac și puterea abilităților acelei unități.<br><br><row>(@TFTTrait.TFTEvent5YR_Overlord.1:MinUnits@) Daune reale de @TFTTrait.TFTEvent5YR_Overlord.1:HPPercentDamage*100@% din viața maximă, @TFTTrait.TFTEvent5YR_Overlord.1:PercentADAPGain*100@% %i:scaleAD%%i:scaleAP%</row> <br><row>(@TFTTrait.TFTEvent5YR_Overlord.2:MinUnits@) Daune reale de @TFTTrait.TFTEvent5YR_Overlord.2:HPPercentDamage*100@% din viața maximă, @TFTTrait.TFTEvent5YR_Overlord.2:PercentADAPGain*100@% %i:scaleAD%%i:scaleAP%. <br>Mușcă din două unități. Daunele provocate de atacurile și abilitățile comandantului <TFTKeyword>fragmentează</TFTKeyword> cu 30%, <TFTKeyword>sfâșie</TFTKeyword> cu 30%, <TFTKeyword>slăbesc</TFTKeyword> cu @TFTTrait.TFTEvent5YR_Overlord.2:EnemyDamageReduction*100@% și <TFTKeyword>rănesc</TFTKeyword> cu 33% inamicii timp de @TFTTrait.TFTEvent5YR_Overlord.2:DebuffDuration@ secunde. Aceste efecte nu se cumulează.</row><br><br><tftitemrules><tftbold>Fragmentare</tftbold>: reduce rezistența la magie<br><tftbold>Sfâșiere</tftbold>: reduce armura<br><tftbold>Slăbire</tftbold>: reduce daunele provocate<br><tftbold>Rănire</tftbold>: reduce vindecarea primită</tftitemrules><br>"
+  },
+  "TFTEvent5YR_Rebel": {
+    "name": "Rebel",
+    "desc": "Echipa ta primește un scut și amplificarea daunelor pentru fiecare aliat adiacent.<br><br><row>(@TFTTrait.TFTEvent5YR_Rebel.1:MinUnits@) @TFTTrait.TFTEvent5YR_Rebel.1:ShieldAmount@ Scut de @TFTTrait.TFTEvent5YR_Rebel.1:ShieldDuration@ secunde, @TFTTrait.TFTEvent5YR_Rebel.1:DamageAmp@% %i:scaleDA%</row><br><row>(@TFTTrait.TFTEvent5YR_Rebel.2:MinUnits@) @TFTTrait.TFTEvent5YR_Rebel.2:ShieldAmount@ Scut de @TFTTrait.TFTEvent5YR_Rebel.2:ShieldDuration@ secunde, @TFTTrait.TFTEvent5YR_Rebel.2:DamageAmp@% %i:scaleDA%</row>"
+  },
+  "TFTEvent5YR_Empress": {
+    "name": "Împărăteasă",
+    "desc": "Primești o ''Coroană de lavandă''. După primele @TFTTrait.TFTEvent5YR_Empress.1:DelayForInitialCoralSpawn@ secunde de luptă, invoci un coral din Vid lângă ținta actuală a deținătorului.<br>Deținătorul se deplasează instantaneu în locația coralului și îl consumă, primind viață maximă, daune din atac și puterea abilităților și provocându-le daune magice inamicilor aflați la cel mult @TFTTrait.TFTEvent5YR_Empress.1:HexRange@ hexagoane.<br><br><row>(@TFTTrait.TFTEvent5YR_Empress.1:MinUnits@) Coralul oferă o creștere de @TFTTrait.TFTEvent5YR_Empress.1:PercentBonusMaxHealth*100@% a vieții maxime, @TFTTrait.TFTEvent5YR_Empress.1:BonusAD*100@% %i:scaleAD% %i:scaleAP%.</row><br><row>(@TFTTrait.TFTEvent5YR_Empress.2:MinUnits@) Uciderile lasă acum în urmă corali suplimentari din Vid. Primul coral oferă o creștere de @TFTTrait.TFTEvent5YR_Empress.2:PercentBonusMaxHealth*100@% a vieții maxime și @TFTTrait.TFTEvent5YR_Empress.2:BonusAD*100@% %i:scaleAD% %i:scaleAP%; consumarea coralilor suplimentari vindecă deținătorul în valoare de @TFTTrait.TFTEvent5YR_Empress.2:PercentHealthHeal*100@% %i:scaleHealth% și oferă încă @TFTTrait.TFTEvent5YR_Empress.2:StackingBonusAD*100@% %i:scaleAD% %i:scaleAP%.</row>"
   },
   "TFT13_Viktor": {
     "name": "Viktor",

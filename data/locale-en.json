@@ -6751,6 +6751,418 @@
     "name": "Protector's Vow",
     "desc": "Combat Start: Gain @CombatStartMana@ Mana.<br><br>At @HealthThreshold@% Health, gain @TriggerMana@ Mana and a Shield equal to @ShieldHealthPercent@% max Health."
   },
+  "TFTEvent5YR_Explorer_TotalArmorQuest": {
+    "name": "A champion reaches @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ Armor in player combat.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_DamageDealtQuest": {
+    "name": "A champion deals @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ damage in 1 combat.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_BrockSurviveQuest": {
+    "name": "Brock survives @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ player combats.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_BuyXPQuest": {
+    "name": "Buy @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ XP.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_ShopRerollHardQuest": {
+    "name": "Reroll the shop @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ times.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_Lose2Quest": {
+    "name": "Lose @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ player combats.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_ClearMindQuest": {
+    "name": "Have an empty bench at the end of combat for @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ rounds.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_BuyXPHardQuest": {
+    "name": "Buy @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ XP.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_2Star4CostTankQuest": {
+    "name": "Field a 2-Star 4-Cost Tank in combat.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_WinStreakShortQuest": {
+    "name": "Win @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ player combats in a row.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_BuyXPMediumQuest": {
+    "name": "Buy @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ XP.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_2Star3CostDamageQuest": {
+    "name": "Field a 2-Star 3-Cost Caster in combat.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_LoseBigStreakQuest": {
+    "name": "Lose @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ player combats in a row.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_DamageBlockedQuest": {
+    "name": "A  champion blocks @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ damage in 1 combat.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_Cashout": {
+    "name": "<b>Spend all %i:Set16Ixtal%. Start a new Quest next round!</b>",
+    "desc": "Total %i:Set16Ixtal%: <b>@TFTUnitProperty.:TFT16_Explorer_CurrentExplorerPoints@</b><br>Est. Value: ~<b>@TFTUnitProperty.:TFT16_Explorer_CurrentCashoutLevel@</b> gold"
+  },
+  "TFTEvent5YR_Explorer_EarnInterestQuest": {
+    "name": "Earn @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ interest.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_ShopRerollQuest": {
+    "name": "Reroll the shop @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ times.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_ZeroGoldQuest": {
+    "name": "Start combat with zero gold @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ times.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_KillQuest": {
+    "name": "Kill @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ enemies.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_3Star1CostFighterQuest": {
+    "name": "Field a 3-Star 1-Cost Non-Tank in combat.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_ShopRerollMediumQuest": {
+    "name": "Reroll the shop @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ times.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_TotalMRQuest": {
+    "name": "A champion reaches @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ Magic Resist in combat.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_LoseQuest": {
+    "name": "Lose @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ player combats.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_LowHealthQuest": {
+    "name": "Have less than @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ player health.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_WinLateQuest": {
+    "name": "Win @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ player combats.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_TotalGoldQuest": {
+    "name": "Have @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@+ gold at the end of combat.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_ChampsDiedQuest": {
+    "name": "Have @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ of your units die in player combats.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_LoseSmallStreakQuest": {
+    "name": "Lose @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ player combats in a row.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_1UnitAliveQuest": {
+    "name": "Win @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ player combats with only 1 unit surviving.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_LevelUpQuest": {
+    "name": "Reach level @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_2CostTankSurviveQuest": {
+    "name": "A 2-Cost Tank survives player combat for @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ seconds.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_2Star2CostTankQuest": {
+    "name": "Field a 2-Star 2-Cost Tank in combat.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_1HPQuest": {
+    "name": "Have exactly @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ player health.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_LowStreakShortQuest": {
+    "name": "Alternate winning and losing for @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ player combats.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_BigHealthLossQuest": {
+    "name": "Have less than @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ player health.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_ClutteredMindQuest": {
+    "name": "Have a full bench at the end of combat for @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ rounds.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_123CostQuest": {
+    "name": "Field a 1-cost, 2-cost, and 3-cost champion for @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ player combats.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_1CostFighterTakedownQuest": {
+    "name": "A 1-cost fighter or assassin scores @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ takedowns in 1 player combat.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Explorer_LoseHardQuest": {
+    "name": "Lose @TFTUnitProperty.:TFT16_Explorer_QuestVariable1@ player combats.",
+    "desc": "Reward: @TFTUnitProperty.:TFT16_Explorer_QuestExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Item_MaestrosBaton": {
+    "name": "Maestros Baton",
+    "desc": "The holder has a fixed Attack Speed of @TFTTrait.TFTEvent5YR_Maestro.:JhinAttackSpeed@, and each @TFTTrait.TFTEvent5YR_Maestro.:BonusAttackSpeed@% of bonus Attack Speed is converted to @TFTTrait.TFTEvent5YR_Maestro.:BonusAttackDamage@% Attack Damage.<br><br>After summoning 4 Grand Finale Rifles, they begin firing at the same rate as the holder, dealing @TFTTrait.TFTEvent5YR_Maestro.:RifleADScalar*100@% %i:scaleAD% + @TFTTrait.TFTEvent5YR_Maestro.:RifleAPScalar*100@% %i:scaleAP% physical damage. <br><br>Every 4th volley is <tftEvent5YRHarmonic>Harmonic</tftEvent5YRHarmonic>, and deals @TFTUnitProperty.item:TFTEvent5YR_Maestro_HarmonicDamage_BatonTooltip*100@% of the damage the holder and their Rifles have done since the last Harmonic volley."
+  },
+  "TFTEvent_5YR_Item_TraitMascotActivator": {
+    "name": "Mascot",
+    "desc": "Your team heals a percentage of their max Health every @TFTTrait.TFTEvent5YR_Mascot.1:Seconds@ seconds.<br><br>When a champion dies, they retreat to the sidelines to cheer on your team. Your team's healing increases for each cheering champion.<br><br><row> (@TFTTrait.TFTEvent5YR_Mascot.1:MinUnits@) @TFTTrait.TFTEvent5YR_Mascot.1:BaseHealthRegen@% %i:scaleHealth% base, @TFTTrait.TFTEvent5YR_Mascot.1:HealthRegenPerMascot@% %i:scaleHealth% per cheering champion</row><br><row> (@TFTTrait.TFTEvent5YR_Mascot.2:MinUnits@) @TFTTrait.TFTEvent5YR_Mascot.2:BaseHealthRegen@% %i:scaleHealth% base, @TFTTrait.TFTEvent5YR_Mascot.2:HealthRegenPerMascot@% %i:scaleHealth% per cheering champion</row>"
+  },
+  "TFTEvent5YR_Storyweaver7_Support": {
+    "name": "Tome of Mending",
+    "desc": "Every @Duration@ seconds, revive the strongest ally that hasn't been revived yet at @HPPercent*100@% of their maximum Health."
+  },
+  "TFTEvent_5YR_Item_TraitDragonlordActivator": {
+    "name": "Dragonlord",
+    "desc": "After @TFTTrait.TFTEvent5YR_Dragonlord.1:FirstDelay@ seconds of combat, the Dragon strikes the board, dealing <trueDamage>true damage</trueDamage> and stunning all enemies. Allies gain Attack Speed for the rest of combat.<br><br><row>(@TFTTrait.TFTEvent5YR_Dragonlord.1:MinUnits@) @TFTTrait.TFTEvent5YR_Dragonlord.1:TrueDamageHPRatio*100@% %i:scaleHealth% damage, Stuns for @TFTTrait.TFTEvent5YR_Dragonlord.1:StunDuration@ seconds, @TFTTrait.TFTEvent5YR_Dragonlord.1:AttackSpeedBuff*100@% %i:scaleAS%.</row><br><row>(@TFTTrait.TFTEvent5YR_Dragonlord.2:MinUnits@) @TFTTrait.TFTEvent5YR_Dragonlord.2:TrueDamageHPRatio*100@% %i:scaleHealth% damage, Stuns for @TFTTrait.TFTEvent5YR_Dragonlord.2:StunDuration@ seconds, @TFTTrait.TFTEvent5YR_Dragonlord.2:AttackSpeedBuff*100@% %i:scaleAS%.<br>After an additional @TFTTrait.TFTEvent5YR_Dragonlord.2:SecondDelay@ seconds, the Dragon strikes again.</row><br><br>"
+  },
+  "TFTEvent_5YR_Item_TraitSocialiteActivator": {
+    "name": "Socialite",
+    "desc": "Gain a spotlight hex.<br>Combat start: the unit standing in the spotlight gains bonus stats.<br><br><row>(@TFTTrait.TFTEvent5YR_Socialite.1:MinUnits@) @TFTTrait.TFTEvent5YR_Socialite.1:DamagePercent*100@% %i:scaleDA% and @TFTTrait.TFTEvent5YR_Socialite.1:ManaPerSecond@&nbsp;%i:scaleMana% per second.</row><br><row>(@TFTTrait.TFTEvent5YR_Socialite.2:MinUnits@) @TFTTrait.TFTEvent5YR_Socialite.2:DamagePercent*100@% %i:scaleDA%, @TFTTrait.TFTEvent5YR_Socialite.2:ManaPerSecond@&nbsp;%i:scaleMana% per second, and @TFTTrait.TFTEvent5YR_Socialite.2:OmnivampPercent*100@% %i:scaleSV%. Gain another spotlight hex.</row>"
+  },
+  "TFTEvent_5YR_Item_TraitPentakillActivator": {
+    "name": "Pentakill",
+    "desc": "Your team gains @TFTTrait.TFTEvent5YR_Pentakill.1:Damage_Reduction*100@% Durability and Damage Amp. For each champion kill, a champion on your team rocks out, increasing this bonus Damage Amp by @TFTTrait.TFTEvent5YR_Pentakill.:Kill_Bonus*100@%.<br><br>On the @TFTTrait.TFTEvent5YR_Pentakill.:Kill_Count@th kill, your entire team rocks out and gains Attack Speed.<br><br><row>(@TFTTrait.TFTEvent5YR_Pentakill.1:MinUnits@) @TFTTrait.TFTEvent5YR_Pentakill.1:Bonus_Damage*100@% %i:scaleDA%, @TFTTrait.TFTEvent5YR_Pentakill.1:Attack_Speed*100@% Attack Speed after a Pentakill.</row><br><row>(@TFTTrait.TFTEvent5YR_Pentakill.2:MinUnits@) @TFTTrait.TFTEvent5YR_Pentakill.2:Bonus_Damage*100@% %i:scaleDA%, @TFTTrait.TFTEvent5YR_Pentakill.2:Attack_Speed*100@% Attack Speed after a Pentakill.</row>"
+  },
+  "TFTEvent5YR_Storyweaver7_AP": {
+    "name": "Tome of Power",
+    "desc": "Kayle deals @DamageAmpPercent*100@% more damage. When she casts, she fires two waves."
+  },
+  "TFTEvent5YR_Storyweaver7_AS": {
+    "name": "Tome of Swiftness",
+    "desc": "Kayle deals @DamageAmpPercent*100@% more damage. Her attacks now hit in a @HexRadius@-hex radius around the target"
+  },
+  "TFTEvent_5YR_Item_TraitMountainActivator": {
+    "name": "Mountain",
+    "desc": "Gain 2 Mountain hexes in the front row.<br>Combat start: units standing on a Mountain hex gain a Shield and permanent bonus Health.<br><br><row>(@TFTTrait.TFTEvent5YR_Mountain.1:MinUnits@) @TFTTrait.TFTEvent5YR_Mountain.1:ShieldValue@ Shield, @TFTTrait.TFTEvent5YR_Mountain.1:PermBonusHealth@ %i:scaleHealth%. </row><br><row>(@TFTTrait.TFTEvent5YR_Mountain.2:MinUnits@) @TFTTrait.TFTEvent5YR_Mountain.2:ShieldValue@ Shield, @TFTTrait.TFTEvent5YR_Mountain.2:PermBonusHealth@ %i:scaleHealth%. The entire front row becomes Mountain hexes.</row>"
+  },
+  "TFTEvent5YR_Item_Nitro_ChromeCounter": {
+    "name": "Chrome",
+    "desc": "<TFTTrackerLabel>Total Chrome: @TFTUnitProperty.item:TFTEvent5YR_Nitro_TotalScrap@<br>Total Bonuses: @TFTUnitProperty.item:TFTEvent5YR_Nitro_TotalBonusAP@% %i:scaleAP% / @TFTUnitProperty.item:TFTEvent5YR_Nitro_TotalBonusHP@ %i:scaleHealth%</TFTTrackerLabel>"
+  },
+  "TFTEvent_5YR_Item_TraitShimmerscaleActivator": {
+    "name": "Shimmerscale",
+    "desc": "Gain Shimmerscale items. These items give gold as well as combat power.<br><br><row>(@TFTTrait.TFTEvent5YR_Shimmerscale.1:MinUnits@)Gain Goldmancers Staff. At Stage @TFTTrait.TFTEvent5YR_Shimmerscale.1:SecondItemStage@-@TFTTrait.TFTEvent5YR_Shimmerscale.1:SecondItemRound@ gain Draven's Axe.</row><br><row>(@TFTTrait.TFTEvent5YR_Shimmerscale.2:MinUnits@)Gain Crown of Champions.</row>"
+  },
+  "TFTEvent_5YR_Item_TraitIxtalActivator": {
+    "name": "Ixtal",
+    "desc": "<row>(@TFTTrait.TFTEvent5YR_Ixtal.1:MinUnits@) Complete Quests to earn Sunshards (%i:Set16Ixtal%) and spend them for&nbsp;loot!</row><br><row>(@TFTTrait.TFTEvent5YR_Ixtal.2:MinUnits@) Heal 2 player health at the start of player combat. Find @TFTTrait.TFTEvent5YR_Ixtal.2:BonusClues@ %i:Set16Ixtal% at the end of combat, and you can now unlock Brock after reaching 500 %i:Set16Ixtal%!</row><br><br><rules>Completing a Quest before combat ends grants you a new one at the start of next round.</rules><br><br>Total Sunshards Earned: @TFTUnitProperty.trait:TFTEvent5YR_Explorer_TotalExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent_5YR_Item_TraitTheCrewActivator": {
+    "name": "The Crew",
+    "desc": "Summon the <i>Nocturnus</i> to aid you in battle! It fires a rocket that deals @TFTTrait.TFTEvent5YR_TheCrew.1:BaseRocketDamage@ magic damage every @TFTTrait.TFTEvent5YR_TheCrew.1:BaseDamageThreshold@ damage your team deals.<br><br>2-cost and higher champions become Crew members after reaching 3-star. Gain additional bonuses for each Crew member.<br><br><row>(@TFTTrait.TFTEvent5YR_TheCrew.1:MinUnits@) 2 max Crew members.</row><br><row>(@TFTTrait.TFTEvent5YR_TheCrew.2:MinUnits@) 4 maximum Crew members.</row><br><br><tftActiveRank enabled=TFTEvent5YR_Trait_WildcardCrew_Bonus1Active default=false alternate=TFTGuildInactive>(1x <ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus1Active>%i:3StarEnabled%</ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus1Active>): + @TFTTrait.TFTEvent5YR_TheCrew.1:OnARollRolls@ free rerolls when you star up a unit you fielded last combat.</tftActiveRank><br><tftActiveRank enabled=TFTEvent5YR_Trait_WildcardCrew_Bonus2Active default=false alternate=TFTGuildInactive>(2x <ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus2Active>%i:3StarEnabled%</ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus2Active>): Rockets deal <magicDamage>@TFTTrait.TFTEvent5YR_TheCrew.1:UpgradedRocketDamage@</magicDamage> damage.</tftActiveRank><br><tftActiveRank enabled=TFTEvent5YR_Trait_WildcardCrew_Bonus3Active default=false alternate=TFTGuildInactive>(3x <ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus3Active>%i:3StarEnabled%</ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus3Active>): + @TFTTrait.TFTEvent5YR_TheCrew.1:FreeRerollsPerRound@ free reroll / round.</tftActiveRank><br><tftActiveRank enabled=TFTEvent5YR_Trait_WildcardCrew_Bonus4Active default=false alternate=TFTGuildInactive>(4x <ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus4Active>%i:3StarEnabled%</ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus4Active>): Rockets fire every @TFTTrait.TFTEvent5YR_TheCrew.1:UpgradedDamageThreshold@ damage dealt. Gain @TFTTrait.TFTEvent5YR_TheCrew.1:XPPerRound@ XP per round.</tftActiveRank>"
+  },
+  "TFTEvent_5YR_Item_TraitHoneymancyActivator": {
+    "name": "Honeymancy",
+    "desc": "Your champions gain Bees that deal magic damage to their targets every @TFTTrait.TFTEvent5YR_Honeymancy:Period@ seconds. Bee damage is based on the damage dealt and taken by the host champion, plus a flat amount per Bee.<br><br>When a champion dies, they leave @TFTTrait.TFTEvent5YR_Honeymancy:NumTransfers@ bees that follow nearby champions for the rest of combat.<br><br><row>(@TFTTrait.TFTEvent5YR_Honeymancy.1:MinUnits@) @TFTTrait.TFTEvent5YR_Honeymancy.1:MiniCount@ Bees, @TFTTrait.TFTEvent5YR_Honeymancy.1:BonusDamage*100@% Damage dealt, @TFTTrait.TFTEvent5YR_Honeymancy.1:DamageReceived*100@% damage taken, @TFTTrait.TFTEvent5YR_Honeymancy.1:DamagePerMini@ damage per Bee.</row><br><row>(@TFTTrait.TFTEvent5YR_Honeymancy.2:MinUnits@) @TFTTrait.TFTEvent5YR_Honeymancy.2:MiniCount@ Bees, @TFTTrait.TFTEvent5YR_Honeymancy.2:BonusDamage*100@% Damage dealt, @TFTTrait.TFTEvent5YR_Honeymancy.2:DamageReceived*100@% damage taken, @TFTTrait.TFTEvent5YR_Honeymancy.2:DamagePerMini@ damage per Bee.</row>"
+  },
+  "TFTEvent_5YR_Item_TraitConquerorActivator": {
+    "name": "Conqueror",
+    "desc": "Your team's takedowns grant stacks of Conquest. After gaining enough Conquest, open War Chests full of loot!<br><br>Your team gains Attack Damage and Ability Power, increased by @TFTTrait.TFTEvent5YR_Conqueror:PercentIncreasePerChest*100@% for each War Chest opened.<br><br><row>(@TFTTrait.TFTEvent5YR_Conqueror.1:MinUnits@) @TFTTrait.TFTEvent5YR_Conqueror.1:ADAPBase*100@%&nbsp;%i:scaleAD%%i:scaleAP%; @TFTTrait.TFTEvent5YR_Conqueror.1:StacksPerKill@x&nbsp;Conquest</row><br><row>(@TFTTrait.TFTEvent5YR_Conqueror.2:MinUnits@) @TFTTrait.TFTEvent5YR_Conqueror.2:ADAPBase*100@%&nbsp;%i:scaleAD%%i:scaleAP%; @TFTTrait.TFTEvent5YR_Conqueror.2:StacksPerKill@x&nbsp;Conquest</row><br><br><rules>War Chests Opened: @TFTUnitProperty.trait:TFTEvent5YR_Conqueror_ChestsCompleted@</rules><br><rules>Current Stats: @TFTUnitProperty.trait:TFTEvent5YR_Conqueror_CurrentADAP@%&nbsp;%i:scaleAD%%i:scaleAP%</rules><br>"
+  },
+  "TFTEvent_5YR_Item_TraitPunkActivator": {
+    "name": "Punk",
+    "desc": "Your team gain bonus Health, Attack Damage and Ability Power, which increases by 1% every time you spend gold on a Shop reroll.<br><br>After each combat, gain a 1 gold reroll for that round. Your first reroll each round grants @TFTTrait.TFTEvent5YR_Punk:FIRST_ROLL_BONUS@% bonus instead!<br><br><row>(@TFTTrait.TFTEvent5YR_Punk.1:MinUnits@ )@TFTTrait.TFTEvent5YR_Punk.1:BONUS_HEALTH@ %i:scaleHealth% and @TFTTrait.TFTEvent5YR_Punk.1:BONUS_AD_AP*100@% %i:scaleAD%%i:scaleAP%</row><br><row>(@TFTTrait.TFTEvent5YR_Punk.2:MinUnits@ )@TFTTrait.TFTEvent5YR_Punk.2:BONUS_HEALTH@ %i:scaleHealth% and @TFTTrait.TFTEvent5YR_Punk.2:BONUS_AD_AP*100@% %i:scaleAD%%i:scaleAP%</row><br><br>Current Bonus: @TFTUnitProperty.trait:TFTEvent5YR_Punk_CurrentBonus@%<br>@TFTUnitProperty.trait:TFTEvent5YR_Punk_CurrentHealthBonus@ %i:scaleHealth% and @TFTUnitProperty.trait:TFTEvent5YR_Punk_CurrentADBonus@% %i:scaleAD%%i:scaleAP%"
+  },
+  "TFTEvent_5YR_Item_TraitStoryweaverActivator": {
+    "name": "Storyweaver",
+    "desc": "Summon a Hero named Kayle and evolve her as you level up!<br><br><row>(@TFTTrait.TFTEvent5YR_Storyweaver.1:MinUnits@) When you reach level @TFTTrait.TFTEvent5YR_Storyweaver:FirstArmoryLevel@, Kayle upgrades to 2-star. Pick a supportive effect.</row><br><row>(@TFTTrait.TFTEvent5YR_Storyweaver.2:MinUnits@) Kayle evolves again at levels @TFTTrait.TFTEvent5YR_Storyweaver:SecondArmoryLevel@, @TFTTrait.TFTEvent5YR_Storyweaver:ThirdArmoryLevel@ and @TFTTrait.TFTEvent5YR_Storyweaver:FourStarUpgradeLevel@:<br>Level @TFTTrait.TFTEvent5YR_Storyweaver:SecondArmoryLevel@: Pick a combat effect. <br>Level @TFTTrait.TFTEvent5YR_Storyweaver:ThirdArmoryLevel@: Kayle upgrades to 3-star. Pick a combat effect.<br>Level @TFTTrait.TFTEvent5YR_Storyweaver:FourStarUpgradeLevel@: Kayle upgrades to 4-star.</row><br>"
+  },
+  "TFTEvent_5YR_Item_TraitGlacialActivator": {
+    "name": "Glacial",
+    "desc": "Gain a Glacial Mallet. Attacks from champions holding a mallet have a @TFTTrait.TFTEvent5YR_Glacial.1:ProcPercent*100@% chance to stun their target for @TFTTrait.TFTEvent5YR_Glacial.1:StunDuration@ second and deal bonus magic damage. <br><br><row>(@TFTTrait.TFTEvent5YR_Glacial.1:MinUnits@) @TFTTrait.TFTEvent5YR_Glacial.1:BonusDamage@ magic damage.</row><br><row>(@TFTTrait.TFTEvent5YR_Glacial.2:MinUnits@) @TFTTrait.TFTEvent5YR_Glacial.2:BonusDamage@ magic damage. Gain another Glacial Mallet.</row>"
+  },
+  "TFTEvent_5YR_Item_TraitMechPilotActivator": {
+    "name": "Mech-Pilot",
+    "desc": "Use the Pilot Selector to choose a Pilot. Combat start: the Pilot jumps into a Mech.<br><br>The Mech has the traits and items of its Pilot, and gains a percent of the pilot's Attack Damage and max Health. When the Mech dies, the Pilot(s) are ejected with @TFTTrait.TFTEvent5YR_MechPilot.1:EjectedPilotHealthPercent@% of their max Health.<br><br><row>(@TFTTrait.TFTEvent5YR_MechPilot.1:MinUnits@) Mini-Mech: @TFTTrait.TFTEvent5YR_MechPilot.1:MechCombinedADRatio*100@% %i:scaleAD%%i:scaleHealth%</row> <br><row>(@TFTTrait.TFTEvent5YR_MechPilot.2:MinUnits@) Super-Mech: @TFTTrait.TFTEvent5YR_MechPilot.2:MechCombinedADRatio*100@% %i:scaleAD%%i:scaleHealth%. The 2 nearest units to the Pilot also jump into the Mech. </row>"
+  },
+  "TFTEvent_5YR_Item_TraitPyroActivator": {
+    "name": "Pyro",
+    "desc": "Your team gains @TFTTrait.TFTEvent5YR_Pyro:BaseASPct@% %i:scaleAS% Attack Speed.<br><br>For each kill, your team creates an infernal cinder that you collect the next round. For every @TFTTrait.TFTEvent5YR_Pyro:NumCinders@ cinders you collect, your team gains @TFTTrait.TFTEvent5YR_Pyro:ASPctPerNumCinders@% more %i:scaleAS%.<br><br><row>(@TFTTrait.TFTEvent5YR_Pyro.1:MinUnits@) @TFTTrait.TFTEvent5YR_Pyro.1:NumCindersPerKill@ infernal cinder per enemy.</row><br><row>(@TFTTrait.TFTEvent5YR_Pyro.2:MinUnits@) @TFTTrait.TFTEvent5YR_Pyro.2:NumCindersPerKill@ infernal cinders per enemy and execute enemies under @TFTTrait.TFTEvent5YR_Pyro.2:ExecutePct@% Health.</row><br><br>Cinders collected: @TFTUnitProperty.trait:TFTEvent5YR_PyroCindersCollected@<br>Team %i:scaleAS%: @TFTUnitProperty.trait:TFTEvent5YR_PyroAttackSpeed@%"
+  },
+  "TFTEvent_5YR_Item_TraitJazzActivator": {
+    "name": "Jazz",
+    "desc": "For each active trait, your team gains bonus Health and Damage Amp.<br><rules>(Excludes unique and Anniversary Traits)</rules><br><br><row>(@TFTTrait.TFTEvent5YR_Jazz.1:MinUnits@) @TFTTrait.TFTEvent5YR_Jazz.1:BonusHealth*100@% %i:scaleHealth%, @TFTTrait.TFTEvent5YR_Jazz.1:BonusDamage*100@% %i:scaleDA%</row><br><row>(@TFTTrait.TFTEvent5YR_Jazz.2:MinUnits@) @TFTTrait.TFTEvent5YR_Jazz.2:BonusHealth*100@% %i:scaleHealth%, @TFTTrait.TFTEvent5YR_Jazz.2:BonusDamage*100@% %i:scaleDA%</row><br><br>Bonus Health: @TFTUnitProperty.trait:TFT10_Trait_Jazz_TraitTracker_CurrentBonus@%<br>Bonus Damage Amp: @TFTUnitProperty.trait:TFT10_Trait_Jazz_TraitTracker_CurrentBonus_Damage@%"
+  },
+  "TFTEvent5YR_Consumable_Overlord_OverlordMarker": {
+    "name": "Overlord Selector",
+    "desc": "Use this on a champion to make it the Overlord"
+  },
+  "TFTEvent_5YR_Item_TraitDemaciaActivator": {
+    "name": "Demacia",
+    "desc": "Each time your team loses @TFTTrait.TFTEvent5YR_Demacia.1:MaxHealthLost*100@% max Health, they Rally, reducing their Mana cost by @TFTTrait.TFTEvent5YR_Demacia.1:ManaReductionPct*100@%. Your team gains Armor and Magic Resist.<br><br><row>(@TFTTrait.TFTEvent5YR_Demacia.1:MinUnits@) @TFTTrait.TFTEvent5YR_Demacia.1:ArmorMR@&nbsp;%i:scaleArmor%%i:scaleMR%</row><br><row>(@TFTTrait.TFTEvent5YR_Demacia.2:MinUnits@) @TFTTrait.TFTEvent5YR_Demacia.2:ArmorMR@&nbsp;%i:scaleArmor%%i:scaleMR%. Unlock Galio. On Rally, reduce Mana costs of your team by @TFTTrait.TFTEvent5YR_Demacia.2:ManaReductionPctPerGalioItem*100@% for each item equipped to your strongest Galio, and smite enemies for @TFTTrait.TFTEvent5YR_Demacia.2:EnemyTrueDamage*100@% of their max&nbsp;Health.</row><br><br>"
+  },
+  "TFTEvent_5YR_Item_TraitRebelActivator": {
+    "name": "Rebel",
+    "desc": "Your team gains a Shield and Damage Amp for each adjacent ally.<br><br><row>(@TFTTrait.TFTEvent5YR_Rebel.1:MinUnits@) @TFTTrait.TFTEvent5YR_Rebel.1:ShieldAmount@ Shield for @TFTTrait.TFTEvent5YR_Rebel.1:ShieldDuration@ seconds, @TFTTrait.TFTEvent5YR_Rebel.1:DamageAmp@% %i:scaleDA%</row><br><row>(@TFTTrait.TFTEvent5YR_Rebel.2:MinUnits@) @TFTTrait.TFTEvent5YR_Rebel.2:ShieldAmount@ Shield for @TFTTrait.TFTEvent5YR_Rebel.2:ShieldDuration@ seconds, @TFTTrait.TFTEvent5YR_Rebel.2:DamageAmp@% %i:scaleDA%</row>"
+  },
+  "TFTEvent5YR_Storyweaver3_AP": {
+    "name": "Talisman of Might",
+    "desc": "Grant Kayle and adjacent allies in the same row @APAmt@ Ability Power."
+  },
+  "TFTEvent5YR_Storyweaver3_AS": {
+    "name": "Talisman of Speed",
+    "desc": "Grant Kayle and adjacent allies in the same row @ASAmt*100@% Attack Speed."
+  },
+  "TFTEvent_5YR_Item_TraitMaestroActivator": {
+    "name": "Maestro",
+    "desc": "Gain a Maestro's Baton.<br>The holder has a fixed Attack Speed, and converts bonus Attack Speed to Attack Damage.<br><br>Every @TFTTrait.TFTEvent5YR_Maestro.1:NumAutosToSpawnJhinGun@ attacks, the Maestro summons a Grand Finale Rifle into one of your empty bench slots, up to 4. After summoning 4, they fire at the same rate as the Maestro, dealing physical damage. <br>Every 4th volley is <tftEvent5YRHarmonic>Harmonic</tftEvent5YRHarmonic>, dealing a percentage of the total damage the Maestro and their Rifles have done since the last Harmonic volley.<br><br><row>(@TFTTrait.TFTEvent5YR_Maestro.1:MinUnits@) @TFTTrait.TFTEvent5YR_Maestro.1:EmpoweredShotEchoDamagePercentage*100@% <tftEvent5YRHarmonic>Harmonic</tftEvent5YRHarmonic> Damage.</row><br><row>(@TFTTrait.TFTEvent5YR_Maestro.2:MinUnits@) @TFTTrait.TFTEvent5YR_Maestro.2:EmpoweredShotEchoDamagePercentage*100@% <tftEvent5YRHarmonic>Harmonic</tftEvent5YRHarmonic> Damage. <br>The Maestro can summon more than 4 Rifles. Combat Start: summon 1 Rifle into an empty bench slot.</row>"
+  },
+  "TFTEvent5YR_Consumable_MechPilot_PilotMarker": {
+    "name": "Pilot Selector",
+    "desc": "Use this on a champion to make it the Pilot of the Mech.<br><br><tftitemrules> [Cannot be used on champions in combat.]</tftitemrules><br><tftitemrules> [Unlimited uses]</tftitemrules>"
+  },
+  "TFTEvent_5YR_Item_TraitEmpressActivator": {
+    "name": "Empress",
+    "desc": "Gain a Lavender Crown. After the first @TFTTrait.TFTEvent5YR_Empress.1:DelayForInitialCoralSpawn@ seconds of combat, spawn a Void Coral near the holder's current target.<br>The holder blinks to the Coral's location and consumes it, gaining max Health, Attack Damage, and Ability Power, and deals magic damage to enemies within @TFTTrait.TFTEvent5YR_Empress.1:HexRange@ hexes.<br><br><row>(@TFTTrait.TFTEvent5YR_Empress.1:MinUnits@) Coral grants @TFTTrait.TFTEvent5YR_Empress.1:PercentBonusMaxHealth*100@% max Health increase, @TFTTrait.TFTEvent5YR_Empress.1:BonusAD*100@% %i:scaleAD% %i:scaleAP%.</row><br><row>(@TFTTrait.TFTEvent5YR_Empress.2:MinUnits@) Kills now leave behind additional Void Corals. First Coral grants @TFTTrait.TFTEvent5YR_Empress.2:PercentBonusMaxHealth*100@% max Health increase and @TFTTrait.TFTEvent5YR_Empress.2:BonusAD*100@% %i:scaleAD% %i:scaleAP%; consuming further Corals heal the holder for @TFTTrait.TFTEvent5YR_Empress.2:PercentHealthHeal*100@% %i:scaleHealth% and grant an additional @TFTTrait.TFTEvent5YR_Empress.2:StackingBonusAD*100@% %i:scaleAD% %i:scaleAP%.</row>"
+  },
+  "TFTEvent5YR_Item_SevikasJinxedArm": {
+    "name": "Sevika's Jinxed Arm",
+    "desc": "At the times shown in the High Roller trait, roll a random Jinx mod:<br>- Rocket: Launch @TFTUnitProperty.item:TFTEvent5YR_HighRoller_NumRockets@ rockets at random enemies, dealing<br>@TFTTrait.TFTEvent5YR_HighRoller.1:Spell1RocketADScalar*100@% Attack Damage + @TFTTrait.TFTEvent5YR_HighRoller.1:Spell1RocketAPScalar*100@% Ability Power physical damage per rocket.<br>- Shield: Gain a @TFTUnitProperty.item:TFTEvent5YR_HighRoller_ShieldFlatAmount@ + @TFTUnitProperty.item:TFTEvent5YR_HighRoller_ShieldMaxHPPercentage@% max Health Shield for @TFTTrait.TFTEvent5YR_HighRoller.1:Spell2ShieldDuration@ seconds.<br>- Gold: Gain @TFTUnitProperty.item:TFTEvent5YR_HighRoller_GoldAmount@ gold.<br>"
+  },
+  "TFTEvent5YR_Item_ShimmerscaleGoldmancersStaff": {
+    "name": "Goldmancer's Staff",
+    "desc": "Grant %i:scaleAP% @AbilityPowerPerGold@ Ability Power per %i:goldCoins% gold in your bank (up to %i:goldCoins% @AbilityPowerGoldMax@ gold) and a @OnKillProcChance*100@% chance to drop %i:goldCoins% @OnKillProcGold@ gold on enemy kill.<br><br><tftitemrules>Gold generated this game: @TFTUnitProperty.item:TFT_Item_GoldGenerated@</tftitemrules>"
+  },
+  "TFTEvent_5YR_Item_TraitElderwoodActivator": {
+    "name": "Elderwood",
+    "desc": "Every @TFTTrait.TFTEvent5YR_Elderwood.1:TickRate@ seconds your team grows, gaining bonus stats. This effect stacks up to @TFTTrait.TFTEvent5YR_Elderwood.1:MaxStacks@ times.<br><br><row>(@TFTTrait.TFTEvent5YR_Elderwood.1:MinUnits@) @TFTTrait.TFTEvent5YR_Elderwood.1:BonusResists@&nbsp;%i:scaleArmor%%i:scaleMR%, @TFTTrait.TFTEvent5YR_Elderwood.1:BonusADSP@&nbsp;%i:scaleAP%%i:scaleAD%</row><br><row>(@TFTTrait.TFTEvent5YR_Elderwood.2:MinUnits@) @TFTTrait.TFTEvent5YR_Elderwood.2:BonusResists@&nbsp;%i:scaleArmor%%i:scaleMR%, @TFTTrait.TFTEvent5YR_Elderwood.2:BonusADSP@&nbsp;%i:scaleAP%%i:scaleAD%</row>"
+  },
+  "TFTEvent5YR_Item_GlacialMallet": {
+    "name": "Glacial Mallet",
+    "desc": "Attacks have a @TFTUnitProperty.item:TFTEvent5YR_Glacial_StunChance@% chance to stun enemies for @TFTTrait.TFTEvent5YR_Glacial.1:StunDuration@ second and deal @TFTUnitProperty.item:TFTEvent5YR_Glacial_BonusDamage@ bonus magic damage.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>"
+  },
+  "TFTEvent_5YR_Item_TraitBossActivator": {
+    "name": "The Boss",
+    "desc": "Gain Boss Knuckles. When the holder first drops below @TFTTrait.TFTEvent5YR_Boss.1:HealthThreshold*100@% Health, they become The Boss and leave combat to start doing sit-ups. Each sit-up restores maximum Health and grants Attack Speed. <br><br><row>(@TFTTrait.TFTEvent5YR_Boss.1:MinUnits@) @TFTTrait.TFTEvent5YR_Boss.1:HealPercent*100@% %i:scaleHealth%, @TFTTrait.TFTEvent5YR_Boss.1:AttackSpeedPercent*100@% %i:scaleAS%.</row><br><row>(@TFTTrait.TFTEvent5YR_Boss.2:MinUnits@) @TFTTrait.TFTEvent5YR_Boss.2:HealPercent*100@% %i:scaleHealth%, @TFTTrait.TFTEvent5YR_Boss.2:AttackSpeedPercent*100@% %i:scaleAS%. If they reach full Health they return to combat Pumped Up: all of their attacks and abilities deal @TFTTrait.TFTEvent5YR_Boss.2:TrueDamagePercentage*100@% of damage as true damage.</row>"
+  },
+  "TFTEvent_5YR_Item_TraitYordleActivator": {
+    "name": "Yordle",
+    "desc": "After each player combat, gain a Yordle Grab Bag full of Yordle-y loot!<br><br><row>(@TFTTrait.TFTEvent5YR_Yordle.1:MinUnits@) Gain a Yordle Grab Bag!</row><br><row>(@TFTTrait.TFTEvent5YR_Yordle.2:MinUnits@) If you have @TFTTrait.TFTEvent5YR_Yordle.2:NumOfThreeStarsNeeded@ or more 3-star champions, your Yordle Grab Bag will contain a Yordle-Lord.</row>"
+  },
+  "TFTEvent_5YR_Item_TraitPhantomActivator": {
+    "name": "Phantom",
+    "desc": "Combat start: random enemies have their Health reduced.<br><br><row>(@TFTTrait.TFTEvent5YR_Phantom.1:MinUnits@) Set @TFTTrait.TFTEvent5YR_Phantom.1:NumUnitsToReduce@ enemy's Health to @TFTTrait.TFTEvent5YR_Phantom.1:PercentHealth*100@% maximum Health.</row><br><row>(@TFTTrait.TFTEvent5YR_Phantom.2:MinUnits@) Set @TFTTrait.TFTEvent5YR_Phantom.2:NumUnitsToReduce@ enemies' Health to @TFTTrait.TFTEvent5YR_Phantom.2:FlatHealth@.</row>"
+  },
+  "TFTEvent_5YR_Item_TraitNitroActivator": {
+    "name": "Nitro",
+    "desc": "After every player combat, your champions grant Chrome to R-080T, based on their star level. Each Chrome grants @TFTTrait.TFTEvent5YR_Nitro.:HealthPerScrap@ Health and @TFTTrait.TFTEvent5YR_Nitro.:APPerScrap@ Ability Power. <br><br><row>(@TFTTrait.TFTEvent5YR_Nitro.1:MinUnits@) Summon R-080T!</row><br><row>(@TFTTrait.TFTEvent5YR_Nitro.2:MinUnits@) Upgrade R-080T to T-43X! At @TFTTrait.TFTEvent5YR_Nitro.:FourStarScrapThreshold@ Chrome, upgradeT-43X to fire a giant laser!</row><br><br><rules>Chrome per star: @TFTTrait.TFTEvent5YR_Nitro.:ScrapPerOneStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerTwoStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerThreeStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerFourStar@</rules>"
+  },
+  "TFTEvent_5YR_Item_TraitHellionActivator": {
+    "name": "Hellion",
+    "desc": "When an allied champion dies, a Doppelhellion (a one less star copy) equipped with a Red Buff will leap from the Hellion portal and join the fight!<br><br><row>(@TFTTrait.TFTEvent5YR_Hellion.1:MinUnits@) The first @TFTTrait.TFTEvent5YR_Hellion.1:NumOfUnits@ champions</row><br><row>(@TFTTrait.TFTEvent5YR_Hellion.2:MinUnits@) The first @TFTTrait.TFTEvent5YR_Hellion.2:NumOfUnits@ champions</row>"
+  },
+  "TFTEvent5YR_Storyweaver5_AS": {
+    "name": "Scroll of Haste",
+    "desc": "Attacks grant Kayle @ASAmt*100@% stacking Attack Speed."
+  },
+  "TFTEvent5YR_Storyweaver5_AP": {
+    "name": "Scroll of Force",
+    "desc": "Kayle's Ability hits a wider area and deals @APAmt*100@% more damage."
+  },
+  "TFTEvent_5YR_Item_TraitCrystalActivator": {
+    "name": "Crystal",
+    "desc": "Your Tanks have a maximum amount of damage they can take from a single attack or ability hit for the first few seconds of combat.<br><br><row>(@TFTTrait.TFTEvent5YR_Crystal.1:MinUnits@) @TFTTrait.TFTEvent5YR_Crystal.1:DamageThreshold@ max damage, @TFTTrait.TFTEvent5YR_Crystal.1:Duration@ seconds.</row><br><row>(@TFTTrait.TFTEvent5YR_Crystal.2:MinUnits@) @TFTTrait.TFTEvent5YR_Crystal.2:DamageThreshold@ max damage, @TFTTrait.TFTEvent5YR_Crystal.2:Duration@ seconds.</row>"
+  },
+  "TFTEvent5YR_Storyweaver3_Support": {
+    "name": "Talisman of Aid",
+    "desc": "Kayle's damaging attacks and abilities @ResistPercent*100@% <TFTKeyword>Shred</TFTKeyword> and <TFTKeyword>Sunder</TFTKeyword> enemies hit for @Duration@ seconds."
+  },
+  "TFTEvent_5YR_Item_TraitBilgewaterActivator": {
+    "name": "Bilgewater",
+    "desc": "Your team's attacks and Abilities mark enemies. The mark stores a percentage of damage dealt to the enemy.<br><br>Marked enemies are struck by a cannonball after @TFTTrait.TFTEvent5YR_Bilgewater.1:BarrageInterval@ seconds, dealing the stored damage plus a flat value as <physicalDamage>physical damage</physicalDamage>.<br><br><row>(@TFTTrait.TFTEvent5YR_Bilgewater.1:MinUnits@) @TFTTrait.TFTEvent5YR_Bilgewater.1:Damage@ + @TFTTrait.TFTEvent5YR_Bilgewater.1:DamagePercent@% damage dealt</row><br><row>(@TFTTrait.TFTEvent5YR_Bilgewater.2:MinUnits@) @TFTTrait.TFTEvent5YR_Bilgewater.2:Damage@ + @TFTTrait.TFTEvent5YR_Bilgewater.2:DamagePercent@% damage dealt. Every @TFTTrait.TFTEvent5YR_Bilgewater.2:ShotsUntilTreasure@th cannonball is replaced with a treasure chest that drops gold!</row>"
+  },
+  "TFTEvent_5YR_Item_TraitHackerActivator": {
+    "name": "Hacker",
+    "desc": "Your team gains Omnivamp and summons a H4ckerr!m. Enemies it passes through are H4ck3d, losing @TFTTrait.TFTEvent5YR_Hacker.1:PercentArmorToRemove*100@% of their Armor and Magic Resist. <br><br><row>(@TFTTrait.TFTEvent5YR_Hacker.1:MinUnits@) @TFTTrait.TFTEvent5YR_Hacker.1:Omnivamp*100@% %i:scaleSV%</row><br><row>(@TFTTrait.TFTEvent5YR_Hacker.2:MinUnits@) @TFTTrait.TFTEvent5YR_Hacker.2:Omnivamp*100@% %i:scaleSV%, AND see your next opponent. Gain a rider hex that sends its unit to the enemy backline at combat start. The rider gains @TFTTrait.TFTEvent5YR_Hacker.2:Horsevamp*100@% %i:scaleSV% instead, and their kills have a @TFTTrait.TFTEvent5YR_Hacker.2:PercentChanceToDropGoldOnKill*100@% chance to drop 1 gold.<br><br>Total Gold Earned: @TFTUnitProperty.trait:TFTEvent5YR_Hacker_RiderGold_Earned@</row>"
+  },
+  "TFTEvent_5YR_Item_TraitFatedActivator": {
+    "name": "Fated",
+    "desc": "Hover one champion over another to form a pair and unlock a <TFTBonus>Fated Bonus</TFTBonus>, based on the role of the champions.<br><br><row>(@TFTTrait.TFTEvent5YR_Fated.1:MinUnits@) Pair gets the Fated Bonus and gains @TFTTrait.TFTEvent5YR_Fated.1:PairHPBonus*100@% max Health. </row><br><row>(@TFTTrait.TFTEvent5YR_Fated.2:MinUnits@) ALL units get the Fated Bonus. The pair gets gains @TFTTrait.TFTEvent5YR_Fated.1:PairHPBonus*100@% max Health and @TFTTrait.TFTEvent5YR_Fated.2:PairBondIncreasePercent*100@% of the Fated Bonus. </row><br><br>Fated Bonuses:<br><ShowIf.TFTEvent5YR_Trait_Fated_AssassinActive><status>Assassins</status>: @TFTTrait.TFTEvent5YR_Fated.1:YasuoBuffBonus@ Shield on combat start</ShowIf.TFTEvent5YR_Trait_Fated_AssassinActive><br><ShowIf.TFTEvent5YR_Trait_Fated_CasterActive><status>Casters</status>: @TFTTrait.TFTEvent5YR_Fated.1:AhriBuffBonus*100@% %i:scaleAD% %i:scaleAP%</ShowIf.TFTEvent5YR_Trait_Fated_CasterActive><br><ShowIf.TFTEvent5YR_Trait_Fated_FighterActive><status>Fighters</status>: @TFTTrait.TFTEvent5YR_Fated.1:SettBuffBonus*100@% %i:scaleSV%</ShowIf.TFTEvent5YR_Trait_Fated_FighterActive><br><ShowIf.TFTEvent5YR_Trait_Fated_MarksmanActive><status>Marksmen</status>: @TFTTrait.TFTEvent5YR_Fated.1:KindredBuffBonus*100@% %i:scaleAS%</ShowIf.TFTEvent5YR_Trait_Fated_MarksmanActive><br><ShowIf.TFTEvent5YR_Trait_Fated_SpecialistActive><status>Specialists</status>: Deal @TFTTrait.TFTEvent5YR_Fated.1:SyndraBuffBonus*100@% of damage as true damage</ShowIf.TFTEvent5YR_Trait_Fated_SpecialistActive><br><ShowIf.TFTEvent5YR_Trait_Fated_TankActive><status>Tanks</status>: @TFTTrait.TFTEvent5YR_Fated.1:ThreshBuffBonus@ %i:scaleArmor% %i:scaleMR%</ShowIf.TFTEvent5YR_Trait_Fated_TankActive><br><br>Your units can only benefit from a single instance of a specific fated bonus."
+  },
+  "TFTEvent_5YR_Item_TraitPreserverActivator": {
+    "name": "Renewer",
+    "desc": "Your team heals for a percent of their max Health every @TFTTrait.TFTEvent5YR_Preserver.1:Duration@ seconds. If they are full Health, restore Mana instead.<br><br><row> (@TFTTrait.TFTEvent5YR_Preserver.1:MinUnits@) @TFTTrait.TFTEvent5YR_Preserver.1:HealthPct*100@% %i:scaleHealth%, or @TFTTrait.TFTEvent5YR_Preserver.1:ManaPct*100@% %i:scaleMana%.</row><br><row> (@TFTTrait.TFTEvent5YR_Preserver.2:MinUnits@) @TFTTrait.TFTEvent5YR_Preserver.2:HealthPct*100@% %i:scaleHealth%, and @TFTTrait.TFTEvent5YR_Preserver.2:ManaPct*100@% %i:scaleMana%. Always get both.</row><br><br>"
+  },
+  "TFTEvent_5YR_Item_TraitHighRollerActivator": {
+    "name": "High Roller",
+    "desc": "Gain a Sevika's Jinxed Arm!<br><br>Combat start: roll a random Jinx mod. Roll another one:<br><row>(@TFTTrait.TFTEvent5YR_HighRoller.1:MinUnits@) after @TFTTrait.TFTEvent5YR_HighRoller.1:RollingFrequency@ seconds.</row><br><row>(@TFTTrait.TFTEvent5YR_HighRoller.2:MinUnits@) every @TFTTrait.TFTEvent5YR_HighRoller.2:RollingFrequency@ seconds. Mods are stronger, and the holder can now hit a Jinxed Jackpot!</row><br><br>Mods:<br>- Rocket: Launch rockets at random enemies. <br>- Shield: Gain a shield for @TFTTrait.TFTEvent5YR_HighRoller.1:Spell2ShieldDuration@ seconds.<br>- Coin: Gain gold.<br><br>Rockets Fired: @TFTUnitProperty.trait:TFTEvent5YR_HighRoller_RocketsFired@<br>Shields Gained: @TFTUnitProperty.trait:TFTEvent5YR_HighRoller_ShieldsGained@<br>Gold Gained: @TFTUnitProperty.trait:TFTEvent5YR_HighRoller_GoldGained@<br>Jackpots Hit: @TFTUnitProperty.trait:TFTEvent5YR_HighRoller_JackpotsHit@"
+  },
+  "TFTEvent5YR_Item_BossKnuckles": {
+    "name": "Boss Knuckles",
+    "desc": "Once per combat at 60% Health, become The Boss and leave combat to start doing sit-ups. Each sit-up restores @TFTUnitProperty.item:TFTEvent5YR_Boss_HealPercent@% max Health and grants @TFTUnitProperty.item:TFTEvent5YR_Boss_AttackSpeedPercent@% Attack Speed. If all allies die, The Boss will immediately return to combat.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>"
+  },
+  "TFTEvent_5YR_Item_TraitTrainerActivator": {
+    "name": "Trainer",
+    "desc": "After combat, the 3 champions closest to Nomsy feed her 1 Snax per star level, adding Health and Ability Power. Nomsy's star level increases every 25 Snax!<br><br><row>(@TFTTrait.TFTEvent5YR_Trainer.1:MinUnits@) Summon Nomsy!</row><br><row>(@TFTTrait.TFTEvent5YR_Trainer.2:MinUnits@) Nomsy's Ability deals @TFTTrait.TFTEvent5YR_Trainer.2:DamageInc*100@% bonus damage</row>"
+  },
+  "TFTEvent_5YR_Item_TraitShurimaActivator": {
+    "name": "Shurima",
+    "desc": "Combat start: select champions Ascend and gain @TFTTrait.TFTEvent5YR_Shurima.1:BonusHealthPercent*100@% maximum Health %i:scaleHealth% and @TFTTrait.TFTEvent5YR_Shurima.1:BonusASPercent*100@% Attack Speed %i:scaleAS%.<br><br><row>(@TFTTrait.TFTEvent5YR_Shurima.1:MinUnits@) The strongest champion Ascends after @TFTTrait.TFTEvent5YR_Shurima.1:SecondsToAscend@ seconds. </row><br><row>(@TFTTrait.TFTEvent5YR_Shurima.2:MinUnits@) The @TFTTrait.TFTEvent5YR_Shurima.2:NumUnitsToAscend@ strongest champions Ascend immediately.</row><br>"
+  },
+  "TFTEvent5YR_Item_LavenderCrown": {
+    "name": "Lavender Crown",
+    "desc": "When the holder consumes a Void Coral, they blink to its location and deal @TFTTrait.TFTEvent5YR_Empress.1:PercentADDamage*100@% %i:scaleAD% + @TFTTrait.TFTEvent5YR_Empress.1:PercentAPDamage*100@% %i:scaleAP% magic damage to enemies within @TFTTrait.TFTEvent5YR_Empress.1:HexRange@ hexes.<br><br>Consuming the first Coral increases the holder's max Health by @TFTUnitProperty.item:TFTEvent5YR_Empress_FirstCoralHealthPercentageIncrease@% and grants @TFTUnitProperty.item:TFTEvent5YR_Empress_FirstCoralADIncrease@% %i:scaleAD% and @TFTUnitProperty.item:TFTEvent5YR_Empress_FirstCoralAPIncrease@% %i:scaleAP%.<br><br>@TFTUnitProperty.item:TFTEvent5YR_Empress_PrismaticItemTooltipFooter@"
+  },
+  "TFTEvent_5YR_Item_TraitOverlordActivator": {
+    "name": "Overlord",
+    "desc": "Use the Overlord Selector to choose an Overlord.<br><br>The Overlord takes a bite out of the unit in the hex behind them, dealing true damage to that unit.<br>The Overlord gains the same amount of health as the chomp deals, and gains a percentage of that unit's Attack Damage and Ability Power.<br><br><row>(@TFTTrait.TFTEvent5YR_Overlord.1:MinUnits@) @TFTTrait.TFTEvent5YR_Overlord.1:HPPercentDamage*100@% max Health true damage,  @TFTTrait.TFTEvent5YR_Overlord.1:PercentADAPGain*100@% %i:scaleAD%%i:scaleAP%</row> <br><row>(@TFTTrait.TFTEvent5YR_Overlord.2:MinUnits@) @TFTTrait.TFTEvent5YR_Overlord.2:HPPercentDamage*100@% max Health true damage,  @TFTTrait.TFTEvent5YR_Overlord.2:PercentADAPGain*100@% %i:scaleAD%%i:scaleAP%. <br>Take a bite out of two units. Damage from the Overlord's attacks and abilities 30% <TFTKeyword>Shred</TFTKeyword>, 30% <TFTKeyword>Sunder</TFTKeyword>, @TFTTrait.TFTEvent5YR_Overlord.2:EnemyDamageReduction*100@% <TFTKeyword>Weaken</TFTKeyword>, and 33% <TFTKeyword>Wound</TFTKeyword> enemies for @TFTTrait.TFTEvent5YR_Overlord.2:DebuffDuration@ seconds. These effects do not stack.</row><br><br><tftitemrules><tftbold>Shred</tftbold>: Reduce Magic Resist<br><tftbold>Sunder</tftbold>: Reduce Armor<br><tftbold>Weaken</tftbold>: Reduce Damage dealt<br><tftbold>Wound</tftbold>: Reduces healing received</tftitemrules><br>"
+  },
+  "TFTEvent5YR_Item_TrainerSnax": {
+    "name": "Delicious Snax",
+    "desc": "Nomsy needs to eat this many more Snax to level up!<br><br><tftitemrules>[This does not count as an item.]</tftitemrules>"
+  },
+  "TFTEvent5YR_Item_ShimmerscaleDravensAxe": {
+    "name": "Draven's Axe",
+    "desc": "Gain %i:scaleAD% @AttackDamagePerGold@% Attack Damage per %i:goldCoins% gold in your bank (up to %i:goldCoins% @AttackDamageGoldLimit@ gold).<br><br>Attacks grant @StacksPerAttack@ stack, up to @CashoutStacks@ times. At full stacks, grant %i:goldCoins% @CashoutGold@ gold.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules><br><tftitemrules>Gold generated this game: @TFTUnitProperty.item:TFT_Item_GoldGenerated@</tftitemrules>"
+  },
+  "TFTEvent_5YR_Item_TraitImperialActivator": {
+    "name": "Imperial",
+    "desc": "Combat start: select champions gain @TFTTrait.TFTEvent5YR_Imperial.1:DamageAmp*100@% %i:scaleDA%.<br><br><row>(@TFTTrait.TFTEvent5YR_Imperial.1:MinUnits@) @TFTTrait.TFTEvent5YR_Imperial.1:NumOfUnits@ random champions.</row><br><row>(@TFTTrait.TFTEvent5YR_Imperial.2:MinUnits@) @TFTTrait.TFTEvent5YR_Imperial.2:NumOfUnits@ random champions.</row>"
+  },
+  "TFTEvent_5YR_Item_TraitCovenActivator": {
+    "name": "Coven",
+    "desc": "The unit nearest to the center of your team is chosen as the Coven Leader, gaining bonus Ability Power.<br><br>Whenever your team casts an Ability, the Coven Leader gains Mana.<br><br><row>(@TFTTrait.TFTEvent5YR_Coven.1:MinUnits@) @TFTTrait.TFTEvent5YR_Coven.1:AbilityPower@ %i:scaleAP%,  @TFTTrait.TFTEvent5YR_Coven.1:ManaToGive@ %i:scaleMana% </row><br><row>(@TFTTrait.TFTEvent5YR_Coven.2:MinUnits@) @TFTTrait.TFTEvent5YR_Coven.2:AbilityPower@ %i:scaleAP%,  @TFTTrait.TFTEvent5YR_Coven.2:ManaToGive@ %i:scaleMana% </row>"
+  },
+  "TFTEvent5YR_Item_ShimmerscaleCrownOfChampions": {
+    "name": "Crown Of Champions",
+    "desc": "Every @SecondsForEmpoweredAttack@ seconds, the next attack deals @AttackGoldMultiplier@x the amount of %i:goldCoins% gold in your bank in true damage.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules><br><tftitemrules>This does no damage if you have 0 gold.</tftitemrules>"
+  },
+  "TFTEvent_5YR_Item_TraitGhostlyActivator": {
+    "name": "Ghostly",
+    "desc": "Upon dealing or taking damage @TFTTrait.TFTEvent5YR_Ghostly:NumInstances@ times, units send @TFTTrait.TFTEvent5YR_Ghostly:NumSpectres@ spectres to haunt nearby enemies and heal @TFTTrait.TFTEvent5YR_Ghostly:HealingPercent*100@%&nbsp;max Health every @TFTTrait.TFTEvent5YR_Ghostly:TickRate@ seconds. <br><br>Haunted enemies take bonus damage for each spectre on them, and pass spectres on death.<br><br><row>(@TFTTrait.TFTEvent5YR_Ghostly.1:MinUnits@)  @TFTTrait.TFTEvent5YR_Ghostly.1:DamagePercent*100@% per spectre</row><br><row>(@TFTTrait.TFTEvent5YR_Ghostly.2:MinUnits@)  @TFTTrait.TFTEvent5YR_Ghostly.2:DamagePercent*100@% per spectre</row>"
+  },
+  "TFTEvent_5YR_Item_TraitLaserCorpsActivator": {
+    "name": "LaserCorps",
+    "desc": "Your team gains laser drones. When a unit attacks or is hit by an attack, their drone deals magic damage to the target (@TFTTrait.TFTEvent5YR_LaserCorps.1:ICD@ second cooldown). Drones are reassigned to another ally on death.<br><br><row>(@TFTTrait.TFTEvent5YR_LaserCorps.1:MinUnits@) @TFTTrait.TFTEvent5YR_LaserCorps.1:MagicDamage@ magic damage. </row><br><row>(@TFTTrait.TFTEvent5YR_LaserCorps.2:MinUnits@) @TFTTrait.TFTEvent5YR_LaserCorps.2:MagicDamage@ magic damage. All units gain an additional drone.</row><br>"
+  },
+  "TFTEvent_SF_Item_PowerUp_Rank4": {
+    "name": "Soul Crown",
+    "desc": "Prevents the holder's first death. When they revive after 2 seconds, they shed all negative effects and gain <active>@TFTUnitProperty.item:TFT_Event_SF_SoulCrownHealthRestore@</active> Health (double your Soul Power).<br><br>Contribute +1 to the last listed Trait. (Unique traits excluded.)<br><br><tftitemrules> [Cannot be used on champions in combat.]</tftitemrules><br><tftitemrules> [Unlimited uses.]</tftitemrules>"
+  },
+  "TFTEvent_SF_Item_PowerUp_Rank1": {
+    "name": "Imperfect Soul Crown",
+    "desc": "Contribute +1 to the last listed Trait. (Unique traits excluded.)<br><br><tftitemrules>A new effect unlocks at the start of the tournament (4-1).</tftitemrules><br><br><tftitemrules> [Cannot be used on champions in combat.]</tftitemrules><br><tftitemrules> [Unlimited uses.]</tftitemrules>"
+  },
+  "TFTEventCT_Item_HextechSniper": {
+    "name": "Hextech Sniper Rifle",
+    "desc": "Combat start: Fire a sniper shot that instantly executes enemies."
+  },
+  "TFTEventCT_Encounter_ChoiceItem_RandomComponents": {
+    "name": "Gain 2 random item components.",
+    "desc": null
+  },
+  "TFTEventCT_Encounter_ChoiceItem_Recombobulate": {
+    "name": "Recombobulate your board. Gain a reforger. ",
+    "desc": null
+  },
   "TFT14_CypherItem_Golem_KineticLauncherRockets": {
     "name": "Kinetic Launcher Rockets",
     "desc": "On attack, knock up enemies."
@@ -8006,194 +8418,6 @@
   "TFT15_General_Consumable_Debuff": {
     "name": "tft15_General_itemname_Debuff",
     "desc": "tft15_General_itemdescription_Debuff"
-  },
-  "TFTEvent_5YR_Item_TraitMascotActivator": {
-    "name": "Mascot",
-    "desc": "Your team heals a percentage of their max Health every @TFTTrait.TFTEvent5YR_Mascot.1:Seconds@ seconds.<br><br>When a champion dies, they retreat to the sidelines to cheer on your team. Your team's healing increases for each cheering champion.<br><br><row> (@TFTTrait.TFTEvent5YR_Mascot.1:MinUnits@) @TFTTrait.TFTEvent5YR_Mascot.1:BaseHealthRegen@% %i:scaleHealth% base, @TFTTrait.TFTEvent5YR_Mascot.1:HealthRegenPerMascot@% %i:scaleHealth% per cheering champion</row><br><row> (@TFTTrait.TFTEvent5YR_Mascot.2:MinUnits@) @TFTTrait.TFTEvent5YR_Mascot.2:BaseHealthRegen@% %i:scaleHealth% base, @TFTTrait.TFTEvent5YR_Mascot.2:HealthRegenPerMascot@% %i:scaleHealth% per cheering champion</row>"
-  },
-  "TFTEvent5YR_Storyweaver7_Support": {
-    "name": "Tome of Mending",
-    "desc": "Every @Duration@ seconds, revive the strongest ally that hasn't been revived yet at @HPPercent*100@% of their maximum Health."
-  },
-  "TFTEvent_5YR_Item_TraitDragonlordActivator": {
-    "name": "Dragonlord",
-    "desc": "After @TFTTrait.TFTEvent5YR_Dragonlord.1:FirstDelay@ seconds of combat, the Dragon strikes the board, dealing <trueDamage>true damage</trueDamage> and stunning all enemies. Allies gain Attack Speed for the rest of combat.<br><br><row>(@TFTTrait.TFTEvent5YR_Dragonlord.1:MinUnits@) @TFTTrait.TFTEvent5YR_Dragonlord.1:TrueDamageHPRatio*100@% %i:scaleHealth% damage, Stuns for @TFTTrait.TFTEvent5YR_Dragonlord.1:StunDuration@ seconds, @TFTTrait.TFTEvent5YR_Dragonlord.1:AttackSpeedBuff*100@% %i:scaleAS%.</row><br><row>(@TFTTrait.TFTEvent5YR_Dragonlord.2:MinUnits@) @TFTTrait.TFTEvent5YR_Dragonlord.2:TrueDamageHPRatio*100@% %i:scaleHealth% damage, Stuns for @TFTTrait.TFTEvent5YR_Dragonlord.2:StunDuration@ seconds, @TFTTrait.TFTEvent5YR_Dragonlord.2:AttackSpeedBuff*100@% %i:scaleAS%.<br>After an additional @TFTTrait.TFTEvent5YR_Dragonlord.2:SecondDelay@ seconds, the Dragon strikes again.</row><br><br>"
-  },
-  "TFTEvent_5YR_Item_TraitSocialiteActivator": {
-    "name": "Socialite",
-    "desc": "Gain a spotlight hex.<br>Combat start: the unit standing in the spotlight gains bonus stats.<br><br><row>(@TFTTrait.TFTEvent5YR_Socialite.1:MinUnits@) @TFTTrait.TFTEvent5YR_Socialite.1:DamagePercent*100@% %i:scaleDA% and @TFTTrait.TFTEvent5YR_Socialite.1:ManaPerSecond@&nbsp;%i:scaleMana% per second.</row><br><row>(@TFTTrait.TFTEvent5YR_Socialite.2:MinUnits@) @TFTTrait.TFTEvent5YR_Socialite.2:DamagePercent*100@% %i:scaleDA%, @TFTTrait.TFTEvent5YR_Socialite.2:ManaPerSecond@&nbsp;%i:scaleMana% per second, and @TFTTrait.TFTEvent5YR_Socialite.2:OmnivampPercent*100@% %i:scaleSV%. Gain another spotlight hex.</row>"
-  },
-  "TFTEvent5YR_Storyweaver7_AP": {
-    "name": "Tome of Power",
-    "desc": "Kayle deals @DamageAmpPercent*100@% more damage. When she casts, she fires two waves."
-  },
-  "TFTEvent5YR_Storyweaver7_AS": {
-    "name": "Tome of Swiftness",
-    "desc": "Kayle deals @DamageAmpPercent*100@% more damage. Her attacks now hit in a @HexRadius@-hex radius around the target"
-  },
-  "TFTEvent_5YR_Item_TraitMountainActivator": {
-    "name": "Mountain",
-    "desc": "Gain 2 Mountain hexes in the front row.<br>Combat start: units standing on a Mountain hex gain a Shield and permanent bonus Health.<br><br><row>(@TFTTrait.TFTEvent5YR_Mountain.1:MinUnits@) @TFTTrait.TFTEvent5YR_Mountain.1:ShieldValue@ Shield, @TFTTrait.TFTEvent5YR_Mountain.1:PermBonusHealth@ %i:scaleHealth%. </row><br><row>(@TFTTrait.TFTEvent5YR_Mountain.2:MinUnits@) @TFTTrait.TFTEvent5YR_Mountain.2:ShieldValue@ Shield, @TFTTrait.TFTEvent5YR_Mountain.2:PermBonusHealth@ %i:scaleHealth%. The entire front row becomes Mountain hexes.</row>"
-  },
-  "TFTEvent_5YR_Item_TraitShimmerscaleActivator": {
-    "name": "Shimmerscale",
-    "desc": "Gain Shimmerscale items. These items give gold as well as combat power.<br><br><row>(@TFTTrait.TFTEvent5YR_Shimmerscale.1:MinUnits@)Gain Goldmancers Staff. At Stage @TFTTrait.TFTEvent5YR_Shimmerscale.1:SecondItemStage@-@TFTTrait.TFTEvent5YR_Shimmerscale.1:SecondItemRound@ gain Draven's Axe.</row><br><row>(@TFTTrait.TFTEvent5YR_Shimmerscale.2:MinUnits@)Gain Crown of Champions.</row>"
-  },
-  "TFTEvent_5YR_Item_TraitConquerorActivator": {
-    "name": "Conqueror",
-    "desc": "Your team's takedowns grant stacks of Conquest. After gaining enough Conquest, open War Chests full of loot!<br><br>Your team gains Attack Damage and Ability Power, increased by @TFTTrait.TFTEvent5YR_Conqueror:PercentIncreasePerChest*100@% for each War Chest opened.<br><br><row>(@TFTTrait.TFTEvent5YR_Conqueror.1:MinUnits@) @TFTTrait.TFTEvent5YR_Conqueror.1:ADAPBase*100@%&nbsp;%i:scaleAD%%i:scaleAP%; @TFTTrait.TFTEvent5YR_Conqueror.1:StacksPerKill@x&nbsp;Conquest</row><br><row>(@TFTTrait.TFTEvent5YR_Conqueror.2:MinUnits@) @TFTTrait.TFTEvent5YR_Conqueror.2:ADAPBase*100@%&nbsp;%i:scaleAD%%i:scaleAP%; @TFTTrait.TFTEvent5YR_Conqueror.2:StacksPerKill@x&nbsp;Conquest</row><br><br><rules>War Chests Opened: @TFTUnitProperty.trait:TFTEvent5YR_Conqueror_ChestsCompleted@</rules><br><rules>Current Stats: @TFTUnitProperty.trait:TFTEvent5YR_Conqueror_CurrentADAP@%&nbsp;%i:scaleAD%%i:scaleAP%</rules><br>"
-  },
-  "TFTEvent_5YR_Item_TraitPunkActivator": {
-    "name": "Punk",
-    "desc": "Your team gain bonus Health, Attack Damage and Ability Power, which increases by 1% every time you spend gold on a Shop reroll.<br><br>After each combat, gain a 1 gold reroll for that round. Your first reroll each round grants @TFTTrait.TFTEvent5YR_Punk:FIRST_ROLL_BONUS@% bonus instead!<br><br><row>(@TFTTrait.TFTEvent5YR_Punk.1:MinUnits@ )@TFTTrait.TFTEvent5YR_Punk.1:BONUS_HEALTH@ %i:scaleHealth% and @TFTTrait.TFTEvent5YR_Punk.1:BONUS_AD_AP*100@% %i:scaleAD%%i:scaleAP%</row><br><row>(@TFTTrait.TFTEvent5YR_Punk.2:MinUnits@ )@TFTTrait.TFTEvent5YR_Punk.2:BONUS_HEALTH@ %i:scaleHealth% and @TFTTrait.TFTEvent5YR_Punk.2:BONUS_AD_AP*100@% %i:scaleAD%%i:scaleAP%</row><br><br>Current Bonus: @TFTUnitProperty.trait:TFTEvent5YR_Punk_CurrentBonus@%<br>@TFTUnitProperty.trait:TFTEvent5YR_Punk_CurrentHealthBonus@ %i:scaleHealth% and @TFTUnitProperty.trait:TFTEvent5YR_Punk_CurrentADBonus@% %i:scaleAD%%i:scaleAP%"
-  },
-  "TFTEvent_5YR_Item_TraitStoryweaverActivator": {
-    "name": "Storyweaver",
-    "desc": "Summon a Hero named Kayle and evolve her as you level up!<br><br><row>(@TFTTrait.TFTEvent5YR_Storyweaver.1:MinUnits@) When you reach level @TFTTrait.TFTEvent5YR_Storyweaver:FirstArmoryLevel@, Kayle upgrades to 2-star. Pick a supportive effect.</row><br><row>(@TFTTrait.TFTEvent5YR_Storyweaver.2:MinUnits@) Kayle evolves again at levels @TFTTrait.TFTEvent5YR_Storyweaver:SecondArmoryLevel@, @TFTTrait.TFTEvent5YR_Storyweaver:ThirdArmoryLevel@ and @TFTTrait.TFTEvent5YR_Storyweaver:FourStarUpgradeLevel@:<br>Level @TFTTrait.TFTEvent5YR_Storyweaver:SecondArmoryLevel@: Pick a combat effect. <br>Level @TFTTrait.TFTEvent5YR_Storyweaver:ThirdArmoryLevel@: Kayle upgrades to 3-star. Pick a combat effect.<br>Level @TFTTrait.TFTEvent5YR_Storyweaver:FourStarUpgradeLevel@: Kayle upgrades to 4-star.</row><br>"
-  },
-  "TFTEvent_5YR_Item_TraitGlacialActivator": {
-    "name": "Glacial",
-    "desc": "Gain a Glacial Mallet. Attacks from champions holding a mallet have a @TFTTrait.TFTEvent5YR_Glacial.1:ProcPercent*100@% chance to stun their target for @TFTTrait.TFTEvent5YR_Glacial.1:StunDuration@ second and deal bonus magic damage. <br><br><row>(@TFTTrait.TFTEvent5YR_Glacial.1:MinUnits@) @TFTTrait.TFTEvent5YR_Glacial.1:BonusDamage@ magic damage.</row><br><row>(@TFTTrait.TFTEvent5YR_Glacial.2:MinUnits@) @TFTTrait.TFTEvent5YR_Glacial.2:BonusDamage@ magic damage. Gain another Glacial Mallet.</row>"
-  },
-  "TFTEvent_5YR_Item_TraitMechPilotActivator": {
-    "name": "Mech-Pilot",
-    "desc": "Use the Pilot Selector to choose a Pilot. Combat start: the Pilot jumps into a Mech.<br><br>The Mech has the Traits and items of its Pilot, and gains a percent of the pilot's Attack Damage and max Health. When the Mech dies, the Pilot(s) are ejected with @TFTTrait.TFTEvent5YR_MechPilot.1:EjectedPilotHealthPercent@% of their max Health.<br><br><row>(@TFTTrait.TFTEvent5YR_MechPilot.1:MinUnits@) Mini-Mech: @TFTTrait.TFTEvent5YR_MechPilot.1:MechCombinedADRatio*100@% %i:scaleAD%%i:scaleHealth%</row> <br><row>(@TFTTrait.TFTEvent5YR_MechPilot.2:MinUnits@) Super-Mech: @TFTTrait.TFTEvent5YR_MechPilot.2:MechCombinedADRatio*100@% %i:scaleAD%%i:scaleHealth%. The 2 nearest units to the Pilot also jump into the Mech. </row>"
-  },
-  "TFTEvent_5YR_Item_TraitPyroActivator": {
-    "name": "Pyro",
-    "desc": "Your team gains @TFTTrait.TFTEvent5YR_Pyro:BaseASPct@% %i:scaleAS% Attack Speed.<br><br>For each kill, your team creates an infernal cinder that you collect the next round. For every @TFTTrait.TFTEvent5YR_Pyro:NumCinders@ cinders you collect, your team gains @TFTTrait.TFTEvent5YR_Pyro:ASPctPerNumCinders@% more %i:scaleAS%.<br><br><row>(@TFTTrait.TFTEvent5YR_Pyro.1:MinUnits@) @TFTTrait.TFTEvent5YR_Pyro.1:NumCindersPerKill@ infernal cinder per enemy.</row><br><row>(@TFTTrait.TFTEvent5YR_Pyro.2:MinUnits@) @TFTTrait.TFTEvent5YR_Pyro.2:NumCindersPerKill@ infernal cinders per enemy and execute enemies under @TFTTrait.TFTEvent5YR_Pyro.2:ExecutePct@% Health.</row><br><br>Cinders collected: @TFTUnitProperty.trait:TFTEvent5YR_PyroCindersCollected@<br>Team %i:scaleAS%: @TFTUnitProperty.trait:TFTEvent5YR_PyroAttackSpeed@%"
-  },
-  "TFTEvent_5YR_Item_TraitJazzActivator": {
-    "name": "Jazz",
-    "desc": "For each active trait, your team gains bonus Health and Damage Amp.<br><rules>(Excludes unique and Anniversary Traits)</rules><br><br><row>(@TFTTrait.TFTEvent5YR_Jazz.1:MinUnits@) @TFTTrait.TFTEvent5YR_Jazz.1:BonusHealth*100@% %i:scaleHealth%, @TFTTrait.TFTEvent5YR_Jazz.1:BonusDamage*100@% %i:scaleDA%</row><br><row>(@TFTTrait.TFTEvent5YR_Jazz.2:MinUnits@) @TFTTrait.TFTEvent5YR_Jazz.2:BonusHealth*100@% %i:scaleHealth%, @TFTTrait.TFTEvent5YR_Jazz.2:BonusDamage*100@% %i:scaleDA%</row><br><br>Bonus Health: @TFTUnitProperty.trait:TFT10_Trait_Jazz_TraitTracker_CurrentBonus@%<br>Bonus Damage Amp: @TFTUnitProperty.trait:TFT10_Trait_Jazz_TraitTracker_CurrentBonus_Damage@%"
-  },
-  "TFTEvent_5YR_Item_TraitRebelActivator": {
-    "name": "Rebel",
-    "desc": "Your team gains a Shield and Damage Amp for each adjacent ally.<br><br><row>(@TFTTrait.TFTEvent5YR_Rebel.1:MinUnits@) @TFTTrait.TFTEvent5YR_Rebel.1:ShieldAmount@ Shield for @TFTTrait.TFTEvent5YR_Rebel.1:ShieldDuration@ seconds, @TFTTrait.TFTEvent5YR_Rebel.1:DamageAmp@% %i:scaleDA%</row><br><row>(@TFTTrait.TFTEvent5YR_Rebel.2:MinUnits@) @TFTTrait.TFTEvent5YR_Rebel.2:ShieldAmount@ Shield for @TFTTrait.TFTEvent5YR_Rebel.2:ShieldDuration@ seconds, @TFTTrait.TFTEvent5YR_Rebel.2:DamageAmp@% %i:scaleDA%</row>"
-  },
-  "TFTEvent5YR_Storyweaver3_AP": {
-    "name": "Talisman of Might",
-    "desc": "Grant Kayle and adjacent allies in the same row @APAmt@ Ability Power at the start of combat."
-  },
-  "TFTEvent5YR_Storyweaver3_AS": {
-    "name": "Talisman of Speed",
-    "desc": "Grant Kayle and adjacent allies in the same row @ASAmt*100@% Attack Speed at the start of combat."
-  },
-  "TFTEvent5YR_Consumable_MechPilot_PilotMarker": {
-    "name": "Pilot Selector",
-    "desc": "Use this on a champion to make it the Pilot of the Mech.<br><br><tftitemrules> [Cannot be used on champions in combat.]</tftitemrules><br><tftitemrules> [Unlimited uses]</tftitemrules>"
-  },
-  "TFTEvent5YR_Item_SevikasJinxedArm": {
-    "name": "Sevika's Jinxed Arm",
-    "desc": "At the times shown in the High Roller trait, roll a random Jinx mod:<br>- Rocket: Launch @TFTUnitProperty.item:TFTEvent5YR_HighRoller_NumRockets@ rockets at random enemies, dealing<br>@TFTTrait.TFTEvent5YR_HighRoller.1:Spell1RocketADScalar*100@% Attack Damage + @TFTTrait.TFTEvent5YR_HighRoller.1:Spell1RocketAPScalar*100@% Ability Power physical damage per rocket.<br>- Shield: Gain a @TFTUnitProperty.item:TFTEvent5YR_HighRoller_ShieldFlatAmount@ + @TFTUnitProperty.item:TFTEvent5YR_HighRoller_ShieldMaxHPPercentage@% max Health Shield for @TFTTrait.TFTEvent5YR_HighRoller.1:Spell2ShieldDuration@ seconds.<br>- Gold: Gain @TFTUnitProperty.item:TFTEvent5YR_HighRoller_GoldAmount@ gold.<br>"
-  },
-  "TFTEvent5YR_Item_ShimmerscaleGoldmancersStaff": {
-    "name": "Goldmancer's Staff",
-    "desc": "Grant %i:scaleAP% @AbilityPowerPerGold@ Ability Power per %i:goldCoins% gold in your bank (up to %i:goldCoins% @AbilityPowerGoldMax@ gold) and a @OnKillProcChance*100@% chance to drop %i:goldCoins% @OnKillProcGold@ gold on enemy kill.<br><br><tftitemrules>Gold generated this game: @TFTUnitProperty.item:TFT_Item_GoldGenerated@</tftitemrules>"
-  },
-  "TFTEvent_5YR_Item_TraitElderwoodActivator": {
-    "name": "Elderwood",
-    "desc": "Every @TFTTrait.TFTEvent5YR_Elderwood.1:TickRate@ seconds your team grows, gaining bonus stats. This effect stacks up to @TFTTrait.TFTEvent5YR_Elderwood.1:MaxStacks@ times.<br><br><row>(@TFTTrait.TFTEvent5YR_Elderwood.1:MinUnits@) @TFTTrait.TFTEvent5YR_Elderwood.1:BonusResists@&nbsp;%i:scaleArmor%%i:scaleMR%, @TFTTrait.TFTEvent5YR_Elderwood.1:BonusADSP@&nbsp;%i:scaleAP%%i:scaleAD%</row><br><row>(@TFTTrait.TFTEvent5YR_Elderwood.2:MinUnits@) @TFTTrait.TFTEvent5YR_Elderwood.2:BonusResists@&nbsp;%i:scaleArmor%%i:scaleMR%, @TFTTrait.TFTEvent5YR_Elderwood.2:BonusADSP@&nbsp;%i:scaleAP%%i:scaleAD%</row>"
-  },
-  "TFTEvent5YR_Item_GlacialMallet": {
-    "name": "Glacial Mallet",
-    "desc": "Attacks have a @TFTUnitProperty.item:TFTEvent5YR_Glacial_StunChance@% chance to stun enemies for @TFTTrait.TFTEvent5YR_Glacial.1:StunDuration@ second and deal @TFTUnitProperty.item:TFTEvent5YR_Glacial_BonusDamage@ bonus magic damage.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>"
-  },
-  "TFTEvent_5YR_Item_TraitBossActivator": {
-    "name": "The Boss",
-    "desc": "Gain Boss Knuckles. When the holder first drops below @TFTTrait.TFTEvent5YR_Boss.1:HealthThreshold*100@% Health, they become The Boss and leave combat to start doing sit-ups. Each sit-up restores maximum Health and grants Attack Speed. <br><br><row>(@TFTTrait.TFTEvent5YR_Boss.1:MinUnits@) @TFTTrait.TFTEvent5YR_Boss.1:HealPercent*100@% %i:scaleHealth%, @TFTTrait.TFTEvent5YR_Boss.1:AttackSpeedPercent*100@% %i:scaleAS%.</row><br><row>(@TFTTrait.TFTEvent5YR_Boss.2:MinUnits@) @TFTTrait.TFTEvent5YR_Boss.2:HealPercent*100@% %i:scaleHealth%, @TFTTrait.TFTEvent5YR_Boss.2:AttackSpeedPercent*100@% %i:scaleAS%. If they reach full Health they return to combat Pumped Up: all of their attacks and abilities deal @TFTTrait.TFTEvent5YR_Boss.2:TrueDamagePercentage*100@% of damage as true damage.</row>"
-  },
-  "TFTEvent_5YR_Item_TraitYordleActivator": {
-    "name": "Yordle",
-    "desc": "After each player combat, a random 1, 2 or 3 cost champion that usually fits your team is added to your bench for free.<br><br><row>(@TFTTrait.TFTEvent5YR_Yordle.1:MinUnits@) Gain champions!</row><br><row>(@TFTTrait.TFTEvent5YR_Yordle.2:MinUnits@) If you have @TFTTrait.TFTEvent5YR_Yordle.2:NumOfThreeStarsNeeded@ or more 3 star champions, you instead gain a Yordle-Lord.</row>"
-  },
-  "TFTEvent_5YR_Item_TraitPhantomActivator": {
-    "name": "Phantom",
-    "desc": "Combat start: random enemies have their Health reduced.<br><br><row>(@TFTTrait.TFTEvent5YR_Phantom.1:MinUnits@) Set @TFTTrait.TFTEvent5YR_Phantom.1:NumUnitsToReduce@ enemy's Health to @TFTTrait.TFTEvent5YR_Phantom.1:PercentHealth*100@% maximum Health.</row><br><row>(@TFTTrait.TFTEvent5YR_Phantom.2:MinUnits@) Set @TFTTrait.TFTEvent5YR_Phantom.2:NumUnitsToReduce@ enemies' Health to @TFTTrait.TFTEvent5YR_Phantom.2:FlatHealth@.</row>"
-  },
-  "TFTEvent_5YR_Item_TraitHellionActivator": {
-    "name": "Hellion",
-    "desc": "When an allied champion dies, a Doppelhellion (a one less star copy) equipped with a Red Buff will leap from the Hellion portal and join the fight!<br><br><row>(@TFTTrait.TFTEvent5YR_Hellion.1:MinUnits@) The first @TFTTrait.TFTEvent5YR_Hellion.1:NumOfUnits@ champions</row><br><row>(@TFTTrait.TFTEvent5YR_Hellion.2:MinUnits@) The first @TFTTrait.TFTEvent5YR_Hellion.2:NumOfUnits@ champions</row>"
-  },
-  "TFTEvent5YR_Storyweaver5_AS": {
-    "name": "Scroll of Haste",
-    "desc": "Attacks grant Kayle @ASAmt*100@% stacking Attack Speed."
-  },
-  "TFTEvent5YR_Storyweaver5_AP": {
-    "name": "Scroll of Force",
-    "desc": "Kayle's Ability hits a wider area and deals @APAmt*100@% more damage."
-  },
-  "TFTEvent5YR_Storyweaver3_Support": {
-    "name": "Talisman of Aid",
-    "desc": "Kayle's damaging attacks and abilities @ResistPercent*100@% <TFTKeyword>Shred</TFTKeyword> and <TFTKeyword>Sunder</TFTKeyword> enemies hit for @Duration@ seconds."
-  },
-  "TFTEvent_5YR_Item_TraitBilgewaterActivator": {
-    "name": "Bilgewater",
-    "desc": "Your team's attacks and Abilities mark enemies. The mark stores a percentage of damage dealt to the enemy.<br><br>Marked enemies are struck by a cannonball after @TFTTrait.TFTEvent5YR_Bilgewater.1:BarrageInterval@ seconds, dealing the stored damage plus a flat value as <physicalDamage>physical damage</physicalDamage>.<br><br><row>(@TFTTrait.TFTEvent5YR_Bilgewater.1:MinUnits@) @TFTTrait.TFTEvent5YR_Bilgewater.1:Damage@ + @TFTTrait.TFTEvent5YR_Bilgewater.1:DamagePercent@% damage dealt</row><br><row>(@TFTTrait.TFTEvent5YR_Bilgewater.2:MinUnits@) @TFTTrait.TFTEvent5YR_Bilgewater.2:Damage@ + @TFTTrait.TFTEvent5YR_Bilgewater.2:DamagePercent@% damage dealt. Every @TFTTrait.TFTEvent5YR_Bilgewater.2:ShotsUntilTreasure@th cannonball is replaced with a treasure chest that drops gold!</row>"
-  },
-  "TFTEvent_5YR_Item_TraitPreserverActivator": {
-    "name": "Preserver",
-    "desc": "Your team heals for a percent of their Max Health every @TFTTrait.TFTEvent5YR_Preserver.1:Duration@ seconds. If they are full Health, restore Mana instead.<br><br><row> (@TFTTrait.TFTEvent5YR_Preserver.1:MinUnits@) @TFTTrait.TFTEvent5YR_Preserver.1:HealthPct*100@% %i:scaleHealth%, or @TFTTrait.TFTEvent5YR_Preserver.1:ManaPct*100@% %i:scaleMana%.</row><br><row> (@TFTTrait.TFTEvent5YR_Preserver.2:MinUnits@) @TFTTrait.TFTEvent5YR_Preserver.2:HealthPct*100@% %i:scaleHealth%, and @TFTTrait.TFTEvent5YR_Preserver.2:ManaPct*100@% %i:scaleMana%. Always get both.</row><br><br>"
-  },
-  "TFTEvent_5YR_Item_TraitHighRollerActivator": {
-    "name": "High Roller",
-    "desc": "Gain a Sevika's Jinxed Arm!<br><br>Combat start: roll a random Jinx mod. Roll another one:<br><row>(@TFTTrait.TFTEvent5YR_HighRoller.1:MinUnits@) after @TFTTrait.TFTEvent5YR_HighRoller.1:RollingFrequency@ seconds.</row><br><row>(@TFTTrait.TFTEvent5YR_HighRoller.2:MinUnits@) every @TFTTrait.TFTEvent5YR_HighRoller.2:RollingFrequency@ seconds. Mods are stronger, and the holder can now hit a Jinxed Jackpot!</row><br><br>Mods:<br>- Rocket: Launch rockets at random enemies. <br>- Shield: Gain a shield for @TFTTrait.TFTEvent5YR_HighRoller.1:Spell2ShieldDuration@ seconds.<br>- Coin: Gain gold.<br><br>Rockets Fired: @TFTUnitProperty.trait:TFTEvent5YR_HighRoller_RocketsFired@<br>Shields Gained: @TFTUnitProperty.trait:TFTEvent5YR_HighRoller_ShieldsGained@<br>Gold Gained: @TFTUnitProperty.trait:TFTEvent5YR_HighRoller_GoldGained@<br>Jackpots Hit: @TFTUnitProperty.trait:TFTEvent5YR_HighRoller_JackpotsHit@"
-  },
-  "TFTEvent5YR_Item_BossKnuckles": {
-    "name": "Boss Knuckles",
-    "desc": "Once per combat at 60% Health, become The Boss and leave combat to start doing sit-ups. Each sit-up restores @TFTUnitProperty.item:TFTEvent5YR_Boss_HealPercent@% max Health and grants @TFTUnitProperty.item:TFTEvent5YR_Boss_AttackSpeedPercent@% Attack Speed. If all allies die, The Boss will immediately return to combat.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>"
-  },
-  "TFTEvent_5YR_Item_TraitTrainerActivator": {
-    "name": "Trainer",
-    "desc": "After combat, the 3 champions closest to Nomsy feed her 1 Snax per star level, adding Health and Ability Power. Nomsy's star level increases every 25 Snax!<br><br><row>(@TFTTrait.TFTEvent5YR_Trainer.1:MinUnits@) Summon Nomsy!</row><br><row>(@TFTTrait.TFTEvent5YR_Trainer.2:MinUnits@) Nomsy's Ability deals @TFTTrait.TFTEvent5YR_Trainer.2:DamageInc*100@% bonus damage</row>"
-  },
-  "TFTEvent_5YR_Item_TraitShurimaActivator": {
-    "name": "Shurima",
-    "desc": "Combat start: select champions Ascend and gain @TFTTrait.TFTEvent5YR_Shurima.1:BonusHealthPercent*100@% maximum Health %i:scaleHealth% and @TFTTrait.TFTEvent5YR_Shurima.1:BonusASPercent*100@% Attack Speed %i:scaleAS%.<br><br><row>(@TFTTrait.TFTEvent5YR_Shurima.1:MinUnits@) The strongest champion Ascends after @TFTTrait.TFTEvent5YR_Shurima.1:SecondsToAscend@ seconds. </row><br><row>(@TFTTrait.TFTEvent5YR_Shurima.2:MinUnits@) The @TFTTrait.TFTEvent5YR_Shurima.2:NumUnitsToAscend@ strongest champions Ascend immediately.</row><br>"
-  },
-  "TFTEvent5YR_Item_TrainerSnax": {
-    "name": "Delicious Snax",
-    "desc": "Nomsy needs to eat this many more Snax to level up!<br><br><tftitemrules>[This does not count as an item.]</tftitemrules>"
-  },
-  "TFTEvent5YR_Item_ShimmerscaleDravensAxe": {
-    "name": "Draven's Axe",
-    "desc": "Gain %i:scaleAD% @AttackDamagePerGold@% Attack Damage per %i:goldCoins% gold in your bank (up to %i:goldCoins% @AttackDamageGoldLimit@ gold).<br><br>Attacks grant @StacksPerAttack@ stack, up to @CashoutStacks@ times. At full stacks, grant %i:goldCoins% @CashoutGold@ gold.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules><br><tftitemrules>Gold generated this game: @TFTUnitProperty.item:TFT_Item_GoldGenerated@</tftitemrules>"
-  },
-  "TFTEvent_5YR_Item_TraitImperialActivator": {
-    "name": "Imperial",
-    "desc": "Combat start: select champions gain @TFTTrait.TFTEvent5YR_Imperial.1:DamageAmp*100@% %i:scaleDA%.<br><br><row>(@TFTTrait.TFTEvent5YR_Imperial.1:MinUnits@) @TFTTrait.TFTEvent5YR_Imperial.1:NumOfUnits@ random champions.</row><br><row>(@TFTTrait.TFTEvent5YR_Imperial.2:MinUnits@) @TFTTrait.TFTEvent5YR_Imperial.2:NumOfUnits@ random champions.</row>"
-  },
-  "TFTEvent_5YR_Item_TraitCovenActivator": {
-    "name": "Coven",
-    "desc": "The unit nearest to the center of your team is chosen as the Coven Leader, gaining bonus Ability Power.<br><br>Whenever your team casts an Ability, the Coven Leader gains Mana.<br><br><row>(@TFTTrait.TFTEvent5YR_Coven.1:MinUnits@) @TFTTrait.TFTEvent5YR_Coven.1:AbilityPower@ %i:scaleAP%,  @TFTTrait.TFTEvent5YR_Coven.1:ManaToGive@ %i:scaleMana% </row><br><row>(@TFTTrait.TFTEvent5YR_Coven.2:MinUnits@) @TFTTrait.TFTEvent5YR_Coven.2:AbilityPower@ %i:scaleAP%,  @TFTTrait.TFTEvent5YR_Coven.2:ManaToGive@ %i:scaleMana% </row>"
-  },
-  "TFTEvent5YR_Item_ShimmerscaleCrownOfChampions": {
-    "name": "Crown Of Champions",
-    "desc": "Every @SecondsForEmpoweredAttack@ seconds, the next attack deals @AttackGoldMultiplier@x the amount of %i:goldCoins% gold in your bank in true damage.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules><br><tftitemrules>This does no damage if you have 0 gold.</tftitemrules>"
-  },
-  "TFTEvent_5YR_Item_TraitLaserCorpsActivator": {
-    "name": "LaserCorps",
-    "desc": "Your team gains laser drones. When a unit attacks or is hit by an attack, their drone deals magic damage to the target (@TFTTrait.TFTEvent5YR_LaserCorps.1:ICD@ second cooldown). Drones are reassigned to another ally on death.<br><br><row>(@TFTTrait.TFTEvent5YR_LaserCorps.1:MinUnits@) @TFTTrait.TFTEvent5YR_LaserCorps.1:MagicDamage@ magic damage. </row><br><row>(@TFTTrait.TFTEvent5YR_LaserCorps.2:MinUnits@) @TFTTrait.TFTEvent5YR_LaserCorps.2:MagicDamage@ magic damage. All units gain an additional drone.</row><br>"
-  },
-  "TFTEvent_SF_Item_PowerUp_Rank4": {
-    "name": "Soul Crown",
-    "desc": "Prevents the holder's first death. When they revive after 2 seconds, they shed all negative effects and gain <active>@TFTUnitProperty.item:TFT_Event_SF_SoulCrownHealthRestore@</active> Health (double your Soul Power).<br><br>Contribute +1 to the last listed Trait. (Unique traits excluded.)<br><br><tftitemrules> [Cannot be used on champions in combat.]</tftitemrules><br><tftitemrules> [Unlimited uses.]</tftitemrules>"
-  },
-  "TFTEvent_SF_Item_PowerUp_Rank1": {
-    "name": "Imperfect Soul Crown",
-    "desc": "Contribute +1 to the last listed Trait. (Unique traits excluded.)<br><br><tftitemrules>A new effect unlocks at the start of the tournament (4-1).</tftitemrules><br><br><tftitemrules> [Cannot be used on champions in combat.]</tftitemrules><br><tftitemrules> [Unlimited uses.]</tftitemrules>"
-  },
-  "TFTEventCT_Item_HextechSniper": {
-    "name": "Hextech Sniper Rifle",
-    "desc": "Combat start: Fire a sniper shot that instantly executes enemies."
-  },
-  "TFTEventCT_Encounter_ChoiceItem_RandomComponents": {
-    "name": "Gain 2 random item components.",
-    "desc": null
-  },
-  "TFTEventCT_Encounter_ChoiceItem_Recombobulate": {
-    "name": "Recombobulate your board. Gain a reforger. ",
-    "desc": null
   },
   "TFT7_Item_Trainer_Heimerdinger": {
     "name": "tft_item_name_TFT7_Item_Trainer_Heimerdinger",
@@ -13673,7 +13897,7 @@
   },
   "TFT6_Augment_ForceOfNature": {
     "name": "New Recruit",
-    "desc": "Gain +@MaxArmySizeIncrease@ max team size and @NumUnits@ four-cost champions."
+    "desc": "Gain +@MaxArmySizeIncrease@ max team size and @NumUnits@ four-cost champion."
   },
   "TFT9_Augment_CyberneticLeech2": {
     "name": "Cybernetic Leech II",
@@ -19106,6 +19330,170 @@
   "TFT5_Dawnbringer": {
     "name": "Dawnbringer",
     "desc": "Once per combat at @FirstThreshold@% Health, Dawnbringers rapidly heal. When this occurs, all allied Dawnbringers gain @BonusDamage@% bonus damage.<br><br><expandRow>(@MinUnits@) @PercentOfMaximumHealth@% of max %i:scaleHealth%</expandRow>"
+  },
+  "TFTEvent5YR_SuperMech": {
+    "name": "SuperMech",
+    "desc": null
+  },
+  "TFTEvent5YR_Veigar": {
+    "name": "Veigar",
+    "desc": null
+  },
+  "TFTEvent5YR_Kayle": {
+    "name": "Kayle",
+    "desc": null
+  },
+  "TFTEvent5YR_HighRollerDamageTracker": {
+    "name": "Sevika's Jinxed Arm",
+    "desc": null
+  },
+  "TFTEvent5YR_PenguGarenNPC": {
+    "name": "Pengu Garen",
+    "desc": null
+  },
+  "TFTEvent5YR_Nitro_SummonLevel2": {
+    "name": "R-080T",
+    "desc": null
+  },
+  "TFTEvent5YR_Nitro_SummonLevel4": {
+    "name": "T-43X",
+    "desc": null
+  },
+  "TFTEvent5YR_Galio": {
+    "name": "Galio",
+    "desc": null
+  },
+  "TFTEvent5YR_IxtalProp": {
+    "name": null,
+    "desc": null
+  },
+  "TFTEvent5YR_Brock": {
+    "name": "Brock",
+    "desc": null
+  },
+  "TFTEvent5YR_Hecarim": {
+    "name": "Hackerim",
+    "desc": null
+  },
+  "TFTEvent5YR_Ixtal": {
+    "name": "Ixtal",
+    "desc": "<row>(@TFTTrait.TFTEvent5YR_Ixtal.1:MinUnits@) Complete Quests to earn Sunshards (%i:Set16Ixtal%) and spend them for&nbsp;loot!</row><br><row>(@TFTTrait.TFTEvent5YR_Ixtal.2:MinUnits@) Heal 2 player health at the start of player combat. Find @TFTTrait.TFTEvent5YR_Ixtal.2:BonusClues@ %i:Set16Ixtal% at the end of combat, and you can now unlock Brock after reaching 500 %i:Set16Ixtal%!</row><br><br><rules>Completing a Quest before combat ends grants you a new one at the start of next round.</rules><br><br>Total Sunshards Earned: @TFTUnitProperty.trait:TFTEvent5YR_Explorer_TotalExplorerPoints@ %i:Set16Ixtal%"
+  },
+  "TFTEvent5YR_Shimmerscale": {
+    "name": "Shimmerscale",
+    "desc": "Gain Shimmerscale items. These items give gold as well as combat power.<br><br><row>(@TFTTrait.TFTEvent5YR_Shimmerscale.1:MinUnits@)Gain Goldmancers Staff. At Stage @TFTTrait.TFTEvent5YR_Shimmerscale.1:SecondItemStage@-@TFTTrait.TFTEvent5YR_Shimmerscale.1:SecondItemRound@ gain Draven's Axe.</row><br><row>(@TFTTrait.TFTEvent5YR_Shimmerscale.2:MinUnits@)Gain Crown of Champions.</row>"
+  },
+  "TFTEvent5YR_Honeymancy": {
+    "name": "Honeymancy",
+    "desc": "Your champions gain Bees that deal magic damage to their targets every @TFTTrait.TFTEvent5YR_Honeymancy:Period@ seconds. Bee damage is based on the damage dealt and taken by the host champion, plus a flat amount per Bee.<br><br>When a champion dies, they leave @TFTTrait.TFTEvent5YR_Honeymancy:NumTransfers@ bees that follow nearby champions for the rest of combat.<br><br><row>(@TFTTrait.TFTEvent5YR_Honeymancy.1:MinUnits@) @TFTTrait.TFTEvent5YR_Honeymancy.1:MiniCount@ Bees, @TFTTrait.TFTEvent5YR_Honeymancy.1:BonusDamage*100@% Damage dealt, @TFTTrait.TFTEvent5YR_Honeymancy.1:DamageReceived*100@% damage taken, @TFTTrait.TFTEvent5YR_Honeymancy.1:DamagePerMini@ damage per Bee.</row><br><row>(@TFTTrait.TFTEvent5YR_Honeymancy.2:MinUnits@) @TFTTrait.TFTEvent5YR_Honeymancy.2:MiniCount@ Bees, @TFTTrait.TFTEvent5YR_Honeymancy.2:BonusDamage*100@% Damage dealt, @TFTTrait.TFTEvent5YR_Honeymancy.2:DamageReceived*100@% damage taken, @TFTTrait.TFTEvent5YR_Honeymancy.2:DamagePerMini@ damage per Bee.</row>"
+  },
+  "TFTEvent5YR_Phantom": {
+    "name": "Phantom",
+    "desc": "Combat start: random enemies have their Health reduced.<br><br><row>(@TFTTrait.TFTEvent5YR_Phantom.1:MinUnits@) Set @TFTTrait.TFTEvent5YR_Phantom.1:NumUnitsToReduce@ enemy's Health to @TFTTrait.TFTEvent5YR_Phantom.1:PercentHealth*100@% maximum Health.</row><br><row>(@TFTTrait.TFTEvent5YR_Phantom.2:MinUnits@) Set @TFTTrait.TFTEvent5YR_Phantom.2:NumUnitsToReduce@ enemies' Health to @TFTTrait.TFTEvent5YR_Phantom.2:FlatHealth@.</row>"
+  },
+  "TFTEvent5YR_Crystal": {
+    "name": "Crystal",
+    "desc": "Your Tanks have a maximum amount of damage they can take from a single attack or ability hit for the first few seconds of combat.<br><br><row>(@TFTTrait.TFTEvent5YR_Crystal.1:MinUnits@) @TFTTrait.TFTEvent5YR_Crystal.1:DamageThreshold@ max damage, @TFTTrait.TFTEvent5YR_Crystal.1:Duration@ seconds.</row><br><row>(@TFTTrait.TFTEvent5YR_Crystal.2:MinUnits@) @TFTTrait.TFTEvent5YR_Crystal.2:DamageThreshold@ max damage, @TFTTrait.TFTEvent5YR_Crystal.2:Duration@ seconds.</row>"
+  },
+  "TFTEvent5YR_Mascot": {
+    "name": "Mascot",
+    "desc": "Your team heals a percentage of their max Health every @TFTTrait.TFTEvent5YR_Mascot.1:Seconds@ seconds.<br><br>When a champion dies, they retreat to the sidelines to cheer on your team. Your team's healing increases for each cheering champion.<br><br><row> (@TFTTrait.TFTEvent5YR_Mascot.1:MinUnits@) @TFTTrait.TFTEvent5YR_Mascot.1:BaseHealthRegen@% %i:scaleHealth% base, @TFTTrait.TFTEvent5YR_Mascot.1:HealthRegenPerMascot@% %i:scaleHealth% per cheering champion</row><br><row> (@TFTTrait.TFTEvent5YR_Mascot.2:MinUnits@) @TFTTrait.TFTEvent5YR_Mascot.2:BaseHealthRegen@% %i:scaleHealth% base, @TFTTrait.TFTEvent5YR_Mascot.2:HealthRegenPerMascot@% %i:scaleHealth% per cheering champion</row>"
+  },
+  "TFTEvent5YR_Glacial": {
+    "name": "Glacial",
+    "desc": "Gain a Glacial Mallet. Attacks from champions holding a mallet have a @TFTTrait.TFTEvent5YR_Glacial.1:ProcPercent*100@% chance to stun their target for @TFTTrait.TFTEvent5YR_Glacial.1:StunDuration@ second and deal bonus magic damage. <br><br><row>(@TFTTrait.TFTEvent5YR_Glacial.1:MinUnits@) @TFTTrait.TFTEvent5YR_Glacial.1:BonusDamage@ magic damage.</row><br><row>(@TFTTrait.TFTEvent5YR_Glacial.2:MinUnits@) @TFTTrait.TFTEvent5YR_Glacial.2:BonusDamage@ magic damage. Gain another Glacial Mallet.</row>"
+  },
+  "TFTEvent5YR_Yordle": {
+    "name": "Yordle",
+    "desc": "After each player combat, gain a Yordle Grab Bag full of Yordle-y loot!<br><br><row>(@TFTTrait.TFTEvent5YR_Yordle.1:MinUnits@) Gain a Yordle Grab Bag!</row><br><row>(@TFTTrait.TFTEvent5YR_Yordle.2:MinUnits@) If you have @TFTTrait.TFTEvent5YR_Yordle.2:NumOfThreeStarsNeeded@ or more 3-star champions, your Yordle Grab Bag will contain a Yordle-Lord.</row>"
+  },
+  "TFTEvent5YR_Preserver": {
+    "name": "Renewer",
+    "desc": "Your team heals for a percent of their max Health every @TFTTrait.TFTEvent5YR_Preserver.1:Duration@ seconds. If they are full Health, restore Mana instead.<br><br><row> (@TFTTrait.TFTEvent5YR_Preserver.1:MinUnits@) @TFTTrait.TFTEvent5YR_Preserver.1:HealthPct*100@% %i:scaleHealth%, or @TFTTrait.TFTEvent5YR_Preserver.1:ManaPct*100@% %i:scaleMana%.</row><br><row> (@TFTTrait.TFTEvent5YR_Preserver.2:MinUnits@) @TFTTrait.TFTEvent5YR_Preserver.2:HealthPct*100@% %i:scaleHealth%, and @TFTTrait.TFTEvent5YR_Preserver.2:ManaPct*100@% %i:scaleMana%. Always get both.</row><br><br>"
+  },
+  "TFTEvent5YR_Demacia": {
+    "name": "Demacia",
+    "desc": "Each time your team loses @TFTTrait.TFTEvent5YR_Demacia.1:MaxHealthLost*100@% max Health, they Rally, reducing their Mana cost by @TFTTrait.TFTEvent5YR_Demacia.1:ManaReductionPct*100@%. Your team gains Armor and Magic Resist.<br><br><row>(@TFTTrait.TFTEvent5YR_Demacia.1:MinUnits@) @TFTTrait.TFTEvent5YR_Demacia.1:ArmorMR@&nbsp;%i:scaleArmor%%i:scaleMR%</row><br><row>(@TFTTrait.TFTEvent5YR_Demacia.2:MinUnits@) @TFTTrait.TFTEvent5YR_Demacia.2:ArmorMR@&nbsp;%i:scaleArmor%%i:scaleMR%. Unlock Galio. On Rally, reduce Mana costs of your team by @TFTTrait.TFTEvent5YR_Demacia.2:ManaReductionPctPerGalioItem*100@% for each item equipped to your strongest Galio, and smite enemies for @TFTTrait.TFTEvent5YR_Demacia.2:EnemyTrueDamage*100@% of their max&nbsp;Health.</row><br><br>"
+  },
+  "TFTEvent5YR_YordleLord": {
+    "name": "Yordle-Lord",
+    "desc": "Yordle-Lord Veigar and his Furyhorns are crashing Pengu's Party!"
+  },
+  "TFTEvent5YR_Hacker": {
+    "name": "Hacker",
+    "desc": "Your team gains Omnivamp and summons a H4ckerr!m. Enemies it passes through are H4ck3d, losing @TFTTrait.TFTEvent5YR_Hacker.1:PercentArmorToRemove*100@% of their Armor and Magic Resist. <br><br><row>(@TFTTrait.TFTEvent5YR_Hacker.1:MinUnits@) @TFTTrait.TFTEvent5YR_Hacker.1:Omnivamp*100@% %i:scaleSV%</row><br><row>(@TFTTrait.TFTEvent5YR_Hacker.2:MinUnits@) @TFTTrait.TFTEvent5YR_Hacker.2:Omnivamp*100@% %i:scaleSV%, AND see your next opponent. Gain a rider hex that sends its unit to the enemy backline at combat start. The rider gains @TFTTrait.TFTEvent5YR_Hacker.2:Horsevamp*100@% %i:scaleSV% instead, and their kills have a @TFTTrait.TFTEvent5YR_Hacker.2:PercentChanceToDropGoldOnKill*100@% chance to drop 1 gold.<br><br>Total Gold Earned: @TFTUnitProperty.trait:TFTEvent5YR_Hacker_RiderGold_Earned@</row>"
+  },
+  "TFTEvent5YR_Storyweaver": {
+    "name": "Storyweaver",
+    "desc": "Summon a Hero named Kayle and evolve her as you level up!<br><br><row>(@TFTTrait.TFTEvent5YR_Storyweaver.1:MinUnits@) When you reach level @TFTTrait.TFTEvent5YR_Storyweaver:FirstArmoryLevel@, Kayle upgrades to 2-star. Pick a supportive effect.</row><br><row>(@TFTTrait.TFTEvent5YR_Storyweaver.2:MinUnits@) Kayle evolves again at levels @TFTTrait.TFTEvent5YR_Storyweaver:SecondArmoryLevel@, @TFTTrait.TFTEvent5YR_Storyweaver:ThirdArmoryLevel@ and @TFTTrait.TFTEvent5YR_Storyweaver:FourStarUpgradeLevel@:<br>Level @TFTTrait.TFTEvent5YR_Storyweaver:SecondArmoryLevel@: Pick a combat effect. <br>Level @TFTTrait.TFTEvent5YR_Storyweaver:ThirdArmoryLevel@: Kayle upgrades to 3-star. Pick a combat effect.<br>Level @TFTTrait.TFTEvent5YR_Storyweaver:FourStarUpgradeLevel@: Kayle upgrades to 4-star.</row><br>"
+  },
+  "TFTEvent5YR_Pyro": {
+    "name": "Pyro",
+    "desc": "Your team gains @TFTTrait.TFTEvent5YR_Pyro:BaseASPct@% %i:scaleAS% Attack Speed.<br><br>For each kill, your team creates an infernal cinder that you collect the next round. For every @TFTTrait.TFTEvent5YR_Pyro:NumCinders@ cinders you collect, your team gains @TFTTrait.TFTEvent5YR_Pyro:ASPctPerNumCinders@% more %i:scaleAS%.<br><br><row>(@TFTTrait.TFTEvent5YR_Pyro.1:MinUnits@) @TFTTrait.TFTEvent5YR_Pyro.1:NumCindersPerKill@ infernal cinder per enemy.</row><br><row>(@TFTTrait.TFTEvent5YR_Pyro.2:MinUnits@) @TFTTrait.TFTEvent5YR_Pyro.2:NumCindersPerKill@ infernal cinders per enemy and execute enemies under @TFTTrait.TFTEvent5YR_Pyro.2:ExecutePct@% Health.</row><br><br>Cinders collected: @TFTUnitProperty.trait:TFTEvent5YR_PyroCindersCollected@<br>Team %i:scaleAS%: @TFTUnitProperty.trait:TFTEvent5YR_PyroAttackSpeed@%"
+  },
+  "TFTEvent5YR_Nitro": {
+    "name": "Nitro",
+    "desc": "After every player combat, your champions grant Chrome to R-080T, based on their star level. Each Chrome grants @TFTTrait.TFTEvent5YR_Nitro.:HealthPerScrap@ Health and @TFTTrait.TFTEvent5YR_Nitro.:APPerScrap@ Ability Power. <br><br><row>(@TFTTrait.TFTEvent5YR_Nitro.1:MinUnits@) Summon R-080T!</row><br><row>(@TFTTrait.TFTEvent5YR_Nitro.2:MinUnits@) Upgrade R-080T to T-43X! At @TFTTrait.TFTEvent5YR_Nitro.:FourStarScrapThreshold@ Chrome, upgradeT-43X to fire a giant laser!</row><br><br><rules>Chrome per star: @TFTTrait.TFTEvent5YR_Nitro.:ScrapPerOneStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerTwoStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerThreeStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerFourStar@</rules>"
+  },
+  "TFTEvent5YR_Mountain": {
+    "name": "Mountain",
+    "desc": "Gain 2 Mountain hexes in the front row.<br>Combat start: units standing on a Mountain hex gain a Shield and permanent bonus Health.<br><br><row>(@TFTTrait.TFTEvent5YR_Mountain.1:MinUnits@) @TFTTrait.TFTEvent5YR_Mountain.1:ShieldValue@ Shield, @TFTTrait.TFTEvent5YR_Mountain.1:PermBonusHealth@ %i:scaleHealth%. </row><br><row>(@TFTTrait.TFTEvent5YR_Mountain.2:MinUnits@) @TFTTrait.TFTEvent5YR_Mountain.2:ShieldValue@ Shield, @TFTTrait.TFTEvent5YR_Mountain.2:PermBonusHealth@ %i:scaleHealth%. The entire front row becomes Mountain hexes.</row>"
+  },
+  "TFTEvent5YR_Elderwood": {
+    "name": "Elderwood",
+    "desc": "Every @TFTTrait.TFTEvent5YR_Elderwood.1:TickRate@ seconds your team grows, gaining bonus stats. This effect stacks up to @TFTTrait.TFTEvent5YR_Elderwood.1:MaxStacks@ times.<br><br><row>(@TFTTrait.TFTEvent5YR_Elderwood.1:MinUnits@) @TFTTrait.TFTEvent5YR_Elderwood.1:BonusResists@&nbsp;%i:scaleArmor%%i:scaleMR%, @TFTTrait.TFTEvent5YR_Elderwood.1:BonusADSP@&nbsp;%i:scaleAP%%i:scaleAD%</row><br><row>(@TFTTrait.TFTEvent5YR_Elderwood.2:MinUnits@) @TFTTrait.TFTEvent5YR_Elderwood.2:BonusResists@&nbsp;%i:scaleArmor%%i:scaleMR%, @TFTTrait.TFTEvent5YR_Elderwood.2:BonusADSP@&nbsp;%i:scaleAP%%i:scaleAD%</row>"
+  },
+  "TFTEvent5YR_Conqueror": {
+    "name": "Conqueror",
+    "desc": "Your team's takedowns grant stacks of Conquest. After gaining enough Conquest, open War Chests full of loot!<br><br>Your team gains Attack Damage and Ability Power, increased by @TFTTrait.TFTEvent5YR_Conqueror:PercentIncreasePerChest*100@% for each War Chest opened.<br><br><row>(@TFTTrait.TFTEvent5YR_Conqueror.1:MinUnits@) @TFTTrait.TFTEvent5YR_Conqueror.1:ADAPBase*100@%&nbsp;%i:scaleAD%%i:scaleAP%; @TFTTrait.TFTEvent5YR_Conqueror.1:StacksPerKill@x&nbsp;Conquest</row><br><row>(@TFTTrait.TFTEvent5YR_Conqueror.2:MinUnits@) @TFTTrait.TFTEvent5YR_Conqueror.2:ADAPBase*100@%&nbsp;%i:scaleAD%%i:scaleAP%; @TFTTrait.TFTEvent5YR_Conqueror.2:StacksPerKill@x&nbsp;Conquest</row><br><br><rules>War Chests Opened: @TFTUnitProperty.trait:TFTEvent5YR_Conqueror_ChestsCompleted@</rules><br><rules>Current Stats: @TFTUnitProperty.trait:TFTEvent5YR_Conqueror_CurrentADAP@%&nbsp;%i:scaleAD%%i:scaleAP%</rules><br>"
+  },
+  "TFTEvent5YR_Heroic": {
+    "name": "Heroic",
+    "desc": "Galio cannot be fielded in combat. Instead, his traits count from the bench and when your team Rallies, he joins the fight. <br><br>On landing, he creates a @HexRadius@-hex shockwave that deals @PercentMaxHP*100@% of his max Health as magic damage. Enemies hit are knocked up for @KnockupDuration@ seconds, reduced by distance from the center."
+  },
+  "TFTEvent5YR_Fated": {
+    "name": "Fated",
+    "desc": "Hover one champion over another to form a pair and unlock a <TFTBonus>Fated Bonus</TFTBonus>, based on the role of the champions.<br><br><row>(@TFTTrait.TFTEvent5YR_Fated.1:MinUnits@) Pair gets the Fated Bonus and gains @TFTTrait.TFTEvent5YR_Fated.1:PairHPBonus*100@% max Health. </row><br><row>(@TFTTrait.TFTEvent5YR_Fated.2:MinUnits@) ALL units get the Fated Bonus. The pair gets gains @TFTTrait.TFTEvent5YR_Fated.1:PairHPBonus*100@% max Health and @TFTTrait.TFTEvent5YR_Fated.2:PairBondIncreasePercent*100@% of the Fated Bonus. </row><br><br>Fated Bonuses:<br><ShowIf.TFTEvent5YR_Trait_Fated_AssassinActive><status>Assassins</status>: @TFTTrait.TFTEvent5YR_Fated.1:YasuoBuffBonus@ Shield on combat start</ShowIf.TFTEvent5YR_Trait_Fated_AssassinActive><ShowIfNot.TFTEvent5YR_Trait_Fated_AssassinActive><TFTGuildInactive>Assassins: @TFTTrait.TFTEvent5YR_Fated.1:YasuoBuffBonus@ Shield on combat start</TFTGuildInactive></ShowIfNot.TFTEvent5YR_Trait_Fated_AssassinActive><br><ShowIf.TFTEvent5YR_Trait_Fated_CasterActive><status>Casters</status>: @TFTTrait.TFTEvent5YR_Fated.1:AhriBuffBonus*100@% %i:scaleAD% %i:scaleAP%</ShowIf.TFTEvent5YR_Trait_Fated_CasterActive><ShowIfNot.TFTEvent5YR_Trait_Fated_CasterActive><TFTGuildInactive>Casters: @TFTTrait.TFTEvent5YR_Fated.1:AhriBuffBonus*100@% %i:scaleAD% %i:scaleAP%</TFTGuildInactive></ShowIfNot.TFTEvent5YR_Trait_Fated_CasterActive><br><ShowIf.TFTEvent5YR_Trait_Fated_FighterActive><status>Fighters</status>: @TFTTrait.TFTEvent5YR_Fated.1:SettBuffBonus*100@% %i:scaleSV%</ShowIf.TFTEvent5YR_Trait_Fated_FighterActive><ShowIfNot.TFTEvent5YR_Trait_Fated_FighterActive><TFTGuildInactive>Fighters: @TFTTrait.TFTEvent5YR_Fated.1:SettBuffBonus*100@% %i:scaleSV%</TFTGuildInactive></ShowIfNot.TFTEvent5YR_Trait_Fated_FighterActive><br><ShowIf.TFTEvent5YR_Trait_Fated_MarksmanActive><status>Marksmen</status>: @TFTTrait.TFTEvent5YR_Fated.1:KindredBuffBonus*100@% %i:scaleAS%</ShowIf.TFTEvent5YR_Trait_Fated_MarksmanActive><ShowIfNot.TFTEvent5YR_Trait_Fated_MarksmanActive><TFTGuildInactive>Marksmen: @TFTTrait.TFTEvent5YR_Fated.1:KindredBuffBonus*100@% %i:scaleAS%</TFTGuildInactive></ShowIfNot.TFTEvent5YR_Trait_Fated_MarksmanActive><br><ShowIf.TFTEvent5YR_Trait_Fated_SpecialistActive><status>Specialists</status>: Deal @TFTTrait.TFTEvent5YR_Fated.1:SyndraBuffBonus*100@% of damage as true damage</ShowIf.TFTEvent5YR_Trait_Fated_SpecialistActive><ShowIfNot.TFTEvent5YR_Trait_Fated_SpecialistActive><TFTGuildInactive>Specialists: Deal @TFTTrait.TFTEvent5YR_Fated.1:SyndraBuffBonus*100@% of damage as true damage</TFTGuildInactive></ShowIfNot.TFTEvent5YR_Trait_Fated_SpecialistActive><br><ShowIf.TFTEvent5YR_Trait_Fated_TankActive><status>Tanks</status>: @TFTTrait.TFTEvent5YR_Fated.1:ThreshBuffBonus@ %i:scaleArmor% %i:scaleMR%</ShowIf.TFTEvent5YR_Trait_Fated_TankActive><ShowIfNot.TFTEvent5YR_Trait_Fated_TankActive><TFTGuildInactive>Tanks: @TFTTrait.TFTEvent5YR_Fated.1:ThreshBuffBonus@ %i:scaleArmor% %i:scaleMR%</TFTGuildInactive></ShowIfNot.TFTEvent5YR_Trait_Fated_TankActive><br><br>Your units can only benefit from a single instance of a specific fated bonus."
+  },
+  "TFTEvent5YR_Maestro": {
+    "name": "Maestro",
+    "desc": "Gain a Maestro's Baton.<br>The holder has a fixed Attack Speed, and converts bonus Attack Speed to Attack Damage.<br><br>Every @TFTTrait.TFTEvent5YR_Maestro.1:NumAutosToSpawnJhinGun@ attacks, the Maestro summons a Grand Finale Rifle into one of your empty bench slots, up to 4. After summoning 4, they fire at the same rate as the Maestro, dealing physical damage. <br>Every 4th volley is <tftEvent5YRHarmonic>Harmonic</tftEvent5YRHarmonic>, dealing a percentage of the total damage the Maestro and their Rifles have done since the last Harmonic volley.<br><br><row>(@TFTTrait.TFTEvent5YR_Maestro.1:MinUnits@) @TFTTrait.TFTEvent5YR_Maestro.1:EmpoweredShotEchoDamagePercentage*100@% <tftEvent5YRHarmonic>Harmonic</tftEvent5YRHarmonic> Damage.</row><br><row>(@TFTTrait.TFTEvent5YR_Maestro.2:MinUnits@) @TFTTrait.TFTEvent5YR_Maestro.2:EmpoweredShotEchoDamagePercentage*100@% <tftEvent5YRHarmonic>Harmonic</tftEvent5YRHarmonic> Damage. <br>The Maestro can summon more than 4 Rifles. Combat Start: summon 1 Rifle into an empty bench slot.</row>"
+  },
+  "TFTEvent5YR_TheCrew": {
+    "name": "The Crew",
+    "desc": "Summon the <i>Nocturnus</i> to aid you in battle! It fires a rocket that deals @TFTTrait.TFTEvent5YR_TheCrew.1:BaseRocketDamage@ magic damage every @TFTTrait.TFTEvent5YR_TheCrew.1:BaseDamageThreshold@ damage your team deals.<br><br>2-cost and higher champions become Crew members after reaching 3-star. Gain additional bonuses for each Crew member.<br><br><row>(@TFTTrait.TFTEvent5YR_TheCrew.1:MinUnits@) 2 max Crew members.</row><br><row>(@TFTTrait.TFTEvent5YR_TheCrew.2:MinUnits@) 4 maximum Crew members.</row><br><br><tftActiveRank enabled=TFTEvent5YR_Trait_WildcardCrew_Bonus1Active default=false alternate=TFTGuildInactive>(1x <ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus1Active>%i:3StarEnabled%</ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus1Active><ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus1Active>%i:3StarDisabled%</ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus1Active>): + @TFTTrait.TFTEvent5YR_TheCrew.1:OnARollRolls@ free rerolls when you star up a unit you fielded last combat.</tftActiveRank><br><tftActiveRank enabled=TFTEvent5YR_Trait_WildcardCrew_Bonus2Active default=false alternate=TFTGuildInactive>(2x <ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus2Active>%i:3StarEnabled%</ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus2Active><ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus2Active>%i:3StarDisabled%</ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus2Active>): Rockets deal <magicDamage>@TFTTrait.TFTEvent5YR_TheCrew.1:UpgradedRocketDamage@</magicDamage> damage.</tftActiveRank><br><tftActiveRank enabled=TFTEvent5YR_Trait_WildcardCrew_Bonus3Active default=false alternate=TFTGuildInactive>(3x <ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus3Active>%i:3StarEnabled%</ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus3Active><ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus3Active>%i:3StarDisabled%</ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus3Active>): + @TFTTrait.TFTEvent5YR_TheCrew.1:FreeRerollsPerRound@ free reroll / round.</tftActiveRank><br><tftActiveRank enabled=TFTEvent5YR_Trait_WildcardCrew_Bonus4Active default=false alternate=TFTGuildInactive>(4x <ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus4Active>%i:3StarEnabled%</ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus4Active><ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus4Active>%i:3StarDisabled%</ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus4Active>): Rockets fire every @TFTTrait.TFTEvent5YR_TheCrew.1:UpgradedDamageThreshold@ damage dealt. Gain @TFTTrait.TFTEvent5YR_TheCrew.1:XPPerRound@ XP per round.</tftActiveRank>"
+  },
+  "TFTEvent5YR_Bilgewater": {
+    "name": "Bilgewater",
+    "desc": "Your team's attacks and Abilities mark enemies. The mark stores a percentage of damage dealt to the enemy.<br><br>Marked enemies are struck by a cannonball after @TFTTrait.TFTEvent5YR_Bilgewater.1:BarrageInterval@ seconds, dealing the stored damage plus a flat value as <physicalDamage>physical damage</physicalDamage>.<br><br><row>(@TFTTrait.TFTEvent5YR_Bilgewater.1:MinUnits@) @TFTTrait.TFTEvent5YR_Bilgewater.1:Damage@ + @TFTTrait.TFTEvent5YR_Bilgewater.1:DamagePercent@% damage dealt</row><br><row>(@TFTTrait.TFTEvent5YR_Bilgewater.2:MinUnits@) @TFTTrait.TFTEvent5YR_Bilgewater.2:Damage@ + @TFTTrait.TFTEvent5YR_Bilgewater.2:DamagePercent@% damage dealt. Every @TFTTrait.TFTEvent5YR_Bilgewater.2:ShotsUntilTreasure@th cannonball is replaced with a treasure chest that drops gold!</row>"
+  },
+  "TFTEvent5YR_Pentakill": {
+    "name": "Pentakill",
+    "desc": "Your team gains @TFTTrait.TFTEvent5YR_Pentakill.1:Damage_Reduction*100@% Durability and Damage Amp. For each champion kill, a champion on your team rocks out, increasing this bonus Damage Amp by @TFTTrait.TFTEvent5YR_Pentakill.:Kill_Bonus*100@%.<br><br>On the @TFTTrait.TFTEvent5YR_Pentakill.:Kill_Count@th kill, your entire team rocks out and gains Attack Speed.<br><br><row>(@TFTTrait.TFTEvent5YR_Pentakill.1:MinUnits@) @TFTTrait.TFTEvent5YR_Pentakill.1:Bonus_Damage*100@% %i:scaleDA%, @TFTTrait.TFTEvent5YR_Pentakill.1:Attack_Speed*100@% Attack Speed after a Pentakill.</row><br><row>(@TFTTrait.TFTEvent5YR_Pentakill.2:MinUnits@) @TFTTrait.TFTEvent5YR_Pentakill.2:Bonus_Damage*100@% %i:scaleDA%, @TFTTrait.TFTEvent5YR_Pentakill.2:Attack_Speed*100@% Attack Speed after a Pentakill.</row>"
+  },
+  "TFTEvent5YR_HighRoller": {
+    "name": "High Roller",
+    "desc": "Gain a Sevika's Jinxed Arm!<br><br>Combat start: roll a random Jinx mod. Roll another one:<br><row>(@TFTTrait.TFTEvent5YR_HighRoller.1:MinUnits@) after @TFTTrait.TFTEvent5YR_HighRoller.1:RollingFrequency@ seconds.</row><br><row>(@TFTTrait.TFTEvent5YR_HighRoller.2:MinUnits@) every @TFTTrait.TFTEvent5YR_HighRoller.2:RollingFrequency@ seconds. Mods are stronger, and the holder can now hit a Jinxed Jackpot!</row><br><br>Mods:<br>- Rocket: Launch rockets at random enemies. <br>- Shield: Gain a shield for @TFTTrait.TFTEvent5YR_HighRoller.1:Spell2ShieldDuration@ seconds.<br>- Coin: Gain gold.<br><br>Rockets Fired: @TFTUnitProperty.trait:TFTEvent5YR_HighRoller_RocketsFired@<br>Shields Gained: @TFTUnitProperty.trait:TFTEvent5YR_HighRoller_ShieldsGained@<br>Gold Gained: @TFTUnitProperty.trait:TFTEvent5YR_HighRoller_GoldGained@<br>Jackpots Hit: @TFTUnitProperty.trait:TFTEvent5YR_HighRoller_JackpotsHit@"
+  },
+  "TFTEvent5YR_MechPilot": {
+    "name": "Mech-Pilot",
+    "desc": "Use the Pilot Selector to choose a Pilot. Combat start: the Pilot jumps into a Mech.<br><br>The Mech has the traits and items of its Pilot, and gains a percent of the pilot's Attack Damage and max Health. When the Mech dies, the Pilot(s) are ejected with @TFTTrait.TFTEvent5YR_MechPilot.1:EjectedPilotHealthPercent@% of their max Health.<br><br><row>(@TFTTrait.TFTEvent5YR_MechPilot.1:MinUnits@) Mini-Mech: @TFTTrait.TFTEvent5YR_MechPilot.1:MechCombinedADRatio*100@% %i:scaleAD%%i:scaleHealth%</row> <br><row>(@TFTTrait.TFTEvent5YR_MechPilot.2:MinUnits@) Super-Mech: @TFTTrait.TFTEvent5YR_MechPilot.2:MechCombinedADRatio*100@% %i:scaleAD%%i:scaleHealth%. The 2 nearest units to the Pilot also jump into the Mech. </row>"
+  },
+  "TFTEvent5YR_Coven": {
+    "name": "Coven",
+    "desc": "The unit nearest to the center of your team is chosen as the Coven Leader, gaining bonus Ability Power.<br><br>Whenever your team casts an Ability, the Coven Leader gains Mana.<br><br><row>(@TFTTrait.TFTEvent5YR_Coven.1:MinUnits@) @TFTTrait.TFTEvent5YR_Coven.1:AbilityPower@ %i:scaleAP%,  @TFTTrait.TFTEvent5YR_Coven.1:ManaToGive@ %i:scaleMana% </row><br><row>(@TFTTrait.TFTEvent5YR_Coven.2:MinUnits@) @TFTTrait.TFTEvent5YR_Coven.2:AbilityPower@ %i:scaleAP%,  @TFTTrait.TFTEvent5YR_Coven.2:ManaToGive@ %i:scaleMana% </row>"
+  },
+  "TFTEvent5YR_Overlord": {
+    "name": "Overlord",
+    "desc": "Use the Overlord Selector to choose an Overlord.<br><br>The Overlord takes a bite out of the unit in the hex behind them, dealing true damage to that unit.<br>The Overlord gains the same amount of health as the chomp deals, and gains a percentage of that unit's Attack Damage and Ability Power.<br><br><row>(@TFTTrait.TFTEvent5YR_Overlord.1:MinUnits@) @TFTTrait.TFTEvent5YR_Overlord.1:HPPercentDamage*100@% max Health true damage,  @TFTTrait.TFTEvent5YR_Overlord.1:PercentADAPGain*100@% %i:scaleAD%%i:scaleAP%</row> <br><row>(@TFTTrait.TFTEvent5YR_Overlord.2:MinUnits@) @TFTTrait.TFTEvent5YR_Overlord.2:HPPercentDamage*100@% max Health true damage,  @TFTTrait.TFTEvent5YR_Overlord.2:PercentADAPGain*100@% %i:scaleAD%%i:scaleAP%. <br>Take a bite out of two units. Damage from the Overlord's attacks and abilities 30% <TFTKeyword>Shred</TFTKeyword>, 30% <TFTKeyword>Sunder</TFTKeyword>, @TFTTrait.TFTEvent5YR_Overlord.2:EnemyDamageReduction*100@% <TFTKeyword>Weaken</TFTKeyword>, and 33% <TFTKeyword>Wound</TFTKeyword> enemies for @TFTTrait.TFTEvent5YR_Overlord.2:DebuffDuration@ seconds. These effects do not stack.</row><br><br><tftitemrules><tftbold>Shred</tftbold>: Reduce Magic Resist<br><tftbold>Sunder</tftbold>: Reduce Armor<br><tftbold>Weaken</tftbold>: Reduce Damage dealt<br><tftbold>Wound</tftbold>: Reduces healing received</tftitemrules><br>"
+  },
+  "TFTEvent5YR_Rebel": {
+    "name": "Rebel",
+    "desc": "Your team gains a Shield and Damage Amp for each adjacent ally.<br><br><row>(@TFTTrait.TFTEvent5YR_Rebel.1:MinUnits@) @TFTTrait.TFTEvent5YR_Rebel.1:ShieldAmount@ Shield for @TFTTrait.TFTEvent5YR_Rebel.1:ShieldDuration@ seconds, @TFTTrait.TFTEvent5YR_Rebel.1:DamageAmp@% %i:scaleDA%</row><br><row>(@TFTTrait.TFTEvent5YR_Rebel.2:MinUnits@) @TFTTrait.TFTEvent5YR_Rebel.2:ShieldAmount@ Shield for @TFTTrait.TFTEvent5YR_Rebel.2:ShieldDuration@ seconds, @TFTTrait.TFTEvent5YR_Rebel.2:DamageAmp@% %i:scaleDA%</row>"
+  },
+  "TFTEvent5YR_Empress": {
+    "name": "Empress",
+    "desc": "Gain a Lavender Crown. After the first @TFTTrait.TFTEvent5YR_Empress.1:DelayForInitialCoralSpawn@ seconds of combat, spawn a Void Coral near the holder's current target.<br>The holder blinks to the Coral's location and consumes it, gaining max Health, Attack Damage, and Ability Power, and deals magic damage to enemies within @TFTTrait.TFTEvent5YR_Empress.1:HexRange@ hexes.<br><br><row>(@TFTTrait.TFTEvent5YR_Empress.1:MinUnits@) Coral grants @TFTTrait.TFTEvent5YR_Empress.1:PercentBonusMaxHealth*100@% max Health increase, @TFTTrait.TFTEvent5YR_Empress.1:BonusAD*100@% %i:scaleAD% %i:scaleAP%.</row><br><row>(@TFTTrait.TFTEvent5YR_Empress.2:MinUnits@) Kills now leave behind additional Void Corals. First Coral grants @TFTTrait.TFTEvent5YR_Empress.2:PercentBonusMaxHealth*100@% max Health increase and @TFTTrait.TFTEvent5YR_Empress.2:BonusAD*100@% %i:scaleAD% %i:scaleAP%; consuming further Corals heal the holder for @TFTTrait.TFTEvent5YR_Empress.2:PercentHealthHeal*100@% %i:scaleHealth% and grant an additional @TFTTrait.TFTEvent5YR_Empress.2:StackingBonusAD*100@% %i:scaleAD% %i:scaleAP%.</row>"
   },
   "TFT13_Viktor": {
     "name": "Viktor",
