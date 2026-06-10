@@ -17,6 +17,22 @@ $cacheFile = "{$cacheDir}/{$cacheKey}.bin";
 $metaFile  = "{$cacheDir}/{$cacheKey}.meta";
 $CACHE_TTL = 86400;
 
+if (mt_rand(1, 50) === 1 && is_dir($cacheDir)) {
+    $handle = opendir($cacheDir);
+    if ($handle) {
+        $cutoff = time() - $CACHE_TTL;
+        while (($file = readdir($handle)) !== false) {
+            if (substr($file, -4) !== '.bin') continue;
+            $path = $cacheDir . '/' . $file;
+            if (filemtime($path) < $cutoff) {
+                @unlink($path);
+                @unlink(substr($path, 0, -4) . '.meta');
+            }
+        }
+        closedir($handle);
+    }
+}
+
 if (is_file($cacheFile) && is_file($metaFile) && (time() - filemtime($cacheFile)) < $CACHE_TTL) {
     $meta = json_decode(file_get_contents($metaFile), true);
     header('Content-Type: ' . ($meta['ct'] ?? 'image/png'));
