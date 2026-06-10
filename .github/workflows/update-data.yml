@@ -19,6 +19,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Collect TFT game data
+        run: node scripts/collect-tft-data.js --set 17 --data-dir data
+        continue-on-error: true
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
