@@ -26,7 +26,14 @@ if (is_file($cacheFile) && is_file($metaFile) && (time() - filemtime($cacheFile)
     exit;
 }
 
-$url = 'https://raw.communitydragon.org/latest/game/' . $p;
+$base = $_GET['base'] ?? 'cd';
+if ($base === 'dd') {
+    $ver = trim($_GET['ver'] ?? '');
+    if (!$ver || !preg_match('/^\d+\.\d+\.\d+$/', $ver)) { http_response_code(400); exit; }
+    $url = 'https://ddragon.leagueoflegends.com/cdn/' . $ver . '/img/' . $p;
+} else {
+    $url = 'https://raw.communitydragon.org/latest/game/' . $p;
+}
 
 $data = false;
 if (function_exists('curl_init')) {

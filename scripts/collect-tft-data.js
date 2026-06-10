@@ -17,7 +17,6 @@ const DATA_DIR_ARG = getArg('data-dir', null)
 
 const DD = 'https://ddragon.leagueoflegends.com'
 const CD_P = 'https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default'
-const CD_G = 'https://raw.communitydragon.org/latest/game'
 const CD_TFT = 'https://raw.communitydragon.org/latest/cdragon/tft/en_us.json'
 
 function cleanTraitName(name) {
@@ -28,14 +27,16 @@ function cleanTraitName(name) {
     .trim()
 }
 
-function cdIconUrl(path) {
+function cdIconProxy(path) {
   if (!path) return null
-  return CD_P + '/' + path.replace('/lol-game-data/assets/', '').toLowerCase()
+  const rel = path.replace('/lol-game-data/assets/', '').toLowerCase()
+  return `/api/img.php?p=${encodeURIComponent(rel)}`
 }
 
-function cdGameUrl(path) {
+function cdGameProxy(path) {
   if (!path) return null
-  return CD_G + '/' + path.replace(/\.tex$/i, '.png').toLowerCase()
+  const rel = path.replace(/\.tex$/i, '.png').toLowerCase()
+  return `/api/img.php?p=${encodeURIComponent(rel)}`
 }
 
 function resolveAugDesc(raw, effects) {
@@ -122,7 +123,7 @@ async function collect() {
         cost: c.cost,
         traits,
         role: cdRoleMap[c.id] ?? null,
-        icon: cdIconUrl(cd.squareIconPath) ?? `${DD}/cdn/${ver}/img/tft-champion/${c.image?.full}`,
+        icon: cdIconProxy(cd.squareIconPath) ?? (c.image?.full ? `/api/img.php?base=dd&ver=${encodeURIComponent(ver)}&p=${encodeURIComponent('tft-champion/' + c.image.full)}` : null),
         teamPlannerCode: plannerMap[c.id] ?? null,
       }
     })
@@ -158,7 +159,7 @@ async function collect() {
         traitBreakpoints[t.apiName] = t.effects[0].minUnits ?? 2
         const iconPath = t.icon ?? t.iconPath ?? null
         traitMeta[t.apiName] = {
-          iconUrl: iconPath ? cdGameUrl(iconPath) : null,
+          iconUrl: iconPath ? cdGameProxy(iconPath) : null,
           effects: t.effects.map(e => ({ minUnits: e.minUnits, style: e.style ?? 0 })),
         }
       }
@@ -192,7 +193,7 @@ async function collect() {
     .map(it => ({
       id: it.id,
       name: it.name,
-      icon: it.image?.full ? `${DD}/cdn/${ver}/img/tft-item/${it.image.full}` : null,
+      icon: it.image?.full ? `/api/img.php?base=dd&ver=${encodeURIComponent(ver)}&p=${encodeURIComponent('tft-item/' + it.image.full)}` : null,
       desc: it.desc ?? '',
     }))
 
