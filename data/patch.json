@@ -331,6 +331,48 @@
       "type": "buff",
       "section": "AUGMENTS",
       "midPatch": false
+    },
+    {
+      "entity": "Ixtal Cashout Breakpoints",
+      "text": "Ixtal Cashout Breakpoints: 25//35/50/80/120/150/200/250/300/350/400/4450/500/550/625/700/800/900/1000 ⇒ 25//35/50/80/120/150/200/250/300/350/400/4450/500/550/625/710/830/920/1000",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Glacial Prismatic Proc Chance",
+      "text": "Glacial Prismatic Proc Chance: 25% ⇒ 30%",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Honeymancy Bronze",
+      "text": "Honeymancy Bronze: Damage Dealt Percent: 7% ⇒ 6%, Damage Received Percent: 11% ⇒ 9%, Damage Per Bee: 15 ⇒ 12",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Honeymancy Prismatic",
+      "text": "Honeymancy Prismatic: Damage Dealt Percent: 10% ⇒ 9%, Damage Received Percent: 18% ⇒ 16%, Damage Per Bee: 30 ⇒ 25",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "The Crew Base Rocket Damage",
+      "text": "The Crew Base Rocket Damage: 90 ⇒ 95, Base Damage to trigger rocket threshold: 440 ⇒ 420",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Hacker H4ck3d Armor/MR Debuff",
+      "text": "Hacker H4ck3d Armor/MR Debuff: 30% ⇒ 35%",
+      "type": "buff",
+      "section": "AUGMENTS",
+      "midPatch": false
     }
   ],
   "nerfs": [
@@ -543,6 +585,20 @@
       "type": "nerf",
       "section": "AUGMENTS",
       "midPatch": false
+    },
+    {
+      "entity": "Demacia Galio",
+      "text": "Demacia Galio: Shield Amount: 500/600/2000% AP ⇒ 400/550/2000% AP",
+      "type": "nerf",
+      "section": "AUGMENTS",
+      "midPatch": false
+    },
+    {
+      "entity": "Storyweaver Kayle",
+      "text": "Storyweaver Kayle: Spell Damage:125/250/390/780 ⇒ 125/250/390/730 AP",
+      "type": "nerf",
+      "section": "AUGMENTS",
+      "midPatch": false
     }
   ],
   "adjusted": [
@@ -551,6 +607,13 @@
       "text": "LeBlanc's Stage 3 Augments Removed",
       "type": "adjusted",
       "section": "SYSTEMS",
+      "midPatch": false
+    },
+    {
+      "entity": "Mech-Pilot",
+      "text": "Mech-Pilot: Super Mech can no longer be abducted by Bard's Ability.",
+      "type": "adjusted",
+      "section": "AUGMENTS",
       "midPatch": false
     }
   ],
@@ -616,6 +679,6 @@
   ],
   "latestAdjusted": [],
   "hasMidPatch": true,
-  "updatedAt": "2026-06-12T20:28:25.834Z",
+  "updatedAt": "2026-06-12T22:49:05.509Z",
   "sourceUrl": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-17-5"
 }
