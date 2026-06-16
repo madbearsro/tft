@@ -3,42 +3,448 @@
     "riot": true
   },
   "unitStats": {
-    "TFT17_Nasus": {
-      "top4Rate": 0.4938,
-      "avgPlacement": 4.457,
-      "total": 162,
+    "TFT17_Teemo": {
+      "top4Rate": 0.5312,
+      "avgPlacement": 4.484,
+      "total": 64,
       "topItems": [
         {
-          "name": "TFT_Item_Crownguard",
-          "count": 5
+          "name": "TFT_Item_MadredsBloodrazor",
+          "count": 4
         },
         {
-          "name": "TFT_Item_NegatronCloak",
+          "name": "TFT_Item_GuinsoosRageblade",
           "count": 3
         },
         {
-          "name": "TFT_Item_NightHarvester",
-          "count": 3
+          "name": "TFT_Item_PowerGauntlet",
+          "count": 1
         },
         {
-          "name": "TFT_Item_GargoyleStoneplate",
-          "count": 3
+          "name": "TFT_Item_RabadonsDeathcap",
+          "count": 1
         }
       ]
     },
-    "TFT17_Gwen": {
-      "top4Rate": 0.487,
-      "avgPlacement": 4.532,
-      "total": 154,
+    "TFT17_Nasus": {
+      "top4Rate": 0.5097,
+      "avgPlacement": 4.49,
+      "total": 155,
       "topItems": [
         {
-          "name": "TFT_Item_Bloodthirster",
+          "name": "TFT_Item_GargoyleStoneplate",
+          "count": 2
+        },
+        {
+          "name": "TFT_Item_RedBuff",
+          "count": 2
+        },
+        {
+          "name": "TFT_Item_DragonsClaw",
+          "count": 2
+        },
+        {
+          "name": "TFT_Item_WarmogsArmor",
+          "count": 2
+        }
+      ]
+    },
+    "TFT17_Lissandra": {
+      "top4Rate": 0.4294,
+      "avgPlacement": 4.771,
+      "total": 170,
+      "topItems": [
+        {
+          "name": "TFT_Item_JeweledGauntlet",
+          "count": 26
+        },
+        {
+          "name": "TFT_Item_SpearOfShojin",
+          "count": 11
+        },
+        {
+          "name": "TFT_Item_Leviathan",
+          "count": 11
+        },
+        {
+          "name": "TFT_Item_StatikkShiv",
+          "count": 9
+        }
+      ]
+    },
+    "TFT17_Illaoi": {
+      "top4Rate": 0.4411,
+      "avgPlacement": 4.722,
+      "total": 331,
+      "topItems": [
+        {
+          "name": "TFT_Item_GargoyleStoneplate",
+          "count": 27
+        },
+        {
+          "name": "TFT_Item_WarmogsArmor",
+          "count": 22
+        },
+        {
+          "name": "TFT_Item_NightHarvester",
+          "count": 11
+        },
+        {
+          "name": "TFT_Item_BrambleVest",
+          "count": 11
+        }
+      ]
+    },
+    "TFT17_Ornn": {
+      "top4Rate": 0.5661,
+      "avgPlacement": 4.165,
+      "total": 242,
+      "topItems": [
+        {
+          "name": "TFT_Item_GargoyleStoneplate",
+          "count": 91
+        },
+        {
+          "name": "TFT_Item_WarmogsArmor",
+          "count": 67
+        },
+        {
+          "name": "TFT_Item_Redemption",
+          "count": 23
+        },
+        {
+          "name": "TFT_Item_NightHarvester",
+          "count": 20
+        }
+      ]
+    },
+    "TFT17_Nami": {
+      "top4Rate": 0.5665,
+      "avgPlacement": 4.237,
+      "total": 173,
+      "topItems": [
+        {
+          "name": "TFT_Item_JeweledGauntlet",
+          "count": 48
+        },
+        {
+          "name": "TFT_Item_Leviathan",
+          "count": 34
+        },
+        {
+          "name": "TFT_Item_SpearOfShojin",
+          "count": 30
+        },
+        {
+          "name": "TFT_Item_StatikkShiv",
+          "count": 11
+        }
+      ]
+    },
+    "TFT17_Nunu": {
+      "top4Rate": 0.5127,
+      "avgPlacement": 4.424,
+      "total": 474,
+      "topItems": [
+        {
+          "name": "TFT_Item_FrozenHeart",
+          "count": 166
+        },
+        {
+          "name": "TFT_Item_WarmogsArmor",
+          "count": 79
+        },
+        {
+          "name": "TFT_Item_GargoyleStoneplate",
+          "count": 69
+        },
+        {
+          "name": "TFT_Item_AdaptiveHelm",
+          "count": 65
+        }
+      ]
+    },
+    "TFT17_Leblanc": {
+      "top4Rate": 0.3214,
+      "avgPlacement": 5.357,
+      "total": 84,
+      "topItems": [
+        {
+          "name": "TFT_Item_GuinsoosRageblade",
+          "count": 18
+        },
+        {
+          "name": "TFT_Item_JeweledGauntlet",
+          "count": 5
+        },
+        {
+          "name": "TFT_Item_MadredsBloodrazor",
           "count": 4
+        },
+        {
+          "name": "TFT_Item_StatikkShiv",
+          "count": 4
+        }
+      ]
+    },
+    "TFT17_Sona": {
+      "top4Rate": 0.6157,
+      "avgPlacement": 3.894,
+      "total": 255,
+      "topItems": [
+        {
+          "name": "TFT_Item_StatikkShiv",
+          "count": 40
+        },
+        {
+          "name": "TFT_Item_SpearOfShojin",
+          "count": 34
+        },
+        {
+          "name": "TFT_Item_JeweledGauntlet",
+          "count": 30
+        },
+        {
+          "name": "TFT_Item_Morellonomicon",
+          "count": 25
+        }
+      ]
+    },
+    "TFT17_Leona": {
+      "top4Rate": 0.4,
+      "avgPlacement": 4.9,
+      "total": 130,
+      "topItems": [
+        {
+          "name": "TFT_Item_GargoyleStoneplate",
+          "count": 44
+        },
+        {
+          "name": "TFT_Item_WarmogsArmor",
+          "count": 23
+        },
+        {
+          "name": "TFT_Item_FrozenHeart",
+          "count": 8
+        },
+        {
+          "name": "TFT_Item_Crownguard",
+          "count": 6
+        }
+      ]
+    },
+    "TFT17_Pyke": {
+      "top4Rate": 0.5294,
+      "avgPlacement": 4.118,
+      "total": 85,
+      "topItems": [
+        {
+          "name": "TFT_Item_GuardianAngel",
+          "count": 11
+        },
+        {
+          "name": "TFT_Item_InfinityEdge",
+          "count": 10
         },
         {
           "name": "TFT_Item_UnstableConcoction",
           "count": 4
         },
+        {
+          "name": "TFT_Item_Deathblade",
+          "count": 4
+        }
+      ]
+    },
+    "TFT17_Mordekaiser": {
+      "top4Rate": 0.4778,
+      "avgPlacement": 4.548,
+      "total": 427,
+      "topItems": [
+        {
+          "name": "TFT_Item_GargoyleStoneplate",
+          "count": 8
+        },
+        {
+          "name": "TFT_Item_Crownguard",
+          "count": 5
+        },
+        {
+          "name": "TFT_Item_WarmogsArmor",
+          "count": 5
+        },
+        {
+          "name": "TFT_Item_ThiefsGloves",
+          "count": 3
+        }
+      ]
+    },
+    "TFT17_Karma": {
+      "top4Rate": 0.5411,
+      "avgPlacement": 4.269,
+      "total": 401,
+      "topItems": [
+        {
+          "name": "TFT_Item_StatikkShiv",
+          "count": 40
+        },
+        {
+          "name": "TFT_Item_Morellonomicon",
+          "count": 30
+        },
+        {
+          "name": "TFT_Item_SpearOfShojin",
+          "count": 26
+        },
+        {
+          "name": "TFT_Item_RapidFireCannon",
+          "count": 17
+        }
+      ]
+    },
+    "TFT17_Bard": {
+      "top4Rate": 0.5939,
+      "avgPlacement": 3.924,
+      "total": 330,
+      "topItems": [
+        {
+          "name": "TFT_Item_JeweledGauntlet",
+          "count": 68
+        },
+        {
+          "name": "TFT_Item_RabadonsDeathcap",
+          "count": 40
+        },
+        {
+          "name": "TFT_Item_StatikkShiv",
+          "count": 30
+        },
+        {
+          "name": "TFT_Item_PowerGauntlet",
+          "count": 28
+        }
+      ]
+    },
+    "TFT17_Blitzcrank": {
+      "top4Rate": 0.6197,
+      "avgPlacement": 3.934,
+      "total": 497,
+      "topItems": [
+        {
+          "name": "TFT_Item_ThiefsGloves",
+          "count": 77
+        },
+        {
+          "name": "TFT_Item_SpearOfShojin",
+          "count": 33
+        },
+        {
+          "name": "TFT_Item_StatikkShiv",
+          "count": 32
+        },
+        {
+          "name": "TFT_Item_AdaptiveHelm",
+          "count": 30
+        }
+      ]
+    },
+    "TFT17_Gwen": {
+      "top4Rate": 0.5436,
+      "avgPlacement": 4.342,
+      "total": 149,
+      "topItems": [
+        {
+          "name": "TFT_Item_ThiefsGloves",
+          "count": 9
+        },
+        {
+          "name": "TFT_Item_StatikkShiv",
+          "count": 5
+        },
+        {
+          "name": "TFT_Item_JeweledGauntlet",
+          "count": 3
+        },
+        {
+          "name": "TFT_Item_PowerGauntlet",
+          "count": 3
+        }
+      ]
+    },
+    "TFT17_Samira": {
+      "top4Rate": 0.5673,
+      "avgPlacement": 4.193,
+      "total": 171,
+      "topItems": [
+        {
+          "name": "TFT_Item_SpearOfShojin",
+          "count": 45
+        },
+        {
+          "name": "TFT_Item_LastWhisper",
+          "count": 44
+        },
+        {
+          "name": "TFT_Item_Deathblade",
+          "count": 34
+        },
+        {
+          "name": "TFT_Item_InfinityEdge",
+          "count": 33
+        }
+      ]
+    },
+    "TFT17_Rammus": {
+      "top4Rate": 0.5296,
+      "avgPlacement": 4.369,
+      "total": 287,
+      "topItems": [
+        {
+          "name": "TFT_Item_GargoyleStoneplate",
+          "count": 73
+        },
+        {
+          "name": "TFT_Item_WarmogsArmor",
+          "count": 56
+        },
+        {
+          "name": "TFT_Item_Crownguard",
+          "count": 53
+        },
+        {
+          "name": "TFT_Item_FrozenHeart",
+          "count": 45
+        }
+      ]
+    },
+    "TFT17_Jhin": {
+      "top4Rate": 0.6148,
+      "avgPlacement": 3.911,
+      "total": 270,
+      "topItems": [
+        {
+          "name": "TFT_Item_InfinityEdge",
+          "count": 51
+        },
+        {
+          "name": "TFT_Item_LastWhisper",
+          "count": 38
+        },
+        {
+          "name": "TFT_Item_Deathblade",
+          "count": 37
+        },
+        {
+          "name": "TFT_Item_MadredsBloodrazor",
+          "count": 37
+        }
+      ]
+    },
+    "TFT17_Viktor": {
+      "top4Rate": 0.4651,
+      "avgPlacement": 4.535,
+      "total": 43,
+      "topItems": [
         {
           "name": "TFT_Item_StatikkShiv",
           "count": 4
@@ -46,90 +452,397 @@
         {
           "name": "TFT_Item_RabadonsDeathcap",
           "count": 3
+        },
+        {
+          "name": "TFT17_Item_PsyOps_DroneMod_Radiant",
+          "count": 3
+        },
+        {
+          "name": "TFT_Item_Morellonomicon",
+          "count": 2
         }
       ]
     },
-    "TFT17_Pantheon": {
-      "top4Rate": 0.5073,
-      "avgPlacement": 4.471,
-      "total": 274,
+    "TFT17_Urgot": {
+      "top4Rate": 0.5484,
+      "avgPlacement": 4.304,
+      "total": 217,
       "topItems": [
+        {
+          "name": "TFT_Item_SteraksGage",
+          "count": 15
+        },
+        {
+          "name": "TFT_Item_MadredsBloodrazor",
+          "count": 13
+        },
+        {
+          "name": "TFT_Item_ThiefsGloves",
+          "count": 12
+        },
+        {
+          "name": "TFT_Item_Quicksilver",
+          "count": 12
+        }
+      ]
+    },
+    "TFT17_AurelionSol": {
+      "top4Rate": 0.5135,
+      "avgPlacement": 4.523,
+      "total": 111,
+      "topItems": [
+        {
+          "name": "TFT_Item_JeweledGauntlet",
+          "count": 43
+        },
+        {
+          "name": "TFT_Item_RabadonsDeathcap",
+          "count": 28
+        },
+        {
+          "name": "TFT_Item_PowerGauntlet",
+          "count": 23
+        },
+        {
+          "name": "TFT_Item_StatikkShiv",
+          "count": 11
+        }
+      ]
+    },
+    "TFT17_Galio": {
+      "top4Rate": 0.5441,
+      "avgPlacement": 4.408,
+      "total": 272,
+      "topItems": [
+        {
+          "name": "TFT_Item_GargoyleStoneplate",
+          "count": 48
+        },
+        {
+          "name": "TFT_Item_WarmogsArmor",
+          "count": 22
+        },
+        {
+          "name": "TFT_Item_SteraksGage",
+          "count": 19
+        },
+        {
+          "name": "TFT_Item_FrozenHeart",
+          "count": 15
+        }
+      ]
+    },
+    "TFT17_TahmKench": {
+      "top4Rate": 0.5297,
+      "avgPlacement": 4.362,
+      "total": 387,
+      "topItems": [
+        {
+          "name": "TFT_Item_WarmogsArmor",
+          "count": 66
+        },
+        {
+          "name": "TFT_Item_GargoyleStoneplate",
+          "count": 50
+        },
+        {
+          "name": "TFT_Item_Redemption",
+          "count": 48
+        },
+        {
+          "name": "TFT_Item_Crownguard",
+          "count": 32
+        }
+      ]
+    },
+    "TFT17_Fiora": {
+      "top4Rate": 0.6078,
+      "avgPlacement": 4.016,
+      "total": 255,
+      "topItems": [
+        {
+          "name": "TFT_Item_GuardianAngel",
+          "count": 53
+        },
+        {
+          "name": "TFT_Item_SteraksGage",
+          "count": 48
+        },
+        {
+          "name": "TFT_Item_UnstableConcoction",
+          "count": 32
+        },
+        {
+          "name": "TFT_Item_MadredsBloodrazor",
+          "count": 26
+        }
+      ]
+    },
+    "TFT17_Aatrox": {
+      "top4Rate": 0.5131,
+      "avgPlacement": 4.455,
+      "total": 382,
+      "topItems": [
+        {
+          "name": "TFT17_Item_StargazerEmblemItem",
+          "count": 8
+        },
+        {
+          "name": "TFT_Item_SteraksGage",
+          "count": 3
+        },
+        {
+          "name": "TFT_Item_BrambleVest",
+          "count": 2
+        },
+        {
+          "name": "TFT_Item_ThiefsGloves",
+          "count": 2
+        }
+      ]
+    },
+    "TFT17_Jax": {
+      "top4Rate": 0.4455,
+      "avgPlacement": 4.741,
+      "total": 220,
+      "topItems": [
+        {
+          "name": "TFT_Item_GargoyleStoneplate",
+          "count": 26
+        },
+        {
+          "name": "TFT_Item_FrozenHeart",
+          "count": 24
+        },
+        {
+          "name": "TFT_Item_WarmogsArmor",
+          "count": 14
+        },
+        {
+          "name": "TFT_Item_Crownguard",
+          "count": 14
+        }
+      ]
+    },
+    "TFT17_Maokai": {
+      "top4Rate": 0.4911,
+      "avgPlacement": 4.511,
+      "total": 448,
+      "topItems": [
+        {
+          "name": "TFT_Item_WarmogsArmor",
+          "count": 38
+        },
+        {
+          "name": "TFT_Item_Redemption",
+          "count": 28
+        },
+        {
+          "name": "TFT_Item_FrozenHeart",
+          "count": 23
+        },
+        {
+          "name": "TFT_Item_GargoyleStoneplate",
+          "count": 21
+        }
+      ]
+    },
+    "TFT17_Rhaast": {
+      "top4Rate": 0.6285,
+      "avgPlacement": 3.814,
+      "total": 393,
+      "topItems": [
+        {
+          "name": "TFT17_Item_StargazerEmblemItem",
+          "count": 9
+        },
+        {
+          "name": "TFT_Item_ThiefsGloves",
+          "count": 8
+        },
+        {
+          "name": "TFT_Item_WarmogsArmor",
+          "count": 8
+        },
+        {
+          "name": "TFT_Item_AdaptiveHelm",
+          "count": 7
+        }
+      ]
+    },
+    "TFT17_Xayah": {
+      "top4Rate": 0.4724,
+      "avgPlacement": 4.654,
+      "total": 127,
+      "topItems": [
+        {
+          "name": "TFT_Item_RunaansHurricane",
+          "count": 70
+        },
+        {
+          "name": "TFT_Item_RapidFireCannon",
+          "count": 27
+        },
+        {
+          "name": "TFT_Item_GuinsoosRageblade",
+          "count": 14
+        },
+        {
+          "name": "TFT_Item_Deathblade",
+          "count": 10
+        }
+      ]
+    },
+    "TFT17_Vex": {
+      "top4Rate": 0.6019,
+      "avgPlacement": 4.092,
+      "total": 206,
+      "topItems": [
+        {
+          "name": "TFT_Item_GuinsoosRageblade",
+          "count": 113
+        },
+        {
+          "name": "TFT_Item_MadredsBloodrazor",
+          "count": 47
+        },
+        {
+          "name": "TFT_Item_RapidFireCannon",
+          "count": 35
+        },
+        {
+          "name": "TFT_Item_RabadonsDeathcap",
+          "count": 22
+        }
+      ]
+    },
+    "TFT17_Aurora": {
+      "top4Rate": 0.4,
+      "avgPlacement": 5.086,
+      "total": 35,
+      "topItems": [
+        {
+          "name": "TFT_Item_StatikkShiv",
+          "count": 3
+        },
+        {
+          "name": "TFT_Item_Morellonomicon",
+          "count": 3
+        },
+        {
+          "name": "TFT17_AnimaSquadItem_Tier0_SparkingPrototype",
+          "count": 2
+        },
+        {
+          "name": "TFT_Item_SpearOfShojin",
+          "count": 2
+        }
+      ]
+    },
+    "TFT17_Morgana": {
+      "top4Rate": 0.6355,
+      "avgPlacement": 3.833,
+      "total": 203,
+      "topItems": [
+        {
+          "name": "TFT_Item_WarmogsArmor",
+          "count": 17
+        },
         {
           "name": "TFT_Item_GargoyleStoneplate",
           "count": 15
         },
         {
-          "name": "TFT_Item_FrozenHeart",
+          "name": "TFT_Item_AdaptiveHelm",
           "count": 14
         },
         {
-          "name": "TFT_Item_WarmogsArmor",
-          "count": 9
-        },
-        {
-          "name": "TFT_Item_RedBuff",
-          "count": 8
+          "name": "TFT_Item_Crownguard",
+          "count": 12
         }
       ]
     },
-    "TFT17_Ornn": {
-      "top4Rate": 0.5311,
-      "avgPlacement": 4.365,
-      "total": 241,
+    "TFT17_Milio": {
+      "top4Rate": 0.4575,
+      "avgPlacement": 4.689,
+      "total": 212,
       "topItems": [
         {
-          "name": "TFT_Item_WarmogsArmor",
-          "count": 83
-        },
-        {
-          "name": "TFT_Item_GargoyleStoneplate",
-          "count": 79
-        },
-        {
-          "name": "TFT_Item_Redemption",
-          "count": 21
-        },
-        {
-          "name": "TFT_Item_NightHarvester",
-          "count": 17
-        }
-      ]
-    },
-    "TFT17_Nami": {
-      "top4Rate": 0.55,
-      "avgPlacement": 4.222,
-      "total": 180,
-      "topItems": [
-        {
-          "name": "TFT_Item_JeweledGauntlet",
-          "count": 45
-        },
-        {
-          "name": "TFT_Item_Leviathan",
-          "count": 41
+          "name": "TFT_Item_Morellonomicon",
+          "count": 26
         },
         {
           "name": "TFT_Item_SpearOfShojin",
-          "count": 25
+          "count": 23
         },
         {
-          "name": "TFT_Item_Morellonomicon",
+          "name": "TFT_Item_RabadonsDeathcap",
+          "count": 19
+        },
+        {
+          "name": "TFT_Item_RapidFireCannon",
+          "count": 19
+        }
+      ]
+    },
+    "TFT17_Fizz": {
+      "top4Rate": 0.4815,
+      "avgPlacement": 4.691,
+      "total": 162,
+      "topItems": [
+        {
+          "name": "TFT_Item_ThiefsGloves",
+          "count": 10
+        },
+        {
+          "name": "TFT_Item_EmptyBag",
+          "count": 4
+        },
+        {
+          "name": "TFT_Item_Bloodthirster",
+          "count": 2
+        },
+        {
+          "name": "TFT_Item_JeweledGauntlet",
+          "count": 2
+        }
+      ]
+    },
+    "TFT17_Corki": {
+      "top4Rate": 0.4886,
+      "avgPlacement": 4.631,
+      "total": 176,
+      "topItems": [
+        {
+          "name": "TFT_Item_Deathblade",
+          "count": 66
+        },
+        {
+          "name": "TFT_Item_LastWhisper",
+          "count": 56
+        },
+        {
+          "name": "TFT_Item_MadredsBloodrazor",
+          "count": 17
+        },
+        {
+          "name": "TFT_Item_PowerGauntlet",
           "count": 15
         }
       ]
     },
     "TFT17_Riven": {
-      "top4Rate": 0.5336,
-      "avgPlacement": 4.471,
-      "total": 223,
+      "top4Rate": 0.4976,
+      "avgPlacement": 4.621,
+      "total": 211,
       "topItems": [
         {
-          "name": "TFT_Item_Bloodthirster",
-          "count": 41
+          "name": "TFT_Item_SteraksGage",
+          "count": 39
         },
         {
-          "name": "TFT_Item_SteraksGage",
-          "count": 40
+          "name": "TFT_Item_Bloodthirster",
+          "count": 31
         },
         {
           "name": "TFT_Item_TitansResolve",
@@ -137,1149 +850,317 @@
         },
         {
           "name": "TFT17_Item_SpaceGrooveEmblemItem",
-          "count": 14
-        }
-      ]
-    },
-    "TFT17_TahmKench": {
-      "top4Rate": 0.5152,
-      "avgPlacement": 4.477,
-      "total": 394,
-      "topItems": [
-        {
-          "name": "TFT_Item_WarmogsArmor",
-          "count": 78
-        },
-        {
-          "name": "TFT_Item_GargoyleStoneplate",
-          "count": 58
-        },
-        {
-          "name": "TFT_Item_Redemption",
-          "count": 50
-        },
-        {
-          "name": "TFT_Item_FrozenHeart",
-          "count": 42
-        }
-      ]
-    },
-    "TFT17_Blitzcrank": {
-      "top4Rate": 0.5976,
-      "avgPlacement": 3.911,
-      "total": 497,
-      "topItems": [
-        {
-          "name": "TFT_Item_ThiefsGloves",
-          "count": 71
-        },
-        {
-          "name": "TFT_Item_StatikkShiv",
-          "count": 42
-        },
-        {
-          "name": "TFT_Item_SpearOfShojin",
-          "count": 38
-        },
-        {
-          "name": "TFT_Item_JeweledGauntlet",
-          "count": 33
-        }
-      ]
-    },
-    "TFT17_Aatrox": {
-      "top4Rate": 0.5094,
-      "avgPlacement": 4.491,
-      "total": 371,
-      "topItems": [
-        {
-          "name": "TFT_Item_GargoyleStoneplate",
-          "count": 6
-        },
-        {
-          "name": "TFT_Item_ThiefsGloves",
-          "count": 4
-        },
-        {
-          "name": "TFT_Item_Bloodthirster",
-          "count": 4
-        },
-        {
-          "name": "TFT17_Item_StargazerEmblemItem",
-          "count": 4
-        }
-      ]
-    },
-    "TFT17_Jax": {
-      "top4Rate": 0.4697,
-      "avgPlacement": 4.682,
-      "total": 198,
-      "topItems": [
-        {
-          "name": "TFT_Item_GargoyleStoneplate",
-          "count": 41
-        },
-        {
-          "name": "TFT_Item_FrozenHeart",
-          "count": 13
-        },
-        {
-          "name": "TFT_Item_WarmogsArmor",
-          "count": 11
-        },
-        {
-          "name": "TFT_Item_Redemption",
-          "count": 9
-        }
-      ]
-    },
-    "TFT17_Maokai": {
-      "top4Rate": 0.4953,
-      "avgPlacement": 4.614,
-      "total": 430,
-      "topItems": [
-        {
-          "name": "TFT_Item_WarmogsArmor",
-          "count": 39
-        },
-        {
-          "name": "TFT_Item_FrozenHeart",
-          "count": 25
-        },
-        {
-          "name": "TFT_Item_GargoyleStoneplate",
-          "count": 23
-        },
-        {
-          "name": "TFT_Item_Redemption",
-          "count": 21
-        }
-      ]
-    },
-    "TFT17_Rhaast": {
-      "top4Rate": 0.6602,
-      "avgPlacement": 3.701,
-      "total": 412,
-      "topItems": [
-        {
-          "name": "TFT_Item_ThiefsGloves",
-          "count": 10
-        },
-        {
-          "name": "TFT_Item_GargoyleStoneplate",
-          "count": 9
-        },
-        {
-          "name": "TFT17_Item_StargazerEmblemItem",
-          "count": 9
-        },
-        {
-          "name": "TFT_Item_Redemption",
-          "count": 8
-        }
-      ]
-    },
-    "TFT17_Nunu": {
-      "top4Rate": 0.4938,
-      "avgPlacement": 4.398,
-      "total": 482,
-      "topItems": [
-        {
-          "name": "TFT_Item_FrozenHeart",
-          "count": 168
-        },
-        {
-          "name": "TFT_Item_GargoyleStoneplate",
-          "count": 91
-        },
-        {
-          "name": "TFT_Item_AdaptiveHelm",
-          "count": 73
-        },
-        {
-          "name": "TFT_Item_WarmogsArmor",
-          "count": 64
-        }
-      ]
-    },
-    "TFT17_Xayah": {
-      "top4Rate": 0.4344,
-      "avgPlacement": 4.689,
-      "total": 122,
-      "topItems": [
-        {
-          "name": "TFT_Item_RunaansHurricane",
-          "count": 52
-        },
-        {
-          "name": "TFT_Item_RapidFireCannon",
-          "count": 24
-        },
-        {
-          "name": "TFT_Item_Deathblade",
-          "count": 12
-        },
-        {
-          "name": "TFT_Item_GuinsoosRageblade",
-          "count": 11
-        }
-      ]
-    },
-    "TFT17_Jhin": {
-      "top4Rate": 0.6608,
-      "avgPlacement": 3.703,
-      "total": 286,
-      "topItems": [
-        {
-          "name": "TFT_Item_InfinityEdge",
-          "count": 48
-        },
-        {
-          "name": "TFT_Item_Deathblade",
-          "count": 44
-        },
-        {
-          "name": "TFT_Item_MadredsBloodrazor",
-          "count": 39
-        },
-        {
-          "name": "TFT_Item_LastWhisper",
-          "count": 30
-        }
-      ]
-    },
-    "TFT17_Poppy": {
-      "top4Rate": 0.4262,
-      "avgPlacement": 4.882,
-      "total": 237,
-      "topItems": [
-        {
-          "name": "TFT_Item_FrozenHeart",
-          "count": 8
-        },
-        {
-          "name": "TFT_Item_WarmogsArmor",
-          "count": 7
-        },
-        {
-          "name": "TFT_Item_GargoyleStoneplate",
-          "count": 7
-        },
-        {
-          "name": "TFT_Item_Crownguard",
-          "count": 6
-        }
-      ]
-    },
-    "TFT17_Veigar": {
-      "top4Rate": 0.2609,
-      "avgPlacement": 5.536,
-      "total": 69,
-      "topItems": [
-        {
-          "name": "TFT_Item_JeweledGauntlet",
-          "count": 12
-        },
-        {
-          "name": "TFT_Item_Leviathan",
-          "count": 12
-        },
-        {
-          "name": "TFT_Item_SpearOfShojin",
-          "count": 9
-        },
-        {
-          "name": "TFT_Item_PowerGauntlet",
-          "count": 4
-        }
-      ]
-    },
-    "TFT17_Lissandra": {
-      "top4Rate": 0.4897,
-      "avgPlacement": 4.479,
-      "total": 194,
-      "topItems": [
-        {
-          "name": "TFT_Item_JeweledGauntlet",
-          "count": 31
-        },
-        {
-          "name": "TFT_Item_Leviathan",
-          "count": 27
-        },
-        {
-          "name": "TFT_Item_SpearOfShojin",
-          "count": 15
-        },
-        {
-          "name": "TFT_Item_StatikkShiv",
-          "count": 13
-        }
-      ]
-    },
-    "TFT17_Mordekaiser": {
-      "top4Rate": 0.5359,
-      "avgPlacement": 4.244,
-      "total": 459,
-      "topItems": [
-        {
-          "name": "TFT_Item_RedBuff",
-          "count": 6
-        },
-        {
-          "name": "TFT_Item_WarmogsArmor",
-          "count": 5
-        },
-        {
-          "name": "TFT_Item_Crownguard",
-          "count": 5
-        },
-        {
-          "name": "TFT_Item_BrambleVest",
-          "count": 5
-        }
-      ]
-    },
-    "TFT17_Illaoi": {
-      "top4Rate": 0.4522,
-      "avgPlacement": 4.601,
-      "total": 356,
-      "topItems": [
-        {
-          "name": "TFT_Item_GargoyleStoneplate",
-          "count": 41
-        },
-        {
-          "name": "TFT_Item_WarmogsArmor",
-          "count": 25
-        },
-        {
-          "name": "TFT_Item_FrozenHeart",
-          "count": 13
-        },
-        {
-          "name": "TFT_Item_RedBuff",
-          "count": 13
-        }
-      ]
-    },
-    "TFT17_Rammus": {
-      "top4Rate": 0.4855,
-      "avgPlacement": 4.566,
-      "total": 311,
-      "topItems": [
-        {
-          "name": "TFT_Item_GargoyleStoneplate",
-          "count": 78
-        },
-        {
-          "name": "TFT_Item_FrozenHeart",
-          "count": 62
-        },
-        {
-          "name": "TFT_Item_WarmogsArmor",
-          "count": 58
-        },
-        {
-          "name": "TFT_Item_Crownguard",
-          "count": 53
-        }
-      ]
-    },
-    "TFT17_Bard": {
-      "top4Rate": 0.6116,
-      "avgPlacement": 3.882,
-      "total": 363,
-      "topItems": [
-        {
-          "name": "TFT_Item_JeweledGauntlet",
-          "count": 76
-        },
-        {
-          "name": "TFT_Item_StatikkShiv",
-          "count": 51
-        },
-        {
-          "name": "TFT_Item_RabadonsDeathcap",
-          "count": 41
-        },
-        {
-          "name": "TFT_Item_MadredsBloodrazor",
-          "count": 34
-        }
-      ]
-    },
-    "TFT17_Teemo": {
-      "top4Rate": 0.541,
-      "avgPlacement": 4.164,
-      "total": 61,
-      "topItems": [
-        {
-          "name": "TFT_Item_GuinsoosRageblade",
-          "count": 11
-        },
-        {
-          "name": "TFT_Item_HextechGunblade",
-          "count": 7
-        },
-        {
-          "name": "TFT_Item_MadredsBloodrazor",
-          "count": 5
-        },
-        {
-          "name": "TFT_Item_JeweledGauntlet",
-          "count": 2
-        }
-      ]
-    },
-    "TFT17_Sona": {
-      "top4Rate": 0.5741,
-      "avgPlacement": 3.977,
-      "total": 263,
-      "topItems": [
-        {
-          "name": "TFT_Item_SpearOfShojin",
-          "count": 43
-        },
-        {
-          "name": "TFT_Item_StatikkShiv",
-          "count": 41
-        },
-        {
-          "name": "TFT_Item_JeweledGauntlet",
-          "count": 28
-        },
-        {
-          "name": "TFT_Item_Morellonomicon",
-          "count": 24
+          "count": 18
         }
       ]
     },
     "TFT17_Shen": {
-      "top4Rate": 0.6007,
-      "avgPlacement": 3.953,
-      "total": 278,
+      "top4Rate": 0.6113,
+      "avgPlacement": 3.94,
+      "total": 265,
       "topItems": [
         {
           "name": "TFT_Item_ThiefsGloves",
-          "count": 28
+          "count": 29
         },
         {
           "name": "TFT_Item_Bloodthirster",
-          "count": 12
+          "count": 8
         },
         {
           "name": "TFT_Item_EmptyBag",
-          "count": 10
-        },
-        {
-          "name": "TFT_Item_RedBuff",
-          "count": 10
-        }
-      ]
-    },
-    "TFT17_Samira": {
-      "top4Rate": 0.5304,
-      "avgPlacement": 4.315,
-      "total": 181,
-      "topItems": [
-        {
-          "name": "TFT_Item_SpearOfShojin",
-          "count": 49
-        },
-        {
-          "name": "TFT_Item_LastWhisper",
-          "count": 41
-        },
-        {
-          "name": "TFT_Item_InfinityEdge",
-          "count": 32
-        },
-        {
-          "name": "TFT_Item_Deathblade",
-          "count": 31
-        }
-      ]
-    },
-    "TFT17_Milio": {
-      "top4Rate": 0.5095,
-      "avgPlacement": 4.567,
-      "total": 210,
-      "topItems": [
-        {
-          "name": "TFT_Item_Morellonomicon",
-          "count": 34
-        },
-        {
-          "name": "TFT_Item_SpearOfShojin",
-          "count": 27
-        },
-        {
-          "name": "TFT_Item_RapidFireCannon",
-          "count": 23
-        },
-        {
-          "name": "TFT_Item_RabadonsDeathcap",
-          "count": 14
-        }
-      ]
-    },
-    "TFT17_Fizz": {
-      "top4Rate": 0.4581,
-      "avgPlacement": 4.793,
-      "total": 179,
-      "topItems": [
-        {
-          "name": "TFT_Item_ThiefsGloves",
-          "count": 10
-        },
-        {
-          "name": "TFT_Item_GuardianAngel",
-          "count": 4
-        },
-        {
-          "name": "TFT_Item_Quicksilver",
-          "count": 3
-        },
-        {
-          "name": "TFT17_Item_ResistTankEmblemItem",
-          "count": 3
-        }
-      ]
-    },
-    "TFT17_Corki": {
-      "top4Rate": 0.4512,
-      "avgPlacement": 4.805,
-      "total": 215,
-      "topItems": [
-        {
-          "name": "TFT_Item_Deathblade",
-          "count": 80
-        },
-        {
-          "name": "TFT_Item_LastWhisper",
-          "count": 64
-        },
-        {
-          "name": "TFT_Item_InfinityEdge",
-          "count": 20
-        },
-        {
-          "name": "TFT_Item_PowerGauntlet",
-          "count": 18
-        }
-      ]
-    },
-    "TFT17_Galio": {
-      "top4Rate": 0.531,
-      "avgPlacement": 4.31,
-      "total": 290,
-      "topItems": [
-        {
-          "name": "TFT_Item_GargoyleStoneplate",
-          "count": 57
-        },
-        {
-          "name": "TFT_Item_WarmogsArmor",
-          "count": 27
-        },
-        {
-          "name": "TFT_Item_SteraksGage",
-          "count": 24
-        },
-        {
-          "name": "TFT_Item_FrozenHeart",
-          "count": 19
-        }
-      ]
-    },
-    "TFT17_Leona": {
-      "top4Rate": 0.4127,
-      "avgPlacement": 4.873,
-      "total": 126,
-      "topItems": [
-        {
-          "name": "TFT_Item_GargoyleStoneplate",
-          "count": 33
-        },
-        {
-          "name": "TFT_Item_WarmogsArmor",
-          "count": 22
-        },
-        {
-          "name": "TFT_Item_Redemption",
-          "count": 7
-        },
-        {
-          "name": "TFT_Item_Crownguard",
-          "count": 7
-        }
-      ]
-    },
-    "TFT17_Zoe": {
-      "top4Rate": 0.6,
-      "avgPlacement": 3.9,
-      "total": 30,
-      "topItems": [
-        {
-          "name": "TFT_Item_JeweledGauntlet",
-          "count": 6
-        },
-        {
-          "name": "TFT_Item_Morellonomicon",
-          "count": 5
-        },
-        {
-          "name": "TFT_Item_StatikkShiv",
-          "count": 4
-        },
-        {
-          "name": "TFT_Item_RabadonsDeathcap",
-          "count": 3
-        }
-      ]
-    },
-    "TFT17_Karma": {
-      "top4Rate": 0.5405,
-      "avgPlacement": 4.191,
-      "total": 444,
-      "topItems": [
-        {
-          "name": "TFT_Item_StatikkShiv",
-          "count": 43
-        },
-        {
-          "name": "TFT_Item_Morellonomicon",
-          "count": 34
-        },
-        {
-          "name": "TFT_Item_SpearOfShojin",
-          "count": 26
-        },
-        {
-          "name": "TFT_Item_JeweledGauntlet",
-          "count": 24
-        }
-      ]
-    },
-    "TFT17_Viktor": {
-      "top4Rate": 0.5366,
-      "avgPlacement": 4.317,
-      "total": 41,
-      "topItems": [
-        {
-          "name": "TFT_Item_StatikkShiv",
-          "count": 5
-        },
-        {
-          "name": "TFT17_Item_PsyOps_SympatheticImplantMod_Radiant",
-          "count": 3
-        },
-        {
-          "name": "TFT_Item_JeweledGauntlet",
-          "count": 3
-        },
-        {
-          "name": "TFT_Item_RabadonsDeathcap",
-          "count": 3
-        }
-      ]
-    },
-    "TFT17_Ezreal": {
-      "top4Rate": 0.5091,
-      "avgPlacement": 4.509,
-      "total": 55,
-      "topItems": [
-        {
-          "name": "TFT_Item_InfinityEdge",
-          "count": 11
-        },
-        {
-          "name": "TFT_Item_SpearOfShojin",
-          "count": 7
-        },
-        {
-          "name": "TFT17_Item_DarkStarEmblemItem",
-          "count": 7
-        },
-        {
-          "name": "TFT_Item_Deathblade",
-          "count": 3
-        }
-      ]
-    },
-    "TFT17_RekSai": {
-      "top4Rate": 0.5467,
-      "avgPlacement": 4.387,
-      "total": 75,
-      "topItems": [
-        {
-          "name": "TFT_Item_Crownguard",
-          "count": 9
-        },
-        {
-          "name": "TFT_Item_GargoyleStoneplate",
-          "count": 8
-        },
-        {
-          "name": "TFT_Item_WarmogsArmor",
           "count": 8
         },
         {
           "name": "TFT_Item_FrozenHeart",
-          "count": 8
-        }
-      ]
-    },
-    "TFT17_Belveth": {
-      "top4Rate": 0.5022,
-      "avgPlacement": 4.616,
-      "total": 229,
-      "topItems": [
-        {
-          "name": "TFT_Item_Quicksilver",
-          "count": 22
-        },
-        {
-          "name": "TFT_Item_MadredsBloodrazor",
-          "count": 21
-        },
-        {
-          "name": "TFT_Item_RunaansHurricane",
-          "count": 17
-        },
-        {
-          "name": "TFT_Item_Deathblade",
-          "count": 8
-        }
-      ]
-    },
-    "TFT17_MasterYi": {
-      "top4Rate": 0.5342,
-      "avgPlacement": 4.5,
-      "total": 146,
-      "topItems": [
-        {
-          "name": "TFT_Item_GuardianAngel",
-          "count": 64
-        },
-        {
-          "name": "TFT_Item_MadredsBloodrazor",
-          "count": 32
-        },
-        {
-          "name": "TFT_Item_Quicksilver",
-          "count": 32
-        },
-        {
-          "name": "TFT17_Item_HPTankEmblemItem",
-          "count": 12
-        }
-      ]
-    },
-    "TFT17_Gragas": {
-      "top4Rate": 0.503,
-      "avgPlacement": 4.645,
-      "total": 169,
-      "topItems": [
-        {
-          "name": "TFT_Item_WarmogsArmor",
-          "count": 9
-        },
-        {
-          "name": "TFT_Item_UnstableConcoction",
           "count": 7
-        },
-        {
-          "name": "TFT_Item_JeweledGauntlet",
-          "count": 6
-        },
-        {
-          "name": "TFT_Item_GargoyleStoneplate",
-          "count": 5
-        }
-      ]
-    },
-    "TFT17_Urgot": {
-      "top4Rate": 0.5263,
-      "avgPlacement": 4.461,
-      "total": 228,
-      "topItems": [
-        {
-          "name": "TFT_Item_SteraksGage",
-          "count": 12
-        },
-        {
-          "name": "TFT_Item_InfinityEdge",
-          "count": 11
-        },
-        {
-          "name": "TFT_Item_MadredsBloodrazor",
-          "count": 9
-        },
-        {
-          "name": "TFT_Item_ThiefsGloves",
-          "count": 9
-        }
-      ]
-    },
-    "TFT17_Kindred": {
-      "top4Rate": 0.5346,
-      "avgPlacement": 4.41,
-      "total": 217,
-      "topItems": [
-        {
-          "name": "TFT_Item_LastWhisper",
-          "count": 41
-        },
-        {
-          "name": "TFT_Item_GuinsoosRageblade",
-          "count": 39
-        },
-        {
-          "name": "TFT_Item_RunaansHurricane",
-          "count": 31
-        },
-        {
-          "name": "TFT_Item_RapidFireCannon",
-          "count": 30
-        }
-      ]
-    },
-    "TFT17_Fiora": {
-      "top4Rate": 0.5794,
-      "avgPlacement": 4.124,
-      "total": 233,
-      "topItems": [
-        {
-          "name": "TFT_Item_SteraksGage",
-          "count": 51
-        },
-        {
-          "name": "TFT_Item_GuardianAngel",
-          "count": 34
-        },
-        {
-          "name": "TFT_Item_Bloodthirster",
-          "count": 27
-        },
-        {
-          "name": "TFT_Item_MadredsBloodrazor",
-          "count": 26
         }
       ]
     },
     "TFT17_Akali": {
-      "top4Rate": 0.5271,
-      "avgPlacement": 4.36,
-      "total": 258,
+      "top4Rate": 0.524,
+      "avgPlacement": 4.432,
+      "total": 250,
       "topItems": [
         {
           "name": "TFT_Item_UnstableConcoction",
-          "count": 23
-        },
-        {
-          "name": "TFT_Item_GuardianAngel",
-          "count": 21
-        },
-        {
-          "name": "TFT_Item_SteraksGage",
-          "count": 18
-        },
-        {
-          "name": "TFT17_Item_ASTraitEmblemItem",
-          "count": 9
-        }
-      ]
-    },
-    "TFT17_MissFortune": {
-      "top4Rate": 0.4333,
-      "avgPlacement": 4.8,
-      "total": 60,
-      "topItems": [
-        {
-          "name": "TFT_Item_InfinityEdge",
-          "count": 12
-        },
-        {
-          "name": "TFT_Item_MadredsBloodrazor",
-          "count": 6
-        },
-        {
-          "name": "TFT_Item_RapidFireCannon",
-          "count": 6
-        },
-        {
-          "name": "TFT_Item_GuinsoosRageblade",
-          "count": 6
-        }
-      ]
-    },
-    "TFT17_Chogath": {
-      "top4Rate": 0.5594,
-      "avgPlacement": 4.28,
-      "total": 143,
-      "topItems": [
-        {
-          "name": "TFT_Item_WarmogsArmor",
-          "count": 40
-        },
-        {
-          "name": "TFT_Item_Redemption",
-          "count": 20
-        },
-        {
-          "name": "TFT_Item_FrozenHeart",
           "count": 19
         },
         {
-          "name": "TFT_Item_GargoyleStoneplate",
+          "name": "TFT_Item_GuardianAngel",
           "count": 16
-        }
-      ]
-    },
-    "TFT17_Aurora": {
-      "top4Rate": 0.3438,
-      "avgPlacement": 5.812,
-      "total": 32,
-      "topItems": [
-        {
-          "name": "TFT_Item_JeweledGauntlet",
-          "count": 3
         },
         {
-          "name": "TFT_Item_StatikkShiv",
-          "count": 2
+          "name": "TFT_Item_SteraksGage",
+          "count": 16
         },
         {
-          "name": "TFT_Item_Leviathan",
-          "count": 2
-        },
-        {
-          "name": "TFT_Item_BlueBuff",
-          "count": 2
-        }
-      ]
-    },
-    "TFT17_Kaisa": {
-      "top4Rate": 0.593,
-      "avgPlacement": 4.07,
-      "total": 86,
-      "topItems": [
-        {
-          "name": "TFT_Item_InfinityEdge",
-          "count": 12
-        },
-        {
-          "name": "TFT_Item_MadredsBloodrazor",
+          "name": "TFT_Item_Deathblade",
           "count": 7
-        },
-        {
-          "name": "TFT_Item_BlueBuff",
-          "count": 6
-        },
-        {
-          "name": "TFT_Item_LastWhisper",
-          "count": 6
         }
       ]
     },
-    "TFT17_Diana": {
-      "top4Rate": 0.3333,
-      "avgPlacement": 5.528,
-      "total": 36,
+    "TFT17_Graves": {
+      "top4Rate": 0.5574,
+      "avgPlacement": 4.191,
+      "total": 183,
       "topItems": [
         {
-          "name": "TFT_Item_TitansResolve",
-          "count": 3
+          "name": "TFT_Item_Quicksilver",
+          "count": 34
         },
         {
-          "name": "TFT_Item_Bloodthirster",
-          "count": 2
-        },
-        {
-          "name": "TFT_Item_GuinsoosRageblade",
-          "count": 2
-        },
-        {
-          "name": "TFT_Item_UnstableConcoction",
-          "count": 2
-        }
-      ]
-    },
-    "TFT17_Leblanc": {
-      "top4Rate": 0.3214,
-      "avgPlacement": 5.298,
-      "total": 84,
-      "topItems": [
-        {
-          "name": "TFT_Item_GuinsoosRageblade",
-          "count": 22
-        },
-        {
-          "name": "TFT_Item_JeweledGauntlet",
-          "count": 5
+          "name": "TFT_Item_Deathblade",
+          "count": 34
         },
         {
           "name": "TFT_Item_MadredsBloodrazor",
-          "count": 5
+          "count": 32
         },
         {
-          "name": "TFT_Item_StatikkShiv",
+          "name": "TFT_Item_SteraksGage",
+          "count": 22
+        }
+      ]
+    },
+    "TFT17_Poppy": {
+      "top4Rate": 0.4663,
+      "avgPlacement": 4.707,
+      "total": 208,
+      "topItems": [
+        {
+          "name": "TFT_Item_WarmogsArmor",
+          "count": 10
+        },
+        {
+          "name": "TFT_Item_Redemption",
+          "count": 6
+        },
+        {
+          "name": "TFT_Item_Crownguard",
+          "count": 4
+        },
+        {
+          "name": "TFT_Item_FrozenHeart",
           "count": 4
         }
       ]
     },
     "TFT17_Gnar": {
-      "top4Rate": 0.4496,
-      "avgPlacement": 4.682,
-      "total": 129,
+      "top4Rate": 0.4455,
+      "avgPlacement": 4.573,
+      "total": 110,
       "topItems": [
         {
           "name": "TFT_Item_GuinsoosRageblade",
-          "count": 40
-        },
-        {
-          "name": "TFT_Item_Deathblade",
-          "count": 29
+          "count": 42
         },
         {
           "name": "TFT_Item_InfinityEdge",
-          "count": 29
+          "count": 33
+        },
+        {
+          "name": "TFT_Item_Deathblade",
+          "count": 27
         },
         {
           "name": "TFT_Item_RunaansHurricane",
-          "count": 11
+          "count": 10
         }
       ]
     },
-    "TFT17_Vex": {
-      "top4Rate": 0.5789,
-      "avgPlacement": 3.968,
-      "total": 190,
+    "TFT17_Kaisa": {
+      "top4Rate": 0.4845,
+      "avgPlacement": 4.639,
+      "total": 97,
       "topItems": [
-        {
-          "name": "TFT_Item_GuinsoosRageblade",
-          "count": 98
-        },
-        {
-          "name": "TFT_Item_MadredsBloodrazor",
-          "count": 36
-        },
         {
           "name": "TFT_Item_RapidFireCannon",
-          "count": 31
-        },
-        {
-          "name": "TFT_Item_RabadonsDeathcap",
-          "count": 23
-        }
-      ]
-    },
-    "TFT17_Graves": {
-      "top4Rate": 0.537,
-      "avgPlacement": 4.278,
-      "total": 162,
-      "topItems": [
-        {
-          "name": "TFT_Item_Deathblade",
-          "count": 32
-        },
-        {
-          "name": "TFT_Item_Quicksilver",
-          "count": 32
-        },
-        {
-          "name": "TFT_Item_MadredsBloodrazor",
-          "count": 24
-        },
-        {
-          "name": "TFT_Item_PowerGauntlet",
-          "count": 21
-        }
-      ]
-    },
-    "TFT17_AurelionSol": {
-      "top4Rate": 0.5741,
-      "avgPlacement": 4.13,
-      "total": 108,
-      "topItems": [
-        {
-          "name": "TFT_Item_JeweledGauntlet",
-          "count": 53
-        },
-        {
-          "name": "TFT_Item_RabadonsDeathcap",
-          "count": 35
-        },
-        {
-          "name": "TFT_Item_PowerGauntlet",
-          "count": 23
-        },
-        {
-          "name": "TFT_Item_MadredsBloodrazor",
-          "count": 18
-        }
-      ]
-    },
-    "TFT17_Morgana": {
-      "top4Rate": 0.6346,
-      "avgPlacement": 3.793,
-      "total": 208,
-      "topItems": [
-        {
-          "name": "TFT_Item_GargoyleStoneplate",
-          "count": 18
-        },
-        {
-          "name": "TFT_Item_WarmogsArmor",
-          "count": 16
-        },
-        {
-          "name": "TFT_Item_FrozenHeart",
-          "count": 15
-        },
-        {
-          "name": "TFT_Item_RedBuff",
-          "count": 12
-        }
-      ]
-    },
-    "TFT17_TwistedFate": {
-      "top4Rate": 0.5,
-      "avgPlacement": 4.525,
-      "total": 80,
-      "topItems": [
-        {
-          "name": "TFT_Item_Leviathan",
-          "count": 10
-        },
-        {
-          "name": "TFT_Item_RabadonsDeathcap",
           "count": 6
         },
         {
-          "name": "TFT_Item_ThiefsGloves",
+          "name": "TFT_Item_LastWhisper",
+          "count": 6
+        },
+        {
+          "name": "TFT_Item_InfinityEdge",
+          "count": 6
+        },
+        {
+          "name": "TFT_Item_MadredsBloodrazor",
+          "count": 5
+        }
+      ]
+    },
+    "TFT17_Caitlyn": {
+      "top4Rate": 0.4737,
+      "avgPlacement": 4.421,
+      "total": 38,
+      "topItems": [
+        {
+          "name": "TFT_Item_GuinsoosRageblade",
+          "count": 5
+        },
+        {
+          "name": "TFT_Item_PowerGauntlet",
           "count": 3
         },
         {
-          "name": "TFT_Item_SparringGloves",
+          "name": "TFT_Item_Deathblade",
+          "count": 3
+        },
+        {
+          "name": "TFT_Item_Quicksilver",
           "count": 2
         }
       ]
     },
-    "TFT17_Lulu": {
-      "top4Rate": 0.4865,
-      "avgPlacement": 4.568,
-      "total": 74,
+    "TFT17_TwistedFate": {
+      "top4Rate": 0.4149,
+      "avgPlacement": 4.766,
+      "total": 94,
       "topItems": [
         {
           "name": "TFT_Item_Leviathan",
-          "count": 44
+          "count": 12
+        },
+        {
+          "name": "TFT_Item_ThiefsGloves",
+          "count": 5
+        },
+        {
+          "name": "TFT_Item_RabadonsDeathcap",
+          "count": 5
         },
         {
           "name": "TFT_Item_JeweledGauntlet",
-          "count": 32
+          "count": 3
+        }
+      ]
+    },
+    "TFT17_Talon": {
+      "top4Rate": 0.4815,
+      "avgPlacement": 4.556,
+      "total": 27,
+      "topItems": [
+        {
+          "name": "TFT_Item_HextechGunblade",
+          "count": 2
+        },
+        {
+          "name": "TFT_Item_SteraksGage",
+          "count": 2
+        },
+        {
+          "name": "TFT_Item_Morellonomicon",
+          "count": 1
+        },
+        {
+          "name": "TFT5_Item_ThiefsGlovesRadiant",
+          "count": 1
+        }
+      ]
+    },
+    "TFT17_Belveth": {
+      "top4Rate": 0.5,
+      "avgPlacement": 4.5,
+      "total": 212,
+      "topItems": [
+        {
+          "name": "TFT_Item_Quicksilver",
+          "count": 16
+        },
+        {
+          "name": "TFT_Item_MadredsBloodrazor",
+          "count": 11
+        },
+        {
+          "name": "TFT_Item_RunaansHurricane",
+          "count": 11
+        },
+        {
+          "name": "TFT_Item_ThiefsGloves",
+          "count": 6
+        }
+      ]
+    },
+    "TFT17_Gragas": {
+      "top4Rate": 0.529,
+      "avgPlacement": 4.29,
+      "total": 155,
+      "topItems": [
+        {
+          "name": "TFT_Item_JeweledGauntlet",
+          "count": 12
+        },
+        {
+          "name": "TFT17_Item_PsyOps_SympatheticImplantMod_Radiant",
+          "count": 9
+        },
+        {
+          "name": "TFT_Item_UnstableConcoction",
+          "count": 9
+        },
+        {
+          "name": "TFT_Item_Redemption",
+          "count": 6
+        }
+      ]
+    },
+    "TFT17_Kindred": {
+      "top4Rate": 0.5795,
+      "avgPlacement": 4.131,
+      "total": 176,
+      "topItems": [
+        {
+          "name": "TFT_Item_LastWhisper",
+          "count": 39
+        },
+        {
+          "name": "TFT_Item_GuinsoosRageblade",
+          "count": 36
+        },
+        {
+          "name": "TFT_Item_RunaansHurricane",
+          "count": 29
+        },
+        {
+          "name": "TFT_Item_RapidFireCannon",
+          "count": 27
+        }
+      ]
+    },
+    "TFT17_MasterYi": {
+      "top4Rate": 0.5252,
+      "avgPlacement": 4.403,
+      "total": 139,
+      "topItems": [
+        {
+          "name": "TFT_Item_GuardianAngel",
+          "count": 55
+        },
+        {
+          "name": "TFT_Item_Quicksilver",
+          "count": 25
+        },
+        {
+          "name": "TFT_Item_MadredsBloodrazor",
+          "count": 20
+        },
+        {
+          "name": "TFT17_Item_PsyOps_ChemicalCapacitorMod",
+          "count": 17
+        }
+      ]
+    },
+    "TFT17_Ezreal": {
+      "top4Rate": 0.3673,
+      "avgPlacement": 5.122,
+      "total": 49,
+      "topItems": [
+        {
+          "name": "TFT_Item_InfinityEdge",
+          "count": 10
         },
         {
           "name": "TFT_Item_SpearOfShojin",
@@ -1287,95 +1168,76 @@
         },
         {
           "name": "TFT_Item_MadredsBloodrazor",
-          "count": 5
+          "count": 3
+        },
+        {
+          "name": "TFT17_Item_DarkStarEmblemItem",
+          "count": 2
         }
       ]
     },
-    "TFT17_Pyke": {
-      "top4Rate": 0.4359,
-      "avgPlacement": 4.846,
-      "total": 78,
+    "TFT17_Pantheon": {
+      "top4Rate": 0.4363,
+      "avgPlacement": 4.734,
+      "total": 259,
       "topItems": [
         {
-          "name": "TFT_Item_InfinityEdge",
-          "count": 5
+          "name": "TFT_Item_WarmogsArmor",
+          "count": 13
         },
         {
-          "name": "TFT_Item_UnstableConcoction",
-          "count": 4
+          "name": "TFT_Item_GargoyleStoneplate",
+          "count": 12
         },
         {
-          "name": "TFT_Item_GuardianAngel",
-          "count": 3
+          "name": "TFT_Item_FrozenHeart",
+          "count": 10
         },
         {
-          "name": "TFT_Item_PowerGauntlet",
-          "count": 3
+          "name": "TFT17_Item_StargazerEmblemItem",
+          "count": 10
         }
       ]
     },
-    "TFT17_Caitlyn": {
-      "top4Rate": 0.5714,
-      "avgPlacement": 4.4,
-      "total": 35,
-      "topItems": [
-        {
-          "name": "TFT_Item_GuinsoosRageblade",
-          "count": 8
-        },
-        {
-          "name": "TFT_Item_Deathblade",
-          "count": 6
-        },
-        {
-          "name": "TFT_Item_PowerGauntlet",
-          "count": 4
-        },
-        {
-          "name": "TFT_Item_MadredsBloodrazor",
-          "count": 3
-        }
-      ]
-    },
-    "TFT17_Jinx": {
-      "top4Rate": 0.4828,
-      "avgPlacement": 4.793,
+    "TFT17_Lulu": {
+      "top4Rate": 0.4138,
+      "avgPlacement": 4.713,
       "total": 87,
       "topItems": [
         {
-          "name": "TFT_Item_Deathblade",
-          "count": 22
+          "name": "TFT_Item_Leviathan",
+          "count": 27
         },
         {
-          "name": "TFT_Item_RapidFireCannon",
-          "count": 18
+          "name": "TFT_Item_JeweledGauntlet",
+          "count": 25
         },
         {
-          "name": "TFT_Item_MadredsBloodrazor",
-          "count": 11
+          "name": "TFT_Item_SpearOfShojin",
+          "count": 13
         },
         {
-          "name": "TFT_Item_LastWhisper",
-          "count": 11
+          "name": "TFT_Item_RabadonsDeathcap",
+          "count": 6
         }
       ]
     },
     "TFT17_Briar": {
-      "top4Rate": 0.434,
-      "avgPlacement": 5.075,
-      "total": 53,
+      "top4Rate": 0.4255,
+      "avgPlacement": 5.106,
+      "total": 47,
       "topItems": [
         {
-          "name": "TFT_Item_ThiefsGloves",
+          "name": "TFT_Item_SteraksGage",
           "count": 4
         },
         {
-          "name": "TFT_Item_SteraksGage",
+          "name": "TFT_Item_PowerGauntlet",
           "count": 3
         },
         {
-          "name": "TFT_Item_PowerGauntlet",
-          "count": 2
+          "name": "TFT_Item_Bloodthirster",
+          "count": 3
         },
         {
           "name": "TFT_Item_TitansResolve",
@@ -1383,48 +1245,186 @@
         }
       ]
     },
-    "TFT17_Talon": {
-      "top4Rate": 0.381,
-      "avgPlacement": 5.095,
-      "total": 21,
+    "TFT17_RekSai": {
+      "top4Rate": 0.5132,
+      "avgPlacement": 4.447,
+      "total": 76,
       "topItems": [
         {
-          "name": "TFT_Item_MadredsBloodrazor",
-          "count": 2
+          "name": "TFT_Item_FrozenHeart",
+          "count": 13
         },
         {
-          "name": "TFT_Item_ThiefsGloves",
-          "count": 2
+          "name": "TFT_Item_GargoyleStoneplate",
+          "count": 12
         },
         {
-          "name": "TFT_Item_SteraksGage",
-          "count": 1
+          "name": "TFT_Item_Crownguard",
+          "count": 11
+        },
+        {
+          "name": "TFT_Item_RedBuff",
+          "count": 10
+        }
+      ]
+    },
+    "TFT17_Jinx": {
+      "top4Rate": 0.5128,
+      "avgPlacement": 4.551,
+      "total": 78,
+      "topItems": [
+        {
+          "name": "TFT_Item_Deathblade",
+          "count": 22
+        },
+        {
+          "name": "TFT_Item_RapidFireCannon",
+          "count": 17
+        },
+        {
+          "name": "TFT_Item_LastWhisper",
+          "count": 10
+        },
+        {
+          "name": "TFT_Item_RunaansHurricane",
+          "count": 9
+        }
+      ]
+    },
+    "TFT17_Zoe": {
+      "top4Rate": 0.3704,
+      "avgPlacement": 4.963,
+      "total": 27,
+      "topItems": [
+        {
+          "name": "TFT_Item_StatikkShiv",
+          "count": 4
+        },
+        {
+          "name": "TFT_Item_JeweledGauntlet",
+          "count": 3
         },
         {
           "name": "TFT_Item_Morellonomicon",
+          "count": 3
+        },
+        {
+          "name": "TFT_Item_SpearOfShojin",
           "count": 1
         }
       ]
     },
-    "TFT17_Zed": {
-      "top4Rate": 0.5455,
-      "avgPlacement": 4.0,
-      "total": 11,
+    "TFT17_MissFortune": {
+      "top4Rate": 0.5098,
+      "avgPlacement": 4.569,
+      "total": 51,
       "topItems": [
         {
-          "name": "TFT_Item_GuardianAngel",
+          "name": "TFT_Item_InfinityEdge",
+          "count": 13
+        },
+        {
+          "name": "TFT_Item_GuinsoosRageblade",
+          "count": 10
+        },
+        {
+          "name": "TFT_Item_PowerGauntlet",
           "count": 6
         },
         {
-          "name": "TFT_Item_SpearOfShojin",
+          "name": "TFT_Item_MadredsBloodrazor",
           "count": 5
+        }
+      ]
+    },
+    "TFT17_Chogath": {
+      "top4Rate": 0.507,
+      "avgPlacement": 4.486,
+      "total": 142,
+      "topItems": [
+        {
+          "name": "TFT_Item_WarmogsArmor",
+          "count": 42
+        },
+        {
+          "name": "TFT_Item_Redemption",
+          "count": 14
+        },
+        {
+          "name": "TFT_Item_FrozenHeart",
+          "count": 12
+        },
+        {
+          "name": "TFT_Item_AdaptiveHelm",
+          "count": 10
+        }
+      ]
+    },
+    "TFT17_Veigar": {
+      "top4Rate": 0.38,
+      "avgPlacement": 4.9,
+      "total": 50,
+      "topItems": [
+        {
+          "name": "TFT_Item_JeweledGauntlet",
+          "count": 13
+        },
+        {
+          "name": "TFT_Item_Leviathan",
+          "count": 11
+        },
+        {
+          "name": "TFT_Item_SpearOfShojin",
+          "count": 6
+        },
+        {
+          "name": "TFT_Item_RabadonsDeathcap",
+          "count": 2
+        }
+      ]
+    },
+    "TFT17_Diana": {
+      "top4Rate": 0.4706,
+      "avgPlacement": 4.824,
+      "total": 34,
+      "topItems": [
+        {
+          "name": "TFT_Item_UnstableConcoction",
+          "count": 3
+        },
+        {
+          "name": "TFT_Item_GuinsoosRageblade",
+          "count": 3
+        },
+        {
+          "name": "TFT_Item_TitansResolve",
+          "count": 3
+        },
+        {
+          "name": "TFT_Item_Bloodthirster",
+          "count": 3
+        }
+      ]
+    },
+    "TFT17_Zed": {
+      "top4Rate": 0.5,
+      "avgPlacement": 4.5,
+      "total": 12,
+      "topItems": [
+        {
+          "name": "TFT_Item_SpearOfShojin",
+          "count": 7
         },
         {
           "name": "TFT_Item_AdaptiveHelm",
           "count": 5
         },
         {
-          "name": "TFT_Item_SteraksGage",
+          "name": "TFT_Item_GuardianAngel",
+          "count": 5
+        },
+        {
+          "name": "TFT17_Item_ShieldTankEmblemItem",
           "count": 1
         }
       ]
@@ -1434,329 +1434,329 @@
     {
       "name": "TFT17_ResistTank",
       "apiName": "TFT17_ResistTank",
-      "appearances": 711,
-      "top4Rate": 0.5105,
-      "avgPlacement": 4.446,
+      "appearances": 706,
+      "top4Rate": 0.5269,
+      "avgPlacement": 4.37,
       "source": "riot"
     },
     {
       "name": "TFT17_ShieldTank",
       "apiName": "TFT17_ShieldTank",
-      "appearances": 697,
-      "top4Rate": 0.5194,
-      "avgPlacement": 4.313,
+      "appearances": 696,
+      "top4Rate": 0.5273,
+      "avgPlacement": 4.349,
       "source": "riot"
     },
     {
       "name": "TFT17_SpaceGroove",
       "apiName": "TFT17_SpaceGroove",
-      "appearances": 679,
-      "top4Rate": 0.5361,
-      "avgPlacement": 4.256,
+      "appearances": 667,
+      "top4Rate": 0.5412,
+      "avgPlacement": 4.292,
       "source": "riot"
     },
     {
       "name": "TFT17_HPTank",
       "apiName": "TFT17_HPTank",
-      "appearances": 650,
-      "top4Rate": 0.52,
-      "avgPlacement": 4.462,
-      "source": "riot"
-    },
-    {
-      "name": "TFT17_FlexTrait",
-      "apiName": "TFT17_FlexTrait",
-      "appearances": 593,
-      "top4Rate": 0.5076,
-      "avgPlacement": 4.401,
+      "appearances": 642,
+      "top4Rate": 0.4922,
+      "avgPlacement": 4.525,
       "source": "riot"
     },
     {
       "name": "TFT17_DRX",
       "apiName": "TFT17_DRX",
-      "appearances": 526,
-      "top4Rate": 0.5133,
-      "avgPlacement": 4.506,
+      "appearances": 535,
+      "top4Rate": 0.5103,
+      "avgPlacement": 4.422,
+      "source": "riot"
+    },
+    {
+      "name": "TFT17_FlexTrait",
+      "apiName": "TFT17_FlexTrait",
+      "appearances": 533,
+      "top4Rate": 0.531,
+      "avgPlacement": 4.373,
       "source": "riot"
     },
     {
       "name": "TFT17_DarkStar",
       "apiName": "TFT17_DarkStar",
-      "appearances": 526,
-      "top4Rate": 0.5589,
-      "avgPlacement": 4.162,
+      "appearances": 508,
+      "top4Rate": 0.5256,
+      "avgPlacement": 4.329,
       "source": "riot"
     },
     {
       "name": "TFT17_BlitzcrankUniqueTrait",
       "apiName": "TFT17_BlitzcrankUniqueTrait",
-      "appearances": 477,
-      "top4Rate": 0.5954,
-      "avgPlacement": 3.912,
-      "source": "riot"
-    },
-    {
-      "name": "TFT17_RhaastUniqueTrait",
-      "apiName": "TFT17_RhaastUniqueTrait",
-      "appearances": 413,
-      "top4Rate": 0.6634,
-      "avgPlacement": 3.683,
-      "source": "riot"
-    },
-    {
-      "name": "TFT17_TahmKenchUniqueTrait",
-      "apiName": "TFT17_TahmKenchUniqueTrait",
-      "appearances": 391,
-      "top4Rate": 0.5166,
-      "avgPlacement": 4.468,
+      "appearances": 487,
+      "top4Rate": 0.6181,
+      "avgPlacement": 3.949,
       "source": "riot"
     },
     {
       "name": "TFT17_MeleeTrait",
       "apiName": "TFT17_MeleeTrait",
-      "appearances": 377,
-      "top4Rate": 0.5491,
-      "avgPlacement": 4.289,
+      "appearances": 391,
+      "top4Rate": 0.5448,
+      "avgPlacement": 4.35,
+      "source": "riot"
+    },
+    {
+      "name": "TFT17_RhaastUniqueTrait",
+      "apiName": "TFT17_RhaastUniqueTrait",
+      "appearances": 390,
+      "top4Rate": 0.6256,
+      "avgPlacement": 3.828,
+      "source": "riot"
+    },
+    {
+      "name": "TFT17_TahmKenchUniqueTrait",
+      "apiName": "TFT17_TahmKenchUniqueTrait",
+      "appearances": 386,
+      "top4Rate": 0.5259,
+      "avgPlacement": 4.378,
       "source": "riot"
     },
     {
       "name": "TFT17_ManaTrait",
       "apiName": "TFT17_ManaTrait",
-      "appearances": 335,
-      "top4Rate": 0.591,
-      "avgPlacement": 3.946,
+      "appearances": 312,
+      "top4Rate": 0.5256,
+      "avgPlacement": 4.266,
       "source": "riot"
     },
     {
       "name": "TFT17_SummonTrait",
       "apiName": "TFT17_SummonTrait",
-      "appearances": 331,
-      "top4Rate": 0.4864,
-      "avgPlacement": 4.408,
+      "appearances": 301,
+      "top4Rate": 0.485,
+      "avgPlacement": 4.528,
       "source": "riot"
     },
     {
       "name": "TFT17_Timebreaker",
       "apiName": "TFT17_Timebreaker",
-      "appearances": 302,
-      "top4Rate": 0.5331,
-      "avgPlacement": 4.427,
-      "source": "riot"
-    },
-    {
-      "name": "TFT17_Astronaut",
-      "apiName": "TFT17_Astronaut",
-      "appearances": 290,
-      "top4Rate": 0.4517,
-      "avgPlacement": 4.745,
+      "appearances": 300,
+      "top4Rate": 0.47,
+      "avgPlacement": 4.627,
       "source": "riot"
     },
     {
       "name": "TFT17_JhinUniqueTrait",
       "apiName": "TFT17_JhinUniqueTrait",
-      "appearances": 282,
-      "top4Rate": 0.656,
-      "avgPlacement": 3.741,
+      "appearances": 267,
+      "top4Rate": 0.6105,
+      "avgPlacement": 3.929,
       "source": "riot"
     },
     {
       "name": "TFT17_ShenUniqueTrait",
       "apiName": "TFT17_ShenUniqueTrait",
-      "appearances": 275,
-      "top4Rate": 0.5964,
-      "avgPlacement": 3.967,
+      "appearances": 262,
+      "top4Rate": 0.6145,
+      "avgPlacement": 3.935,
       "source": "riot"
     },
     {
       "name": "TFT17_APTrait",
       "apiName": "TFT17_APTrait",
-      "appearances": 270,
-      "top4Rate": 0.5074,
-      "avgPlacement": 4.441,
-      "source": "riot"
-    },
-    {
-      "name": "TFT17_RangedTrait",
-      "apiName": "TFT17_RangedTrait",
       "appearances": 260,
-      "top4Rate": 0.5346,
-      "avgPlacement": 4.288,
-      "source": "riot"
-    },
-    {
-      "name": "TFT17_SonaUniqueTrait",
-      "apiName": "TFT17_SonaUniqueTrait",
-      "appearances": 257,
-      "top4Rate": 0.572,
-      "avgPlacement": 3.981,
-      "source": "riot"
-    },
-    {
-      "name": "TFT17_ASTrait",
-      "apiName": "TFT17_ASTrait",
-      "appearances": 249,
-      "top4Rate": 0.51,
-      "avgPlacement": 4.622,
-      "source": "riot"
-    },
-    {
-      "name": "TFT17_AssassinTrait",
-      "apiName": "TFT17_AssassinTrait",
-      "appearances": 240,
-      "top4Rate": 0.5458,
-      "avgPlacement": 4.425,
+      "top4Rate": 0.4538,
+      "avgPlacement": 4.65,
       "source": "riot"
     },
     {
       "name": "TFT17_FioraUniqueTrait",
       "apiName": "TFT17_FioraUniqueTrait",
-      "appearances": 230,
-      "top4Rate": 0.5826,
-      "avgPlacement": 4.1,
+      "appearances": 248,
+      "top4Rate": 0.5968,
+      "avgPlacement": 4.081,
       "source": "riot"
     },
     {
-      "name": "TFT17_PsyOps",
-      "apiName": "TFT17_PsyOps",
-      "appearances": 216,
-      "top4Rate": 0.5139,
-      "avgPlacement": 4.495,
+      "name": "TFT17_SonaUniqueTrait",
+      "apiName": "TFT17_SonaUniqueTrait",
+      "appearances": 247,
+      "top4Rate": 0.6113,
+      "avgPlacement": 3.919,
+      "source": "riot"
+    },
+    {
+      "name": "TFT17_RangedTrait",
+      "apiName": "TFT17_RangedTrait",
+      "appearances": 246,
+      "top4Rate": 0.5081,
+      "avgPlacement": 4.378,
+      "source": "riot"
+    },
+    {
+      "name": "TFT17_Astronaut",
+      "apiName": "TFT17_Astronaut",
+      "appearances": 246,
+      "top4Rate": 0.5,
+      "avgPlacement": 4.504,
+      "source": "riot"
+    },
+    {
+      "name": "TFT17_AssassinTrait",
+      "apiName": "TFT17_AssassinTrait",
+      "appearances": 228,
+      "top4Rate": 0.5307,
+      "avgPlacement": 4.461,
+      "source": "riot"
+    },
+    {
+      "name": "TFT17_ASTrait",
+      "apiName": "TFT17_ASTrait",
+      "appearances": 226,
+      "top4Rate": 0.5221,
+      "avgPlacement": 4.403,
       "source": "riot"
     },
     {
       "name": "TFT17_Fateweaver",
       "apiName": "TFT17_Fateweaver",
-      "appearances": 207,
-      "top4Rate": 0.5121,
-      "avgPlacement": 4.536,
+      "appearances": 210,
+      "top4Rate": 0.4524,
+      "avgPlacement": 4.724,
+      "source": "riot"
+    },
+    {
+      "name": "TFT17_PsyOps",
+      "apiName": "TFT17_PsyOps",
+      "appearances": 208,
+      "top4Rate": 0.5337,
+      "avgPlacement": 4.207,
       "source": "riot"
     },
     {
       "name": "TFT17_MorganaUniqueTrait",
       "apiName": "TFT17_MorganaUniqueTrait",
-      "appearances": 207,
-      "top4Rate": 0.6329,
-      "avgPlacement": 3.802,
+      "appearances": 204,
+      "top4Rate": 0.6324,
+      "avgPlacement": 3.848,
       "source": "riot"
     },
     {
       "name": "TFT17_VexUniqueTrait",
       "apiName": "TFT17_VexUniqueTrait",
-      "appearances": 184,
-      "top4Rate": 0.5761,
-      "avgPlacement": 3.967,
+      "appearances": 201,
+      "top4Rate": 0.592,
+      "avgPlacement": 4.114,
       "source": "riot"
     },
     {
       "name": "TFT17_GravesTrait",
       "apiName": "TFT17_GravesTrait",
-      "appearances": 158,
-      "top4Rate": 0.5316,
-      "avgPlacement": 4.297,
+      "appearances": 181,
+      "top4Rate": 0.558,
+      "avgPlacement": 4.177,
       "source": "riot"
     },
     {
       "name": "TFT17_ADMIN",
       "apiName": "TFT17_ADMIN",
       "appearances": 81,
-      "top4Rate": 0.3704,
-      "avgPlacement": 5.025,
+      "top4Rate": 0.3086,
+      "avgPlacement": 5.333,
       "source": "riot"
     },
     {
       "name": "TFT17_Primordian",
       "apiName": "TFT17_Primordian",
-      "appearances": 75,
-      "top4Rate": 0.48,
-      "avgPlacement": 4.573,
-      "source": "riot"
-    },
-    {
-      "name": "TFT17_MissFortuneUniqueTrait",
-      "apiName": "TFT17_MissFortuneUniqueTrait",
-      "appearances": 60,
-      "top4Rate": 0.4333,
-      "avgPlacement": 4.8,
+      "appearances": 77,
+      "top4Rate": 0.5195,
+      "avgPlacement": 4.455,
       "source": "riot"
     },
     {
       "name": "TFT17_Mecha",
       "apiName": "TFT17_Mecha",
-      "appearances": 60,
-      "top4Rate": 0.6167,
-      "avgPlacement": 3.85,
+      "appearances": 55,
+      "top4Rate": 0.5818,
+      "avgPlacement": 4.273,
+      "source": "riot"
+    },
+    {
+      "name": "TFT17_MissFortuneUniqueTrait",
+      "apiName": "TFT17_MissFortuneUniqueTrait",
+      "appearances": 51,
+      "top4Rate": 0.5098,
+      "avgPlacement": 4.569,
       "source": "riot"
     },
     {
       "name": "TFT17_Stargazer_Mountain",
       "apiName": "TFT17_Stargazer_Mountain",
-      "appearances": 43,
-      "top4Rate": 0.4186,
-      "avgPlacement": 4.977,
+      "appearances": 47,
+      "top4Rate": 0.4468,
+      "avgPlacement": 4.617,
       "source": "riot"
     },
     {
       "name": "TFT17_Stargazer_Serpent",
       "apiName": "TFT17_Stargazer_Serpent",
-      "appearances": 40,
-      "top4Rate": 0.475,
-      "avgPlacement": 4.575,
+      "appearances": 42,
+      "top4Rate": 0.3571,
+      "avgPlacement": 5.119,
       "source": "riot"
     },
     {
       "name": "TFT17_Stargazer_Medallion",
       "apiName": "TFT17_Stargazer_Medallion",
-      "appearances": 31,
-      "top4Rate": 0.5806,
-      "avgPlacement": 4.129,
+      "appearances": 32,
+      "top4Rate": 0.4062,
+      "avgPlacement": 4.719,
       "source": "riot"
     },
     {
       "name": "TFT17_Stargazer_Fountain",
       "apiName": "TFT17_Stargazer_Fountain",
-      "appearances": 29,
-      "top4Rate": 0.4483,
-      "avgPlacement": 4.655,
-      "source": "riot"
-    },
-    {
-      "name": "TFT17_AnimaSquad",
-      "apiName": "TFT17_AnimaSquad",
-      "appearances": 24,
-      "top4Rate": 0.1667,
-      "avgPlacement": 6.667,
+      "appearances": 27,
+      "top4Rate": 0.4074,
+      "avgPlacement": 4.926,
       "source": "riot"
     },
     {
       "name": "TFT17_Stargazer_Wolf",
       "apiName": "TFT17_Stargazer_Wolf",
-      "appearances": 20,
-      "top4Rate": 0.4,
-      "avgPlacement": 4.85,
+      "appearances": 22,
+      "top4Rate": 0.5909,
+      "avgPlacement": 4.273,
       "source": "riot"
     },
     {
       "name": "TFT17_Stargazer_Shield",
       "apiName": "TFT17_Stargazer_Shield",
-      "appearances": 17,
-      "top4Rate": 0.4706,
-      "avgPlacement": 4.824,
+      "appearances": 21,
+      "top4Rate": 0.5714,
+      "avgPlacement": 4.238,
+      "source": "riot"
+    },
+    {
+      "name": "TFT17_AnimaSquad",
+      "apiName": "TFT17_AnimaSquad",
+      "appearances": 21,
+      "top4Rate": 0.3333,
+      "avgPlacement": 5.667,
       "source": "riot"
     },
     {
       "name": "TFT17_Stargazer_Huntress",
       "apiName": "TFT17_Stargazer_Huntress",
-      "appearances": 14,
-      "top4Rate": 0.2857,
-      "avgPlacement": 5.143,
+      "appearances": 17,
+      "top4Rate": 0.4706,
+      "avgPlacement": 4.588,
       "source": "riot"
     },
     {
       "name": "TFT17_ZedUniqueTrait",
       "apiName": "TFT17_ZedUniqueTrait",
-      "appearances": 11,
-      "top4Rate": 0.5455,
-      "avgPlacement": 4.0,
+      "appearances": 12,
+      "top4Rate": 0.5,
+      "avgPlacement": 4.5,
       "source": "riot"
     }
   ],
@@ -1768,217 +1768,57 @@
       "primarySource": "TFT Challenger",
       "tier": "S",
       "championIds": [
-        "TFT17_Jhin",
-        "TFT17_Morgana",
-        "TFT17_Gnar",
         "TFT17_Rammus",
-        "TFT17_Karma",
-        "TFT17_Bard",
         "TFT17_Rhaast",
-        "TFT17_Galio"
+        "TFT17_Poppy",
+        "TFT17_Corki",
+        "TFT17_Fizz",
+        "TFT17_Milio",
+        "TFT17_Galio",
+        "TFT17_Riven"
       ],
       "champions": [
-        "Jhin",
-        "Morgana",
-        "Gnar",
         "Rammus",
-        "Karma",
-        "Bard",
         "Rhaast",
-        "Galio"
+        "Poppy",
+        "Corki",
+        "Fizz",
+        "Milio",
+        "Galio",
+        "Riven"
       ],
-      "count": 16,
-      "avgPlace": 3.0,
-      "top4Rate": 0.875,
+      "count": 14,
+      "avgPlace": 3.14,
+      "top4Rate": 0.857,
       "winRate": 0,
-      "style": "16 jocuri · JhinUniqueTrait + MorganaUniqueTrait",
+      "style": "14 jocuri · Astronaut + RhaastUniqueTrait",
       "items": {
-        "TFT17_Gnar": [
-          "TFT_Item_Deathblade",
-          "TFT_Item_GuinsoosRageblade",
-          "TFT_Item_InfinityEdge"
+        "TFT17_Fizz": [
+          "TFT_Item_ThiefsGloves"
         ],
         "TFT17_Rammus": [
-          "TFT_Item_WarmogsArmor",
-          "TFT_Item_Crownguard",
-          "TFT_Item_RedBuff"
-        ],
-        "TFT17_Morgana": [
           "TFT_Item_GargoyleStoneplate",
-          "TFT_Item_FrozenHeart",
+          "TFT_Item_Crownguard",
           "TFT_Item_WarmogsArmor"
         ],
-        "TFT17_Jhin": [
-          "TFT_Item_InfinityEdge",
-          "TFT_Item_MadredsBloodrazor",
-          "TFT_Item_Deathblade"
-        ]
-      },
-      "augments": [],
-      "roles": {
-        "TFT17_Gnar": "3-star",
-        "TFT17_Rammus": "Item holder",
-        "TFT17_Morgana": "Item holder",
-        "TFT17_Jhin": "Item holder"
-      },
-      "threeStars": [
-        "TFT17_Gnar"
-      ],
-      "positions": {},
-      "tips": [],
-      "sourceCount": 1
-    },
-    {
-      "source": "TFT Challenger",
-      "sourceKind": "challenger",
-      "primarySource": "TFT Challenger",
-      "tier": "S",
-      "championIds": [
-        "TFT17_Mordekaiser",
-        "TFT17_Blitzcrank",
-        "TFT17_Chogath",
-        "TFT17_Karma",
-        "TFT17_Jhin",
-        "TFT17_Kaisa",
-        "TFT17_Lissandra",
-        "TFT17_Bard"
-      ],
-      "champions": [
-        "Mordekaiser",
-        "Blitzcrank",
-        "Chogath",
-        "Karma",
-        "Jhin",
-        "Kaisa",
-        "Lissandra",
-        "Bard"
-      ],
-      "count": 24,
-      "avgPlace": 3.17,
-      "top4Rate": 0.75,
-      "winRate": 0,
-      "style": "24 jocuri · BlitzcrankUniqueTrait + DarkStar",
-      "items": {
-        "TFT17_Chogath": [
-          "TFT_Item_FrozenHeart",
-          "TFT_Item_GargoyleStoneplate",
-          "TFT_Item_Redemption"
-        ],
-        "TFT17_Kaisa": [
-          "TFT_Item_InfinityEdge",
-          "TFT_Item_BlueBuff",
-          "TFT_Item_PowerGauntlet"
-        ],
-        "TFT17_Karma": [
-          "TFT_Item_MadredsBloodrazor",
-          "TFT_Item_BlueBuff",
-          "TFT_Item_StatikkShiv"
-        ],
-        "TFT17_Jhin": [
-          "TFT_Item_MadredsBloodrazor",
-          "TFT_Item_InfinityEdge",
-          "TFT_Item_PowerGauntlet"
-        ],
-        "TFT17_Blitzcrank": [
-          "TFT_Item_Morellonomicon",
-          "TFT_Item_StatikkShiv",
-          "TFT17_Item_DarkStarEmblemItem"
-        ],
-        "TFT17_Lissandra": [
-          "TFT_Item_JeweledGauntlet",
-          "TFT_Item_SpearOfShojin",
-          "TFT_Item_RabadonsDeathcap"
-        ],
-        "TFT17_Bard": [
-          "TFT17_Item_DarkStarEmblemItem",
-          "TFT_Item_JeweledGauntlet",
-          "TFT_Item_PowerGauntlet"
-        ]
-      },
-      "augments": [],
-      "roles": {
-        "TFT17_Chogath": "3-star",
-        "TFT17_Kaisa": "Item holder",
-        "TFT17_Karma": "Item holder",
-        "TFT17_Jhin": "Item holder",
-        "TFT17_Blitzcrank": "Item holder",
-        "TFT17_Lissandra": "Item holder",
-        "TFT17_Bard": "Item holder"
-      },
-      "threeStars": [
-        "TFT17_Chogath"
-      ],
-      "positions": {},
-      "tips": [],
-      "sourceCount": 1
-    },
-    {
-      "source": "TFT Challenger",
-      "sourceKind": "challenger",
-      "primarySource": "TFT Challenger",
-      "tier": "A",
-      "championIds": [
-        "TFT17_RekSai",
-        "TFT17_Belveth",
-        "TFT17_Akali",
-        "TFT17_Rhaast",
-        "TFT17_Briar",
-        "TFT17_Jinx",
-        "TFT17_Maokai",
-        "TFT17_Kindred"
-      ],
-      "champions": [
-        "RekSai",
-        "Belveth",
-        "Akali",
-        "Rhaast",
-        "Briar",
-        "Jinx",
-        "Maokai",
-        "Kindred"
-      ],
-      "count": 16,
-      "avgPlace": 3.25,
-      "top4Rate": 0.75,
-      "winRate": 0,
-      "style": "16 jocuri · Primordian + RhaastUniqueTrait",
-      "items": {
-        "TFT17_RekSai": [
-          "TFT_Item_Crownguard",
-          "TFT_Item_FrozenHeart",
-          "TFT_Item_GargoyleStoneplate"
-        ],
-        "TFT17_Belveth": [
-          "TFT_Item_Quicksilver",
-          "TFT_Item_RunaansHurricane",
-          "TFT_Item_MadredsBloodrazor"
-        ],
-        "TFT17_Jinx": [
-          "TFT_Item_LastWhisper",
+        "TFT17_Corki": [
           "TFT_Item_Deathblade",
-          "TFT_Item_RapidFireCannon"
+          "TFT_Item_LastWhisper",
+          "TFT_Item_InfinityEdge"
         ],
-        "TFT17_Akali": [
-          "TFT_Item_GuardianAngel",
-          "TFT_Item_UnstableConcoction",
-          "TFT_Item_SteraksGage"
+        "TFT17_Riven": [
+          "TFT_Item_SteraksGage",
+          "TFT_Item_Bloodthirster",
+          "TFT_Item_UnstableConcoction"
         ]
       },
       "augments": [],
       "roles": {
-        "TFT17_RekSai": "3-star",
-        "TFT17_Belveth": "3-star",
-        "TFT17_Jinx": "3-star",
-        "TFT17_Akali": "3-star",
-        "TFT17_Briar": "3-star"
+        "TFT17_Rammus": "Item holder",
+        "TFT17_Corki": "Item holder",
+        "TFT17_Riven": "Item holder"
       },
-      "threeStars": [
-        "TFT17_Briar",
-        "TFT17_Belveth",
-        "TFT17_Jinx",
-        "TFT17_Akali",
-        "TFT17_RekSai"
-      ],
+      "threeStars": [],
       "positions": {},
       "tips": [],
       "sourceCount": 1
@@ -1989,34 +1829,34 @@
       "primarySource": "TFT Challenger",
       "tier": "S",
       "championIds": [
+        "TFT17_Fiora",
         "TFT17_Urgot",
         "TFT17_AurelionSol",
         "TFT17_Galio",
-        "TFT17_Fiora",
         "TFT17_Karma",
         "TFT17_TahmKench",
         "TFT17_Bard",
         "TFT17_Mordekaiser"
       ],
       "champions": [
+        "Fiora",
         "Urgot",
         "AurelionSol",
         "Galio",
-        "Fiora",
         "Karma",
         "TahmKench",
         "Bard",
         "Mordekaiser"
       ],
-      "count": 19,
-      "avgPlace": 3.11,
-      "top4Rate": 0.737,
+      "count": 11,
+      "avgPlace": 3.0,
+      "top4Rate": 0.818,
       "winRate": 0,
-      "style": "19 jocuri · FioraUniqueTrait + Mecha",
+      "style": "11 jocuri · FioraUniqueTrait + Mecha",
       "items": {
         "TFT17_Karma": [
           "TFT_Item_StatikkShiv",
-          "TFT_Item_Morellonomicon",
+          "TFT_Item_RapidFireCannon",
           "TFT_Item_SpearOfShojin"
         ],
         "TFT17_AurelionSol": [
@@ -2027,17 +1867,17 @@
         "TFT17_Galio": [
           "TFT_Item_GargoyleStoneplate",
           "TFT_Item_SteraksGage",
-          "TFT17_AnimaSquadItem_Tier2_LionessLament"
+          "TFT_Item_WarmogsArmor"
         ],
         "TFT17_Bard": [
           "TFT_Item_StatikkShiv",
-          "TFT_Item_RabadonsDeathcap",
-          "TFT_Item_Morellonomicon"
+          "TFT_Item_JeweledGauntlet",
+          "TFT_Item_RapidFireCannon"
         ],
         "TFT17_Fiora": [
-          "TFT_Item_SteraksGage",
-          "TFT_Item_TitansResolve",
-          "TFT_Item_Bloodthirster"
+          "TFT_Item_GuardianAngel",
+          "TFT_Item_Bloodthirster",
+          "TFT_Item_MadredsBloodrazor"
         ]
       },
       "augments": [],
@@ -2059,416 +1899,35 @@
       "primarySource": "TFT Challenger",
       "tier": "A",
       "championIds": [
-        "TFT17_Rhaast",
-        "TFT17_Jhin",
-        "TFT17_Rammus",
-        "TFT17_Galio",
-        "TFT17_Xayah",
-        "TFT17_Jax",
-        "TFT17_Maokai",
-        "TFT17_Nunu"
-      ],
-      "champions": [
-        "Rhaast",
-        "Jhin",
-        "Rammus",
-        "Galio",
-        "Xayah",
-        "Jax",
-        "Maokai",
-        "Nunu"
-      ],
-      "count": 18,
-      "avgPlace": 3.28,
-      "top4Rate": 0.722,
-      "winRate": 0,
-      "style": "18 jocuri · JhinUniqueTrait + RhaastUniqueTrait",
-      "items": {
-        "TFT17_Rammus": [
-          "TFT_Item_GargoyleStoneplate",
-          "TFT_Item_FrozenHeart",
-          "TFT_Item_Redemption"
-        ],
-        "TFT17_Galio": [
-          "TFT_Item_BrambleVest",
-          "TFT_Item_AdaptiveHelm",
-          "TFT_Item_RedBuff"
-        ],
-        "TFT17_Jhin": [
-          "TFT_Item_InfinityEdge",
-          "TFT_Item_LastWhisper",
-          "TFT_Item_RapidFireCannon"
-        ],
-        "TFT17_Nunu": [
-          "TFT_Item_FrozenHeart",
-          "TFT_Item_Crownguard",
-          "TFT_Item_Redemption"
-        ],
-        "TFT17_Xayah": [
-          "TFT_Item_RunaansHurricane",
-          "TFT_Item_RapidFireCannon",
-          "TFT5_Item_RapidFirecannonRadiant"
-        ]
-      },
-      "augments": [],
-      "roles": {
-        "TFT17_Rammus": "Item holder",
-        "TFT17_Galio": "Item holder",
-        "TFT17_Jhin": "Item holder",
-        "TFT17_Nunu": "Item holder",
-        "TFT17_Xayah": "Item holder"
-      },
-      "threeStars": [],
-      "positions": {},
-      "tips": [],
-      "sourceCount": 1
-    },
-    {
-      "source": "TFT Challenger",
-      "sourceKind": "challenger",
-      "primarySource": "TFT Challenger",
-      "tier": "A",
-      "championIds": [
-        "TFT17_Morgana",
-        "TFT17_Blitzcrank",
-        "TFT17_Karma",
-        "TFT17_Mordekaiser",
-        "TFT17_Bard",
-        "TFT17_Illaoi",
-        "TFT17_Sona",
-        "TFT17_Nunu"
-      ],
-      "champions": [
-        "Morgana",
-        "Blitzcrank",
-        "Karma",
-        "Mordekaiser",
-        "Bard",
-        "Illaoi",
-        "Sona",
-        "Nunu"
-      ],
-      "count": 31,
-      "avgPlace": 3.48,
-      "top4Rate": 0.71,
-      "winRate": 0,
-      "style": "31 jocuri · BlitzcrankUniqueTrait + MorganaUniqueTrait",
-      "items": {
-        "TFT17_Morgana": [
-          "TFT_Item_WarmogsArmor",
-          "TFT_Item_RedBuff",
-          "TFT_Item_FrozenHeart"
-        ],
-        "TFT17_Bard": [
-          "TFT_Item_JeweledGauntlet",
-          "TFT_Item_RabadonsDeathcap",
-          "TFT_Item_StatikkShiv"
-        ],
-        "TFT17_Blitzcrank": [
-          "TFT_Item_SpearOfShojin",
-          "TFT_Item_Morellonomicon",
-          "TFT_Item_StatikkShiv"
-        ],
-        "TFT17_Sona": [
-          "TFT_Item_SpearOfShojin",
-          "TFT_Item_StatikkShiv",
-          "TFT_Item_RabadonsDeathcap"
-        ],
-        "TFT17_Nunu": [
-          "TFT_Item_FrozenHeart",
-          "TFT_Item_WarmogsArmor",
-          "TFT_Item_AdaptiveHelm"
-        ]
-      },
-      "augments": [],
-      "roles": {
-        "TFT17_Morgana": "Item holder",
-        "TFT17_Bard": "Item holder",
-        "TFT17_Blitzcrank": "Item holder",
-        "TFT17_Sona": "Item holder",
-        "TFT17_Nunu": "Item holder"
-      },
-      "threeStars": [],
-      "positions": {},
-      "tips": [],
-      "sourceCount": 1
-    },
-    {
-      "source": "TFT Challenger",
-      "sourceKind": "challenger",
-      "primarySource": "TFT Challenger",
-      "tier": "A",
-      "championIds": [
-        "TFT17_Poppy",
-        "TFT17_Rhaast",
-        "TFT17_Rammus",
-        "TFT17_Corki",
-        "TFT17_Fizz",
-        "TFT17_Riven",
-        "TFT17_Milio",
-        "TFT17_Galio"
-      ],
-      "champions": [
-        "Poppy",
-        "Rhaast",
-        "Rammus",
-        "Corki",
-        "Fizz",
-        "Riven",
-        "Milio",
-        "Galio"
-      ],
-      "count": 19,
-      "avgPlace": 3.58,
-      "top4Rate": 0.684,
-      "winRate": 0,
-      "style": "19 jocuri · Astronaut + RhaastUniqueTrait",
-      "items": {
-        "TFT17_Rammus": [
-          "TFT_Item_WarmogsArmor",
-          "TFT_Item_GargoyleStoneplate",
-          "TFT_Item_Crownguard"
-        ],
-        "TFT17_Milio": [
-          "TFT_Item_Morellonomicon",
-          "TFT_Item_SpearOfShojin",
-          "TFT_Item_StatikkShiv"
-        ],
-        "TFT17_Corki": [
-          "TFT_Item_LastWhisper",
-          "TFT_Item_Deathblade",
-          "TFT_Item_PowerGauntlet"
-        ],
-        "TFT17_Riven": [
-          "TFT_Item_SteraksGage",
-          "TFT_Item_Bloodthirster",
-          "TFT_Item_UnstableConcoction"
-        ]
-      },
-      "augments": [],
-      "roles": {
-        "TFT17_Rammus": "Item holder",
-        "TFT17_Milio": "Item holder",
-        "TFT17_Corki": "Item holder",
-        "TFT17_Riven": "Item holder"
-      },
-      "threeStars": [],
-      "positions": {},
-      "tips": [],
-      "sourceCount": 1
-    },
-    {
-      "source": "TFT Challenger",
-      "sourceKind": "challenger",
-      "primarySource": "TFT Challenger",
-      "tier": "A",
-      "championIds": [
-        "TFT17_Rhaast",
-        "TFT17_Morgana",
-        "TFT17_Galio",
-        "TFT17_Mordekaiser",
-        "TFT17_Karma",
-        "TFT17_Maokai",
-        "TFT17_AurelionSol",
-        "TFT17_Milio"
-      ],
-      "champions": [
-        "Rhaast",
-        "Morgana",
-        "Galio",
-        "Mordekaiser",
-        "Karma",
-        "Maokai",
-        "AurelionSol",
-        "Milio"
-      ],
-      "count": 15,
-      "avgPlace": 3.4,
-      "top4Rate": 0.667,
-      "winRate": 0,
-      "style": "15 jocuri · MorganaUniqueTrait + RhaastUniqueTrait",
-      "items": {
-        "TFT17_Galio": [
-          "TFT_Item_GargoyleStoneplate",
-          "TFT_Item_SteraksGage",
-          "TFT_Item_GiantsBelt"
-        ],
-        "TFT17_AurelionSol": [
-          "TFT_Item_JeweledGauntlet",
-          "TFT_Item_RabadonsDeathcap",
-          "TFT_Item_PowerGauntlet"
-        ]
-      },
-      "augments": [],
-      "roles": {
-        "TFT17_Galio": "Item holder",
-        "TFT17_AurelionSol": "Item holder"
-      },
-      "threeStars": [],
-      "positions": {},
-      "tips": [],
-      "sourceCount": 1
-    },
-    {
-      "source": "TFT Challenger",
-      "sourceKind": "challenger",
-      "primarySource": "TFT Challenger",
-      "tier": "A",
-      "championIds": [
-        "TFT17_Blitzcrank",
-        "TFT17_Jhin",
-        "TFT17_Nunu",
-        "TFT17_Aatrox",
-        "TFT17_Xayah",
-        "TFT17_Jax",
-        "TFT17_Maokai",
-        "TFT17_Rhaast"
-      ],
-      "champions": [
-        "Blitzcrank",
-        "Jhin",
-        "Nunu",
-        "Aatrox",
-        "Xayah",
-        "Jax",
-        "Maokai",
-        "Rhaast"
-      ],
-      "count": 45,
-      "avgPlace": 3.44,
-      "top4Rate": 0.667,
-      "winRate": 0,
-      "style": "45 jocuri · BlitzcrankUniqueTrait + JhinUniqueTrait",
-      "items": {
-        "TFT17_Nunu": [
-          "TFT_Item_FrozenHeart",
-          "TFT_Item_AdaptiveHelm",
-          "TFT_Item_WarmogsArmor"
-        ],
-        "TFT17_Xayah": [
-          "TFT_Item_RunaansHurricane",
-          "TFT_Item_RapidFireCannon",
-          "TFT_Item_GuinsoosRageblade"
-        ],
-        "TFT17_Jhin": [
-          "TFT_Item_InfinityEdge",
-          "TFT_Item_Deathblade",
-          "TFT_Item_RapidFireCannon"
-        ],
-        "TFT17_Blitzcrank": [
-          "TFT_Item_JeweledGauntlet",
-          "TFT17_Item_StargazerEmblemItem",
-          "TFT_Item_Crownguard"
-        ]
-      },
-      "augments": [],
-      "roles": {
-        "TFT17_Nunu": "Item holder",
-        "TFT17_Xayah": "Item holder",
-        "TFT17_Jhin": "Item holder",
-        "TFT17_Blitzcrank": "Item holder"
-      },
-      "threeStars": [],
-      "positions": {},
-      "tips": [],
-      "sourceCount": 1
-    },
-    {
-      "source": "TFT Challenger",
-      "sourceKind": "challenger",
-      "primarySource": "TFT Challenger",
-      "tier": "A",
-      "championIds": [
-        "TFT17_Blitzcrank",
-        "TFT17_Rhaast",
-        "TFT17_Nunu",
-        "TFT17_Mordekaiser",
-        "TFT17_Karma",
-        "TFT17_Illaoi",
-        "TFT17_Sona",
-        "TFT17_Bard"
-      ],
-      "champions": [
-        "Blitzcrank",
-        "Rhaast",
-        "Nunu",
-        "Mordekaiser",
-        "Karma",
-        "Illaoi",
-        "Sona",
-        "Bard"
-      ],
-      "count": 39,
-      "avgPlace": 3.54,
-      "top4Rate": 0.641,
-      "winRate": 0,
-      "style": "39 jocuri · BlitzcrankUniqueTrait + RhaastUniqueTrait",
-      "items": {
-        "TFT17_Nunu": [
-          "TFT_Item_GargoyleStoneplate",
-          "TFT_Item_FrozenHeart",
-          "TFT_Item_WarmogsArmor"
-        ],
-        "TFT17_Blitzcrank": [
-          "TFT_Item_ThiefsGloves"
-        ],
-        "TFT17_Sona": [
-          "TFT_Item_SpearOfShojin",
-          "TFT_Item_StatikkShiv",
-          "TFT_Item_Morellonomicon"
-        ],
-        "TFT17_Bard": [
-          "TFT_Item_JeweledGauntlet",
-          "TFT_Item_MadredsBloodrazor",
-          "TFT_Item_RabadonsDeathcap"
-        ]
-      },
-      "augments": [],
-      "roles": {
-        "TFT17_Nunu": "Item holder",
-        "TFT17_Sona": "Item holder",
-        "TFT17_Bard": "Item holder"
-      },
-      "threeStars": [],
-      "positions": {},
-      "tips": [],
-      "sourceCount": 1
-    },
-    {
-      "source": "TFT Challenger",
-      "sourceKind": "challenger",
-      "primarySource": "TFT Challenger",
-      "tier": "B",
-      "championIds": [
         "TFT17_Ornn",
-        "TFT17_Blitzcrank",
         "TFT17_Samira",
+        "TFT17_Blitzcrank",
         "TFT17_Nasus",
         "TFT17_Nami",
         "TFT17_Gwen",
         "TFT17_Pantheon",
-        "TFT17_Riven"
+        "TFT17_Teemo"
       ],
       "champions": [
         "Ornn",
-        "Blitzcrank",
         "Samira",
+        "Blitzcrank",
         "Nasus",
         "Nami",
         "Gwen",
         "Pantheon",
-        "Riven"
+        "Teemo"
       ],
-      "count": 58,
-      "avgPlace": 3.71,
-      "top4Rate": 0.638,
+      "count": 64,
+      "avgPlace": 3.36,
+      "top4Rate": 0.797,
       "winRate": 0,
-      "style": "58 jocuri · BlitzcrankUniqueTrait + SpaceGroove",
+      "style": "64 jocuri · BlitzcrankUniqueTrait + SpaceGroove",
       "items": {
         "TFT17_Samira": [
           "TFT_Item_SpearOfShojin",
-          "TFT_Item_LastWhisper",
-          "TFT_Item_InfinityEdge"
+          "TFT_Item_Deathblade",
+          "TFT_Item_LastWhisper"
         ],
         "TFT17_Ornn": [
           "TFT_Item_GargoyleStoneplate",
@@ -2481,9 +1940,9 @@
           "TFT_Item_SpearOfShojin"
         ],
         "TFT17_Blitzcrank": [
+          "TFT_Item_JeweledGauntlet",
           "TFT_Item_SpearOfShojin",
-          "TFT_Item_StatikkShiv",
-          "TFT_Item_Morellonomicon"
+          "TFT_Item_RapidFireCannon"
         ]
       },
       "augments": [],
@@ -2505,131 +1964,75 @@
       "source": "TFT Challenger",
       "sourceKind": "challenger",
       "primarySource": "TFT Challenger",
-      "tier": "A",
+      "tier": "S",
       "championIds": [
-        "TFT17_Blitzcrank",
-        "TFT17_Graves",
-        "TFT17_Nunu",
-        "TFT17_Shen",
-        "TFT17_Mordekaiser",
-        "TFT17_Karma",
-        "TFT17_Bard",
-        "TFT17_Vex"
-      ],
-      "champions": [
-        "Blitzcrank",
-        "Graves",
-        "Nunu",
-        "Shen",
-        "Mordekaiser",
-        "Karma",
-        "Bard",
-        "Vex"
-      ],
-      "count": 19,
-      "avgPlace": 3.68,
-      "top4Rate": 0.632,
-      "winRate": 0,
-      "style": "19 jocuri · BlitzcrankUniqueTrait + GravesTrait",
-      "items": {
-        "TFT17_Blitzcrank": [
-          "TFT_Item_ThiefsGloves"
-        ],
-        "TFT17_Graves": [
-          "TFT_Item_InfinityEdge",
-          "TFT_Item_MadredsBloodrazor",
-          "TFT_Item_SpearOfShojin"
-        ],
-        "TFT17_Nunu": [
-          "TFT_Item_FrozenHeart",
-          "TFT_Item_WarmogsArmor",
-          "TFT_Item_Crownguard"
-        ],
-        "TFT17_Vex": [
-          "TFT_Item_GuinsoosRageblade",
-          "TFT_Item_RapidFireCannon",
-          "TFT_Item_PowerGauntlet"
-        ]
-      },
-      "augments": [],
-      "roles": {
-        "TFT17_Graves": "Item holder",
-        "TFT17_Nunu": "Item holder",
-        "TFT17_Vex": "Item holder"
-      },
-      "threeStars": [],
-      "positions": {},
-      "tips": [],
-      "sourceCount": 1
-    },
-    {
-      "source": "TFT Challenger",
-      "sourceKind": "challenger",
-      "primarySource": "TFT Challenger",
-      "tier": "B",
-      "championIds": [
-        "TFT17_Chogath",
         "TFT17_Mordekaiser",
         "TFT17_Jhin",
+        "TFT17_Blitzcrank",
         "TFT17_Karma",
+        "TFT17_Chogath",
         "TFT17_Kaisa",
-        "TFT17_Lissandra",
-        "TFT17_Pantheon",
-        "TFT17_Nunu"
+        "TFT17_TahmKench",
+        "TFT17_Bard"
       ],
       "champions": [
-        "Chogath",
         "Mordekaiser",
         "Jhin",
+        "Blitzcrank",
         "Karma",
+        "Chogath",
         "Kaisa",
-        "Lissandra",
-        "Pantheon",
-        "Nunu"
+        "TahmKench",
+        "Bard"
       ],
-      "count": 53,
-      "avgPlace": 3.98,
-      "top4Rate": 0.623,
+      "count": 22,
+      "avgPlace": 2.95,
+      "top4Rate": 0.773,
       "winRate": 0,
-      "style": "53 jocuri · DarkStar + JhinUniqueTrait",
+      "style": "22 jocuri · BlitzcrankUniqueTrait + DarkStar",
       "items": {
         "TFT17_Chogath": [
           "TFT_Item_WarmogsArmor",
           "TFT_Item_FrozenHeart",
-          "TFT_Item_Redemption"
-        ],
-        "TFT17_Lissandra": [
-          "TFT_Item_JeweledGauntlet",
-          "TFT_Item_Leviathan",
-          "TFT_Item_SpearOfShojin"
+          "TFT_Item_AdaptiveHelm"
         ],
         "TFT17_Karma": [
           "TFT_Item_StatikkShiv",
-          "TFT_Item_Morellonomicon",
-          "TFT_Item_JeweledGauntlet"
+          "TFT_Item_JeweledGauntlet",
+          "TFT_Item_BlueBuff"
+        ],
+        "TFT17_TahmKench": [
+          "TFT_Item_WarmogsArmor",
+          "TFT_Item_Redemption",
+          "TFT_Item_GargoyleStoneplate"
+        ],
+        "TFT17_Bard": [
+          "TFT_Item_JeweledGauntlet",
+          "TFT17_Item_DarkStarEmblemItem",
+          "TFT_Item_PowerGauntlet"
         ],
         "TFT17_Jhin": [
-          "TFT_Item_MadredsBloodrazor",
           "TFT_Item_InfinityEdge",
-          "TFT_Item_Deathblade"
+          "TFT_Item_LastWhisper",
+          "TFT_Item_RapidFireCannon"
         ],
-        "TFT17_Nunu": [
-          "TFT_Item_FrozenHeart",
-          "TFT_Item_AdaptiveHelm",
-          "TFT_Item_GargoyleStoneplate"
+        "TFT17_Blitzcrank": [
+          "TFT17_Item_DarkStarEmblemItem",
+          "TFT_Item_StatikkShiv",
+          "TFT_Item_Morellonomicon"
         ]
       },
       "augments": [],
       "roles": {
         "TFT17_Chogath": "3-star",
-        "TFT17_Lissandra": "3-star",
         "TFT17_Karma": "Item holder",
+        "TFT17_TahmKench": "Item holder",
+        "TFT17_Bard": "Item holder",
         "TFT17_Jhin": "Item holder",
-        "TFT17_Nunu": "Item holder"
+        "TFT17_Blitzcrank": "Item holder"
       },
       "threeStars": [
-        "TFT17_Chogath",
-        "TFT17_Lissandra"
+        "TFT17_Chogath"
       ],
       "positions": {},
       "tips": [],
@@ -2639,63 +2042,72 @@
       "source": "TFT Challenger",
       "sourceKind": "challenger",
       "primarySource": "TFT Challenger",
-      "tier": "B",
+      "tier": "A",
       "championIds": [
+        "TFT17_Morgana",
         "TFT17_Blitzcrank",
+        "TFT17_Karma",
+        "TFT17_Mordekaiser",
         "TFT17_Illaoi",
         "TFT17_Sona",
-        "TFT17_Mordekaiser",
-        "TFT17_Karma",
         "TFT17_Nunu",
-        "TFT17_Bard",
-        "TFT17_Vex"
+        "TFT17_Bard"
       ],
       "champions": [
+        "Morgana",
         "Blitzcrank",
+        "Karma",
+        "Mordekaiser",
         "Illaoi",
         "Sona",
-        "Mordekaiser",
-        "Karma",
         "Nunu",
-        "Bard",
-        "Vex"
+        "Bard"
       ],
-      "count": 79,
-      "avgPlace": 3.91,
-      "top4Rate": 0.608,
+      "count": 25,
+      "avgPlace": 3.44,
+      "top4Rate": 0.68,
       "winRate": 0,
-      "style": "79 jocuri · BlitzcrankUniqueTrait + SonaUniqueTrait",
+      "style": "25 jocuri · BlitzcrankUniqueTrait + MorganaUniqueTrait",
       "items": {
-        "TFT17_Bard": [
-          "TFT_Item_JeweledGauntlet",
+        "TFT17_Karma": [
+          "TFT_Item_SpearOfShojin",
           "TFT_Item_StatikkShiv",
-          "TFT_Item_RabadonsDeathcap"
+          "TFT_Item_Morellonomicon"
+        ],
+        "TFT17_Morgana": [
+          "TFT_Item_GargoyleStoneplate",
+          "TFT_Item_WarmogsArmor",
+          "TFT_Item_FrozenHeart"
         ],
         "TFT17_Blitzcrank": [
-          "TFT_Item_ThiefsGloves"
+          "TFT_Item_StatikkShiv",
+          "TFT_Item_HextechGunblade",
+          "TFT_Item_JeweledGauntlet"
         ],
         "TFT17_Sona": [
+          "TFT_Item_JeweledGauntlet",
           "TFT_Item_StatikkShiv",
-          "TFT_Item_SpearOfShojin",
-          "TFT_Item_JeweledGauntlet"
+          "TFT_Item_Leviathan"
         ],
         "TFT17_Nunu": [
-          "TFT_Item_GargoyleStoneplate",
           "TFT_Item_FrozenHeart",
-          "TFT_Item_WarmogsArmor"
+          "TFT_Item_AdaptiveHelm",
+          "TFT_Item_IonicSpark"
         ],
-        "TFT17_Vex": [
-          "TFT_Item_GuinsoosRageblade",
-          "TFT_Item_MadredsBloodrazor",
-          "TFT_Item_JeweledGauntlet"
+        "TFT17_Bard": [
+          "TFT_Item_JeweledGauntlet",
+          "TFT_Item_PowerGauntlet",
+          "TFT_Item_RabadonsDeathcap"
         ]
       },
       "augments": [],
       "roles": {
-        "TFT17_Bard": "Item holder",
+        "TFT17_Karma": "Item holder",
+        "TFT17_Morgana": "Item holder",
+        "TFT17_Blitzcrank": "Item holder",
         "TFT17_Sona": "Item holder",
         "TFT17_Nunu": "Item holder",
-        "TFT17_Vex": "Item holder"
+        "TFT17_Bard": "Item holder"
       },
       "threeStars": [],
       "positions": {},
@@ -2706,73 +2118,62 @@
       "source": "TFT Challenger",
       "sourceKind": "challenger",
       "primarySource": "TFT Challenger",
-      "tier": "B",
+      "tier": "A",
       "championIds": [
-        "TFT17_RekSai",
-        "TFT17_Akali",
-        "TFT17_Maokai",
+        "TFT17_Blitzcrank",
+        "TFT17_Jhin",
+        "TFT17_Nunu",
+        "TFT17_Xayah",
         "TFT17_Aatrox",
-        "TFT17_Belveth",
-        "TFT17_Kindred",
-        "TFT17_Briar",
-        "TFT17_Caitlyn"
+        "TFT17_Jax",
+        "TFT17_TahmKench",
+        "TFT17_Maokai"
       ],
       "champions": [
-        "RekSai",
-        "Akali",
-        "Maokai",
+        "Blitzcrank",
+        "Jhin",
+        "Nunu",
+        "Xayah",
         "Aatrox",
-        "Belveth",
-        "Kindred",
-        "Briar",
-        "Caitlyn"
+        "Jax",
+        "TahmKench",
+        "Maokai"
       ],
-      "count": 15,
-      "avgPlace": 4.0,
-      "top4Rate": 0.6,
+      "count": 40,
+      "avgPlace": 3.62,
+      "top4Rate": 0.675,
       "winRate": 0,
-      "style": "15 jocuri · DRX + Primordian",
+      "style": "40 jocuri · BlitzcrankUniqueTrait + JhinUniqueTrait",
       "items": {
-        "TFT17_Briar": [
-          "TFT_Item_SteraksGage",
-          "TFT_Item_Bloodthirster",
-          "TFT_Item_TitansResolve"
+        "TFT17_Jhin": [
+          "TFT_Item_Deathblade",
+          "TFT_Item_InfinityEdge",
+          "TFT17_Item_StargazerEmblemItem"
         ],
-        "TFT17_RekSai": [
-          "TFT_Item_Redemption",
-          "TFT_Item_WarmogsArmor",
-          "TFT_Item_Crownguard"
-        ],
-        "TFT17_Belveth": [
-          "TFT_Item_RunaansHurricane",
-          "TFT_Item_Quicksilver",
-          "TFT_Item_MadredsBloodrazor"
-        ],
-        "TFT17_Akali": [
-          "TFT_Item_GuardianAngel",
-          "TFT_Item_SteraksGage",
-          "TFT_Item_UnstableConcoction"
-        ],
-        "TFT17_Maokai": [
-          "TFT17_Item_PrimordianEmblemItem",
+        "TFT17_Nunu": [
           "TFT_Item_FrozenHeart",
-          "TFT_Item_BrambleVest"
+          "TFT_Item_AdaptiveHelm",
+          "TFT_Item_Redemption"
+        ],
+        "TFT17_Xayah": [
+          "TFT_Item_RunaansHurricane",
+          "TFT_Item_RapidFireCannon",
+          "TFT_Item_GuinsoosRageblade"
+        ],
+        "TFT17_TahmKench": [
+          "TFT_Item_WarmogsArmor",
+          "TFT_Item_GargoyleStoneplate",
+          "TFT_Item_Crownguard"
         ]
       },
       "augments": [],
       "roles": {
-        "TFT17_Briar": "3-star",
-        "TFT17_RekSai": "3-star",
-        "TFT17_Belveth": "3-star",
-        "TFT17_Akali": "3-star",
-        "TFT17_Maokai": "Item holder"
+        "TFT17_Jhin": "Item holder",
+        "TFT17_Nunu": "Item holder",
+        "TFT17_Xayah": "Item holder",
+        "TFT17_TahmKench": "Item holder"
       },
-      "threeStars": [
-        "TFT17_Briar",
-        "TFT17_RekSai",
-        "TFT17_Belveth",
-        "TFT17_Akali"
-      ],
+      "threeStars": [],
       "positions": {},
       "tips": [],
       "sourceCount": 1
@@ -2781,66 +2182,60 @@
       "source": "TFT Challenger",
       "sourceKind": "challenger",
       "primarySource": "TFT Challenger",
-      "tier": "C",
+      "tier": "A",
       "championIds": [
-        "TFT17_Jhin",
-        "TFT17_Shen",
         "TFT17_Rammus",
-        "TFT17_Bard",
+        "TFT17_Jhin",
+        "TFT17_Poppy",
         "TFT17_Gnar",
+        "TFT17_Bard",
         "TFT17_Galio",
-        "TFT17_Karma",
-        "TFT17_Ornn"
+        "TFT17_Corki",
+        "TFT17_Fizz"
       ],
       "champions": [
-        "Jhin",
-        "Shen",
         "Rammus",
-        "Bard",
+        "Jhin",
+        "Poppy",
         "Gnar",
+        "Bard",
         "Galio",
-        "Karma",
-        "Ornn"
+        "Corki",
+        "Fizz"
       ],
-      "count": 14,
-      "avgPlace": 4.21,
-      "top4Rate": 0.571,
+      "count": 27,
+      "avgPlace": 3.56,
+      "top4Rate": 0.667,
       "winRate": 0,
-      "style": "14 jocuri · JhinUniqueTrait + ShenUniqueTrait",
+      "style": "27 jocuri · Astronaut + JhinUniqueTrait",
       "items": {
         "TFT17_Gnar": [
           "TFT_Item_GuinsoosRageblade",
-          "TFT_Item_Deathblade",
-          "TFT_Item_RunaansHurricane"
+          "TFT_Item_InfinityEdge",
+          "TFT_Item_Deathblade"
         ],
         "TFT17_Rammus": [
           "TFT_Item_GargoyleStoneplate",
-          "TFT_Item_FrozenHeart",
-          "TFT_Item_WarmogsArmor"
-        ],
-        "TFT17_Bard": [
-          "TFT_Item_StatikkShiv",
-          "TFT_Item_Morellonomicon",
-          "TFT_Item_SpearOfShojin"
+          "TFT_Item_WarmogsArmor",
+          "TFT_Item_Redemption"
         ],
         "TFT17_Jhin": [
           "TFT_Item_LastWhisper",
-          "TFT_Item_MadredsBloodrazor",
-          "TFT_Item_InfinityEdge"
+          "TFT_Item_InfinityEdge",
+          "TFT_Item_PowerGauntlet"
         ],
-        "TFT17_Shen": [
-          "TFT_Item_RedBuff",
-          "TFT_Item_FrozenHeart",
-          "TFT_Item_SteraksGage"
+        "TFT17_Corki": [
+          "TFT_Item_LastWhisper",
+          "TFT_Item_Deathblade",
+          "TFT_Item_Morellonomicon"
         ]
       },
       "augments": [],
       "roles": {
         "TFT17_Gnar": "3-star",
         "TFT17_Rammus": "Item holder",
-        "TFT17_Bard": "Item holder",
         "TFT17_Jhin": "Item holder",
-        "TFT17_Shen": "Item holder"
+        "TFT17_Corki": "Item holder"
       },
       "threeStars": [
         "TFT17_Gnar"
@@ -2855,63 +2250,118 @@
       "primarySource": "TFT Challenger",
       "tier": "B",
       "championIds": [
-        "TFT17_Blitzcrank",
-        "TFT17_Shen",
-        "TFT17_Ornn",
-        "TFT17_Pantheon",
-        "TFT17_Nami",
-        "TFT17_Riven",
-        "TFT17_Gwen",
+        "TFT17_Rhaast",
+        "TFT17_Jhin",
+        "TFT17_Maokai",
+        "TFT17_Nunu",
+        "TFT17_Xayah",
+        "TFT17_Jax",
+        "TFT17_Aatrox",
         "TFT17_TahmKench"
       ],
       "champions": [
-        "Blitzcrank",
-        "Shen",
-        "Ornn",
-        "Pantheon",
-        "Nami",
-        "Riven",
-        "Gwen",
+        "Rhaast",
+        "Jhin",
+        "Maokai",
+        "Nunu",
+        "Xayah",
+        "Jax",
+        "Aatrox",
         "TahmKench"
       ],
-      "count": 16,
-      "avgPlace": 4.12,
-      "top4Rate": 0.562,
+      "count": 21,
+      "avgPlace": 3.76,
+      "top4Rate": 0.667,
       "winRate": 0,
-      "style": "16 jocuri · BlitzcrankUniqueTrait + ShenUniqueTrait",
+      "style": "21 jocuri · JhinUniqueTrait + RhaastUniqueTrait",
       "items": {
-        "TFT17_Ornn": [
-          "TFT_Item_GargoyleStoneplate",
+        "TFT17_Nunu": [
+          "TFT_Item_FrozenHeart",
           "TFT_Item_WarmogsArmor",
-          "TFT_Item_NightHarvester"
+          "TFT_Item_AdaptiveHelm"
         ],
-        "TFT17_Nami": [
-          "TFT_Item_JeweledGauntlet",
-          "TFT_Item_Leviathan",
-          "TFT_Item_SpearOfShojin"
-        ],
-        "TFT17_Riven": [
-          "TFT_Item_TitansResolve",
-          "TFT17_Item_SpaceGrooveEmblemItem",
-          "TFT_Item_SteraksGage"
-        ],
-        "TFT17_Blitzcrank": [
-          "TFT_Item_StatikkShiv",
-          "TFT_Item_JeweledGauntlet",
-          "TFT_Item_IonicSpark"
+        "TFT17_Xayah": [
+          "TFT_Item_RunaansHurricane",
+          "TFT_Item_RapidFireCannon",
+          "TFT_Item_GuinsoosRageblade"
         ],
         "TFT17_TahmKench": [
-          "TFT17_Item_SpaceGrooveEmblemItem",
           "TFT_Item_WarmogsArmor",
-          "TFT_Item_GargoyleStoneplate"
+          "TFT_Item_GargoyleStoneplate",
+          "TFT_Item_FrozenHeart"
+        ],
+        "TFT17_Jhin": [
+          "TFT_Item_InfinityEdge",
+          "TFT_Item_LastWhisper",
+          "TFT_Item_Deathblade"
         ]
       },
       "augments": [],
       "roles": {
-        "TFT17_Ornn": "Item holder",
-        "TFT17_Nami": "Item holder",
-        "TFT17_Riven": "Item holder",
-        "TFT17_Blitzcrank": "Item holder",
+        "TFT17_Nunu": "Item holder",
+        "TFT17_Xayah": "Item holder",
+        "TFT17_TahmKench": "Item holder",
+        "TFT17_Jhin": "Item holder"
+      },
+      "threeStars": [],
+      "positions": {},
+      "tips": [],
+      "sourceCount": 1
+    },
+    {
+      "source": "TFT Challenger",
+      "sourceKind": "challenger",
+      "primarySource": "TFT Challenger",
+      "tier": "A",
+      "championIds": [
+        "TFT17_Rhaast",
+        "TFT17_Fiora",
+        "TFT17_Maokai",
+        "TFT17_Urgot",
+        "TFT17_TahmKench",
+        "TFT17_Belveth",
+        "TFT17_Gragas",
+        "TFT17_Kindred"
+      ],
+      "champions": [
+        "Rhaast",
+        "Fiora",
+        "Maokai",
+        "Urgot",
+        "TahmKench",
+        "Belveth",
+        "Gragas",
+        "Kindred"
+      ],
+      "count": 14,
+      "avgPlace": 3.43,
+      "top4Rate": 0.643,
+      "winRate": 0,
+      "style": "14 jocuri · FioraUniqueTrait + RhaastUniqueTrait",
+      "items": {
+        "TFT17_Fiora": [
+          "TFT_Item_GuardianAngel",
+          "TFT_Item_SteraksGage",
+          "TFT17_EkkoOffering_AnomalyItem"
+        ],
+        "TFT17_Urgot": [
+          "TFT_Item_ThiefsGloves"
+        ],
+        "TFT17_Kindred": [
+          "TFT_Item_LastWhisper",
+          "TFT_Item_RapidFireCannon",
+          "TFT_Item_RunaansHurricane"
+        ],
+        "TFT17_TahmKench": [
+          "TFT_Item_GargoyleStoneplate",
+          "TFT_Item_WarmogsArmor",
+          "TFT_Item_Crownguard"
+        ]
+      },
+      "augments": [],
+      "roles": {
+        "TFT17_Fiora": "Item holder",
+        "TFT17_Kindred": "Item holder",
         "TFT17_TahmKench": "Item holder"
       },
       "threeStars": [],
@@ -2923,32 +2373,313 @@
       "source": "TFT Challenger",
       "sourceKind": "challenger",
       "primarySource": "TFT Challenger",
-      "tier": "C",
+      "tier": "B",
+      "championIds": [
+        "TFT17_Gragas",
+        "TFT17_Maokai",
+        "TFT17_Urgot",
+        "TFT17_MasterYi",
+        "TFT17_TahmKench",
+        "TFT17_Fiora",
+        "TFT17_Belveth",
+        "TFT17_Kindred"
+      ],
+      "champions": [
+        "Gragas",
+        "Maokai",
+        "Urgot",
+        "MasterYi",
+        "TahmKench",
+        "Fiora",
+        "Belveth",
+        "Kindred"
+      ],
+      "count": 14,
+      "avgPlace": 3.71,
+      "top4Rate": 0.643,
+      "winRate": 0,
+      "style": "14 jocuri · FioraUniqueTrait + HPTank",
+      "items": {
+        "TFT17_Maokai": [
+          "TFT_Item_SpectralGauntlet",
+          "TFT_Item_Crownguard",
+          "TFT_Item_FrozenHeart"
+        ],
+        "TFT17_MasterYi": [
+          "TFT17_Item_HPTankEmblemItem",
+          "TFT_Item_GuardianAngel",
+          "TFT_Item_Quicksilver"
+        ],
+        "TFT17_TahmKench": [
+          "TFT_Item_Redemption",
+          "TFT_Item_SpectralGauntlet",
+          "TFT_Item_WarmogsArmor"
+        ],
+        "TFT17_Fiora": [
+          "TFT_Item_GuardianAngel",
+          "TFT_Item_MadredsBloodrazor",
+          "TFT_Item_SteraksGage"
+        ],
+        "TFT17_Kindred": [
+          "TFT_Item_RapidFireCannon",
+          "TFT_Item_GuinsoosRageblade",
+          "TFT_Item_LastWhisper"
+        ]
+      },
+      "augments": [],
+      "roles": {
+        "TFT17_Maokai": "Item holder",
+        "TFT17_MasterYi": "Item holder",
+        "TFT17_TahmKench": "Item holder",
+        "TFT17_Fiora": "Item holder",
+        "TFT17_Kindred": "Item holder"
+      },
+      "threeStars": [],
+      "positions": {},
+      "tips": [],
+      "sourceCount": 1
+    },
+    {
+      "source": "TFT Challenger",
+      "sourceKind": "challenger",
+      "primarySource": "TFT Challenger",
+      "tier": "A",
+      "championIds": [
+        "TFT17_Blitzcrank",
+        "TFT17_Ornn",
+        "TFT17_Shen",
+        "TFT17_Samira",
+        "TFT17_Nami",
+        "TFT17_Nasus",
+        "TFT17_Gwen",
+        "TFT17_TahmKench"
+      ],
+      "champions": [
+        "Blitzcrank",
+        "Ornn",
+        "Shen",
+        "Samira",
+        "Nami",
+        "Nasus",
+        "Gwen",
+        "TahmKench"
+      ],
+      "count": 11,
+      "avgPlace": 3.55,
+      "top4Rate": 0.636,
+      "winRate": 0,
+      "style": "11 jocuri · BlitzcrankUniqueTrait + ShenUniqueTrait",
+      "items": {
+        "TFT17_Samira": [
+          "TFT_Item_SpearOfShojin",
+          "TFT_Item_LastWhisper",
+          "TFT_Item_InfinityEdge"
+        ],
+        "TFT17_Ornn": [
+          "TFT_Item_GargoyleStoneplate",
+          "TFT_Item_WarmogsArmor",
+          "TFT_Item_NightHarvester"
+        ],
+        "TFT17_Nami": [
+          "TFT_Item_JeweledGauntlet",
+          "TFT_Item_SpearOfShojin",
+          "TFT_Item_MadredsBloodrazor"
+        ],
+        "TFT17_Blitzcrank": [
+          "TFT_Item_JeweledGauntlet",
+          "TFT_Item_PowerGauntlet",
+          "TFT_Item_IonicSpark"
+        ],
+        "TFT17_TahmKench": [
+          "TFT17_Item_SpaceGrooveEmblemItem",
+          "TFT_Item_WarmogsArmor",
+          "TFT_Item_Redemption"
+        ]
+      },
+      "augments": [],
+      "roles": {
+        "TFT17_Samira": "3-star",
+        "TFT17_Ornn": "3-star",
+        "TFT17_Nami": "Item holder",
+        "TFT17_Blitzcrank": "Item holder",
+        "TFT17_TahmKench": "Item holder"
+      },
+      "threeStars": [
+        "TFT17_Samira",
+        "TFT17_Ornn"
+      ],
+      "positions": {},
+      "tips": [],
+      "sourceCount": 1
+    },
+    {
+      "source": "TFT Challenger",
+      "sourceKind": "challenger",
+      "primarySource": "TFT Challenger",
+      "tier": "B",
+      "championIds": [
+        "TFT17_RekSai",
+        "TFT17_Belveth",
+        "TFT17_Jinx",
+        "TFT17_Akali",
+        "TFT17_Maokai",
+        "TFT17_Rhaast",
+        "TFT17_Briar",
+        "TFT17_Kindred"
+      ],
+      "champions": [
+        "RekSai",
+        "Belveth",
+        "Jinx",
+        "Akali",
+        "Maokai",
+        "Rhaast",
+        "Briar",
+        "Kindred"
+      ],
+      "count": 11,
+      "avgPlace": 4.0,
+      "top4Rate": 0.636,
+      "winRate": 0,
+      "style": "11 jocuri · Primordian + RhaastUniqueTrait",
+      "items": {
+        "TFT17_RekSai": [
+          "TFT_Item_FrozenHeart",
+          "TFT_Item_Crownguard",
+          "TFT_Item_RedBuff"
+        ],
+        "TFT17_Belveth": [
+          "TFT_Item_Quicksilver",
+          "TFT_Item_RunaansHurricane",
+          "TFT_Item_GuardianAngel"
+        ],
+        "TFT17_Jinx": [
+          "TFT_Item_Deathblade",
+          "TFT_Item_LastWhisper",
+          "TFT_Item_RapidFireCannon"
+        ],
+        "TFT17_Akali": [
+          "TFT_Item_GuardianAngel",
+          "TFT_Item_UnstableConcoction",
+          "TFT_Item_SteraksGage"
+        ]
+      },
+      "augments": [],
+      "roles": {
+        "TFT17_RekSai": "3-star",
+        "TFT17_Belveth": "3-star",
+        "TFT17_Jinx": "3-star",
+        "TFT17_Akali": "3-star",
+        "TFT17_Briar": "3-star"
+      },
+      "threeStars": [
+        "TFT17_Briar",
+        "TFT17_RekSai",
+        "TFT17_Belveth",
+        "TFT17_Jinx",
+        "TFT17_Akali"
+      ],
+      "positions": {},
+      "tips": [],
+      "sourceCount": 1
+    },
+    {
+      "source": "TFT Challenger",
+      "sourceKind": "challenger",
+      "primarySource": "TFT Challenger",
+      "tier": "A",
+      "championIds": [
+        "TFT17_Rhaast",
+        "TFT17_Blitzcrank",
+        "TFT17_Illaoi",
+        "TFT17_Karma",
+        "TFT17_Nunu",
+        "TFT17_Mordekaiser",
+        "TFT17_Bard",
+        "TFT17_Sona"
+      ],
+      "champions": [
+        "Rhaast",
+        "Blitzcrank",
+        "Illaoi",
+        "Karma",
+        "Nunu",
+        "Mordekaiser",
+        "Bard",
+        "Sona"
+      ],
+      "count": 37,
+      "avgPlace": 3.51,
+      "top4Rate": 0.622,
+      "winRate": 0,
+      "style": "37 jocuri · BlitzcrankUniqueTrait + RhaastUniqueTrait",
+      "items": {
+        "TFT17_Illaoi": [
+          "TFT_Item_WarmogsArmor",
+          "TFT_Item_GargoyleStoneplate",
+          "TFT_Item_RedBuff"
+        ],
+        "TFT17_Nunu": [
+          "TFT_Item_FrozenHeart",
+          "TFT_Item_GargoyleStoneplate",
+          "TFT_Item_WarmogsArmor"
+        ],
+        "TFT17_Bard": [
+          "TFT_Item_JeweledGauntlet",
+          "TFT_Item_RabadonsDeathcap",
+          "TFT_Item_StatikkShiv"
+        ],
+        "TFT17_Blitzcrank": [
+          "TFT_Item_ThiefsGloves"
+        ],
+        "TFT17_Sona": [
+          "TFT_Item_JeweledGauntlet",
+          "TFT_Item_StatikkShiv",
+          "TFT_Item_Morellonomicon"
+        ]
+      },
+      "augments": [],
+      "roles": {
+        "TFT17_Illaoi": "Item holder",
+        "TFT17_Nunu": "Item holder",
+        "TFT17_Bard": "Item holder",
+        "TFT17_Sona": "Item holder"
+      },
+      "threeStars": [],
+      "positions": {},
+      "tips": [],
+      "sourceCount": 1
+    },
+    {
+      "source": "TFT Challenger",
+      "sourceKind": "challenger",
+      "primarySource": "TFT Challenger",
+      "tier": "B",
       "championIds": [
         "TFT17_Blitzcrank",
         "TFT17_Fiora",
+        "TFT17_Vex",
         "TFT17_Shen",
-        "TFT17_Aatrox",
         "TFT17_Akali",
+        "TFT17_Aatrox",
         "TFT17_Graves",
-        "TFT17_Nunu",
-        "TFT17_Vex"
+        "TFT17_Nunu"
       ],
       "champions": [
         "Blitzcrank",
         "Fiora",
+        "Vex",
         "Shen",
-        "Aatrox",
         "Akali",
+        "Aatrox",
         "Graves",
-        "Nunu",
-        "Vex"
+        "Nunu"
       ],
-      "count": 95,
-      "avgPlace": 4.25,
-      "top4Rate": 0.547,
+      "count": 109,
+      "avgPlace": 4.04,
+      "top4Rate": 0.606,
       "winRate": 0,
-      "style": "95 jocuri · BlitzcrankUniqueTrait + FioraUniqueTrait",
+      "style": "109 jocuri · BlitzcrankUniqueTrait + FioraUniqueTrait",
       "items": {
         "TFT17_Nunu": [
           "TFT_Item_FrozenHeart",
@@ -2958,10 +2689,10 @@
         "TFT17_Fiora": [
           "TFT_Item_SteraksGage",
           "TFT_Item_GuardianAngel",
-          "TFT_Item_Bloodthirster"
+          "TFT_Item_UnstableConcoction"
         ],
         "TFT17_Blitzcrank": [
-          "TFT_Item_ThiefsGloves"
+          "TFT5_Item_ThiefsGlovesRadiant"
         ],
         "TFT17_Vex": [
           "TFT_Item_GuinsoosRageblade",
@@ -2969,8 +2700,8 @@
           "TFT_Item_MadredsBloodrazor"
         ],
         "TFT17_Graves": [
-          "TFT_Item_Deathblade",
           "TFT_Item_Quicksilver",
+          "TFT_Item_SteraksGage",
           "TFT_Item_MadredsBloodrazor"
         ]
       },
@@ -2990,59 +2721,123 @@
       "source": "TFT Challenger",
       "sourceKind": "challenger",
       "primarySource": "TFT Challenger",
-      "tier": "C",
+      "tier": "B",
       "championIds": [
-        "TFT17_Shen",
-        "TFT17_Rammus",
-        "TFT17_Corki",
-        "TFT17_Milio",
+        "TFT17_Rhaast",
+        "TFT17_Morgana",
+        "TFT17_Karma",
+        "TFT17_Illaoi",
+        "TFT17_Mordekaiser",
+        "TFT17_Galio",
+        "TFT17_Sona",
+        "TFT17_Aatrox"
+      ],
+      "champions": [
+        "Rhaast",
+        "Morgana",
+        "Karma",
+        "Illaoi",
+        "Mordekaiser",
+        "Galio",
+        "Sona",
+        "Aatrox"
+      ],
+      "count": 12,
+      "avgPlace": 4.17,
+      "top4Rate": 0.583,
+      "winRate": 0,
+      "style": "12 jocuri · MorganaUniqueTrait + RhaastUniqueTrait",
+      "items": {
+        "TFT17_Morgana": [
+          "TFT_Item_Crownguard",
+          "TFT_Item_FrozenHeart",
+          "TFT_Item_GargoyleStoneplate"
+        ],
+        "TFT17_Karma": [
+          "TFT_Item_StatikkShiv",
+          "TFT_Item_SpearOfShojin",
+          "TFT_Item_RapidFireCannon"
+        ],
+        "TFT17_Galio": [
+          "TFT_Item_GargoyleStoneplate",
+          "TFT_Item_SteraksGage",
+          "TFT7_Item_ShimmerscaleMogulsMail"
+        ],
+        "TFT17_Sona": [
+          "TFT_Item_SpearOfShojin",
+          "TFT_Item_RabadonsDeathcap",
+          "TFT_Item_Morellonomicon"
+        ]
+      },
+      "augments": [],
+      "roles": {
+        "TFT17_Morgana": "Item holder",
+        "TFT17_Karma": "Item holder",
+        "TFT17_Galio": "Item holder",
+        "TFT17_Sona": "Item holder"
+      },
+      "threeStars": [],
+      "positions": {},
+      "tips": [],
+      "sourceCount": 1
+    },
+    {
+      "source": "TFT Challenger",
+      "sourceKind": "challenger",
+      "primarySource": "TFT Challenger",
+      "tier": "B",
+      "championIds": [
         "TFT17_Fizz",
+        "TFT17_Corki",
+        "TFT17_Shen",
+        "TFT17_Milio",
+        "TFT17_Rammus",
         "TFT17_Riven",
         "TFT17_Galio",
         "TFT17_Bard"
       ],
       "champions": [
-        "Shen",
-        "Rammus",
-        "Corki",
-        "Milio",
         "Fizz",
+        "Corki",
+        "Shen",
+        "Milio",
+        "Rammus",
         "Riven",
         "Galio",
         "Bard"
       ],
-      "count": 22,
-      "avgPlace": 4.27,
-      "top4Rate": 0.545,
+      "count": 19,
+      "avgPlace": 4.0,
+      "top4Rate": 0.579,
       "winRate": 0,
-      "style": "22 jocuri · Astronaut + ShenUniqueTrait",
+      "style": "19 jocuri · Astronaut + ShenUniqueTrait",
       "items": {
-        "TFT17_Milio": [
-          "TFT_Item_Morellonomicon",
-          "TFT_Item_RapidFireCannon",
-          "TFT_Item_SpearOfShojin"
-        ],
         "TFT17_Rammus": [
+          "TFT_Item_WarmogsArmor",
           "TFT_Item_GargoyleStoneplate",
-          "TFT_Item_Crownguard",
-          "TFT_Item_WarmogsArmor"
+          "TFT_Item_Crownguard"
         ],
         "TFT17_Corki": [
           "TFT_Item_Deathblade",
           "TFT_Item_LastWhisper",
-          "TFT17_Item_AssassinTraitEmblemItem"
+          "TFT_Item_PowerGauntlet"
+        ],
+        "TFT17_Galio": [
+          "TFT_Item_NightHarvester",
+          "TFT_Item_RedBuff",
+          "TFT_Item_SteraksGage"
         ],
         "TFT17_Riven": [
-          "TFT_Item_Bloodthirster",
           "TFT_Item_SteraksGage",
-          "TFT17_Item_ResistTankEmblemItem"
+          "TFT_Item_Quicksilver",
+          "TFT_Item_Bloodthirster"
         ]
       },
       "augments": [],
       "roles": {
-        "TFT17_Milio": "Item holder",
         "TFT17_Rammus": "Item holder",
         "TFT17_Corki": "Item holder",
+        "TFT17_Galio": "Item holder",
         "TFT17_Riven": "Item holder"
       },
       "threeStars": [],
@@ -3056,65 +2851,279 @@
       "primarySource": "TFT Challenger",
       "tier": "C",
       "championIds": [
-        "TFT17_Graves",
-        "TFT17_Fiora",
-        "TFT17_Akali",
-        "TFT17_Maokai",
-        "TFT17_TahmKench",
-        "TFT17_Shen",
-        "TFT17_Aatrox",
-        "TFT17_Rhaast"
+        "TFT17_Blitzcrank",
+        "TFT17_Sona",
+        "TFT17_Illaoi",
+        "TFT17_Mordekaiser",
+        "TFT17_Karma",
+        "TFT17_Bard",
+        "TFT17_Nunu",
+        "TFT17_Vex"
       ],
       "champions": [
-        "Graves",
-        "Fiora",
-        "Akali",
-        "Maokai",
-        "TahmKench",
-        "Shen",
-        "Aatrox",
-        "Rhaast"
+        "Blitzcrank",
+        "Sona",
+        "Illaoi",
+        "Mordekaiser",
+        "Karma",
+        "Bard",
+        "Nunu",
+        "Vex"
       ],
-      "count": 12,
-      "avgPlace": 4.58,
-      "top4Rate": 0.5,
+      "count": 79,
+      "avgPlace": 4.28,
+      "top4Rate": 0.57,
       "winRate": 0,
-      "style": "12 jocuri · FioraUniqueTrait + GravesTrait",
+      "style": "79 jocuri · BlitzcrankUniqueTrait + SonaUniqueTrait",
       "items": {
-        "TFT17_TahmKench": [
+        "TFT17_Bard": [
+          "TFT_Item_JeweledGauntlet",
+          "TFT_Item_PowerGauntlet",
+          "TFT_Item_StatikkShiv"
+        ],
+        "TFT17_Blitzcrank": [
+          "TFT_Item_ThiefsGloves"
+        ],
+        "TFT17_Sona": [
+          "TFT_Item_SpearOfShojin",
+          "TFT_Item_StatikkShiv",
+          "TFT_Item_Morellonomicon"
+        ],
+        "TFT17_Nunu": [
           "TFT_Item_FrozenHeart",
           "TFT_Item_WarmogsArmor",
-          "TFT_Item_AdaptiveHelm"
+          "TFT_Item_GargoyleStoneplate"
         ],
-        "TFT17_Fiora": [
-          "TFT_Item_GuardianAngel",
-          "TFT_Item_SteraksGage",
-          "TFT_Item_MadredsBloodrazor"
-        ],
-        "TFT17_Graves": [
-          "TFT_Item_Quicksilver",
-          "TFT_Item_MadredsBloodrazor",
-          "TFT_Item_Deathblade"
-        ],
-        "TFT17_Shen": [
-          "TFT_Item_ThiefsGloves"
+        "TFT17_Vex": [
+          "TFT_Item_GuinsoosRageblade",
+          "TFT_Item_JeweledGauntlet",
+          "TFT_Item_RapidFireCannon"
         ]
       },
       "augments": [],
       "roles": {
+        "TFT17_Bard": "Item holder",
+        "TFT17_Sona": "Item holder",
+        "TFT17_Nunu": "Item holder",
+        "TFT17_Vex": "Item holder"
+      },
+      "threeStars": [],
+      "positions": {},
+      "tips": [],
+      "sourceCount": 1
+    },
+    {
+      "source": "TFT Challenger",
+      "sourceKind": "challenger",
+      "primarySource": "TFT Challenger",
+      "tier": "C",
+      "championIds": [
+        "TFT17_Chogath",
+        "TFT17_Mordekaiser",
+        "TFT17_Jhin",
+        "TFT17_Karma",
+        "TFT17_Kaisa",
+        "TFT17_Lissandra",
+        "TFT17_Pantheon",
+        "TFT17_TahmKench"
+      ],
+      "champions": [
+        "Chogath",
+        "Mordekaiser",
+        "Jhin",
+        "Karma",
+        "Kaisa",
+        "Lissandra",
+        "Pantheon",
+        "TahmKench"
+      ],
+      "count": 43,
+      "avgPlace": 4.6,
+      "top4Rate": 0.512,
+      "winRate": 0,
+      "style": "43 jocuri · DarkStar + JhinUniqueTrait",
+      "items": {
+        "TFT17_Chogath": [
+          "TFT_Item_WarmogsArmor",
+          "TFT_Item_Redemption",
+          "TFT_Item_FrozenHeart"
+        ],
+        "TFT17_Karma": [
+          "TFT_Item_StatikkShiv",
+          "TFT_Item_Morellonomicon",
+          "TFT_Item_JeweledGauntlet"
+        ],
+        "TFT17_TahmKench": [
+          "TFT_Item_GargoyleStoneplate",
+          "TFT_Item_Crownguard",
+          "TFT_Item_FrozenHeart"
+        ],
+        "TFT17_Jhin": [
+          "TFT_Item_InfinityEdge",
+          "TFT_Item_MadredsBloodrazor",
+          "TFT_Item_LastWhisper"
+        ],
+        "TFT17_Lissandra": [
+          "TFT_Item_JeweledGauntlet",
+          "TFT_Item_SpearOfShojin",
+          "TFT_Item_RabadonsDeathcap"
+        ]
+      },
+      "augments": [],
+      "roles": {
+        "TFT17_Chogath": "3-star",
+        "TFT17_Karma": "Item holder",
         "TFT17_TahmKench": "Item holder",
-        "TFT17_Fiora": "Item holder",
+        "TFT17_Jhin": "Item holder",
+        "TFT17_Lissandra": "3-star"
+      },
+      "threeStars": [
+        "TFT17_Lissandra",
+        "TFT17_Chogath"
+      ],
+      "positions": {},
+      "tips": [],
+      "sourceCount": 1
+    },
+    {
+      "source": "TFT Challenger",
+      "sourceKind": "challenger",
+      "primarySource": "TFT Challenger",
+      "tier": "B",
+      "championIds": [
+        "TFT17_Graves",
+        "TFT17_Blitzcrank",
+        "TFT17_Nunu",
+        "TFT17_Mordekaiser",
+        "TFT17_Illaoi",
+        "TFT17_Bard",
+        "TFT17_Sona",
+        "TFT17_TahmKench"
+      ],
+      "champions": [
+        "Graves",
+        "Blitzcrank",
+        "Nunu",
+        "Mordekaiser",
+        "Illaoi",
+        "Bard",
+        "Sona",
+        "TahmKench"
+      ],
+      "count": 12,
+      "avgPlace": 4.17,
+      "top4Rate": 0.5,
+      "winRate": 0,
+      "style": "12 jocuri · BlitzcrankUniqueTrait + GravesTrait",
+      "items": {
+        "TFT17_Nunu": [
+          "TFT_Item_FrozenHeart",
+          "TFT_Item_WarmogsArmor",
+          "TFT17_Item_Artifact_ThreshLantern"
+        ],
+        "TFT17_Bard": [
+          "TFT_Item_JeweledGauntlet",
+          "TFT_Item_RabadonsDeathcap",
+          "TFT_Item_HextechGunblade"
+        ],
+        "TFT17_Blitzcrank": [
+          "TFT_Item_ThiefsGloves"
+        ],
+        "TFT17_Sona": [
+          "TFT_Item_StatikkShiv",
+          "TFT_Item_RapidFireCannon",
+          "TFT_Item_Morellonomicon"
+        ],
+        "TFT17_Graves": [
+          "TFT_Item_MadredsBloodrazor",
+          "TFT_Item_Deathblade",
+          "TFT_Item_Quicksilver"
+        ]
+      },
+      "augments": [],
+      "roles": {
+        "TFT17_Nunu": "Item holder",
+        "TFT17_Bard": "Item holder",
+        "TFT17_Sona": "Item holder",
         "TFT17_Graves": "Item holder"
       },
       "threeStars": [],
       "positions": {},
       "tips": [],
       "sourceCount": 1
+    },
+    {
+      "source": "TFT Challenger",
+      "sourceKind": "challenger",
+      "primarySource": "TFT Challenger",
+      "tier": "C",
+      "championIds": [
+        "TFT17_MissFortune",
+        "TFT17_Rhaast",
+        "TFT17_Aatrox",
+        "TFT17_Maokai",
+        "TFT17_Urgot",
+        "TFT17_Ornn",
+        "TFT17_Belveth",
+        "TFT17_Kindred"
+      ],
+      "champions": [
+        "MissFortune",
+        "Rhaast",
+        "Aatrox",
+        "Maokai",
+        "Urgot",
+        "Ornn",
+        "Belveth",
+        "Kindred"
+      ],
+      "count": 28,
+      "avgPlace": 4.68,
+      "top4Rate": 0.5,
+      "winRate": 0,
+      "style": "28 jocuri · MissFortuneUniqueTrait + RhaastUniqueTrait",
+      "items": {
+        "TFT17_MissFortune": [
+          "TFT_Item_InfinityEdge",
+          "TFT_Item_GuinsoosRageblade",
+          "TFT_Item_Deathblade"
+        ],
+        "TFT17_Maokai": [
+          "TFT_Item_Redemption",
+          "TFT_Item_FrozenHeart",
+          "TFT_Item_RedBuff"
+        ],
+        "TFT17_Urgot": [
+          "TFT_Item_Quicksilver",
+          "TFT_Item_SteraksGage",
+          "TFT_Item_MadredsBloodrazor"
+        ],
+        "TFT17_Ornn": [
+          "TFT_Item_GargoyleStoneplate",
+          "TFT_Item_WarmogsArmor",
+          "TFT_Item_Redemption"
+        ]
+      },
+      "augments": [],
+      "roles": {
+        "TFT17_MissFortune": "3-star",
+        "TFT17_Maokai": "Item holder",
+        "TFT17_Urgot": "3-star",
+        "TFT17_Ornn": "3-star"
+      },
+      "threeStars": [
+        "TFT17_MissFortune",
+        "TFT17_Urgot",
+        "TFT17_Ornn"
+      ],
+      "positions": {},
+      "tips": [],
+      "sourceCount": 1
     }
   ],
-  "scannedMatches": 186,
+  "scannedMatches": 180,
   "region": "kr",
   "patchVersion": "17.5",
   "patchStartTime": 1781071200,
-  "scrapedAt": 1781567820816
+  "scrapedAt": 1781584328277
 }
