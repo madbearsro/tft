@@ -340,6 +340,24 @@ function rankedBucket(group) {
   return group['1100'] ?? group[1100] ?? group.RANKED ?? group.ranked ?? group
 }
 
+function extractActionCandidates(...sources) {
+  const seen = new Set()
+  const out = []
+  const push = value => {
+    if (!value || seen.has(value)) return
+    seen.add(value)
+    out.push(value)
+  }
+  push(OPGG_MATCH_ACTION)
+  for (const source of sources) {
+    const text = String(source ?? '')
+    for (const match of text.matchAll(/\b[a-f0-9]{40}\b/gi)) push(match[0])
+    for (const match of text.matchAll(/"actionId"\s*:\s*"([a-f0-9]{40})"/gi)) push(match[1])
+    for (const match of text.matchAll(/"id"\s*:\s*"([a-f0-9]{40})"/gi)) push(match[1])
+  }
+  return out.slice(0, 16)
+}
+
 function withRscParam(url, value = 'tfthelper') {
   const target = new URL(url)
   target.searchParams.set('_rsc', value)
@@ -646,13 +664,18 @@ async function fetchProfileWithFallbacks(player, summoner, debugActionBody) {
   if (!profileRes) return null
   const profileHtml = await profileRes.text()
   const profile = parseProfile(profileHtml, player.slug)
+  const actionCandidates = extractActionCandidates(profileHtml)
 
   if (!profile.matches?.length) {
     const rscHeaders = { 'Accept': 'text/x-component', 'RSC': '1', 'Next-Router-Prefetch': '1' }
     for (const rscUrl of [withRscParam(profileUrl), withRscParam(baseProfileUrl)]) {
       const rscRes = await safeFetch(rscUrl, rscHeaders)
       if (!rscRes) continue
-      const rscProfile = parseProfile(await rscRes.text(), player.slug)
+      const rscText = await rscRes.text()
+      const rscProfile = parseProfile(rscText, player.slug)
+      extractActionCandidates(rscText).forEach(action => {
+        if (!actionCandidates.includes(action)) actionCandidates.push(action)
+      })
       if (rscProfile.matches?.length) { profile.matches = rscProfile.matches; break }
     }
   }
@@ -671,19 +694,25 @@ async function fetchProfileWithFallbacks(player, summoner, debugActionBody) {
     ].filter(Boolean)
 
     for (const body of bodies) {
-      const extraHeaders = {
-        'Accept': 'text/x-component',
-        'Content-Type': 'text/plain;charset=UTF-8',
-        'Next-Action': OPGG_MATCH_ACTION,
-        'Next-Router-State-Tree': buildNextRouterStateTree(player.region, player.slug),
-        'Origin': 'https://op.gg',
-        'Referer': baseProfileUrl,
-        'Cookie': `_tft_rs=%22${player.region}%22`,
+      for (const actionId of actionCandidates) {
+        const extraHeaders = {
+          'Accept': 'text/x-component',
+          'Content-Type': 'text/plain;charset=UTF-8',
+          'Next-Action': actionId,
+          'Next-Router-State-Tree': buildNextRouterStateTree(player.region, player.slug),
+          'Origin': 'https://op.gg',
+          'Referer': baseProfileUrl,
+          'Cookie': `_tft_rs=%22${player.region}%22`,
+        }
+        const actionRes = await safePost(baseProfileUrl, body, extraHeaders)
+        if (!actionRes?.ok) continue
+        const actionProfile = parseProfile(await actionRes.text(), player.slug)
+        if (actionProfile.matches?.length) {
+          profile.matches = actionProfile.matches
+          break
+        }
       }
-      const actionRes = await safePost(baseProfileUrl, body, extraHeaders)
-      if (!actionRes?.ok) continue
-      const actionProfile = parseProfile(await actionRes.text(), player.slug)
-      if (actionProfile.matches?.length) { profile.matches = actionProfile.matches; break }
+      if (profile.matches?.length) break
     }
   }
 
@@ -822,6 +851,12 @@ async function collect() {
 
   const matchSummary = `${scannedMatches} meciuri, ${challengerComps.length} comps, ${profiles.length} profile`
   console.log(`[challenger] Salvat: ${outPath} (${matchSummary})`)
+  console.log(
+    `[challenger] Debug: profilesWithMatches=${debug.profilesWithMatches}, ` +
+    `matchStatOnly=${debug.profilesWithMatchStatOnly}, ` +
+    `withoutData=${debug.profilesWithoutMatchData}, ` +
+    `uniqueMatchIds=${allMatchIds.size}`
+  )
 
   if (scannedMatches === 0 && aggregateMatches === 0) {
     await sendDiscord(`⚠️ **TFT Collector** [${REGION.toUpperCase()}]: 0 meciuri gasite. Hash-ul OP.GG Next-Action s-a schimbat probabil.\n\`OPGG_MATCH_ACTION = '${OPGG_MATCH_ACTION}'\``)
