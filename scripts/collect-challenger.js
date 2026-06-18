@@ -658,17 +658,37 @@ function mergeTrait(target, trait) {
 
 async function fetchProfileWithFallbacks(player, summoner, debugActionBody) {
   const baseProfileUrl = `https://op.gg/tft/summoners/${player.region}/${player.slug}`
-  const profileUrl = `${baseProfileUrl}/matches?queueType=RANKED_TFT`
+  const legacyMatchesUrl = `${baseProfileUrl}/matches`
+  const rankedMatchesUrl = `${baseProfileUrl}/matches?queueType=RANKED_TFT`
+  const profileCandidates = [legacyMatchesUrl, rankedMatchesUrl, baseProfileUrl]
+  let profile = null
+  let actionCandidates = []
 
-  const profileRes = await safeFetch(profileUrl)
-  if (!profileRes) return null
-  const profileHtml = await profileRes.text()
-  const profile = parseProfile(profileHtml, player.slug)
-  const actionCandidates = extractActionCandidates(profileHtml)
+  for (const candidateUrl of profileCandidates) {
+    const profileRes = await safeFetch(candidateUrl)
+    if (!profileRes) continue
+    const profileHtml = await profileRes.text()
+    const parsed = parseProfile(profileHtml, player.slug)
+    const candidates = extractActionCandidates(profileHtml)
+    for (const actionId of candidates) {
+      if (!actionCandidates.includes(actionId)) actionCandidates.push(actionId)
+    }
+    if (!profile) profile = parsed
+    if (parsed.matches?.length || parsed.matchStat || parsed.summoner?.puuid) {
+      profile = parsed
+      break
+    }
+  }
+
+  if (!profile) return null
 
   if (!profile.matches?.length) {
     const rscHeaders = { 'Accept': 'text/x-component', 'RSC': '1', 'Next-Router-Prefetch': '1' }
-    for (const rscUrl of [withRscParam(profileUrl), withRscParam(baseProfileUrl)]) {
+    for (const rscUrl of [
+      withRscParam(legacyMatchesUrl),
+      withRscParam(rankedMatchesUrl),
+      withRscParam(baseProfileUrl),
+    ]) {
       const rscRes = await safeFetch(rscUrl, rscHeaders)
       if (!rscRes) continue
       const rscText = await rscRes.text()
@@ -701,7 +721,7 @@ async function fetchProfileWithFallbacks(player, summoner, debugActionBody) {
           'Next-Action': actionId,
           'Next-Router-State-Tree': buildNextRouterStateTree(player.region, player.slug),
           'Origin': 'https://op.gg',
-          'Referer': baseProfileUrl,
+          'Referer': rankedMatchesUrl,
           'Cookie': `_tft_rs=%22${player.region}%22`,
         }
         const actionRes = await safePost(baseProfileUrl, body, extraHeaders)
