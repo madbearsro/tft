@@ -16,7 +16,9 @@ const REGION = getArg('region', 'euw')
 const SET    = Number(getArg('set', '17'))
 const LIMIT  = Number(getArg('limit', '30'))
 const DATA_DIR_ARG = getArg('data-dir', null)
-const CONCURRENCY = 4
+const CONCURRENCY = 1
+const FETCH_RETRIES = 4
+const BASE_RETRY_MS = 1800
 
 const DISCORD_WEBHOOK = process.env.DISCORD_WEBHOOK
 
@@ -37,33 +39,71 @@ const HEADERS = {
   'Accept-Language': 'en-US,en;q=0.9',
 }
 
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms))
+}
+
+function withJitter(ms) {
+  return ms + Math.floor(Math.random() * 350)
+}
+
 async function safeFetch(url, extraHeaders = {}) {
-  try {
-    const r = await fetch(url, {
-      headers: { ...HEADERS, ...extraHeaders },
-      signal: AbortSignal.timeout(12000),
-    })
-    if (!r.ok) { console.warn(`[opgg] ${url} -> ${r.status}`); return null }
-    return r
-  } catch (e) {
-    console.warn(`[opgg] ${url} -> ${e.message}`)
-    return null
+  for (let attempt = 0; attempt <= FETCH_RETRIES; attempt++) {
+    try {
+      const r = await fetch(url, {
+        headers: { ...HEADERS, ...extraHeaders },
+        signal: AbortSignal.timeout(12000),
+      })
+      if (r.status === 429) {
+        if (attempt === FETCH_RETRIES) {
+          console.warn(`[opgg] ${url} -> 429`)
+          return null
+        }
+        await sleep(withJitter(BASE_RETRY_MS * Math.pow(2, attempt)))
+        continue
+      }
+      if (!r.ok) { console.warn(`[opgg] ${url} -> ${r.status}`); return null }
+      await sleep(withJitter(450))
+      return r
+    } catch (e) {
+      if (attempt === FETCH_RETRIES) {
+        console.warn(`[opgg] ${url} -> ${e.message}`)
+        return null
+      }
+      await sleep(withJitter(BASE_RETRY_MS * Math.pow(2, attempt)))
+    }
   }
+  return null
 }
 
 async function safePost(url, body, extraHeaders = {}) {
-  try {
-    const r = await fetch(url, {
-      method: 'POST',
-      headers: { ...HEADERS, ...extraHeaders },
-      body,
-      signal: AbortSignal.timeout(12000),
-    })
-    return r
-  } catch (e) {
-    console.warn(`[opgg] POST ${url} -> ${e.message}`)
-    return null
+  for (let attempt = 0; attempt <= FETCH_RETRIES; attempt++) {
+    try {
+      const r = await fetch(url, {
+        method: 'POST',
+        headers: { ...HEADERS, ...extraHeaders },
+        body,
+        signal: AbortSignal.timeout(12000),
+      })
+      if (r.status === 429) {
+        if (attempt === FETCH_RETRIES) {
+          console.warn(`[opgg] POST ${url} -> 429`)
+          return null
+        }
+        await sleep(withJitter(BASE_RETRY_MS * Math.pow(2, attempt)))
+        continue
+      }
+      await sleep(withJitter(450))
+      return r
+    } catch (e) {
+      if (attempt === FETCH_RETRIES) {
+        console.warn(`[opgg] POST ${url} -> ${e.message}`)
+        return null
+      }
+      await sleep(withJitter(BASE_RETRY_MS * Math.pow(2, attempt)))
+    }
   }
+  return null
 }
 
 async function runBatched(items, fn, concurrency) {
@@ -554,7 +594,7 @@ function mergeTrait(target, trait) {
 
 async function fetchProfileWithFallbacks(player, summoner, debugActionBody) {
   const baseProfileUrl = `https://op.gg/tft/summoners/${player.region}/${player.slug}`
-  const profileUrl = `${baseProfileUrl}/matches`
+  const profileUrl = `${baseProfileUrl}/matches?queueType=RANKED_TFT`
 
   const profileRes = await safeFetch(profileUrl)
   if (!profileRes) return null
