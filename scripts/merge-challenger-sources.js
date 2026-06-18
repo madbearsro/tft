@@ -232,10 +232,21 @@ function mergeData() {
     process.exit(0)
   }
 
+  const compDatasets = datasets.filter(data =>
+    Array.isArray(data.rawComps)
+    && data.rawComps.length > 0
+    && (
+      (Array.isArray(data.matchIds) && data.matchIds.length > 0)
+      || Number(data.scannedMatches ?? 0) > 0
+      || data.hasIndividualMatches === true
+      || data.sources?.riot
+    )
+  )
+
   const matchIds = new Set()
   const rawCompByMatch = new Map()
 
-  for (const data of datasets) {
+  for (const data of compDatasets) {
     for (const matchId of data.matchIds ?? []) {
       if (matchId) matchIds.add(matchId)
     }
@@ -251,11 +262,11 @@ function mergeData() {
   const challengerComps = aggregateComps(rawComps)
   const scannedMatches = matchIds.size > 0
     ? matchIds.size
-    : datasets.reduce((sum, data) => sum + Number(data.scannedMatches ?? 0), 0)
+    : compDatasets.reduce((sum, data) => sum + Number(data.scannedMatches ?? 0), 0)
 
   const merged = {
     sources: {
-      api: datasets.some(data => data.sources?.riot),
+      api: compDatasets.some(data => data.sources?.riot),
       opgg: datasets.some(data => data.source === 'op.gg' || data.sources?.opgg),
       merged: true,
     },
@@ -268,6 +279,9 @@ function mergeData() {
     uniqueMatchIds: matchIds.size,
     matchIds: [...matchIds],
     rawComps,
+    compRegions: compDatasets
+      .map(data => data.region)
+      .filter(Boolean),
     scannedProfiles: datasets.reduce((sum, data) => sum + Number(data.scannedProfiles ?? 0), 0),
     profiles: mergeProfiles(datasets),
     source: 'merged',

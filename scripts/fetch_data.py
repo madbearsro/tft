@@ -16,6 +16,8 @@ import requests
 SET_NUM = os.environ.get("TFT_SET", "17")
 RIOT_KEY = os.environ.get("RIOT_API_KEY", "")
 REGION = os.environ.get("TFT_REGION", "kr")
+OUTPUT_REGION = os.environ.get("TFT_REGION_ALIAS", REGION)
+CHALLENGER_ONLY = os.environ.get("TFT_CHALLENGER_ONLY", "") == "1"
 
 REGIONAL = {
     "euw1": "europe", "eune1": "europe", "tr1": "europe", "ru": "europe",
@@ -651,7 +653,7 @@ def fetch_matches_and_analyze():
 
     # Save challenger-{region}-{set}.json
     save(
-        f"challenger-{REGION}-{SET_NUM}.json",
+        f"challenger-{OUTPUT_REGION}-{SET_NUM}.json",
         {
             "sources": {"riot": True},
             "unitStats": unit_output,
@@ -661,7 +663,7 @@ def fetch_matches_and_analyze():
             "matchIds": sorted(unique_match_ids),
             "rawComps": raw_comps,
             "scannedMatches": analyzed,
-            "region": REGION,
+            "region": OUTPUT_REGION,
             "patchVersion": patch_version,
             "patchStartTime": patch_start,
             "scrapedAt": int(time.time() * 1000),
@@ -746,20 +748,22 @@ def fetch_locale(data, lang):
 if __name__ == "__main__":
     print(f"=== TFT Set {SET_NUM} data fetch ({REGION.upper()}) ===\n")
 
-    print("Downloading CDragon en_us...")
-    data_en = fetch_cdragon("en_us")
-
-    print("Downloading CDragon ro_ro...")
-    data_ro = fetch_cdragon("ro_ro")
-
-    if not data_en:
-        print("FATAL: CDragon en_us unavailable")
-        sys.exit(1)
-
     fetch_matches_and_analyze()
-    fetch_augments_and_artifacts(data_en)
-    fetch_locale(data_ro, "ro")
-    fetch_locale(data_en, "en")
+
+    if not CHALLENGER_ONLY:
+        print("Downloading CDragon en_us...")
+        data_en = fetch_cdragon("en_us")
+
+        print("Downloading CDragon ro_ro...")
+        data_ro = fetch_cdragon("ro_ro")
+
+        if not data_en:
+            print("FATAL: CDragon en_us unavailable")
+            sys.exit(1)
+
+        fetch_augments_and_artifacts(data_en)
+        fetch_locale(data_ro, "ro")
+        fetch_locale(data_en, "en")
 
     print()
     if errors:
