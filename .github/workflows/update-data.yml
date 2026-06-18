@@ -2,8 +2,12 @@ name: Update TFT Data
 
 on:
   schedule:
-    - cron: '0 * * * *'     # la fiecare ora
-  workflow_dispatch:          # sau manual din UI
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: tft-update-data-main
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -18,6 +22,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Node
         uses: actions/setup-node@v4
@@ -46,14 +52,15 @@ jobs:
 
       - name: Commit & push
         run: |
-          git config user.name  "github-actions[bot]"
+          git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/
           if git diff --staged --quiet; then
-            echo "Nicio modificare — skip commit"
+            echo "No changes detected, skipping commit"
           else
             git commit -m "chore: update TFT data [$(date -u '+%Y-%m-%d %H:%M UTC')]"
-            git push
+            git pull --rebase origin main
+            git push origin main
           fi
 
       - name: Notificare Discord
@@ -67,17 +74,12 @@ jobs:
           if [ "$STATUS" = "success" ]; then
             COLOR=3066993
             MSG="Date TFT actualizate cu succes"
-            ICON="✅"
+            ICON="OK"
           else
             COLOR=15158332
             MSG="Eroare la actualizarea datelor TFT"
-            ICON="❌"
+            ICON="FAIL"
           fi
           curl -sf -X POST "$DISCORD_WEBHOOK" \
             -H "Content-Type: application/json" \
-            -d "{\"embeds\":[{
-              \"title\":\"TFT Helper — Data Update\",
-              \"description\":\"$ICON $MSG\",
-              \"color\":$COLOR,
-              \"footer\":{\"text\":\"$(date -u '+%Y-%m-%d %H:%M UTC')\"}
-            }]}"
+            -d "{\"embeds\":[{\"title\":\"TFT Helper - Data Update\",\"description\":\"$ICON $MSG\",\"color\":$COLOR,\"footer\":{\"text\":\"$(date -u '+%Y-%m-%d %H:%M UTC')\"}}]}"

@@ -346,14 +346,22 @@ function processMatchHistory(matches, patchStartMs, setNum) {
       traitMap[name].total++
     }
     if (isNew) {
-      const champIds = units.map(u => u.characterId).filter(id => id?.startsWith(`TFT${setNum}_`))
+      const champIds = [...new Set(
+        units
+          .map(u => u.characterId)
+          .filter(id => id?.startsWith(`TFT${setNum}_`))
+      )].sort()
       if (champIds.length >= 4) {
         const items = {}
+        const threeStars = []
         for (const unit of units) {
+          const unitId = unit.characterId
+          const tier = Number(unit.tier ?? unit.starLevel ?? unit.stars ?? unit.unitTier ?? 0)
+          if (unitId?.startsWith(`TFT${setNum}_`) && tier >= 3) threeStars.push(unitId)
           const validItems = (unit.itemNames ?? []).filter(Boolean)
-          if (validItems.length > 0) items[unit.characterId] = validItems
+          if (validItems.length > 0) items[unitId] = validItems
         }
-        rawComps.push({ championIds: champIds.slice().sort(), placement, items })
+        rawComps.push({ championIds: champIds, placement, items, threeStars: [...new Set(threeStars)].sort() })
       }
     }
   }
@@ -364,23 +372,56 @@ function aggregateComps(allRawComps) {
   const compMap = {}
   for (const comp of allRawComps) {
     const key = comp.championIds.join(',')
-    if (!compMap[key]) compMap[key] = { championIds: comp.championIds, placements: [], allItems: {} }
+    if (!compMap[key]) compMap[key] = { championIds: comp.championIds, placements: [], itemStats: {}, threeStarStats: {} }
     compMap[key].placements.push(comp.placement)
     for (const [champId, items] of Object.entries(comp.items ?? {})) {
-      if (!compMap[key].allItems[champId]) compMap[key].allItems[champId] = {}
+      if (!compMap[key].itemStats[champId]) {
+        compMap[key].itemStats[champId] = { itemCounts: {}, matchesWithItems: 0, totalItems: 0, maxItems: 0 }
+      }
+      compMap[key].itemStats[champId].matchesWithItems++
+      compMap[key].itemStats[champId].totalItems += items.length
+      compMap[key].itemStats[champId].maxItems = Math.max(compMap[key].itemStats[champId].maxItems, items.length)
       for (const item of items) {
-        compMap[key].allItems[champId][item] = (compMap[key].allItems[champId][item] ?? 0) + 1
+        compMap[key].itemStats[champId].itemCounts[item] = (compMap[key].itemStats[champId].itemCounts[item] ?? 0) + 1
       }
     }
+    for (const champId of comp.threeStars ?? []) {
+      compMap[key].threeStarStats[champId] = (compMap[key].threeStarStats[champId] ?? 0) + 1
+    }
   }
-  const rawAggregates = Object.values(compMap).map(c => {
+  return Object.values(compMap)
+    .filter(c => c.placements.length >= 2)
+    .map(c => {
     const total = c.placements.length
     const top4 = c.placements.filter(p => p <= 4).length
     const avgPlace = c.placements.reduce((s, p) => s + p, 0) / total
     const items = {}
-    for (const [champId, itemCounts] of Object.entries(c.allItems)) {
-      const top = Object.entries(itemCounts).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([i]) => i)
-      if (top.length) items[champId] = top
+    const roles = {}
+    const threeStars = Object.entries(c.threeStarStats)
+      .filter(([, count]) => count >= 2 && count / total >= 0.2)
+      .sort((a, b) => b[1] - a[1])
+      .map(([champId]) => champId)
+      .slice(0, 3)
+    const holders = Object.entries(c.itemStats)
+      .map(([champId, stat]) => {
+        const coverage = stat.matchesWithItems / total
+        const avgItems = stat.totalItems / stat.matchesWithItems
+        const score = stat.matchesWithItems * 10 + stat.totalItems * 3 + stat.maxItems * 8 + coverage * 25
+        return { champId, stat, coverage, avgItems, score }
+      })
+      .filter(({ stat, coverage, avgItems }) =>
+        stat.matchesWithItems >= 2 && (coverage >= 0.18 || avgItems >= 2.4 || stat.maxItems >= 3)
+      )
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 3)
+
+    for (const { champId, stat, avgItems } of holders) {
+      const top = Object.entries(stat.itemCounts).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([i]) => i)
+      if (!top.length) continue
+      items[champId] = top
+      roles[champId] = threeStars.includes(champId)
+        ? '3-star'
+        : (avgItems >= 2.5 ? 'Carry' : 'Item holder')
     }
     return {
       championIds: c.championIds,
@@ -390,15 +431,19 @@ function aggregateComps(allRawComps) {
       avgPlace,
       winRate: c.placements.filter(p => p === 1).length / total,
       items,
-      roles: {}, threeStars: [], augments: [], positions: {}, tips: [],
+      roles,
+      threeStars,
+      augments: [], positions: {}, tips: [],
       source: 'op.gg', primarySource: 'op.gg', sourceKind: 'challenger', sourceCount: 1,
       style: `${total} jocuri OP.GG Challenger`,
       tier: top4 / total >= 0.6 ? 'S' : top4 / total >= 0.4 ? 'A' : 'B',
     }
   })
-  const repeated = rawAggregates.filter(c => c.count >= 2)
-  return (repeated.length >= 8 ? repeated : rawAggregates)
-    .sort((a, b) => b.count - a.count)
+    .sort((a, b) => (
+      b.count - a.count
+      || (b.top4Rate ?? 0) - (a.top4Rate ?? 0)
+      || (a.avgPlace ?? 9) - (b.avgPlace ?? 9)
+    ))
     .slice(0, 30)
 }
 

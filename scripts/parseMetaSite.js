@@ -940,6 +940,42 @@ function isTftChampionId(value) {
     && !value.includes('_Augment_')
 }
 
+function isPlayableChampionId(value) {
+  return isTftChampionId(value) && !/(?:Summon|Minion|Relic)$/i.test(value)
+}
+
+function cleanChampionIds(championIds = []) {
+  return [...new Set(
+    championIds
+      .filter(isPlayableChampionId)
+  )]
+}
+
+function championNameFromId(id) {
+  return id.replace(/^TFT\d+_/i, '').replace(/([a-z])([A-Z])/g, '$1 $2')
+}
+
+function normalizeCompRecord(comp) {
+  const championIds = cleanChampionIds(comp?.championIds ?? [])
+  if (championIds.length < 4) return null
+
+  const allowed = new Set(championIds)
+  const filterMap = (value) => Object.fromEntries(
+    Object.entries(value ?? {}).filter(([key]) => allowed.has(key))
+  )
+  const filterList = (value) => (value ?? []).filter(id => allowed.has(id))
+
+  return {
+    ...comp,
+    championIds,
+    champions: championIds.map(championNameFromId),
+    items: filterMap(comp?.items),
+    positions: filterMap(comp?.positions),
+    roles: filterMap(comp?.roles),
+    threeStars: filterList(comp?.threeStars),
+  }
+}
+
 function isTftItemId(value) {
   return typeof value === 'string'
     && /^TFT\d*_Item_/i.test(value)
@@ -1047,7 +1083,10 @@ function buildMetaTftRoleData(rawComp, unitIds) {
 }
 
 export function combineComps(compLists) {
-  const all = compLists.flat().filter(c => c.championIds?.length >= 4 || c.champions?.length >= 4)
+  const all = compLists
+    .flat()
+    .map(normalizeCompRecord)
+    .filter(c => c && (c.championIds?.length >= 4 || c.champions?.length >= 4))
   if (all.length === 0) return []
 
   const annotated = all.map((comp, idx) => {
@@ -1068,7 +1107,7 @@ export function combineComps(compLists) {
     let tier = comp.tier ?? inferTier(avgPlace)
     if (sources.length >= 2 && tier === 'A') tier = 'S'
 
-    return {
+    return normalizeCompRecord({
       ...comp,
       name: comp.name ?? comp.style ?? comp.champions?.slice(0, 2).join(' + ') ?? 'Meta comp',
       tier,
@@ -1087,10 +1126,10 @@ export function combineComps(compLists) {
       roles: comp.roles ?? {},
       sourceUrl: comp.sourceUrl ?? null,
       style: comp.style ?? (comp.count > 0 ? `avg #${avgPlace.toFixed(1)}` : 'curated'),
-    }
+    })
   })
 
-  return annotated.sort((a, b) => {
+  return annotated.filter(Boolean).sort((a, b) => {
     if (b.sourceCount !== a.sourceCount) return b.sourceCount - a.sourceCount
     if ((b.count ?? 0) !== (a.count ?? 0)) return (b.count ?? 0) - (a.count ?? 0)
     return (a.avgPlace ?? 9) - (b.avgPlace ?? 9)
