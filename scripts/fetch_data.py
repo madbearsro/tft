@@ -274,12 +274,15 @@ def fetch_matches_and_analyze():
     analyzed = 0
     skipped = 0
     debug_printed = False
+    raw_comps = []
+    unique_match_ids = set()
 
     for match_id in list(match_ids)[:200]:
         try:
             match = riot_get(
                 f"https://{REGIONAL}.api.riotgames.com/tft/match/v1/matches/{match_id}"
             )
+            unique_match_ids.add(match_id)
             info = match.get("info", {})
 
             queue_id = info.get("queue_id")
@@ -326,6 +329,33 @@ def fetch_matches_and_analyze():
                         and not is_pve_unit(u.get("character_id", ""))
                     )
                 ]
+
+                champion_ids = sorted({
+                    u.get("character_id", "")
+                    for u in playable_units
+                    if u.get("character_id", "")
+                })
+                if len(champion_ids) >= 4:
+                    comp_items = {}
+                    comp_three_stars = []
+                    for unit in playable_units:
+                        uid = unit.get("character_id", "")
+                        if not uid:
+                            continue
+                        tier = unit.get("tier") or unit.get("star_level") or unit.get("rarity") or 0
+                        if int(tier or 0) >= 3:
+                            comp_three_stars.append(uid)
+                        item_names = unit.get("item_names") or unit.get("itemNames") or []
+                        item_names = [i for i in item_names if i]
+                        if item_names:
+                            comp_items[uid] = item_names
+                    raw_comps.append({
+                        "matchId": match_id,
+                        "championIds": champion_ids,
+                        "placement": placement,
+                        "items": comp_items,
+                        "threeStars": sorted(set(comp_three_stars)),
+                    })
 
                 # ── Trait-based comp key ────────────────────────────────────
                 traits_data = p.get("traits", [])
@@ -628,6 +658,8 @@ def fetch_matches_and_analyze():
             "traitStats": trait_output,
             "augmentStats": augment_output[:50],
             "challengerComps": challenger_comps,
+            "matchIds": sorted(unique_match_ids),
+            "rawComps": raw_comps,
             "scannedMatches": analyzed,
             "region": REGION,
             "patchVersion": patch_version,

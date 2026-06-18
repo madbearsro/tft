@@ -305,10 +305,13 @@ function parseProfile(html, slug) {
 }
 
 function processMatchHistory(matches, patchStartMs, setNum) {
-  const unitMap = {}, traitMap = {}, rawComps = []
+  const unitMap = {}, traitMap = {}, rawComps = [], matchIds = []
   let counted = 0
   for (const match of matches) {
     const isNew = !!(match.info && match.summary && match.metadata?.matchId)
+    const matchId = isNew
+      ? (match.metadata?.matchId ?? '')
+      : (match.match_id ?? match.id ?? '')
     const ts = isNew
       ? Number(match.info.gameCreation ?? 0)
       : (match.created_at ? new Date(match.created_at).getTime() : Number(match.game_datetime ?? 0))
@@ -327,6 +330,7 @@ function processMatchHistory(matches, patchStartMs, setNum) {
       ? Math.min(Math.max(Number(match.summary.placement ?? 8), 1), 8)
       : Math.min(Math.max(Number((match.participants ?? [])[0]?.placement ?? 8), 1), 8)
     if (!isNew && !(match.participants ?? [])[0]) continue
+    if (matchId) matchIds.push(matchId)
     counted++
     const placementIdx = placement - 1
     for (const unit of units) {
@@ -361,11 +365,11 @@ function processMatchHistory(matches, patchStartMs, setNum) {
           const validItems = (unit.itemNames ?? []).filter(Boolean)
           if (validItems.length > 0) items[unitId] = validItems
         }
-        rawComps.push({ championIds: champIds, placement, items, threeStars: [...new Set(threeStars)].sort() })
+        rawComps.push({ matchId, championIds: champIds, placement, items, threeStars: [...new Set(threeStars)].sort() })
       }
     }
   }
-  return { unitMap, traitMap, counted, rawComps }
+  return { unitMap, traitMap, counted, rawComps, matchIds: [...new Set(matchIds)] }
 }
 
 function aggregateComps(allRawComps) {
@@ -534,6 +538,7 @@ async function collect() {
   const aggregateUnits = {}, aggregateTraits = {}
   const profiles = []
   const allRawComps = []
+  const allMatchIds = new Set()
   let scannedMatches = 0, usedIndividualMatches = 0, aggregateMatches = 0, aggregateProfiles = 0
 
   async function processPlayer(player) {
@@ -549,8 +554,9 @@ async function collect() {
       })
 
       if (profile.matches?.length > 0) {
-        const { unitMap, traitMap, counted, rawComps } = processMatchHistory(profile.matches, patchStartMs, SET)
+        const { unitMap, traitMap, counted, rawComps, matchIds } = processMatchHistory(profile.matches, patchStartMs, SET)
         scannedMatches += counted
+        matchIds.forEach(id => allMatchIds.add(id))
         if (counted > 0) {
           usedIndividualMatches++
           for (const stat of Object.values(unitMap)) mergeUnit(units, stat)
@@ -618,6 +624,8 @@ async function collect() {
     aggregateUsed: scannedMatches === 0 && aggregateMatches > 0,
     hasIndividualMatches: usedIndividualMatches > 0,
     individualProfiles: usedIndividualMatches,
+    matchIds: [...allMatchIds],
+    rawComps: allRawComps,
     patchStartMs,
     unitStats,
     traitStats,

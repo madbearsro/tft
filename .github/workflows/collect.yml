@@ -75,6 +75,9 @@ jobs:
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
 
+      - name: Merge challenger sources
+        run: node scripts/merge-challenger-sources.js --set 17 --data-dir data
+
       - name: Commit
         run: |
           git config user.name  "github-actions[bot]"

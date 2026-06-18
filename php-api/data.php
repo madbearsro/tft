@@ -7,7 +7,10 @@ $set    = intval($_GET['set'] ?? 17);
 $allowed = ['euw', 'na', 'kr', 'br', 'eune', 'jp', 'lan', 'las', 'oce', 'ru', 'tr'];
 if (!in_array($region, $allowed)) sendError('Invalid region', 400);
 
-$raw = fetchFromGithub("challenger-{$region}-{$set}.json");
+$raw = fetchFromGithub("challenger-merged-{$set}.json");
+if ($raw === null) {
+    $raw = fetchFromGithub("challenger-{$region}-{$set}.json");
+}
 if ($raw === null) sendError('Challenger data not available yet');
 
 $data = json_decode($raw, true);
@@ -16,7 +19,8 @@ if (!$data) sendError('Date invalide');
 $strip_top = ['source', 'sources', 'patchStartTime', 'profiles',
               'hasIndividualMatches', 'individualProfiles', 'aggregateUsed',
               'aggregateMatches', 'aggregateProfiles', 'opggScannedMatches',
-              'opggAggregateMatches', 'opggAggregateProfiles', 'opggScannedProfiles'];
+              'opggAggregateMatches', 'opggAggregateProfiles', 'opggScannedProfiles',
+              'matchIds', 'rawComps', 'regions'];
 foreach ($strip_top as $key) unset($data[$key]);
 
 $strip_comp = ['source', 'primarySource', 'sourceKind', 'sourceCount', 'sources'];
