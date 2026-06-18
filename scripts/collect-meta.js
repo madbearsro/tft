@@ -204,7 +204,7 @@ async function collect() {
   let comps = []
   if (sources.length >= 2) {
     comps = combineComps(sources)
-    console.log(`[meta] Combinat: ${comps.length} comps (${comps.filter(c => c.sourceCount >= 2).length} confirmate)`)
+    console.log(`[meta] Combinat: ${comps.length} comps (${comps.filter(c => c.metaConfirmed || c.sourceCount >= 2).length} confirmate)`)
   } else if (sources.length === 1) {
     comps = sources[0]
   } else {
@@ -221,7 +221,7 @@ async function collect() {
       academy: academyComps.length,
       opgg: opggComps.length,
     },
-    confirmedCount: comps.filter(c => c.sourceCount >= 2).length,
+    confirmedCount: comps.filter(c => c.metaConfirmed || c.sourceCount >= 2).length,
     updatedAt: new Date().toISOString(),
     scrapedAt: Date.now(),
   }

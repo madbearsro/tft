@@ -933,6 +933,95 @@ function jaccard(a, b) {
   return inter / (sa.size + sb.size - inter)
 }
 
+function overlapDetails(a, b) {
+  const aIds = a.championIds?.length ? a.championIds : []
+  const bIds = b.championIds?.length ? b.championIds : []
+  const aSet = new Set(aIds)
+  const bSet = new Set(bIds)
+  const overlap = aIds.filter(id => bSet.has(id)).length
+  const minSize = Math.max(1, Math.min(aSet.size || aIds.length || 1, bSet.size || bIds.length || 1))
+  const maxSize = Math.max(1, Math.max(aSet.size || aIds.length || 1, bSet.size || bIds.length || 1))
+  return {
+    overlap,
+    minSize,
+    maxSize,
+    ratio: overlap / minSize,
+    unionRatio: overlap / maxSize,
+  }
+}
+
+function mergeObjectMaps(group, key) {
+  const counts = {}
+  for (const comp of group) {
+    for (const [champId, value] of Object.entries(comp?.[key] ?? {})) {
+      if (!counts[champId]) counts[champId] = new Map()
+      const rawList = Array.isArray(value) ? value : [value]
+      rawList.filter(Boolean).forEach(entry => {
+        counts[champId].set(entry, (counts[champId].get(entry) ?? 0) + 1)
+      })
+    }
+  }
+  const out = {}
+  for (const [champId, stat] of Object.entries(counts)) {
+    const merged = [...stat.entries()].sort((a, b) => b[1] - a[1]).map(([value]) => value)
+    if (merged.length > 0) out[champId] = key === 'roles' ? merged[0] : merged.slice(0, 3)
+  }
+  return out
+}
+
+function mergeStringLists(group, key, max = 6) {
+  const counts = new Map()
+  const values = new Map()
+  for (const comp of group) {
+    for (const value of comp?.[key] ?? []) {
+      const label = typeof value === 'string' ? value : value?.name
+      if (!label) continue
+      const normalized = label.toLowerCase().replace(/\s+/g, ' ').trim()
+      counts.set(normalized, (counts.get(normalized) ?? 0) + 1)
+      if (!values.has(normalized)) values.set(normalized, value)
+    }
+  }
+  return [...counts.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .map(([key]) => values.get(key))
+    .slice(0, max)
+}
+
+function mergePositions(group) {
+  const byChamp = {}
+  for (const comp of group) {
+    for (const [champId, pos] of Object.entries(comp?.positions ?? {})) {
+      const row = Number(pos?.row)
+      const col = Number(pos?.col)
+      if (!Number.isFinite(row) || !Number.isFinite(col)) continue
+      const key = `${row}:${col}`
+      if (!byChamp[champId]) byChamp[champId] = {}
+      byChamp[champId][key] = (byChamp[champId][key] ?? 0) + 1
+    }
+  }
+  const out = {}
+  for (const [champId, positions] of Object.entries(byChamp)) {
+    const best = Object.entries(positions).sort((a, b) => b[1] - a[1])[0]?.[0]
+    if (!best) continue
+    const [row, col] = best.split(':').map(Number)
+    out[champId] = { row, col }
+  }
+  return out
+}
+
+function pickPrimaryComp(group) {
+  function score(comp) {
+    return (comp.sourceCount ?? 1) * 20
+      + ((comp.count ?? 0) > 0 ? Math.min(20, Math.log10((comp.count ?? 0) + 1) * 8) : 0)
+      + (Object.keys(comp.items ?? {}).length > 0 ? 10 : 0)
+      + (Object.keys(comp.positions ?? {}).length > 0 ? 8 : 0)
+      + ((comp.augments ?? []).length > 0 ? 7 : 0)
+      + ((comp.tips ?? []).length > 0 ? 5 : 0)
+      + ((comp.avgPlace ?? 5) > 0 ? Math.max(0, 10 - Number(comp.avgPlace ?? 5)) : 0)
+  }
+  return [...group].sort((a, b) => score(b) - score(a))[0]
+}
+
 function isTftChampionId(value) {
   return typeof value === 'string'
     && /^TFT\d+_[A-Za-z0-9]+$/.test(value)
@@ -1090,46 +1179,60 @@ export function combineComps(compLists) {
   if (all.length === 0) return []
 
   const annotated = all.map((comp, idx) => {
-    const similar = all.filter((other, otherIdx) => otherIdx !== idx && jaccard(comp, other) >= 0.65)
+    const similar = all.filter((other, otherIdx) => {
+      if (otherIdx === idx) return false
+      const overlap = overlapDetails(comp, other)
+      return overlap.ratio >= 0.72 || (overlap.ratio >= 0.6 && overlap.overlap >= 6)
+    })
     const group = [comp, ...similar]
     const sources = [...new Set(group.map(c => c.source).filter(Boolean))]
+    const primary = pickPrimaryComp(group)
+    const avgJaccard = group.length <= 1
+      ? 1
+      : group
+          .filter(other => other !== primary)
+          .reduce((sum, other) => sum + jaccard(primary, other), 0) / (group.length - 1)
     const statComps = group.filter(c => c.count > 0 && Number.isFinite(Number(c.avgPlace)))
-    const avgPlace = comp.count > 0 && comp.avgPlace
-      ? Number(comp.avgPlace)
+    const avgPlace = primary.count > 0 && primary.avgPlace
+      ? Number(primary.avgPlace)
       : statComps.length > 0
         ? statComps.reduce((sum, c) => sum + Number(c.avgPlace), 0) / statComps.length
-        : Number(comp.avgPlace ?? 4.0)
+        : Number(primary.avgPlace ?? 4.0)
     const top4Values = statComps.map(c => Number(c.top4Rate)).filter(Number.isFinite)
-    const top4Rate = comp.top4Rate || (top4Values.length > 0
+    const top4Rate = primary.top4Rate || (top4Values.length > 0
       ? top4Values.reduce((sum, value) => sum + value, 0) / top4Values.length
       : 0)
 
-    let tier = comp.tier ?? inferTier(avgPlace)
+    let tier = primary.tier ?? inferTier(avgPlace)
     if (sources.length >= 2 && tier === 'A') tier = 'S'
 
     return normalizeCompRecord({
-      ...comp,
-      name: comp.name ?? comp.style ?? comp.champions?.slice(0, 2).join(' + ') ?? 'Meta comp',
+      ...primary,
+      name: primary.name ?? primary.style ?? primary.champions?.slice(0, 2).join(' + ') ?? 'Meta comp',
       tier,
       avgPlace,
       top4Rate,
-      count: comp.count ?? 0,
-      source: comp.source,
+      count: Math.max(...group.map(c => c.count ?? 0), primary.count ?? 0),
+      source: primary.source,
       sources,
       sourceCount: sources.length,
-      primarySource: comp.source,
-      items: comp.items ?? {},
-      positions: comp.positions ?? {},
-      augments: (comp.augments ?? []).slice(0, 6),
-      tips: dedupeTips(comp.tips ?? []),
-      threeStars: comp.threeStars ?? [],
-      roles: comp.roles ?? {},
-      sourceUrl: comp.sourceUrl ?? null,
-      style: comp.style ?? (comp.count > 0 ? `avg #${avgPlace.toFixed(1)}` : 'curated'),
+      primarySource: primary.source,
+      metaSources: sources,
+      metaConfirmed: sources.length >= 2,
+      matchConfidence: Number(avgJaccard.toFixed(3)),
+      items: mergeObjectMaps(group, 'items'),
+      positions: mergePositions(group),
+      augments: mergeStringLists(group, 'augments', 6),
+      tips: dedupeTips(group.flatMap(c => c.tips ?? []), 6),
+      threeStars: mergeStringLists(group, 'threeStars', 4),
+      roles: mergeObjectMaps(group, 'roles'),
+      sourceUrl: primary.sourceUrl ?? null,
+      style: primary.style ?? (primary.count > 0 ? `avg #${avgPlace.toFixed(1)}` : 'curated'),
     })
   })
 
   return annotated.filter(Boolean).sort((a, b) => {
+    if ((b.metaConfirmed ? 1 : 0) !== (a.metaConfirmed ? 1 : 0)) return (b.metaConfirmed ? 1 : 0) - (a.metaConfirmed ? 1 : 0)
     if (b.sourceCount !== a.sourceCount) return b.sourceCount - a.sourceCount
     if ((b.count ?? 0) !== (a.count ?? 0)) return (b.count ?? 0) - (a.count ?? 0)
     return (a.avgPlace ?? 9) - (b.avgPlace ?? 9)
