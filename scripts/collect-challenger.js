@@ -304,37 +304,122 @@ function parseProfile(html, slug) {
   return { slug, summoner, matchStat, matches }
 }
 
+function getMatchId(match) {
+  return match?.metadata?.matchId
+    ?? match?.match_id
+    ?? match?.id
+    ?? ''
+}
+
+function getMatchTimestamp(match, isNew) {
+  if (isNew) {
+    return Number(
+      match?.info?.gameCreation
+      ?? match?.info?.game_creation
+      ?? match?.gameCreation
+      ?? 0
+    )
+  }
+  return match?.created_at
+    ? new Date(match.created_at).getTime()
+    : Number(match?.game_datetime ?? match?.gameCreation ?? 0)
+}
+
+function getQueueId(match, isNew) {
+  if (isNew) {
+    return Number(
+      match?.info?.queueId
+      ?? match?.info?.queue_id
+      ?? match?.queueId
+      ?? 0
+    )
+  }
+  return Number(match?.queue_id ?? match?.queueId ?? match?.game_type ?? match?.queue_type ?? 0)
+}
+
+function getMatchSet(match, isNew) {
+  if (isNew) {
+    return Number(
+      match?.info?.tftSetNumber
+      ?? match?.info?.tft_set_number
+      ?? match?.tftSetNumber
+      ?? match?.set_number
+      ?? 0
+    )
+  }
+  return Number(match?.tft_set_number ?? match?.set_number ?? 0)
+}
+
+function getUnits(match, isNew) {
+  if (isNew) {
+    return match?.summary?.units
+      ?? match?.info?.participants?.[0]?.units
+      ?? match?.participants?.[0]?.units
+      ?? []
+  }
+  return match?.participants?.[0]?.units ?? []
+}
+
+function getTraits(match, isNew) {
+  if (isNew) {
+    return match?.summary?.traits
+      ?? match?.info?.participants?.[0]?.traits
+      ?? match?.participants?.[0]?.traits
+      ?? []
+  }
+  return match?.participants?.[0]?.traits ?? []
+}
+
+function getPlacement(match, isNew) {
+  const value = isNew
+    ? (
+      match?.summary?.placement
+      ?? match?.info?.participants?.[0]?.placement
+      ?? match?.participants?.[0]?.placement
+      ?? 8
+    )
+    : (match?.participants?.[0]?.placement ?? 8)
+  return Math.min(Math.max(Number(value ?? 8), 1), 8)
+}
+
+function getUnitId(unit) {
+  return unit?.characterId ?? unit?.character_id ?? unit?.id ?? unit?.apiName ?? ''
+}
+
+function getUnitTier(unit) {
+  return Number(unit?.tier ?? unit?.starLevel ?? unit?.stars ?? unit?.rarity ?? unit?.unitTier ?? 0)
+}
+
+function getUnitItems(unit) {
+  return unit?.itemNames ?? unit?.item_names ?? unit?.items ?? []
+}
+
 function processMatchHistory(matches, patchStartMs, setNum) {
   const unitMap = {}, traitMap = {}, rawComps = [], matchIds = []
   let counted = 0
   for (const match of matches) {
     const isNew = !!(match.info && match.summary && match.metadata?.matchId)
-    const matchId = isNew
-      ? (match.metadata?.matchId ?? '')
-      : (match.match_id ?? match.id ?? '')
-    const ts = isNew
-      ? Number(match.info.gameCreation ?? 0)
-      : (match.created_at ? new Date(match.created_at).getTime() : Number(match.game_datetime ?? 0))
+    const matchId = getMatchId(match)
+    const ts = getMatchTimestamp(match, isNew)
     if (!ts || ts < patchStartMs) continue
+    const queueId = getQueueId(match, isNew)
     if (isNew) {
-      if (Number(match.info.queueId) !== 1100) continue
+      if (queueId && ![1100, 1090, 1130].includes(queueId)) continue
     } else {
       const gt = match.game_type ?? match.queue_type ?? ''
       if (gt && gt !== 'ranked' && String(gt) !== '1100') continue
     }
-    const matchSet = isNew ? match.info.tftSetNumber : (match.tft_set_number ?? match.set_number)
+    const matchSet = getMatchSet(match, isNew)
     if (matchSet && Number(matchSet) !== setNum) continue
-    const units = isNew ? (match.summary.units ?? []) : ((match.participants ?? [])[0]?.units ?? [])
-    const traits = isNew ? (match.summary.traits ?? []) : ((match.participants ?? [])[0]?.traits ?? [])
-    const placement = isNew
-      ? Math.min(Math.max(Number(match.summary.placement ?? 8), 1), 8)
-      : Math.min(Math.max(Number((match.participants ?? [])[0]?.placement ?? 8), 1), 8)
+    const units = getUnits(match, isNew)
+    const traits = getTraits(match, isNew)
+    const placement = getPlacement(match, isNew)
     if (!isNew && !(match.participants ?? [])[0]) continue
     if (matchId) matchIds.push(matchId)
     counted++
     const placementIdx = placement - 1
     for (const unit of units) {
-      const id = isNew ? unit.characterId : (unit.id ?? unit.character_id ?? unit.apiName)
+      const id = getUnitId(unit)
       if (!id || !id.startsWith(`TFT${setNum}_`)) continue
       if (!unitMap[id]) unitMap[id] = { apiName: id, placement: Array(8).fill(0), total: 0 }
       unitMap[id].placement[placementIdx]++
@@ -352,17 +437,17 @@ function processMatchHistory(matches, patchStartMs, setNum) {
     if (isNew) {
       const champIds = [...new Set(
         units
-          .map(u => u.characterId)
+          .map(getUnitId)
           .filter(id => id?.startsWith(`TFT${setNum}_`))
       )].sort()
       if (champIds.length >= 4) {
         const items = {}
         const threeStars = []
         for (const unit of units) {
-          const unitId = unit.characterId
-          const tier = Number(unit.tier ?? unit.starLevel ?? unit.stars ?? unit.unitTier ?? 0)
+          const unitId = getUnitId(unit)
+          const tier = getUnitTier(unit)
           if (unitId?.startsWith(`TFT${setNum}_`) && tier >= 3) threeStars.push(unitId)
-          const validItems = (unit.itemNames ?? []).filter(Boolean)
+          const validItems = getUnitItems(unit).filter(Boolean)
           if (validItems.length > 0) items[unitId] = validItems
         }
         rawComps.push({ matchId, championIds: champIds, placement, items, threeStars: [...new Set(threeStars)].sort() })

@@ -70,7 +70,7 @@ jobs:
           node-version: '20'
 
       - name: Collect EUW
-        run: node scripts/collect-challenger.js --region euw --set 17 --limit 30 --data-dir data
+        run: node scripts/collect-challenger.js --region euw --set 17 --limit 80 --data-dir data
         continue-on-error: true
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
