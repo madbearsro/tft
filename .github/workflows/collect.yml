@@ -1,4 +1,4 @@
-name: Collect TFT Meta & Challenger
+name: Collect TFT Meta
 
 on:
   schedule:
@@ -65,35 +65,9 @@ jobs:
           path: data/
           if-no-files-found: ignore
 
-  collect-challenger:
-    name: Challenger EUW
-    needs: collect-patch
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Collect EUW
-        run: node scripts/collect-challenger.js --region euw --set 17 --limit 10 --data-dir data
-        continue-on-error: true
-        env:
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-
-      - name: Upload Challenger Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: challenger-data
-          path: data/
-          if-no-files-found: ignore
-
   commit-data:
     name: Commit Data
-    needs: [collect-patch, collect-meta, collect-challenger]
+    needs: [collect-patch, collect-meta]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -109,9 +83,6 @@ jobs:
         with:
           path: data
           merge-multiple: true
-
-      - name: Merge challenger sources
-        run: node scripts/merge-challenger-sources.js --set 17 --data-dir data
 
       - name: Commit
         run: |

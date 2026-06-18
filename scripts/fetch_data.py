@@ -204,10 +204,10 @@ def fetch_matches_and_analyze():
     # Patch start time
     patch_start, patch_version = fetch_patch_start_time()
     if patch_start:
-        print(f"  Using patch start: {datetime.utcfromtimestamp(patch_start).strftime('%Y-%m-%d %H:%M UTC')}")
+        print(f"  Using patch start: {datetime.fromtimestamp(patch_start, timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}")
     else:
         patch_start = last_wednesday_epoch()
-        print(f"  Fallback to last Wednesday: {datetime.utcfromtimestamp(patch_start).strftime('%Y-%m-%d %H:%M UTC')}")
+        print(f"  Fallback to last Wednesday: {datetime.fromtimestamp(patch_start, timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}")
 
     # Challenger
     print(f"Fetching Challenger {REGION.upper()}...")
