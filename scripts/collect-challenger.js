@@ -217,7 +217,7 @@ function extractBalancedArrayFrom(text, start) {
 
 function findMatchArray(value) {
   if (!Array.isArray(value)) return null
-  if (value.length > 0 && value.every(item => item?.metadata?.matchId && item?.info && item?.summary)) return value
+  if (value.length > 0 && value.every(isMatchLike)) return value
   for (const item of value) {
     if (Array.isArray(item)) {
       const found = findMatchArray(item)
@@ -232,9 +232,39 @@ function findMatchArray(value) {
   return null
 }
 
+function isMatchLike(match) {
+  if (!match || typeof match !== 'object') return false
+  const hasId = !!(match?.metadata?.matchId || match?.match_id || match?.id)
+  if (!hasId) return false
+  const hasTime = !!(
+    match?.info?.gameCreation
+    ?? match?.info?.game_creation
+    ?? match?.gameCreation
+    ?? match?.created_at
+    ?? match?.game_datetime
+  )
+  if (!hasTime) return false
+  return !!(
+    match?.summary
+    || match?.info?.participants?.length
+    || match?.participants?.length
+    || match?.units?.length
+  )
+}
+
 function tryParseMatchArray(raw) {
-  if (!raw || raw.indexOf('"metadata"') === -1 || raw.indexOf('"matchId"') === -1) return null
-  if (raw.indexOf('"gameCreation"') === -1 || raw.indexOf('"summary"') === -1) return null
+  if (!raw || raw.indexOf('"matchId"') === -1) return null
+  if (
+    raw.indexOf('"gameCreation"') === -1
+    && raw.indexOf('"game_creation"') === -1
+    && raw.indexOf('"created_at"') === -1
+    && raw.indexOf('"game_datetime"') === -1
+  ) return null
+  if (
+    raw.indexOf('"summary"') === -1
+    && raw.indexOf('"participants"') === -1
+    && raw.indexOf('"units"') === -1
+  ) return null
   try { return findMatchArray(JSON.parse(raw)) } catch { return null }
 }
 
@@ -337,7 +367,7 @@ function parseProfile(html, slug) {
   if (!matches) {
     const matchesRaw = extractBalancedArray(decoded, '"matches":')
     try { if (matchesRaw) matches = JSON.parse(matchesRaw) } catch { matches = null }
-    if (!Array.isArray(matches) || !matches[0]?.participants) matches = null
+    if (!Array.isArray(matches) || !matches.length) matches = null
   }
   const matchStatRaw = extractBalancedObject(decoded, '"matchStat"')
   let matchStat = null
@@ -396,35 +426,45 @@ function getMatchSet(match, isNew) {
   return Number(match?.tft_set_number ?? match?.set_number ?? 0)
 }
 
-function getUnits(match, isNew) {
+function getParticipant(match, profilePuuid) {
+  const participants = match?.info?.participants ?? match?.participants ?? []
+  if (!Array.isArray(participants) || participants.length === 0) return null
+  if (profilePuuid) {
+    const byPuuid = participants.find(p => p?.puuid === profilePuuid || p?.summonerPuuid === profilePuuid)
+    if (byPuuid) return byPuuid
+  }
+  return participants[0]
+}
+
+function getUnits(match, isNew, profilePuuid) {
+  const participant = getParticipant(match, profilePuuid)
   if (isNew) {
     return match?.summary?.units
-      ?? match?.info?.participants?.[0]?.units
-      ?? match?.participants?.[0]?.units
+      ?? participant?.units
       ?? []
   }
-  return match?.participants?.[0]?.units ?? []
+  return participant?.units ?? match?.units ?? []
 }
 
-function getTraits(match, isNew) {
+function getTraits(match, isNew, profilePuuid) {
+  const participant = getParticipant(match, profilePuuid)
   if (isNew) {
     return match?.summary?.traits
-      ?? match?.info?.participants?.[0]?.traits
-      ?? match?.participants?.[0]?.traits
+      ?? participant?.traits
       ?? []
   }
-  return match?.participants?.[0]?.traits ?? []
+  return participant?.traits ?? match?.traits ?? []
 }
 
-function getPlacement(match, isNew) {
+function getPlacement(match, isNew, profilePuuid) {
+  const participant = getParticipant(match, profilePuuid)
   const value = isNew
     ? (
       match?.summary?.placement
-      ?? match?.info?.participants?.[0]?.placement
-      ?? match?.participants?.[0]?.placement
+      ?? participant?.placement
       ?? 8
     )
-    : (match?.participants?.[0]?.placement ?? 8)
+    : (participant?.placement ?? match?.placement ?? 8)
   return Math.min(Math.max(Number(value ?? 8), 1), 8)
 }
 
@@ -440,11 +480,11 @@ function getUnitItems(unit) {
   return unit?.itemNames ?? unit?.item_names ?? unit?.items ?? []
 }
 
-function processMatchHistory(matches, patchStartMs, setNum) {
+function processMatchHistory(matches, patchStartMs, setNum, profilePuuid = '') {
   const unitMap = {}, traitMap = {}, rawComps = [], matchIds = []
   let counted = 0
   for (const match of matches) {
-    const isNew = !!(match.info && match.summary && match.metadata?.matchId)
+    const isNew = !!(match?.metadata?.matchId && (match?.info || match?.summary))
     const matchId = getMatchId(match)
     const ts = getMatchTimestamp(match, isNew)
     if (!ts || ts < patchStartMs) continue
@@ -457,10 +497,10 @@ function processMatchHistory(matches, patchStartMs, setNum) {
     }
     const matchSet = getMatchSet(match, isNew)
     if (matchSet && Number(matchSet) !== setNum) continue
-    const units = getUnits(match, isNew)
-    const traits = getTraits(match, isNew)
-    const placement = getPlacement(match, isNew)
-    if (!isNew && !(match.participants ?? [])[0]) continue
+    const units = getUnits(match, isNew, profilePuuid)
+    const traits = getTraits(match, isNew, profilePuuid)
+    const placement = getPlacement(match, isNew, profilePuuid)
+    if ((!Array.isArray(units) || units.length === 0) && (!Array.isArray(traits) || traits.length === 0)) continue
     if (matchId) matchIds.push(matchId)
     counted++
     const placementIdx = placement - 1
@@ -671,6 +711,11 @@ async function collect() {
   const allRawComps = []
   const allMatchIds = new Set()
   let scannedMatches = 0, usedIndividualMatches = 0, aggregateMatches = 0, aggregateProfiles = 0
+  const debug = {
+    profilesWithMatches: 0,
+    profilesWithMatchStatOnly: 0,
+    profilesWithoutMatchData: 0,
+  }
 
   async function processPlayer(player) {
     try {
@@ -685,7 +730,8 @@ async function collect() {
       })
 
       if (profile.matches?.length > 0) {
-        const { unitMap, traitMap, counted, rawComps, matchIds } = processMatchHistory(profile.matches, patchStartMs, SET)
+        debug.profilesWithMatches++
+        const { unitMap, traitMap, counted, rawComps, matchIds } = processMatchHistory(profile.matches, patchStartMs, SET, profile.summoner?.puuid ?? '')
         scannedMatches += counted
         matchIds.forEach(id => allMatchIds.add(id))
         if (counted > 0) {
@@ -702,11 +748,14 @@ async function collect() {
         }
         console.log(`[challenger] ${player.slug}: ${counted}/${profile.matches.length} meciuri ranked`)
       } else if (profile.matchStat) {
+        debug.profilesWithMatchStatOnly++
         const rankedMatch = rankedBucket(profile.matchStat.match)
         aggregateMatches += Number(rankedMatch.total ?? 0)
         aggregateProfiles++
         Object.values(rankedBucket(profile.matchStat.units ?? {})).forEach(u => mergeUnit(aggregateUnits, u))
         Object.values(rankedBucket(profile.matchStat.traits ?? {})).forEach(t => mergeTrait(aggregateTraits, t))
+      } else {
+        debug.profilesWithoutMatchData++
       }
     } catch (e) {
       console.warn(`[challenger] Eroare la ${player.slug}: ${e.message}`)
@@ -757,6 +806,7 @@ async function collect() {
     individualProfiles: usedIndividualMatches,
     matchIds: [...allMatchIds],
     rawComps: allRawComps,
+    debug,
     patchStartMs,
     unitStats,
     traitStats,
