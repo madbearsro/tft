@@ -32,6 +32,13 @@ jobs:
         run: node scripts/collect-patch.js --data-dir data
         continue-on-error: true
 
+      - name: Upload Patch Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: patch-data
+          path: data/
+          if-no-files-found: ignore
+
   collect-meta:
     name: Meta Comps
     needs: collect-patch
@@ -50,6 +57,13 @@ jobs:
         continue-on-error: true
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: Upload Meta Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: meta-data
+          path: data/
+          if-no-files-found: ignore
 
   collect-challenger:
     name: Challenger EUW
@@ -70,8 +84,12 @@ jobs:
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
 
-      - name: Merge challenger sources
-        run: node scripts/merge-challenger-sources.js --set 17 --data-dir data
+      - name: Upload Challenger Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: challenger-data
+          path: data/
+          if-no-files-found: ignore
 
   commit-data:
     name: Commit Data
@@ -86,21 +104,11 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Collect Patch Notes
-        run: node scripts/collect-patch.js --data-dir data
-        continue-on-error: true
-
-      - name: Collect Meta
-        run: node scripts/collect-meta.js --set 17 --data-dir data
-        continue-on-error: true
-        env:
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-
-      - name: Collect EUW
-        run: node scripts/collect-challenger.js --region euw --set 17 --limit 40 --data-dir data
-        continue-on-error: true
-        env:
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+      - name: Download Collected Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: data
+          merge-multiple: true
 
       - name: Merge challenger sources
         run: node scripts/merge-challenger-sources.js --set 17 --data-dir data
