@@ -5,6 +5,10 @@ on:
     - cron: '15 * * * *'     # la fiecare ora (la :15)
   workflow_dispatch:
 
+concurrency:
+  group: tft-collect-main
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -17,6 +21,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:
@@ -32,13 +38,15 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/patch.json
           git diff --staged --quiet || git commit -m "chore: patch notes [$(date -u '+%Y-%m-%d %H:%M UTC')]"
-          git pull --rebase && git push
+          git pull --rebase origin main && git push origin main
 
   collect-meta:
     name: Meta Comps
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:
@@ -56,7 +64,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/
           git diff --staged --quiet || git commit -m "chore: meta data [$(date -u '+%Y-%m-%d %H:%M UTC')]"
-          git pull --rebase && git push
+          git pull --rebase origin main && git push origin main
 
   collect-challenger:
     name: Challenger EUW
@@ -64,6 +72,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:
@@ -84,4 +94,4 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/
           git diff --staged --quiet || git commit -m "chore: challenger data [$(date -u '+%Y-%m-%d %H:%M UTC')]"
-          git pull --rebase && git push
+          git pull --rebase origin main && git push origin main
