@@ -32,16 +32,9 @@ jobs:
         run: node scripts/collect-patch.js --data-dir data
         continue-on-error: true
 
-      - name: Commit
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/patch.json
-          git diff --staged --quiet || git commit -m "chore: patch notes [$(date -u '+%Y-%m-%d %H:%M UTC')]"
-          git pull --rebase origin main && git push origin main
-
   collect-meta:
     name: Meta Comps
+    needs: collect-patch
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -57,14 +50,6 @@ jobs:
         continue-on-error: true
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-
-      - name: Commit
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/
-          git diff --staged --quiet || git commit -m "chore: meta data [$(date -u '+%Y-%m-%d %H:%M UTC')]"
-          git pull --rebase origin main && git push origin main
 
   collect-challenger:
     name: Challenger EUW
@@ -88,10 +73,47 @@ jobs:
       - name: Merge challenger sources
         run: node scripts/merge-challenger-sources.js --set 17 --data-dir data
 
+  commit-data:
+    name: Commit Data
+    needs: [collect-patch, collect-meta, collect-challenger]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Collect Patch Notes
+        run: node scripts/collect-patch.js --data-dir data
+        continue-on-error: true
+
+      - name: Collect Meta
+        run: node scripts/collect-meta.js --set 17 --data-dir data
+        continue-on-error: true
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: Collect EUW
+        run: node scripts/collect-challenger.js --region euw --set 17 --limit 40 --data-dir data
+        continue-on-error: true
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: Merge challenger sources
+        run: node scripts/merge-challenger-sources.js --set 17 --data-dir data
+
       - name: Commit
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/
-          git diff --staged --quiet || git commit -m "chore: challenger data [$(date -u '+%Y-%m-%d %H:%M UTC')]"
-          git pull --rebase origin main && git push origin main
+          if git diff --staged --quiet; then
+            echo "No changes detected, skipping commit"
+          else
+            git commit -m "chore: collect TFT data [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+            git pull --rebase origin main
+            git push origin main
+          fi

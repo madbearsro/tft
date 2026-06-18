@@ -310,6 +310,12 @@ function rankedBucket(group) {
   return group['1100'] ?? group[1100] ?? group.RANKED ?? group.ranked ?? group
 }
 
+function withRscParam(url, value = 'tfthelper') {
+  const target = new URL(url)
+  target.searchParams.set('_rsc', value)
+  return target.toString()
+}
+
 function parseLeaderboard(html, limit) {
   const players = []
   const seen = new Set()
@@ -603,7 +609,7 @@ async function fetchProfileWithFallbacks(player, summoner, debugActionBody) {
 
   if (!profile.matches?.length) {
     const rscHeaders = { 'Accept': 'text/x-component', 'RSC': '1', 'Next-Router-Prefetch': '1' }
-    for (const rscUrl of [`${profileUrl}?_rsc=tfthelper`, `${baseProfileUrl}?_rsc=tfthelper`]) {
+    for (const rscUrl of [withRscParam(profileUrl), withRscParam(baseProfileUrl)]) {
       const rscRes = await safeFetch(rscUrl, rscHeaders)
       if (!rscRes) continue
       const rscProfile = parseProfile(await rscRes.text(), player.slug)
