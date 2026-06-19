@@ -54,9 +54,12 @@ jobs:
 
       - name: Collect Meta
         run: node scripts/collect-meta.js --set 17 --data-dir data
-        continue-on-error: true
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+
+      - name: Validate Meta JSON
+        run: |
+          node -e "const fs=require('fs'); const path='data/meta-17.json'; const raw=fs.readFileSync(path,'utf8'); const json=JSON.parse(raw); if(!Array.isArray(json.comps)) throw new Error('meta-17.json missing comps array'); if(json.comps.length < 20) throw new Error('meta-17.json has too few comps: ' + json.comps.length); const withPositions=json.comps.filter(c=>c && c.positions && Object.keys(c.positions).length>0).length; if(withPositions < 5) throw new Error('meta-17.json has too few comps with positions: ' + withPositions); console.log(JSON.stringify({comps: json.comps.length, withPositions, confirmedCount: json.confirmedCount ?? 0, updatedAt: json.updatedAt}, null, 2));"
 
       - name: Upload Meta Artifact
         uses: actions/upload-artifact@v4
@@ -88,6 +91,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          node -e "const fs=require('fs'); const path='data/meta-17.json'; if(fs.existsSync(path)){ const json=JSON.parse(fs.readFileSync(path,'utf8')); const withPositions=(json.comps||[]).filter(c=>c && c.positions && Object.keys(c.positions).length>0).length; if((json.comps||[]).length < 20) throw new Error('Refusing commit: meta-17.json too small'); if(withPositions < 5) throw new Error('Refusing commit: meta-17.json missing positions'); console.log('Meta validation before commit OK:', JSON.stringify({comps:(json.comps||[]).length, withPositions})); }"
           git add data/
           if git diff --staged --quiet; then
             echo "No changes detected, skipping commit"
