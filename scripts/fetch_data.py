@@ -12,6 +12,7 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 import requests
+from requests import HTTPError
 
 SET_NUM = os.environ.get("TFT_SET", "17")
 RIOT_KEY = os.environ.get("RIOT_API_KEY", "")
@@ -37,6 +38,7 @@ RIOT_HEADERS = {**HEADERS, "X-Riot-Token": RIOT_KEY}
 SLEEP = 1.5
 
 errors = []
+nonfatal_errors = []
 
 # Units that start with these patterns are PvE / summons / not playable
 _PVE_RE = re.compile(
@@ -61,7 +63,15 @@ def save(filename, data):
 def riot_get(url):
     time.sleep(SLEEP)
     r = requests.get(url, headers=RIOT_HEADERS, timeout=15)
-    r.raise_for_status()
+    try:
+        r.raise_for_status()
+    except HTTPError as exc:
+        body_preview = (r.text or "")[:300]
+        raise RuntimeError(
+            f"{r.status_code} {r.reason} for url: {url} | "
+            f"token_present={bool(RIOT_KEY)} token_len={len(RIOT_KEY.strip()) if RIOT_KEY else 0} "
+            f"body={body_preview}"
+        ) from exc
     return r.json()
 
 
@@ -198,7 +208,7 @@ def last_wednesday_epoch():
 def fetch_matches_and_analyze():
     if not RIOT_KEY:
         print("  SKIP: RIOT_API_KEY not set")
-        errors.append("challenger: RIOT_API_KEY missing")
+        nonfatal_errors.append("challenger: RIOT_API_KEY missing")
         return
 
     # Patch start time
@@ -213,11 +223,11 @@ def fetch_matches_and_analyze():
     print(f"Fetching Challenger {REGION.upper()}...")
     try:
         league = riot_get(
-            f"https://{REGION}.api.riotgames.com/tft/league/v1/challenger?queue=RANKED_TFT"
+            f"https://{REGION}.api.riotgames.com/tft/league/v1/challenger"
         )
     except Exception as exc:
         print(f"  ERROR: {exc}")
-        errors.append(f"challenger: {exc}")
+        nonfatal_errors.append(f"challenger: {exc}")
         return
 
     entries = sorted(league.get("entries", []), key=lambda x: x.get("leaguePoints", 0), reverse=True)
@@ -227,7 +237,7 @@ def fetch_matches_and_analyze():
     print(f"Fetching Grandmaster {REGION.upper()}...")
     try:
         gm = riot_get(
-            f"https://{REGION}.api.riotgames.com/tft/league/v1/grandmaster?queue=RANKED_TFT"
+            f"https://{REGION}.api.riotgames.com/tft/league/v1/grandmaster"
         )
         gm_entries = sorted(gm.get("entries", []), key=lambda x: x.get("leaguePoints", 0), reverse=True)
         print(f"  {len(gm_entries)} Grandmaster players")
@@ -747,6 +757,10 @@ def fetch_locale(data, lang):
 
 if __name__ == "__main__":
     print(f"=== TFT Set {SET_NUM} data fetch ({REGION.upper()}) ===\n")
+    print(
+        f"  Riot key present: {bool(RIOT_KEY)} | "
+        f"length: {len(RIOT_KEY.strip()) if RIOT_KEY else 0}"
+    )
 
     fetch_matches_and_analyze()
 
@@ -766,9 +780,15 @@ if __name__ == "__main__":
         fetch_locale(data_en, "en")
 
     print()
-    if errors:
+    all_errors = [*errors, *nonfatal_errors]
+    if all_errors:
+        if nonfatal_errors and not errors:
+            print(f"Finished with {len(nonfatal_errors)} warning(s):")
+            for e in nonfatal_errors:
+                print(f"  - {e}")
+            sys.exit(0)
         print(f"Finished with {len(errors)} error(s):")
-        for e in errors:
+        for e in all_errors:
             print(f"  - {e}")
         sys.exit(1)
     else:
