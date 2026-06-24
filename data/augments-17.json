@@ -819,7 +819,7 @@
     "id": null,
     "apiName": "TFT17_Augment_Timebreaker_Timestream",
     "name": "Timestream",
-    "desc": "Timebreakers gain @Health@ Health and @AttackSpeed@% Attack Speed every time you reroll (including free rerolls). Gain an Ezreal and a Pantheon.<br><br>(Health: @TFTUnitProperty.:TFT17_Augment_Timebreaker_Timestream_HP@, Attack Speed: @TFTUnitProperty.:TFT17_Augment_Timebreaker_Timestream_AS*100@%)",
+    "desc": "Your team gains @TeamwideHealth@ Health. Timebreakers gain @Health@ Health and @AttackSpeed@% Attack Speed every time you reroll (including free rerolls). Gain an Ezreal and a Pantheon.<br><br>(Health: @TFTUnitProperty.:TFT17_Augment_Timebreaker_Timestream_HP@, Attack Speed: @TFTUnitProperty.:TFT17_Augment_Timebreaker_Timestream_AS*100@%)",
     "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Timestream_II.TFT_Set17_PostLaunchAugments.tex",
     "tier": null
   },
@@ -7595,7 +7595,7 @@
     "id": null,
     "apiName": "TFT_Augment_DeadlierCaps",
     "name": "Deadlier Caps",
-    "desc": "Gain a Rabadon's Deathcap. Rabadon's Deathcaps permanently gain @AP@% Ability Power whenever their holders score a takedown.",
+    "desc": "Gain a Rabadon's Deathcap. Rabadon's Deathcaps grant @ManaRegenPerHat@ Mana Regen and permanently gain @AP@% Ability Power whenever their holders score a takedown.",
     "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/DeadlierCaps_II.TFT_Set15.tex",
     "tier": null
   },
@@ -8395,7 +8395,7 @@
     "id": null,
     "apiName": "TFT7_Augment_BestFriends3",
     "name": "Best Friends III",
-    "desc": "Allies isolated in pairs gain @AS*100@% Attack Speed and @Armor@ Armor at the start of combat.",
+    "desc": "Allies isolated in pairs gain @AS*100@% Attack Speed and @Armor@ Armor and Magic Resist at the start of combat.",
     "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Best-Friends-III.tex",
     "tier": null
   },
@@ -8427,7 +8427,7 @@
     "id": null,
     "apiName": "TFT7_Augment_BestFriends2",
     "name": "Best Friends II",
-    "desc": "Allies isolated in pairs gain @AS*100@% Attack Speed and @Armor@ Armor at the start of combat.",
+    "desc": "Allies isolated in pairs gain @AS*100@% Attack Speed and @Armor@ Armor and Magic Resist at the start of combat.",
     "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Best-Friends-II.tex",
     "tier": null
   },
@@ -8451,7 +8451,7 @@
     "id": null,
     "apiName": "TFT7_Augment_BestFriends1",
     "name": "Best Friends I",
-    "desc": "Allies isolated in pairs gain @AS*100@% Attack Speed and @Armor@ Armor at the start of combat.",
+    "desc": "Allies isolated in pairs gain @AS*100@% Attack Speed and @Armor@ Armor and Magic Resist at the start of combat.",
     "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Best-Friends-I.tex",
     "tier": null
   },
@@ -8707,7 +8707,7 @@
     "id": null,
     "apiName": "TFT7_Augment_LuckyGloves",
     "name": "Lucky Gloves",
-    "desc": "Thief's Gloves will always give your champions ideal items. Gain @NumGloves@ Sparring Gloves.",
+    "desc": "Thief's Gloves will always give your champions ideal items. Gain @NumGloves@ Sparring Gloves and @Gold@ gold.",
     "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Lucky-Gloves-III.tex",
     "tier": null
   },
@@ -10571,7 +10571,7 @@
     "id": null,
     "apiName": "TFT_Augment_BirthdayReunion",
     "name": "Birthday Reunion",
-    "desc": "Gain a random 2-star 2-cost champion. When you reach Level @FirstLevelBreakpoint@, gain a Thief's Gloves. When you reach Level @SecondLevelBreakpoint@, gain a random 2-star 5-cost champion.<br><br><tftitemrules>Inkborn Fables Tactician's Crown, 2024</tftitemrules>",
+    "desc": "Gain @Gold@ gold. At Level @InitialLevelBreakpoint@, gain a random 2-star 2-cost champion. At Level @FirstLevelBreakpoint@, gain a Thief's Gloves. At Level @SecondLevelBreakpoint@, gain a random 2-star 5-cost champion.<br><br><tftitemrules>Inkborn Fables Tactician's Crown, 2024</tftitemrules>",
     "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/BirthdayReunion_II.tex",
     "tier": null
   },
@@ -10803,7 +10803,7 @@
     "id": null,
     "apiName": "TFT6_Augment_Recombobulator",
     "name": "Recombobulator",
-    "desc": "Champions on your board permanently transform into random champions 1 cost tier higher (max 5). Gain @NumRemovers@ Magnetic Removers.",
+    "desc": "Champions on your board permanently transform into random champions 1 cost tier higher (max 5). Gain @NumRemovers@ Magnetic Removers and @FreeRerolls@ rerolls.",
     "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Recombobulator-I.tex",
     "tier": null
   },
@@ -12299,7 +12299,7 @@
     "id": null,
     "apiName": "TFT_Augment_TheDarkinBlade",
     "name": "Blood Offering",
-    "desc": "Gain a Bloodthirster. Combat start: Allies holding Bloodthirsters lose @HPLossPercent*100@% Health but gain a @HPShieldPercent*100@% Health shield and @BonusAD*100@% Attack Damage. ",
+    "desc": "Gain a Bloodthirster. Combat start: Allies holding Bloodthirsters lose @HPLossPercent*100@% Health but gain a @HPShieldPercent*100@% Health shield and @BonusAD*100@% Attack Damage and Ability Power. ",
     "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/TrailofBlood_II.TFT_Set16.tex",
     "tier": null
   },

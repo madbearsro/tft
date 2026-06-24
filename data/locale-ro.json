@@ -409,7 +409,7 @@
   },
   "TFT17_Augment_Timebreaker_Timestream": {
     "name": "Flux temporal",
-    "desc": "Frângătorii timpului primesc @Health@ viață și @AttackSpeed@% viteză de atac de fiecare dată când reîncarci (inclusiv reîncărcări gratuite). Primești un Ezreal și un Pantheon.<br><br>(Viață: @TFTUnitProperty.:TFT17_Augment_Timebreaker_Timestream_HP@, viteză de atac: @TFTUnitProperty.:TFT17_Augment_Timebreaker_Timestream_AS*100@%)"
+    "desc": "Echipa ta primește @TeamwideHealth@ viață. Frângătorii timpului primesc @Health@ viață și @AttackSpeed@% viteză de atac de fiecare dată când reîncarci (inclusiv reîncărcări gratuite). Primești un Ezreal și un Pantheon.<br><br>(Viață: @TFTUnitProperty.:TFT17_Augment_Timebreaker_Timestream_HP@, viteză de atac: @TFTUnitProperty.:TFT17_Augment_Timebreaker_Timestream_AS*100@%)"
   },
   "TFT17_Augment_AurelionSolGodAugment_BoonOfResurrection": {
     "name": "Favorul resurecției",
@@ -6949,7 +6949,7 @@
   },
   "TFTEvent_5YR_Item_TraitShimmerscaleActivator": {
     "name": "Solzi sclipitori",
-    "desc": "Primești obiecte solzi sclipitori, care oferă aur și măresc puterea echipei.<br><br><row>(@TFTTrait.TFTEvent5YR_Shimmerscale.1:MinUnits@)Primești ''Toiagul alchimistului''. În etapa @TFTTrait.TFTEvent5YR_Shimmerscale.1:SecondItemStage@-@TFTTrait.TFTEvent5YR_Shimmerscale.1:SecondItemRound@, primești ''Securea lui Draven''.</row><br><row>(@TFTTrait.TFTEvent5YR_Shimmerscale.2:MinUnits@)Primești ''Coroana campionilor''.</row>"
+    "desc": "Primești obiecte solzi sclipitori, care oferă aur și măresc puterea echipei.<br><br><row>(@TFTTrait.TFTEvent5YR_Shimmerscale.1:MinUnits@) Primești ''Toiagul alchimistului''. În etapa @TFTTrait.TFTEvent5YR_Shimmerscale.1:SecondItemStage@-@TFTTrait.TFTEvent5YR_Shimmerscale.1:SecondItemRound@, primești ''Securea lui Draven''.</row><br><row>(@TFTTrait.TFTEvent5YR_Shimmerscale.2:MinUnits@) Primești ''Coroana campionilor''.</row>"
   },
   "TFTEvent_5YR_Item_TraitIxtalActivator": {
     "name": "Ixtal",
@@ -6961,7 +6961,7 @@
   },
   "TFTEvent_5YR_Item_TraitHoneymancyActivator": {
     "name": "Mieromanție",
-    "desc": "Campionii tăi primesc albine care le provoacă daune magice țintelor la fiecare @TFTTrait.TFTEvent5YR_Honeymancy:Period@ secunde. Daunele albinelor sunt în funcție de daunele provocate și suferite de campionul gazdă, plus o valoare fixă pentru fiecare albină.<br><br>Când un campion moare, lasă în urmă @TFTTrait.TFTEvent5YR_Honeymancy:NumTransfers@ albine care urmăresc campionii din apropiere pentru restul luptei.<br><br><row>(@TFTTrait.TFTEvent5YR_Honeymancy.1:MinUnits@) @TFTTrait.TFTEvent5YR_Honeymancy.1:MiniCount@ albine, @TFTTrait.TFTEvent5YR_Honeymancy.1:BonusDamage*100@% daune provocate, @TFTTrait.TFTEvent5YR_Honeymancy.1:DamageReceived*100@% daune suferite, @TFTTrait.TFTEvent5YR_Honeymancy.1:DamagePerMini@ daune per albină.</row><br><row>(@TFTTrait.TFTEvent5YR_Honeymancy.2:MinUnits@) @TFTTrait.TFTEvent5YR_Honeymancy.2:MiniCount@ albine, @TFTTrait.TFTEvent5YR_Honeymancy.2:BonusDamage*100@% daune provocate, @TFTTrait.TFTEvent5YR_Honeymancy.2:DamageReceived*100@% daune suferite, @TFTTrait.TFTEvent5YR_Honeymancy.2:DamagePerMini@ daune per albină.</row>"
+    "desc": "Echipa ta primește albine care le provoacă daune magice țintelor la fiecare @TFTTrait.TFTEvent5YR_Honeymancy:Period@ secunde. Daunele albinelor sunt în funcție de daunele provocate și suferite de gazdă, plus o valoare fixă pentru fiecare albină.<br><br>Când o unitate moare, lasă în urmă @TFTTrait.TFTEvent5YR_Honeymancy:NumTransfers@ albine care urmăresc aliații din apropiere pentru restul luptei.<br><br><row>(@TFTTrait.TFTEvent5YR_Honeymancy.1:MinUnits@) @TFTTrait.TFTEvent5YR_Honeymancy.1:MiniCount@ albine, @TFTTrait.TFTEvent5YR_Honeymancy.1:BonusDamage*100@% daune provocate, @TFTTrait.TFTEvent5YR_Honeymancy.1:DamageReceived*100@% daune suferite, @TFTTrait.TFTEvent5YR_Honeymancy.1:DamagePerMini@ daune per albină.</row><br><row>(@TFTTrait.TFTEvent5YR_Honeymancy.2:MinUnits@) @TFTTrait.TFTEvent5YR_Honeymancy.2:MiniCount@ albine, @TFTTrait.TFTEvent5YR_Honeymancy.2:BonusDamage*100@% daune provocate, @TFTTrait.TFTEvent5YR_Honeymancy.2:DamageReceived*100@% daune suferite, @TFTTrait.TFTEvent5YR_Honeymancy.2:DamagePerMini@ daune per albină.</row>"
   },
   "TFTEvent_5YR_Item_TraitConquerorActivator": {
     "name": "Cuceritor",
@@ -7053,7 +7053,7 @@
   },
   "TFTEvent_5YR_Item_TraitNitroActivator": {
     "name": "Nitro",
-    "desc": "După fiecare luptă împotriva unui jucător, campionii tăi oferă crom către R-080T, în funcție de nivelul lor de stele. Fiecare cumul de crom oferă @TFTTrait.TFTEvent5YR_Nitro.:HealthPerScrap@ viață și @TFTTrait.TFTEvent5YR_Nitro.:APPerScrap@ puterea abilităților. <br><br><row>(@TFTTrait.TFTEvent5YR_Nitro.1:MinUnits@) Invoci R-080T!</row><br><row>(@TFTTrait.TFTEvent5YR_Nitro.2:MinUnits@) Îmbunătățești R-080T în T-43X! La @TFTTrait.TFTEvent5YR_Nitro.:FourStarScrapThreshold@ crom, îmbunătățești T-43X pentru a trage cu un laser uriaș!</row><br><br><rules>Crom per stea: @TFTTrait.TFTEvent5YR_Nitro.:ScrapPerOneStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerTwoStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerThreeStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerFourStar@</rules>"
+    "desc": "După fiecare luptă împotriva unui jucător, campionii tăi oferă crom către R-080T, în funcție de nivelul lor de stele. Fiecare cumul de crom oferă @TFTTrait.TFTEvent5YR_Nitro.:HealthPerScrap@ viață și @TFTTrait.TFTEvent5YR_Nitro.:APPerScrap@ puterea abilităților. <br><br><row>(@TFTTrait.TFTEvent5YR_Nitro.1:MinUnits@) Invoci R-080T!</row><br><row>(@TFTTrait.TFTEvent5YR_Nitro.2:MinUnits@) Îmbunătățești R-080T în T-43X! La @TFTTrait.TFTEvent5YR_Nitro.:FourStarScrapThreshold@ crom, îl îmbunătățești pe T-43X ca să tragă cu un laser uriaș!</row><br><br><rules>Crom per stea: @TFTTrait.TFTEvent5YR_Nitro.:ScrapPerOneStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerTwoStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerThreeStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerFourStar@</rules>"
   },
   "TFTEvent_5YR_Item_TraitHellionActivator": {
     "name": "Năpastă",
@@ -7089,7 +7089,7 @@
   },
   "TFTEvent_5YR_Item_TraitPreserverActivator": {
     "name": "Reînnoitor",
-    "desc": "Echipa ta își reface un procentaj din viața maximă la fiecare @TFTTrait.TFTEvent5YR_Preserver.1:Duration@ secunde. Dacă un campion are viața completă, își reface mană.<br><br><row> (@TFTTrait.TFTEvent5YR_Preserver.1:MinUnits@) @TFTTrait.TFTEvent5YR_Preserver.1:HealthPct*100@% %i:scaleHealth% sau @TFTTrait.TFTEvent5YR_Preserver.1:ManaPct*100@% %i:scaleMana%.</row><br><row> (@TFTTrait.TFTEvent5YR_Preserver.2:MinUnits@) @TFTTrait.TFTEvent5YR_Preserver.2:HealthPct*100@% %i:scaleHealth% și @TFTTrait.TFTEvent5YR_Preserver.2:ManaPct*100@% %i:scaleMana%. Obții mereu ambele.</row><br><br>"
+    "desc": "Echipa ta își reface un procentaj din viața maximă la fiecare @TFTTrait.TFTEvent5YR_Preserver.1:Duration@ secunde. Dacă un campion are viața completă, își reface mană.<br><br><row>(@TFTTrait.TFTEvent5YR_Preserver.1:MinUnits@) @TFTTrait.TFTEvent5YR_Preserver.1:HealthPct*100@% %i:scaleHealth% sau @TFTTrait.TFTEvent5YR_Preserver.1:ManaPct*100@% %i:scaleMana%.</row><br><row>(@TFTTrait.TFTEvent5YR_Preserver.2:MinUnits@) @TFTTrait.TFTEvent5YR_Preserver.2:HealthPct*100@% %i:scaleHealth% și @TFTTrait.TFTEvent5YR_Preserver.2:ManaPct*100@% %i:scaleMana%. Obții mereu ambele.</row><br><br>"
   },
   "TFTEvent_5YR_Item_TraitHighRollerActivator": {
     "name": "Miză mare",
@@ -11673,7 +11673,7 @@
   },
   "TFT_Augment_DeadlierCaps": {
     "name": "Pălării mai letale",
-    "desc": "Primești o ''Pălărie malefică a lui Rabadon''. ''Pălăriile malefice ale lui Rabadon'' primesc permanent @AP@% puterea abilităților când deținătorii lor reușesc o doborâre."
+    "desc": "Primești o ''Pălărie malefică a lui Rabadon''. ''Pălăriile malefice ale lui Rabadon'' oferă @ManaRegenPerHat@ regenerare a manei și primesc permanent @AP@% puterea abilităților când deținătorii lor reușesc o doborâre."
   },
   "TFT_Augment_UnleashTheBeast": {
     "name": "Dezlănțuie bestia",
@@ -12073,7 +12073,7 @@
   },
   "TFT7_Augment_BestFriends3": {
     "name": "Cei mai buni prieteni III",
-    "desc": "Aliații izolați în perechi primesc @AS*100@% viteză de atac și @Armor@ armură la începutul luptei."
+    "desc": "Aliații izolați în perechi primesc @AS*100@% viteză de atac și @Armor@ armură și rezistență la magie la începutul luptei."
   },
   "TFT_Augment_PsychicForge": {
     "name": "Forjă parapsihică",
@@ -12089,7 +12089,7 @@
   },
   "TFT7_Augment_BestFriends2": {
     "name": "Cei mai buni prieteni II",
-    "desc": "Aliații izolați în perechi primesc @AS*100@% viteză de atac și @Armor@ armură la începutul luptei."
+    "desc": "Aliații izolați în perechi primesc @AS*100@% viteză de atac și @Armor@ armură și rezistență la magie la începutul luptei."
   },
   "TFT6_Augment_Meditation1": {
     "name": "Meditație I",
@@ -12101,7 +12101,7 @@
   },
   "TFT7_Augment_BestFriends1": {
     "name": "Cei mai buni prieteni I",
-    "desc": "Aliații izolați în perechi primesc @AS*100@% viteză de atac și @Armor@ armură la începutul luptei."
+    "desc": "Aliații izolați în perechi primesc @AS*100@% viteză de atac și @Armor@ armură și rezistență la magie la începutul luptei."
   },
   "TFT_Augment_SilverDestinyPlus": {
     "name": "Destin de argint+",
@@ -12229,7 +12229,7 @@
   },
   "TFT7_Augment_LuckyGloves": {
     "name": "Mănuși norocoase",
-    "desc": "''Mănușile tâlharului'' le vor oferi întotdeauna campionilor tăi obiecte ideale. Primești @NumGloves@ ''Mănuși de antrenament''."
+    "desc": "''Mănușile tâlharului'' le vor oferi întotdeauna campionilor tăi obiecte ideale. Primești @NumGloves@ ''Mănuși de antrenament'' și @Gold@ aur."
   },
   "TFT9_Augment_EnduranceTraining": {
     "name": "Antrenament de anduranță",
@@ -13161,7 +13161,7 @@
   },
   "TFT_Augment_BirthdayReunion": {
     "name": "Reuniune aniversară",
-    "desc": "Primești un campion aleatoriu de 2 aur și 2 stele. Când ajungi la nivelul @FirstLevelBreakpoint@, primești ''Mănușile tâlharului''. Când ajungi la nivelul @SecondLevelBreakpoint@, primești un campion aleatoriu de 5 aur și 2 stele.<br><br><tftitemrules>Tactician's Crown: Fabulele de cerneală, 2024</tftitemrules>"
+    "desc": "Primești @Gold@ aur. La nivelul @InitialLevelBreakpoint@, primești un campion aleatoriu de 2 aur și 2 stele. La nivelul @FirstLevelBreakpoint@, primești ''Mănușile tâlharului''. La nivelul @SecondLevelBreakpoint@, primești un campion aleatoriu de 5 aur și 2 stele.<br><br><tftitemrules>Tactician's Crown: Fabulele de cerneală, 2024</tftitemrules>"
   },
   "TFT11_Augment_LethalTempo": {
     "name": "Tempo letal",
@@ -13277,7 +13277,7 @@
   },
   "TFT6_Augment_Recombobulator": {
     "name": "Recombobulator",
-    "desc": "Campionii de pe tabla ta se transformă permanent în campioni aleatorii care costă cu 1 aur mai mult (până la maximum 5 aur). Primești @NumRemovers@ ''Eliminatoare magnetice''."
+    "desc": "Campionii de pe tabla ta se transformă permanent în campioni aleatorii care costă cu 1 aur mai mult (până la maximum 5 aur). Primești @NumRemovers@ ''Eliminatoare magnetice'' și @FreeRerolls@ reîncărcări."
   },
   "TFT11_Augment_OverEncumbered": {
     "name": "Costuri și beneficii",
@@ -14025,7 +14025,7 @@
   },
   "TFT_Augment_TheDarkinBlade": {
     "name": "Ofrandă de sânge",
-    "desc": "Primești o ''Sabie sângeroasă''. Începutul luptei: aliații echipați cu ''Sabia sângeroasă'' pierd @HPLossPercent*100@% viață, dar primesc un scut egal cu @HPShieldPercent*100@% viață și @BonusAD*100@% daune din atac. "
+    "desc": "Primești o ''Sabie sângeroasă''. Începutul luptei: aliații echipați cu ''Sabia sângeroasă'' pierd @HPLossPercent*100@% viață, dar primesc un scut egal cu @HPShieldPercent*100@% viață și @BonusAD*100@% daune din atac și puterea abilităților. "
   },
   "TFT6_Augment_RadiantRelics": {
     "name": "Relicve radiante",
@@ -19381,11 +19381,11 @@
   },
   "TFTEvent5YR_Shimmerscale": {
     "name": "Solzi sclipitori",
-    "desc": "Primești obiecte solzi sclipitori, care oferă aur și măresc puterea echipei.<br><br><row>(@TFTTrait.TFTEvent5YR_Shimmerscale.1:MinUnits@)Primești ''Toiagul alchimistului''. În etapa @TFTTrait.TFTEvent5YR_Shimmerscale.1:SecondItemStage@-@TFTTrait.TFTEvent5YR_Shimmerscale.1:SecondItemRound@, primești ''Securea lui Draven''.</row><br><row>(@TFTTrait.TFTEvent5YR_Shimmerscale.2:MinUnits@)Primești ''Coroana campionilor''.</row>"
+    "desc": "Primești obiecte solzi sclipitori, care oferă aur și măresc puterea echipei.<br><br><row>(@TFTTrait.TFTEvent5YR_Shimmerscale.1:MinUnits@) Primești ''Toiagul alchimistului''. În etapa @TFTTrait.TFTEvent5YR_Shimmerscale.1:SecondItemStage@-@TFTTrait.TFTEvent5YR_Shimmerscale.1:SecondItemRound@, primești ''Securea lui Draven''.</row><br><row>(@TFTTrait.TFTEvent5YR_Shimmerscale.2:MinUnits@) Primești ''Coroana campionilor''.</row>"
   },
   "TFTEvent5YR_Honeymancy": {
     "name": "Mieromanție",
-    "desc": "Campionii tăi primesc albine care le provoacă daune magice țintelor la fiecare @TFTTrait.TFTEvent5YR_Honeymancy:Period@ secunde. Daunele albinelor sunt în funcție de daunele provocate și suferite de campionul gazdă, plus o valoare fixă pentru fiecare albină.<br><br>Când un campion moare, lasă în urmă @TFTTrait.TFTEvent5YR_Honeymancy:NumTransfers@ albine care urmăresc campionii din apropiere pentru restul luptei.<br><br><row>(@TFTTrait.TFTEvent5YR_Honeymancy.1:MinUnits@) @TFTTrait.TFTEvent5YR_Honeymancy.1:MiniCount@ albine, @TFTTrait.TFTEvent5YR_Honeymancy.1:BonusDamage*100@% daune provocate, @TFTTrait.TFTEvent5YR_Honeymancy.1:DamageReceived*100@% daune suferite, @TFTTrait.TFTEvent5YR_Honeymancy.1:DamagePerMini@ daune per albină.</row><br><row>(@TFTTrait.TFTEvent5YR_Honeymancy.2:MinUnits@) @TFTTrait.TFTEvent5YR_Honeymancy.2:MiniCount@ albine, @TFTTrait.TFTEvent5YR_Honeymancy.2:BonusDamage*100@% daune provocate, @TFTTrait.TFTEvent5YR_Honeymancy.2:DamageReceived*100@% daune suferite, @TFTTrait.TFTEvent5YR_Honeymancy.2:DamagePerMini@ daune per albină.</row>"
+    "desc": "Echipa ta primește albine care le provoacă daune magice țintelor la fiecare @TFTTrait.TFTEvent5YR_Honeymancy:Period@ secunde. Daunele albinelor sunt în funcție de daunele provocate și suferite de gazdă, plus o valoare fixă pentru fiecare albină.<br><br>Când o unitate moare, lasă în urmă @TFTTrait.TFTEvent5YR_Honeymancy:NumTransfers@ albine care urmăresc aliații din apropiere pentru restul luptei.<br><br><row>(@TFTTrait.TFTEvent5YR_Honeymancy.1:MinUnits@) @TFTTrait.TFTEvent5YR_Honeymancy.1:MiniCount@ albine, @TFTTrait.TFTEvent5YR_Honeymancy.1:BonusDamage*100@% daune provocate, @TFTTrait.TFTEvent5YR_Honeymancy.1:DamageReceived*100@% daune suferite, @TFTTrait.TFTEvent5YR_Honeymancy.1:DamagePerMini@ daune per albină.</row><br><row>(@TFTTrait.TFTEvent5YR_Honeymancy.2:MinUnits@) @TFTTrait.TFTEvent5YR_Honeymancy.2:MiniCount@ albine, @TFTTrait.TFTEvent5YR_Honeymancy.2:BonusDamage*100@% daune provocate, @TFTTrait.TFTEvent5YR_Honeymancy.2:DamageReceived*100@% daune suferite, @TFTTrait.TFTEvent5YR_Honeymancy.2:DamagePerMini@ daune per albină.</row>"
   },
   "TFTEvent5YR_Phantom": {
     "name": "Fantomă",
@@ -19409,7 +19409,7 @@
   },
   "TFTEvent5YR_Preserver": {
     "name": "Reînnoitor",
-    "desc": "Echipa ta își reface un procentaj din viața maximă la fiecare @TFTTrait.TFTEvent5YR_Preserver.1:Duration@ secunde. Dacă un campion are viața completă, își reface mană.<br><br><row> (@TFTTrait.TFTEvent5YR_Preserver.1:MinUnits@) @TFTTrait.TFTEvent5YR_Preserver.1:HealthPct*100@% %i:scaleHealth% sau @TFTTrait.TFTEvent5YR_Preserver.1:ManaPct*100@% %i:scaleMana%.</row><br><row> (@TFTTrait.TFTEvent5YR_Preserver.2:MinUnits@) @TFTTrait.TFTEvent5YR_Preserver.2:HealthPct*100@% %i:scaleHealth% și @TFTTrait.TFTEvent5YR_Preserver.2:ManaPct*100@% %i:scaleMana%. Obții mereu ambele.</row><br><br>"
+    "desc": "Echipa ta își reface un procentaj din viața maximă la fiecare @TFTTrait.TFTEvent5YR_Preserver.1:Duration@ secunde. Dacă un campion are viața completă, își reface mană.<br><br><row>(@TFTTrait.TFTEvent5YR_Preserver.1:MinUnits@) @TFTTrait.TFTEvent5YR_Preserver.1:HealthPct*100@% %i:scaleHealth% sau @TFTTrait.TFTEvent5YR_Preserver.1:ManaPct*100@% %i:scaleMana%.</row><br><row>(@TFTTrait.TFTEvent5YR_Preserver.2:MinUnits@) @TFTTrait.TFTEvent5YR_Preserver.2:HealthPct*100@% %i:scaleHealth% și @TFTTrait.TFTEvent5YR_Preserver.2:ManaPct*100@% %i:scaleMana%. Obții mereu ambele.</row><br><br>"
   },
   "TFTEvent5YR_Demacia": {
     "name": "Demacia",
@@ -19433,7 +19433,7 @@
   },
   "TFTEvent5YR_Nitro": {
     "name": "Nitro",
-    "desc": "După fiecare luptă împotriva unui jucător, campionii tăi oferă crom către R-080T, în funcție de nivelul lor de stele. Fiecare cumul de crom oferă @TFTTrait.TFTEvent5YR_Nitro.:HealthPerScrap@ viață și @TFTTrait.TFTEvent5YR_Nitro.:APPerScrap@ puterea abilităților. <br><br><row>(@TFTTrait.TFTEvent5YR_Nitro.1:MinUnits@) Invoci R-080T!</row><br><row>(@TFTTrait.TFTEvent5YR_Nitro.2:MinUnits@) Îmbunătățești R-080T în T-43X! La @TFTTrait.TFTEvent5YR_Nitro.:FourStarScrapThreshold@ crom, îmbunătățești T-43X pentru a trage cu un laser uriaș!</row><br><br><rules>Crom per stea: @TFTTrait.TFTEvent5YR_Nitro.:ScrapPerOneStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerTwoStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerThreeStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerFourStar@</rules>"
+    "desc": "După fiecare luptă împotriva unui jucător, campionii tăi oferă crom către R-080T, în funcție de nivelul lor de stele. Fiecare cumul de crom oferă @TFTTrait.TFTEvent5YR_Nitro.:HealthPerScrap@ viață și @TFTTrait.TFTEvent5YR_Nitro.:APPerScrap@ puterea abilităților. <br><br><row>(@TFTTrait.TFTEvent5YR_Nitro.1:MinUnits@) Invoci R-080T!</row><br><row>(@TFTTrait.TFTEvent5YR_Nitro.2:MinUnits@) Îmbunătățești R-080T în T-43X! La @TFTTrait.TFTEvent5YR_Nitro.:FourStarScrapThreshold@ crom, îl îmbunătățești pe T-43X ca să tragă cu un laser uriaș!</row><br><br><rules>Crom per stea: @TFTTrait.TFTEvent5YR_Nitro.:ScrapPerOneStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerTwoStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerThreeStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerFourStar@</rules>"
   },
   "TFTEvent5YR_Mountain": {
     "name": "Munți",

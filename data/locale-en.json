@@ -409,7 +409,7 @@
   },
   "TFT17_Augment_Timebreaker_Timestream": {
     "name": "Timestream",
-    "desc": "Timebreakers gain @Health@ Health and @AttackSpeed@% Attack Speed every time you reroll (including free rerolls). Gain an Ezreal and a Pantheon.<br><br>(Health: @TFTUnitProperty.:TFT17_Augment_Timebreaker_Timestream_HP@, Attack Speed: @TFTUnitProperty.:TFT17_Augment_Timebreaker_Timestream_AS*100@%)"
+    "desc": "Your team gains @TeamwideHealth@ Health. Timebreakers gain @Health@ Health and @AttackSpeed@% Attack Speed every time you reroll (including free rerolls). Gain an Ezreal and a Pantheon.<br><br>(Health: @TFTUnitProperty.:TFT17_Augment_Timebreaker_Timestream_HP@, Attack Speed: @TFTUnitProperty.:TFT17_Augment_Timebreaker_Timestream_AS*100@%)"
   },
   "TFT17_Augment_AurelionSolGodAugment_BoonOfResurrection": {
     "name": "Boon of Resurrection",
@@ -6949,7 +6949,7 @@
   },
   "TFTEvent_5YR_Item_TraitShimmerscaleActivator": {
     "name": "Shimmerscale",
-    "desc": "Gain Shimmerscale items. These items give gold as well as combat power.<br><br><row>(@TFTTrait.TFTEvent5YR_Shimmerscale.1:MinUnits@)Gain Goldmancers Staff. At Stage @TFTTrait.TFTEvent5YR_Shimmerscale.1:SecondItemStage@-@TFTTrait.TFTEvent5YR_Shimmerscale.1:SecondItemRound@ gain Draven's Axe.</row><br><row>(@TFTTrait.TFTEvent5YR_Shimmerscale.2:MinUnits@)Gain Crown of Champions.</row>"
+    "desc": "Gain Shimmerscale items. These items give gold as well as combat power.<br><br><row>(@TFTTrait.TFTEvent5YR_Shimmerscale.1:MinUnits@) Gain Goldmancers Staff. At Stage @TFTTrait.TFTEvent5YR_Shimmerscale.1:SecondItemStage@-@TFTTrait.TFTEvent5YR_Shimmerscale.1:SecondItemRound@ gain Draven's Axe.</row><br><row>(@TFTTrait.TFTEvent5YR_Shimmerscale.2:MinUnits@) Gain Crown of Champions.</row>"
   },
   "TFTEvent_5YR_Item_TraitIxtalActivator": {
     "name": "Ixtal",
@@ -6961,7 +6961,7 @@
   },
   "TFTEvent_5YR_Item_TraitHoneymancyActivator": {
     "name": "Honeymancy",
-    "desc": "Your champions gain Bees that deal magic damage to their targets every @TFTTrait.TFTEvent5YR_Honeymancy:Period@ seconds. Bee damage is based on the damage dealt and taken by the host champion, plus a flat amount per Bee.<br><br>When a champion dies, they leave @TFTTrait.TFTEvent5YR_Honeymancy:NumTransfers@ bees that follow nearby champions for the rest of combat.<br><br><row>(@TFTTrait.TFTEvent5YR_Honeymancy.1:MinUnits@) @TFTTrait.TFTEvent5YR_Honeymancy.1:MiniCount@ Bees, @TFTTrait.TFTEvent5YR_Honeymancy.1:BonusDamage*100@% Damage dealt, @TFTTrait.TFTEvent5YR_Honeymancy.1:DamageReceived*100@% damage taken, @TFTTrait.TFTEvent5YR_Honeymancy.1:DamagePerMini@ damage per Bee.</row><br><row>(@TFTTrait.TFTEvent5YR_Honeymancy.2:MinUnits@) @TFTTrait.TFTEvent5YR_Honeymancy.2:MiniCount@ Bees, @TFTTrait.TFTEvent5YR_Honeymancy.2:BonusDamage*100@% Damage dealt, @TFTTrait.TFTEvent5YR_Honeymancy.2:DamageReceived*100@% damage taken, @TFTTrait.TFTEvent5YR_Honeymancy.2:DamagePerMini@ damage per Bee.</row>"
+    "desc": "Your team gains Bees that deal magic damage to their targets every @TFTTrait.TFTEvent5YR_Honeymancy:Period@ seconds. Bee damage is based on the damage dealt and taken by the host, plus a flat amount per Bee.<br><br>When a unit dies, they leave @TFTTrait.TFTEvent5YR_Honeymancy:NumTransfers@ bees that follow nearby allies for the rest of combat.<br><br><row>(@TFTTrait.TFTEvent5YR_Honeymancy.1:MinUnits@) @TFTTrait.TFTEvent5YR_Honeymancy.1:MiniCount@ Bees, @TFTTrait.TFTEvent5YR_Honeymancy.1:BonusDamage*100@% Damage dealt, @TFTTrait.TFTEvent5YR_Honeymancy.1:DamageReceived*100@% damage taken, @TFTTrait.TFTEvent5YR_Honeymancy.1:DamagePerMini@ damage per Bee.</row><br><row>(@TFTTrait.TFTEvent5YR_Honeymancy.2:MinUnits@) @TFTTrait.TFTEvent5YR_Honeymancy.2:MiniCount@ Bees, @TFTTrait.TFTEvent5YR_Honeymancy.2:BonusDamage*100@% Damage dealt, @TFTTrait.TFTEvent5YR_Honeymancy.2:DamageReceived*100@% damage taken, @TFTTrait.TFTEvent5YR_Honeymancy.2:DamagePerMini@ damage per Bee.</row>"
   },
   "TFTEvent_5YR_Item_TraitConquerorActivator": {
     "name": "Conqueror",
@@ -7045,7 +7045,7 @@
   },
   "TFTEvent_5YR_Item_TraitYordleActivator": {
     "name": "Yordle",
-    "desc": "After each player combat, gain a Yordle Grab Bag full of Yordle-y loot!<br><br><row>(@TFTTrait.TFTEvent5YR_Yordle.1:MinUnits@) Gain a Yordle Grab Bag!</row><br><row>(@TFTTrait.TFTEvent5YR_Yordle.2:MinUnits@) If you have @TFTTrait.TFTEvent5YR_Yordle.2:NumOfThreeStarsNeeded@ or more 3-star champions, your Yordle Grab Bag will contain a Yordle-Lord.</row>"
+    "desc": "After each player combat, gain a Yordle Grab Bag full of Yordle-y loot!<br><br><row>(@TFTTrait.TFTEvent5YR_Yordle.1:MinUnits@) Gain a Yordle Grab Bag!</row><br><row>(@TFTTrait.TFTEvent5YR_Yordle.2:MinUnits@) If you fielded @TFTTrait.TFTEvent5YR_Yordle.2:NumOfThreeStarsNeeded@ or more 3-star champions, your Yordle Grab Bag will contain a Yordle-Lord.</row>"
   },
   "TFTEvent_5YR_Item_TraitPhantomActivator": {
     "name": "Phantom",
@@ -7053,7 +7053,7 @@
   },
   "TFTEvent_5YR_Item_TraitNitroActivator": {
     "name": "Nitro",
-    "desc": "After every player combat, your champions grant Chrome to R-080T, based on their star level. Each Chrome grants @TFTTrait.TFTEvent5YR_Nitro.:HealthPerScrap@ Health and @TFTTrait.TFTEvent5YR_Nitro.:APPerScrap@ Ability Power. <br><br><row>(@TFTTrait.TFTEvent5YR_Nitro.1:MinUnits@) Summon R-080T!</row><br><row>(@TFTTrait.TFTEvent5YR_Nitro.2:MinUnits@) Upgrade R-080T to T-43X! At @TFTTrait.TFTEvent5YR_Nitro.:FourStarScrapThreshold@ Chrome, upgradeT-43X to fire a giant laser!</row><br><br><rules>Chrome per star: @TFTTrait.TFTEvent5YR_Nitro.:ScrapPerOneStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerTwoStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerThreeStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerFourStar@</rules>"
+    "desc": "After every player combat, your champions grant Chrome to R-080T, based on their star level. Each Chrome grants @TFTTrait.TFTEvent5YR_Nitro.:HealthPerScrap@ Health and @TFTTrait.TFTEvent5YR_Nitro.:APPerScrap@ Ability Power. <br><br><row>(@TFTTrait.TFTEvent5YR_Nitro.1:MinUnits@) Summon R-080T!</row><br><row>(@TFTTrait.TFTEvent5YR_Nitro.2:MinUnits@) Upgrade R-080T to T-43X! At @TFTTrait.TFTEvent5YR_Nitro.:FourStarScrapThreshold@ Chrome, upgrade T-43X to fire a giant laser!</row><br><br><rules>Chrome per star: @TFTTrait.TFTEvent5YR_Nitro.:ScrapPerOneStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerTwoStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerThreeStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerFourStar@</rules>"
   },
   "TFTEvent_5YR_Item_TraitHellionActivator": {
     "name": "Hellion",
@@ -7089,7 +7089,7 @@
   },
   "TFTEvent_5YR_Item_TraitPreserverActivator": {
     "name": "Renewer",
-    "desc": "Your team heals for a percent of their max Health every @TFTTrait.TFTEvent5YR_Preserver.1:Duration@ seconds. If they are full Health, restore Mana instead.<br><br><row> (@TFTTrait.TFTEvent5YR_Preserver.1:MinUnits@) @TFTTrait.TFTEvent5YR_Preserver.1:HealthPct*100@% %i:scaleHealth%, or @TFTTrait.TFTEvent5YR_Preserver.1:ManaPct*100@% %i:scaleMana%.</row><br><row> (@TFTTrait.TFTEvent5YR_Preserver.2:MinUnits@) @TFTTrait.TFTEvent5YR_Preserver.2:HealthPct*100@% %i:scaleHealth%, and @TFTTrait.TFTEvent5YR_Preserver.2:ManaPct*100@% %i:scaleMana%. Always get both.</row><br><br>"
+    "desc": "Your team heals for a percent of their max Health every @TFTTrait.TFTEvent5YR_Preserver.1:Duration@ seconds. If they are full Health, restore Mana instead.<br><br><row>(@TFTTrait.TFTEvent5YR_Preserver.1:MinUnits@) @TFTTrait.TFTEvent5YR_Preserver.1:HealthPct*100@% %i:scaleHealth%, or @TFTTrait.TFTEvent5YR_Preserver.1:ManaPct*100@% %i:scaleMana%.</row><br><row>(@TFTTrait.TFTEvent5YR_Preserver.2:MinUnits@) @TFTTrait.TFTEvent5YR_Preserver.2:HealthPct*100@% %i:scaleHealth%, and @TFTTrait.TFTEvent5YR_Preserver.2:ManaPct*100@% %i:scaleMana%. Always get both.</row><br><br>"
   },
   "TFTEvent_5YR_Item_TraitHighRollerActivator": {
     "name": "High Roller",
@@ -11673,7 +11673,7 @@
   },
   "TFT_Augment_DeadlierCaps": {
     "name": "Deadlier Caps",
-    "desc": "Gain a Rabadon's Deathcap. Rabadon's Deathcaps permanently gain @AP@% Ability Power whenever their holders score a takedown."
+    "desc": "Gain a Rabadon's Deathcap. Rabadon's Deathcaps grant @ManaRegenPerHat@ Mana Regen and permanently gain @AP@% Ability Power whenever their holders score a takedown."
   },
   "TFT_Augment_UnleashTheBeast": {
     "name": "Unleash The Beast",
@@ -12073,7 +12073,7 @@
   },
   "TFT7_Augment_BestFriends3": {
     "name": "Best Friends III",
-    "desc": "Allies isolated in pairs gain @AS*100@% Attack Speed and @Armor@ Armor at the start of combat."
+    "desc": "Allies isolated in pairs gain @AS*100@% Attack Speed and @Armor@ Armor and Magic Resist at the start of combat."
   },
   "TFT_Augment_PsychicForge": {
     "name": "Psychic Forge",
@@ -12089,7 +12089,7 @@
   },
   "TFT7_Augment_BestFriends2": {
     "name": "Best Friends II",
-    "desc": "Allies isolated in pairs gain @AS*100@% Attack Speed and @Armor@ Armor at the start of combat."
+    "desc": "Allies isolated in pairs gain @AS*100@% Attack Speed and @Armor@ Armor and Magic Resist at the start of combat."
   },
   "TFT6_Augment_Meditation1": {
     "name": "Meditation I",
@@ -12101,7 +12101,7 @@
   },
   "TFT7_Augment_BestFriends1": {
     "name": "Best Friends I",
-    "desc": "Allies isolated in pairs gain @AS*100@% Attack Speed and @Armor@ Armor at the start of combat."
+    "desc": "Allies isolated in pairs gain @AS*100@% Attack Speed and @Armor@ Armor and Magic Resist at the start of combat."
   },
   "TFT_Augment_SilverDestinyPlus": {
     "name": "Silver Destiny+",
@@ -12229,7 +12229,7 @@
   },
   "TFT7_Augment_LuckyGloves": {
     "name": "Lucky Gloves",
-    "desc": "Thief's Gloves will always give your champions ideal items. Gain @NumGloves@ Sparring Gloves."
+    "desc": "Thief's Gloves will always give your champions ideal items. Gain @NumGloves@ Sparring Gloves and @Gold@ gold."
   },
   "TFT9_Augment_EnduranceTraining": {
     "name": "Endurance Training",
@@ -13161,7 +13161,7 @@
   },
   "TFT_Augment_BirthdayReunion": {
     "name": "Birthday Reunion",
-    "desc": "Gain a random 2-star 2-cost champion. When you reach Level @FirstLevelBreakpoint@, gain a Thief's Gloves. When you reach Level @SecondLevelBreakpoint@, gain a random 2-star 5-cost champion.<br><br><tftitemrules>Inkborn Fables Tactician's Crown, 2024</tftitemrules>"
+    "desc": "Gain @Gold@ gold. At Level @InitialLevelBreakpoint@, gain a random 2-star 2-cost champion. At Level @FirstLevelBreakpoint@, gain a Thief's Gloves. At Level @SecondLevelBreakpoint@, gain a random 2-star 5-cost champion.<br><br><tftitemrules>Inkborn Fables Tactician's Crown, 2024</tftitemrules>"
   },
   "TFT11_Augment_LethalTempo": {
     "name": "Lethal Tempo",
@@ -13277,7 +13277,7 @@
   },
   "TFT6_Augment_Recombobulator": {
     "name": "Recombobulator",
-    "desc": "Champions on your board permanently transform into random champions 1 cost tier higher (max 5). Gain @NumRemovers@ Magnetic Removers."
+    "desc": "Champions on your board permanently transform into random champions 1 cost tier higher (max 5). Gain @NumRemovers@ Magnetic Removers and @FreeRerolls@ rerolls."
   },
   "TFT11_Augment_OverEncumbered": {
     "name": "Over Encumbered",
@@ -14025,7 +14025,7 @@
   },
   "TFT_Augment_TheDarkinBlade": {
     "name": "Blood Offering",
-    "desc": "Gain a Bloodthirster. Combat start: Allies holding Bloodthirsters lose @HPLossPercent*100@% Health but gain a @HPShieldPercent*100@% Health shield and @BonusAD*100@% Attack Damage. "
+    "desc": "Gain a Bloodthirster. Combat start: Allies holding Bloodthirsters lose @HPLossPercent*100@% Health but gain a @HPShieldPercent*100@% Health shield and @BonusAD*100@% Attack Damage and Ability Power. "
   },
   "TFT6_Augment_RadiantRelics": {
     "name": "Radiant Relics",
@@ -19381,11 +19381,11 @@
   },
   "TFTEvent5YR_Shimmerscale": {
     "name": "Shimmerscale",
-    "desc": "Gain Shimmerscale items. These items give gold as well as combat power.<br><br><row>(@TFTTrait.TFTEvent5YR_Shimmerscale.1:MinUnits@)Gain Goldmancers Staff. At Stage @TFTTrait.TFTEvent5YR_Shimmerscale.1:SecondItemStage@-@TFTTrait.TFTEvent5YR_Shimmerscale.1:SecondItemRound@ gain Draven's Axe.</row><br><row>(@TFTTrait.TFTEvent5YR_Shimmerscale.2:MinUnits@)Gain Crown of Champions.</row>"
+    "desc": "Gain Shimmerscale items. These items give gold as well as combat power.<br><br><row>(@TFTTrait.TFTEvent5YR_Shimmerscale.1:MinUnits@) Gain Goldmancers Staff. At Stage @TFTTrait.TFTEvent5YR_Shimmerscale.1:SecondItemStage@-@TFTTrait.TFTEvent5YR_Shimmerscale.1:SecondItemRound@ gain Draven's Axe.</row><br><row>(@TFTTrait.TFTEvent5YR_Shimmerscale.2:MinUnits@) Gain Crown of Champions.</row>"
   },
   "TFTEvent5YR_Honeymancy": {
     "name": "Honeymancy",
-    "desc": "Your champions gain Bees that deal magic damage to their targets every @TFTTrait.TFTEvent5YR_Honeymancy:Period@ seconds. Bee damage is based on the damage dealt and taken by the host champion, plus a flat amount per Bee.<br><br>When a champion dies, they leave @TFTTrait.TFTEvent5YR_Honeymancy:NumTransfers@ bees that follow nearby champions for the rest of combat.<br><br><row>(@TFTTrait.TFTEvent5YR_Honeymancy.1:MinUnits@) @TFTTrait.TFTEvent5YR_Honeymancy.1:MiniCount@ Bees, @TFTTrait.TFTEvent5YR_Honeymancy.1:BonusDamage*100@% Damage dealt, @TFTTrait.TFTEvent5YR_Honeymancy.1:DamageReceived*100@% damage taken, @TFTTrait.TFTEvent5YR_Honeymancy.1:DamagePerMini@ damage per Bee.</row><br><row>(@TFTTrait.TFTEvent5YR_Honeymancy.2:MinUnits@) @TFTTrait.TFTEvent5YR_Honeymancy.2:MiniCount@ Bees, @TFTTrait.TFTEvent5YR_Honeymancy.2:BonusDamage*100@% Damage dealt, @TFTTrait.TFTEvent5YR_Honeymancy.2:DamageReceived*100@% damage taken, @TFTTrait.TFTEvent5YR_Honeymancy.2:DamagePerMini@ damage per Bee.</row>"
+    "desc": "Your team gains Bees that deal magic damage to their targets every @TFTTrait.TFTEvent5YR_Honeymancy:Period@ seconds. Bee damage is based on the damage dealt and taken by the host, plus a flat amount per Bee.<br><br>When a unit dies, they leave @TFTTrait.TFTEvent5YR_Honeymancy:NumTransfers@ bees that follow nearby allies for the rest of combat.<br><br><row>(@TFTTrait.TFTEvent5YR_Honeymancy.1:MinUnits@) @TFTTrait.TFTEvent5YR_Honeymancy.1:MiniCount@ Bees, @TFTTrait.TFTEvent5YR_Honeymancy.1:BonusDamage*100@% Damage dealt, @TFTTrait.TFTEvent5YR_Honeymancy.1:DamageReceived*100@% damage taken, @TFTTrait.TFTEvent5YR_Honeymancy.1:DamagePerMini@ damage per Bee.</row><br><row>(@TFTTrait.TFTEvent5YR_Honeymancy.2:MinUnits@) @TFTTrait.TFTEvent5YR_Honeymancy.2:MiniCount@ Bees, @TFTTrait.TFTEvent5YR_Honeymancy.2:BonusDamage*100@% Damage dealt, @TFTTrait.TFTEvent5YR_Honeymancy.2:DamageReceived*100@% damage taken, @TFTTrait.TFTEvent5YR_Honeymancy.2:DamagePerMini@ damage per Bee.</row>"
   },
   "TFTEvent5YR_Phantom": {
     "name": "Phantom",
@@ -19405,11 +19405,11 @@
   },
   "TFTEvent5YR_Yordle": {
     "name": "Yordle",
-    "desc": "After each player combat, gain a Yordle Grab Bag full of Yordle-y loot!<br><br><row>(@TFTTrait.TFTEvent5YR_Yordle.1:MinUnits@) Gain a Yordle Grab Bag!</row><br><row>(@TFTTrait.TFTEvent5YR_Yordle.2:MinUnits@) If you have @TFTTrait.TFTEvent5YR_Yordle.2:NumOfThreeStarsNeeded@ or more 3-star champions, your Yordle Grab Bag will contain a Yordle-Lord.</row>"
+    "desc": "After each player combat, gain a Yordle Grab Bag full of Yordle-y loot!<br><br><row>(@TFTTrait.TFTEvent5YR_Yordle.1:MinUnits@) Gain a Yordle Grab Bag!</row><br><row>(@TFTTrait.TFTEvent5YR_Yordle.2:MinUnits@) If you fielded @TFTTrait.TFTEvent5YR_Yordle.2:NumOfThreeStarsNeeded@ or more 3-star champions, your Yordle Grab Bag will contain a Yordle-Lord.</row>"
   },
   "TFTEvent5YR_Preserver": {
     "name": "Renewer",
-    "desc": "Your team heals for a percent of their max Health every @TFTTrait.TFTEvent5YR_Preserver.1:Duration@ seconds. If they are full Health, restore Mana instead.<br><br><row> (@TFTTrait.TFTEvent5YR_Preserver.1:MinUnits@) @TFTTrait.TFTEvent5YR_Preserver.1:HealthPct*100@% %i:scaleHealth%, or @TFTTrait.TFTEvent5YR_Preserver.1:ManaPct*100@% %i:scaleMana%.</row><br><row> (@TFTTrait.TFTEvent5YR_Preserver.2:MinUnits@) @TFTTrait.TFTEvent5YR_Preserver.2:HealthPct*100@% %i:scaleHealth%, and @TFTTrait.TFTEvent5YR_Preserver.2:ManaPct*100@% %i:scaleMana%. Always get both.</row><br><br>"
+    "desc": "Your team heals for a percent of their max Health every @TFTTrait.TFTEvent5YR_Preserver.1:Duration@ seconds. If they are full Health, restore Mana instead.<br><br><row>(@TFTTrait.TFTEvent5YR_Preserver.1:MinUnits@) @TFTTrait.TFTEvent5YR_Preserver.1:HealthPct*100@% %i:scaleHealth%, or @TFTTrait.TFTEvent5YR_Preserver.1:ManaPct*100@% %i:scaleMana%.</row><br><row>(@TFTTrait.TFTEvent5YR_Preserver.2:MinUnits@) @TFTTrait.TFTEvent5YR_Preserver.2:HealthPct*100@% %i:scaleHealth%, and @TFTTrait.TFTEvent5YR_Preserver.2:ManaPct*100@% %i:scaleMana%. Always get both.</row><br><br>"
   },
   "TFTEvent5YR_Demacia": {
     "name": "Demacia",
@@ -19433,7 +19433,7 @@
   },
   "TFTEvent5YR_Nitro": {
     "name": "Nitro",
-    "desc": "After every player combat, your champions grant Chrome to R-080T, based on their star level. Each Chrome grants @TFTTrait.TFTEvent5YR_Nitro.:HealthPerScrap@ Health and @TFTTrait.TFTEvent5YR_Nitro.:APPerScrap@ Ability Power. <br><br><row>(@TFTTrait.TFTEvent5YR_Nitro.1:MinUnits@) Summon R-080T!</row><br><row>(@TFTTrait.TFTEvent5YR_Nitro.2:MinUnits@) Upgrade R-080T to T-43X! At @TFTTrait.TFTEvent5YR_Nitro.:FourStarScrapThreshold@ Chrome, upgradeT-43X to fire a giant laser!</row><br><br><rules>Chrome per star: @TFTTrait.TFTEvent5YR_Nitro.:ScrapPerOneStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerTwoStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerThreeStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerFourStar@</rules>"
+    "desc": "After every player combat, your champions grant Chrome to R-080T, based on their star level. Each Chrome grants @TFTTrait.TFTEvent5YR_Nitro.:HealthPerScrap@ Health and @TFTTrait.TFTEvent5YR_Nitro.:APPerScrap@ Ability Power. <br><br><row>(@TFTTrait.TFTEvent5YR_Nitro.1:MinUnits@) Summon R-080T!</row><br><row>(@TFTTrait.TFTEvent5YR_Nitro.2:MinUnits@) Upgrade R-080T to T-43X! At @TFTTrait.TFTEvent5YR_Nitro.:FourStarScrapThreshold@ Chrome, upgrade T-43X to fire a giant laser!</row><br><br><rules>Chrome per star: @TFTTrait.TFTEvent5YR_Nitro.:ScrapPerOneStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerTwoStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerThreeStar@/@TFTTrait.TFTEvent5YR_Nitro.:ScrapPerFourStar@</rules>"
   },
   "TFTEvent5YR_Mountain": {
     "name": "Mountain",
@@ -19453,7 +19453,7 @@
   },
   "TFTEvent5YR_Fated": {
     "name": "Fated",
-    "desc": "Hover one champion over another to form a pair and unlock a <TFTBonus>Fated Bonus</TFTBonus>, based on the role of the champions.<br><br><row>(@TFTTrait.TFTEvent5YR_Fated.1:MinUnits@) Pair gets the Fated Bonus and gains @TFTTrait.TFTEvent5YR_Fated.1:PairHPBonus*100@% max Health. </row><br><row>(@TFTTrait.TFTEvent5YR_Fated.2:MinUnits@) ALL units get the Fated Bonus. The pair gets gains @TFTTrait.TFTEvent5YR_Fated.1:PairHPBonus*100@% max Health and @TFTTrait.TFTEvent5YR_Fated.2:PairBondIncreasePercent*100@% of the Fated Bonus. </row><br><br>Fated Bonuses:<br><ShowIf.TFTEvent5YR_Trait_Fated_AssassinActive><status>Assassins</status>: @TFTTrait.TFTEvent5YR_Fated.1:YasuoBuffBonus@ Shield on combat start</ShowIf.TFTEvent5YR_Trait_Fated_AssassinActive><ShowIfNot.TFTEvent5YR_Trait_Fated_AssassinActive><TFTGuildInactive>Assassins: @TFTTrait.TFTEvent5YR_Fated.1:YasuoBuffBonus@ Shield on combat start</TFTGuildInactive></ShowIfNot.TFTEvent5YR_Trait_Fated_AssassinActive><br><ShowIf.TFTEvent5YR_Trait_Fated_CasterActive><status>Casters</status>: @TFTTrait.TFTEvent5YR_Fated.1:AhriBuffBonus*100@% %i:scaleAD% %i:scaleAP%</ShowIf.TFTEvent5YR_Trait_Fated_CasterActive><ShowIfNot.TFTEvent5YR_Trait_Fated_CasterActive><TFTGuildInactive>Casters: @TFTTrait.TFTEvent5YR_Fated.1:AhriBuffBonus*100@% %i:scaleAD% %i:scaleAP%</TFTGuildInactive></ShowIfNot.TFTEvent5YR_Trait_Fated_CasterActive><br><ShowIf.TFTEvent5YR_Trait_Fated_FighterActive><status>Fighters</status>: @TFTTrait.TFTEvent5YR_Fated.1:SettBuffBonus*100@% %i:scaleSV%</ShowIf.TFTEvent5YR_Trait_Fated_FighterActive><ShowIfNot.TFTEvent5YR_Trait_Fated_FighterActive><TFTGuildInactive>Fighters: @TFTTrait.TFTEvent5YR_Fated.1:SettBuffBonus*100@% %i:scaleSV%</TFTGuildInactive></ShowIfNot.TFTEvent5YR_Trait_Fated_FighterActive><br><ShowIf.TFTEvent5YR_Trait_Fated_MarksmanActive><status>Marksmen</status>: @TFTTrait.TFTEvent5YR_Fated.1:KindredBuffBonus*100@% %i:scaleAS%</ShowIf.TFTEvent5YR_Trait_Fated_MarksmanActive><ShowIfNot.TFTEvent5YR_Trait_Fated_MarksmanActive><TFTGuildInactive>Marksmen: @TFTTrait.TFTEvent5YR_Fated.1:KindredBuffBonus*100@% %i:scaleAS%</TFTGuildInactive></ShowIfNot.TFTEvent5YR_Trait_Fated_MarksmanActive><br><ShowIf.TFTEvent5YR_Trait_Fated_SpecialistActive><status>Specialists</status>: Deal @TFTTrait.TFTEvent5YR_Fated.1:SyndraBuffBonus*100@% of damage as true damage</ShowIf.TFTEvent5YR_Trait_Fated_SpecialistActive><ShowIfNot.TFTEvent5YR_Trait_Fated_SpecialistActive><TFTGuildInactive>Specialists: Deal @TFTTrait.TFTEvent5YR_Fated.1:SyndraBuffBonus*100@% of damage as true damage</TFTGuildInactive></ShowIfNot.TFTEvent5YR_Trait_Fated_SpecialistActive><br><ShowIf.TFTEvent5YR_Trait_Fated_TankActive><status>Tanks</status>: @TFTTrait.TFTEvent5YR_Fated.1:ThreshBuffBonus@ %i:scaleArmor% %i:scaleMR%</ShowIf.TFTEvent5YR_Trait_Fated_TankActive><ShowIfNot.TFTEvent5YR_Trait_Fated_TankActive><TFTGuildInactive>Tanks: @TFTTrait.TFTEvent5YR_Fated.1:ThreshBuffBonus@ %i:scaleArmor% %i:scaleMR%</TFTGuildInactive></ShowIfNot.TFTEvent5YR_Trait_Fated_TankActive><br><br>Your units can only benefit from a single instance of a specific fated bonus."
+    "desc": "Hover one champion over another to form a pair and unlock a <TFTBonus>Fated Bonus</TFTBonus>, based on the role of the champions.<br><br><row>(@TFTTrait.TFTEvent5YR_Fated.1:MinUnits@) Pair gets the Fated Bonus and gains @TFTTrait.TFTEvent5YR_Fated.1:PairHPBonus*100@% max Health. </row><br><row>(@TFTTrait.TFTEvent5YR_Fated.2:MinUnits@) ALL units get the Fated Bonus. The pair gains @TFTTrait.TFTEvent5YR_Fated.1:PairHPBonus*100@% max Health and @TFTTrait.TFTEvent5YR_Fated.2:PairBondIncreasePercent*100@% of the Fated Bonus. </row><br><br>Fated Bonuses:<br><ShowIf.TFTEvent5YR_Trait_Fated_AssassinActive><status>Assassins</status>: @TFTTrait.TFTEvent5YR_Fated.1:YasuoBuffBonus@ Shield on combat start</ShowIf.TFTEvent5YR_Trait_Fated_AssassinActive><ShowIfNot.TFTEvent5YR_Trait_Fated_AssassinActive><TFTGuildInactive>Assassins: @TFTTrait.TFTEvent5YR_Fated.1:YasuoBuffBonus@ Shield on combat start</TFTGuildInactive></ShowIfNot.TFTEvent5YR_Trait_Fated_AssassinActive><br><ShowIf.TFTEvent5YR_Trait_Fated_CasterActive><status>Casters</status>: @TFTTrait.TFTEvent5YR_Fated.1:AhriBuffBonus*100@% %i:scaleAD% %i:scaleAP%</ShowIf.TFTEvent5YR_Trait_Fated_CasterActive><ShowIfNot.TFTEvent5YR_Trait_Fated_CasterActive><TFTGuildInactive>Casters: @TFTTrait.TFTEvent5YR_Fated.1:AhriBuffBonus*100@% %i:scaleAD% %i:scaleAP%</TFTGuildInactive></ShowIfNot.TFTEvent5YR_Trait_Fated_CasterActive><br><ShowIf.TFTEvent5YR_Trait_Fated_FighterActive><status>Fighters</status>: @TFTTrait.TFTEvent5YR_Fated.1:SettBuffBonus*100@% %i:scaleSV%</ShowIf.TFTEvent5YR_Trait_Fated_FighterActive><ShowIfNot.TFTEvent5YR_Trait_Fated_FighterActive><TFTGuildInactive>Fighters: @TFTTrait.TFTEvent5YR_Fated.1:SettBuffBonus*100@% %i:scaleSV%</TFTGuildInactive></ShowIfNot.TFTEvent5YR_Trait_Fated_FighterActive><br><ShowIf.TFTEvent5YR_Trait_Fated_MarksmanActive><status>Marksmen</status>: @TFTTrait.TFTEvent5YR_Fated.1:KindredBuffBonus*100@% %i:scaleAS%</ShowIf.TFTEvent5YR_Trait_Fated_MarksmanActive><ShowIfNot.TFTEvent5YR_Trait_Fated_MarksmanActive><TFTGuildInactive>Marksmen: @TFTTrait.TFTEvent5YR_Fated.1:KindredBuffBonus*100@% %i:scaleAS%</TFTGuildInactive></ShowIfNot.TFTEvent5YR_Trait_Fated_MarksmanActive><br><ShowIf.TFTEvent5YR_Trait_Fated_SpecialistActive><status>Specialists</status>: Deal @TFTTrait.TFTEvent5YR_Fated.1:SyndraBuffBonus*100@% of damage as true damage</ShowIf.TFTEvent5YR_Trait_Fated_SpecialistActive><ShowIfNot.TFTEvent5YR_Trait_Fated_SpecialistActive><TFTGuildInactive>Specialists: Deal @TFTTrait.TFTEvent5YR_Fated.1:SyndraBuffBonus*100@% of damage as true damage</TFTGuildInactive></ShowIfNot.TFTEvent5YR_Trait_Fated_SpecialistActive><br><ShowIf.TFTEvent5YR_Trait_Fated_TankActive><status>Tanks</status>: @TFTTrait.TFTEvent5YR_Fated.1:ThreshBuffBonus@ %i:scaleArmor% %i:scaleMR%</ShowIf.TFTEvent5YR_Trait_Fated_TankActive><ShowIfNot.TFTEvent5YR_Trait_Fated_TankActive><TFTGuildInactive>Tanks: @TFTTrait.TFTEvent5YR_Fated.1:ThreshBuffBonus@ %i:scaleArmor% %i:scaleMR%</TFTGuildInactive></ShowIfNot.TFTEvent5YR_Trait_Fated_TankActive><br><br>Your units can only benefit from a single instance of a specific fated bonus."
   },
   "TFTEvent5YR_Maestro": {
     "name": "Maestro",
@@ -19461,7 +19461,7 @@
   },
   "TFTEvent5YR_TheCrew": {
     "name": "The Crew",
-    "desc": "Summon the <i>Nocturnus</i> to aid you in battle! It fires a rocket that deals @TFTTrait.TFTEvent5YR_TheCrew.1:BaseRocketDamage@ magic damage every @TFTTrait.TFTEvent5YR_TheCrew.1:BaseDamageThreshold@ damage your team deals.<br><br>2-cost and higher champions become Crew members after reaching 3-star. Gain additional bonuses for each Crew member.<br><br><row>(@TFTTrait.TFTEvent5YR_TheCrew.1:MinUnits@) 2 max Crew members.</row><br><row>(@TFTTrait.TFTEvent5YR_TheCrew.2:MinUnits@) 4 maximum Crew members.</row><br><br><tftActiveRank enabled=TFTEvent5YR_Trait_WildcardCrew_Bonus1Active default=false alternate=TFTGuildInactive>(1x <ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus1Active>%i:3StarEnabled%</ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus1Active><ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus1Active>%i:3StarDisabled%</ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus1Active>): + @TFTTrait.TFTEvent5YR_TheCrew.1:OnARollRolls@ free rerolls when you star up a unit you fielded last combat.</tftActiveRank><br><tftActiveRank enabled=TFTEvent5YR_Trait_WildcardCrew_Bonus2Active default=false alternate=TFTGuildInactive>(2x <ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus2Active>%i:3StarEnabled%</ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus2Active><ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus2Active>%i:3StarDisabled%</ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus2Active>): Rockets deal <magicDamage>@TFTTrait.TFTEvent5YR_TheCrew.1:UpgradedRocketDamage@</magicDamage> damage.</tftActiveRank><br><tftActiveRank enabled=TFTEvent5YR_Trait_WildcardCrew_Bonus3Active default=false alternate=TFTGuildInactive>(3x <ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus3Active>%i:3StarEnabled%</ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus3Active><ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus3Active>%i:3StarDisabled%</ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus3Active>): + @TFTTrait.TFTEvent5YR_TheCrew.1:FreeRerollsPerRound@ free reroll / round.</tftActiveRank><br><tftActiveRank enabled=TFTEvent5YR_Trait_WildcardCrew_Bonus4Active default=false alternate=TFTGuildInactive>(4x <ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus4Active>%i:3StarEnabled%</ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus4Active><ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus4Active>%i:3StarDisabled%</ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus4Active>): Rockets fire every @TFTTrait.TFTEvent5YR_TheCrew.1:UpgradedDamageThreshold@ damage dealt. Gain @TFTTrait.TFTEvent5YR_TheCrew.1:XPPerRound@ XP per round.</tftActiveRank>"
+    "desc": "Summon the <i>Nocturnus</i> to aid you in battle! It fires a rocket that deals @TFTTrait.TFTEvent5YR_TheCrew.1:BaseRocketDamage@ magic damage every @TFTTrait.TFTEvent5YR_TheCrew.1:BaseDamageThreshold@ damage your team deals.<br><br>2-cost and higher champions become Crew members after reaching 3-star. Gain additional bonuses for each Crew member.<br><br><row>(@TFTTrait.TFTEvent5YR_TheCrew.1:MinUnits@) 2 max Crew members.</row><br><row>(@TFTTrait.TFTEvent5YR_TheCrew.2:MinUnits@) 4 max Crew members.</row><br><br><tftActiveRank enabled=TFTEvent5YR_Trait_WildcardCrew_Bonus1Active default=false alternate=TFTGuildInactive>(1x <ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus1Active>%i:3StarEnabled%</ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus1Active><ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus1Active>%i:3StarDisabled%</ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus1Active>): + @TFTTrait.TFTEvent5YR_TheCrew.1:OnARollRolls@ free rerolls when you star up a unit you fielded last combat.</tftActiveRank><br><tftActiveRank enabled=TFTEvent5YR_Trait_WildcardCrew_Bonus2Active default=false alternate=TFTGuildInactive>(2x <ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus2Active>%i:3StarEnabled%</ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus2Active><ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus2Active>%i:3StarDisabled%</ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus2Active>): Rockets deal <magicDamage>@TFTTrait.TFTEvent5YR_TheCrew.1:UpgradedRocketDamage@</magicDamage> damage.</tftActiveRank><br><tftActiveRank enabled=TFTEvent5YR_Trait_WildcardCrew_Bonus3Active default=false alternate=TFTGuildInactive>(3x <ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus3Active>%i:3StarEnabled%</ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus3Active><ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus3Active>%i:3StarDisabled%</ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus3Active>): + @TFTTrait.TFTEvent5YR_TheCrew.1:FreeRerollsPerRound@ free reroll / round.</tftActiveRank><br><tftActiveRank enabled=TFTEvent5YR_Trait_WildcardCrew_Bonus4Active default=false alternate=TFTGuildInactive>(4x <ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus4Active>%i:3StarEnabled%</ShowIf.TFTEvent5YR_Trait_WildcardCrew_Bonus4Active><ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus4Active>%i:3StarDisabled%</ShowIfNot.TFTEvent5YR_Trait_WildcardCrew_Bonus4Active>): Rockets fire every @TFTTrait.TFTEvent5YR_TheCrew.1:UpgradedDamageThreshold@ damage dealt. Gain @TFTTrait.TFTEvent5YR_TheCrew.1:XPPerRound@ XP per round.</tftActiveRank>"
   },
   "TFTEvent5YR_Bilgewater": {
     "name": "Bilgewater",
