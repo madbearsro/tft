@@ -2,894 +2,6 @@
   "comps": [
     {
       "source": "metatft.com",
-      "name": "9u · avg #3.5",
-      "tier": "S",
-      "championIds": [
-        "TFT17_AurelionSol",
-        "TFT17_Blitzcrank",
-        "TFT17_Galio",
-        "TFT17_Karma",
-        "TFT17_Mordekaiser",
-        "TFT17_Morgana",
-        "TFT17_Rhaast"
-      ],
-      "champions": [
-        "Aurelion Sol",
-        "Blitzcrank",
-        "Galio",
-        "Karma",
-        "Mordekaiser",
-        "Morgana",
-        "Rhaast"
-      ],
-      "count": 7530,
-      "avgPlace": 3.466,
-      "top4Rate": 0.4746132043991987,
-      "winRate": 0,
-      "items": {
-        "TFT17_Galio": [
-          "TFT_Item_GargoyleStoneplate",
-          "TFT17_AnimaSquadItem_Tier2_LionessLament",
-          "TFT_Item_NightHarvester"
-        ],
-        "TFT17_AurelionSol": [
-          "TFT_Item_JeweledGauntlet",
-          "TFT_Item_RabadonsDeathcap",
-          "TFT17_AnimaSquadItem_Tier2_Annihilator"
-        ],
-        "TFT17_Karma": [
-          "TFT_Item_Morellonomicon",
-          "TFT_Item_SpearOfShojin",
-          "TFT_Item_StatikkShiv"
-        ]
-      },
-      "roles": {
-        "TFT17_Galio": "Item holder",
-        "TFT17_AurelionSol": "Item holder",
-        "TFT17_Karma": "Item holder"
-      },
-      "threeStars": [],
-      "positions": {
-        "TFT17_AurelionSol": {
-          "row": 4,
-          "col": 1
-        },
-        "TFT17_Blitzcrank": {
-          "row": 4,
-          "col": 4
-        },
-        "TFT17_Galio": {
-          "row": 1,
-          "col": 4
-        },
-        "TFT17_Karma": {
-          "row": 4,
-          "col": 2
-        },
-        "TFT17_Mordekaiser": {
-          "row": 3,
-          "col": 3
-        },
-        "TFT17_Morgana": {
-          "row": 3,
-          "col": 4
-        },
-        "TFT17_Rhaast": {
-          "row": 4,
-          "col": 1
-        }
-      },
-      "augments": [
-        "Anima Commander",
-        "Comeback Story",
-        "Epic Rolldown",
-        "Second Wind II",
-        "Commander Partial Ascension",
-        "Calltochaos"
-      ],
-      "style": "9u · avg #3.5",
-      "sourceUrl": "https://www.metatft.com/comps",
-      "sources": [
-        "tactics.tools",
-        "lolchess.gg",
-        "metatft.com",
-        "tftacademy.com"
-      ],
-      "sourceCount": 4,
-      "primarySource": "metatft.com",
-      "metaSources": [
-        "tactics.tools",
-        "lolchess.gg",
-        "metatft.com",
-        "tftacademy.com"
-      ],
-      "metaConfirmed": true,
-      "matchConfidence": 0.875,
-      "tips": [
-        "Most common Mecha line will be lose streak to guarantee items. Look for an econ engine: Timebreaker > Primordian > Arbiter.",
-        "Standard level 6 and 7 intervals (3-2 / 3-5 if streaking). Play around Brawler and Voyager. Always play Asol and transfer items.",
-        "Level to 8 and roll hard. Don't push for 9 until you hit 2* Mecha units. Morgana 2 can temporarily tank until you find Mech 2."
-      ]
-    },
-    {
-      "source": "metatft.com",
-      "name": "9u · avg #3.5",
-      "tier": "S",
-      "championIds": [
-        "TFT17_AurelionSol",
-        "TFT17_Blitzcrank",
-        "TFT17_Galio",
-        "TFT17_Karma",
-        "TFT17_Mordekaiser",
-        "TFT17_Morgana",
-        "TFT17_Rhaast"
-      ],
-      "champions": [
-        "Aurelion Sol",
-        "Blitzcrank",
-        "Galio",
-        "Karma",
-        "Mordekaiser",
-        "Morgana",
-        "Rhaast"
-      ],
-      "count": 7530,
-      "avgPlace": 3.466,
-      "top4Rate": 0.4746132043991987,
-      "winRate": 0,
-      "items": {
-        "TFT17_Galio": [
-          "TFT_Item_GargoyleStoneplate",
-          "TFT17_AnimaSquadItem_Tier2_LionessLament",
-          "TFT_Item_NightHarvester"
-        ],
-        "TFT17_AurelionSol": [
-          "TFT_Item_JeweledGauntlet",
-          "TFT_Item_RabadonsDeathcap",
-          "TFT17_AnimaSquadItem_Tier2_Annihilator"
-        ],
-        "TFT17_Karma": [
-          "TFT_Item_Morellonomicon",
-          "TFT_Item_SpearOfShojin",
-          "TFT_Item_StatikkShiv"
-        ]
-      },
-      "roles": {
-        "TFT17_Galio": "Item holder",
-        "TFT17_AurelionSol": "Item holder",
-        "TFT17_Karma": "Item holder"
-      },
-      "threeStars": [],
-      "positions": {
-        "TFT17_AurelionSol": {
-          "row": 4,
-          "col": 1
-        },
-        "TFT17_Blitzcrank": {
-          "row": 4,
-          "col": 4
-        },
-        "TFT17_Galio": {
-          "row": 1,
-          "col": 4
-        },
-        "TFT17_Karma": {
-          "row": 4,
-          "col": 2
-        },
-        "TFT17_Mordekaiser": {
-          "row": 3,
-          "col": 3
-        },
-        "TFT17_Morgana": {
-          "row": 3,
-          "col": 4
-        },
-        "TFT17_Rhaast": {
-          "row": 4,
-          "col": 1
-        }
-      },
-      "augments": [
-        "Anima Commander",
-        "Comeback Story",
-        "Epic Rolldown",
-        "Second Wind II",
-        "Commander Partial Ascension",
-        "Calltochaos"
-      ],
-      "style": "9u · avg #3.5",
-      "sourceUrl": "https://www.metatft.com/comps",
-      "sources": [
-        "tactics.tools",
-        "lolchess.gg",
-        "metatft.com",
-        "tftacademy.com"
-      ],
-      "sourceCount": 4,
-      "primarySource": "metatft.com",
-      "metaSources": [
-        "tactics.tools",
-        "lolchess.gg",
-        "metatft.com",
-        "tftacademy.com"
-      ],
-      "metaConfirmed": true,
-      "matchConfidence": 0.875,
-      "tips": [
-        "Most common Mecha line will be lose streak to guarantee items. Look for an econ engine: Timebreaker > Primordian > Arbiter.",
-        "Standard level 6 and 7 intervals (3-2 / 3-5 if streaking). Play around Brawler and Voyager. Always play Asol and transfer items.",
-        "Level to 8 and roll hard. Don't push for 9 until you hit 2* Mecha units. Morgana 2 can temporarily tank until you find Mech 2."
-      ]
-    },
-    {
-      "source": "metatft.com",
-      "name": "9u · avg #3.5",
-      "tier": "S",
-      "championIds": [
-        "TFT17_AurelionSol",
-        "TFT17_Blitzcrank",
-        "TFT17_Galio",
-        "TFT17_Karma",
-        "TFT17_Mordekaiser",
-        "TFT17_Morgana",
-        "TFT17_Rhaast"
-      ],
-      "champions": [
-        "Aurelion Sol",
-        "Blitzcrank",
-        "Galio",
-        "Karma",
-        "Mordekaiser",
-        "Morgana",
-        "Rhaast"
-      ],
-      "count": 7530,
-      "avgPlace": 3.466,
-      "top4Rate": 0.4746132043991987,
-      "winRate": 0,
-      "items": {
-        "TFT17_Galio": [
-          "TFT_Item_GargoyleStoneplate",
-          "TFT17_AnimaSquadItem_Tier2_LionessLament",
-          "TFT_Item_NightHarvester"
-        ],
-        "TFT17_AurelionSol": [
-          "TFT_Item_JeweledGauntlet",
-          "TFT_Item_RabadonsDeathcap",
-          "TFT17_AnimaSquadItem_Tier2_Annihilator"
-        ],
-        "TFT17_Karma": [
-          "TFT_Item_Morellonomicon",
-          "TFT_Item_SpearOfShojin",
-          "TFT_Item_StatikkShiv"
-        ]
-      },
-      "roles": {
-        "TFT17_Galio": "Item holder",
-        "TFT17_AurelionSol": "Item holder",
-        "TFT17_Karma": "Item holder"
-      },
-      "threeStars": [],
-      "positions": {
-        "TFT17_AurelionSol": {
-          "row": 4,
-          "col": 1
-        },
-        "TFT17_Blitzcrank": {
-          "row": 4,
-          "col": 4
-        },
-        "TFT17_Galio": {
-          "row": 1,
-          "col": 4
-        },
-        "TFT17_Karma": {
-          "row": 4,
-          "col": 2
-        },
-        "TFT17_Mordekaiser": {
-          "row": 3,
-          "col": 3
-        },
-        "TFT17_Morgana": {
-          "row": 3,
-          "col": 4
-        },
-        "TFT17_Rhaast": {
-          "row": 4,
-          "col": 1
-        }
-      },
-      "augments": [
-        "Anima Commander",
-        "Comeback Story",
-        "Epic Rolldown",
-        "Second Wind II",
-        "Commander Partial Ascension",
-        "Calltochaos"
-      ],
-      "style": "9u · avg #3.5",
-      "sourceUrl": "https://www.metatft.com/comps",
-      "sources": [
-        "tactics.tools",
-        "lolchess.gg",
-        "metatft.com",
-        "tftacademy.com"
-      ],
-      "sourceCount": 4,
-      "primarySource": "metatft.com",
-      "metaSources": [
-        "tactics.tools",
-        "lolchess.gg",
-        "metatft.com",
-        "tftacademy.com"
-      ],
-      "metaConfirmed": true,
-      "matchConfidence": 0.875,
-      "tips": [
-        "Most common Mecha line will be lose streak to guarantee items. Look for an econ engine: Timebreaker > Primordian > Arbiter.",
-        "Standard level 6 and 7 intervals (3-2 / 3-5 if streaking). Play around Brawler and Voyager. Always play Asol and transfer items.",
-        "Level to 8 and roll hard. Don't push for 9 until you hit 2* Mecha units. Morgana 2 can temporarily tank until you find Mech 2."
-      ]
-    },
-    {
-      "source": "metatft.com",
-      "name": "9u · avg #3.5",
-      "tier": "S",
-      "championIds": [
-        "TFT17_AurelionSol",
-        "TFT17_Blitzcrank",
-        "TFT17_Galio",
-        "TFT17_Karma",
-        "TFT17_Mordekaiser",
-        "TFT17_Morgana",
-        "TFT17_Rhaast"
-      ],
-      "champions": [
-        "Aurelion Sol",
-        "Blitzcrank",
-        "Galio",
-        "Karma",
-        "Mordekaiser",
-        "Morgana",
-        "Rhaast"
-      ],
-      "count": 7530,
-      "avgPlace": 3.466,
-      "top4Rate": 0.5139549410005941,
-      "winRate": 0,
-      "items": {
-        "TFT17_Galio": [
-          "TFT_Item_GargoyleStoneplate",
-          "TFT17_AnimaSquadItem_Tier2_LionessLament",
-          "TFT_Item_NightHarvester"
-        ],
-        "TFT17_AurelionSol": [
-          "TFT_Item_JeweledGauntlet",
-          "TFT_Item_RabadonsDeathcap",
-          "TFT17_AnimaSquadItem_Tier2_Annihilator"
-        ],
-        "TFT17_Karma": [
-          "TFT_Item_Morellonomicon",
-          "TFT_Item_SpearOfShojin",
-          "TFT_Item_StatikkShiv"
-        ]
-      },
-      "roles": {
-        "TFT17_Galio": "Item holder",
-        "TFT17_AurelionSol": "Item holder",
-        "TFT17_Karma": "Item holder"
-      },
-      "threeStars": [],
-      "positions": {
-        "TFT17_AurelionSol": {
-          "row": 4,
-          "col": 1
-        },
-        "TFT17_Blitzcrank": {
-          "row": 4,
-          "col": 4
-        },
-        "TFT17_Galio": {
-          "row": 1,
-          "col": 4
-        },
-        "TFT17_Karma": {
-          "row": 4,
-          "col": 2
-        },
-        "TFT17_Mordekaiser": {
-          "row": 3,
-          "col": 3
-        },
-        "TFT17_Morgana": {
-          "row": 3,
-          "col": 4
-        },
-        "TFT17_Rhaast": {
-          "row": 4,
-          "col": 1
-        }
-      },
-      "augments": [
-        "Anima Commander",
-        "Comeback Story",
-        "Epic Rolldown",
-        "Second Wind II",
-        "Commander Partial Ascension",
-        "Calltochaos"
-      ],
-      "style": "9u · avg #3.5",
-      "sourceUrl": "https://www.metatft.com/comps",
-      "sources": [
-        "tactics.tools",
-        "lolchess.gg",
-        "metatft.com",
-        "tftacademy.com"
-      ],
-      "sourceCount": 4,
-      "primarySource": "metatft.com",
-      "metaSources": [
-        "tactics.tools",
-        "lolchess.gg",
-        "metatft.com",
-        "tftacademy.com"
-      ],
-      "metaConfirmed": true,
-      "matchConfidence": 0.792,
-      "tips": [
-        "Most common Mecha line will be lose streak to guarantee items. Look for an econ engine: Timebreaker > Primordian > Arbiter.",
-        "Standard level 6 and 7 intervals (3-2 / 3-5 if streaking). Play around Brawler and Voyager. Always play Asol and transfer items.",
-        "Level to 8 and roll hard. Don't push for 9 until you hit 2* Mecha units. Morgana 2 can temporarily tank until you find Mech 2."
-      ]
-    },
-    {
-      "source": "metatft.com",
-      "name": "9u · avg #3.5",
-      "tier": "S",
-      "championIds": [
-        "TFT17_AurelionSol",
-        "TFT17_Blitzcrank",
-        "TFT17_Galio",
-        "TFT17_Karma",
-        "TFT17_Mordekaiser",
-        "TFT17_Morgana",
-        "TFT17_Rhaast"
-      ],
-      "champions": [
-        "Aurelion Sol",
-        "Blitzcrank",
-        "Galio",
-        "Karma",
-        "Mordekaiser",
-        "Morgana",
-        "Rhaast"
-      ],
-      "count": 7530,
-      "avgPlace": 3.466,
-      "top4Rate": 0.4746132043991988,
-      "winRate": 0,
-      "items": {
-        "TFT17_Galio": [
-          "TFT_Item_GargoyleStoneplate",
-          "TFT17_AnimaSquadItem_Tier2_LionessLament",
-          "TFT_Item_NightHarvester"
-        ],
-        "TFT17_AurelionSol": [
-          "TFT_Item_JeweledGauntlet",
-          "TFT_Item_RabadonsDeathcap",
-          "TFT17_AnimaSquadItem_Tier2_Annihilator"
-        ],
-        "TFT17_Karma": [
-          "TFT_Item_Morellonomicon",
-          "TFT_Item_SpearOfShojin",
-          "TFT_Item_StatikkShiv"
-        ]
-      },
-      "roles": {
-        "TFT17_Galio": "Item holder",
-        "TFT17_AurelionSol": "Item holder",
-        "TFT17_Karma": "Item holder"
-      },
-      "threeStars": [],
-      "positions": {
-        "TFT17_AurelionSol": {
-          "row": 4,
-          "col": 1
-        },
-        "TFT17_Blitzcrank": {
-          "row": 4,
-          "col": 4
-        },
-        "TFT17_Galio": {
-          "row": 1,
-          "col": 4
-        },
-        "TFT17_Karma": {
-          "row": 4,
-          "col": 2
-        },
-        "TFT17_Mordekaiser": {
-          "row": 3,
-          "col": 3
-        },
-        "TFT17_Morgana": {
-          "row": 3,
-          "col": 4
-        },
-        "TFT17_Rhaast": {
-          "row": 4,
-          "col": 1
-        }
-      },
-      "augments": [
-        "Anima Commander",
-        "Comeback Story",
-        "Epic Rolldown",
-        "Second Wind II",
-        "Commander Partial Ascension",
-        "Calltochaos"
-      ],
-      "style": "9u · avg #3.5",
-      "sourceUrl": "https://www.metatft.com/comps",
-      "sources": [
-        "tactics.tools",
-        "lolchess.gg",
-        "metatft.com",
-        "tftacademy.com"
-      ],
-      "sourceCount": 4,
-      "primarySource": "metatft.com",
-      "metaSources": [
-        "tactics.tools",
-        "lolchess.gg",
-        "metatft.com",
-        "tftacademy.com"
-      ],
-      "metaConfirmed": true,
-      "matchConfidence": 0.875,
-      "tips": [
-        "Most common Mecha line will be lose streak to guarantee items. Look for an econ engine: Timebreaker > Primordian > Arbiter.",
-        "Standard level 6 and 7 intervals (3-2 / 3-5 if streaking). Play around Brawler and Voyager. Always play Asol and transfer items.",
-        "Level to 8 and roll hard. Don't push for 9 until you hit 2* Mecha units. Morgana 2 can temporarily tank until you find Mech 2."
-      ]
-    },
-    {
-      "source": "metatft.com",
-      "name": "9u · avg #3.5",
-      "tier": "S",
-      "championIds": [
-        "TFT17_AurelionSol",
-        "TFT17_Blitzcrank",
-        "TFT17_Galio",
-        "TFT17_Karma",
-        "TFT17_Mordekaiser",
-        "TFT17_Morgana",
-        "TFT17_Rhaast"
-      ],
-      "champions": [
-        "Aurelion Sol",
-        "Blitzcrank",
-        "Galio",
-        "Karma",
-        "Mordekaiser",
-        "Morgana",
-        "Rhaast"
-      ],
-      "count": 7530,
-      "avgPlace": 3.466,
-      "top4Rate": 0.4746132043991987,
-      "winRate": 0,
-      "items": {
-        "TFT17_Galio": [
-          "TFT_Item_GargoyleStoneplate",
-          "TFT17_AnimaSquadItem_Tier2_LionessLament",
-          "TFT_Item_NightHarvester"
-        ],
-        "TFT17_AurelionSol": [
-          "TFT_Item_JeweledGauntlet",
-          "TFT_Item_RabadonsDeathcap",
-          "TFT17_AnimaSquadItem_Tier2_Annihilator"
-        ],
-        "TFT17_Karma": [
-          "TFT_Item_Morellonomicon",
-          "TFT_Item_SpearOfShojin",
-          "TFT_Item_StatikkShiv"
-        ]
-      },
-      "roles": {
-        "TFT17_Galio": "Item holder",
-        "TFT17_AurelionSol": "Item holder",
-        "TFT17_Karma": "Item holder"
-      },
-      "threeStars": [],
-      "positions": {
-        "TFT17_AurelionSol": {
-          "row": 4,
-          "col": 1
-        },
-        "TFT17_Blitzcrank": {
-          "row": 4,
-          "col": 4
-        },
-        "TFT17_Galio": {
-          "row": 1,
-          "col": 4
-        },
-        "TFT17_Karma": {
-          "row": 4,
-          "col": 2
-        },
-        "TFT17_Mordekaiser": {
-          "row": 3,
-          "col": 3
-        },
-        "TFT17_Morgana": {
-          "row": 3,
-          "col": 4
-        },
-        "TFT17_Rhaast": {
-          "row": 4,
-          "col": 1
-        }
-      },
-      "augments": [
-        "Anima Commander",
-        "Comeback Story",
-        "Epic Rolldown",
-        "Second Wind II",
-        "Commander Partial Ascension",
-        "Calltochaos"
-      ],
-      "style": "9u · avg #3.5",
-      "sourceUrl": "https://www.metatft.com/comps",
-      "sources": [
-        "lolchess.gg",
-        "tactics.tools",
-        "metatft.com",
-        "tftacademy.com"
-      ],
-      "sourceCount": 4,
-      "primarySource": "metatft.com",
-      "metaSources": [
-        "lolchess.gg",
-        "tactics.tools",
-        "metatft.com",
-        "tftacademy.com"
-      ],
-      "metaConfirmed": true,
-      "matchConfidence": 0.875,
-      "tips": [
-        "Most common Mecha line will be lose streak to guarantee items. Look for an econ engine: Timebreaker > Primordian > Arbiter.",
-        "Standard level 6 and 7 intervals (3-2 / 3-5 if streaking). Play around Brawler and Voyager. Always play Asol and transfer items.",
-        "Level to 8 and roll hard. Don't push for 9 until you hit 2* Mecha units. Morgana 2 can temporarily tank until you find Mech 2."
-      ]
-    },
-    {
-      "source": "metatft.com",
-      "name": "9u · avg #3.5",
-      "tier": "S",
-      "championIds": [
-        "TFT17_AurelionSol",
-        "TFT17_Blitzcrank",
-        "TFT17_Galio",
-        "TFT17_Karma",
-        "TFT17_Mordekaiser",
-        "TFT17_Morgana",
-        "TFT17_Rhaast"
-      ],
-      "champions": [
-        "Aurelion Sol",
-        "Blitzcrank",
-        "Galio",
-        "Karma",
-        "Mordekaiser",
-        "Morgana",
-        "Rhaast"
-      ],
-      "count": 7530,
-      "avgPlace": 3.466,
-      "top4Rate": 0.4746132043991987,
-      "winRate": 0,
-      "items": {
-        "TFT17_AurelionSol": [
-          "TFT_Item_JeweledGauntlet",
-          "TFT_Item_RabadonsDeathcap",
-          "TFT17_AnimaSquadItem_Tier2_Annihilator"
-        ],
-        "TFT17_Galio": [
-          "TFT_Item_GargoyleStoneplate",
-          "TFT17_AnimaSquadItem_Tier2_LionessLament",
-          "TFT_Item_NightHarvester"
-        ],
-        "TFT17_Karma": [
-          "TFT_Item_Morellonomicon",
-          "TFT_Item_SpearOfShojin",
-          "TFT_Item_StatikkShiv"
-        ]
-      },
-      "roles": {
-        "TFT17_AurelionSol": "Item holder",
-        "TFT17_Galio": "Item holder",
-        "TFT17_Karma": "Item holder"
-      },
-      "threeStars": [],
-      "positions": {
-        "TFT17_AurelionSol": {
-          "row": 4,
-          "col": 1
-        },
-        "TFT17_Blitzcrank": {
-          "row": 4,
-          "col": 4
-        },
-        "TFT17_Galio": {
-          "row": 1,
-          "col": 4
-        },
-        "TFT17_Karma": {
-          "row": 4,
-          "col": 2
-        },
-        "TFT17_Mordekaiser": {
-          "row": 3,
-          "col": 3
-        },
-        "TFT17_Morgana": {
-          "row": 3,
-          "col": 4
-        },
-        "TFT17_Rhaast": {
-          "row": 4,
-          "col": 1
-        }
-      },
-      "augments": [
-        "Anima Commander",
-        "Comeback Story",
-        "Epic Rolldown",
-        "Second Wind II",
-        "Commander Partial Ascension",
-        "Calltochaos"
-      ],
-      "style": "9u · avg #3.5",
-      "sourceUrl": "https://www.metatft.com/comps",
-      "sources": [
-        "metatft.com",
-        "tactics.tools",
-        "lolchess.gg",
-        "tftacademy.com"
-      ],
-      "sourceCount": 4,
-      "primarySource": "metatft.com",
-      "metaSources": [
-        "metatft.com",
-        "tactics.tools",
-        "lolchess.gg",
-        "tftacademy.com"
-      ],
-      "metaConfirmed": true,
-      "matchConfidence": 0.875,
-      "tips": [
-        "Most common Mecha line will be lose streak to guarantee items. Look for an econ engine: Timebreaker > Primordian > Arbiter.",
-        "Standard level 6 and 7 intervals (3-2 / 3-5 if streaking). Play around Brawler and Voyager. Always play Asol and transfer items.",
-        "Level to 8 and roll hard. Don't push for 9 until you hit 2* Mecha units. Morgana 2 can temporarily tank until you find Mech 2."
-      ]
-    },
-    {
-      "source": "metatft.com",
-      "name": "9u · avg #3.5",
-      "tier": "S",
-      "championIds": [
-        "TFT17_AurelionSol",
-        "TFT17_Blitzcrank",
-        "TFT17_Galio",
-        "TFT17_Karma",
-        "TFT17_Mordekaiser",
-        "TFT17_Morgana",
-        "TFT17_Rhaast"
-      ],
-      "champions": [
-        "Aurelion Sol",
-        "Blitzcrank",
-        "Galio",
-        "Karma",
-        "Mordekaiser",
-        "Morgana",
-        "Rhaast"
-      ],
-      "count": 7530,
-      "avgPlace": 3.466,
-      "top4Rate": 0.4746132043991987,
-      "winRate": 0,
-      "items": {
-        "TFT17_Karma": [
-          "TFT_Item_Morellonomicon",
-          "TFT_Item_SpearOfShojin",
-          "TFT_Item_StatikkShiv"
-        ],
-        "TFT17_AurelionSol": [
-          "TFT_Item_RabadonsDeathcap",
-          "TFT_Item_JeweledGauntlet",
-          "TFT17_AnimaSquadItem_Tier2_Annihilator"
-        ],
-        "TFT17_Galio": [
-          "TFT_Item_GargoyleStoneplate",
-          "TFT17_AnimaSquadItem_Tier2_LionessLament",
-          "TFT_Item_NightHarvester"
-        ]
-      },
-      "roles": {
-        "TFT17_AurelionSol": "Item holder",
-        "TFT17_Galio": "Item holder",
-        "TFT17_Karma": "Item holder"
-      },
-      "threeStars": [],
-      "positions": {
-        "TFT17_Karma": {
-          "row": 4,
-          "col": 5
-        },
-        "TFT17_AurelionSol": {
-          "row": 4,
-          "col": 7
-        },
-        "TFT17_Galio": {
-          "row": 1,
-          "col": 5
-        },
-        "TFT17_Rhaast": {
-          "row": 4,
-          "col": 1
-        },
-        "TFT17_Mordekaiser": {
-          "row": 4,
-          "col": 2
-        },
-        "TFT17_Morgana": {
-          "row": 4,
-          "col": 3
-        },
-        "TFT17_Blitzcrank": {
-          "row": 4,
-          "col": 4
-        }
-      },
-      "augments": [
-        "Second Wind II",
-        "Commander Partial Ascension",
-        "Calltochaos",
-        "The Golden Dragon",
-        "Find Your Center",
-        "Force Of Nature"
-      ],
-      "style": "9u · avg #3.5",
-      "sourceUrl": "https://www.metatft.com/comps",
-      "sources": [
-        "tftacademy.com",
-        "tactics.tools",
-        "lolchess.gg",
-        "metatft.com"
-      ],
-      "sourceCount": 4,
-      "primarySource": "metatft.com",
-      "metaSources": [
-        "tftacademy.com",
-        "tactics.tools",
-        "lolchess.gg",
-        "metatft.com"
-      ],
-      "metaConfirmed": true,
-      "matchConfidence": 0.875,
-      "tips": [
-        "Most common Mecha line will be lose streak to guarantee items. Look for an econ engine: Timebreaker > Primordian > Arbiter.",
-        "Standard level 6 and 7 intervals (3-2 / 3-5 if streaking). Play around Brawler and Voyager. Always play Asol and transfer items.",
-        "Level to 8 and roll hard. Don't push for 9 until you hit 2* Mecha units. Morgana 2 can temporarily tank until you find Mech 2."
-      ]
-    },
-    {
-      "source": "metatft.com",
       "name": "8u · avg #2.8",
       "tier": "S",
       "championIds": [
@@ -908,9 +20,9 @@
         "Ornn",
         "Samira"
       ],
-      "count": 7487,
-      "avgPlace": 2.7647,
-      "top4Rate": 0.48532642617749017,
+      "count": 7732,
+      "avgPlace": 2.7773,
+      "top4Rate": 0.4846974674455688,
       "winRate": 0,
       "items": {
         "TFT17_Ornn": [
@@ -1023,9 +135,9 @@
         "Ornn",
         "Samira"
       ],
-      "count": 7487,
-      "avgPlace": 2.7647,
-      "top4Rate": 0.4829740717144062,
+      "count": 7732,
+      "avgPlace": 2.7773,
+      "top4Rate": 0.4822343531834335,
       "winRate": 0,
       "items": {
         "TFT17_Ornn": [
@@ -1138,9 +250,9 @@
         "Ornn",
         "Samira"
       ],
-      "count": 7487,
-      "avgPlace": 2.7647,
-      "top4Rate": 0.49619719364400233,
+      "count": 7732,
+      "avgPlace": 2.7773,
+      "top4Rate": 0.4955041032931395,
       "winRate": 0,
       "items": {
         "TFT17_Ornn": [
@@ -1253,9 +365,9 @@
         "Ornn",
         "Samira"
       ],
-      "count": 7487,
-      "avgPlace": 2.7647,
-      "top4Rate": 0.49195618729036933,
+      "count": 7732,
+      "avgPlace": 2.7773,
+      "top4Rate": 0.49125130393510824,
       "winRate": 0,
       "items": {
         "TFT17_Ornn": [
@@ -1368,9 +480,9 @@
         "Ornn",
         "Samira"
       ],
-      "count": 7487,
-      "avgPlace": 2.7647,
-      "top4Rate": 0.47141333379482486,
+      "count": 7732,
+      "avgPlace": 2.7773,
+      "top4Rate": 0.47050397787235276,
       "winRate": 0,
       "items": {
         "TFT17_Ornn": [
@@ -1483,9 +595,9 @@
         "Ornn",
         "Samira"
       ],
-      "count": 7487,
-      "avgPlace": 2.7647,
-      "top4Rate": 0.5253757877052545,
+      "count": 7732,
+      "avgPlace": 2.7773,
+      "top4Rate": 0.524863881258634,
       "winRate": 0,
       "items": {
         "TFT17_Ornn": [
@@ -1600,9 +712,9 @@
         "Ornn",
         "Samira"
       ],
-      "count": 7487,
-      "avgPlace": 2.7647,
-      "top4Rate": 0.5253757877052545,
+      "count": 7732,
+      "avgPlace": 2.7773,
+      "top4Rate": 0.524863881258634,
       "winRate": 0,
       "items": {
         "TFT17_Ornn": [
@@ -1717,9 +829,9 @@
         "Ornn",
         "Samira"
       ],
-      "count": 7487,
-      "avgPlace": 2.7647,
-      "top4Rate": 0.49619719364400233,
+      "count": 7732,
+      "avgPlace": 2.7773,
+      "top4Rate": 0.49550410329313943,
       "winRate": 0,
       "items": {
         "TFT17_Ornn": [
@@ -1832,9 +944,9 @@
         "Ornn",
         "Samira"
       ],
-      "count": 7487,
-      "avgPlace": 2.7647,
-      "top4Rate": 0.48532642617749017,
+      "count": 7732,
+      "avgPlace": 2.7773,
+      "top4Rate": 0.4846974674455688,
       "winRate": 0,
       "items": {
         "TFT17_Ornn": [
@@ -1947,9 +1059,9 @@
         "Ornn",
         "Samira"
       ],
-      "count": 7487,
-      "avgPlace": 2.7647,
-      "top4Rate": 0.49619719364400233,
+      "count": 7732,
+      "avgPlace": 2.7773,
+      "top4Rate": 0.4955041032931395,
       "winRate": 0,
       "items": {
         "TFT17_Ornn": [
@@ -1964,8 +1076,8 @@
         ],
         "TFT17_Samira": [
           "TFT_Item_SpearOfShojin",
-          "TFT_Item_Deathblade",
-          "TFT_Item_LastWhisper"
+          "TFT_Item_LastWhisper",
+          "TFT_Item_Deathblade"
         ],
         "TFT17_Nami": [
           "TFT_Item_SpearOfShojin",
@@ -2062,9 +1174,9 @@
         "Ornn",
         "Samira"
       ],
-      "count": 7487,
-      "avgPlace": 2.7647,
-      "top4Rate": 0.4829740717144062,
+      "count": 7732,
+      "avgPlace": 2.7773,
+      "top4Rate": 0.4822343531834335,
       "winRate": 0,
       "items": {
         "TFT17_Nami": [
@@ -2078,9 +1190,9 @@
           "TFT_Item_Redemption"
         ],
         "TFT17_Samira": [
-          "TFT_Item_Deathblade",
           "TFT_Item_SpearOfShojin",
-          "TFT_Item_LastWhisper"
+          "TFT_Item_LastWhisper",
+          "TFT_Item_Deathblade"
         ],
         "TFT17_Blitzcrank": [
           "TFT_Item_JeweledGauntlet",
@@ -2177,9 +1289,9 @@
         "Ornn",
         "Samira"
       ],
-      "count": 7487,
-      "avgPlace": 2.7647,
-      "top4Rate": 0.49619719364400233,
+      "count": 7732,
+      "avgPlace": 2.7773,
+      "top4Rate": 0.4955041032931395,
       "winRate": 0,
       "items": {
         "TFT17_Blitzcrank": [
@@ -2198,9 +1310,9 @@
           "TFT_Item_Redemption"
         ],
         "TFT17_Samira": [
-          "TFT_Item_Deathblade",
           "TFT_Item_LastWhisper",
-          "TFT_Item_SpearOfShojin"
+          "TFT_Item_SpearOfShojin",
+          "TFT_Item_Deathblade"
         ]
       },
       "roles": {
@@ -2292,9 +1404,9 @@
         "Ornn",
         "Samira"
       ],
-      "count": 7487,
-      "avgPlace": 2.7647,
-      "top4Rate": 0.527879559680098,
+      "count": 7732,
+      "avgPlace": 2.7773,
+      "top4Rate": 0.5271897517922892,
       "winRate": 0,
       "items": {
         "TFT17_Blitzcrank": [
@@ -2313,9 +1425,9 @@
           "TFT_Item_Redemption"
         ],
         "TFT17_Samira": [
-          "TFT_Item_Deathblade",
           "TFT_Item_LastWhisper",
-          "TFT_Item_SpearOfShojin"
+          "TFT_Item_SpearOfShojin",
+          "TFT_Item_Deathblade"
         ]
       },
       "roles": {
@@ -2409,15 +1521,15 @@
         "Ornn",
         "Samira"
       ],
-      "count": 7487,
-      "avgPlace": 2.7647,
-      "top4Rate": 0.4829740717144062,
+      "count": 7732,
+      "avgPlace": 2.7773,
+      "top4Rate": 0.4822343531834335,
       "winRate": 0,
       "items": {
         "TFT17_Samira": [
           "TFT_Item_SpearOfShojin",
-          "TFT_Item_Deathblade",
-          "TFT_Item_LastWhisper"
+          "TFT_Item_LastWhisper",
+          "TFT_Item_Deathblade"
         ],
         "TFT17_Ornn": [
           "TFT_Item_WarmogsArmor",
@@ -2524,9 +1636,9 @@
         "Ornn",
         "Samira"
       ],
-      "count": 7487,
-      "avgPlace": 2.7647,
-      "top4Rate": 0.49619719364400233,
+      "count": 7732,
+      "avgPlace": 2.7773,
+      "top4Rate": 0.4955041032931395,
       "winRate": 0,
       "items": {
         "TFT17_Ornn": [
@@ -2643,9 +1755,9 @@
         "Shen",
         "Teemo"
       ],
-      "count": 7487,
-      "avgPlace": 3.5096,
-      "top4Rate": 0.517868624435828,
+      "count": 7732,
+      "avgPlace": 3.4977,
+      "top4Rate": 0.5172687202784391,
       "winRate": 0,
       "items": {
         "TFT17_Ornn": [
@@ -2769,9 +1881,9 @@
         "Shen",
         "Teemo"
       ],
-      "count": 7487,
-      "avgPlace": 3.5096,
-      "top4Rate": 0.4896093866596433,
+      "count": 7732,
+      "avgPlace": 3.4977,
+      "top4Rate": 0.4894079682722105,
       "winRate": 0,
       "items": {
         "TFT17_Ornn": [
@@ -2873,6 +1985,894 @@
     },
     {
       "source": "metatft.com",
+      "name": "9u · avg #3.5",
+      "tier": "S",
+      "championIds": [
+        "TFT17_AurelionSol",
+        "TFT17_Blitzcrank",
+        "TFT17_Galio",
+        "TFT17_Karma",
+        "TFT17_Mordekaiser",
+        "TFT17_Morgana",
+        "TFT17_Rhaast"
+      ],
+      "champions": [
+        "Aurelion Sol",
+        "Blitzcrank",
+        "Galio",
+        "Karma",
+        "Mordekaiser",
+        "Morgana",
+        "Rhaast"
+      ],
+      "count": 7596,
+      "avgPlace": 3.4637,
+      "top4Rate": 0.5133030175196156,
+      "winRate": 0,
+      "items": {
+        "TFT17_Galio": [
+          "TFT_Item_GargoyleStoneplate",
+          "TFT17_AnimaSquadItem_Tier2_LionessLament",
+          "TFT_Item_NightHarvester"
+        ],
+        "TFT17_AurelionSol": [
+          "TFT_Item_JeweledGauntlet",
+          "TFT_Item_RabadonsDeathcap",
+          "TFT17_AnimaSquadItem_Tier2_Annihilator"
+        ],
+        "TFT17_Karma": [
+          "TFT_Item_Morellonomicon",
+          "TFT_Item_SpearOfShojin",
+          "TFT_Item_StatikkShiv"
+        ]
+      },
+      "roles": {
+        "TFT17_Galio": "Item holder",
+        "TFT17_AurelionSol": "Item holder",
+        "TFT17_Karma": "Item holder"
+      },
+      "threeStars": [],
+      "positions": {
+        "TFT17_AurelionSol": {
+          "row": 4,
+          "col": 1
+        },
+        "TFT17_Blitzcrank": {
+          "row": 4,
+          "col": 4
+        },
+        "TFT17_Galio": {
+          "row": 1,
+          "col": 4
+        },
+        "TFT17_Karma": {
+          "row": 4,
+          "col": 2
+        },
+        "TFT17_Mordekaiser": {
+          "row": 3,
+          "col": 3
+        },
+        "TFT17_Morgana": {
+          "row": 3,
+          "col": 4
+        },
+        "TFT17_Rhaast": {
+          "row": 4,
+          "col": 1
+        }
+      },
+      "augments": [
+        "Anima Commander",
+        "Comeback Story",
+        "Epic Rolldown",
+        "Second Wind II",
+        "Commander Partial Ascension",
+        "Calltochaos"
+      ],
+      "style": "9u · avg #3.5",
+      "sourceUrl": "https://www.metatft.com/comps",
+      "sources": [
+        "tactics.tools",
+        "lolchess.gg",
+        "metatft.com",
+        "tftacademy.com"
+      ],
+      "sourceCount": 4,
+      "primarySource": "metatft.com",
+      "metaSources": [
+        "tactics.tools",
+        "lolchess.gg",
+        "metatft.com",
+        "tftacademy.com"
+      ],
+      "metaConfirmed": true,
+      "matchConfidence": 0.792,
+      "tips": [
+        "Most common Mecha line will be lose streak to guarantee items. Look for an econ engine: Timebreaker > Primordian > Arbiter.",
+        "Standard level 6 and 7 intervals (3-2 / 3-5 if streaking). Play around Brawler and Voyager. Always play Asol and transfer items.",
+        "Level to 8 and roll hard. Don't push for 9 until you hit 2* Mecha units. Morgana 2 can temporarily tank until you find Mech 2."
+      ]
+    },
+    {
+      "source": "metatft.com",
+      "name": "9u · avg #3.5",
+      "tier": "S",
+      "championIds": [
+        "TFT17_AurelionSol",
+        "TFT17_Blitzcrank",
+        "TFT17_Galio",
+        "TFT17_Karma",
+        "TFT17_Mordekaiser",
+        "TFT17_Morgana",
+        "TFT17_Rhaast"
+      ],
+      "champions": [
+        "Aurelion Sol",
+        "Blitzcrank",
+        "Galio",
+        "Karma",
+        "Mordekaiser",
+        "Morgana",
+        "Rhaast"
+      ],
+      "count": 7596,
+      "avgPlace": 3.4637,
+      "top4Rate": 0.47375993631768454,
+      "winRate": 0,
+      "items": {
+        "TFT17_Galio": [
+          "TFT_Item_GargoyleStoneplate",
+          "TFT17_AnimaSquadItem_Tier2_LionessLament",
+          "TFT_Item_NightHarvester"
+        ],
+        "TFT17_AurelionSol": [
+          "TFT_Item_JeweledGauntlet",
+          "TFT_Item_RabadonsDeathcap",
+          "TFT17_AnimaSquadItem_Tier2_Annihilator"
+        ],
+        "TFT17_Karma": [
+          "TFT_Item_Morellonomicon",
+          "TFT_Item_SpearOfShojin",
+          "TFT_Item_StatikkShiv"
+        ]
+      },
+      "roles": {
+        "TFT17_Galio": "Item holder",
+        "TFT17_AurelionSol": "Item holder",
+        "TFT17_Karma": "Item holder"
+      },
+      "threeStars": [],
+      "positions": {
+        "TFT17_AurelionSol": {
+          "row": 4,
+          "col": 1
+        },
+        "TFT17_Blitzcrank": {
+          "row": 4,
+          "col": 4
+        },
+        "TFT17_Galio": {
+          "row": 1,
+          "col": 4
+        },
+        "TFT17_Karma": {
+          "row": 4,
+          "col": 2
+        },
+        "TFT17_Mordekaiser": {
+          "row": 3,
+          "col": 3
+        },
+        "TFT17_Morgana": {
+          "row": 3,
+          "col": 4
+        },
+        "TFT17_Rhaast": {
+          "row": 4,
+          "col": 1
+        }
+      },
+      "augments": [
+        "Anima Commander",
+        "Comeback Story",
+        "Epic Rolldown",
+        "Second Wind II",
+        "Commander Partial Ascension",
+        "Calltochaos"
+      ],
+      "style": "9u · avg #3.5",
+      "sourceUrl": "https://www.metatft.com/comps",
+      "sources": [
+        "tactics.tools",
+        "lolchess.gg",
+        "metatft.com",
+        "tftacademy.com"
+      ],
+      "sourceCount": 4,
+      "primarySource": "metatft.com",
+      "metaSources": [
+        "tactics.tools",
+        "lolchess.gg",
+        "metatft.com",
+        "tftacademy.com"
+      ],
+      "metaConfirmed": true,
+      "matchConfidence": 0.875,
+      "tips": [
+        "Most common Mecha line will be lose streak to guarantee items. Look for an econ engine: Timebreaker > Primordian > Arbiter.",
+        "Standard level 6 and 7 intervals (3-2 / 3-5 if streaking). Play around Brawler and Voyager. Always play Asol and transfer items.",
+        "Level to 8 and roll hard. Don't push for 9 until you hit 2* Mecha units. Morgana 2 can temporarily tank until you find Mech 2."
+      ]
+    },
+    {
+      "source": "metatft.com",
+      "name": "9u · avg #3.5",
+      "tier": "S",
+      "championIds": [
+        "TFT17_AurelionSol",
+        "TFT17_Blitzcrank",
+        "TFT17_Galio",
+        "TFT17_Karma",
+        "TFT17_Mordekaiser",
+        "TFT17_Morgana",
+        "TFT17_Rhaast"
+      ],
+      "champions": [
+        "Aurelion Sol",
+        "Blitzcrank",
+        "Galio",
+        "Karma",
+        "Mordekaiser",
+        "Morgana",
+        "Rhaast"
+      ],
+      "count": 7596,
+      "avgPlace": 3.4637,
+      "top4Rate": 0.47375993631768454,
+      "winRate": 0,
+      "items": {
+        "TFT17_Galio": [
+          "TFT_Item_GargoyleStoneplate",
+          "TFT17_AnimaSquadItem_Tier2_LionessLament",
+          "TFT_Item_NightHarvester"
+        ],
+        "TFT17_AurelionSol": [
+          "TFT_Item_JeweledGauntlet",
+          "TFT_Item_RabadonsDeathcap",
+          "TFT17_AnimaSquadItem_Tier2_Annihilator"
+        ],
+        "TFT17_Karma": [
+          "TFT_Item_Morellonomicon",
+          "TFT_Item_SpearOfShojin",
+          "TFT_Item_StatikkShiv"
+        ]
+      },
+      "roles": {
+        "TFT17_Galio": "Item holder",
+        "TFT17_AurelionSol": "Item holder",
+        "TFT17_Karma": "Item holder"
+      },
+      "threeStars": [],
+      "positions": {
+        "TFT17_AurelionSol": {
+          "row": 4,
+          "col": 1
+        },
+        "TFT17_Blitzcrank": {
+          "row": 4,
+          "col": 4
+        },
+        "TFT17_Galio": {
+          "row": 1,
+          "col": 4
+        },
+        "TFT17_Karma": {
+          "row": 4,
+          "col": 2
+        },
+        "TFT17_Mordekaiser": {
+          "row": 3,
+          "col": 3
+        },
+        "TFT17_Morgana": {
+          "row": 3,
+          "col": 4
+        },
+        "TFT17_Rhaast": {
+          "row": 4,
+          "col": 1
+        }
+      },
+      "augments": [
+        "Anima Commander",
+        "Comeback Story",
+        "Epic Rolldown",
+        "Second Wind II",
+        "Commander Partial Ascension",
+        "Calltochaos"
+      ],
+      "style": "9u · avg #3.5",
+      "sourceUrl": "https://www.metatft.com/comps",
+      "sources": [
+        "tactics.tools",
+        "lolchess.gg",
+        "metatft.com",
+        "tftacademy.com"
+      ],
+      "sourceCount": 4,
+      "primarySource": "metatft.com",
+      "metaSources": [
+        "tactics.tools",
+        "lolchess.gg",
+        "metatft.com",
+        "tftacademy.com"
+      ],
+      "metaConfirmed": true,
+      "matchConfidence": 0.875,
+      "tips": [
+        "Most common Mecha line will be lose streak to guarantee items. Look for an econ engine: Timebreaker > Primordian > Arbiter.",
+        "Standard level 6 and 7 intervals (3-2 / 3-5 if streaking). Play around Brawler and Voyager. Always play Asol and transfer items.",
+        "Level to 8 and roll hard. Don't push for 9 until you hit 2* Mecha units. Morgana 2 can temporarily tank until you find Mech 2."
+      ]
+    },
+    {
+      "source": "metatft.com",
+      "name": "9u · avg #3.5",
+      "tier": "S",
+      "championIds": [
+        "TFT17_AurelionSol",
+        "TFT17_Blitzcrank",
+        "TFT17_Galio",
+        "TFT17_Karma",
+        "TFT17_Mordekaiser",
+        "TFT17_Morgana",
+        "TFT17_Rhaast"
+      ],
+      "champions": [
+        "Aurelion Sol",
+        "Blitzcrank",
+        "Galio",
+        "Karma",
+        "Mordekaiser",
+        "Morgana",
+        "Rhaast"
+      ],
+      "count": 7596,
+      "avgPlace": 3.4637,
+      "top4Rate": 0.47375993631768454,
+      "winRate": 0,
+      "items": {
+        "TFT17_Galio": [
+          "TFT_Item_GargoyleStoneplate",
+          "TFT17_AnimaSquadItem_Tier2_LionessLament",
+          "TFT_Item_NightHarvester"
+        ],
+        "TFT17_AurelionSol": [
+          "TFT_Item_JeweledGauntlet",
+          "TFT_Item_RabadonsDeathcap",
+          "TFT17_AnimaSquadItem_Tier2_Annihilator"
+        ],
+        "TFT17_Karma": [
+          "TFT_Item_Morellonomicon",
+          "TFT_Item_SpearOfShojin",
+          "TFT_Item_StatikkShiv"
+        ]
+      },
+      "roles": {
+        "TFT17_Galio": "Item holder",
+        "TFT17_AurelionSol": "Item holder",
+        "TFT17_Karma": "Item holder"
+      },
+      "threeStars": [],
+      "positions": {
+        "TFT17_AurelionSol": {
+          "row": 4,
+          "col": 1
+        },
+        "TFT17_Blitzcrank": {
+          "row": 4,
+          "col": 4
+        },
+        "TFT17_Galio": {
+          "row": 1,
+          "col": 4
+        },
+        "TFT17_Karma": {
+          "row": 4,
+          "col": 2
+        },
+        "TFT17_Mordekaiser": {
+          "row": 3,
+          "col": 3
+        },
+        "TFT17_Morgana": {
+          "row": 3,
+          "col": 4
+        },
+        "TFT17_Rhaast": {
+          "row": 4,
+          "col": 1
+        }
+      },
+      "augments": [
+        "Anima Commander",
+        "Comeback Story",
+        "Epic Rolldown",
+        "Second Wind II",
+        "Commander Partial Ascension",
+        "Calltochaos"
+      ],
+      "style": "9u · avg #3.5",
+      "sourceUrl": "https://www.metatft.com/comps",
+      "sources": [
+        "tactics.tools",
+        "lolchess.gg",
+        "metatft.com",
+        "tftacademy.com"
+      ],
+      "sourceCount": 4,
+      "primarySource": "metatft.com",
+      "metaSources": [
+        "tactics.tools",
+        "lolchess.gg",
+        "metatft.com",
+        "tftacademy.com"
+      ],
+      "metaConfirmed": true,
+      "matchConfidence": 0.875,
+      "tips": [
+        "Most common Mecha line will be lose streak to guarantee items. Look for an econ engine: Timebreaker > Primordian > Arbiter.",
+        "Standard level 6 and 7 intervals (3-2 / 3-5 if streaking). Play around Brawler and Voyager. Always play Asol and transfer items.",
+        "Level to 8 and roll hard. Don't push for 9 until you hit 2* Mecha units. Morgana 2 can temporarily tank until you find Mech 2."
+      ]
+    },
+    {
+      "source": "metatft.com",
+      "name": "9u · avg #3.5",
+      "tier": "S",
+      "championIds": [
+        "TFT17_AurelionSol",
+        "TFT17_Blitzcrank",
+        "TFT17_Galio",
+        "TFT17_Karma",
+        "TFT17_Mordekaiser",
+        "TFT17_Morgana",
+        "TFT17_Rhaast"
+      ],
+      "champions": [
+        "Aurelion Sol",
+        "Blitzcrank",
+        "Galio",
+        "Karma",
+        "Mordekaiser",
+        "Morgana",
+        "Rhaast"
+      ],
+      "count": 7596,
+      "avgPlace": 3.4637,
+      "top4Rate": 0.47375993631768454,
+      "winRate": 0,
+      "items": {
+        "TFT17_Galio": [
+          "TFT_Item_GargoyleStoneplate",
+          "TFT17_AnimaSquadItem_Tier2_LionessLament",
+          "TFT_Item_NightHarvester"
+        ],
+        "TFT17_AurelionSol": [
+          "TFT_Item_JeweledGauntlet",
+          "TFT_Item_RabadonsDeathcap",
+          "TFT17_AnimaSquadItem_Tier2_Annihilator"
+        ],
+        "TFT17_Karma": [
+          "TFT_Item_Morellonomicon",
+          "TFT_Item_SpearOfShojin",
+          "TFT_Item_StatikkShiv"
+        ]
+      },
+      "roles": {
+        "TFT17_Galio": "Item holder",
+        "TFT17_AurelionSol": "Item holder",
+        "TFT17_Karma": "Item holder"
+      },
+      "threeStars": [],
+      "positions": {
+        "TFT17_AurelionSol": {
+          "row": 4,
+          "col": 1
+        },
+        "TFT17_Blitzcrank": {
+          "row": 4,
+          "col": 4
+        },
+        "TFT17_Galio": {
+          "row": 1,
+          "col": 4
+        },
+        "TFT17_Karma": {
+          "row": 4,
+          "col": 2
+        },
+        "TFT17_Mordekaiser": {
+          "row": 3,
+          "col": 3
+        },
+        "TFT17_Morgana": {
+          "row": 3,
+          "col": 4
+        },
+        "TFT17_Rhaast": {
+          "row": 4,
+          "col": 1
+        }
+      },
+      "augments": [
+        "Anima Commander",
+        "Comeback Story",
+        "Epic Rolldown",
+        "Second Wind II",
+        "Commander Partial Ascension",
+        "Calltochaos"
+      ],
+      "style": "9u · avg #3.5",
+      "sourceUrl": "https://www.metatft.com/comps",
+      "sources": [
+        "tactics.tools",
+        "lolchess.gg",
+        "metatft.com",
+        "tftacademy.com"
+      ],
+      "sourceCount": 4,
+      "primarySource": "metatft.com",
+      "metaSources": [
+        "tactics.tools",
+        "lolchess.gg",
+        "metatft.com",
+        "tftacademy.com"
+      ],
+      "metaConfirmed": true,
+      "matchConfidence": 0.875,
+      "tips": [
+        "Most common Mecha line will be lose streak to guarantee items. Look for an econ engine: Timebreaker > Primordian > Arbiter.",
+        "Standard level 6 and 7 intervals (3-2 / 3-5 if streaking). Play around Brawler and Voyager. Always play Asol and transfer items.",
+        "Level to 8 and roll hard. Don't push for 9 until you hit 2* Mecha units. Morgana 2 can temporarily tank until you find Mech 2."
+      ]
+    },
+    {
+      "source": "metatft.com",
+      "name": "9u · avg #3.5",
+      "tier": "S",
+      "championIds": [
+        "TFT17_AurelionSol",
+        "TFT17_Blitzcrank",
+        "TFT17_Galio",
+        "TFT17_Karma",
+        "TFT17_Mordekaiser",
+        "TFT17_Morgana",
+        "TFT17_Rhaast"
+      ],
+      "champions": [
+        "Aurelion Sol",
+        "Blitzcrank",
+        "Galio",
+        "Karma",
+        "Mordekaiser",
+        "Morgana",
+        "Rhaast"
+      ],
+      "count": 7596,
+      "avgPlace": 3.4637,
+      "top4Rate": 0.47375993631768454,
+      "winRate": 0,
+      "items": {
+        "TFT17_Galio": [
+          "TFT_Item_GargoyleStoneplate",
+          "TFT17_AnimaSquadItem_Tier2_LionessLament",
+          "TFT_Item_NightHarvester"
+        ],
+        "TFT17_AurelionSol": [
+          "TFT_Item_JeweledGauntlet",
+          "TFT_Item_RabadonsDeathcap",
+          "TFT17_AnimaSquadItem_Tier2_Annihilator"
+        ],
+        "TFT17_Karma": [
+          "TFT_Item_Morellonomicon",
+          "TFT_Item_SpearOfShojin",
+          "TFT_Item_StatikkShiv"
+        ]
+      },
+      "roles": {
+        "TFT17_Galio": "Item holder",
+        "TFT17_AurelionSol": "Item holder",
+        "TFT17_Karma": "Item holder"
+      },
+      "threeStars": [],
+      "positions": {
+        "TFT17_AurelionSol": {
+          "row": 4,
+          "col": 1
+        },
+        "TFT17_Blitzcrank": {
+          "row": 4,
+          "col": 4
+        },
+        "TFT17_Galio": {
+          "row": 1,
+          "col": 4
+        },
+        "TFT17_Karma": {
+          "row": 4,
+          "col": 2
+        },
+        "TFT17_Mordekaiser": {
+          "row": 3,
+          "col": 3
+        },
+        "TFT17_Morgana": {
+          "row": 3,
+          "col": 4
+        },
+        "TFT17_Rhaast": {
+          "row": 4,
+          "col": 1
+        }
+      },
+      "augments": [
+        "Anima Commander",
+        "Comeback Story",
+        "Epic Rolldown",
+        "Second Wind II",
+        "Commander Partial Ascension",
+        "Calltochaos"
+      ],
+      "style": "9u · avg #3.5",
+      "sourceUrl": "https://www.metatft.com/comps",
+      "sources": [
+        "lolchess.gg",
+        "tactics.tools",
+        "metatft.com",
+        "tftacademy.com"
+      ],
+      "sourceCount": 4,
+      "primarySource": "metatft.com",
+      "metaSources": [
+        "lolchess.gg",
+        "tactics.tools",
+        "metatft.com",
+        "tftacademy.com"
+      ],
+      "metaConfirmed": true,
+      "matchConfidence": 0.875,
+      "tips": [
+        "Most common Mecha line will be lose streak to guarantee items. Look for an econ engine: Timebreaker > Primordian > Arbiter.",
+        "Standard level 6 and 7 intervals (3-2 / 3-5 if streaking). Play around Brawler and Voyager. Always play Asol and transfer items.",
+        "Level to 8 and roll hard. Don't push for 9 until you hit 2* Mecha units. Morgana 2 can temporarily tank until you find Mech 2."
+      ]
+    },
+    {
+      "source": "metatft.com",
+      "name": "9u · avg #3.5",
+      "tier": "S",
+      "championIds": [
+        "TFT17_AurelionSol",
+        "TFT17_Blitzcrank",
+        "TFT17_Galio",
+        "TFT17_Karma",
+        "TFT17_Mordekaiser",
+        "TFT17_Morgana",
+        "TFT17_Rhaast"
+      ],
+      "champions": [
+        "Aurelion Sol",
+        "Blitzcrank",
+        "Galio",
+        "Karma",
+        "Mordekaiser",
+        "Morgana",
+        "Rhaast"
+      ],
+      "count": 7596,
+      "avgPlace": 3.4637,
+      "top4Rate": 0.47375993631768454,
+      "winRate": 0,
+      "items": {
+        "TFT17_AurelionSol": [
+          "TFT_Item_JeweledGauntlet",
+          "TFT_Item_RabadonsDeathcap",
+          "TFT17_AnimaSquadItem_Tier2_Annihilator"
+        ],
+        "TFT17_Galio": [
+          "TFT_Item_GargoyleStoneplate",
+          "TFT17_AnimaSquadItem_Tier2_LionessLament",
+          "TFT_Item_NightHarvester"
+        ],
+        "TFT17_Karma": [
+          "TFT_Item_Morellonomicon",
+          "TFT_Item_SpearOfShojin",
+          "TFT_Item_StatikkShiv"
+        ]
+      },
+      "roles": {
+        "TFT17_AurelionSol": "Item holder",
+        "TFT17_Galio": "Item holder",
+        "TFT17_Karma": "Item holder"
+      },
+      "threeStars": [],
+      "positions": {
+        "TFT17_AurelionSol": {
+          "row": 4,
+          "col": 1
+        },
+        "TFT17_Blitzcrank": {
+          "row": 4,
+          "col": 4
+        },
+        "TFT17_Galio": {
+          "row": 1,
+          "col": 4
+        },
+        "TFT17_Karma": {
+          "row": 4,
+          "col": 2
+        },
+        "TFT17_Mordekaiser": {
+          "row": 3,
+          "col": 3
+        },
+        "TFT17_Morgana": {
+          "row": 3,
+          "col": 4
+        },
+        "TFT17_Rhaast": {
+          "row": 4,
+          "col": 1
+        }
+      },
+      "augments": [
+        "Anima Commander",
+        "Comeback Story",
+        "Epic Rolldown",
+        "Second Wind II",
+        "Commander Partial Ascension",
+        "Calltochaos"
+      ],
+      "style": "9u · avg #3.5",
+      "sourceUrl": "https://www.metatft.com/comps",
+      "sources": [
+        "metatft.com",
+        "tactics.tools",
+        "lolchess.gg",
+        "tftacademy.com"
+      ],
+      "sourceCount": 4,
+      "primarySource": "metatft.com",
+      "metaSources": [
+        "metatft.com",
+        "tactics.tools",
+        "lolchess.gg",
+        "tftacademy.com"
+      ],
+      "metaConfirmed": true,
+      "matchConfidence": 0.875,
+      "tips": [
+        "Most common Mecha line will be lose streak to guarantee items. Look for an econ engine: Timebreaker > Primordian > Arbiter.",
+        "Standard level 6 and 7 intervals (3-2 / 3-5 if streaking). Play around Brawler and Voyager. Always play Asol and transfer items.",
+        "Level to 8 and roll hard. Don't push for 9 until you hit 2* Mecha units. Morgana 2 can temporarily tank until you find Mech 2."
+      ]
+    },
+    {
+      "source": "metatft.com",
+      "name": "9u · avg #3.5",
+      "tier": "S",
+      "championIds": [
+        "TFT17_AurelionSol",
+        "TFT17_Blitzcrank",
+        "TFT17_Galio",
+        "TFT17_Karma",
+        "TFT17_Mordekaiser",
+        "TFT17_Morgana",
+        "TFT17_Rhaast"
+      ],
+      "champions": [
+        "Aurelion Sol",
+        "Blitzcrank",
+        "Galio",
+        "Karma",
+        "Mordekaiser",
+        "Morgana",
+        "Rhaast"
+      ],
+      "count": 7596,
+      "avgPlace": 3.4637,
+      "top4Rate": 0.47375993631768454,
+      "winRate": 0,
+      "items": {
+        "TFT17_Karma": [
+          "TFT_Item_Morellonomicon",
+          "TFT_Item_SpearOfShojin",
+          "TFT_Item_StatikkShiv"
+        ],
+        "TFT17_AurelionSol": [
+          "TFT_Item_RabadonsDeathcap",
+          "TFT_Item_JeweledGauntlet",
+          "TFT17_AnimaSquadItem_Tier2_Annihilator"
+        ],
+        "TFT17_Galio": [
+          "TFT_Item_GargoyleStoneplate",
+          "TFT17_AnimaSquadItem_Tier2_LionessLament",
+          "TFT_Item_NightHarvester"
+        ]
+      },
+      "roles": {
+        "TFT17_AurelionSol": "Item holder",
+        "TFT17_Galio": "Item holder",
+        "TFT17_Karma": "Item holder"
+      },
+      "threeStars": [],
+      "positions": {
+        "TFT17_Karma": {
+          "row": 4,
+          "col": 5
+        },
+        "TFT17_AurelionSol": {
+          "row": 4,
+          "col": 7
+        },
+        "TFT17_Galio": {
+          "row": 1,
+          "col": 5
+        },
+        "TFT17_Rhaast": {
+          "row": 4,
+          "col": 1
+        },
+        "TFT17_Mordekaiser": {
+          "row": 4,
+          "col": 2
+        },
+        "TFT17_Morgana": {
+          "row": 4,
+          "col": 3
+        },
+        "TFT17_Blitzcrank": {
+          "row": 4,
+          "col": 4
+        }
+      },
+      "augments": [
+        "Second Wind II",
+        "Commander Partial Ascension",
+        "Calltochaos",
+        "The Golden Dragon",
+        "Find Your Center",
+        "Force Of Nature"
+      ],
+      "style": "9u · avg #3.5",
+      "sourceUrl": "https://www.metatft.com/comps",
+      "sources": [
+        "tftacademy.com",
+        "tactics.tools",
+        "lolchess.gg",
+        "metatft.com"
+      ],
+      "sourceCount": 4,
+      "primarySource": "metatft.com",
+      "metaSources": [
+        "tftacademy.com",
+        "tactics.tools",
+        "lolchess.gg",
+        "metatft.com"
+      ],
+      "metaConfirmed": true,
+      "matchConfidence": 0.875,
+      "tips": [
+        "Most common Mecha line will be lose streak to guarantee items. Look for an econ engine: Timebreaker > Primordian > Arbiter.",
+        "Standard level 6 and 7 intervals (3-2 / 3-5 if streaking). Play around Brawler and Voyager. Always play Asol and transfer items.",
+        "Level to 8 and roll hard. Don't push for 9 until you hit 2* Mecha units. Morgana 2 can temporarily tank until you find Mech 2."
+      ]
+    },
+    {
+      "source": "metatft.com",
       "name": "9u · avg #3.7",
       "tier": "S",
       "championIds": [
@@ -2895,9 +2895,9 @@
         "Poppy",
         "Rammus"
       ],
-      "count": 5324,
-      "avgPlace": 3.6895,
-      "top4Rate": 0.6116729804129523,
+      "count": 5451,
+      "avgPlace": 3.6813,
+      "top4Rate": 0.6121683268907457,
       "winRate": 0,
       "items": {
         "TFT17_Rammus": [
@@ -3026,9 +3026,9 @@
         "Poppy",
         "Rammus"
       ],
-      "count": 5324,
-      "avgPlace": 3.6895,
-      "top4Rate": 0.5676825398923218,
+      "count": 5451,
+      "avgPlace": 3.6813,
+      "top4Rate": 0.5681247195416221,
       "winRate": 0,
       "items": {
         "TFT17_Rammus": [
@@ -3157,9 +3157,9 @@
         "Poppy",
         "Rammus"
       ],
-      "count": 5324,
-      "avgPlace": 3.6895,
-      "top4Rate": 0.5676825398923218,
+      "count": 5451,
+      "avgPlace": 3.6813,
+      "top4Rate": 0.5681247195416221,
       "winRate": 0,
       "items": {
         "TFT17_Rammus": [
@@ -3288,9 +3288,9 @@
         "Poppy",
         "Rammus"
       ],
-      "count": 5324,
-      "avgPlace": 3.6895,
-      "top4Rate": 0.6116729804129523,
+      "count": 5451,
+      "avgPlace": 3.6813,
+      "top4Rate": 0.6121683268907457,
       "winRate": 0,
       "items": {
         "TFT17_Rammus": [
@@ -3419,9 +3419,9 @@
         "Poppy",
         "Rammus"
       ],
-      "count": 5324,
-      "avgPlace": 3.6895,
-      "top4Rate": 0.4451702482827702,
+      "count": 5451,
+      "avgPlace": 3.6813,
+      "top4Rate": 0.4451103302141684,
       "winRate": 0,
       "items": {
         "TFT17_Bard": [
@@ -3550,9 +3550,9 @@
         "Poppy",
         "Rammus"
       ],
-      "count": 5324,
-      "avgPlace": 3.6895,
-      "top4Rate": 0.6116729804129523,
+      "count": 5451,
+      "avgPlace": 3.6813,
+      "top4Rate": 0.6121683268907457,
       "winRate": 0,
       "items": {
         "TFT17_Gnar": [
@@ -3659,7 +3659,7 @@
     },
     {
       "source": "metatft.com",
-      "name": "8u · avg #4.2",
+      "name": "8u · avg #4.3",
       "tier": "C",
       "championIds": [
         "TFT17_Blitzcrank",
@@ -3681,9 +3681,9 @@
         "Samira",
         "Shen"
       ],
-      "count": 4749,
-      "avgPlace": 4.2376,
-      "top4Rate": 0.5245724687991464,
+      "count": 4856,
+      "avgPlace": 4.2692,
+      "top4Rate": 0.5236160806377927,
       "winRate": 0,
       "items": {
         "TFT17_Ornn": [
@@ -3760,7 +3760,7 @@
         "Spreading Roots+",
         "Climb The Ladder II"
       ],
-      "style": "8u · avg #4.2",
+      "style": "8u · avg #4.3",
       "sourceUrl": "https://www.metatft.com/comps",
       "sources": [
         "tactics.tools",
@@ -3786,7 +3786,7 @@
     },
     {
       "source": "metatft.com",
-      "name": "8u · avg #4.2",
+      "name": "8u · avg #4.3",
       "tier": "C",
       "championIds": [
         "TFT17_Blitzcrank",
@@ -3808,9 +3808,9 @@
         "Samira",
         "Shen"
       ],
-      "count": 4749,
-      "avgPlace": 4.2376,
-      "top4Rate": 0.5245724687991464,
+      "count": 4856,
+      "avgPlace": 4.2692,
+      "top4Rate": 0.5236160806377927,
       "winRate": 0,
       "items": {
         "TFT17_Ornn": [
@@ -3887,7 +3887,7 @@
         "Spreading Roots+",
         "Climb The Ladder II"
       ],
-      "style": "8u · avg #4.2",
+      "style": "8u · avg #4.3",
       "sourceUrl": "https://www.metatft.com/comps",
       "sources": [
         "tactics.tools",
@@ -3913,7 +3913,7 @@
     },
     {
       "source": "metatft.com",
-      "name": "8u · avg #4.2",
+      "name": "8u · avg #4.3",
       "tier": "C",
       "championIds": [
         "TFT17_Blitzcrank",
@@ -3935,9 +3935,9 @@
         "Samira",
         "Shen"
       ],
-      "count": 4749,
-      "avgPlace": 4.2376,
-      "top4Rate": 0.5245724687991464,
+      "count": 4856,
+      "avgPlace": 4.2692,
+      "top4Rate": 0.5236160806377927,
       "winRate": 0,
       "items": {
         "TFT17_Ornn": [
@@ -4014,7 +4014,7 @@
         "Spreading Roots+",
         "Climb The Ladder II"
       ],
-      "style": "8u · avg #4.2",
+      "style": "8u · avg #4.3",
       "sourceUrl": "https://www.metatft.com/comps",
       "sources": [
         "tactics.tools",
@@ -4040,7 +4040,7 @@
     },
     {
       "source": "metatft.com",
-      "name": "8u · avg #4.2",
+      "name": "8u · avg #4.3",
       "tier": "C",
       "championIds": [
         "TFT17_Blitzcrank",
@@ -4062,9 +4062,9 @@
         "Samira",
         "Shen"
       ],
-      "count": 4749,
-      "avgPlace": 4.2376,
-      "top4Rate": 0.5335539644103099,
+      "count": 4856,
+      "avgPlace": 4.2692,
+      "top4Rate": 0.5327533345912546,
       "winRate": 0,
       "items": {
         "TFT17_Ornn": [
@@ -4141,7 +4141,7 @@
         "Spreading Roots+",
         "Climb The Ladder II"
       ],
-      "style": "8u · avg #4.2",
+      "style": "8u · avg #4.3",
       "sourceUrl": "https://www.metatft.com/comps",
       "sources": [
         "tactics.tools",
@@ -4167,7 +4167,7 @@
     },
     {
       "source": "metatft.com",
-      "name": "8u · avg #4.2",
+      "name": "8u · avg #4.3",
       "tier": "C",
       "championIds": [
         "TFT17_Blitzcrank",
@@ -4189,9 +4189,9 @@
         "Samira",
         "Shen"
       ],
-      "count": 4749,
-      "avgPlace": 4.2376,
-      "top4Rate": 0.5245724687991464,
+      "count": 4856,
+      "avgPlace": 4.2692,
+      "top4Rate": 0.5236160806377927,
       "winRate": 0,
       "items": {
         "TFT17_Ornn": [
@@ -4268,7 +4268,7 @@
         "Spreading Roots+",
         "Climb The Ladder II"
       ],
-      "style": "8u · avg #4.2",
+      "style": "8u · avg #4.3",
       "sourceUrl": "https://www.metatft.com/comps",
       "sources": [
         "lolchess.gg",
@@ -4294,7 +4294,7 @@
     },
     {
       "source": "metatft.com",
-      "name": "8u · avg #4.2",
+      "name": "8u · avg #4.3",
       "tier": "C",
       "championIds": [
         "TFT17_Blitzcrank",
@@ -4316,9 +4316,9 @@
         "Samira",
         "Shen"
       ],
-      "count": 4749,
-      "avgPlace": 4.2376,
-      "top4Rate": 0.5245724687991464,
+      "count": 4856,
+      "avgPlace": 4.2692,
+      "top4Rate": 0.5236160806377927,
       "winRate": 0,
       "items": {
         "TFT17_Ornn": [
@@ -4395,7 +4395,7 @@
         "Belt Overflow",
         "Cognitive Overload"
       ],
-      "style": "8u · avg #4.2",
+      "style": "8u · avg #4.3",
       "sourceUrl": "https://www.metatft.com/comps",
       "sources": [
         "tftacademy.com",
@@ -4445,9 +4445,9 @@
         "Nunu",
         "Tahm Kench"
       ],
-      "count": 4019,
-      "avgPlace": 3.3264,
-      "top4Rate": 0.5028436274386304,
+      "count": 4013,
+      "avgPlace": 3.3382,
+      "top4Rate": 0.5017788287806554,
       "winRate": 0,
       "items": {
         "TFT17_Nunu": [
@@ -4458,7 +4458,7 @@
         "TFT17_TahmKench": [
           "TFT_Item_GargoyleStoneplate",
           "TFT_Item_WarmogsArmor",
-          "TFT_Item_Redemption"
+          "TFT_Item_BrambleVest"
         ],
         "TFT17_Karma": [
           "TFT_Item_StatikkShiv",
@@ -4601,9 +4601,9 @@
         "Nunu",
         "Tahm Kench"
       ],
-      "count": 4019,
-      "avgPlace": 3.3264,
-      "top4Rate": 0.5028436274386304,
+      "count": 4013,
+      "avgPlace": 3.3382,
+      "top4Rate": 0.5017788287806554,
       "winRate": 0,
       "items": {
         "TFT17_Nunu": [
@@ -4614,7 +4614,7 @@
         "TFT17_TahmKench": [
           "TFT_Item_GargoyleStoneplate",
           "TFT_Item_WarmogsArmor",
-          "TFT_Item_Redemption"
+          "TFT_Item_BrambleVest"
         ],
         "TFT17_Karma": [
           "TFT_Item_StatikkShiv",
@@ -4757,9 +4757,9 @@
         "Nunu",
         "Tahm Kench"
       ],
-      "count": 4019,
-      "avgPlace": 3.3264,
-      "top4Rate": 0.4609399918187446,
+      "count": 4013,
+      "avgPlace": 3.3382,
+      "top4Rate": 0.45996392638226746,
       "winRate": 0,
       "items": {
         "TFT17_Nunu": [
@@ -4770,7 +4770,7 @@
         "TFT17_TahmKench": [
           "TFT_Item_GargoyleStoneplate",
           "TFT_Item_WarmogsArmor",
-          "TFT_Item_Redemption"
+          "TFT_Item_BrambleVest"
         ],
         "TFT17_Karma": [
           "TFT_Item_StatikkShiv",
@@ -4915,9 +4915,9 @@
         "Nunu",
         "Tahm Kench"
       ],
-      "count": 4019,
-      "avgPlace": 3.3264,
-      "top4Rate": 0.4609399918187446,
+      "count": 4013,
+      "avgPlace": 3.3382,
+      "top4Rate": 0.45996392638226746,
       "winRate": 0,
       "items": {
         "TFT17_Nunu": [
@@ -4928,7 +4928,7 @@
         "TFT17_TahmKench": [
           "TFT_Item_GargoyleStoneplate",
           "TFT_Item_WarmogsArmor",
-          "TFT_Item_Redemption"
+          "TFT_Item_BrambleVest"
         ],
         "TFT17_Karma": [
           "TFT_Item_StatikkShiv",
@@ -5073,9 +5073,9 @@
         "Nunu",
         "Tahm Kench"
       ],
-      "count": 4019,
-      "avgPlace": 3.3264,
-      "top4Rate": 0.5028436274386304,
+      "count": 4013,
+      "avgPlace": 3.3382,
+      "top4Rate": 0.5017788287806554,
       "winRate": 0,
       "items": {
         "TFT17_Nunu": [
@@ -5086,7 +5086,7 @@
         "TFT17_TahmKench": [
           "TFT_Item_GargoyleStoneplate",
           "TFT_Item_WarmogsArmor",
-          "TFT_Item_Redemption"
+          "TFT_Item_BrambleVest"
         ],
         "TFT17_Karma": [
           "TFT_Item_StatikkShiv",
@@ -5229,9 +5229,9 @@
         "Nunu",
         "Tahm Kench"
       ],
-      "count": 4019,
-      "avgPlace": 3.3264,
-      "top4Rate": 0.5028436274386304,
+      "count": 4013,
+      "avgPlace": 3.3382,
+      "top4Rate": 0.5017788287806554,
       "winRate": 0,
       "items": {
         "TFT17_Nunu": [
@@ -5242,7 +5242,7 @@
         "TFT17_TahmKench": [
           "TFT_Item_GargoyleStoneplate",
           "TFT_Item_WarmogsArmor",
-          "TFT_Item_Redemption"
+          "TFT_Item_BrambleVest"
         ],
         "TFT17_Karma": [
           "TFT_Item_StatikkShiv",
@@ -5385,9 +5385,9 @@
         "Nunu",
         "Tahm Kench"
       ],
-      "count": 4019,
-      "avgPlace": 3.3264,
-      "top4Rate": 0.4609399918187447,
+      "count": 4013,
+      "avgPlace": 3.3382,
+      "top4Rate": 0.45996392638226746,
       "winRate": 0,
       "items": {
         "TFT17_Nunu": [
@@ -5398,7 +5398,7 @@
         "TFT17_TahmKench": [
           "TFT_Item_GargoyleStoneplate",
           "TFT_Item_WarmogsArmor",
-          "TFT_Item_Redemption"
+          "TFT_Item_BrambleVest"
         ],
         "TFT17_Karma": [
           "TFT_Item_StatikkShiv",
@@ -5543,9 +5543,9 @@
         "Nunu",
         "Tahm Kench"
       ],
-      "count": 4019,
-      "avgPlace": 3.3264,
-      "top4Rate": 0.4609399918187447,
+      "count": 4013,
+      "avgPlace": 3.3382,
+      "top4Rate": 0.45996392638226746,
       "winRate": 0,
       "items": {
         "TFT17_Nunu": [
@@ -5556,7 +5556,7 @@
         "TFT17_TahmKench": [
           "TFT_Item_GargoyleStoneplate",
           "TFT_Item_WarmogsArmor",
-          "TFT_Item_Redemption"
+          "TFT_Item_BrambleVest"
         ],
         "TFT17_Karma": [
           "TFT_Item_StatikkShiv",
@@ -5701,9 +5701,9 @@
         "Nunu",
         "Tahm Kench"
       ],
-      "count": 4019,
-      "avgPlace": 3.3264,
-      "top4Rate": 0.5028436274386305,
+      "count": 4013,
+      "avgPlace": 3.3382,
+      "top4Rate": 0.5017788287806554,
       "winRate": 0,
       "items": {
         "TFT17_Nunu": [
@@ -5714,7 +5714,7 @@
         "TFT17_TahmKench": [
           "TFT_Item_GargoyleStoneplate",
           "TFT_Item_WarmogsArmor",
-          "TFT_Item_Redemption"
+          "TFT_Item_BrambleVest"
         ],
         "TFT17_Karma": [
           "TFT_Item_StatikkShiv",
@@ -5854,9 +5854,9 @@
         "Nunu",
         "Tahm Kench"
       ],
-      "count": 4019,
-      "avgPlace": 3.3264,
-      "top4Rate": 0.4609399918187446,
+      "count": 4013,
+      "avgPlace": 3.3382,
+      "top4Rate": 0.45996392638226746,
       "winRate": 0,
       "items": {
         "TFT17_Nunu": [
@@ -5867,7 +5867,7 @@
         "TFT17_TahmKench": [
           "TFT_Item_GargoyleStoneplate",
           "TFT_Item_WarmogsArmor",
-          "TFT_Item_Redemption"
+          "TFT_Item_BrambleVest"
         ],
         "TFT17_Karma": [
           "TFT_Item_StatikkShiv",
@@ -6012,9 +6012,9 @@
         "Nunu",
         "Tahm Kench"
       ],
-      "count": 4019,
-      "avgPlace": 3.3264,
-      "top4Rate": 0.4609399918187446,
+      "count": 4013,
+      "avgPlace": 3.3382,
+      "top4Rate": 0.45996392638226746,
       "winRate": 0,
       "items": {
         "TFT17_AurelionSol": [
@@ -6049,8 +6049,8 @@
         ],
         "TFT17_TahmKench": [
           "TFT_Item_GargoyleStoneplate",
-          "TFT_Item_WarmogsArmor",
-          "TFT_Item_Redemption"
+          "TFT_Item_BrambleVest",
+          "TFT_Item_WarmogsArmor"
         ],
         "TFT17_Kaisa": [
           "TFT_Item_InfinityEdge",
@@ -6170,9 +6170,9 @@
         "Nunu",
         "Tahm Kench"
       ],
-      "count": 4019,
-      "avgPlace": 3.3264,
-      "top4Rate": 0.4609399918187446,
+      "count": 4013,
+      "avgPlace": 3.3382,
+      "top4Rate": 0.45996392638226746,
       "winRate": 0,
       "items": {
         "TFT17_Kaisa": [
@@ -6193,7 +6193,7 @@
         "TFT17_TahmKench": [
           "TFT_Item_GargoyleStoneplate",
           "TFT_Item_WarmogsArmor",
-          "TFT_Item_Redemption"
+          "TFT_Item_BrambleVest"
         ],
         "TFT17_Karma": [
           "TFT_Item_StatikkShiv",
@@ -6328,9 +6328,9 @@
         "Nunu",
         "Tahm Kench"
       ],
-      "count": 4019,
-      "avgPlace": 3.3264,
-      "top4Rate": 0.4396058937411331,
+      "count": 4013,
+      "avgPlace": 3.3382,
+      "top4Rate": 0.4377797272532663,
       "winRate": 0,
       "items": {
         "TFT17_Kaisa": [
@@ -6351,7 +6351,7 @@
         "TFT17_TahmKench": [
           "TFT_Item_GargoyleStoneplate",
           "TFT_Item_WarmogsArmor",
-          "TFT_Item_Redemption"
+          "TFT_Item_BrambleVest"
         ],
         "TFT17_Karma": [
           "TFT_Item_StatikkShiv",
@@ -6480,15 +6480,15 @@
         "Lissandra",
         "Mordekaiser"
       ],
-      "count": 4019,
-      "avgPlace": 3.8772,
-      "top4Rate": 0.2472130140405217,
+      "count": 4013,
+      "avgPlace": 3.919,
+      "top4Rate": 0.2464645863345755,
       "winRate": 0,
       "items": {
         "TFT17_Chogath": [
-          "TFT_Item_Redemption",
           "TFT_Item_WarmogsArmor",
-          "TFT_Item_GargoyleStoneplate"
+          "TFT_Item_Redemption",
+          "TFT_Item_FrozenHeart"
         ],
         "TFT17_Jhin": [
           "TFT_Item_InfinityEdge",
@@ -6512,13 +6512,13 @@
         ],
         "TFT17_Kaisa": [
           "TFT_Item_InfinityEdge",
-          "TFT_Item_MadredsBloodrazor",
-          "TFT_Item_SpearOfShojin"
+          "TFT_Item_BlueBuff",
+          "TFT_Item_PowerGauntlet"
         ],
         "TFT17_Mordekaiser": [
           "TFT_Item_GuardianAngel",
           "TFT_Item_HextechGunblade",
-          "TFT_Item_JeweledGauntlet"
+          "TFT_Item_RabadonsDeathcap"
         ]
       },
       "roles": {
@@ -6622,9 +6622,9 @@
         "Lissandra",
         "Mordekaiser"
       ],
-      "count": 4019,
-      "avgPlace": 3.8772,
-      "top4Rate": 0.39509142155892396,
+      "count": 4013,
+      "avgPlace": 3.919,
+      "top4Rate": 0.3942547940419435,
       "winRate": 0,
       "items": {
         "TFT17_Karma": [
@@ -6654,13 +6654,13 @@
         ],
         "TFT17_Kaisa": [
           "TFT_Item_InfinityEdge",
-          "TFT_Item_MadredsBloodrazor",
-          "TFT_Item_SpearOfShojin"
+          "TFT_Item_BlueBuff",
+          "TFT_Item_PowerGauntlet"
         ],
         "TFT17_Mordekaiser": [
           "TFT_Item_GuardianAngel",
           "TFT_Item_HextechGunblade",
-          "TFT_Item_JeweledGauntlet"
+          "TFT_Item_RabadonsDeathcap"
         ]
       },
       "roles": {
@@ -6765,9 +6765,9 @@
         "Lissandra",
         "Mordekaiser"
       ],
-      "count": 4019,
-      "avgPlace": 3.8772,
-      "top4Rate": 0.2746811267116908,
+      "count": 4013,
+      "avgPlace": 3.919,
+      "top4Rate": 0.2738495403717505,
       "winRate": 0,
       "items": {
         "TFT17_Chogath": [
@@ -6782,8 +6782,8 @@
         ],
         "TFT17_Kaisa": [
           "TFT_Item_InfinityEdge",
-          "TFT_Item_MadredsBloodrazor",
-          "TFT_Item_SpearOfShojin"
+          "TFT_Item_BlueBuff",
+          "TFT_Item_PowerGauntlet"
         ],
         "TFT17_Karma": [
           "TFT_Item_StatikkShiv",
@@ -6803,7 +6803,7 @@
         "TFT17_Mordekaiser": [
           "TFT_Item_GuardianAngel",
           "TFT_Item_HextechGunblade",
-          "TFT_Item_JeweledGauntlet"
+          "TFT_Item_RabadonsDeathcap"
         ]
       },
       "roles": {
@@ -6908,9 +6908,9 @@
         "Lissandra",
         "Mordekaiser"
       ],
-      "count": 4019,
-      "avgPlace": 3.8772,
-      "top4Rate": 0.39509142155892396,
+      "count": 4013,
+      "avgPlace": 3.919,
+      "top4Rate": 0.3942547940419435,
       "winRate": 0,
       "items": {
         "TFT17_Chogath": [
@@ -6926,7 +6926,7 @@
         "TFT17_Kaisa": [
           "TFT_Item_InfinityEdge",
           "TFT_Item_BlueBuff",
-          "TFT_Item_MadredsBloodrazor"
+          "TFT_Item_PowerGauntlet"
         ],
         "TFT17_Karma": [
           "TFT_Item_StatikkShiv",
@@ -6946,7 +6946,7 @@
         "TFT17_Mordekaiser": [
           "TFT_Item_GuardianAngel",
           "TFT_Item_HextechGunblade",
-          "TFT_Item_JeweledGauntlet"
+          "TFT_Item_RabadonsDeathcap"
         ]
       },
       "roles": {
@@ -7051,15 +7051,15 @@
         "Lissandra",
         "Mordekaiser"
       ],
-      "count": 4019,
-      "avgPlace": 3.8772,
-      "top4Rate": 0.2472130140405217,
+      "count": 4013,
+      "avgPlace": 3.919,
+      "top4Rate": 0.2464645863345755,
       "winRate": 0,
       "items": {
         "TFT17_Chogath": [
-          "TFT_Item_Redemption",
           "TFT_Item_WarmogsArmor",
-          "TFT_Item_GargoyleStoneplate"
+          "TFT_Item_Redemption",
+          "TFT_Item_FrozenHeart"
         ],
         "TFT17_Lissandra": [
           "TFT_Item_Leviathan",
@@ -7083,13 +7083,13 @@
         ],
         "TFT17_Kaisa": [
           "TFT_Item_InfinityEdge",
-          "TFT_Item_MadredsBloodrazor",
-          "TFT_Item_SpearOfShojin"
+          "TFT_Item_BlueBuff",
+          "TFT_Item_PowerGauntlet"
         ],
         "TFT17_Mordekaiser": [
           "TFT_Item_GuardianAngel",
           "TFT_Item_HextechGunblade",
-          "TFT_Item_JeweledGauntlet"
+          "TFT_Item_RabadonsDeathcap"
         ]
       },
       "roles": {
@@ -7197,8 +7197,8 @@
         "Shen",
         "Vex"
       ],
-      "count": 33851,
-      "avgPlace": 4.3187,
+      "count": 33821,
+      "avgPlace": 4.3167,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -7327,8 +7327,8 @@
         "Shen",
         "Vex"
       ],
-      "count": 33851,
-      "avgPlace": 4.3187,
+      "count": 33821,
+      "avgPlace": 4.3167,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -7457,8 +7457,8 @@
         "Shen",
         "Vex"
       ],
-      "count": 33851,
-      "avgPlace": 4.3187,
+      "count": 33821,
+      "avgPlace": 4.3167,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -7587,8 +7587,8 @@
         "Shen",
         "Vex"
       ],
-      "count": 33851,
-      "avgPlace": 4.3187,
+      "count": 33821,
+      "avgPlace": 4.3167,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -7715,8 +7715,8 @@
         "Rek Sai",
         "Rhaast"
       ],
-      "count": 15136,
-      "avgPlace": 3.7076,
+      "count": 15208,
+      "avgPlace": 3.7035,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -7746,9 +7746,9 @@
           "TFT_Item_TitansResolve"
         ],
         "TFT17_Kindred": [
-          "TFT_Item_Deathblade",
           "TFT_Item_GuinsoosRageblade",
-          "TFT_Item_MadredsBloodrazor"
+          "TFT_Item_LastWhisper",
+          "TFT_Item_RunaansHurricane"
         ],
         "TFT17_Maokai": [
           "TFT_Item_WarmogsArmor",
@@ -7858,8 +7858,8 @@
         "Rek Sai",
         "Rhaast"
       ],
-      "count": 15136,
-      "avgPlace": 3.7076,
+      "count": 15208,
+      "avgPlace": 3.7035,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -7881,7 +7881,7 @@
         "TFT17_Kindred": [
           "TFT_Item_GuinsoosRageblade",
           "TFT_Item_RunaansHurricane",
-          "TFT_Item_MadredsBloodrazor"
+          "TFT_Item_RapidFireCannon"
         ],
         "TFT17_Briar": [
           "TFT_Item_Bloodthirster",
@@ -8005,8 +8005,8 @@
         "Rek Sai",
         "Rhaast"
       ],
-      "count": 15136,
-      "avgPlace": 3.7076,
+      "count": 15208,
+      "avgPlace": 3.7035,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -8032,8 +8032,8 @@
         ],
         "TFT17_Kindred": [
           "TFT_Item_GuinsoosRageblade",
-          "TFT_Item_MadredsBloodrazor",
-          "TFT_Item_Deathblade"
+          "TFT_Item_RunaansHurricane",
+          "TFT_Item_LastWhisper"
         ],
         "TFT17_Maokai": [
           "TFT_Item_WarmogsArmor",
@@ -8151,8 +8151,8 @@
         "Rek Sai",
         "Rhaast"
       ],
-      "count": 15136,
-      "avgPlace": 3.7076,
+      "count": 15208,
+      "avgPlace": 3.7035,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -8178,8 +8178,8 @@
         ],
         "TFT17_Kindred": [
           "TFT_Item_GuinsoosRageblade",
-          "TFT_Item_MadredsBloodrazor",
-          "TFT_Item_RunaansHurricane"
+          "TFT_Item_RunaansHurricane",
+          "TFT_Item_RapidFireCannon"
         ],
         "TFT17_Briar": [
           "TFT_Item_Bloodthirster",
@@ -8297,8 +8297,8 @@
         "Rhaast",
         "Urgot"
       ],
-      "count": 8078,
-      "avgPlace": 3.3296,
+      "count": 8096,
+      "avgPlace": 3.3328,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -8439,8 +8439,8 @@
         "Tahm Kench",
         "Urgot"
       ],
-      "count": 8078,
-      "avgPlace": 3.5071,
+      "count": 8096,
+      "avgPlace": 3.5119,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -8587,8 +8587,8 @@
         "Tahm Kench",
         "Urgot"
       ],
-      "count": 8078,
-      "avgPlace": 3.5071,
+      "count": 8096,
+      "avgPlace": 3.5119,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -8726,8 +8726,8 @@
         "Tahm Kench",
         "Urgot"
       ],
-      "count": 8078,
-      "avgPlace": 3.5071,
+      "count": 8096,
+      "avgPlace": 3.5119,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -8874,8 +8874,8 @@
         "Tahm Kench",
         "Urgot"
       ],
-      "count": 8078,
-      "avgPlace": 3.5071,
+      "count": 8096,
+      "avgPlace": 3.5119,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -9010,8 +9010,8 @@
         "Tahm Kench",
         "Urgot"
       ],
-      "count": 8078,
-      "avgPlace": 3.5071,
+      "count": 8096,
+      "avgPlace": 3.5119,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -9217,9 +9217,9 @@
         "TFT17_Gnar": "3-star"
       },
       "sourceUrl": "https://tftacademy.com/tierlist/comps/set-17-gnar-printer",
-      "count": 5324,
-      "avgPlace": 3.0589371700575914,
-      "top4Rate": 0.8086563180294652,
+      "count": 5451,
+      "avgPlace": 3.06111286238866,
+      "top4Rate": 0.8091486028418472,
       "winRate": 0,
       "sources": [
         "tactics.tools",
@@ -9330,9 +9330,9 @@
         "TFT17_Gnar": "3-star"
       },
       "sourceUrl": "https://tftacademy.com/tierlist/comps/set-17-gnar-printer",
-      "count": 5324,
-      "avgPlace": 3.5222066165716024,
-      "top4Rate": 0.7096031748654021,
+      "count": 5451,
+      "avgPlace": 3.52078139587125,
+      "top4Rate": 0.7101558994270277,
       "winRate": 0,
       "sources": [
         "tactics.tools",
@@ -9457,9 +9457,9 @@
         "TFT17_Nami": "Item holder"
       },
       "sourceUrl": "https://tftacademy.com/tierlist/comps/set-17-in-the-groove",
-      "count": 4749,
-      "avgPlace": 4.0698051807498326,
-      "top4Rate": 0.5828582986657183,
+      "count": 4856,
+      "avgPlace": 4.076148490125979,
+      "top4Rate": 0.5817956451531031,
       "winRate": 0,
       "sources": [
         "tactics.tools",
@@ -9584,9 +9584,9 @@
         "TFT17_Nami": "Item holder"
       },
       "sourceUrl": "https://tftacademy.com/tierlist/comps/set-17-in-the-groove",
-      "count": 4749,
-      "avgPlace": 4.069805180749833,
-      "top4Rate": 0.5828582986657183,
+      "count": 4856,
+      "avgPlace": 4.076148490125979,
+      "top4Rate": 0.5817956451531031,
       "winRate": 0,
       "sources": [
         "tactics.tools",
@@ -9711,9 +9711,9 @@
         "TFT17_Nami": "Item holder"
       },
       "sourceUrl": "https://tftacademy.com/tierlist/comps/set-17-in-the-groove",
-      "count": 4749,
-      "avgPlace": 4.069805180749833,
-      "top4Rate": 0.5828582986657183,
+      "count": 4856,
+      "avgPlace": 4.076148490125979,
+      "top4Rate": 0.5817956451531029,
       "winRate": 0,
       "sources": [
         "tactics.tools",
@@ -9754,15 +9754,15 @@
         "Rhaast",
         "Urgot"
       ],
-      "count": 4542,
-      "avgPlace": 3.3296,
+      "count": 4546,
+      "avgPlace": 3.3328,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
         "TFT17_Urgot": [
+          "TFT_Item_Bloodthirster",
           "TFT_Item_SteraksGage",
-          "TFT_Item_MadredsBloodrazor",
-          "TFT_Item_Bloodthirster"
+          "TFT_Item_MadredsBloodrazor"
         ],
         "TFT17_Ornn": [
           "TFT_Item_WarmogsArmor",
@@ -9892,8 +9892,8 @@
         "Rhaast",
         "Urgot"
       ],
-      "count": 4542,
-      "avgPlace": 3.3296,
+      "count": 4546,
+      "avgPlace": 3.3328,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -9924,8 +9924,8 @@
         ],
         "TFT17_Urgot": [
           "TFT_Item_SteraksGage",
-          "TFT_Item_MadredsBloodrazor",
-          "TFT_Item_Deathblade"
+          "TFT_Item_Bloodthirster",
+          "TFT_Item_MadredsBloodrazor"
         ],
         "TFT17_Belveth": [
           "TFT_Item_MadredsBloodrazor",
@@ -10036,8 +10036,8 @@
         "Rhaast",
         "Urgot"
       ],
-      "count": 4542,
-      "avgPlace": 3.3296,
+      "count": 4546,
+      "avgPlace": 3.3328,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -10052,9 +10052,9 @@
           "TFT_Item_Redemption"
         ],
         "TFT17_Urgot": [
+          "TFT_Item_Bloodthirster",
           "TFT_Item_SteraksGage",
-          "TFT_Item_MadredsBloodrazor",
-          "TFT_Item_Bloodthirster"
+          "TFT_Item_MadredsBloodrazor"
         ],
         "TFT17_Kindred": [
           "TFT_Item_GuinsoosRageblade",
@@ -10176,8 +10176,8 @@
         "Tahm Kench",
         "Xayah"
       ],
-      "count": 4177,
-      "avgPlace": 3.3098,
+      "count": 4173,
+      "avgPlace": 3.3113,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -10302,8 +10302,8 @@
         "Tahm Kench",
         "Xayah"
       ],
-      "count": 4177,
-      "avgPlace": 3.3098,
+      "count": 4173,
+      "avgPlace": 3.3113,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -10428,8 +10428,8 @@
         "Tahm Kench",
         "Xayah"
       ],
-      "count": 4177,
-      "avgPlace": 3.3098,
+      "count": 4173,
+      "avgPlace": 3.3113,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -10552,8 +10552,8 @@
         "Riven",
         "Shen"
       ],
-      "count": 4148,
-      "avgPlace": 3.5053,
+      "count": 4136,
+      "avgPlace": 3.4973,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -10677,8 +10677,8 @@
         "Riven",
         "Shen"
       ],
-      "count": 4148,
-      "avgPlace": 3.5053,
+      "count": 4136,
+      "avgPlace": 3.4973,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -10802,8 +10802,8 @@
         "Riven",
         "Shen"
       ],
-      "count": 4148,
-      "avgPlace": 3.5053,
+      "count": 4136,
+      "avgPlace": 3.4973,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -10927,8 +10927,8 @@
         "Riven",
         "Shen"
       ],
-      "count": 4148,
-      "avgPlace": 3.5053,
+      "count": 4136,
+      "avgPlace": 3.4973,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -11048,9 +11048,9 @@
         "Ornn",
         "Samira"
       ],
-      "count": 3866,
-      "avgPlace": 2.7647,
-      "top4Rate": 0.49476885251408675,
+      "count": 3976,
+      "avgPlace": 2.7773,
+      "top4Rate": 0.49399172772369,
       "winRate": 0,
       "items": {
         "TFT17_Nami": [
@@ -11157,7 +11157,7 @@
         "Mordekaiser"
       ],
       "count": 2323,
-      "avgPlace": 3.8772,
+      "avgPlace": 3.919,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -11177,9 +11177,9 @@
           "TFT_Item_LastWhisper"
         ],
         "TFT17_Kaisa": [
+          "TFT_Item_BlueBuff",
           "TFT_Item_InfinityEdge",
-          "TFT_Item_MadredsBloodrazor",
-          "TFT_Item_SpearOfShojin"
+          "TFT_Item_PowerGauntlet"
         ],
         "TFT17_Karma": [
           "TFT_Item_StatikkShiv",
@@ -11194,7 +11194,7 @@
         "TFT17_Mordekaiser": [
           "TFT_Item_GuardianAngel",
           "TFT_Item_HextechGunblade",
-          "TFT_Item_JeweledGauntlet"
+          "TFT_Item_RabadonsDeathcap"
         ]
       },
       "roles": {
@@ -11298,7 +11298,7 @@
         "Mordekaiser"
       ],
       "count": 2323,
-      "avgPlace": 3.8772,
+      "avgPlace": 3.919,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -11318,9 +11318,9 @@
           "TFT_Item_Deathblade"
         ],
         "TFT17_Kaisa": [
+          "TFT_Item_BlueBuff",
           "TFT_Item_InfinityEdge",
-          "TFT_Item_MadredsBloodrazor",
-          "TFT_Item_SpearOfShojin"
+          "TFT_Item_PowerGauntlet"
         ],
         "TFT17_Karma": [
           "TFT_Item_StatikkShiv",
@@ -11335,7 +11335,7 @@
         "TFT17_Mordekaiser": [
           "TFT_Item_GuardianAngel",
           "TFT_Item_HextechGunblade",
-          "TFT_Item_JeweledGauntlet"
+          "TFT_Item_Bloodthirster"
         ]
       },
       "roles": {
@@ -11439,7 +11439,7 @@
         "Mordekaiser"
       ],
       "count": 2323,
-      "avgPlace": 3.8772,
+      "avgPlace": 3.919,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -11474,9 +11474,9 @@
           "TFT_Item_PowerGauntlet"
         ],
         "TFT17_Kaisa": [
+          "TFT_Item_BlueBuff",
           "TFT_Item_InfinityEdge",
-          "TFT_Item_MadredsBloodrazor",
-          "TFT_Item_SpearOfShojin"
+          "TFT_Item_PowerGauntlet"
         ]
       },
       "roles": {
@@ -11582,7 +11582,7 @@
         "Veigar"
       ],
       "count": 1956,
-      "avgPlace": 3.6851,
+      "avgPlace": 3.6907,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -11713,7 +11713,7 @@
         "Veigar"
       ],
       "count": 1956,
-      "avgPlace": 3.6851,
+      "avgPlace": 3.6907,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -11844,7 +11844,7 @@
         "Veigar"
       ],
       "count": 1956,
-      "avgPlace": 3.6851,
+      "avgPlace": 3.6907,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -11973,7 +11973,7 @@
         "Rhaast"
       ],
       "count": 1886,
-      "avgPlace": 3.4512,
+      "avgPlace": 3.4517,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -12001,11 +12001,6 @@
           "TFT_Item_GuinsoosRageblade",
           "TFT_Item_MadredsBloodrazor",
           "TFT_Item_StatikkShiv"
-        ],
-        "TFT17_Leona": [
-          "TFT_Item_GargoyleStoneplate",
-          "TFT_Item_Redemption",
-          "TFT_Item_WarmogsArmor"
         ]
       },
       "roles": {
@@ -12013,8 +12008,7 @@
         "TFT17_Diana": "3-star",
         "TFT17_Aurora": "3-star",
         "TFT17_Jinx": "3-star",
-        "TFT17_Leblanc": "Item holder",
-        "TFT17_Leona": "Item holder"
+        "TFT17_Leblanc": "Item holder"
       },
       "threeStars": [
         "TFT17_Illaoi",
@@ -12107,7 +12101,7 @@
         "Rhaast"
       ],
       "count": 1886,
-      "avgPlace": 3.4512,
+      "avgPlace": 3.4517,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -12135,11 +12129,6 @@
           "TFT_Item_GuinsoosRageblade",
           "TFT_Item_MadredsBloodrazor",
           "TFT_Item_StatikkShiv"
-        ],
-        "TFT17_Leona": [
-          "TFT_Item_GargoyleStoneplate",
-          "TFT_Item_Redemption",
-          "TFT_Item_WarmogsArmor"
         ]
       },
       "roles": {
@@ -12147,8 +12136,7 @@
         "TFT17_Diana": "3-star",
         "TFT17_Illaoi": "3-star",
         "TFT17_Jinx": "Item holder",
-        "TFT17_Leblanc": "Item holder",
-        "TFT17_Leona": "Item holder"
+        "TFT17_Leblanc": "Item holder"
       },
       "threeStars": [
         "TFT17_Illaoi",
@@ -12241,7 +12229,7 @@
         "Rhaast"
       ],
       "count": 1886,
-      "avgPlace": 3.4512,
+      "avgPlace": 3.4517,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -12269,11 +12257,6 @@
           "TFT_Item_GuinsoosRageblade",
           "TFT_Item_MadredsBloodrazor",
           "TFT_Item_StatikkShiv"
-        ],
-        "TFT17_Leona": [
-          "TFT_Item_GargoyleStoneplate",
-          "TFT_Item_Redemption",
-          "TFT_Item_WarmogsArmor"
         ]
       },
       "roles": {
@@ -12281,8 +12264,7 @@
         "TFT17_Illaoi": "3-star",
         "TFT17_Aurora": "3-star",
         "TFT17_Jinx": "3-star",
-        "TFT17_Leblanc": "Item holder",
-        "TFT17_Leona": "Item holder"
+        "TFT17_Leblanc": "Item holder"
       },
       "threeStars": [
         "TFT17_Aurora",
@@ -12375,7 +12357,7 @@
         "Rhaast"
       ],
       "count": 1886,
-      "avgPlace": 3.4512,
+      "avgPlace": 3.4517,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -12403,11 +12385,6 @@
           "TFT_Item_GuinsoosRageblade",
           "TFT_Item_MadredsBloodrazor",
           "TFT_Item_StatikkShiv"
-        ],
-        "TFT17_Leona": [
-          "TFT_Item_GargoyleStoneplate",
-          "TFT_Item_Redemption",
-          "TFT_Item_WarmogsArmor"
         ]
       },
       "roles": {
@@ -12415,8 +12392,7 @@
         "TFT17_Illaoi": "3-star",
         "TFT17_Aurora": "3-star",
         "TFT17_Jinx": "3-star",
-        "TFT17_Leblanc": "Item holder",
-        "TFT17_Leona": "Item holder"
+        "TFT17_Leblanc": "Item holder"
       },
       "threeStars": [
         "TFT17_Aurora",
@@ -12488,7 +12464,7 @@
     },
     {
       "source": "metatft.com",
-      "name": "8u · avg #3.4",
+      "name": "8u · avg #3.5",
       "tier": "S",
       "championIds": [
         "TFT17_Aatrox",
@@ -12510,8 +12486,8 @@
         "Talon",
         "Twisted Fate"
       ],
-      "count": 1866,
-      "avgPlace": 3.4432,
+      "count": 1862,
+      "avgPlace": 3.4613,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -12600,7 +12576,7 @@
         "Golden Gamble+",
         "Forged In Strength"
       ],
-      "style": "8u · avg #3.4",
+      "style": "8u · avg #3.5",
       "sourceUrl": "https://www.metatft.com/comps",
       "sources": [
         "lolchess.gg",
@@ -12624,7 +12600,7 @@
     },
     {
       "source": "metatft.com",
-      "name": "8u · avg #3.4",
+      "name": "8u · avg #3.5",
       "tier": "S",
       "championIds": [
         "TFT17_Aatrox",
@@ -12646,8 +12622,8 @@
         "Talon",
         "Twisted Fate"
       ],
-      "count": 1866,
-      "avgPlace": 3.4432,
+      "count": 1862,
+      "avgPlace": 3.4613,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -12689,8 +12665,8 @@
         "TFT17_TwistedFate": "3-star"
       },
       "threeStars": [
-        "TFT17_Aatrox",
         "TFT17_TwistedFate",
+        "TFT17_Aatrox",
         "TFT17_Caitlyn",
         "TFT17_Jax"
       ],
@@ -12736,7 +12712,7 @@
         "Golden Gamble+",
         "Forged In Strength"
       ],
-      "style": "8u · avg #3.4",
+      "style": "8u · avg #3.5",
       "sourceUrl": "https://www.metatft.com/comps",
       "sources": [
         "metatft.com",
@@ -12760,7 +12736,7 @@
     },
     {
       "source": "metatft.com",
-      "name": "8u · avg #3.4",
+      "name": "8u · avg #3.5",
       "tier": "S",
       "championIds": [
         "TFT17_Aatrox",
@@ -12782,8 +12758,8 @@
         "Talon",
         "Twisted Fate"
       ],
-      "count": 1866,
-      "avgPlace": 3.4432,
+      "count": 1862,
+      "avgPlace": 3.4613,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -12872,7 +12848,7 @@
         "Golden Gamble",
         "Pandoras Radiant Box"
       ],
-      "style": "8u · avg #3.4",
+      "style": "8u · avg #3.5",
       "sourceUrl": "https://www.metatft.com/comps",
       "sources": [
         "tftacademy.com",
@@ -12918,8 +12894,8 @@
         "Nunu",
         "Sona"
       ],
-      "count": 1379,
-      "avgPlace": 3.5932,
+      "count": 1381,
+      "avgPlace": 3.593,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -13060,8 +13036,8 @@
         "Nunu",
         "Sona"
       ],
-      "count": 1379,
-      "avgPlace": 3.5932,
+      "count": 1381,
+      "avgPlace": 3.593,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -13202,8 +13178,8 @@
         "Nunu",
         "Sona"
       ],
-      "count": 1379,
-      "avgPlace": 3.5932,
+      "count": 1381,
+      "avgPlace": 3.593,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -13344,8 +13320,8 @@
         "Nunu",
         "Sona"
       ],
-      "count": 1379,
-      "avgPlace": 3.5932,
+      "count": 1381,
+      "avgPlace": 3.593,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -13486,8 +13462,8 @@
         "Nunu",
         "Sona"
       ],
-      "count": 1379,
-      "avgPlace": 3.5932,
+      "count": 1381,
+      "avgPlace": 3.593,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -13628,8 +13604,8 @@
         "Nunu",
         "Sona"
       ],
-      "count": 1379,
-      "avgPlace": 3.5932,
+      "count": 1381,
+      "avgPlace": 3.593,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -13772,8 +13748,8 @@
         "Rammus",
         "Shen"
       ],
-      "count": 1016,
-      "avgPlace": 3.0625,
+      "count": 1035,
+      "avgPlace": 3.0683,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -13790,7 +13766,7 @@
         "TFT17_Caitlyn": [
           "TFT_Item_GuinsoosRageblade",
           "TFT_Item_Deathblade",
-          "TFT_Item_MadredsBloodrazor"
+          "TFT_Item_RunaansHurricane"
         ],
         "TFT17_Corki": [
           "TFT_Item_Deathblade",
@@ -13804,8 +13780,8 @@
         ],
         "TFT17_Kindred": [
           "TFT_Item_GuinsoosRageblade",
-          "TFT_Item_MadredsBloodrazor",
-          "TFT_Item_RunaansHurricane"
+          "TFT_Item_InfinityEdge",
+          "TFT_Item_MadredsBloodrazor"
         ],
         "TFT17_Maokai": [
           "TFT_Item_Redemption",
@@ -13936,8 +13912,8 @@
         "Rammus",
         "Shen"
       ],
-      "count": 1016,
-      "avgPlace": 3.0625,
+      "count": 1035,
+      "avgPlace": 3.0683,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -13949,7 +13925,7 @@
         "TFT17_Caitlyn": [
           "TFT_Item_GuinsoosRageblade",
           "TFT_Item_Deathblade",
-          "TFT_Item_MadredsBloodrazor"
+          "TFT_Item_RunaansHurricane"
         ],
         "TFT17_Corki": [
           "TFT_Item_Deathblade",
@@ -13958,8 +13934,8 @@
         ],
         "TFT17_Kindred": [
           "TFT_Item_GuinsoosRageblade",
-          "TFT_Item_MadredsBloodrazor",
-          "TFT_Item_RunaansHurricane"
+          "TFT_Item_InfinityEdge",
+          "TFT_Item_MadredsBloodrazor"
         ],
         "TFT17_Maokai": [
           "TFT_Item_Redemption",
@@ -14100,8 +14076,8 @@
         "Rammus",
         "Shen"
       ],
-      "count": 1016,
-      "avgPlace": 3.0625,
+      "count": 1035,
+      "avgPlace": 3.0683,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -14258,8 +14234,8 @@
         "Rammus",
         "Shen"
       ],
-      "count": 1016,
-      "avgPlace": 3.0625,
+      "count": 1035,
+      "avgPlace": 3.0683,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -14416,8 +14392,8 @@
         "Shen",
         "Tahm Kench"
       ],
-      "count": 1016,
-      "avgPlace": 3.9951,
+      "count": 1035,
+      "avgPlace": 3.9874,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -14568,8 +14544,8 @@
         "Nunu",
         "Sona"
       ],
-      "count": 1003,
-      "avgPlace": 3.4088,
+      "count": 1015,
+      "avgPlace": 3.4197,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -14705,8 +14681,8 @@
         "Nunu",
         "Sona"
       ],
-      "count": 1003,
-      "avgPlace": 3.4088,
+      "count": 1015,
+      "avgPlace": 3.4197,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -14834,8 +14810,8 @@
         "Rhaast",
         "Viktor"
       ],
-      "count": 987,
-      "avgPlace": 3.1783,
+      "count": 970,
+      "avgPlace": 3.1701,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -14964,8 +14940,8 @@
         "Rhaast",
         "Viktor"
       ],
-      "count": 987,
-      "avgPlace": 3.1783,
+      "count": 970,
+      "avgPlace": 3.1701,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -15094,8 +15070,8 @@
         "Rhaast",
         "Viktor"
       ],
-      "count": 987,
-      "avgPlace": 3.1783,
+      "count": 970,
+      "avgPlace": 3.1701,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -15224,8 +15200,8 @@
         "Nunu",
         "Zoe"
       ],
-      "count": 804,
-      "avgPlace": 4.3022,
+      "count": 799,
+      "avgPlace": 4.3229,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -15358,8 +15334,8 @@
         "Nunu",
         "Zoe"
       ],
-      "count": 804,
-      "avgPlace": 4.3022,
+      "count": 799,
+      "avgPlace": 4.3229,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -15381,12 +15357,12 @@
         "TFT17_Leona": [
           "TFT_Item_GargoyleStoneplate",
           "TFT_Item_RedBuff",
-          "TFT_Item_Artifact_TitanicHydra"
+          "TFT_Item_Bloodthirster"
         ],
         "TFT17_Nunu": [
           "TFT_Item_FrozenHeart",
-          "TFT_Item_AdaptiveHelm",
-          "TFT_Item_WarmogsArmor"
+          "TFT_Item_WarmogsArmor",
+          "TFT_Item_AdaptiveHelm"
         ],
         "TFT17_Zoe": [
           "TFT_Item_BlueBuff",
@@ -15492,8 +15468,8 @@
         "Nunu",
         "Zoe"
       ],
-      "count": 804,
-      "avgPlace": 4.3022,
+      "count": 799,
+      "avgPlace": 4.3229,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -15628,8 +15604,8 @@
         "Nunu",
         "Rhaast"
       ],
-      "count": 629,
-      "avgPlace": 3.4785,
+      "count": 630,
+      "avgPlace": 3.4794,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -15756,15 +15732,15 @@
         "Nunu",
         "Rhaast"
       ],
-      "count": 629,
-      "avgPlace": 3.4785,
+      "count": 630,
+      "avgPlace": 3.4794,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
         "TFT17_Galio": [
+          "TFT_Item_BrambleVest",
           "TFT_Item_GargoyleStoneplate",
-          "TFT_Item_WarmogsArmor",
-          "TFT_Item_Crownguard"
+          "TFT_Item_WarmogsArmor"
         ],
         "TFT17_Illaoi": [
           "TFT_Item_GargoyleStoneplate",
@@ -15885,7 +15861,7 @@
         "Twisted Fate"
       ],
       "count": 540,
-      "avgPlace": 2.9185,
+      "avgPlace": 2.9037,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -16018,7 +15994,7 @@
         "Twisted Fate"
       ],
       "count": 540,
-      "avgPlace": 2.9185,
+      "avgPlace": 2.9037,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -16151,7 +16127,7 @@
         "Twisted Fate"
       ],
       "count": 540,
-      "avgPlace": 2.9185,
+      "avgPlace": 2.9037,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -16284,7 +16260,7 @@
         "Twisted Fate"
       ],
       "count": 540,
-      "avgPlace": 2.9185,
+      "avgPlace": 2.9037,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -16416,8 +16392,8 @@
         "Teemo",
         "Zoe"
       ],
-      "count": 508,
-      "avgPlace": 4.4232,
+      "count": 503,
+      "avgPlace": 4.3976,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -16565,8 +16541,8 @@
         "Teemo",
         "Zoe"
       ],
-      "count": 508,
-      "avgPlace": 4.4232,
+      "count": 503,
+      "avgPlace": 4.3976,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -16714,15 +16690,15 @@
         "Nunu",
         "Teemo"
       ],
-      "count": 508,
-      "avgPlace": 4.4479,
+      "count": 503,
+      "avgPlace": 4.4041,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
         "TFT17_Illaoi": [
           "TFT_Item_GargoyleStoneplate",
           "TFT_Item_WarmogsArmor",
-          "TFT_Item_Redemption"
+          "TFT_Item_Crownguard"
         ],
         "TFT17_Nunu": [
           "TFT_Item_FrozenHeart",
@@ -16751,8 +16727,8 @@
         ],
         "TFT17_Leblanc": [
           "TFT_Item_GuinsoosRageblade",
-          "TFT_Item_HextechGunblade",
-          "TFT_Item_JeweledGauntlet"
+          "TFT_Item_MadredsBloodrazor",
+          "TFT_Item_RabadonsDeathcap"
         ]
       },
       "roles": {
@@ -16839,7 +16815,7 @@
     },
     {
       "source": "metatft.com",
-      "name": "9u · avg #3.2",
+      "name": "9u · avg #3.3",
       "tier": "S",
       "championIds": [
         "TFT17_Galio",
@@ -16861,8 +16837,8 @@
         "Sona",
         "Tahm Kench"
       ],
-      "count": 290,
-      "avgPlace": 3.2414,
+      "count": 289,
+      "avgPlace": 3.2526,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -16886,11 +16862,6 @@
           "TFT_Item_StatikkShiv",
           "TFT_Item_RabadonsDeathcap"
         ],
-        "TFT17_Galio": [
-          "TFT_Item_GargoyleStoneplate",
-          "TFT_Item_Redemption",
-          "TFT_Item_WarmogsArmor"
-        ],
         "TFT17_Sona": [
           "TFT17_Item_PsyOps_SympatheticImplantMod_Radiant",
           "TFT_Item_BlueBuff",
@@ -16902,7 +16873,6 @@
         "TFT17_Gragas": "3-star",
         "TFT17_MasterYi": "Item holder",
         "TFT17_Karma": "Item holder",
-        "TFT17_Galio": "Item holder",
         "TFT17_Sona": "Item holder"
       },
       "threeStars": [
@@ -16950,7 +16920,7 @@
         "Heroic Grab Bag Plus+",
         "Healing Orbs I"
       ],
-      "style": "9u · avg #3.2",
+      "style": "9u · avg #3.3",
       "sourceUrl": "https://www.metatft.com/comps",
       "sources": [
         "lolchess.gg",
@@ -16974,7 +16944,7 @@
     },
     {
       "source": "metatft.com",
-      "name": "9u · avg #3.2",
+      "name": "9u · avg #3.3",
       "tier": "S",
       "championIds": [
         "TFT17_Galio",
@@ -16996,16 +16966,11 @@
         "Sona",
         "Tahm Kench"
       ],
-      "count": 290,
-      "avgPlace": 3.2414,
+      "count": 289,
+      "avgPlace": 3.2526,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
-        "TFT17_Galio": [
-          "TFT_Item_GargoyleStoneplate",
-          "TFT_Item_Redemption",
-          "TFT_Item_WarmogsArmor"
-        ],
         "TFT17_Gragas": [
           "TFT_Item_RedBuff",
           "TFT_Item_SpectralGauntlet",
@@ -17033,7 +16998,6 @@
         ]
       },
       "roles": {
-        "TFT17_Galio": "Item holder",
         "TFT17_Gragas": "3-star",
         "TFT17_Karma": "Item holder",
         "TFT17_MasterYi": "Item holder",
@@ -17085,7 +17049,7 @@
         "Heroic Grab Bag Plus+",
         "Healing Orbs I"
       ],
-      "style": "9u · avg #3.2",
+      "style": "9u · avg #3.3",
       "sourceUrl": "https://www.metatft.com/comps",
       "sources": [
         "metatft.com",
@@ -17109,7 +17073,7 @@
     },
     {
       "source": "metatft.com",
-      "name": "9u · avg #3.2",
+      "name": "9u · avg #3.3",
       "tier": "S",
       "championIds": [
         "TFT17_Galio",
@@ -17131,8 +17095,8 @@
         "Sona",
         "Tahm Kench"
       ],
-      "count": 290,
-      "avgPlace": 3.2414,
+      "count": 289,
+      "avgPlace": 3.2526,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -17156,11 +17120,6 @@
           "TFT17_Item_PsyOps_ChemicalCapacitorMod_Radiant",
           "TFT_Item_MadredsBloodrazor"
         ],
-        "TFT17_Galio": [
-          "TFT_Item_GargoyleStoneplate",
-          "TFT_Item_Redemption",
-          "TFT_Item_WarmogsArmor"
-        ],
         "TFT17_Sona": [
           "TFT17_Item_PsyOps_SympatheticImplantMod_Radiant",
           "TFT_Item_BlueBuff",
@@ -17172,7 +17131,6 @@
         "TFT17_Gragas": "3-star",
         "TFT17_MasterYi": "Item holder",
         "TFT17_Karma": "Item holder",
-        "TFT17_Galio": "Item holder",
         "TFT17_Sona": "Item holder"
       },
       "threeStars": [
@@ -17220,7 +17178,7 @@
         "Heroicgrabbag+",
         "Big Grab Bag"
       ],
-      "style": "9u · avg #3.2",
+      "style": "9u · avg #3.3",
       "sourceUrl": "https://www.metatft.com/comps",
       "sources": [
         "tftacademy.com",
@@ -17240,6 +17198,588 @@
         "Get Pyke online with items ASAP and try to win streak if possible. If lose streak, you can look for an econ engine like Primordian / Timebreaker.",
         "Level to 6 and roll for 2* Pyke and Gragas 2*. Econ back up to 50g and slow roll for 3* Pyke. Flex in Voyagers and Brawlers as needed.",
         "Finish your 3* then push levels for 4 Psionic and Voyagers. If you have Gragas 3, always play 2 Brawler. Sona / Karma with items cap the board."
+      ]
+    },
+    {
+      "source": "metatft.com",
+      "name": "9u · avg #2.3",
+      "tier": "S",
+      "championIds": [
+        "TFT17_Jax",
+        "TFT17_Jhin",
+        "TFT17_Mordekaiser",
+        "TFT17_Nunu",
+        "TFT17_Rhaast",
+        "TFT17_Riven",
+        "TFT17_Shen",
+        "TFT17_Talon",
+        "TFT17_Xayah"
+      ],
+      "champions": [
+        "Jax",
+        "Jhin",
+        "Mordekaiser",
+        "Nunu",
+        "Rhaast",
+        "Riven",
+        "Shen",
+        "Talon",
+        "Xayah"
+      ],
+      "count": 219,
+      "avgPlace": 2.3373,
+      "top4Rate": 0,
+      "winRate": 0,
+      "items": {
+        "TFT17_Nunu": [
+          "TFT_Item_FrozenHeart",
+          "TFT_Item_AdaptiveHelm",
+          "TFT_Item_Crownguard"
+        ],
+        "TFT17_Xayah": [
+          "TFT_Item_RunaansHurricane",
+          "TFT_Item_RapidFireCannon",
+          "TFT_Item_LastWhisper"
+        ],
+        "TFT17_Jhin": [
+          "TFT_Item_InfinityEdge",
+          "TFT_Item_LastWhisper",
+          "TFT17_Item_StargazerEmblemItem"
+        ],
+        "TFT17_Jax": [
+          "TFT_Item_GargoyleStoneplate",
+          "TFT_Item_Redemption",
+          "TFT_Item_WarmogsArmor"
+        ],
+        "TFT17_Riven": [
+          "TFT17_Item_StargazerEmblemItem",
+          "TFT_Item_Bloodthirster",
+          "TFT_Item_SteraksGage"
+        ],
+        "TFT17_Talon": [
+          "TFT_Item_GuardianAngel",
+          "TFT_Item_HextechGunblade",
+          "TFT_Item_SpearOfShojin"
+        ],
+        "TFT17_Shen": [
+          "TFT17_Item_StargazerEmblemItem"
+        ],
+        "TFT17_Rhaast": [
+          "TFT17_Item_StargazerEmblemItem"
+        ]
+      },
+      "roles": {
+        "TFT17_Nunu": "Item holder",
+        "TFT17_Xayah": "Item holder",
+        "TFT17_Jhin": "Item holder",
+        "TFT17_Jax": "Item holder",
+        "TFT17_Riven": "Item holder",
+        "TFT17_Talon": "Item holder"
+      },
+      "threeStars": [],
+      "positions": {
+        "TFT17_Jax": {
+          "row": 1,
+          "col": 3
+        },
+        "TFT17_Jhin": {
+          "row": 4,
+          "col": 2
+        },
+        "TFT17_Mordekaiser": {
+          "row": 1,
+          "col": 4
+        },
+        "TFT17_Nunu": {
+          "row": 1,
+          "col": 4
+        },
+        "TFT17_Rhaast": {
+          "row": 1,
+          "col": 6
+        },
+        "TFT17_Riven": {
+          "row": 2,
+          "col": 6
+        },
+        "TFT17_Shen": {
+          "row": 1,
+          "col": 5
+        },
+        "TFT17_Talon": {
+          "row": 2,
+          "col": 6
+        },
+        "TFT17_Xayah": {
+          "row": 4,
+          "col": 1
+        }
+      },
+      "augments": [
+        "Learning From Experience II",
+        "Big Grab Bag",
+        "Maythe Fours Be With You",
+        "We Stick Together",
+        "Climb The Ladder II"
+      ],
+      "style": "9u · avg #2.3",
+      "sourceUrl": "https://www.metatft.com/comps",
+      "sources": [
+        "lolchess.gg",
+        "metatft.com",
+        "tftacademy.com"
+      ],
+      "sourceCount": 3,
+      "primarySource": "metatft.com",
+      "metaSources": [
+        "lolchess.gg",
+        "metatft.com",
+        "tftacademy.com"
+      ],
+      "metaConfirmed": true,
+      "matchConfidence": 0.667,
+      "tips": [
+        "Always keep at least 3 Stargazer in for the Emblem. Look for a Rageblade start on Twisted Fate 2 or Riven items on Talon 2.",
+        "Add more Stargazers as you level. Tech in Timebreaker when you can. The 1 cost carries fall off by end of Stage 3 so expect losses or transition to higher tier carries.",
+        "Level to 8 and roll for Riven, Nunu, and Xayah. Always play Shen. Once you hit at least 2 of the 3 units, you can consider pushing to 9."
+      ]
+    },
+    {
+      "source": "metatft.com",
+      "name": "9u · avg #2.3",
+      "tier": "S",
+      "championIds": [
+        "TFT17_Jax",
+        "TFT17_Jhin",
+        "TFT17_Mordekaiser",
+        "TFT17_Nunu",
+        "TFT17_Rhaast",
+        "TFT17_Riven",
+        "TFT17_Shen",
+        "TFT17_Talon",
+        "TFT17_Xayah"
+      ],
+      "champions": [
+        "Jax",
+        "Jhin",
+        "Mordekaiser",
+        "Nunu",
+        "Rhaast",
+        "Riven",
+        "Shen",
+        "Talon",
+        "Xayah"
+      ],
+      "count": 219,
+      "avgPlace": 2.3373,
+      "top4Rate": 0,
+      "winRate": 0,
+      "items": {
+        "TFT17_Jax": [
+          "TFT_Item_GargoyleStoneplate",
+          "TFT_Item_Redemption",
+          "TFT_Item_WarmogsArmor"
+        ],
+        "TFT17_Jhin": [
+          "TFT_Item_InfinityEdge",
+          "TFT_Item_LastWhisper",
+          "TFT17_Item_StargazerEmblemItem"
+        ],
+        "TFT17_Nunu": [
+          "TFT_Item_FrozenHeart",
+          "TFT_Item_AdaptiveHelm",
+          "TFT_Item_Crownguard"
+        ],
+        "TFT17_Riven": [
+          "TFT17_Item_StargazerEmblemItem",
+          "TFT_Item_Bloodthirster",
+          "TFT_Item_SteraksGage"
+        ],
+        "TFT17_Talon": [
+          "TFT_Item_GuardianAngel",
+          "TFT_Item_HextechGunblade",
+          "TFT_Item_SpearOfShojin"
+        ],
+        "TFT17_Xayah": [
+          "TFT_Item_RunaansHurricane",
+          "TFT_Item_RapidFireCannon",
+          "TFT_Item_LastWhisper"
+        ],
+        "TFT17_Shen": [
+          "TFT17_Item_StargazerEmblemItem"
+        ],
+        "TFT17_Rhaast": [
+          "TFT17_Item_StargazerEmblemItem"
+        ]
+      },
+      "roles": {
+        "TFT17_Jax": "Item holder",
+        "TFT17_Jhin": "Item holder",
+        "TFT17_Nunu": "Item holder",
+        "TFT17_Riven": "Item holder",
+        "TFT17_Talon": "Item holder",
+        "TFT17_Xayah": "Item holder"
+      },
+      "threeStars": [],
+      "positions": {
+        "TFT17_Jax": {
+          "row": 1,
+          "col": 3
+        },
+        "TFT17_Jhin": {
+          "row": 4,
+          "col": 2
+        },
+        "TFT17_Mordekaiser": {
+          "row": 1,
+          "col": 4
+        },
+        "TFT17_Nunu": {
+          "row": 1,
+          "col": 4
+        },
+        "TFT17_Rhaast": {
+          "row": 1,
+          "col": 6
+        },
+        "TFT17_Riven": {
+          "row": 2,
+          "col": 6
+        },
+        "TFT17_Shen": {
+          "row": 1,
+          "col": 5
+        },
+        "TFT17_Talon": {
+          "row": 2,
+          "col": 6
+        },
+        "TFT17_Xayah": {
+          "row": 4,
+          "col": 1
+        }
+      },
+      "augments": [
+        "Learning From Experience II",
+        "Big Grab Bag",
+        "Maythe Fours Be With You",
+        "We Stick Together",
+        "Climb The Ladder II"
+      ],
+      "style": "9u · avg #2.3",
+      "sourceUrl": "https://www.metatft.com/comps",
+      "sources": [
+        "metatft.com",
+        "lolchess.gg",
+        "tftacademy.com"
+      ],
+      "sourceCount": 3,
+      "primarySource": "metatft.com",
+      "metaSources": [
+        "metatft.com",
+        "lolchess.gg",
+        "tftacademy.com"
+      ],
+      "metaConfirmed": true,
+      "matchConfidence": 0.625,
+      "tips": [
+        "Always keep at least 3 Stargazer in for the Emblem. Look for a Rageblade start on Twisted Fate 2 or Riven items on Talon 2.",
+        "Add more Stargazers as you level. Tech in Timebreaker when you can. The 1 cost carries fall off by end of Stage 3 so expect losses or transition to higher tier carries.",
+        "Level to 8 and roll for Riven, Nunu, and Xayah. Always play Shen. Once you hit at least 2 of the 3 units, you can consider pushing to 9.",
+        "Look for an econ engine like Primordian or Timebreaker that fit in Dark Star naturally. Slam items for Karma / Jhin and push levels.",
+        "Level for more frontline / Dark Star as needed. 6 Dark Star is the big spike if you have emblem. You can flex in Voyager and Psionic easily too.",
+        "Level to 8 and roll down for 6 Dark Star. Always play Jhin ASAP. If Nunu is hard to hit, tank TK instead and don't prioritize Stargazers."
+      ]
+    },
+    {
+      "source": "metatft.com",
+      "name": "9u · avg #2.3",
+      "tier": "S",
+      "championIds": [
+        "TFT17_Jax",
+        "TFT17_Jhin",
+        "TFT17_Mordekaiser",
+        "TFT17_Nunu",
+        "TFT17_Rhaast",
+        "TFT17_Riven",
+        "TFT17_Shen",
+        "TFT17_Talon",
+        "TFT17_Xayah"
+      ],
+      "champions": [
+        "Jax",
+        "Jhin",
+        "Mordekaiser",
+        "Nunu",
+        "Rhaast",
+        "Riven",
+        "Shen",
+        "Talon",
+        "Xayah"
+      ],
+      "count": 219,
+      "avgPlace": 2.3373,
+      "top4Rate": 0,
+      "winRate": 0,
+      "items": {
+        "TFT17_Jhin": [
+          "TFT_Item_InfinityEdge",
+          "TFT_Item_LastWhisper",
+          "TFT17_Item_StargazerEmblemItem"
+        ],
+        "TFT17_Nunu": [
+          "TFT_Item_FrozenHeart",
+          "TFT_Item_AdaptiveHelm",
+          "TFT_Item_Crownguard"
+        ],
+        "TFT17_Xayah": [
+          "TFT_Item_RunaansHurricane",
+          "TFT_Item_RapidFireCannon",
+          "TFT_Item_LastWhisper"
+        ],
+        "TFT17_Jax": [
+          "TFT_Item_GargoyleStoneplate",
+          "TFT_Item_Redemption",
+          "TFT_Item_WarmogsArmor"
+        ],
+        "TFT17_Riven": [
+          "TFT17_Item_StargazerEmblemItem",
+          "TFT_Item_Bloodthirster",
+          "TFT_Item_SteraksGage"
+        ],
+        "TFT17_Talon": [
+          "TFT_Item_GuardianAngel",
+          "TFT_Item_HextechGunblade",
+          "TFT_Item_SpearOfShojin"
+        ],
+        "TFT17_Shen": [
+          "TFT17_Item_StargazerEmblemItem"
+        ],
+        "TFT17_Rhaast": [
+          "TFT17_Item_StargazerEmblemItem"
+        ]
+      },
+      "roles": {
+        "TFT17_Jhin": "Item holder",
+        "TFT17_Nunu": "Item holder",
+        "TFT17_Xayah": "Item holder",
+        "TFT17_Jax": "Item holder",
+        "TFT17_Riven": "Item holder",
+        "TFT17_Talon": "Item holder"
+      },
+      "threeStars": [],
+      "positions": {
+        "TFT17_Jax": {
+          "row": 1,
+          "col": 3
+        },
+        "TFT17_Jhin": {
+          "row": 4,
+          "col": 2
+        },
+        "TFT17_Mordekaiser": {
+          "row": 1,
+          "col": 4
+        },
+        "TFT17_Nunu": {
+          "row": 1,
+          "col": 4
+        },
+        "TFT17_Rhaast": {
+          "row": 1,
+          "col": 6
+        },
+        "TFT17_Xayah": {
+          "row": 4,
+          "col": 1
+        },
+        "TFT17_Riven": {
+          "row": 2,
+          "col": 6
+        },
+        "TFT17_Shen": {
+          "row": 1,
+          "col": 5
+        },
+        "TFT17_Talon": {
+          "row": 2,
+          "col": 6
+        }
+      },
+      "augments": [
+        "Learning From Experience II",
+        "Big Grab Bag",
+        "Maythe Fours Be With You",
+        "We Stick Together",
+        "Climb The Ladder II"
+      ],
+      "style": "9u · avg #2.3",
+      "sourceUrl": "https://www.metatft.com/comps",
+      "sources": [
+        "metatft.com",
+        "lolchess.gg",
+        "tftacademy.com"
+      ],
+      "sourceCount": 3,
+      "primarySource": "metatft.com",
+      "metaSources": [
+        "metatft.com",
+        "lolchess.gg",
+        "tftacademy.com"
+      ],
+      "metaConfirmed": true,
+      "matchConfidence": 0.667,
+      "tips": [
+        "Always keep at least 3 Stargazer in for the Emblem. Look for a Rageblade start on Twisted Fate 2 or Riven items on Talon 2.",
+        "Add more Stargazers as you level. Tech in Timebreaker when you can. The 1 cost carries fall off by end of Stage 3 so expect losses or transition to higher tier carries.",
+        "Level to 8 and roll for Riven, Nunu, and Xayah. Always play Shen. Once you hit at least 2 of the 3 units, you can consider pushing to 9."
+      ]
+    },
+    {
+      "source": "metatft.com",
+      "name": "9u · avg #2.3",
+      "tier": "S",
+      "championIds": [
+        "TFT17_Jax",
+        "TFT17_Jhin",
+        "TFT17_Mordekaiser",
+        "TFT17_Nunu",
+        "TFT17_Rhaast",
+        "TFT17_Riven",
+        "TFT17_Shen",
+        "TFT17_Talon",
+        "TFT17_Xayah"
+      ],
+      "champions": [
+        "Jax",
+        "Jhin",
+        "Mordekaiser",
+        "Nunu",
+        "Rhaast",
+        "Riven",
+        "Shen",
+        "Talon",
+        "Xayah"
+      ],
+      "count": 219,
+      "avgPlace": 2.3373,
+      "top4Rate": 0,
+      "winRate": 0,
+      "items": {
+        "TFT17_Nunu": [
+          "TFT_Item_FrozenHeart",
+          "TFT_Item_AdaptiveHelm",
+          "TFT_Item_Crownguard"
+        ],
+        "TFT17_Riven": [
+          "TFT_Item_Bloodthirster",
+          "TFT_Item_SteraksGage",
+          "TFT17_Item_StargazerEmblemItem"
+        ],
+        "TFT17_Xayah": [
+          "TFT_Item_RunaansHurricane",
+          "TFT_Item_RapidFireCannon",
+          "TFT_Item_LastWhisper"
+        ],
+        "TFT17_Jhin": [
+          "TFT_Item_InfinityEdge",
+          "TFT_Item_LastWhisper",
+          "TFT17_Item_StargazerEmblemItem"
+        ],
+        "TFT17_Shen": [
+          "TFT17_Item_StargazerEmblemItem"
+        ],
+        "TFT17_Rhaast": [
+          "TFT17_Item_StargazerEmblemItem"
+        ],
+        "TFT17_Jax": [
+          "TFT_Item_GargoyleStoneplate",
+          "TFT_Item_Redemption",
+          "TFT_Item_WarmogsArmor"
+        ],
+        "TFT17_Talon": [
+          "TFT_Item_GuardianAngel",
+          "TFT_Item_HextechGunblade",
+          "TFT_Item_SpearOfShojin"
+        ]
+      },
+      "roles": {
+        "TFT17_Xayah": "Item holder",
+        "TFT17_Nunu": "Item holder",
+        "TFT17_Jhin": "Item holder",
+        "TFT17_Jax": "Item holder",
+        "TFT17_Riven": "Item holder",
+        "TFT17_Talon": "Item holder"
+      },
+      "threeStars": [],
+      "positions": {
+        "TFT17_Jax": {
+          "row": 1,
+          "col": 3
+        },
+        "TFT17_Mordekaiser": {
+          "row": 1,
+          "col": 4
+        },
+        "TFT17_Nunu": {
+          "row": 1,
+          "col": 4
+        },
+        "TFT17_Riven": {
+          "row": 2,
+          "col": 6
+        },
+        "TFT17_Xayah": {
+          "row": 4,
+          "col": 1
+        },
+        "TFT17_Jhin": {
+          "row": 4,
+          "col": 2
+        },
+        "TFT17_Shen": {
+          "row": 1,
+          "col": 5
+        },
+        "TFT17_Talon": {
+          "row": 3,
+          "col": 2
+        },
+        "TFT17_Rhaast": {
+          "row": 1,
+          "col": 6
+        }
+      },
+      "augments": [
+        "We Stick Together",
+        "Climb The Ladder II",
+        "Learning From Experience II",
+        "Big Grab Bag",
+        "Maythe Fours Be With You"
+      ],
+      "style": "9u · avg #2.3",
+      "sourceUrl": "https://www.metatft.com/comps",
+      "sources": [
+        "tftacademy.com",
+        "lolchess.gg",
+        "metatft.com"
+      ],
+      "sourceCount": 3,
+      "primarySource": "metatft.com",
+      "metaSources": [
+        "tftacademy.com",
+        "lolchess.gg",
+        "metatft.com"
+      ],
+      "metaConfirmed": true,
+      "matchConfidence": 0.625,
+      "tips": [
+        "Always keep at least 3 Stargazer in for the Emblem. Look for a Rageblade start on Twisted Fate 2 or Riven items on Talon 2.",
+        "Add more Stargazers as you level. Tech in Timebreaker when you can. The 1 cost carries fall off by end of Stage 3 so expect losses or transition to higher tier carries.",
+        "Level to 8 and roll for Riven, Nunu, and Xayah. Always play Shen. Once you hit at least 2 of the 3 units, you can consider pushing to 9.",
+        "Look for an econ engine like Primordian or Timebreaker that fit in Dark Star naturally. Slam items for Karma / Jhin and push levels.",
+        "Level for more frontline / Dark Star as needed. 6 Dark Star is the big spike if you have emblem. You can flex in Voyager and Psionic easily too.",
+        "Level to 8 and roll down for 6 Dark Star. Always play Jhin ASAP. If Nunu is hard to hit, tank TK instead and don't prioritize Stargazers."
       ]
     },
     {
@@ -17268,8 +17808,8 @@
         "Rammus",
         "Shen"
       ],
-      "count": 231,
-      "avgPlace": 3.0625,
+      "count": 219,
+      "avgPlace": 3.0683,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -17426,8 +17966,8 @@
         "Rammus",
         "Shen"
       ],
-      "count": 231,
-      "avgPlace": 3.0625,
+      "count": 219,
+      "avgPlace": 3.0683,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -17584,8 +18124,8 @@
         "Rammus",
         "Shen"
       ],
-      "count": 231,
-      "avgPlace": 3.0625,
+      "count": 219,
+      "avgPlace": 3.0683,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -17597,7 +18137,7 @@
         "TFT17_Caitlyn": [
           "TFT_Item_GuinsoosRageblade",
           "TFT_Item_Deathblade",
-          "TFT_Item_MadredsBloodrazor"
+          "TFT_Item_RunaansHurricane"
         ],
         "TFT17_Corki": [
           "TFT_Item_Deathblade",
@@ -17606,8 +18146,8 @@
         ],
         "TFT17_Kindred": [
           "TFT_Item_GuinsoosRageblade",
-          "TFT_Item_MadredsBloodrazor",
-          "TFT_Item_Deathblade"
+          "TFT_Item_InfinityEdge",
+          "TFT_Item_RapidFireCannon"
         ],
         "TFT17_Rammus": [
           "TFT_Item_GargoyleStoneplate",
@@ -17660,15 +18200,15 @@
         },
         "TFT17_Kindred": {
           "row": 4,
-          "col": 2
+          "col": 7
         },
         "TFT17_Maokai": {
           "row": 3,
           "col": 4
         },
         "TFT17_Poppy": {
-          "row": 3,
-          "col": 4
+          "row": 1,
+          "col": 2
         },
         "TFT17_Rammus": {
           "row": 1,
@@ -17742,8 +18282,8 @@
         "Rammus",
         "Shen"
       ],
-      "count": 231,
-      "avgPlace": 3.0625,
+      "count": 219,
+      "avgPlace": 3.0683,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -17755,7 +18295,7 @@
         "TFT17_Caitlyn": [
           "TFT_Item_GuinsoosRageblade",
           "TFT_Item_Deathblade",
-          "TFT_Item_MadredsBloodrazor"
+          "TFT_Item_RunaansHurricane"
         ],
         "TFT17_Corki": [
           "TFT_Item_Deathblade",
@@ -17805,8 +18345,8 @@
       ],
       "positions": {
         "TFT17_Poppy": {
-          "row": 3,
-          "col": 4
+          "row": 1,
+          "col": 2
         },
         "TFT17_Aatrox": {
           "row": 1,
@@ -17822,7 +18362,7 @@
         },
         "TFT17_Kindred": {
           "row": 4,
-          "col": 2
+          "col": 4
         },
         "TFT17_Rammus": {
           "row": 1,
@@ -17900,8 +18440,8 @@
         "Rammus",
         "Shen"
       ],
-      "count": 231,
-      "avgPlace": 3.0625,
+      "count": 219,
+      "avgPlace": 3.0683,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -17918,7 +18458,7 @@
         "TFT17_Caitlyn": [
           "TFT_Item_GuinsoosRageblade",
           "TFT_Item_Deathblade",
-          "TFT_Item_MadredsBloodrazor"
+          "TFT_Item_RunaansHurricane"
         ],
         "TFT17_Rammus": [
           "TFT_Item_GargoyleStoneplate",
@@ -18058,8 +18598,8 @@
         "Rammus",
         "Shen"
       ],
-      "count": 231,
-      "avgPlace": 3.0625,
+      "count": 219,
+      "avgPlace": 3.0683,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -18086,7 +18626,7 @@
         "TFT17_Caitlyn": [
           "TFT_Item_GuinsoosRageblade",
           "TFT_Item_Deathblade",
-          "TFT_Item_MadredsBloodrazor"
+          "TFT_Item_RunaansHurricane"
         ],
         "TFT17_Poppy": [
           "TFT_Item_InfinityEdge",
@@ -18192,588 +18732,6 @@
     },
     {
       "source": "metatft.com",
-      "name": "9u · avg #2.3",
-      "tier": "S",
-      "championIds": [
-        "TFT17_Jax",
-        "TFT17_Jhin",
-        "TFT17_Mordekaiser",
-        "TFT17_Nunu",
-        "TFT17_Rhaast",
-        "TFT17_Riven",
-        "TFT17_Shen",
-        "TFT17_Talon",
-        "TFT17_Xayah"
-      ],
-      "champions": [
-        "Jax",
-        "Jhin",
-        "Mordekaiser",
-        "Nunu",
-        "Rhaast",
-        "Riven",
-        "Shen",
-        "Talon",
-        "Xayah"
-      ],
-      "count": 220,
-      "avgPlace": 2.3432,
-      "top4Rate": 0,
-      "winRate": 0,
-      "items": {
-        "TFT17_Nunu": [
-          "TFT_Item_FrozenHeart",
-          "TFT_Item_AdaptiveHelm",
-          "TFT_Item_GargoyleStoneplate"
-        ],
-        "TFT17_Xayah": [
-          "TFT_Item_RunaansHurricane",
-          "TFT_Item_RapidFireCannon",
-          "TFT_Item_LastWhisper"
-        ],
-        "TFT17_Jhin": [
-          "TFT_Item_InfinityEdge",
-          "TFT_Item_LastWhisper",
-          "TFT17_Item_StargazerEmblemItem"
-        ],
-        "TFT17_Jax": [
-          "TFT_Item_GargoyleStoneplate",
-          "TFT_Item_Redemption",
-          "TFT_Item_WarmogsArmor"
-        ],
-        "TFT17_Riven": [
-          "TFT17_Item_StargazerEmblemItem",
-          "TFT_Item_SteraksGage",
-          "TFT17_Item_ResistTankEmblemItem"
-        ],
-        "TFT17_Talon": [
-          "TFT_Item_GuardianAngel",
-          "TFT_Item_HextechGunblade",
-          "TFT_Item_SpearOfShojin"
-        ],
-        "TFT17_Shen": [
-          "TFT17_Item_StargazerEmblemItem"
-        ],
-        "TFT17_Rhaast": [
-          "TFT17_Item_StargazerEmblemItem"
-        ]
-      },
-      "roles": {
-        "TFT17_Nunu": "Item holder",
-        "TFT17_Xayah": "Item holder",
-        "TFT17_Jhin": "Item holder",
-        "TFT17_Jax": "Item holder",
-        "TFT17_Riven": "Item holder",
-        "TFT17_Talon": "Item holder"
-      },
-      "threeStars": [],
-      "positions": {
-        "TFT17_Jax": {
-          "row": 1,
-          "col": 3
-        },
-        "TFT17_Jhin": {
-          "row": 4,
-          "col": 2
-        },
-        "TFT17_Mordekaiser": {
-          "row": 1,
-          "col": 4
-        },
-        "TFT17_Nunu": {
-          "row": 1,
-          "col": 4
-        },
-        "TFT17_Rhaast": {
-          "row": 1,
-          "col": 6
-        },
-        "TFT17_Riven": {
-          "row": 2,
-          "col": 6
-        },
-        "TFT17_Shen": {
-          "row": 1,
-          "col": 5
-        },
-        "TFT17_Talon": {
-          "row": 2,
-          "col": 6
-        },
-        "TFT17_Xayah": {
-          "row": 4,
-          "col": 1
-        }
-      },
-      "augments": [
-        "Learning From Experience II",
-        "Big Grab Bag",
-        "Maythe Fours Be With You",
-        "We Stick Together",
-        "Climb The Ladder II"
-      ],
-      "style": "9u · avg #2.3",
-      "sourceUrl": "https://www.metatft.com/comps",
-      "sources": [
-        "lolchess.gg",
-        "metatft.com",
-        "tftacademy.com"
-      ],
-      "sourceCount": 3,
-      "primarySource": "metatft.com",
-      "metaSources": [
-        "lolchess.gg",
-        "metatft.com",
-        "tftacademy.com"
-      ],
-      "metaConfirmed": true,
-      "matchConfidence": 0.667,
-      "tips": [
-        "Always keep at least 3 Stargazer in for the Emblem. Look for a Rageblade start on Twisted Fate 2 or Riven items on Talon 2.",
-        "Add more Stargazers as you level. Tech in Timebreaker when you can. The 1 cost carries fall off by end of Stage 3 so expect losses or transition to higher tier carries.",
-        "Level to 8 and roll for Riven, Nunu, and Xayah. Always play Shen. Once you hit at least 2 of the 3 units, you can consider pushing to 9."
-      ]
-    },
-    {
-      "source": "metatft.com",
-      "name": "9u · avg #2.3",
-      "tier": "S",
-      "championIds": [
-        "TFT17_Jax",
-        "TFT17_Jhin",
-        "TFT17_Mordekaiser",
-        "TFT17_Nunu",
-        "TFT17_Rhaast",
-        "TFT17_Riven",
-        "TFT17_Shen",
-        "TFT17_Talon",
-        "TFT17_Xayah"
-      ],
-      "champions": [
-        "Jax",
-        "Jhin",
-        "Mordekaiser",
-        "Nunu",
-        "Rhaast",
-        "Riven",
-        "Shen",
-        "Talon",
-        "Xayah"
-      ],
-      "count": 220,
-      "avgPlace": 2.3432,
-      "top4Rate": 0,
-      "winRate": 0,
-      "items": {
-        "TFT17_Jax": [
-          "TFT_Item_GargoyleStoneplate",
-          "TFT_Item_Redemption",
-          "TFT_Item_WarmogsArmor"
-        ],
-        "TFT17_Jhin": [
-          "TFT_Item_InfinityEdge",
-          "TFT_Item_LastWhisper",
-          "TFT17_Item_StargazerEmblemItem"
-        ],
-        "TFT17_Nunu": [
-          "TFT_Item_FrozenHeart",
-          "TFT_Item_AdaptiveHelm",
-          "TFT_Item_GargoyleStoneplate"
-        ],
-        "TFT17_Riven": [
-          "TFT17_Item_StargazerEmblemItem",
-          "TFT_Item_SteraksGage",
-          "TFT17_Item_ResistTankEmblemItem"
-        ],
-        "TFT17_Talon": [
-          "TFT_Item_GuardianAngel",
-          "TFT_Item_HextechGunblade",
-          "TFT_Item_SpearOfShojin"
-        ],
-        "TFT17_Xayah": [
-          "TFT_Item_RunaansHurricane",
-          "TFT_Item_RapidFireCannon",
-          "TFT_Item_LastWhisper"
-        ],
-        "TFT17_Shen": [
-          "TFT17_Item_StargazerEmblemItem"
-        ],
-        "TFT17_Rhaast": [
-          "TFT17_Item_StargazerEmblemItem"
-        ]
-      },
-      "roles": {
-        "TFT17_Jax": "Item holder",
-        "TFT17_Jhin": "Item holder",
-        "TFT17_Nunu": "Item holder",
-        "TFT17_Riven": "Item holder",
-        "TFT17_Talon": "Item holder",
-        "TFT17_Xayah": "Item holder"
-      },
-      "threeStars": [],
-      "positions": {
-        "TFT17_Jax": {
-          "row": 1,
-          "col": 3
-        },
-        "TFT17_Jhin": {
-          "row": 4,
-          "col": 2
-        },
-        "TFT17_Mordekaiser": {
-          "row": 1,
-          "col": 4
-        },
-        "TFT17_Nunu": {
-          "row": 1,
-          "col": 4
-        },
-        "TFT17_Rhaast": {
-          "row": 1,
-          "col": 6
-        },
-        "TFT17_Riven": {
-          "row": 2,
-          "col": 6
-        },
-        "TFT17_Shen": {
-          "row": 1,
-          "col": 5
-        },
-        "TFT17_Talon": {
-          "row": 2,
-          "col": 6
-        },
-        "TFT17_Xayah": {
-          "row": 4,
-          "col": 1
-        }
-      },
-      "augments": [
-        "Learning From Experience II",
-        "Big Grab Bag",
-        "Maythe Fours Be With You",
-        "We Stick Together",
-        "Climb The Ladder II"
-      ],
-      "style": "9u · avg #2.3",
-      "sourceUrl": "https://www.metatft.com/comps",
-      "sources": [
-        "metatft.com",
-        "lolchess.gg",
-        "tftacademy.com"
-      ],
-      "sourceCount": 3,
-      "primarySource": "metatft.com",
-      "metaSources": [
-        "metatft.com",
-        "lolchess.gg",
-        "tftacademy.com"
-      ],
-      "metaConfirmed": true,
-      "matchConfidence": 0.625,
-      "tips": [
-        "Always keep at least 3 Stargazer in for the Emblem. Look for a Rageblade start on Twisted Fate 2 or Riven items on Talon 2.",
-        "Add more Stargazers as you level. Tech in Timebreaker when you can. The 1 cost carries fall off by end of Stage 3 so expect losses or transition to higher tier carries.",
-        "Level to 8 and roll for Riven, Nunu, and Xayah. Always play Shen. Once you hit at least 2 of the 3 units, you can consider pushing to 9.",
-        "Look for an econ engine like Primordian or Timebreaker that fit in Dark Star naturally. Slam items for Karma / Jhin and push levels.",
-        "Level for more frontline / Dark Star as needed. 6 Dark Star is the big spike if you have emblem. You can flex in Voyager and Psionic easily too.",
-        "Level to 8 and roll down for 6 Dark Star. Always play Jhin ASAP. If Nunu is hard to hit, tank TK instead and don't prioritize Stargazers."
-      ]
-    },
-    {
-      "source": "metatft.com",
-      "name": "9u · avg #2.3",
-      "tier": "S",
-      "championIds": [
-        "TFT17_Jax",
-        "TFT17_Jhin",
-        "TFT17_Mordekaiser",
-        "TFT17_Nunu",
-        "TFT17_Rhaast",
-        "TFT17_Riven",
-        "TFT17_Shen",
-        "TFT17_Talon",
-        "TFT17_Xayah"
-      ],
-      "champions": [
-        "Jax",
-        "Jhin",
-        "Mordekaiser",
-        "Nunu",
-        "Rhaast",
-        "Riven",
-        "Shen",
-        "Talon",
-        "Xayah"
-      ],
-      "count": 220,
-      "avgPlace": 2.3432,
-      "top4Rate": 0,
-      "winRate": 0,
-      "items": {
-        "TFT17_Jhin": [
-          "TFT_Item_InfinityEdge",
-          "TFT_Item_LastWhisper",
-          "TFT17_Item_StargazerEmblemItem"
-        ],
-        "TFT17_Nunu": [
-          "TFT_Item_FrozenHeart",
-          "TFT_Item_AdaptiveHelm",
-          "TFT_Item_GargoyleStoneplate"
-        ],
-        "TFT17_Xayah": [
-          "TFT_Item_RunaansHurricane",
-          "TFT_Item_RapidFireCannon",
-          "TFT_Item_LastWhisper"
-        ],
-        "TFT17_Jax": [
-          "TFT_Item_GargoyleStoneplate",
-          "TFT_Item_Redemption",
-          "TFT_Item_WarmogsArmor"
-        ],
-        "TFT17_Riven": [
-          "TFT17_Item_StargazerEmblemItem",
-          "TFT_Item_SteraksGage",
-          "TFT17_Item_ResistTankEmblemItem"
-        ],
-        "TFT17_Talon": [
-          "TFT_Item_GuardianAngel",
-          "TFT_Item_HextechGunblade",
-          "TFT_Item_SpearOfShojin"
-        ],
-        "TFT17_Shen": [
-          "TFT17_Item_StargazerEmblemItem"
-        ],
-        "TFT17_Rhaast": [
-          "TFT17_Item_StargazerEmblemItem"
-        ]
-      },
-      "roles": {
-        "TFT17_Jhin": "Item holder",
-        "TFT17_Nunu": "Item holder",
-        "TFT17_Xayah": "Item holder",
-        "TFT17_Jax": "Item holder",
-        "TFT17_Riven": "Item holder",
-        "TFT17_Talon": "Item holder"
-      },
-      "threeStars": [],
-      "positions": {
-        "TFT17_Jax": {
-          "row": 1,
-          "col": 3
-        },
-        "TFT17_Jhin": {
-          "row": 4,
-          "col": 2
-        },
-        "TFT17_Mordekaiser": {
-          "row": 1,
-          "col": 4
-        },
-        "TFT17_Nunu": {
-          "row": 1,
-          "col": 4
-        },
-        "TFT17_Rhaast": {
-          "row": 1,
-          "col": 6
-        },
-        "TFT17_Xayah": {
-          "row": 4,
-          "col": 1
-        },
-        "TFT17_Riven": {
-          "row": 2,
-          "col": 6
-        },
-        "TFT17_Shen": {
-          "row": 1,
-          "col": 5
-        },
-        "TFT17_Talon": {
-          "row": 2,
-          "col": 6
-        }
-      },
-      "augments": [
-        "Learning From Experience II",
-        "Big Grab Bag",
-        "Maythe Fours Be With You",
-        "We Stick Together",
-        "Climb The Ladder II"
-      ],
-      "style": "9u · avg #2.3",
-      "sourceUrl": "https://www.metatft.com/comps",
-      "sources": [
-        "metatft.com",
-        "lolchess.gg",
-        "tftacademy.com"
-      ],
-      "sourceCount": 3,
-      "primarySource": "metatft.com",
-      "metaSources": [
-        "metatft.com",
-        "lolchess.gg",
-        "tftacademy.com"
-      ],
-      "metaConfirmed": true,
-      "matchConfidence": 0.667,
-      "tips": [
-        "Always keep at least 3 Stargazer in for the Emblem. Look for a Rageblade start on Twisted Fate 2 or Riven items on Talon 2.",
-        "Add more Stargazers as you level. Tech in Timebreaker when you can. The 1 cost carries fall off by end of Stage 3 so expect losses or transition to higher tier carries.",
-        "Level to 8 and roll for Riven, Nunu, and Xayah. Always play Shen. Once you hit at least 2 of the 3 units, you can consider pushing to 9."
-      ]
-    },
-    {
-      "source": "metatft.com",
-      "name": "9u · avg #2.3",
-      "tier": "S",
-      "championIds": [
-        "TFT17_Jax",
-        "TFT17_Jhin",
-        "TFT17_Mordekaiser",
-        "TFT17_Nunu",
-        "TFT17_Rhaast",
-        "TFT17_Riven",
-        "TFT17_Shen",
-        "TFT17_Talon",
-        "TFT17_Xayah"
-      ],
-      "champions": [
-        "Jax",
-        "Jhin",
-        "Mordekaiser",
-        "Nunu",
-        "Rhaast",
-        "Riven",
-        "Shen",
-        "Talon",
-        "Xayah"
-      ],
-      "count": 220,
-      "avgPlace": 2.3432,
-      "top4Rate": 0,
-      "winRate": 0,
-      "items": {
-        "TFT17_Nunu": [
-          "TFT_Item_FrozenHeart",
-          "TFT_Item_AdaptiveHelm",
-          "TFT_Item_GargoyleStoneplate"
-        ],
-        "TFT17_Riven": [
-          "TFT_Item_SteraksGage",
-          "TFT17_Item_StargazerEmblemItem",
-          "TFT_Item_Bloodthirster"
-        ],
-        "TFT17_Xayah": [
-          "TFT_Item_RunaansHurricane",
-          "TFT_Item_RapidFireCannon",
-          "TFT_Item_LastWhisper"
-        ],
-        "TFT17_Jhin": [
-          "TFT_Item_InfinityEdge",
-          "TFT_Item_LastWhisper",
-          "TFT17_Item_StargazerEmblemItem"
-        ],
-        "TFT17_Shen": [
-          "TFT17_Item_StargazerEmblemItem"
-        ],
-        "TFT17_Rhaast": [
-          "TFT17_Item_StargazerEmblemItem"
-        ],
-        "TFT17_Jax": [
-          "TFT_Item_GargoyleStoneplate",
-          "TFT_Item_Redemption",
-          "TFT_Item_WarmogsArmor"
-        ],
-        "TFT17_Talon": [
-          "TFT_Item_GuardianAngel",
-          "TFT_Item_HextechGunblade",
-          "TFT_Item_SpearOfShojin"
-        ]
-      },
-      "roles": {
-        "TFT17_Xayah": "Item holder",
-        "TFT17_Nunu": "Item holder",
-        "TFT17_Jhin": "Item holder",
-        "TFT17_Jax": "Item holder",
-        "TFT17_Riven": "Item holder",
-        "TFT17_Talon": "Item holder"
-      },
-      "threeStars": [],
-      "positions": {
-        "TFT17_Jax": {
-          "row": 1,
-          "col": 3
-        },
-        "TFT17_Mordekaiser": {
-          "row": 1,
-          "col": 4
-        },
-        "TFT17_Nunu": {
-          "row": 1,
-          "col": 4
-        },
-        "TFT17_Riven": {
-          "row": 2,
-          "col": 6
-        },
-        "TFT17_Xayah": {
-          "row": 4,
-          "col": 1
-        },
-        "TFT17_Jhin": {
-          "row": 4,
-          "col": 2
-        },
-        "TFT17_Shen": {
-          "row": 1,
-          "col": 5
-        },
-        "TFT17_Talon": {
-          "row": 3,
-          "col": 2
-        },
-        "TFT17_Rhaast": {
-          "row": 1,
-          "col": 6
-        }
-      },
-      "augments": [
-        "We Stick Together",
-        "Climb The Ladder II",
-        "Learning From Experience II",
-        "Big Grab Bag",
-        "Maythe Fours Be With You"
-      ],
-      "style": "9u · avg #2.3",
-      "sourceUrl": "https://www.metatft.com/comps",
-      "sources": [
-        "tftacademy.com",
-        "lolchess.gg",
-        "metatft.com"
-      ],
-      "sourceCount": 3,
-      "primarySource": "metatft.com",
-      "metaSources": [
-        "tftacademy.com",
-        "lolchess.gg",
-        "metatft.com"
-      ],
-      "metaConfirmed": true,
-      "matchConfidence": 0.625,
-      "tips": [
-        "Always keep at least 3 Stargazer in for the Emblem. Look for a Rageblade start on Twisted Fate 2 or Riven items on Talon 2.",
-        "Add more Stargazers as you level. Tech in Timebreaker when you can. The 1 cost carries fall off by end of Stage 3 so expect losses or transition to higher tier carries.",
-        "Level to 8 and roll for Riven, Nunu, and Xayah. Always play Shen. Once you hit at least 2 of the 3 units, you can consider pushing to 9.",
-        "Look for an econ engine like Primordian or Timebreaker that fit in Dark Star naturally. Slam items for Karma / Jhin and push levels.",
-        "Level for more frontline / Dark Star as needed. 6 Dark Star is the big spike if you have emblem. You can flex in Voyager and Psionic easily too.",
-        "Level to 8 and roll down for 6 Dark Star. Always play Jhin ASAP. If Nunu is hard to hit, tank TK instead and don't prioritize Stargazers."
-      ]
-    },
-    {
-      "source": "metatft.com",
       "name": "8u · avg #4.4",
       "tier": "C",
       "championIds": [
@@ -18796,8 +18754,8 @@
         "Nunu",
         "Teemo"
       ],
-      "count": 192,
-      "avgPlace": 4.4479,
+      "count": 193,
+      "avgPlace": 4.4041,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -18833,8 +18791,8 @@
         ],
         "TFT17_Leblanc": [
           "TFT_Item_GuinsoosRageblade",
-          "TFT_Item_HextechGunblade",
-          "TFT_Item_JeweledGauntlet"
+          "TFT_Item_MadredsBloodrazor",
+          "TFT_Item_RabadonsDeathcap"
         ]
       },
       "roles": {
@@ -18940,20 +18898,20 @@
         "Nunu",
         "Teemo"
       ],
-      "count": 192,
-      "avgPlace": 4.4479,
+      "count": 193,
+      "avgPlace": 4.4041,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
         "TFT17_Illaoi": [
           "TFT_Item_GargoyleStoneplate",
           "TFT_Item_WarmogsArmor",
-          "TFT_Item_Redemption"
+          "TFT_Item_RedBuff"
         ],
         "TFT17_Leblanc": [
           "TFT_Item_GuinsoosRageblade",
-          "TFT_Item_HextechGunblade",
-          "TFT_Item_JeweledGauntlet"
+          "TFT_Item_MadredsBloodrazor",
+          "TFT_Item_RabadonsDeathcap"
         ],
         "TFT17_Leona": [
           "TFT_Item_BrambleVest",
@@ -19084,8 +19042,8 @@
         "Nunu",
         "Teemo"
       ],
-      "count": 192,
-      "avgPlace": 4.4479,
+      "count": 193,
+      "avgPlace": 4.4041,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -19121,8 +19079,8 @@
         ],
         "TFT17_Leblanc": [
           "TFT_Item_GuinsoosRageblade",
-          "TFT_Item_HextechGunblade",
-          "TFT_Item_JeweledGauntlet"
+          "TFT_Item_MadredsBloodrazor",
+          "TFT_Item_RabadonsDeathcap"
         ]
       },
       "roles": {
@@ -19206,7 +19164,7 @@
     },
     {
       "source": "metatft.com",
-      "name": "8u · avg #4.4",
+      "name": "8u · avg #4.3",
       "tier": "C",
       "championIds": [
         "TFT17_Chogath",
@@ -19228,8 +19186,8 @@
         "Tahm Kench",
         "Urgot"
       ],
-      "count": 161,
-      "avgPlace": 4.3665,
+      "count": 164,
+      "avgPlace": 4.3476,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -19319,7 +19277,7 @@
         "Urfs Grab Bag II",
         "Ultra Rapid Fire"
       ],
-      "style": "8u · avg #4.4",
+      "style": "8u · avg #4.3",
       "sourceUrl": "https://www.metatft.com/comps",
       "sources": [
         "lolchess.gg",
@@ -19343,7 +19301,7 @@
     },
     {
       "source": "metatft.com",
-      "name": "8u · avg #4.4",
+      "name": "8u · avg #4.3",
       "tier": "C",
       "championIds": [
         "TFT17_Chogath",
@@ -19365,8 +19323,8 @@
         "Tahm Kench",
         "Urgot"
       ],
-      "count": 161,
-      "avgPlace": 4.3665,
+      "count": 164,
+      "avgPlace": 4.3476,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -19456,7 +19414,7 @@
         "Urfs Grab Bag II",
         "Ultra Rapid Fire"
       ],
-      "style": "8u · avg #4.4",
+      "style": "8u · avg #4.3",
       "sourceUrl": "https://www.metatft.com/comps",
       "sources": [
         "metatft.com",
@@ -19480,7 +19438,7 @@
     },
     {
       "source": "metatft.com",
-      "name": "8u · avg #4.4",
+      "name": "8u · avg #4.3",
       "tier": "C",
       "championIds": [
         "TFT17_Chogath",
@@ -19502,8 +19460,8 @@
         "Tahm Kench",
         "Urgot"
       ],
-      "count": 161,
-      "avgPlace": 4.3665,
+      "count": 164,
+      "avgPlace": 4.3476,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -19593,7 +19551,7 @@
         "Group Hug II",
         "Charge Transfer I"
       ],
-      "style": "8u · avg #4.4",
+      "style": "8u · avg #4.3",
       "sourceUrl": "https://www.metatft.com/comps",
       "sources": [
         "tftacademy.com",
@@ -19639,15 +19597,15 @@
         "Pantheon",
         "Riven"
       ],
-      "count": 114,
-      "avgPlace": 4.3333,
+      "count": 119,
+      "avgPlace": 4.3277,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
         "TFT17_Chogath": [
           "TFT_Item_GargoyleStoneplate",
           "TFT_Item_FrozenHeart",
-          "TFT_Item_Redemption"
+          "TFT_Item_WarmogsArmor"
         ],
         "TFT17_Riven": [
           "TFT_Item_Bloodthirster",
@@ -19781,15 +19739,15 @@
         "Pantheon",
         "Riven"
       ],
-      "count": 114,
-      "avgPlace": 4.3333,
+      "count": 119,
+      "avgPlace": 4.3277,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
         "TFT17_Chogath": [
           "TFT_Item_FrozenHeart",
-          "TFT_Item_Redemption",
-          "TFT_Item_GargoyleStoneplate"
+          "TFT_Item_WarmogsArmor",
+          "TFT_Item_Redemption"
         ],
         "TFT17_Ezreal": [
           "TFT_Item_Deathblade",
@@ -19818,7 +19776,7 @@
         "TFT17_Riven": [
           "TFT_Item_Bloodthirster",
           "TFT_Item_SteraksGage",
-          "TFT_Item_GuardianAngel"
+          "TFT_Item_MadredsBloodrazor"
         ]
       },
       "roles": {
@@ -19926,15 +19884,15 @@
         "Pantheon",
         "Riven"
       ],
-      "count": 114,
-      "avgPlace": 4.3333,
+      "count": 119,
+      "avgPlace": 4.3277,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
         "TFT17_Chogath": [
           "TFT_Item_GargoyleStoneplate",
-          "TFT_Item_Redemption",
-          "TFT_Item_FrozenHeart"
+          "TFT_Item_FrozenHeart",
+          "TFT_Item_WarmogsArmor"
         ],
         "TFT17_Ezreal": [
           "TFT_Item_SpearOfShojin",
@@ -20068,8 +20026,8 @@
         "Rek Sai",
         "Rhaast"
       ],
-      "count": 15136,
-      "avgPlace": 3.7076,
+      "count": 15208,
+      "avgPlace": 3.7035,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -20090,8 +20048,8 @@
         ],
         "TFT17_Kindred": [
           "TFT_Item_GuinsoosRageblade",
-          "TFT_Item_MadredsBloodrazor",
-          "TFT_Item_InfinityEdge"
+          "TFT_Item_InfinityEdge",
+          "TFT_Item_MadredsBloodrazor"
         ],
         "TFT17_RekSai": [
           "TFT_Item_FrozenHeart",
@@ -20212,8 +20170,8 @@
         "Rek Sai",
         "Rhaast"
       ],
-      "count": 15136,
-      "avgPlace": 3.7076,
+      "count": 15208,
+      "avgPlace": 3.7035,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -20244,8 +20202,8 @@
         ],
         "TFT17_Kindred": [
           "TFT_Item_GuinsoosRageblade",
-          "TFT_Item_MadredsBloodrazor",
-          "TFT_Item_Deathblade"
+          "TFT_Item_LastWhisper",
+          "TFT_Item_RunaansHurricane"
         ],
         "TFT17_Maokai": [
           "TFT_Item_WarmogsArmor",
@@ -20354,9 +20312,9 @@
         "Tahm Kench",
         "Urgot"
       ],
-      "count": 7272,
-      "avgPlace": 3.4878,
-      "top4Rate": 0.486143385449919,
+      "count": 7386,
+      "avgPlace": 3.4757,
+      "top4Rate": 0.4858546090706592,
       "winRate": 0,
       "items": {
         "TFT17_AurelionSol": [
@@ -20467,9 +20425,9 @@
         "Tahm Kench",
         "Urgot"
       ],
-      "count": 7272,
-      "avgPlace": 3.4878,
-      "top4Rate": 0.486739654296861,
+      "count": 7386,
+      "avgPlace": 3.4757,
+      "top4Rate": 0.5143170795193813,
       "winRate": 0,
       "items": {
         "TFT17_AurelionSol": [
@@ -20580,9 +20538,9 @@
         "Tahm Kench",
         "Urgot"
       ],
-      "count": 7272,
-      "avgPlace": 3.4878,
-      "top4Rate": 0.486739654296861,
+      "count": 7386,
+      "avgPlace": 3.4757,
+      "top4Rate": 0.5143170795193813,
       "winRate": 0,
       "items": {
         "TFT17_AurelionSol": [
@@ -20693,9 +20651,9 @@
         "Tahm Kench",
         "Urgot"
       ],
-      "count": 7272,
-      "avgPlace": 3.4878,
-      "top4Rate": 0.486143385449919,
+      "count": 7386,
+      "avgPlace": 3.4757,
+      "top4Rate": 0.4858546090706592,
       "winRate": 0,
       "items": {
         "TFT17_AurelionSol": [
@@ -20806,9 +20764,9 @@
         "Tahm Kench",
         "Urgot"
       ],
-      "count": 7272,
-      "avgPlace": 3.4878,
-      "top4Rate": 0.486143385449919,
+      "count": 7386,
+      "avgPlace": 3.4757,
+      "top4Rate": 0.4858546090706592,
       "winRate": 0,
       "items": {
         "TFT17_AurelionSol": [
@@ -20921,9 +20879,9 @@
         "Poppy",
         "Rammus"
       ],
-      "count": 3884,
-      "avgPlace": 3.6895,
-      "top4Rate": 0.3228919649192404,
+      "count": 3972,
+      "avgPlace": 3.6813,
+      "top4Rate": 0.322545610000142,
       "winRate": 0,
       "items": {
         "TFT17_Bard": [
@@ -20944,7 +20902,7 @@
         "TFT17_Jhin": [
           "TFT_Item_InfinityEdge",
           "TFT_Item_LastWhisper",
-          "TFT_Item_MadredsBloodrazor"
+          "TFT_Item_RapidFireCannon"
         ],
         "TFT17_Rammus": [
           "TFT_Item_Crownguard",
@@ -21037,9 +20995,9 @@
         "Poppy",
         "Rammus"
       ],
-      "count": 3884,
-      "avgPlace": 3.6895,
-      "top4Rate": 0.31597183768497294,
+      "count": 3972,
+      "avgPlace": 3.6813,
+      "top4Rate": 0.31549366370226506,
       "winRate": 0,
       "items": {
         "TFT17_Bard": [
@@ -21060,7 +21018,7 @@
         "TFT17_Jhin": [
           "TFT_Item_InfinityEdge",
           "TFT_Item_LastWhisper",
-          "TFT_Item_MadredsBloodrazor"
+          "TFT_Item_RapidFireCannon"
         ],
         "TFT17_Rammus": [
           "TFT_Item_Crownguard",
@@ -21153,9 +21111,9 @@
         "Poppy",
         "Rammus"
       ],
-      "count": 3884,
-      "avgPlace": 3.6895,
-      "top4Rate": 0.2522239880964835,
+      "count": 3972,
+      "avgPlace": 3.6813,
+      "top4Rate": 0.25197709708678734,
       "winRate": 0,
       "items": {
         "TFT17_Bard": [
@@ -21176,7 +21134,7 @@
         "TFT17_Jhin": [
           "TFT_Item_InfinityEdge",
           "TFT_Item_LastWhisper",
-          "TFT_Item_MadredsBloodrazor"
+          "TFT_Item_RapidFireCannon"
         ],
         "TFT17_Rammus": [
           "TFT_Item_Crownguard",
@@ -21269,9 +21227,9 @@
         "Poppy",
         "Rammus"
       ],
-      "count": 2832,
-      "avgPlace": 3.6895,
-      "top4Rate": 0.26547824138536386,
+      "count": 2900,
+      "avgPlace": 3.6813,
+      "top4Rate": 0.2649666446090987,
       "winRate": 0,
       "items": {
         "TFT17_Bard": [
@@ -21292,7 +21250,7 @@
         "TFT17_Jhin": [
           "TFT_Item_InfinityEdge",
           "TFT_Item_LastWhisper",
-          "TFT_Item_MadredsBloodrazor"
+          "TFT_Item_RapidFireCannon"
         ],
         "TFT17_Rammus": [
           "TFT_Item_Crownguard",
@@ -21385,8 +21343,8 @@
         "Nunu",
         "Sona"
       ],
-      "count": 1003,
-      "avgPlace": 3.4088,
+      "count": 1015,
+      "avgPlace": 3.4197,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -21510,8 +21468,8 @@
         "Nunu",
         "Sona"
       ],
-      "count": 1003,
-      "avgPlace": 3.4088,
+      "count": 1015,
+      "avgPlace": 3.4197,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -21635,8 +21593,8 @@
         "Nunu",
         "Sona"
       ],
-      "count": 1003,
-      "avgPlace": 3.4088,
+      "count": 1015,
+      "avgPlace": 3.4197,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -21764,8 +21722,8 @@
         "Kindred",
         "Miss Fortune"
       ],
-      "count": 865,
-      "avgPlace": 3.415,
+      "count": 867,
+      "avgPlace": 3.4106,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -21798,8 +21756,8 @@
         ],
         "TFT17_Kindred": [
           "TFT_Item_GuinsoosRageblade",
-          "TFT_Item_InfinityEdge",
-          "TFT_Item_MadredsBloodrazor"
+          "TFT_Item_MadredsBloodrazor",
+          "TFT_Item_RunaansHurricane"
         ]
       },
       "roles": {
@@ -21896,8 +21854,8 @@
         "Kindred",
         "Miss Fortune"
       ],
-      "count": 865,
-      "avgPlace": 3.415,
+      "count": 867,
+      "avgPlace": 3.4106,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -21930,8 +21888,8 @@
         ],
         "TFT17_Kindred": [
           "TFT_Item_GuinsoosRageblade",
-          "TFT_Item_InfinityEdge",
-          "TFT_Item_MadredsBloodrazor"
+          "TFT_Item_MadredsBloodrazor",
+          "TFT_Item_RunaansHurricane"
         ]
       },
       "roles": {
@@ -22006,7 +21964,7 @@
     },
     {
       "source": "metatft.com",
-      "name": "8u · avg #3.4",
+      "name": "8u · avg #3.5",
       "tier": "S",
       "championIds": [
         "TFT17_Gragas",
@@ -22026,8 +21984,8 @@
         "Rhaast",
         "Riven"
       ],
-      "count": 784,
-      "avgPlace": 3.4439,
+      "count": 793,
+      "avgPlace": 3.454,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -22047,19 +22005,14 @@
           "TFT_Item_StatikkShiv"
         ],
         "TFT17_Pantheon": [
-          "TFT_Item_Crownguard",
-          "TFT_Item_GargoyleStoneplate",
-          "TFT_Item_RedBuff"
+          "TFT_Item_BrambleVest",
+          "TFT_Item_DragonsClaw",
+          "TFT_Item_WarmogsArmor"
         ],
         "TFT17_Pyke": [
           "TFT_Item_GuardianAngel",
           "TFT_Item_InfinityEdge",
           "TFT5_Item_HandOfJusticeRadiant"
-        ],
-        "TFT17_Riven": [
-          "TFT_Item_Bloodthirster",
-          "TFT_Item_SteraksGage",
-          "TFT_Item_TitansResolve"
         ]
       },
       "roles": {
@@ -22067,8 +22020,7 @@
         "TFT17_Gwen": "3-star",
         "TFT17_Nami": "Item holder",
         "TFT17_Pantheon": "3-star",
-        "TFT17_Pyke": "3-star",
-        "TFT17_Riven": "Item holder"
+        "TFT17_Pyke": "3-star"
       },
       "threeStars": [
         "TFT17_Pyke",
@@ -22109,7 +22061,7 @@
       "augments": [
         "Retribution"
       ],
-      "style": "8u · avg #3.4",
+      "style": "8u · avg #3.5",
       "sourceUrl": "https://www.metatft.com/comps",
       "sources": [
         "metatft.com",
@@ -22131,7 +22083,7 @@
     },
     {
       "source": "metatft.com",
-      "name": "8u · avg #3.4",
+      "name": "8u · avg #3.5",
       "tier": "S",
       "championIds": [
         "TFT17_Gragas",
@@ -22151,8 +22103,8 @@
         "Rhaast",
         "Riven"
       ],
-      "count": 784,
-      "avgPlace": 3.4439,
+      "count": 793,
+      "avgPlace": 3.454,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -22180,11 +22132,6 @@
           "TFT_Item_DragonsClaw",
           "TFT_Item_Redemption",
           "TFT_Item_WarmogsArmor"
-        ],
-        "TFT17_Riven": [
-          "TFT_Item_Bloodthirster",
-          "TFT_Item_SteraksGage",
-          "TFT_Item_TitansResolve"
         ]
       },
       "roles": {
@@ -22192,8 +22139,7 @@
         "TFT17_Gragas": "3-star",
         "TFT17_Nami": "Item holder",
         "TFT17_Pantheon": "3-star",
-        "TFT17_Pyke": "3-star",
-        "TFT17_Riven": "Item holder"
+        "TFT17_Pyke": "3-star"
       },
       "threeStars": [
         "TFT17_Gragas",
@@ -22234,7 +22180,7 @@
       "augments": [
         "Retribution"
       ],
-      "style": "8u · avg #3.4",
+      "style": "8u · avg #3.5",
       "sourceUrl": "https://www.metatft.com/comps",
       "sources": [
         "tftacademy.com",
@@ -22278,8 +22224,8 @@
         "Rhaast",
         "Viktor"
       ],
-      "count": 442,
-      "avgPlace": 3.4321,
+      "count": 435,
+      "avgPlace": 3.4437,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -22294,9 +22240,9 @@
           "TFT17_Item_PsyOps_TargetlockMod"
         ],
         "TFT17_Ornn": [
-          "TFT_Item_WarmogsArmor",
-          "TFT_Item_GargoyleStoneplate",
-          "TFT_Item_Redemption"
+          "TFT_Item_BrambleVest",
+          "TFT_Item_DragonsClaw",
+          "TFT_Item_WarmogsArmor"
         ],
         "TFT17_Rhaast": [
           "TFT_Item_DragonsClaw",
@@ -22408,8 +22354,8 @@
         "Rhaast",
         "Viktor"
       ],
-      "count": 442,
-      "avgPlace": 3.4321,
+      "count": 435,
+      "avgPlace": 3.4437,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -22424,8 +22370,8 @@
           "TFT17_Item_PsyOps_TargetlockMod"
         ],
         "TFT17_Ornn": [
-          "TFT_Item_WarmogsArmor",
           "TFT_Item_BrambleVest",
+          "TFT_Item_WarmogsArmor",
           "TFT_Item_DragonsClaw"
         ],
         "TFT17_Viktor": [
@@ -22516,7 +22462,7 @@
     },
     {
       "source": "metatft.com",
-      "name": "8u · avg #3.8",
+      "name": "8u · avg #3.7",
       "tier": "B",
       "championIds": [
         "TFT17_Akali",
@@ -22535,7 +22481,7 @@
         "Urgot"
       ],
       "count": 208,
-      "avgPlace": 3.774,
+      "avgPlace": 3.7404,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -22551,13 +22497,12 @@
         ],
         "TFT17_Maokai": [
           "TFT_Item_SpectralGauntlet",
-          "TFT_Item_RedBuff",
-          "TFT_Item_Redemption"
+          "TFT_Item_Redemption",
+          "TFT_Item_GargoyleStoneplate"
         ],
         "TFT17_Rhaast": [
-          "TFT_Item_Crownguard",
-          "TFT_Item_FrozenHeart",
-          "TFT_Item_GargoyleStoneplate"
+          "TFT_Item_GargoyleStoneplate",
+          "TFT_Item_WarmogsArmor"
         ],
         "TFT17_Urgot": [
           "TFT_Item_MadredsBloodrazor",
@@ -22610,7 +22555,7 @@
         "Heroic Grab Bag Plus+",
         "Living Forge"
       ],
-      "style": "8u · avg #3.8",
+      "style": "8u · avg #3.7",
       "sourceUrl": "https://www.metatft.com/comps",
       "sources": [
         "metatft.com",
@@ -22632,7 +22577,7 @@
     },
     {
       "source": "metatft.com",
-      "name": "8u · avg #3.8",
+      "name": "8u · avg #3.7",
       "tier": "B",
       "championIds": [
         "TFT17_Akali",
@@ -22651,7 +22596,7 @@
         "Urgot"
       ],
       "count": 208,
-      "avgPlace": 3.774,
+      "avgPlace": 3.7404,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -22662,8 +22607,8 @@
         ],
         "TFT17_Maokai": [
           "TFT_Item_SpectralGauntlet",
-          "TFT_Item_RedBuff",
-          "TFT_Item_Redemption"
+          "TFT_Item_Redemption",
+          "TFT_Item_WarmogsArmor"
         ],
         "TFT17_Urgot": [
           "TFT_Item_MadredsBloodrazor",
@@ -22676,9 +22621,8 @@
           "TFT_Item_WarmogsArmor"
         ],
         "TFT17_Rhaast": [
-          "TFT_Item_Crownguard",
-          "TFT_Item_FrozenHeart",
-          "TFT_Item_GargoyleStoneplate"
+          "TFT_Item_GargoyleStoneplate",
+          "TFT_Item_WarmogsArmor"
         ]
       },
       "roles": {
@@ -22726,7 +22670,7 @@
         "Heroic Grab Bag Plus+",
         "Living Forge"
       ],
-      "style": "8u · avg #3.8",
+      "style": "8u · avg #3.7",
       "sourceUrl": "https://www.metatft.com/comps",
       "sources": [
         "tftacademy.com",
@@ -22748,7 +22692,7 @@
     },
     {
       "source": "metatft.com",
-      "name": "8u · avg #3.8",
+      "name": "8u · avg #3.7",
       "tier": "B",
       "championIds": [
         "TFT17_Akali",
@@ -22767,14 +22711,14 @@
         "Urgot"
       ],
       "count": 208,
-      "avgPlace": 3.774,
+      "avgPlace": 3.7404,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
         "TFT17_Maokai": [
           "TFT_Item_SpectralGauntlet",
-          "TFT_Item_RedBuff",
-          "TFT_Item_Redemption"
+          "TFT_Item_Redemption",
+          "TFT_Item_RedBuff"
         ],
         "TFT17_Urgot": [
           "TFT_Item_MadredsBloodrazor",
@@ -22792,9 +22736,8 @@
           "TFT_Item_WarmogsArmor"
         ],
         "TFT17_Rhaast": [
-          "TFT_Item_Crownguard",
-          "TFT_Item_FrozenHeart",
-          "TFT_Item_GargoyleStoneplate"
+          "TFT_Item_GargoyleStoneplate",
+          "TFT_Item_WarmogsArmor"
         ]
       },
       "roles": {
@@ -22842,7 +22785,7 @@
         "Heroic Grab Bag Plus+",
         "Living Forge"
       ],
-      "style": "8u · avg #3.8",
+      "style": "8u · avg #3.7",
       "sourceUrl": "https://www.metatft.com/comps",
       "sources": [
         "tftacademy.com",
@@ -22884,8 +22827,8 @@
         "Pyke",
         "Rammus"
       ],
-      "count": 165,
-      "avgPlace": 4.0909,
+      "count": 168,
+      "avgPlace": 4.0714,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -22905,11 +22848,15 @@
           "TFT_Item_RabadonsDeathcap"
         ],
         "TFT17_Aurora": [
-          "TFT_Item_BlueBuff",
-          "TFT_Item_Morellonomicon",
-          "TFT_Item_StatikkShiv"
+          "TFT_Item_Leviathan",
+          "TFT_Item_JeweledGauntlet"
         ],
         "TFT17_Galio": [
+          "TFT_Item_GargoyleStoneplate",
+          "TFT_Item_RedBuff",
+          "TFT_Item_WarmogsArmor"
+        ],
+        "TFT17_Poppy": [
           "TFT_Item_GargoyleStoneplate",
           "TFT_Item_RedBuff",
           "TFT_Item_WarmogsArmor"
@@ -22920,7 +22867,8 @@
         "TFT17_Rammus": "Item holder",
         "TFT17_Karma": "Item holder",
         "TFT17_Aurora": "Item holder",
-        "TFT17_Galio": "Item holder"
+        "TFT17_Galio": "Item holder",
+        "TFT17_Poppy": "Item holder"
       },
       "threeStars": [
         "TFT17_Pyke"
@@ -22999,15 +22947,14 @@
         "Pyke",
         "Rammus"
       ],
-      "count": 165,
-      "avgPlace": 4.0909,
+      "count": 168,
+      "avgPlace": 4.0714,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
         "TFT17_Aurora": [
-          "TFT_Item_BlueBuff",
-          "TFT_Item_Morellonomicon",
-          "TFT_Item_StatikkShiv"
+          "TFT_Item_Leviathan",
+          "TFT_Item_JeweledGauntlet"
         ],
         "TFT17_Galio": [
           "TFT_Item_GargoyleStoneplate",
@@ -23018,6 +22965,11 @@
           "TFT_Item_StatikkShiv",
           "TFT_Item_JeweledGauntlet",
           "TFT_Item_Morellonomicon"
+        ],
+        "TFT17_Poppy": [
+          "TFT_Item_GargoyleStoneplate",
+          "TFT_Item_RedBuff",
+          "TFT_Item_WarmogsArmor"
         ],
         "TFT17_Pyke": [
           "TFT_Item_GuardianAngel",
@@ -23034,6 +22986,7 @@
         "TFT17_Aurora": "Item holder",
         "TFT17_Galio": "Item holder",
         "TFT17_Karma": "Item holder",
+        "TFT17_Poppy": "Item holder",
         "TFT17_Pyke": "3-star",
         "TFT17_Rammus": "Item holder"
       },
@@ -23116,8 +23069,8 @@
         "Tahm Kench",
         "Urgot"
       ],
-      "count": 124,
-      "avgPlace": 4.0081,
+      "count": 118,
+      "avgPlace": 3.9915,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -23152,9 +23105,9 @@
           "TFT_Item_WarmogsArmor"
         ],
         "TFT17_RekSai": [
-          "TFT_Item_Crownguard",
+          "TFT_Item_FrozenHeart",
           "TFT_Item_GargoyleStoneplate",
-          "TFT_Item_WarmogsArmor"
+          "TFT_Item_RedBuff"
         ]
       },
       "roles": {
@@ -23382,8 +23335,8 @@
         "Pantheon",
         "Rhaast"
       ],
-      "count": 606,
-      "avgPlace": 3.302,
+      "count": 607,
+      "avgPlace": 3.3097,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -23407,9 +23360,9 @@
           "TFT_Item_SpearOfShojin"
         ],
         "TFT17_Ornn": [
+          "TFT_Item_DragonsClaw",
           "TFT_Item_GargoyleStoneplate",
-          "TFT_Item_NightHarvester",
-          "TFT_Item_WarmogsArmor"
+          "TFT_Item_NightHarvester"
         ],
         "TFT17_Pantheon": [
           "TFT_Item_GargoyleStoneplate",
@@ -23480,7 +23433,7 @@
     },
     {
       "source": "metatft.com",
-      "name": "8u · avg #3.8",
+      "name": "8u · avg #3.7",
       "tier": "B",
       "championIds": [
         "TFT17_AurelionSol",
@@ -23502,8 +23455,8 @@
         "Viktor",
         "Zoe"
       ],
-      "count": 111,
-      "avgPlace": 3.7928,
+      "count": 109,
+      "avgPlace": 3.7431,
       "top4Rate": 0,
       "winRate": 0,
       "items": {
@@ -23521,8 +23474,7 @@
         ],
         "TFT17_MissFortune": [
           "TFT_Item_Deathblade",
-          "TFT_Item_InfinityEdge",
-          "TFT_Item_PowerGauntlet"
+          "TFT_Item_InfinityEdge"
         ],
         "TFT17_Mordekaiser": [
           "TFT_Item_GargoyleStoneplate",
@@ -23594,7 +23546,7 @@
         }
       },
       "augments": [],
-      "style": "8u · avg #3.8",
+      "style": "8u · avg #3.7",
       "sourceUrl": "https://www.metatft.com/comps",
       "sources": [
         "metatft.com"
@@ -24995,6 +24947,6 @@
     "opgg": 0
   },
   "confirmedCount": 175,
-  "updatedAt": "2026-06-28T22:16:51.346Z",
-  "scrapedAt": 1782685011347
+  "updatedAt": "2026-06-29T01:32:35.705Z",
+  "scrapedAt": 1782696755706
 }
