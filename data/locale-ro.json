@@ -18197,7 +18197,7 @@
   },
   "TFT16_XerathUnique": {
     "name": "Iluminat",
-    "desc": "După fiecare luptă, în magazin apare un talisman iluminat. Acestea sunt efecte puternice care pot fi cumpărate pentru aur.@TFTUnitProperty.trait:TFT16_XerathUnique_PurchasedCharmDisplay@"
+    "desc": "După fiecare luptă, în magazin apare un talisman iluminat. Acestea sunt efecte puternice care pot fi cumpărate pentru aur.@TFTUnitProperty.trait:TFT16_XerathUnique_PurchasedCharmDisplay@<br><br><ShowIfCustom.Set=TFTSetEventCT>În Comoara lui Choncc, talismanul ''Discipolii credincioși'' nu poate apărea înainte să ajungi la nivelul 7.</ShowIfCustom.Set=TFTSetEventCT>"
   },
   "TFT16_Freljord": {
     "name": "Freljord",
@@ -18341,7 +18341,7 @@
   },
   "TFT16_Shurima": {
     "name": "Shurima",
-    "desc": "În fiecare secundă, shurimanii primesc @ASPerSecond*100@% viteză de atac și își refac @HealthRestorePerSecond@ viață. La începutul luptei, primesc efecte suplimentare.<br><br><row>(@MinUnits@) @BonusHealth*100@% viață maximă</row><br><row>(@MinUnits@) @ArmorMR@ armură și rezistență la magie</row><br><row>(@MinUnits@) Un shuriman ajunge la rangul de ZEU la fiecare @GodhoodCadence@ secunde.</row>"
+    "desc": "În fiecare secundă, shurimanii primesc @ASPerSecond*100@% viteză de atac și își refac @HealthRestorePerSecond@ viață. La începutul luptei, primesc efecte suplimentare.<ShowIfCustom.Set=TFTSetEventCT><ShowIf.TFT16_Shurima_NoPrismatic><rules><br><br>Prismatic: deblochează-i pe Nasus, Renekton și Xerath, apoi trimite în luptă 4 unități Shurima</rules></ShowIf.TFT16_Shurima_NoPrismatic></ShowIfCustom.Set=TFTSetEventCT><br><br><row>(@MinUnits@) @BonusHealth*100@% viață maximă</row><br><row>(@MinUnits@) @ArmorMR@ armură și rezistență la magie</row><br><row>(@MinUnits@) <ShowIf.TFT16_Shurima_PrismaticActive>Un shuriman ajunge la rangul de ZEU la fiecare @GodhoodCadence@ secunde </ShowIf.TFT16_Shurima_PrismaticActive><ShowIfCustom.Set=TFTSetEventER><ShowIf.TFT16_Shurima_NoPrismatic>Disponibilă doar după ce Nasus, Renekton și Xerath au fost deblocați.</ShowIf.TFT16_Shurima_NoPrismatic></ShowIfCustom.Set=TFTSetEventER></row>"
   },
   "TFT16_Blacksmith": {
     "name": "Fierar",
@@ -18381,7 +18381,7 @@
   },
   "TFT16_Chronokeeper": {
     "name": "Paznicul timpului",
-    "desc": "La fiecare @CastsToGainXP@ folosiri ale abilității, paznicul timpului stochează <TFTBonus>@XPPerCast@</TFTBonus> XP. Dacă are destul XP ca să crești în nivel, îți transferă cantitatea&nbsp;necesară. <br><br>Dacă ai nivelul 10, primește în schimb <TFTBonus>@DAGainAtMaxLevel@%</TFTBonus>&nbsp;amplificarea daunelor.<br><br><rules>XP stocat: @TFTUnitProperty.trait:TFT16_ChronoKeeperStoredXP@</rules>"
+    "desc": "La fiecare @CastsToGainXP@ folosiri ale abilității, paznicul timpului stochează <TFTBonus>@XPPerCast@</TFTBonus> XP. Dacă are destul XP ca să crești în nivel, îți transferă cantitatea&nbsp;necesară. <br><br>Dacă ai nivelul 10, primește în schimb <TFTBonus>@DAGainAtMaxLevel@%</TFTBonus>&nbsp;amplificarea daunelor.<br><br><rules>XP stocat: @TFTUnitProperty.trait:TFT16_ChronoKeeperStoredXP@</rules><ShowIfCustom.Set=TFTSetEventER><br><br>În Comoara lui Choncc, numărul de folosiri necesare pentru a primi XP crește la @CastsToGainXPCT@ până în runda 3-5.</ShowIfCustom.Set=TFTSetEventER>"
   },
   "TFT16_Warden": {
     "name": "Gardian",

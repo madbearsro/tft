@@ -207,14 +207,14 @@
     "apiName": "TFT_Item_Artifact_LesserMirroredPersona",
     "name": "Lesser Mirrored Persona",
     "desc": "Share @StatSharePercent*100@% of the holder's bonus Attack Damage, Ability Power, Attack Speed, Armor, Magic Resist, and Health with other Mirrored Persona holders.<br><br><rules>Can't be Reforged</rules><br><rules>Unique: one per champion</rules>",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT16_Artifact_LesserMirroredPersona.TFT_Set16.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT16_Artifact_LesserMirroredPersona.tex"
   },
   {
     "id": null,
     "apiName": "TFT_Item_Artifact_InnervatingLocket",
     "name": "Innervating Locket",
     "desc": "The holder gains @PercentMana@% of their total Mana whenever they're hit by an attack.<br><br>Each cast restores @PercentHealth@% of the holder's max Health over @Duration@ seconds.",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_InnervatingLocket.TFT_Set13.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_InnervatingLocket.tex"
   },
   {
     "id": null,
@@ -228,7 +228,7 @@
     "apiName": "TFT_Item_Artifact_ShadowPuppet",
     "name": "Shadow Puppet",
     "desc": "Spawn a clone that copies the holder's items. The clone has @ClonePercentHealth*100@% max Health and deals @ClonePercentDamage*100@% damage.<br><br><rules>[Unique - only 1 per champion]</rules>",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT16_Artifact_ShadowPuppet.TFT_Set16.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT16_Artifact_ShadowPuppet.tex"
   },
   {
     "id": null,
@@ -242,21 +242,21 @@
     "apiName": "TFT_Item_Artifact_WitheringRelic",
     "name": "Withered Relic",
     "desc": "Combat Start: Increase the holder's max Health by @FlatMaxHealth@ but keep their current Health the same.",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_WitheringRelic.TFT_Set16.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_WitheringRelic.tex"
   },
   {
     "id": null,
     "apiName": "TFT_Item_Artifact_EternalPact",
     "name": "Eternal Pact",
     "desc": "Combat start: Form a pact with the highest Health allied champion, if they die, gain @ManaRegenToGrant@ Mana regen and @APToGrant@% Ability Power.<br><br>When the ally uses their ability, gain @ManaToGrant@ Mana. Every @ShieldCadence@ seconds, shield your ally for @PercentAPShield*100@% of the holder's Ability Power.",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT16_Artifact_EternalPact.TFT_Set16.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT16_Artifact_EternalPact.tex"
   },
   {
     "id": null,
     "apiName": "TFT_Item_Artifact_HellfireHatchet",
     "name": "Hellfire Hatchet",
     "desc": "Attacks deal @MaxHealthPercentDamage*100@% of the holder's max Health as bonus physical damage. For every @MissingHealthPercent*100@% missing Health, gain @ASPerMissingHealthPercent*100@% Attack Speed.",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_HellfireHatchet.TFT_Set16.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_HellfireHatchet.tex"
   },
   {
     "id": null,
@@ -270,21 +270,21 @@
     "apiName": "TFT_Item_Artifact_ForbiddenIdol",
     "name": "Forbidden Idol",
     "desc": "Shields have @PercentShieldConversion@% of their value converted to max Health instead.",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_ForbiddenIdol.TFT_Set13.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_ForbiddenIdol.tex"
   },
   {
     "id": null,
     "apiName": "TFT_Item_Artifact_MirroredPersona",
     "name": "Mirrored Persona",
     "desc": "Every @NumCombats@ player combats gain a lesser copy of Mirrored Persona&nbsp;(@TFTUnitProperty.trait:TFT_Item_Artifact_MirroredPersona_Combats@/@NumCombats@). <br><br>Share @StatSharePercent*100@% of the holder's bonus Attack Damage, Ability Power, Attack Speed, Armor, Magic Resist, and Health with other Mirrored Persona holders.<br><br><rules>Can't be Reforged, Lesser copies do not produce copies.</rules><br><rules>Unique: one per champion</rules>",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT16_Artifact_MirroredPersona.TFT_Set16.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT16_Artifact_MirroredPersona.tex"
   },
   {
     "id": null,
     "apiName": "TFT_Item_Artifact_Fishbones",
     "name": "Fishbones",
     "desc": "The holder's attacks target random enemies.",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_Fishbones.TFT_Set13.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_Fishbones.tex"
   },
   {
     "id": null,
@@ -298,14 +298,14 @@
     "apiName": "TFT_Item_Artifact_AegisOfDusk",
     "name": "Aegis of Dusk",
     "desc": "Every @TickRate@ seconds, steal @MRStealPerTick@ Magic Resist from enemies within 1 hex and deal @TFTUnitProperty.item:TFT_Item_Artifact_AegisDuskDawn_Damage@% of the holder's Magic Resist as magic damage.<br><br>If Aegis of Dawn is also equipped, trigger this item's effect every @TickRateWithAegisOfDawn@ seconds instead.<br><br><tftitemrules>Damage increases based on Stage.</tftitemrules>",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_AegisOfDusk.TFT_Set16.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_AegisOfDusk.tex"
   },
   {
     "id": null,
     "apiName": "TFT_Item_Artifact_UnendingDespair",
     "name": "Unending Despair",
     "desc": "Whenever a Shield on the holder breaks, @PercentDamage@% of that Shield's initial value is dealt to the nearest enemy as magic damage.",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_UnendingDespair.TFT_Set13.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_UnendingDespair.tex"
   },
   {
     "id": null,
@@ -319,7 +319,7 @@
     "apiName": "TFT_Item_Artifact_MendingEchoes",
     "name": "Mending Echoes",
     "desc": "Increase healing on the holder by @IncreasedHealing*100@%. When the holder gives or receives a heal, grant @HealPercentToGrant*100@% of the heals value to the lowest health ally as well.",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT16_Artifact_MendingEchoes.TFT_Set16.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT16_Artifact_MendingEchoes.tex"
   },
   {
     "id": null,
@@ -354,21 +354,21 @@
     "apiName": "TFT_Item_Artifact_LudensTempest",
     "name": "Luden's Tempest",
     "desc": "@PercentOfOverkill@% of overkill damage plus @BaseDamage@ is dealt as magic damage to the two enemies nearest to the target.",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_LudensTempest.TFT_Set13.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_LudensTempest.tex"
   },
   {
     "id": null,
     "apiName": "TFT_Item_Artifact_SpectralCutlass",
     "name": "Spectral Cutlass",
     "desc": "Combat start: Teleport the holder to the mirrored hex on the enemy's side of the board. After @Duration@ seconds, the holder returns to their original location.",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_SpectralCutlass.TFT_Set13.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_SpectralCutlass.tex"
   },
   {
     "id": null,
     "apiName": "TFT_Item_Artifact_RapidFirecannon",
     "name": "Rapid Firecannon",
     "desc": "Gain +1 Attack Range, increased by 1 whenever the holder kills an enemy.",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_RapidFirecannon.TFT_Set13.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_RapidFirecannon.tex"
   },
   {
     "id": null,
@@ -382,7 +382,7 @@
     "apiName": "TFT_Item_Artifact_AegisOfDawn",
     "name": "Aegis of Dawn",
     "desc": "Every @TickRate@ seconds, steal @ArmorStealPerTick@ Armor from enemies within 1-hex and heal @TFTUnitProperty.item:TFT_Item_Artifact_AegisDuskDawn_Damage@% of the holder's Armor.<br><br>If Aegis of Dusk is also equipped, trigger this item's effect every @TickRateWithAegisOfDusk@ seconds instead.<br><br><tftitemrules>Healing increases based on Stage.</tftitemrules>",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_AegisOfDawn.TFT_Set16.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_AegisOfDawn.tex"
   },
   {
     "id": null,
@@ -410,14 +410,14 @@
     "apiName": "TFT_Item_Artifact_Dawncore",
     "name": "Dawncore",
     "desc": "Reduce the holder's max Mana by @FlatManaReduction@. Subsequent spellcasts reduce max Mana by @ReductionPerCast*100@%, to a minimum of @MinimumTotalMana@.",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_Dawncore.TFT_Set15.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_Dawncore.tex"
   },
   {
     "id": null,
     "apiName": "TFTEventCT_Augment_Artifactory",
     "name": "Choncc's Artifactory",
     "desc": "At the start of each turn, your benched completed items transform into a random Artifact item. Gain @NumItems@ Artifact Anvil and a reforger.",
-    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Artifactory_III.TFT_Set13.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Artifactory_III.tex"
   },
   {
     "id": null,
@@ -431,35 +431,35 @@
     "apiName": "TFT_Item_Artifact_LightshieldCrest",
     "name": "Lightshield Crest",
     "desc": "Every @TriggerRate@ seconds, Shields the lowest percent Health ally for @PercentOfResists@% of the holder's combined Armor and Magic Resist for @ShieldDuration@ seconds.<br><br>On death grants this shield to all allies.",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_LightshieldCrest.TFT_Set13.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_LightshieldCrest.tex"
   },
   {
     "id": null,
     "apiName": "TFT_Item_Artifact_BlightingJewel",
     "name": "Blighting Jewel",
     "desc": "Dealing magic damage reduces the target's Magic Resist by @MRReduction@. If their Magic Resist is 0, grant the holder @ManaGain@ Mana instead.<br><br><rules>Ability damage can only trigger on each enemy once every @ICD@ seconds. </rules>",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_BlightingJewel.TFT_Set13.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_BlightingJewel.tex"
   },
   {
     "id": null,
     "apiName": "TFT_Item_Artifact_TalismanOfAscension",
     "name": "Talisman Of Ascension",
     "desc": "After @Seconds@ seconds gain @MaxHealthPercent@% max Health and @DamageAmp*100@% Damage Amp for the rest of combat.",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_TalismanOfAscension.TFT_Set13.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_TalismanOfAscension.tex"
   },
   {
     "id": null,
     "apiName": "TFT_Item_Artifact_SuspiciousTrenchCoat",
     "name": "Suspicious Trench Coat",
     "desc": "Once per combat at @PercentHealthTrigger@% Health, the holder splits into 3 copies of themself each with @PercentHealthOfCopies@% of their max Health.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_SuspiciousTrenchCoat.TFT_Set13.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_SuspiciousTrenchCoat.tex"
   },
   {
     "id": null,
     "apiName": "TFT_Item_Artifact_Mittens",
     "name": "Mittens",
     "desc": "Shrinks the holder, granting them increased movement speed and immunity to <TFTKeyword>Slow</TFTKeyword>, <TFTKeyword>Burn</TFTKeyword>, and <TFTKeyword>Wound</TFTKeyword>.<br><br>{{TFT_Keyword_Chill}}<br>{{TFT_Keyword_Burn}}<br>{{TFT_Keyword_Wound}}",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_Mittens.TFT_Set13.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_Mittens.tex"
   },
   {
     "id": null,
@@ -473,62 +473,62 @@
     "apiName": "TFT_Item_Artifact_CursedVampiricScepter",
     "name": "Corrupt Vampiric Scepter",
     "desc": "Attacks deal an additional @PercentDamage@% Attack Damage %i:scaleAD% as physical damage and heal the holder for the damage dealt.<br><br><TFTShadowItemBonus>The holder cannot cast their Ability or gain Mana.</TFTShadowItemBonus><br>",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_CursedVampiricScepter.TFT_Set13.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_CursedVampiricScepter.tex"
   },
   {
     "id": null,
     "apiName": "TFT_Item_Artifact_WitsEnd",
     "name": "Wit's End",
     "desc": "Attacks deal @TFTUnitProperty.item:TFT_Item_Artifact_WitsEnd_Damage@ bonus magic damage.<br><br>Heals the holder for @PercentHealing@% of all magic damage dealt.<br><br><tftitemrules>Damage increases based on Stage.</tftitemrules>",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_WitsEnd.TFT_Set13.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_WitsEnd.tex"
   },
   {
     "id": null,
     "apiName": "TFT_Item_Artifact_HorizonFocus",
     "name": "Horizon Focus",
     "desc": "Stunning an enemy causes lightning to strike them, dealing @PercentHealthDamage@% of their max Health as magic damage.<br>",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_HorizonFocus.TFT_Set13.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_HorizonFocus.tex"
   },
   {
     "id": null,
     "apiName": "TFT_Item_Artifact_ProwlersClaw",
     "name": "Prowler's Claw",
     "desc": "After killing a target, shed negative effects and dash to the farthest target within @HexRange@ hexes. The next 2 critical attacks deal @CritDamageBonusPercent@% bonus Critical Strike Damage.",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_ProwlersClaw.TFT_Set13.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_ProwlersClaw.tex"
   },
   {
     "id": null,
     "apiName": "TFT_Item_Artifact_VoidGauntlet",
     "name": "Void Gauntlet",
     "desc": "Combat start: Store @InitialPercentHealthStore*100@% max Health and @PercentHealthStore*100@% more every second. On death, unleash the stored Health as magic damage split between enemies within @HexRadius@-hexes.<br><br><rules>[Unique - only 1 per champion]</rules>",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT16_Artifact_VoidGauntlet.TFT_Set16.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT16_Artifact_VoidGauntlet.tex"
   },
   {
     "id": null,
     "apiName": "TFT_Item_Artifact_SilvermereDawn",
     "name": "Silvermere Dawn",
     "desc": "Grants immunity to Stuns and the holder's attacks Stun the target for @StunDuration@ seconds.<br><br><TFTShadowItemBonus>The holder's Attack Speed is locked at @AttackSpeedCap@.</TFTShadowItemBonus>",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_SilvermereDawn.TFT_Set13.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_SilvermereDawn.tex"
   },
   {
     "id": null,
     "apiName": "TFT_Item_Artifact_SeekersArmguard",
     "name": "Seeker's Armguard",
     "desc": "Takedowns increase the holder's Armor, Magic Resist, and Ability Power by @StatsPerTakedown@.",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_SeekersArmguard.TFT_Set13.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_SeekersArmguard.tex"
   },
   {
     "id": null,
     "apiName": "TFT_Item_Artifact_CappaJuice",
     "name": "Cappa Juice",
     "desc": "The holder dons a Hat on each takedown. The holder gains @ADAPPerTakedown@% Attack Damage and Ability Power per Hat. On death lose @PercentHatLoss*100@% of all Hats.&nbsp;(Hats:&nbsp;@TFTUnitProperty.trait:TFT_Item_Artifact_CappaJuice_NumHats@)",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT16_Artifact_KappaJuice.TFT_Set16.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT16_Artifact_KappaJuice.tex"
   },
   {
     "id": null,
     "apiName": "TFT_Augment_Artifactory",
     "name": "Artifactory",
     "desc": "At the start of each turn, your benched completed items transform into a random Artifact item. Gain @NumItems@ Artifact Anvil and @NumRemovers@ Removers.",
-    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Artifactory_III.TFT_Set13.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Artifactory_III.tex"
   }
 ]
