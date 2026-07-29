@@ -7143,6 +7143,106 @@
     "name": "LaserCorps",
     "desc": "Echipa ta primește drone cu laser. Când o unitate atacă sau este lovită cu un atac, drona sa îi provoacă daune magice țintei (timp de reactivare: @TFTTrait.TFTEvent5YR_LaserCorps.1:ICD@ sec.). La moartea deținătorului, drona este reatribuită altui coechipier.<br><br><row>(@TFTTrait.TFTEvent5YR_LaserCorps.1:MinUnits@) @TFTTrait.TFTEvent5YR_LaserCorps.1:MagicDamage@ daune magice. </row><br><row>(@TFTTrait.TFTEvent5YR_LaserCorps.2:MinUnits@) @TFTTrait.TFTEvent5YR_LaserCorps.2:MagicDamage@ daune magice. Toate unitățile primesc o dronă suplimentară.</row><br>"
   },
+  "TFTEventER_Consumable_RuneQuintOmnivamp": {
+    "name": "Chintesență de omni-vampirism",
+    "desc": "Crește permanent omni-vampirismul unui campion cu @BonusOmnivamp*100@%.<br><br><tftitemrules>[Consumabil – Acest obiect dispare când este folosit.]</tftitemrules>"
+  },
+  "TFTEventER_Item_MikaelsCrucible": {
+    "name": "Creuzetul lui Mikael",
+    "desc": "Începutul luptei: le oferă deținătorului și aliaților aflați pe o rază de cel mult @HexRange@ hexagoane de pe același rând imunitate la controlul maselor și @BuffAttackSpeed*100@% viteză de atac timp de @Duration@ secunde.<br><br><tftitemrules>[Unic – doar 1 per campion]</tftitemrules>"
+  },
+  "TFTEventER_Item_AvariceBlade": {
+    "name": "Sabia lăcomiei",
+    "desc": "Oferă %i:goldCoins% @GoldPerInterval@ aur la fiecare @GoldInterval@ secunde.<br>Oferă și %i:goldCoins%@BonusGoldPerThreshold@ aur bonus pentru fiecare @DamageThreshold@ daune fizice provocate.<br><br><tftitemrules>Aur generat în acest joc: @TFTUnitProperty.item:TFT_Item_GoldGenerated@</tftitemrules><br><tftitemrules>Daune fizice provocate: @TFTUnitProperty.item:TFTEventER_Item_AvariceBlade_DamageDealt@</tftitemrules>"
+  },
+  "TFTEventER_Item_SpiritOfTheSpectralWraith": {
+    "name": "Spiritul creaturii spectrale",
+    "desc": "Atacurile care lovesc critic oferă @BonusManaOnHit@ mană bonus. După ce își folosește abilitatea, deținătorul primește @CritChanceOnCast@% șanse de lovitură critică timp de @Duration@ secunde. "
+  },
+  "TFTEventER_Consumable_RuneSmallAbilityPower": {
+    "name": "Glifă de putere a abilităților",
+    "desc": "Crește permanent puterea abilităților unui campion cu @BonusAbilityPower@%.<br><br><tftitemrules>[Consumabil – Acest obiect dispare când este folosit.]</tftitemrules>"
+  },
+  "TFTEventER_Consumable_RuneSmallMagicResist": {
+    "name": "Glifă de rezistență la magie",
+    "desc": "Crește permanent rezistența la magie a unui campion cu @BonusMagicResist@.<br><br><tftitemrules>[Consumabil – Acest obiect dispare când este folosit.]</tftitemrules>"
+  },
+  "TFTEventER_Item_LuckyPick": {
+    "name": "Alegere norocoasă",
+    "desc": "Oferă %i:goldCoins% @GoldPerInterval@ aur la fiecare @GoldInterval@ secunde.<br>Oferă și %i:goldCoins%@BonusGoldPerThreshold@ aur bonus pentru fiecare @MagicDamageThreshold@ daune magice provocate.<br><br><tftitemrules>Aur generat în acest joc: @TFTUnitProperty.item:TFT_Item_GoldGenerated@</tftitemrules><br><tftitemrules>Daune magice provocate: @TFTUnitProperty.item:TFTEventER_Item_LuckyPick_MagicDamageDealt@</tftitemrules>"
+  },
+  "TFTEventER_Item_PhilosophersStone": {
+    "name": "Piatra filozofală",
+    "desc": "Oferă %i:goldCoins% @GoldPerInterval@ aur la fiecare @GoldInterval@ secunde.<br>Oferă și %i:goldCoins%@BonusGoldPerThreshold@ aur bonus pentru fiecare @ManaThreshold@ mană cheltuită.<br><br><tftitemrules>Aur generat în acest joc: @TFTUnitProperty.item:TFT_Item_GoldGenerated@</tftitemrules><br><tftitemrules>Mană cheltuită: @TFTUnitProperty.item:TFTEventER_Item_PhilosophersStone_ManaSpent@</tftitemrules>"
+  },
+  "TFTEventER_Consumable_RuneQuintHealth": {
+    "name": "Chintesență de viață",
+    "desc": "Crește permanent viața unui campion cu @BonusHealth@ și dimensiunea cu @SizeIncrease*100@%.<br><br><tftitemrules>[Consumabil – Acest obiect dispare când este folosit.]</tftitemrules>"
+  },
+  "TFTEventER_Item_SpiritOfTheElderLizard": {
+    "name": "Spiritul șopârlei vârstnice",
+    "desc": "Când îi provoci daune unui inamic, stochezi @StoredDamage*100@% din daunele provocate. După @MarkDuration@ secunde, apar spirite ale șopârlelor care provoacă daunele stocate sub formă de daune fizice împotriva țintei și a celui mai apropiat inamic.<br><br><TFTPassive>Daune totale ale șopârlelor în această rundă: @TFTUnitProperty.item:TFT14_Trait_Cybernetic_NaafiriItem_TotalShockwaveDamage@</TFTPassive>"
+  },
+  "TFTEventER_Item_BannerOfCommand": {
+    "name": "Stindard de asediu",
+    "desc": "Invocă un minion de asediu, o unitate tanc rezistentă. Puterea sa crește cu fiecare etapă și devine foarte mare în etapa 6."
+  },
+  "TFTEventER_Consumable_RuneSmallMana": {
+    "name": "Sigiliu de regenerare de mană",
+    "desc": "Crește permanent regenerarea de mană a unui campion cu @BonusManaRegen@.<br><br><tftitemrules>[Consumabil – Acest obiect dispare când este folosit.]</tftitemrules>"
+  },
+  "TFTEventER_Item_RunicBulwark": {
+    "name": "Parapet runic",
+    "desc": "Începutul luptei: îi oferă deținătorului și aliaților aflați la @HexRange@ hexagoane distanță pe același rând @BuffResists@ armură și @BuffResists@ rezistență la magie.<br><br><tftitemrules>[Unic – doar 1 per campion]</tftitemrules>"
+  },
+  "TFTEventER_Consumable_RuneSmallCrit": {
+    "name": "Însemn pentru șansă de lovitură critică",
+    "desc": "Crește permanent șansele de lovitură critică ale unui campion cu @BonusCrit*100@%.<br><br><tftitemrules>[Consumabil – Acest obiect dispare când este folosit.]</tftitemrules>"
+  },
+  "TFTEventER_Consumable_RuneSmallArmor": {
+    "name": "Sigiliu de armură",
+    "desc": "Crește permanent armura unui campion cu @BonusArmor@.<br><br><tftitemrules>[Consumabil – Acest obiect dispare când este folosit.]</tftitemrules>"
+  },
+  "TFTEventER_Item_SpiritOfTheAncientGolem": {
+    "name": "Spiritul golemului străvechi",
+    "desc": "Abilitățile și atacurile însemnează inamicii timp de @MarkDuration@ secunde. Deținătorul se vindecă în valoare de <TFTBonus>@HealingPercent*100@%</TFTBonus> din daunele provocate inamicilor însemnați.<br><br><TFTPassive>Total vindecare în această rundă: @TFTUnitProperty.item:TFT14_Trait_Cybernetic_SejuaniItem_TotalHealing@</TFTPassive>"
+  },
+  "TFTEventER_Consumable_RuneSmallAttackDamage": {
+    "name": "Însemn de daune din atac",
+    "desc": "Crește permanent daunele din atac ale unui campion cu @BonusAttackDamage*100@%.<br><br><tftitemrules>[Consumabil – Acest obiect dispare când este folosit.]</tftitemrules>"
+  },
+  "TFTEventER_Item_BlackCleaver": {
+    "name": "Satârul negru",
+    "desc": "Daunele din atacuri și abilități <TFTKeyword>fragmentează</TFTKeyword> cu @Shred@% și <TFTKeyword>sfâșie</TFTKeyword> cu @Shred@% inamicii timp de @Duration@ secunde. Efectul nu se cumulează.<br><br><tftitemrules><tftbold>Fragmentare</tftbold>: reduce rezistența la magie<br><tftbold>Sfâșiere</tftbold>: reduce armura</tftitemrules>"
+  },
+  "TFTEventER_Item_ChaliceOfHarmony": {
+    "name": "Potirul armoniei",
+    "desc": "Începutul luptei: îi oferă deținătorului și aliaților aflați la @HexRange@ hexagoane distanță pe același rând +@BuffManaRegen@ regenerare mană și, la fiecare @HealTickRate@ secunde, vindecare egală cu @MaxHealthHeal*100@% din viața maximă.<br><br><tftitemrules>[Unic – doar 1 per campion]</tftitemrules>"
+  },
+  "TFTEventER_Consumable_RuneSmallAttackSpeed": {
+    "name": "Însemn de viteză de atac",
+    "desc": "Crește permanent viteza de atac a unui campion cu @BonusAttackSpeed*100@%.<br><br><tftitemrules>[Consumabil – Acest obiect dispare când este folosit.]</tftitemrules>"
+  },
+  "TFTEventER_Item_SwordOfTheDivine": {
+    "name": "Sabia divinității",
+    "desc": "După o doborâre, primește <TFTKeyword>''Precizie''</TFTKeyword>, @AttackSpeedPercent@% viteză de atac și @CritBonus*100@% șanse de lovitură critică timp de @Duration@ secunde.<br><br>{{TFT_Keyword_Precision}}"
+  },
+  "TFTEventER_Item_WillOfTheAncients": {
+    "name": "Testamentul străbunilor",
+    "desc": "Începutul luptei: îi oferă deținătorului și aliaților aflați la @HexRange@ hexagoane distanță pe același rând @BuffAbilityPower@% puterea abilităților și @BuffOmnivamp*100@% omni-vampirism.<br><br><tftitemrules>[Unic – doar 1 per campion]</tftitemrules>"
+  },
+  "TFTEventER_Item_HeartOfGold": {
+    "name": "Inimă de aur",
+    "desc": "Oferă %i:goldCoins% @GoldPerInterval@ aur la fiecare @GoldInterval@ secunde.<br>Oferă și %i:goldCoins%@BonusGoldPerThreshold@ aur bonus pentru fiecare @DamageThreshold@ daune suferite.<br><br><tftitemrules>Aur generat în acest joc: @TFTUnitProperty.item:TFT_Item_GoldGenerated@</tftitemrules><br><tftitemrules>Daune suferite: @TFTUnitProperty.item:TFTEventER_Item_HeartOfGold_DamageTaken@</tftitemrules>"
+  },
+  "TFTEventER_Consumable_RuneQuintSpeed": {
+    "name": "Chintesență de viteză",
+    "desc": "Crește permanent viteza de atac a unui campion cu @BonusAttackSpeed*100@% și oferă viteză de mișcare crescută semnificativ.<br><br><tftitemrules>[Consumabil – Acest obiect dispare când este folosit.]</tftitemrules>"
+  },
+  "TFTEventER_Item_Ohmwrecker": {
+    "name": "Supraalimentator",
+    "desc": "Începutul luptei: inamicii aflați la 1 hexagon sunt amețiți timp de @StunDuration@ secundă, iar ''Supraalimentatorul'' primește încă @BonusHealth@ viață maximă parmanentă; se repetă la fiecare @StunInterval@ secunde.<br><br><TFTPassive>Viață bonus: @TFTUnitProperty.item:TFTEventER_Item_Ohmwrecker_BonusHealth@</TFTPassive>"
+  },
   "TFTEvent_SF_Item_PowerUp_Rank4": {
     "name": "Coroana sufletelor",
     "desc": "Împiedică prima moarte a deținătorului. După ce învie (după 2 secunde), deținătorul scapă de toate efectele negative și primește <active>@TFTUnitProperty.item:TFT_Event_SF_SoulCrownHealthRestore@</active> viață (puterea sufletului dublată).<br><br>Adaugă +1 la ultima caracteristică din listă (cu excepția caracteristicilor unice).<br><br><tftitemrules> [Nu poate fi folosit pe campionii aflați în luptă.]</tftitemrules><br><tftitemrules> [Folosiri nelimitate.]</tftitemrules>"
@@ -18341,7 +18441,7 @@
   },
   "TFT16_Shurima": {
     "name": "Shurima",
-    "desc": "În fiecare secundă, shurimanii primesc @ASPerSecond*100@% viteză de atac și își refac @HealthRestorePerSecond@ viață. La începutul luptei, primesc efecte suplimentare.<ShowIfCustom.Set=TFTSetEventCT><ShowIf.TFT16_Shurima_NoPrismatic><rules><br><br>Prismatic: deblochează-i pe Nasus, Renekton și Xerath, apoi trimite în luptă 4 unități Shurima</rules></ShowIf.TFT16_Shurima_NoPrismatic></ShowIfCustom.Set=TFTSetEventCT><br><br><row>(@MinUnits@) @BonusHealth*100@% viață maximă</row><br><row>(@MinUnits@) @ArmorMR@ armură și rezistență la magie</row><br><row>(@MinUnits@) <ShowIf.TFT16_Shurima_PrismaticActive>Un shuriman ajunge la rangul de ZEU la fiecare @GodhoodCadence@ secunde </ShowIf.TFT16_Shurima_PrismaticActive><ShowIfCustom.Set=TFTSetEventER><ShowIf.TFT16_Shurima_NoPrismatic>Disponibilă doar după ce Nasus, Renekton și Xerath au fost deblocați.</ShowIf.TFT16_Shurima_NoPrismatic></ShowIfCustom.Set=TFTSetEventER></row>"
+    "desc": "În fiecare secundă, shurimanii primesc @ASPerSecond*100@% viteză de atac și își refac @HealthRestorePerSecond@ viață. La începutul luptei, primesc efecte suplimentare.<ShowIfCustom.Set=TFTSetEventER><ShowIf.TFT16_Shurima_NoPrismatic><rules><br><br>Prismatic: deblochează-i pe Nasus, Renekton și Xerath, apoi trimite în luptă 4 unități Shurima</rules></ShowIf.TFT16_Shurima_NoPrismatic></ShowIfCustom.Set=TFTSetEventER><br><br><row>(@MinUnits@) @BonusHealth*100@% viață maximă</row><br><row>(@MinUnits@) @ArmorMR@ armură și rezistență la magie</row><br><row>(@MinUnits@) <ShowIf.TFT16_Shurima_PrismaticActive>Un shuriman ajunge la rangul de ZEU la fiecare @GodhoodCadence@ secunde </ShowIf.TFT16_Shurima_PrismaticActive><ShowIfCustom.Set=TFTSetEventER><ShowIf.TFT16_Shurima_NoPrismatic>Disponibilă doar după ce Nasus, Renekton și Xerath au fost deblocați.</ShowIf.TFT16_Shurima_NoPrismatic></ShowIfCustom.Set=TFTSetEventER></row>"
   },
   "TFT16_Blacksmith": {
     "name": "Fierar",
@@ -19494,6 +19594,46 @@
   "TFTEvent5YR_Empress": {
     "name": "Împărăteasă",
     "desc": "Primești o ''Coroană de lavandă''. După primele @TFTTrait.TFTEvent5YR_Empress.1:DelayForInitialCoralSpawn@ secunde de luptă, invoci un coral din Vid lângă ținta actuală a deținătorului.<br>Deținătorul se deplasează instantaneu în locația coralului și îl consumă, primind viață maximă, daune din atac și puterea abilităților și provocându-le daune magice inamicilor aflați la cel mult @TFTTrait.TFTEvent5YR_Empress.1:HexRange@ hexagoane.<br><br><row>(@TFTTrait.TFTEvent5YR_Empress.1:MinUnits@) Coralul oferă o creștere de @TFTTrait.TFTEvent5YR_Empress.1:PercentBonusMaxHealth*100@% a vieții maxime, @TFTTrait.TFTEvent5YR_Empress.1:BonusAD*100@% %i:scaleAD% %i:scaleAP%.</row><br><row>(@TFTTrait.TFTEvent5YR_Empress.2:MinUnits@) Uciderile lasă acum în urmă corali suplimentari din Vid. Primul coral oferă o creștere de @TFTTrait.TFTEvent5YR_Empress.2:PercentBonusMaxHealth*100@% a vieții maxime și @TFTTrait.TFTEvent5YR_Empress.2:BonusAD*100@% %i:scaleAD% %i:scaleAP%; consumarea coralilor suplimentari vindecă deținătorul în valoare de @TFTTrait.TFTEvent5YR_Empress.2:PercentHealthHeal*100@% %i:scaleHealth% și oferă încă @TFTTrait.TFTEvent5YR_Empress.2:StackingBonusAD*100@% %i:scaleAD% %i:scaleAP%.</row>"
+  },
+  "TFTEventER_WraithLesser": {
+    "name": "Spectru minor",
+    "desc": null
+  },
+  "TFTEventER_Wraith": {
+    "name": "Spectru",
+    "desc": null
+  },
+  "TFTEventER_LizardElder": {
+    "name": "Șopârlă vârstnică",
+    "desc": null
+  },
+  "TFTEventER_Golem": {
+    "name": "Golem",
+    "desc": null
+  },
+  "TFTEventER_LizardYoung": {
+    "name": "Șopârlă tânără",
+    "desc": null
+  },
+  "TFTEventER_Dragon": {
+    "name": "Dragon",
+    "desc": null
+  },
+  "TFTEventER_MinionSuper": {
+    "name": "Super-minion",
+    "desc": null
+  },
+  "TFTEventER_MinionMelee": {
+    "name": "Minion melee",
+    "desc": null
+  },
+  "TFTEventER_MinionRanged": {
+    "name": "Minion care atacă la distanță",
+    "desc": null
+  },
+  "TFTEventER_MinionSiege": {
+    "name": "Minion de asediu",
+    "desc": null
   },
   "TFT13_Viktor": {
     "name": "Viktor",

@@ -235,7 +235,7 @@
     "apiName": "TFT17_Item_Artifact_EkkoArtifact",
     "name": "Ekko's Patience",
     "desc": "Total Ability damage is increased by @AbilityDA*100@%, but is dealt over @Duration@ seconds instead.",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT17_Item_Artifact_EkkoPatience.TFT_Set17.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT17_Item_Artifact_EkkoPatience.tex"
   },
   {
     "id": null,
@@ -312,7 +312,7 @@
     "apiName": "TFT17_Item_Artifact_YasuoArtifact",
     "name": "Yasuo's Bladework",
     "desc": "Every @Interval@ seconds, your next attack is a double attack. ",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT17_Item_Artifact_YasuoBladework.TFT_Set17.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT17_Item_Artifact_YasuoBladework.tex"
   },
   {
     "id": null,
@@ -326,21 +326,21 @@
     "apiName": "TFT17_Item_Artifact_ThreshLantern",
     "name": "Thresh's Lantern",
     "desc": "After @Delay@ seconds of combat, pull the leftmost benched unit onto the battlefield. While that unit lives, @DamageShare*100@% of all damage the holder would take is redirected to them.<br><br><tftitemrules>Traits of champions flung onto the board do not become active</tftitemrules>",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT17_Item_Artifact_ThreshLantern.TFT_Set17.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT17_Item_Artifact_ThreshLantern.tex"
   },
   {
     "id": null,
     "apiName": "TFT17_Item_Artifact_KayleArtifact_Radiant",
     "name": "Kayle's Radiant Exaltation",
     "desc": "Behold, the righteous flame!",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT17_Item_Artifact_KayleGreatsword.TFT_Set17.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT17_Item_Artifact_KayleGreatsword.tex"
   },
   {
     "id": null,
     "apiName": "TFT17_Item_Artifact_KayleArtifact",
     "name": "Kayle's Exaltation",
     "desc": "After @Delay@ seconds of combat, this and all completed items on the holder become Radiant.",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT17_Item_Artifact_KayleGreatsword.TFT_Set17.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT17_Item_Artifact_KayleGreatsword.tex"
   },
   {
     "id": null,
@@ -389,21 +389,21 @@
     "apiName": "TFT17_Item_Artifact_EvelynnArtifact",
     "name": "Evelynn's Instinct",
     "desc": "When switching targets, blink to the next target. Attacks and Abilities execute the holder's target below @ExecuteThresholdForTarget*100@% of their Health.<br><br>Kills grant the holder @DecayingAS*100@% Attack Speed decaying over @Duration@ seconds.<br>",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT17_Item_Artifact_EvelynnFang.TFT_Set17.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT17_Item_Artifact_EvelynnFang.tex"
   },
   {
     "id": null,
     "apiName": "TFT17_Item_Artifact_SorakaArtifact",
     "name": "Soraka's Miracle",
     "desc": "The first @NumMiracles@ times the holder drops below @HPThreshold*100@% Health, a Miracle occurs, healing them for @TotalHealRatio@% of their max Health.<br><br>If the holder survives player combat, gain @PlayerHealth@ player Health for each Miracle this combat.",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT17_Item_Artifact_SorakaMiracle.TFT_Set17.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT17_Item_Artifact_SorakaMiracle.tex"
   },
   {
     "id": null,
     "apiName": "TFT17_Item_Artifact_VarusArtifact",
     "name": "Varus's Obsession",
     "desc": "Combat Start: Your strongest Tank becomes the Soulmate. For each second they are alive, the holder gains @StackingStats@% stacking Attack Damage and Ability Power.<br><br>The Soulmate heals for @HealPct*100@% of damage the holder deals.",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT17_Item_Artifact_VarusObsession.TFT_Set17.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT17_Item_Artifact_VarusObsession.tex"
   },
   {
     "id": null,
@@ -424,7 +424,7 @@
     "apiName": "TFT17_Item_Artifact_AhriArtifact",
     "name": "Ahri's Aura",
     "desc": "The holder is orbited by 3 foxfires. Each one deals <magicDamage>@FlatMagicDamage@&nbsp;(%i:scaleAP%)</magicDamage> magic damage and the orbit expands to hit the holder's current target.<br><br>For every @ManaSpent@ Mana the holder spends, foxfires travel @PercentSpeedIncrease*100@% faster for the rest of combat.",
-    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT17_Item_Artifact_AhriRhythm.TFT_Set17.tex"
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT17_Item_Artifact_AhriRhythm.tex"
   },
   {
     "id": null,

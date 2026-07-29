@@ -7143,6 +7143,106 @@
     "name": "LaserCorps",
     "desc": "Your team gains laser drones. When a unit attacks or is hit by an attack, their drone deals magic damage to the target (@TFTTrait.TFTEvent5YR_LaserCorps.1:ICD@ second cooldown). Drones are reassigned to another ally on death.<br><br><row>(@TFTTrait.TFTEvent5YR_LaserCorps.1:MinUnits@) @TFTTrait.TFTEvent5YR_LaserCorps.1:MagicDamage@ magic damage. </row><br><row>(@TFTTrait.TFTEvent5YR_LaserCorps.2:MinUnits@) @TFTTrait.TFTEvent5YR_LaserCorps.2:MagicDamage@ magic damage. All units gain an additional drone.</row><br>"
   },
+  "TFTEventER_Consumable_RuneQuintOmnivamp": {
+    "name": "Quintessence of Omnivamp",
+    "desc": "Permanently increase a champion's Omnivamp by @BonusOmnivamp*100@%.<br><br><tftitemrules>[Consumable - This item disappears when used.]</tftitemrules>"
+  },
+  "TFTEventER_Item_MikaelsCrucible": {
+    "name": "Mikael's Crucible",
+    "desc": "Combat start: Grant the holder and allies within @HexRange@ hex in the same row immunity to crowd control and @BuffAttackSpeed*100@% Attack Speed for @Duration@ seconds.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>"
+  },
+  "TFTEventER_Item_AvariceBlade": {
+    "name": "Avarice Blade",
+    "desc": "Grants %i:goldCoins% @GoldPerInterval@ gold every @GoldInterval@ seconds.<br>Also grants %i:goldCoins%@BonusGoldPerThreshold@ bonus gold for every @DamageThreshold@ physical damage dealt.<br><br><tftitemrules>Gold generated this game: @TFTUnitProperty.item:TFT_Item_GoldGenerated@</tftitemrules><br><tftitemrules>Physical damage dealt: @TFTUnitProperty.item:TFTEventER_Item_AvariceBlade_DamageDealt@</tftitemrules>"
+  },
+  "TFTEventER_Item_SpiritOfTheSpectralWraith": {
+    "name": "Spirit of the Spectral Wraith",
+    "desc": "Attacks that Critically Strike grant @BonusManaOnHit@ bonus Mana. After casting an Ability, gain @CritChanceOnCast@% Critical Strike Chance for @Duration@ seconds. "
+  },
+  "TFTEventER_Consumable_RuneSmallAbilityPower": {
+    "name": "Glyph of Ability Power",
+    "desc": "Permanently increase a champion's Ability Power by @BonusAbilityPower@%.<br><br><tftitemrules>[Consumable - This item disappears when used.]</tftitemrules>"
+  },
+  "TFTEventER_Consumable_RuneSmallMagicResist": {
+    "name": "Glyph of Magic Resist",
+    "desc": "Permanently increase a champion's Magic Resist by @BonusMagicResist@.<br><br><tftitemrules>[Consumable - This item disappears when used.]</tftitemrules>"
+  },
+  "TFTEventER_Item_LuckyPick": {
+    "name": "Lucky Pick",
+    "desc": "Grants %i:goldCoins% @GoldPerInterval@ gold every @GoldInterval@ seconds.<br>Also grants %i:goldCoins%@BonusGoldPerThreshold@ bonus gold for every @MagicDamageThreshold@ magic damage dealt.<br><br><tftitemrules>Gold generated this game: @TFTUnitProperty.item:TFT_Item_GoldGenerated@</tftitemrules><br><tftitemrules>Magic damage dealt: @TFTUnitProperty.item:TFTEventER_Item_LuckyPick_MagicDamageDealt@</tftitemrules>"
+  },
+  "TFTEventER_Item_PhilosophersStone": {
+    "name": "Philosopher's Stone",
+    "desc": "Grants %i:goldCoins% @GoldPerInterval@ gold every @GoldInterval@ seconds.<br>Also grants %i:goldCoins%@BonusGoldPerThreshold@ bonus gold for every @ManaThreshold@ mana spent.<br><br><tftitemrules>Gold generated this game: @TFTUnitProperty.item:TFT_Item_GoldGenerated@</tftitemrules><br><tftitemrules>Mana spent: @TFTUnitProperty.item:TFTEventER_Item_PhilosophersStone_ManaSpent@</tftitemrules>"
+  },
+  "TFTEventER_Consumable_RuneQuintHealth": {
+    "name": "Quintessence of Health",
+    "desc": "Permanently increase a champion's Health by @BonusHealth@ and size by @SizeIncrease*100@%.<br><br><tftitemrules>[Consumable - This item disappears when used.]</tftitemrules>"
+  },
+  "TFTEventER_Item_SpiritOfTheElderLizard": {
+    "name": "Spirit of the Elder Lizard",
+    "desc": "When you damage an enemy, store @StoredDamage*100@% of your damage dealt to them. After @MarkDuration@ seconds, Lizard Spirits appear to deal the stored damage to the target and the nearest enemy as physical damage.<br><br><TFTPassive>Total Lizard Damage This Round: @TFTUnitProperty.item:TFT14_Trait_Cybernetic_NaafiriItem_TotalShockwaveDamage@</TFTPassive>"
+  },
+  "TFTEventER_Item_BannerOfCommand": {
+    "name": "Banner of Command",
+    "desc": "Summon a Siege Minion, a durable tank unit. Its strength increases with each Stage, and becomes very large on Stage 6."
+  },
+  "TFTEventER_Consumable_RuneSmallMana": {
+    "name": "Seal of Mana Regen",
+    "desc": "Permanently increase a champion's Mana Regen by @BonusManaRegen@.<br><br><tftitemrules>[Consumable - This item disappears when used.]</tftitemrules>"
+  },
+  "TFTEventER_Item_RunicBulwark": {
+    "name": "Runic Bulwark",
+    "desc": "Combat start: Grant the holder and allies within @HexRange@ hexes in the same row @BuffResists@ Armor and @BuffResists@ Magic Resist.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>"
+  },
+  "TFTEventER_Consumable_RuneSmallCrit": {
+    "name": "Mark of Critical Chance",
+    "desc": "Permanently increase a champion's Critical Strike Chance by @BonusCrit*100@%.<br><br><tftitemrules>[Consumable - This item disappears when used.]</tftitemrules>"
+  },
+  "TFTEventER_Consumable_RuneSmallArmor": {
+    "name": "Seal of Armor",
+    "desc": "Permanently increase a champion's Armor by @BonusArmor@.<br><br><tftitemrules>[Consumable - This item disappears when used.]</tftitemrules>"
+  },
+  "TFTEventER_Item_SpiritOfTheAncientGolem": {
+    "name": "Spirit of the Ancient Golem",
+    "desc": "Abilities and attacks mark enemies for @MarkDuration@ seconds. Heal for <TFTBonus>@HealingPercent*100@%</TFTBonus> of damage dealt to marked enemies.<br><br><TFTPassive>Total Healing This Round: @TFTUnitProperty.item:TFT14_Trait_Cybernetic_SejuaniItem_TotalHealing@</TFTPassive>"
+  },
+  "TFTEventER_Consumable_RuneSmallAttackDamage": {
+    "name": "Mark of Attack Damage",
+    "desc": "Permanently increase a champion's Attack Damage by @BonusAttackDamage*100@%.<br><br><tftitemrules>[Consumable - This item disappears when used.]</tftitemrules>"
+  },
+  "TFTEventER_Item_BlackCleaver": {
+    "name": "The Black Cleaver",
+    "desc": "Damage from attacks and Abilities @Shred@% <TFTKeyword>Shreds</TFTKeyword> and @Shred@% <TFTKeyword>Sunders</TFTKeyword> enemies for @Duration@ seconds. This effect does not stack.<br><br><tftitemrules><tftbold>Shred</tftbold>: Reduce Magic Resist<br><tftbold>Sunder</tftbold>: Reduce Armor</tftitemrules>"
+  },
+  "TFTEventER_Item_ChaliceOfHarmony": {
+    "name": "Chalice of Harmony",
+    "desc": "Combat start: Grant the holder and allies within @HexRange@ hexes in the same row +@BuffManaRegen@ Mana Regen and every @HealTickRate@ seconds heal for @MaxHealthHeal*100@% max Health.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>"
+  },
+  "TFTEventER_Consumable_RuneSmallAttackSpeed": {
+    "name": "Mark of Attack Speed",
+    "desc": "Permanently increase a champion's Attack Speed by @BonusAttackSpeed*100@%.<br><br><tftitemrules>[Consumable - This item disappears when used.]</tftitemrules>"
+  },
+  "TFTEventER_Item_SwordOfTheDivine": {
+    "name": "Sword of the Divine",
+    "desc": "On takedown, gain <TFTKeyword>Precision</TFTKeyword>, @AttackSpeedPercent@% Attack Speed, and @CritBonus*100@% Critical Strike Chance for @Duration@ seconds.<br><br>{{TFT_Keyword_Precision}}"
+  },
+  "TFTEventER_Item_WillOfTheAncients": {
+    "name": "Will of the Ancients",
+    "desc": "Combat start: Grant the holder and allies within @HexRange@ hexes in the same row @BuffAbilityPower@% Ability Power and @BuffOmnivamp*100@% Omnivamp.<br><br><tftitemrules>[Unique - only 1 per champion]</tftitemrules>"
+  },
+  "TFTEventER_Item_HeartOfGold": {
+    "name": "Heart of Gold",
+    "desc": "Grants %i:goldCoins% @GoldPerInterval@ gold every @GoldInterval@ seconds.<br>Also grants %i:goldCoins%@BonusGoldPerThreshold@ bonus gold for every @DamageThreshold@ damage taken.<br><br><tftitemrules>Gold generated this game: @TFTUnitProperty.item:TFT_Item_GoldGenerated@</tftitemrules><br><tftitemrules>Damage taken: @TFTUnitProperty.item:TFTEventER_Item_HeartOfGold_DamageTaken@</tftitemrules>"
+  },
+  "TFTEventER_Consumable_RuneQuintSpeed": {
+    "name": "Quintessence of Speed",
+    "desc": "Permanently increase a champion's Attack Speed by @BonusAttackSpeed*100@% and grant greatly increased move speed.<br><br><tftitemrules>[Consumable - This item disappears when used.]</tftitemrules>"
+  },
+  "TFTEventER_Item_Ohmwrecker": {
+    "name": "Ohmwrecker",
+    "desc": "Combat start: Enemies within 1 hex are stunned for @StunDuration@ second and Ohmwrecker gains an additional @BonusHealth@ permanent max Health; repeats every @StunInterval@ seconds.<br><br><TFTPassive>Bonus Health: @TFTUnitProperty.item:TFTEventER_Item_Ohmwrecker_BonusHealth@</TFTPassive>"
+  },
   "TFTEvent_SF_Item_PowerUp_Rank4": {
     "name": "Soul Crown",
     "desc": "Prevents the holder's first death. When they revive after 2 seconds, they shed all negative effects and gain <active>@TFTUnitProperty.item:TFT_Event_SF_SoulCrownHealthRestore@</active> Health (double your Soul Power).<br><br>Contribute +1 to the last listed Trait. (Unique traits excluded.)<br><br><tftitemrules> [Cannot be used on champions in combat.]</tftitemrules><br><tftitemrules> [Unlimited uses.]</tftitemrules>"
@@ -18341,7 +18441,7 @@
   },
   "TFT16_Shurima": {
     "name": "Shurima",
-    "desc": "Each second, Shurimans gain @ASPerSecond*100@% Attack Speed and restore @HealthRestorePerSecond@ Health. At combat start, they gain additional effects.<ShowIfCustom.Set=TFTSetEventCT><ShowIf.TFT16_Shurima_NoPrismatic><rules><br><br>Prismatic: Unlock Nasus, Renekton, and Xerath, then field 4 Shurima</rules></ShowIf.TFT16_Shurima_NoPrismatic></ShowIfCustom.Set=TFTSetEventCT><br><br><row>(@MinUnits@) @BonusHealth*100@% max Health</row><br><row>(@MinUnits@) @ArmorMR@ Armor and Magic Resist</row><br><row>(@MinUnits@) <ShowIf.TFT16_Shurima_PrismaticActive>A Shuriman ascends to GODHOOD every @GodhoodCadence@ seconds </ShowIf.TFT16_Shurima_PrismaticActive><ShowIfCustom.Set=TFTSetEventER><ShowIf.TFT16_Shurima_NoPrismatic>Only available when Nasus, Renekton, and Xerath have been unlocked.</ShowIf.TFT16_Shurima_NoPrismatic></ShowIfCustom.Set=TFTSetEventER></row>"
+    "desc": "Each second, Shurimans gain @ASPerSecond*100@% Attack Speed and restore @HealthRestorePerSecond@ Health. At combat start, they gain additional effects.<ShowIfCustom.Set=TFTSetEventER><ShowIf.TFT16_Shurima_NoPrismatic><rules><br><br>Prismatic: Unlock Nasus, Renekton, and Xerath, then field 4 Shurima</rules></ShowIf.TFT16_Shurima_NoPrismatic></ShowIfCustom.Set=TFTSetEventER><br><br><row>(@MinUnits@) @BonusHealth*100@% max Health</row><br><row>(@MinUnits@) @ArmorMR@ Armor and Magic Resist</row><br><row>(@MinUnits@) <ShowIf.TFT16_Shurima_PrismaticActive>A Shuriman ascends to GODHOOD every @GodhoodCadence@ seconds </ShowIf.TFT16_Shurima_PrismaticActive><ShowIfCustom.Set=TFTSetEventER><ShowIf.TFT16_Shurima_NoPrismatic>Only available when Nasus, Renekton, and Xerath have been unlocked.</ShowIf.TFT16_Shurima_NoPrismatic></ShowIfCustom.Set=TFTSetEventER></row>"
   },
   "TFT16_Blacksmith": {
     "name": "Blacksmith",
@@ -19494,6 +19594,46 @@
   "TFTEvent5YR_Empress": {
     "name": "Empress",
     "desc": "Gain a Lavender Crown. After the first @TFTTrait.TFTEvent5YR_Empress.1:DelayForInitialCoralSpawn@ seconds of combat, spawn a Void Coral near the holder's current target.<br>The holder blinks to the Coral's location and consumes it, gaining max Health, Attack Damage, and Ability Power, and deals magic damage to enemies within @TFTTrait.TFTEvent5YR_Empress.1:HexRange@ hexes.<br><br><row>(@TFTTrait.TFTEvent5YR_Empress.1:MinUnits@) Coral grants @TFTTrait.TFTEvent5YR_Empress.1:PercentBonusMaxHealth*100@% max Health increase, @TFTTrait.TFTEvent5YR_Empress.1:BonusAD*100@% %i:scaleAD% %i:scaleAP%.</row><br><row>(@TFTTrait.TFTEvent5YR_Empress.2:MinUnits@) Kills now leave behind additional Void Corals. First Coral grants @TFTTrait.TFTEvent5YR_Empress.2:PercentBonusMaxHealth*100@% max Health increase and @TFTTrait.TFTEvent5YR_Empress.2:BonusAD*100@% %i:scaleAD% %i:scaleAP%; consuming further Corals heal the holder for @TFTTrait.TFTEvent5YR_Empress.2:PercentHealthHeal*100@% %i:scaleHealth% and grant an additional @TFTTrait.TFTEvent5YR_Empress.2:StackingBonusAD*100@% %i:scaleAD% %i:scaleAP%.</row>"
+  },
+  "TFTEventER_WraithLesser": {
+    "name": "Lesser Wraith",
+    "desc": null
+  },
+  "TFTEventER_Wraith": {
+    "name": "Wraith",
+    "desc": null
+  },
+  "TFTEventER_LizardElder": {
+    "name": "Lizard Elder",
+    "desc": null
+  },
+  "TFTEventER_Golem": {
+    "name": "Golem",
+    "desc": null
+  },
+  "TFTEventER_LizardYoung": {
+    "name": "Young Lizard",
+    "desc": null
+  },
+  "TFTEventER_Dragon": {
+    "name": "Dragon",
+    "desc": null
+  },
+  "TFTEventER_MinionSuper": {
+    "name": "Super Minion",
+    "desc": null
+  },
+  "TFTEventER_MinionMelee": {
+    "name": "Melee Minion",
+    "desc": null
+  },
+  "TFTEventER_MinionRanged": {
+    "name": "Ranged Minion",
+    "desc": null
+  },
+  "TFTEventER_MinionSiege": {
+    "name": "Siege Minion",
+    "desc": null
   },
   "TFT13_Viktor": {
     "name": "Viktor",
