@@ -5681,6 +5681,14 @@
   },
   {
     "id": null,
+    "apiName": "DA_18_EmblemFloraFatalisAugment",
+    "name": "Flora Fatalis Emblem",
+    "desc": null,
+    "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Traits/Spatula/Set18/TFT18_Emblem_FloraFatalis.tex",
+    "tier": null
+  },
+  {
+    "id": null,
     "apiName": "TFT7_Augment_WhispersTerrify",
     "name": "Terrify",
     "desc": "Your units take @DamageReduction@% less damage from enemies shrunken by Whisper champions. Gain a Sylas.",
@@ -12789,6 +12797,182 @@
     "name": "Future Sight I",
     "desc": "Know who you will fight next. Gain a Zephyr.",
     "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Future-Sight-I.tex",
+    "tier": null
+  },
+  {
+    "id": null,
+    "apiName": "DA_18_RiftbeastTraitAugment",
+    "name": "Omega Riftbeast",
+    "desc": "You can now choose a second Alpha Riftbeast. Gain a Scuttlecrab, a Cinderling, and a Pebbles.",
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "tier": null
+  },
+  {
+    "id": null,
+    "apiName": "DA_18_ElderwoodTraitAugment",
+    "name": "Nature's Shelter",
+    "desc": "Champions that start combat adjacent to an Elderwood plant gain @AS*100@% Attack Speed and heal @heal*100@% of their maximum Health every @HealInterval@ seconds. Gain an Alistar, an Ornn, and a Xayah.",
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "tier": null
+  },
+  {
+    "id": null,
+    "apiName": "DA_18_SolarTraitAugment",
+    "name": "Chosen of the Sun",
+    "desc": "Gain a Leona, a Kayle, and a Sejuani. Leona gains @FlatHealth@ permanent max Health each round, increased by @HealthPerThreeStar@ for each unique 3-star champion fielded.",
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "tier": null
+  },
+  {
+    "id": null,
+    "apiName": "DA_18_LunarTraitAugmentPlus",
+    "name": "Sun and Moon+",
+    "desc": "Your Lunar champions gain @Health@ Health and @DamageAmp*100@% Damage Amp for each unique Solar champion fielded. Gain a Leona, a Kayle, and an Aphelios.",
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "tier": null
+  },
+  {
+    "id": null,
+    "apiName": "DA_BlackthornTraitAugment",
+    "name": "Item Extraction",
+    "desc": "The first @NumComponents@ times you sacrifice a champion in the Blackthorn hex, gain a copy of a random component they're holding. Gain a Veigar and a Rek'Sai.",
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "tier": null
+  },
+  {
+    "id": null,
+    "apiName": "DA_18_RiftbeastTraitAugmentStampede",
+    "name": "Jungle Pathing",
+    "desc": "Gain a Pebbles, a Cinderling, a Scuttle Crab, and a Murkwolf. Each time you level up, gain a new Riftbeast.",
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "tier": null
+  },
+  {
+    "id": null,
+    "apiName": "DA_18_PrimalAugment_Sivir",
+    "name": "Beast Within",
+    "desc": "Primal grants an additional Blessing.  Gain a Vi now and a Sivir after @AugmentRoundDelay@ rounds.",
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "tier": null
+  },
+  {
+    "id": null,
+    "apiName": "DA_18_FloraFatalisAugmentPlus",
+    "name": "Consuming Flora",
+    "desc": "Gain a Flora Fatalis emblem. The champion holding the emblem gains double benefits from the Flora Fatalis trait. Gain @PlusGold@ gold.",
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "tier": null
+  },
+  {
+    "id": null,
+    "apiName": "DA_18_FloraFatalisAugment",
+    "name": "Consuming Flora",
+    "desc": "Gain a Flora Fatalis emblem. The champion holding the emblem gains double benefits from the Flora Fatalis trait. Gain @Gold@ gold.",
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "tier": null
+  },
+  {
+    "id": null,
+    "apiName": "DA_18_CovenTraitAugment",
+    "name": "Coven Acolyte",
+    "desc": "When you choose to continue gathering Coven essence, heal @Health@ Tactician health. Gain a Camille, an Elise, and a Caitlyn.",
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "tier": null
+  },
+  {
+    "id": null,
+    "apiName": "DA_18_PrimalAugment_Nidalee",
+    "name": "Beast Within",
+    "desc": "Primal grants an additional Blessing. Gain a Vi now and a Nidalee after @AugmentRoundDelay@ rounds.",
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "tier": null
+  },
+  {
+    "id": null,
+    "apiName": "DA_18_LunarTraitAugment",
+    "name": "Sun and Moon",
+    "desc": "Your Lunar champions gain @Health@ Health and @DamageAmp*100@% Damage Amp for each unique Solar champion fielded. Gain a Leona, a Kayle, and a Diana.",
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "tier": null
+  },
+  {
+    "id": null,
+    "apiName": "DA_18_RivalsAugment",
+    "name": "Unrivaled",
+    "desc": "You can field Rengar and Kha'Zix together with no penalties, and they gain bonuses when the other casts. Gain a Rengar and a Kha'Zix.",
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "tier": null
+  },
+  {
+    "id": null,
+    "apiName": "DA_18_PrimalAugmentPlus_Nidalee",
+    "name": "Beast Within+",
+    "desc": "Primal grants an additional Blessing. Gain a Vi and a Nidalee.",
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "tier": null
+  },
+  {
+    "id": null,
+    "apiName": "DA_18_FaeTraitAugment",
+    "name": "Embiggen",
+    "desc": "Fae pixies are now larger and grant @BonusMultiplier*100@% more Attack Damage and Ability Power. Fae champions gain @UpfrontADAP*100@% Attack Damage and Ability Power immediately. Gain a Xayah and a Rakan.",
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "tier": null
+  },
+  {
+    "id": null,
+    "apiName": "DA_AugmentedPower",
+    "name": "Augmented Power",
+    "desc": "Your next augment is one tier higher.",
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/PowerUp_I.tex",
+    "tier": null
+  },
+  {
+    "id": null,
+    "apiName": "DA_18_LuxAugmentII",
+    "name": "Master of All Origins",
+    "desc": "Open an armory and choose one of  @ArmoryChoices@ traits. Gain a Lux with that trait and a Spear of Shojin.<br><br><dim>Traits on your board are more likely to appear in the armory. Lux provides +2 to her chosen trait</dim>",
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T3.tex",
+    "tier": null
+  },
+  {
+    "id": null,
+    "apiName": "DA_18_CovenTraitAugment_LootToAP",
+    "name": "Dark Ritual",
+    "desc": "Converting Coven Essence to rewards grants Coven champions Ability Power instead of loot. Gain a Camille, an Elise, and a Caitlyn.",
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "tier": null
+  },
+  {
+    "id": null,
+    "apiName": "DA_18_BlossomTraitAugment",
+    "name": "Blossom's Call",
+    "desc": "When you buy a Wisp, gain a random Blossom champion based on the Wisp's cost. Gain a Yunara, a Yorick, and a Karma.",
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "tier": null
+  },
+  {
+    "id": null,
+    "apiName": "DA_18_PrimalAugmentPlus_Sivir",
+    "name": "Beast Within+",
+    "desc": "Primal grants an additional Blessing. Gain a Vi and a Sivir.",
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "tier": null
+  },
+  {
+    "id": null,
+    "apiName": "DA_18_InfernoTraitAugment",
+    "name": "Flame On",
+    "desc": "The Inferno champion that dealt the most damage last combat is On Fire, gaining @AS*100@% Attack Speed. Gain a Varus and an Akali.",
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T1.tex",
+    "tier": null
+  },
+  {
+    "id": null,
+    "apiName": "DA_18_SprykinAugment",
+    "name": "Small Furry Friend",
+    "desc": "While Sprykin is active, gain a second BFF summon that is @Effectiveness_DoesntIncludeSummonSpell*100@% as powerful. Gain a Teemo, a Veigar, and a Kobuko.",
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
     "tier": null
   },
   {

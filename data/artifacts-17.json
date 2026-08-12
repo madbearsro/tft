@@ -526,6 +526,237 @@
   },
   {
     "id": null,
+    "apiName": "DA_Artifactinate18",
+    "name": "Artifactinate",
+    "desc": "Lose @NumComponents@ components, including ones built into items. Gain an Artifact anvil.",
+    "icon": "ASSETS/UX/TFT/Hud/ZAPS/Wands/Set18_MechanicIcon.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Artifactinate18_Upgrade",
+    "name": "Artifactinate",
+    "desc": "Lose @NumComponentsUpgrade@ components, including ones built into items. Gain an Artifact anvil <Set18CharmUpgrade>and</Set18CharmUpgrade> @NumReforgerUpgrade@ <Set18CharmUpgrade>Reforger.</Set18CharmUpgrade>",
+    "icon": "ASSETS/UX/TFT/Hud/ZAPS/Wands/Set18_MechanicIcon.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Artifact_WitsEnd",
+    "name": "Wit's End",
+    "desc": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_WitsEnd.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Artifact_Mittens",
+    "name": "Mittens",
+    "desc": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_Mittens.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Artifact_TitanicHydra",
+    "name": "Titanic Hydra",
+    "desc": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_TitanicHydra.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Artifact_ZhonyasParadox",
+    "name": "Zhonya's Paradox",
+    "desc": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT4_Item_OrnnZhonyasParadox.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Artifact_VoidGauntlet",
+    "name": "Void Gauntlet",
+    "desc": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT16_Artifact_VoidGauntlet.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Artifact_LightshieldCrest",
+    "name": "Lightshield Crest",
+    "desc": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_LightshieldCrest.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Artifact_LudensTempest",
+    "name": "Luden's Tempest",
+    "desc": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_LudensTempest.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Artifact_DeathsDefiance",
+    "name": "Death's Defiance",
+    "desc": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT4_Item_OrnnDeathsDefiance.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Artifact_RapidFireCannon",
+    "name": "Rapid Firecannon",
+    "desc": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_RapidFirecannon.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Artifact_HellfireHatchet",
+    "name": "Hellfire Hatchet",
+    "desc": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_HellfireHatchet.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Artifact_LichBane",
+    "name": "Lich Bane",
+    "desc": null,
+    "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT_Item_Artifact_LichBane.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Artifact_ForbiddenIdol",
+    "name": "Forbidden Idol",
+    "desc": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_ForbiddenIdol.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Artifact_Fishbones",
+    "name": "Fishbones",
+    "desc": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_Fishbones.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Artifact_AegisOfDusk",
+    "name": "Aegis of Dusk",
+    "desc": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_AegisOfDusk.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Artifact_GoldCollector",
+    "name": "Gold Collector",
+    "desc": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT4_Item_OrnnTheCollector.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Artifact_StatikkShiv",
+    "name": "Statikk Shiv",
+    "desc": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_StattikShiv.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Artifact_HorizonFocus",
+    "name": "Horizon Focus",
+    "desc": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_HorizonFocus.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Artifact_Dawncore",
+    "name": "Dawncore",
+    "desc": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_Dawncore.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Artifact_TheIndomitable",
+    "name": "The Indomitable",
+    "desc": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_TheIndomitable.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Artifact_AegisOfDawn",
+    "name": "Aegis of Dawn",
+    "desc": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_AegisOfDawn.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Artifact_SeekersArmguard",
+    "name": "Seeker's Armguard",
+    "desc": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_SeekersArmguard.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Artifact_EternalPact",
+    "name": "Eternal Pact",
+    "desc": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT16_Artifact_EternalPact.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Artifact_SilvermereDawn",
+    "name": "Silvermere Dawn",
+    "desc": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_SilvermereDawn.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Artifact_Hullcrusher",
+    "name": "Hullcrusher",
+    "desc": null,
+    "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT9_OrnnItem_Hullbreaker.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Artifact_Manazane",
+    "name": "Manazane",
+    "desc": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT4_Item_OrnnMuramana.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Artifact_GamblersBlade",
+    "name": "Gambler's Blade",
+    "desc": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT7_Item_ShimmerscaleGamblersBlade.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Artifact_InfinityForce",
+    "name": "Infinity Force",
+    "desc": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT4_Item_OrnnInfinityForce.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Artifact_NavoriFlickerblade",
+    "name": "Flickerblades",
+    "desc": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_NavoriFlickerplade.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Artifact_MogulsMail",
+    "name": "Mogul'sMail",
+    "desc": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT7_Item_ShimmerscaleMogulsMail.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Artifact_BlightingJewel",
+    "name": "Blighting Jewel",
+    "desc": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_BlightingJewel.tex"
+  },
+  {
+    "id": null,
+    "apiName": "DA_Item_Artifact_TalismanOfAscension",
+    "name": "Talisman of Ascension",
+    "desc": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Items/Hexcore/TFT_Item_Artifact_TalismanOfAscension.tex"
+  },
+  {
+    "id": null,
     "apiName": "TFT_Augment_Artifactory",
     "name": "Artifactory",
     "desc": "At the start of each turn, your benched completed items transform into a random Artifact item. Gain @NumItems@ Artifact Anvil and @NumRemovers@ Removers.",
