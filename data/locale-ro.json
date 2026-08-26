@@ -1191,418 +1191,6 @@
     "name": "Pălăria malefică a lui Rabadon",
     "desc": "<tftitemrules>Această pălărie modestă te poate ajuta să creezi sau să distrugi întreaga lume.</tftitemrules><br><br>@TFTUnitProperty.:TFT_Augment_DeadlierCaps_TRAKey@"
   },
-  "TFT5_Augment_RedeemedCrown": {
-    "name": "Coroana mântuiților",
-    "desc": "Primești o ''Emblemă a mântuiților'', o ''Mână a justiției'' și o Syndra."
-  },
-  "TFT5_Augment_MysticCrown": {
-    "name": "Coroana misticilor",
-    "desc": "Primești o ''Emblemă a misticilor'', o ''Scânteie ionică'' și o Lulu."
-  },
-  "TFT5_Augment_HellionCrown": {
-    "name": "Coroana năpastelor",
-    "desc": "Primești o ''Emblemă a năpastelor'', un ''Morellonomicon'' și un Kennen."
-  },
-  "TFT5_Augment_SpellweaverCrest": {
-    "name": "Blazonul maeștrilor vrăjilor",
-    "desc": "Primești o ''Emblemă a maeștrilor vrăjilor'' și un Brand."
-  },
-  "TFT5_Augment_LegionnaireCrown": {
-    "name": "Coroana legionarilor",
-    "desc": "Primești o ''Emblemă a legionarilor'', o ''Sabie a infinitului'' și o Irelia."
-  },
-  "TFT5_Augment_Nightbringer": {
-    "name": "Asfințit",
-    "desc": "La începutul luptei, întrupările Întunericului suferă daune egale cu @HealthLossPercent*100@% din viața maximă, dar primesc un scut suplimentar în valoare de @BonusShieldPercent*100@% din viața maximă și provoacă @BonusDamageAmp@% daune bonus la activarea caracteristicii. Primești un Yasuo.<br>"
-  },
-  "TFT5_Augment_ThreshCarryPlus": {
-    "name": "Moartea se apropie+",
-    "desc": "Primești un Thresh de 2 stele. Abilitatea celui mai puternic Thresh din echipa ta îl trage spre ținta sa, următorul său atac provoacă daune magice bonus în valoare de @BonusAPRatio*100@% din puterea abilităților, iar costul său de mană scade cu @ManaReduction@ (de la 120)."
-  },
-  "TFT5_Augment_BrawlerCrest": {
-    "name": "Blazonul bătăușilor",
-    "desc": "Primești o ''Emblemă a bătăușilor'' și un Sett."
-  },
-  "TFT5_Augment_CavalierCrown": {
-    "name": "Coroana călăreților",
-    "desc": "Primești o ''Emblemă a călăreților'', o ''Mantie solară'' și un Hecarim."
-  },
-  "TFT5_Augment_CannoneerCrest": {
-    "name": "Blazonul tunarilor",
-    "desc": "Primești o ''Emblemă a tunarilor'' și o Tristana."
-  },
-  "TFT5_Augment_Hellion": {
-    "name": "Despărțire crudă",
-    "desc": "De fiecare dată când moare o năpastă, portalul lansează o minge de foc care provoacă @ZiggsBombDamageStage1@-@ZiggsBombDamageStage7@ daune magice (în funcție de etapă). La @HealthThreshold@ viață, îți refaci @heal@ viață la sfârșitul luptei. Primești un Kennen."
-  },
-  "TFT5_Augment_PykeCarry": {
-    "name": "Zelotul de pe docuri",
-    "desc": "Primești un Pyke. Abilitatea celui mai puternic Pyke din echipa ta nu mai amețește, dar provoacă @DamageAmp*100@% daune, iar costul său de mană scade cu @ManaReduction@ (de la 120). "
-  },
-  "TFT5_Augment_SkirmisherCrest": {
-    "name": "Blazonul înaintașilor",
-    "desc": "Primești o ''Emblemă a înaintașilor'' și un Olaf."
-  },
-  "TFT5_Augment_AbominationCrest": {
-    "name": "Blazonul monștrilor",
-    "desc": "Primești o ''Emblemă a monștrilor'' și un Brand."
-  },
-  "TFT5_Augment_UdyrCarry": {
-    "name": "Phoenixul și ursul",
-    "desc": "Primești un Udyr de 2 stele. Când cel mai puternic Udyr al tău se transformă și primește efecte bonus:<br>Costul de mană se reduce cu @ManaReduction@.<br>Țestoasă: provoacă daune magice într-o zonă în formă de con.<br>Tigru: amețește inamicul."
-  },
-  "TFT5_Augment_MysticCrest": {
-    "name": "Blazonul misticilor",
-    "desc": "Primești o ''Emblemă a misticilor'' și o Lulu."
-  },
-  "TFT5_Augment_RedeemedCrest": {
-    "name": "Blazonul mântuiților",
-    "desc": "Primești o ''Emblemă a mântuiților'' și o Syndra."
-  },
-  "TFT5_Augment_Forgotten": {
-    "name": "Arsenal anonim",
-    "desc": "Pentru fiecare prag activ al caracteristicii anonim, primești un alt obiect spectral de suport. Primești un Thresh.<br><br><i>Obiectele spectrale de suport le oferă aliaților bonusuri puternice, dar în schimbul unui preț.</i>"
-  },
-  "TFT5_Augment_NightbringerCrown": {
-    "name": "Coroana întrupării Întunericului",
-    "desc": "Primești o ''Emblemă a întrupării Întunericului'', o ''Mână a justiției'' și o Sejuani."
-  },
-  "TFT5_Augment_IroncladCrest": {
-    "name": "Blazonul blindaților",
-    "desc": "Primești o ''Emblemă a blindaților'' și un Nautilus."
-  },
-  "TFT5_Augment_KnightCrown": {
-    "name": "Coroana cavalerilor",
-    "desc": "Primești o ''Emblemă a cavalerilor'', o ''Platoșă a garguiului'' și un Thresh."
-  },
-  "TFT5_Augment_RenewerCrest": {
-    "name": "Blazonul reînnoitorilor",
-    "desc": "Primești o ''Emblemă a reînnoitorilor'' și o Soraka."
-  },
-  "TFT5_Augment_AbominationCrown": {
-    "name": "Coroana monștrilor",
-    "desc": "Primești o ''Emblemă a monștrilor'', o ''Voință a titanului'' și un Brand."
-  },
-  "TFT5_Augment_DawnbringerCrest": {
-    "name": "Blazonul întrupării Luminii",
-    "desc": "Primești o ''Emblemă a întrupării Luminii'' și un Gragas."
-  },
-  "TFT5_Augment_SentinelCrown": {
-    "name": "Coroana santinelelor",
-    "desc": "Primești o ''Emblemă a santinelelor'', un ''Vânător de uriași'' și o Senna."
-  },
-  "TFT5_Augment_HellionCrest": {
-    "name": "Blazonul năpastelor",
-    "desc": "Primești o ''Emblemă a năpastelor'' și un Kennen."
-  },
-  "TFT5_Augment_Sentinel": {
-    "name": "Santinelele Luminii",
-    "desc": "De fiecare dată când scutul unei santinele e transferat unei noi ținte, toate santinelele primesc @AttackSpeedPercent*100@% viteză de atac, valoare ce se cumulează de până la @MaxStack@ ori. Primești un Olaf și o Senna."
-  },
-  "TFT5_Augment_PykeCarryPlus": {
-    "name": "Zelotul de pe docuri+",
-    "desc": "Primești un Pyke de 2 stele. Abilitatea celui mai puternic Pyke din echipa ta nu mai amețește, dar provoacă 200% daune, iar costul de mană scade cu 60 (de la 120)."
-  },
-  "TFT5_Augment_DraconicCrown": {
-    "name": "Coroana draconicilor",
-    "desc": "Primești o ''Emblemă a draconicilor'', un ''Toiag al arhanghelului'' și o Zyra."
-  },
-  "TFT5_Augment_SejuaniCarry": {
-    "name": "Mânia nopții",
-    "desc": "Primești o Sejuani. Cât timp este activă ''Armura de gheață'', atacurile celei mai puternice Sejuani din echipa ta provoacă daune magice suplimentare în valoare de @ArmorDamageRatio*100@% din armura ei."
-  },
-  "TFT5_Augment_LegionnaireCrest": {
-    "name": "Blazonul legionarilor",
-    "desc": "Primești o ''Emblemă a legionarilor'' și o Irelia."
-  },
-  "TFT5_Augment_Dawnbringer": {
-    "name": "Roua dimineții",
-    "desc": "O dată per luptă, la @HealthThresholdPercent*100@% viață, întrupările Luminii primesc @ManaRestore@ mană de-a lungul a @ManaDuration@ secunde. Primești o Nidalee."
-  },
-  "TFT5_Augment_KledCarry": {
-    "name": "Antrenament ecvestru",
-    "desc": "Primești un Kled de 2 stele. Cel mai puternic Kled din echipa ta primește @DamageAmp*100@% amplificarea daunelor și poate reîncăleca după ce atacă sau este lovit de @NumToAttack@ ori cât timp e pe jos."
-  },
-  "TFT5_Augment_InvokerCrown": {
-    "name": "Coroana invocatorilor",
-    "desc": "Primești o ''Emblemă a invocatorilor'', o ''Lance a lui Shojin'' și o Syndra."
-  },
-  "TFT5_Augment_ThreshCarry": {
-    "name": "Moartea se apropie",
-    "desc": "Primești un Thresh. Abilitatea celui mai puternic Thresh din echipa ta îl trage spre ținta sa, următorul său atac provoacă daune magice bonus în valoare de @BonusAPRatio*100@% din puterea abilităților, iar costul său de mană scade cu @ManaReduction@ (de la 120)."
-  },
-  "TFT5_Augment_RangerCrown": {
-    "name": "Coroana pădurarilor",
-    "desc": "Primești o ''Emblemă a pădurarilor'', o ''Sabie a morții'' și un Varus."
-  },
-  "TFT5_Augment_AssassinCrest": {
-    "name": "Blazonul asasinilor",
-    "desc": "Primești o ''Emblemă a asasinilor'' și un Kha'Zix."
-  },
-  "TFT5_Augment_SejuaniCarryPlus": {
-    "name": "Mânia nopții+",
-    "desc": "Primești o Sejuani de 2 stele. Cât timp este activă ''Armura de gheață'', atacurile celei mai puternice Sejuani din echipa ta provoacă daune magice suplimentare în valoare de @ArmorDamageRatio*100@% din armura ei."
-  },
-  "TFT5_Augment_RevenantCrest": {
-    "name": "Blazonul stafiilor",
-    "desc": "Primești o ''Emblemă a stafiilor'' și un Nocturne."
-  },
-  "TFT5_Augment_BrawlerCrown": {
-    "name": "Coroana bătăușilor",
-    "desc": "Primești o ''Emblemă a bătăușilor'', o ''Vestă de mărăcini'' și un Sett."
-  },
-  "TFT5_Augment_SkirmisherCrown": {
-    "name": "Coroana înaintașilor",
-    "desc": "Primești o ''Emblemă a înaintașilor'', o ''Sabie sângeroasă'' și un Olaf."
-  },
-  "TFT5_Augment_InvokerCrest": {
-    "name": "Blazonul invocatorilor",
-    "desc": "Primești o ''Emblemă a invocatorilor'' și o Syndra."
-  },
-  "TFT5_Augment_CavalierCrest": {
-    "name": "Blazonul călăreților",
-    "desc": "Primești o ''Emblemă a călăreților'' și un Hecarim."
-  },
-  "TFT5_Augment_SpellweaverCrown": {
-    "name": "Coroana maeștrilor vrăjilor",
-    "desc": "Primești o ''Emblemă a maeștrilor vrăjilor'', o ''Mănușă cu nestemate'' și un Brand."
-  },
-  "TFT5_Augment_ForgottenCrown": {
-    "name": "Coroana anonimilor",
-    "desc": "Primești o ''Emblemă a anonimilor'', o ''Spadă a furiei lui Guinsoo'' și o Vayne."
-  },
-  "TFT5_Augment_SentinelCrest": {
-    "name": "Blazonul santinelelor",
-    "desc": "Primești o ''Emblemă a santinelelor'' și o Senna."
-  },
-  "TFT5_Augment_Draconic": {
-    "name": "Afacere cu ouă",
-    "desc": "Ouăle draconice conțin aur suplimentar. Primești un Sett și o Ashe."
-  },
-  "TFT5_Augment_RevenantCrown": {
-    "name": "Coroana stafiilor",
-    "desc": "Primești o ''Emblemă a stafiilor'', o ''Sabie sângeroasă'' și un Nocturne."
-  },
-  "TFT5_Augment_NightbringerCrest": {
-    "name": "Blazonul întrupării Întunericului",
-    "desc": "Primești o ''Emblemă a întrupării Întunericului'' și o Sejuani."
-  },
-  "TFT5_Augment_DraconicCrest": {
-    "name": "Blazonul draconicilor",
-    "desc": "Primești o ''Emblemă a draconicilor'' și o Zyra."
-  },
-  "TFT5_Augment_KnightCrest": {
-    "name": "Blazonul cavalerilor",
-    "desc": "Primești o ''Emblemă a cavalerilor'' și un Thresh."
-  },
-  "TFT5_Augment_Redeemed": {
-    "name": "Calea către mântuire",
-    "desc": "Unitățile mântuite se vindecă în valoare de @Heal@ (valoare împărțită egal între ele) când moare un aliat mântuit. Prima dată când te vindeci în valoare de @HealingGoal@ în acest mod, primești o ''Izbăvire''. Primești o Lux.<br>(Valoare actuală:&nbsp;@TFTUnitProperty.item:TFT5_Augment_Redeemed_AmountHealed@)"
-  },
-  "TFT5_Augment_CannoneerCrown": {
-    "name": "Coroana tunarilor",
-    "desc": "Primești o ''Emblemă a tunarilor'', o ''Spadă a furiei lui Guinsoo'' și o Tristana."
-  },
-  "TFT5_Augment_DawnbringerCrown": {
-    "name": "Coroana întrupării Luminii",
-    "desc": "Primești o ''Emblemă a întrupării Luminii'', o ''Armură a lui Warmog'' și un Gragas."
-  },
-  "TFT5_Augment_RangerCrest": {
-    "name": "Blazonul pădurarilor",
-    "desc": "Primești o ''Emblemă a pădurarilor'' și un Varus."
-  },
-  "TFT5_Augment_RenewerCrown": {
-    "name": "Coroana reînnoitorilor",
-    "desc": "Primești o ''Emblemă a reînnoitorilor'', o ''Lance a lui Shojin'' și o Soraka."
-  },
-  "TFT5_Augment_Abomination": {
-    "name": "Spintecătorul monstruos",
-    "desc": "Monstruozitatea a echipat o secure! Atacurile sale lovesc acum într-o zonă în formă de con din fața sa și provoacă @CleaveRatio*100@% din daunele fizice. Primești o Kalista și un Nunu. "
-  },
-  "TFT5_Augment_ForgottenCrest": {
-    "name": "Blazonul anonimilor",
-    "desc": "Primești o ''Emblemă a anonimilor'' și o Vayne."
-  },
-  "TFT5_Augment_AssassinCrown": {
-    "name": "Coroana asasinilor",
-    "desc": "Primești o ''Emblemă a asasinilor'', ''Ultima șoaptă'' și un Kha'Zix."
-  },
-  "TFT5_Augment_IroncladCrown": {
-    "name": "Coroana blindaților",
-    "desc": "Primești o ''Emblemă a blindaților'', o ''Platoșă a garguiului'' și un Nautilus."
-  },
-  "TFT4_Augment_VanguardCrown": {
-    "name": "Coroana apărătorilor",
-    "desc": "Primești o ''Emblemă a apărătorilor'', o ''Vestă de mărăcini'' și un Nautilus."
-  },
-  "TFT4_Augment_Warlord": {
-    "name": "Tiran războinic",
-    "desc": "La începutul luptei, războinicul care a provocat cele mai multe daune în runda anterioară devine tiranul. Tiranul primește @BonusDamage@% amplificarea daunelor. Primești un Jarvan IV și o Nidalee."
-  },
-  "TFT4_Augment_ElderwoodCrown": {
-    "name": "Coroana spiritelor pădurii",
-    "desc": "Primești o ''Emblemă a spiritelor pădurii'', o ''Armură a lui Warmog'' și un Rakan."
-  },
-  "TFT4_Augment_Cultist": {
-    "name": "Ofrandele cultului",
-    "desc": "Pentru fiecare 1 aur peste @MinimumGold@, până la cel mult @MaximumGold@, pe care-l ai la începutul fazei de planificare, Galio primește permanent 5 viață. Primești un Twisted Fate, un Pyke și o Elise. <br>(Viață obținută:&nbsp;@TFTUnitProperty.item:TFT4_Augment_Cultist_HealthGained@)"
-  },
-  "TFT4_Augment_CultistCrown": {
-    "name": "Coroana cultiștilor",
-    "desc": "Primești o ''Emblemă a cultiștilor'', o ''Mantie solară'' și un Pyke."
-  },
-  "TFT4_Augment_DivineCrest": {
-    "name": "Blazonul divinilor",
-    "desc": "Primești o ''Emblemă a divinilor'' și un Jax."
-  },
-  "TFT4_Augment_SlayerCrest": {
-    "name": "Blazonul ucigașilor",
-    "desc": "Primești o ''Emblemă a ucigașilor'' și un Zed."
-  },
-  "TFT4_Augment_SpiritCrown": {
-    "name": "Coroana spiritelor",
-    "desc": "Primești o ''Emblemă a spiritelor'', un ''Dinte al lui Nashor'' și un Teemo."
-  },
-  "TFT4_Augment_Fortune": {
-    "name": "Manechinul aurului",
-    "desc": "Când ''Norocul'' este activ, primești un ''Manechin al aurului'' care te ajută în luptă sau oferă aur, în funcție de amplasarea pe tablă. Primești un Tahm Kench și o Annie. "
-  },
-  "TFT4_Augment_WukongCarry": {
-    "name": "Cel legendar",
-    "desc": "Primești un Wukong de 2 stele. Cel mai puternic Wukong primește caracteristica legendar. Când Wukong are 3 stele și caracteristica legendar activă, își recuperează gloria de odinioară."
-  },
-  "TFT4_Augment_SyphonerCrest": {
-    "name": "Blazonul hoților de energie",
-    "desc": "Primești o ''Emblemă a hoților de energie'' și un Vladimir."
-  },
-  "TFT4_Augment_Exile": {
-    "name": "Cel exilat",
-    "desc": "Primești un Yasuo și un Yone. Acest Yone nu poate fi trimis în luptă decât în etapa 5 sau când Yasuo obține 30 de asasinate.<br>(Asasinate:&nbsp;@TFTUnitProperty.item:TFT4_Augment_Exile_KillCounter@)"
-  },
-  "TFT4_Augment_BrawlerCrest": {
-    "name": "Blazonul bătăușilor",
-    "desc": "Primești o ''Emblemă a bătăușilor'' și o Vi."
-  },
-  "TFT4_Augment_DuelistCrown": {
-    "name": "Coroana dueliștilor",
-    "desc": "Primești o ''Emblemă a dueliștilor'', o ''Voință a titanului'' și un Jax."
-  },
-  "TFT4_Augment_KeeperCrown": {
-    "name": "Coroana paznicilor",
-    "desc": "Primești o ''Emblemă a paznicilor'', un ''Morellonomicon'' și un Jarvan IV."
-  },
-  "TFT4_Augment_AssassinCrown": {
-    "name": "Coroana asasinilor",
-    "desc": "Primești o ''Emblemă a asasinilor'', o ''Taină a întunericului'' și un Pyke."
-  },
-  "TFT4_Augment_Executioner": {
-    "name": "Partea călăului",
-    "desc": "Călăii tăi îi execută pe inamicii care au sub @ExecuteThreshold*100@% viață. Execuțiile au @GoldChance*100@% șanse să ofere 1 aur. Primești un Kindred."
-  },
-  "TFT4_Augment_MageCrest": {
-    "name": "Blazonul magilor",
-    "desc": "Primești o ''Emblemă a magilor'' și o Lulu."
-  },
-  "TFT4_Augment_DuelistCrest": {
-    "name": "Blazonul dueliștilor",
-    "desc": "Primești o ''Emblemă a dueliștilor'' și un Jax."
-  },
-  "TFT4_Augment_ElderwoodCrest": {
-    "name": "Blazonul spiritelor pădurii",
-    "desc": "Primești o ''Emblemă a spiritelor pădurii'' și un Rakan."
-  },
-  "TFT4_Augment_Slayer": {
-    "name": "Voința ucigașilor",
-    "desc": "Când ucigașii tăi provoacă sau suferă daune, primesc @BonusResistances@ armură și rezistență la magie cumulative pentru restul luptei (maximum: @StackCap@ cumuluri). Primești un Pyke și un Zed."
-  },
-  "TFT4_Augment_EnlightenedCrown": {
-    "name": "Coroana iluminaților",
-    "desc": "Primești o ''Emblemă a iluminaților'', o ''Lance a lui Shojin'' și o Janna."
-  },
-  "TFT4_Augment_SlayerCrown": {
-    "name": "Coroana ucigașilor",
-    "desc": "Primești o ''Emblemă a ucigașilor'', o ''Mână a justiției'' și un Zed."
-  },
-  "TFT4_Augment_Divine": {
-    "name": "Zel divin",
-    "desc": "Când evoluează, unitățile divinilor primesc @BonusAS*100@% viteză de atac. Primești un Nasus."
-  },
-  "TFT4_Augment_WarlordCrest": {
-    "name": "Blazonul războinicilor",
-    "desc": "Primești o ''Emblemă a războinicilor'' și o Vi."
-  },
-  "TFT4_Augment_FortuneCrown": {
-    "name": "Coroana norocului",
-    "desc": "Primești o ''Emblemă a norocului'', o ''Platoșă a garguiului'' și o Annie."
-  },
-  "TFT4_Augment_Elderwood": {
-    "name": "Rădăcini crescute",
-    "desc": "Spiritele pădurii primesc @Health@ viață maximă (maximum @MaxHealth@) pentru fiecare rundă începută în același hexagon. Primești un Maokai și o Lulu."
-  },
-  "TFT4_Augment_VanguardCrest": {
-    "name": "Blazonul apărătorilor",
-    "desc": "Primești o ''Emblemă a apărătorilor'' și un Nautilus."
-  },
-  "TFT4_Augment_DragonsoulCrown": {
-    "name": "Coroana sufletelor dragonilor",
-    "desc": "Primești o ''Emblemă a sufletelor dragonilor'', o ''Scânteie ionică'' și un Braum."
-  },
-  "TFT4_Augment_AssassinCrest": {
-    "name": "Blazonul asasinilor",
-    "desc": "Primești o ''Emblemă a asasinilor'' și un Pyke."
-  },
-  "TFT4_Augment_SpiritCrest": {
-    "name": "Blazonul spiritelor",
-    "desc": "Primești o ''Emblemă a spiritelor'' și un Teemo."
-  },
-  "TFT4_Augment_DivineCrown": {
-    "name": "Coroana divinilor",
-    "desc": "Primești o ''Emblemă a divinilor'', un ''Argint viu'' și un Jax."
-  },
-  "TFT4_Augment_SyphonerCrown": {
-    "name": "Coroana hoților de energie",
-    "desc": "Primești o ''Emblemă a hoților de energie'', un ''Coif cameleonic'' și un Vladimir."
-  },
-  "TFT4_Augment_MageCrown": {
-    "name": "Coroana magilor",
-    "desc": "Primești o ''Emblemă a magilor'', o ''Mănușă cu nestemate'' și o Lulu."
-  },
-  "TFT4_Augment_EnlightenedCrest": {
-    "name": "Blazonul iluminaților",
-    "desc": "Primești o ''Emblemă a iluminaților'' și o Janna."
-  },
-  "TFT4_Augment_Sharpshooter": {
-    "name": "Lovitură cu ricoșeu",
-    "desc": "Atacurile și abilitățile maeștrilor preciziei primesc încă @ExtraBounces@ ricoșeu, provocând @DamageReduction*100@% din daunele inițiale. Primești o Tristana și un Teemo."
-  },
-  "TFT4_Augment_BrawlerCrown": {
-    "name": "Coroana bătăușilor",
-    "desc": "Primești o ''Emblemă a bătăușilor'', o ''Sabie sângeroasă'' și o Vi."
-  },
-  "TFT4_Augment_CultistCrest": {
-    "name": "Blazonul cultiștilor",
-    "desc": "Primești o ''Emblemă a cultiștilor'' și un Pyke."
-  },
-  "TFT4_Augment_Dragonsoul": {
-    "name": "Suflarea mamei dragonilor",
-    "desc": "După @DelayTime@ secunde de luptă, dragonul lovește tabla, provocându-le inamicilor daune magice în valoare de @TrueDamageHPRatio*100@% din viața maximă și oferindu-le tuturor aliaților @AttackSpeedBuff*100@% viteză de atac pentru restul luptei. Primești o Tristana și un Braum."
-  },
-  "TFT4_Augment_KeeperCrest": {
-    "name": "Blazonul paznicilor",
-    "desc": "Primești o ''Emblemă a paznicilor'' și un Jarvan IV."
-  },
-  "TFT4_Augment_WarlordCrown": {
-    "name": "Coroana războinicilor",
-    "desc": "Primești o ''Emblemă a războinicilor'', o ''Gheară a lui Sterak'' și o Vi."
-  },
-  "TFT4_Augment_DragonsoulCrest": {
-    "name": "Blazonul sufletelor dragonilor",
-    "desc": "Primești o ''Emblemă a sufletelor dragonilor'' și un Braum."
-  },
-  "TFT4_Augment_FortuneCrest": {
-    "name": "Blazonul norocului",
-    "desc": "Primești o ''Emblemă a norocului'' și o Annie."
-  },
   "TFT9_Augment_Commander_Amplify2": {
     "name": "Amplificare II",
     "desc": "Echipa ta primește @CritDamage@% daune din lovituri critice."
@@ -5643,162 +5231,6 @@
     "name": "Revolver recuperat",
     "desc": "Primește @APPerTick@ puterea abilităților la fiecare @TickRate@ secunde.<br><rules>Utilizatori recomandați: Silco și Renata Glasc</rules>"
   },
-  "TFT5_Item_InvokerEmblemItem": {
-    "name": "Emblema invocatorilor",
-    "desc": "Deținătorul primește caracteristica invocator.<br><br><tftitemrules>[Unic – doar unul per campion.<br>Enigmatic – nu poate fi creat.]</tftitemrules>"
-  },
-  "TFT5_Item_SpellweaverEmblemItem": {
-    "name": "Emblema maeștrilor vrăjilor",
-    "desc": "Deținătorul primește caracteristica maestru al vrăjilor.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT5_Item_DawnbringerEmblemItem": {
-    "name": "Emblema întrupării Luminii",
-    "desc": "Deținătorul primește caracteristica întruparea Luminii.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT5_Item_ForgottenEmblemItem": {
-    "name": "Emblema anonimilor",
-    "desc": "Deținătorul primește caracteristica anonim.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT5_Item_CavalierSpatulaItem_Radiant": {
-    "name": "tft_item_name_Set5Cavalier_RadiantSpat",
-    "desc": "tft_item_description_Set5Cavalier_RadiantSpat"
-  },
-  "TFT5_Item_NightbringerSpatulaItem_Radiant": {
-    "name": "tft_item_name_Set5Nightbringer_RadiantSpat",
-    "desc": "tft_item_description_Set5Nightbringer_RadiantSpat"
-  },
-  "TFT5_Item_AssassinEmblemItem": {
-    "name": "Emblema asasinilor",
-    "desc": "Deținătorul primește caracteristica asasin.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT5_Item_SentinelEmblemItem": {
-    "name": "Emblema santinelelor",
-    "desc": "Deținătorul primește caracteristica santinelă.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT5_Item_AbominationSpatulaItem_Radiant": {
-    "name": "tft_item_name_Set5Abomination_RadiantSpat",
-    "desc": "tft_item_description_Set5Abomination_RadiantSpat"
-  },
-  "TFT5_Item_SpellweaverSpatulaItem_Radiant": {
-    "name": "tft_item_name_Set5Spellweaver_RadiantSpat",
-    "desc": "tft_item_description_Set5Spellweaver_RadiantSpat"
-  },
-  "TFT5_Item_SkirmisherSpatulaItem_Radiant": {
-    "name": "tft_item_name_Set5Skirmisher_RadiantSpat",
-    "desc": "tft_item_description_Set5Skirmisher_RadiantSpat"
-  },
-  "TFT5_Item_DawnbringerSpatulaItem_Radiant": {
-    "name": "tft_item_name_Set5Dawnbringer_RadiantSpat",
-    "desc": "tft_item_description_Set5Dawnbringer_RadiantSpat"
-  },
-  "TFT5_Item_CannoneerEmblemItem": {
-    "name": "Emblema tunarilor",
-    "desc": "Deținătorul primește caracteristica tunar.<br><br><tftitemrules>[Unic – doar unul per campion.<br>Enigmatic – nu poate fi creat.]</tftitemrules>"
-  },
-  "TFT5_Item_DraconicEmblemItem": {
-    "name": "Emblema draconicilor",
-    "desc": "Deținătorul primește caracteristica draconic.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT5_Item_RenewerEmblemItem": {
-    "name": "Emblema reînnoitorilor",
-    "desc": "Deținătorul primește caracteristica reînnoitor.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT5_Item_AssassinSpatulaItem_Radiant": {
-    "name": "tft_item_name_Set5Assassin_RadiantSpat",
-    "desc": "tft_item_description_Set5Assassin_RadiantSpat"
-  },
-  "TFT5_Item_MysticEmblemItem": {
-    "name": "Emblema misticilor",
-    "desc": "Deținătorul primește caracteristica mistic.<br><br><tftitemrules>[Unic – doar unul per campion.<br>Enigmatic – nu poate fi creat.]</tftitemrules>"
-  },
-  "TFT5_Item_CovenSpatulaItem_Radiant": {
-    "name": "tft_item_name_Set5Coven_RadiantSpat",
-    "desc": "tft_item_description_Set5Coven_RadiantSpat"
-  },
-  "TFT5_Item_RedeemedSpatulaItem_Radiant": {
-    "name": "tft_item_name_Set5Redeemed_RadiantSpat",
-    "desc": "tft_item_description_Set5Redeemed_RadiantSpat"
-  },
-  "TFT5_Item_HellionSpatulaItem_Radiant": {
-    "name": "tft_item_name_Set5Hellion_RadiantSpat",
-    "desc": "tft_item_description_Set5Hellion_RadiantSpat"
-  },
-  "TFT5_Item_NightbringerEmblemItem": {
-    "name": "Emblema întrupării Întunericului",
-    "desc": "Deținătorul primește caracteristica întruparea Întunericului.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT5_Item_IroncladEmblemItem": {
-    "name": "Emblema blindaților",
-    "desc": "Deținătorul primește caracteristica blindat.<br><br><tftitemrules>[Unic – doar unul per campion.<br>Enigmatic – nu poate fi creat.]</tftitemrules>"
-  },
-  "TFT5_Item_HellionEmblemItem": {
-    "name": "Emblema năpastelor",
-    "desc": "Deținătorul primește caracteristica năpastă.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT5_Item_KnightEmblemItem": {
-    "name": "Emblema cavalerilor",
-    "desc": "Deținătorul primește caracteristica cavaler.<br><br><tftitemrules>[Unic – doar unul per campion.<br>Enigmatic – nu poate fi creat.]</tftitemrules>"
-  },
-  "TFT5_Item_RevenantEmblemItem": {
-    "name": "Emblema stafiilor",
-    "desc": "Deținătorul primește caracteristica stafie.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT5_Item_RedeemedEmblemItem": {
-    "name": "Emblema mântuiților",
-    "desc": "Deținătorul primește caracteristica mântuit.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT5_Item_CavalierEmblemItem": {
-    "name": "Emblema călăreților",
-    "desc": "Deținătorul primește caracteristica călăreț.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT5_Item_CovenEmblemItem": {
-    "name": "Emblema vrăjitoarelor",
-    "desc": "Deținătorul primește caracteristica vrăjitoare.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT5_Item_LegionnaireEmblemItem": {
-    "name": "Emblema legionarilor",
-    "desc": "Deținătorul primește caracteristica legionar.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT5_Item_ForgottenSpatulaItem_Radiant": {
-    "name": "tft_item_name_Set5Forgotten_RadiantSpat",
-    "desc": "tft_item_description_Set5Forgotten_RadiantSpat"
-  },
-  "TFT5_Item_RenewerSpatulaItem_Radiant": {
-    "name": "tft_item_name_Set5Renewer_RadiantSpat",
-    "desc": "tft_item_description_Set5Renewer_RadiantSpat"
-  },
-  "TFT5_Item_RangerEmblemItem": {
-    "name": "Emblema pădurarilor",
-    "desc": "Deținătorul primește caracteristica pădurar.<br><br><tftitemrules>[Unic – doar unul per campion.<br>Enigmatic – nu poate fi creat.]</tftitemrules>"
-  },
-  "TFT5_Item_AbominationEmblemItem": {
-    "name": "Emblema monștrilor",
-    "desc": "Deținătorul primește caracteristica monstru.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT5_Item_SkirmisherEmblemItem": {
-    "name": "Emblema înaintașilor",
-    "desc": "Deținătorul primește caracteristica înaintaș.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT5_Item_BrawlerEmblemItem": {
-    "name": "Emblema bătăușilor",
-    "desc": "Deținătorul primește caracteristica bătăuș.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT5_Item_RevenantSpatulaItem_Radiant": {
-    "name": "tft_item_name_Set5Revenant_RadiantSpat",
-    "desc": "tft_item_description_Set5Revenant_RadiantSpat"
-  },
-  "TFT5_Item_LegionnaireSpatulaItem_Radiant": {
-    "name": "tft_item_name_Set5Legionnaire_RadiantSpat",
-    "desc": "tft_item_description_Set5Legionnaire_RadiantSpat"
-  },
-  "TFT5_Item_DragonslayerEmblemItem": {
-    "name": "Emblema ucigașilor de dragoni",
-    "desc": "Deținătorul primește caracteristica ucigaș de dragoni.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT5_Item_IroncladSpatulaItem_Radiant": {
-    "name": "tft_item_name_Set5Ironclad_RadiantSpat",
-    "desc": "tft_item_description_Set5Ironclad_RadiantSpat"
-  },
   "TFT_Item_InfinityEdge": {
     "name": "Sabia infinitului",
     "desc": "Oferă <TFTKeyword>precizie</TFTKeyword>.<br><br>{{TFT_Keyword_Precision}}"
@@ -6162,10 +5594,6 @@
   "TFT_Assist_Gold_40": {
     "name": "40 aur",
     "desc": "40 aur"
-  },
-  "TFT4_Item_FortuneGoldGenerator": {
-    "name": "Veșminte de aur",
-    "desc": "@OnHitGoldChance*100@% șanse de a oferi aur când suferă daune. Maximum @MaxCap@ aur pe rundă. "
   },
   "TFT_Item_Artifact_LesserMirroredPersona": {
     "name": "Personalitate în oglindă minoră",
@@ -8267,10 +7695,6 @@
     "name": "Emblema de jad",
     "desc": "Deținătorul primește caracteristica jad."
   },
-  "TFT4_Consumable_KaynBlue": {
-    "name": "Eliberarea lui Kayn",
-    "desc": "Plasează-l pe Kayn pentru a-l elibera de Rhaast, îmbunătățindu-i permanent vraja ''Lovitura coasei'' pentru a provoca daune bonus la începutul luptei.<br><br><tftitemrules>[CONSUMABIL KAYN – acest obiect dispare când este folosit și ELIMINĂ ''Îmbrățișarea lui Rhaast'']</tftitemrules><br><br><tftitemrules>[Poate fi folosit doar în timpul fazei de planificare]</tftitemrules>"
-  },
   "TFT9_Item_OrnnHullbreaker": {
     "name": "Distrugător de nave",
     "desc": "Începutul luptei: dacă nu există aliați adiacenți, oferă @ExtraHealth@ viață, @ExtraADandAP@% daune din atac și @ExtraADandAP@% puterea abilităților."
@@ -8867,74 +8291,6 @@
     "name": "Eliminator magnetic <rules>(9 folosiri rămase!)</rules>",
     "desc": "Folosește-l pe un campion pentru a-l dezechipa de toate obiectele.<br><br><tftitemrules> [Nu poate fi folosit pe campionii de pe tablă în timpul luptei.]<br>[Consumabil – Acest obiect dispare când este folosit.]</tftitemrules>"
   },
-  "TFT4_Item_ElderwoodEmblemItem": {
-    "name": "Emblema spiritelor pădurii",
-    "desc": "Deținătorul primește caracteristica spirit al pădurii.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT4_Item_BrawlerEmblemItem": {
-    "name": "Emblema bătăușilor",
-    "desc": "Deținătorul primește caracteristica bătăuș.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT4_Item_AssassinEmblemItem": {
-    "name": "Emblema asasinilor",
-    "desc": "Deținătorul primește caracteristica asasin.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT4_Item_MageEmblemItem": {
-    "name": "Emblema magilor",
-    "desc": "Deținătorul primește caracteristica mag.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT4_Item_DivineEmblemItem": {
-    "name": "Emblema divinilor",
-    "desc": "Deținătorul primește caracteristica divin.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT4_Item_WarlordEmblemItem": {
-    "name": "Emblema războinicilor",
-    "desc": "Deținătorul primește caracteristica războinic.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT4_Item_KeeperEmblemItem": {
-    "name": "Emblema paznicilor",
-    "desc": "Deținătorul primește caracteristica paznic.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT4_Item_DuskEmblemItem": {
-    "name": "Emblema amurgului",
-    "desc": "Deținătorul primește caracteristica amurg.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT4_Item_FortuneEmblemItem": {
-    "name": "Emblema norocului",
-    "desc": "Deținătorul primește caracteristica noroc.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT4_Item_CultistEmblemItem": {
-    "name": "Emblema cultiștilor",
-    "desc": "Deținătorul primește caracteristica cultist.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT4_Item_DragonsoulEmblemItem": {
-    "name": "Emblema sufletelor dragonilor",
-    "desc": "Deținătorul primește caracteristica suflet al dragonului.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT4_Item_SyphonerEmblemItem": {
-    "name": "Emblema hoților de energie",
-    "desc": "Deținătorul primește caracteristica hoț de energie.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT4_Item_EnlightenedEmblemItem": {
-    "name": "Emblema iluminaților",
-    "desc": "Deținătorul primește caracteristica iluminat.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT4_Item_SlayerEmblemItem": {
-    "name": "Emblema ucigașilor",
-    "desc": "Deținătorul primește caracteristica ucigaș.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT4_Item_SpiritEmblemItem": {
-    "name": "Emblema spiritelor",
-    "desc": "Deținătorul primește caracteristica spirit.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT4_Item_DuelistEmblemItem": {
-    "name": "Emblema dueliștilor",
-    "desc": "Deținătorul primește caracteristica duelist.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT4_Item_VanguardEmblemItem": {
-    "name": "Emblema apărătorilor",
-    "desc": "Deținătorul primește caracteristica apărător.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
   "TFT4_Item_OrnnMuramana": {
     "name": "Manazane",
     "desc": "După prima folosire în timpul unei lupte, primești @ManaRestore@ mană de-a lungul a @ManaDuration@ secunde.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
@@ -9447,10 +8803,6 @@
     "name": "Roiul Santinelelor",
     "desc": "La fiecare 3 secunde, invoci o Santinelă puternică echipată cu obiecte complete, obiecte radiante și artefacte."
   },
-  "TFT4_Consumable_KaynRed": {
-    "name": "Îmbrățișarea lui Rhaast",
-    "desc": "Plasează-l pe Kayn pentru a-l forța pe Rhaast să pună stăpânire pe el, îmbunătățind permanent vraja ''Lovitura coasei'', care îl va vindeca.<br><br><tftitemrules>[CONSUMABIL PENTRU KAYN – Acest obiect dispare când este folosit și DISTRUGE ''Eliberarea lui Kayn'']</tftitemrules><br><br><tftitemrules>[Poate fi folosit doar în faza de planificare]</tftitemrules>"
-  },
   "TFT_Item_Artifact_ForbiddenIdol": {
     "name": "Idol interzis",
     "desc": "@PercentShieldConversion@% din valoarea scuturilor este convertită în viață maximă."
@@ -9706,22 +9058,6 @@
   "TFT_Item_Artifact_UnendingDespair": {
     "name": "Disperare nemărginită",
     "desc": "De fiecare dată când este distrus un scut al deținătorului, cel mai apropiat inamic suferă daune magice egale cu @PercentDamage@% din valoarea inițială a acelui scut."
-  },
-  "TFT5_Item_LocketOfTheIronSolariShadow": {
-    "name": "Blazonul solarilor de argint",
-    "desc": "Începutul luptei: deținătorul și toți aliații de pe același rând aflați la cel mult @HexRange@ hexagoane primesc <TFTShadowItemBonus>@BonusDefenses@ armură și rezistență la magie bonus</TFTShadowItemBonus>, <TFTShadowItemPenalty>dar primesc cu 5 mai puțină mană per atac.</TFTShadowItemPenalty>"
-  },
-  "TFT5_Item_ChaliceOfPowerShadow": {
-    "name": "Pocalul cruzimii",
-    "desc": "Începutul luptei: le oferă %i:scaleAP% <TFTShadowItemBonus>@BonusAP@ puterea abilităților</TFTShadowItemBonus> aliaților aflați pe o rază de cel mult @HexRange@ hexagon de pe același rând. <TFTShadowItemPenalty>Deținătorul pierde %i:scaleAP% @APLost@ puterea abilităților în loc să o primească.</TFTShadowItemPenalty>"
-  },
-  "TFT5_Item_ZephyrShadow": {
-    "name": "Zefir violent",
-    "desc": "Începutul luptei: invocă un vârtej de cealaltă parte a arenei, care îl scoate din luptă pe cel mai apropiat inamic timp de <TFTShadowItemBonus>@BanishDuration@ secunde</TFTShadowItemBonus>. <TFTShadowItemPenalty>După ce inamicul revine în luptă, acesta primește 30 daune bonus din atac și 30 puterea abilităților pentru restul luptei.</TFTShadowItemPenalty> <br><br><tftitemrules>[Ignoră imunitatea la controlul maselor]</tftitemrules><br><tftitemrules>[Unic – doar 1 per campion]</tftitemrules>"
-  },
-  "TFT5_Item_ShroudOfStillnessShadow": {
-    "name": "Vălul întunecat al nemișcării",
-    "desc": "Începutul luptei: lansează un fascicul în față <TFTShadowItemPenalty>și în spate</TFTShadowItemPenalty>, care <TFTKeyword>crește mana maximă</TFTKeyword> a inamicilor și a <TFTShadowItemPenalty>celorlalți aliați</TFTShadowItemPenalty> cu <TFTShadowItemBonus>@CostIncrease@%</TFTShadowItemBonus>.<br><br><tftitemrules>[Unic – doar 1 per campion]</tftitemrules><br><tftitemrules><tftbold>Creșterea manei maxime</tftbold>: crește mana maximă până la următoarea folosire a vrăjii.</tftitemrules>"
   },
   "TFT4_Item_OrnnEternalWinter": {
     "name": "Iarna eternă",
@@ -10469,7 +9805,7 @@
   },
   "DA_KnickKnackJar18_Upgrade": {
     "name": "Knick-Knack Jar",
-    "desc": "Gain @Upgrade_Boost1_Num@ consumable that gives permanent Attack Damage or Attack Speed."
+    "desc": "Gain @Upgrade_Boost1_Num@ consumables that give permanent Attack Damage or Attack Speed."
   },
   "DA_ForestTwinsUpgrade18": {
     "name": "Forest Twins",
@@ -10557,7 +9893,7 @@
   },
   "DA_RolyPolysUpgrade18": {
     "name": "Roly-Polys",
-    "desc": "For each ally champion alive at @Upgrade_WaitTime@ seconds, gain a reroll."
+    "desc": "For each ally champion alive after @Upgrade_WaitTime@ seconds, gain a reroll."
   },
   "DA_Lucky718": {
     "name": "Lucky 7",
@@ -10613,7 +9949,7 @@
   },
   "DA_SlowStudy18": {
     "name": "Slow Study",
-    "desc": "For each ally champion alive at @WaitTime@ seconds, gain @XPAdded@ XP."
+    "desc": "For each ally champion alive after @WaitTime@ seconds, gain @XPAdded@ XP."
   },
   "DA_BearsVisit18": {
     "name": "Bear's Visit",
@@ -10777,7 +10113,7 @@
   },
   "DA_ThingamajigJar18_Upgrade": {
     "name": "Thingamajig Jar",
-    "desc": "Gain @Upgrade_Boost1_Num@ consumable that gives permanent Ability Power or Mana Regen."
+    "desc": "Gain @Upgrade_Boost1_Num@ consumables that give permanent Ability Power or Mana Regen."
   },
   "DA_18_BloodMoney_Upgrade": {
     "name": "Blood Money",
@@ -10916,8 +10252,8 @@
     "desc": "Your Casters have @MaxManaMultiplierUpgrade*100@% reduced Max Mana."
   },
   "DA_BeggarsWisp18_Upgrade": {
-    "name": "TFT18_Charm_BeggarsWisp_Upgrade_Name",
-    "desc": "TFT18_Charm_BeggarsWisp_Upgrade_Description"
+    "name": "Beggar's Wisp",
+    "desc": "The wilds couldn't find a wisp for you this roll. Gain @GoldUpgrade@ gold."
   },
   "DA_NaturesWrath18": {
     "name": "Nature's Wrath",
@@ -10945,7 +10281,7 @@
   },
   "DA_SlowStudyUpgrade18": {
     "name": "Slow Study",
-    "desc": "For each ally champion alive at @WaitTimeUpgrade@ seconds, gain @XPAdded@ XP."
+    "desc": "For each ally champion alive after @WaitTimeUpgrade@ seconds, gain @XPAdded@ XP."
   },
   "DA_KnickKnackJar18": {
     "name": "Knick-Knack Jar",
@@ -11045,7 +10381,7 @@
   },
   "DA_HerosEntranceUpgrade18": {
     "name": "Hero's Entrance",
-    "desc": "After @UnitJoinDelayUpgrade@ seconds, the leftmost benched champion joins combat and gains @NumRecItemsUpgrade@"
+    "desc": "After @UnitJoinDelayUpgrade@ seconds, the leftmost benched champion joins combat and gains @NumRecItemsUpgrade@ recommended items."
   },
   "DA_18_EarlyFix_Upgrade": {
     "name": "Early Fix",
@@ -11057,7 +10393,7 @@
   },
   "DA_18_Starfall_Upgrade": {
     "name": "Starfall",
-    "desc": "The first @UpgradeShopLimit@ times you reroll your shop this round, , the lowest cost champion becomes 2-star."
+    "desc": "The first @UpgradeShopLimit@ times you reroll your shop this round, the lowest cost champion becomes 2-star."
   },
   "DA_GoldenGoose18": {
     "name": "Golden Goose",
@@ -11157,7 +10493,7 @@
   },
   "DA_Scrappy18": {
     "name": "Scrappy",
-    "desc": "Combat start: @NumChamps@ champion without items gains a temporary recommended item."
+    "desc": "Combat start: @NumChamps@ champions without items gain a temporary recommended item."
   },
   "DA_StandAlone18_Prismatic": {
     "name": "Stand Alone",
@@ -11408,8 +10744,8 @@
     "desc": "Every @Timer@ seconds, your champions have a @PercentChance*100@% chance to drop @GoldDrop@ Gold."
   },
   "DA_BeggarsWisp18": {
-    "name": "TFT18_Charm_BeggarsWisp_Name",
-    "desc": "TFT18_Charm_BeggarsWisp_Description"
+    "name": "Beggar's Wisp",
+    "desc": "The wilds couldn't find a wisp for you this roll. Gain @Gold@ gold."
   },
   "DA_TurtlesVisit18_Upgrade": {
     "name": "Turtle's Visit",
@@ -11541,7 +10877,7 @@
   },
   "DA_DoodadJar18_Upgrade": {
     "name": "Doodad Jar",
-    "desc": "Gain @Upgrade_Boost1_Num@ consumable that gives permanent Armor and Magic Resist or Health."
+    "desc": "Gain @Upgrade_Boost1_Num@ consumables that give permanent Armor and Magic Resist or Health."
   },
   "DA_NaturesAlly18": {
     "name": "Nature's Ally",
@@ -11665,7 +11001,7 @@
   },
   "DA_RolyPolys18": {
     "name": "Roly-Polys",
-    "desc": "For each ally champion alive at @WaitTime@ seconds, gain a reroll."
+    "desc": "For each ally champion alive after @WaitTime@ seconds, gain a reroll."
   },
   "DA_Lucky718_Upgrade": {
     "name": "Lucky 7",
@@ -11948,7 +11284,7 @@
     "desc": null
   },
   "DA_ThiefsGloves": {
-    "name": "TFT18_DA_ThiefsGloves_name",
+    "name": "Thief's Gloves",
     "desc": null
   },
   "DA_InfinityEdge": {
@@ -11956,7 +11292,7 @@
     "desc": null
   },
   "DA_Artifact_LudensTempest": {
-    "name": "TFT18_DA_Artifact_LudensTempest_name",
+    "name": "Luden's Tempest",
     "desc": null
   },
   "DA_Consumable_ItemRemover": {
@@ -12200,7 +11536,7 @@
     "desc": null
   },
   "DA_RadiantLuckyItemChest": {
-    "name": "TFT18_DA_RadiantLuckyItemChest_name",
+    "name": "Radiant Lucky Item Chest",
     "desc": null
   },
   "DA_AbilityBooster18": {
@@ -12220,7 +11556,7 @@
     "desc": null
   },
   "DA_TitansResolve_Radiant": {
-    "name": "TFT18_DA_TitansResolve_Radiant_name",
+    "name": "Radiant Titan's Resolve",
     "desc": null
   },
   "DA_18_EmblemExecutioner": {
@@ -12304,7 +11640,7 @@
     "desc": null
   },
   "DA_Artifact_MogulsMail": {
-    "name": "TFT18_DA_Artifact_MogulsMail_name",
+    "name": "Mogul'sMail",
     "desc": null
   },
   "DA_BlueBuffRadiant": {
@@ -12320,7 +11656,7 @@
     "desc": null
   },
   "DA_ThiefsGlovesRadiant": {
-    "name": "TFT18_DA_ThiefsGlovesRadiant_name",
+    "name": "Radiant Thief's Gloves",
     "desc": null
   },
   "DA_Crownguard": {
@@ -13302,178 +12638,6 @@
   "TFT16_FreljordSelector": {
     "name": "Cadoul războinicei-mamă",
     "desc": "<rules>Acest obiect urmărește amplificarea daunelor oferită de ''Piatra Wryding''</rules>"
-  },
-  "TFT5_Item_SpearOfShojinShadow": {
-    "name": "Lancea spectrală a lui Shojin",
-    "desc": "Atacurile deținătorului refac %i:scaleMana% <TFTShadowItemBonus>@FlatManaRestore@ mană suplimentară.</TFTShadowItemBonus>"
-  },
-  "TFT5_Item_BlueBuffShadow": {
-    "name": "Buff-ul albastru foarte închis",
-    "desc": "După ce își folosește abilitatea, deținătorul primește %i:scaleMana% <TFTShadowItemBonus>@PostCastMana@</TFTShadowItemBonus> mană.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT5_Item_ZekesHeraldShadow": {
-    "name": "Solul dezolant al lui Zeke",
-    "desc": "La începutul luptei, deținătorul <TFTShadowItemPenalty>reduce cu %i:scaleAS% @AttackSpeedReduction@% viteza de atac a tuturor aliaților de pe același rând aflați la maximum @HexRange@ hexagoane distanță.</TFTShadowItemPenalty> <TFTShadowItemBonus>Deținătorul primește apoi %i:scaleAS% @AttackSpeed@% viteză de atac pentru fiecare aliat afectat.</TFTShadowItemBonus>"
-  },
-  "TFT5_Item_GargoyleStoneplateShadow": {
-    "name": "Platoșa imortalității garguiului",
-    "desc": "Deținătorul se vindecă în valoare de @HealingPerEnemy@ la fiecare @SecondsBetweenHeals@ secunde pentru fiecare unitate care îl țintește."
-  },
-  "TFT5_Item_BrambleVestShadow": {
-    "name": "Vestă de mărăcini refractată",
-    "desc": "Oferă %i:scaleArmor% @TooltipDisplayArmor@ armură bonus (inclusiv componentele)."
-  },
-  "TFT5_Item_RabadonsDeathcapShadow": {
-    "name": "Pălăria caustică a lui Rabadon",
-    "desc": "Oferă %i:scaleAP% <TFTShadowItemBonus>@TooltipDisplayAP@</TFTShadowItemBonus> puterea abilităților bonus (inclusiv componentele). "
-  },
-  "TFT5_Item_SpatulaShadow": {
-    "name": "Spatulă spectrală",
-    "desc": "Trebuie să facă <i>ceva <TFTShadowItemBonus>diabolic</TFTShadowItemBonus></i>..."
-  },
-  "TFT5_Item_NegatronCloakShadow": {
-    "name": "Mantie spectrală",
-    "desc": "%i:scaleMR% +@MagicResist@ rezistență la magie"
-  },
-  "TFT5_Item_StatikkShivShadow": {
-    "name": "Pumnal electrostatic",
-    "desc": "<TFTShadowItemBonus>La fiecare al doilea</TFTShadowItemBonus> atac, deținătorul dezlănțuie fulgere în lanț care lovesc @1StarBounces@ inamici, provocând @Damage@ daune magice și reducându-le rezistența la magie cu @MRShred@% timp de @MRShredDuration@ secunde. "
-  },
-  "TFT5_Item_RedemptionShadow": {
-    "name": "Izbăvire de sacrificiu",
-    "desc": "Deținătorul le oferă o aură <TFTShadowItemBonus>tuturor aliaților de pe tablă</TFTShadowItemBonus> cu excepția sa și îi vindecă în valoare de <TFTShadowItemPenalty>@MissingHealthHeal@%</TFTShadowItemPenalty> din viața lipsă la fiecare @HealTickRate@ secunde."
-  },
-  "TFT5_Item_QuicksilverShadow": {
-    "name": "Argint viu caustic",
-    "desc": "Deținătorul primește imunitate la efectele de control al maselor <TFTShadowItemBonus>pe toată durata luptei</TFTShadowItemBonus>.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT5_Item_RecurveBowShadow": {
-    "name": "Arc spectral",
-    "desc": "%i:scaleAS% +@AS@% viteză de atac"
-  },
-  "TFT5_Item_HandOfJusticeShadow": {
-    "name": "Mâna răzbunării",
-    "desc": "<TFTShadowItemBonus>La începutul luptei, deținătorul primește:</TFTShadowItemBonus><li>+@BonusAD@ daune din atac și +@BonusSP@ puterea abilităților.</li> <li>Atacurile și abilitățile vindecă în valoare de @TraitMultiplier@% din daunele provocate.</li><br><TFTShadowItemPenalty>Aceste bonusuri expiră după fiecare doborâre și se reînnoiesc la următoarea.</TFTShadowItemPenalty>"
-  },
-  "TFT5_Item_InfinityEdgeShadow": {
-    "name": "Sabia de sacrificiu a infinitului",
-    "desc": "Oferă @CritChance@% șanse de lovitură critică (inclusiv componentele). Fiecare punct de șanse de lovitură critică peste 100% se transformă în +@BonusCritDmgPerCritAbove100@% daune din lovituri critice. <br><br><TFTShadowItemBonus>Deținătorul primește și @BonusCritDamage@% daune din lovituri critice.</TFTShadowItemBonus><br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT5_Item_DragonsClawShadow": {
-    "name": "Gheara refractată a dragonului",
-    "desc": "Reduce daunele magice suferite cu @MagicReduction@%.<br><br><TFTShadowItemBonus>Ignoră daunele bonus din loviturile critice.</TFTShadowItemBonus>"
-  },
-  "TFT5_Item_LastWhisperShadow": {
-    "name": "Șoapta de apoi",
-    "desc": "Atacurile și abilitățile deținătorului reduc armura <TFTShadowItemBonus>și rezistența la magie</TFTShadowItemBonus> a țintei cu @ArmorMRReductionPercent@% pentru restul luptei.<br><br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT5_Item_LudensEchoShadow": {
-    "name": "Toiagul imortalității arhidemonului",
-    "desc": "De fiecare dată când deținătorul își folosește abilitatea, primește viață maximă egală cu @ManaRatio@% din mana maximă, fără să fie și vindecat. Deținătorul se vindecă apoi cu aceeași valoare.<br>"
-  },
-  "TFT5_Item_JeweledGauntletShadow": {
-    "name": "Mănușa de sacrificiu",
-    "desc": "Deținătorul primește @CritDamageAmp@% daune din lovituri critice, iar daunele magice și reale din abilitatea sa pot lovi critic. <br><br><TFTShadowItemBonus>Prima dată când își folosește abilitatea în fiecare luptă, primește încă @BonusCritChance@% șanse de lovitură critică pentru restul luptei (se aplică folosirii abilității respective).</TFTShadowItemBonus>"
-  },
-  "TFT5_Item_BloodthirsterShadow": {
-    "name": "Sete de pericol",
-    "desc": "Daunele fizice vindecă deținătorul cu @Lifesteal@% din daunele provocate. <TFTShadowItemBonus>De fiecare dată când deținătorul se vindecă ajungând la @HealthThresholdPercent@% viață, primește @BonusAS@% viteză de atac timp de @BonusASDuration@ secunde.</TFTShadowItemBonus> <TFTShadowItemPenalty>Deținătorul suferă daune reale în valoare de @HealthLossPercent@% din viața sa maximă la începutul luptei sau când echipează obiectul.</TFTShadowItemPenalty>"
-  },
-  "TFT5_Item_GiantsBeltShadow": {
-    "name": "Cureaua spectrală",
-    "desc": "%i:scaleHealth% +@Health@ viață"
-  },
-  "TFT5_Item_DeathbladeShadow": {
-    "name": "Sabia caustică a morții",
-    "desc": "Participările la ucideri îi oferă deținătorului %i:scaleAD% <TFTShadowItemBonus>@ADPerStack@ daune din atac</TFTShadowItemBonus> pentru restul luptei. Acest efect se cumulează la infinit (începând de la @StartingStacks@ cumuluri)."
-  },
-  "TFT5_Item_ThiefsGlovesShadow": {
-    "name": "Mănușile iluzionistului",
-    "desc": "La începutul fiecărei faze de planificare, deținătorul echipează 2 obiecte temporare. Acestea sunt mereu obiecte spectrale complete.<br><br><tftitemrules>[Consumă trei sloturi pentru obiecte]</tftitemrules>"
-  },
-  "TFT5_Item_RapidFirecannonShadow": {
-    "name": "Tunul morții",
-    "desc": "Crește raza de atac a deținătorului cu @HexRangeIncrease@ hexagon. În plus, deținătorul primește %i:scaleAS% <TFTShadowItemBonus>+@BonusAS@% viteză de atac bonus</TFTShadowItemBonus> <TFTShadowItemPenalty>când nu se află niciun inamic pe o rază de @HexRequirement@ hexagon.</TFTShadowItemPenalty><br><br>Atacurile deținătorului nu mai pot rata ținta.<br><br>"
-  },
-  "TFT5_Item_NeedlesslyLargeRodShadow": {
-    "name": "Toiag spectral",
-    "desc": "%i:scaleAP% +@AP@ puterea abilităților"
-  },
-  "TFT5_Item_TitansResolveShadow": {
-    "name": "Răzbunarea titanului",
-    "desc": "@PercentDamage@% din daunele suferite sunt stocate. La fiecare @SecondsBetweenProcs@ secunde, următorul atac al deținătorului provoacă aceste daune stocate ca daune reale."
-  },
-  "TFT5_Item_FrozenHeartShadow": {
-    "name": "Inimă înghețată întunecată",
-    "desc": "Reduce viteza de atac a tuturor inamicilor aflați pe o rază de @HexRadius@ hexagoane cu <TFTShadowItemBonus>@AttackSpeedSlow@%</TFTShadowItemBonus>.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT5_Item_IonicSparkShadow": {
-    "name": "Scânteie ionică întunecată",
-    "desc": "Inamicii aflați la cel mult @HexRange@ hexagoane au rezistența la magie redusă cu @MRShred@%. Când folosesc o abilitate, suferă daune magice în valoare de @ManaRatio@% din mana lor maximă."
-  },
-  "TFT5_Item_SunfireCapeShadow": {
-    "name": "Pelerina eclipsei",
-    "desc": "La fiecare <TFTShadowItemBonus>@ICD@ sec.</TFTShadowItemBonus>, un inamic aleatoriu aflat pe o rază de maximum <TFTShadowItemBonus>@HexRange@ hexagoane</TFTShadowItemBonus> este incendiat, suferind daune reale egale cu @BurnPercent@% din viața maximă de-a lungul a @BurnDuration@ secunde. Orice vindecare primită este redusă cu @GrievousWoundsPercent@%.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT5_Item_RunaansHurricaneShadow": {
-    "name": "Uraganul sălbatic al lui Runaan ",
-    "desc": "Atacurile deținătorului lansează proiectile spre <TFTShadowItemBonus>@AdditionalTargets@ aliați din apropiere</TFTShadowItemBonus>, ce provoacă <TFTShadowItemPenalty>@MultiplierForDamage@% din daunele din atac ale deținătorului.</TFTShadowItemPenalty> Aceste proiectile pot lovi critic, dar nu aplică efectele la impact. "
-  },
-  "TFT5_Item_ForceOfNatureShadow": {
-    "name": "Forța întunericului",
-    "desc": "Dimensiunea maximă a echipei deținătorului crește cu <TFTShadowItemBonus>+@MaxArmySizeIncrease@</TFTShadowItemBonus>, dar <TFTShadowItemPenalty>mica legendă a jucătorului suferă +@PercentDamageIncrease@% daune după pierderea unei bătălii</TFTShadowItemPenalty>."
-  },
-  "TFT5_Item_GuardianAngelShadow": {
-    "name": "Înger păzitor decăzut",
-    "desc": "Împiedică prima moarte a deținătorului, plasându-l într-o stază. După @StasisDuration@ secunde, acesta revine cu <TFTShadowItemBonus>@HealthRestorePercent@% viață</TFTShadowItemBonus> și scapă de toate efectele negative.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT5_Item_ChainVestShadow": {
-    "name": "Vestă spectrală",
-    "desc": "%i:scaleArmor% +@Armor@ armură"
-  },
-  "TFT5_Item_TearOfTheGoddessShadow": {
-    "name": "Lacrimă spectrală",
-    "desc": "%i:TFTManaRegen% +@ManaRegen@ regenerare mană"
-  },
-  "TFT5_Item_SparringGlovesShadow": {
-    "name": "Mănuși spectrale",
-    "desc": "+@CritChance@% șanse de lovitură critică"
-  },
-  "TFT5_Item_GiantSlayerShadow": {
-    "name": "Vânătorul spectral de uriași",
-    "desc": "Abilitățile și atacurile deținătorului provoacă @SmallBonusPct@% daune bonus. Dacă ținta are mai mult de @HealthThreshold@ viață maximă, bonusul crește la @LargeBonusPct@%."
-  },
-  "TFT5_Item_ZzRotPortalShadow": {
-    "name": "Portal Zz'Rot instabil",
-    "desc": "La începutul luptei, deținătorul provoacă inamicii aflați la cel mult @HexRadius@ hexagoane.<br><br>Când deținătorul moare, invocă o videmeridă instabilă cu <TFTShadowItemPenalty>@ZombieHealth@ viață</TFTShadowItemPenalty>, care provoacă din nou inamicii. Când acesta moare, <TFTShadowItemBonus>le provoacă @ExplosionDamage@ daune reale inamicilor aflați pe o rază de @ExplosionHexRange@ hexagon/hexagoane.</TFTShadowItemBonus><br><br>Videmeridele care apar din unitățile invocate au eficiență de @SummonedStatReduction@%."
-  },
-  "TFT5_Item_SpatulaRadiant": {
-    "name": "tft_item_name_RadiantSpatula",
-    "desc": "tft_item_description_RadiantSpatula"
-  },
-  "TFT5_Item_WarmogsArmorShadow": {
-    "name": "Armura de sacrificiu a lui Warmog",
-    "desc": "Oferă %i:scaleHealth% <TFTShadowItemBonus>@TooltipDisplayHealth@ viață bonus</TFTShadowItemBonus> (inclusiv componentele)."
-  },
-  "TFT5_Item_HextechGunbladeShadow": {
-    "name": "Pușca cu baionetă hextech a imortalității",
-    "desc": "Daunele magice și reale din abilități ale deținătorului vindecă aliatul cu procentul de viață cel mai mic în valoare de <TFTShadowItemBonus>@OmniVamp@% din daunele provocate.</TFTShadowItemBonus> <TFTShadowItemPenalty>Această vindecare nu poate afecta deținătorul.</TFTShadowItemPenalty>"
-  },
-  "TFT5_Item_TrapClawShadow": {
-    "name": "Gheara ursitoarei",
-    "desc": "La începutul luptei, deținătorul și aliații de pe același rând aflați la maximum @HexRange@ hexagoane distanță primesc un scut care blochează prima abilitate inamică.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT5_Item_GuinsoosRagebladeShadow": {
-    "name": "Spada de sacrificiu a furiei lui Guinsoo",
-    "desc": "Atacurile oferă <TFTShadowItemBonus>+@AttackSpeedPerStack@%</TFTShadowItemBonus> viteză de atac bonus pentru restul luptei. Bonusul la viteza de atac se poate cumula la nesfârșit."
-  },
-  "TFT5_Item_MorellonomiconShadow": {
-    "name": "Morellonomicon malefic",
-    "desc": "Daunele magice sau reale provocate de deținător cu abilitatea sa ard ținta, provocându-i daune reale în valoare de <TFTShadowItemBonus>@BurnPercent@% din viața ei maximă</TFTShadowItemBonus> de-a lungul a @BurnDuration@ secunde. Pe durata efectului, vindecările țintei sunt reduse cu @GrievousWoundsPercent@%.<br><br><tftitemrules>[Unic – doar unul per campion]</tftitemrules>"
-  },
-  "TFT5_Item_BFSwordShadow": {
-    "name": "Sabie spectrală",
-    "desc": "%i:scaleAD% +@AD*100@% daune din atac"
   },
   "TFT_Item_CarouselOfChaos_TimeUndilator": {
     "name": "Undilator temporal",
@@ -16451,6 +15615,10 @@
     "name": "Speedy Double Kill",
     "desc": "Gain a Guinsoo's Rageblade. When @NumEliminationsRequired@ players are eliminated, gain @GoldAmount@ gold.<br><br><rules>Fates Championship, 2021</rules>"
   },
+  "DA_BuildABud": {
+    "name": "Build A Bud",
+    "desc": "Gain a random @ActorLevel@-star @UnitCost@-cost champion. Gain @NumGold@ gold."
+  },
   "DA_NestingDollsPlusPlus": {
     "name": "Nesting Dolls",
     "desc": "After a champion dies in combat, spawn a copy of them one star level lower with @HealthMultiplier*100@% health. Gain @NumRerolls@ free rerolls."
@@ -16488,7 +15656,7 @@
     "desc": "You no longer gain interest. Gain @GoldInstant@ gold now. Round start: gain @RoundStartBonusXp@ XP.<br><br><rules>Interest is extra gold you gain per </rules>@OldInterestThreshold@<rules>g saved.</rules>"
   },
   "DA_GoldDestinyPlus": {
-    "name": "Gold Destiny Plus",
+    "name": "Gold Destiny+",
     "desc": "Gain a random Gold Augment and @Gold@ gold."
   },
   "DA_ComponentBuffet": {
@@ -16529,7 +15697,7 @@
   },
   "DA_18_LunarTraitAugmentPlus": {
     "name": "Sun and Moon+",
-    "desc": "Your Lunar champions gain @Health@ Health and @DamageAmp*100@% Damage Amp for each unique Solar champion fielded. Gain a 2-star Leona, a Kayle, and an Aphelios."
+    "desc": "Your Lunar champions gain @Health@ Health and @DamageAmp*100@% Damage Amp for each unique Solar champion fielded. Gain a Leona, a Kayle, and an Aphelios."
   },
   "DA_SwordOverflow": {
     "name": "Sword Overflow",
@@ -16626,10 +15794,6 @@
   "DA_18_FOURcing": {
     "name": "FOURcing",
     "desc": "Gain a random 4-cost champion. For each item equipped to that champion, your team gains @Health@ health."
-  },
-  "DA_18_RiftbeastTraitAugmentStampede": {
-    "name": "Jungle Pathing",
-    "desc": "Gain a Pebbles, a Cinderling, a Scuttle Crab, and a Murkwolf. Each time you level up, gain a new Riftbeast."
   },
   "DA_MissedConnections": {
     "name": "Missed Connections",
@@ -16995,10 +16159,6 @@
     "name": "Legion Of Threes",
     "desc": "Gain a random Emblem. Your 3-cost champions and all allies equipped with an Emblem gain @HealthMaxAdd@ Health and @AttackSpeedPercent*100@% Attack Speed.<br><br><rules>Reckoning Championship, 2021</rules>"
   },
-  "DA_NestingDolls": {
-    "name": "Nesting Dolls",
-    "desc": "After a champion dies in combat, spawn a copy of them one star level lower with @HealthMultiplier*100@% health. Gain @NumRerolls@ free rerolls."
-  },
   "DA_MakeshiftArmorII": {
     "name": "Makeshift Armor II",
     "desc": "Champions without items equipped gain @Armor_Gold@ Armor and Magic Resist."
@@ -17009,7 +16169,7 @@
   },
   "DA_PatienceIsAVirtue": {
     "name": "Patience Is A Virtue",
-    "desc": "Each round, gain @Rerolls@ free rerolls if you did not buy a champion last round."
+    "desc": "Gain @RerollsUpfront@ rerolls now. Each round, gain @Rerolls@ free reroll if you did not buy a champion last round."
   },
   "DA_HardCommit": {
     "name": "Hard Commit",
@@ -18265,7 +17425,7 @@
   },
   "DA_18_Maokai_UniqueTrait": {
     "name": "Old Growth",
-    "desc": "Whenever an enemy within @UniqueTraitHexRange@ hexes dies, gain @UniqueTraitHealthPerStack@ permanent max Health.<br><br>Current: 0"
+    "desc": "Whenever an enemy within @UniqueTraitHexRange@ hexes dies, your strongest Old Growth champion gains @UniqueTraitHealthPerStack@ permanent max Health.<br><br>Current: 0"
   },
   "DA_18_Battlemage": {
     "name": "Monolith",
@@ -18293,7 +17453,7 @@
   },
   "DA_18_Inferno": {
     "name": "Infern",
-    "desc": "Inferno damage <TFTKeyword>Burns</TFTKeyword> and @WoundPercent@% <TFTKeyword>Wounds</TFTKeyword> enemies for @Duration@ seconds. Inferno Burns stack with other Burns.<br><row>(@MinUnits@) @HPBurnPerSecond@% Burn</row><br><row>(@MinUnits@) After combat, @LuckySlotCount@ of your shop slots without an Inferno champion ignites, rolling a champion one tier higher</row><br><row>(@MinUnits@) Ignite @LuckySlotCount@ shop slots, @HPBurnPerSecond@% Burn</row><br><row>(@MinUnits@) Ignite @LuckySlotCount@ shop slots, @HPBurnPerSecond@% Burn</row>"
+    "desc": "Inferno damage <TFTKeyword>Burns</TFTKeyword> and <TFTKeyword>Wounds</TFTKeyword> enemies for @Duration@ seconds. Inferno Burns stack with other Burns.<br><row>(@MinUnits@) @HPBurnPerSecond@% Burn, @WoundPercent@% Wound</row><br><row>(@MinUnits@) After combat, @LuckySlotCount@ of your shop slots without an Inferno champion ignites, rolling a champion one tier higher</row><br><row>(@MinUnits@) Ignite @LuckySlotCount@ shop slots, @HPBurnPerSecond@% Burn</row><br><row>(@MinUnits@) Ignite @LuckySlotCount@ shop slots, @HPBurnPerSecond@% Burn</row>"
   },
   "DA_AluneUniqueTrait18": {
     "name": "Attuned",
@@ -18301,11 +17461,11 @@
   },
   "DA_18_Rival": {
     "name": "Rival",
-    "desc": "<row>(@MinUnits@) Only active while fielding 1 Rival.<br><br>Rivals collect takedowns, gaining 3 if they takedown another Rival.</row><br><row>(@MinUnits@) Rivals collect takedowns, gaining 3 if they takedown another Rival.<br><br>Takedowns evolve Kha'Zix, permanently granting him your choice of Executioner, Rapidfire, Ravager, or Spellweaver.<br><br>Rengar grants @RengarGold@/@RengarGold_2@/@RengarGold_3@ gold every @RengarStackReq@ takedowns. After @RengarADStackReq@ takedowns, your team gains @RengarThresholdAD*100@% Attack Damage plus @RengarADPerStack*100@% %i:scaleAD% per additional takedown.<br><br>Kha'Zix Takedowns: 0 / 0<br>Rengar Takedowns: 0<br>Gold Earned: 0</row><br><row>(@MinUnits@) Rivals can be fielded together. When Kha'Zix gains Mana from his Ability, Rengar gains @Augment_RengarManaPercent*100@% of that Mana. When Rengar heals from his Ability, Kha'Zix gains @Augment_KhaZixHealPercent*100@% of that heal.</row>"
+    "desc": "<row>(@MinUnits@) Only active while fielding 1 Rival.<br><br>Rivals collect takedowns, gaining 3 if they takedown another Rival.</row><br><row>(@MinUnits@) Rivals collect takedowns, gaining 3 if they takedown another Rival.<br><br>Takedowns evolve Kha'Zix, permanently granting him your choice of Executioner, Rapidfire, Ravager, or Spellweaver.<br><br>Rengar grants @RengarGold@/@RengarGold_2@/@RengarGold_3@ gold every @RengarStackReq@ takedowns. After @RengarADStackReq@ takedowns, your team gains @RengarThresholdAD*100@% Attack Damage plus @RengarADPerStack*100@% %i:scaleAD% per additional takedown.<br><br>Kha'Zix Takedowns: 0 / 0<br>Rengar Takedowns: 0<br>Gold Earned: 0</row><br><row>(@MinUnits@) Rivals can be fielded together, and their abilities grant each other bonuses.</row>"
   },
   "DA_18_Vanguard": {
     "name": "Apărător",
-    "desc": "At Combat Start and after dropping below @HealthThreshold*100@% Health, Vanguards gain a max Health Shield for @ShieldDuration@ seconds.<br><row>(@MinUnits@) @MaxHealthShield*100@% max Health</row><br><row>(@MinUnits@) @MaxHealthShield*100@% max Health</row><br><row>(@MinUnits@) @MaxHealthShield*100@% max Health. Gain @DurabilityIncrease*100@% Durability while Shielded.</row>"
+    "desc": "At Combat Start and after dropping below @HealthThreshold*100@% <colorHealth>Health</colorHealth>, Vanguards gain a max Health Shield for @ShieldDuration@ seconds.<br><row>(@MinUnits@) @MaxHealthShield*100@% max Health</row><br><row>(@MinUnits@) @MaxHealthShield*100@% max Health</row><br><row>(@MinUnits@) @MaxHealthShield*100@% max Health. Gain @DurabilityIncrease*100@% Durability while Shielded.</row>"
   },
   "DA_18_Brawler": {
     "name": "Bătăuș",
@@ -18313,7 +17473,7 @@
   },
   "DA_18_Blackthorn": {
     "name": "Blackthorn",
-    "desc": "The ally on the Blackthorn hex is sacrificed before combat, granting your champions Health. <br><br>Blackthorn champions gain additional stats based on the sacrifice's Role, Star Level, and Cost.<br><row>(@MinUnits@) @Health@ %i:scaleHealth%</row><br><row>(@MinUnits@) @Health@ %i:scaleHealth%; Bonus is @StatMultiplier*100@% stronger</row><br><row>(@MinUnits@) @Health@ %i:scaleHealth%; The sacrifice doesn't die. It also gains: @Tier3BonusAD*100@% %i:scaleAD%%i:scaleAP%, <br>@Tier3BonusAttackSpeed*100@% %i:scaleAS%, @Tier3BonusArmor@ %i:scaleArmor%%i:scaleMR%, @Tier3BonusHealth@ %i:scaleHealth%, @Tier3BonusOmnivamp*100@%</row>"
+    "desc": "The ally on the Blackthorn hex is sacrificed before combat, granting your champions Health. <br><br>Blackthorn champions gain additional stats based on the sacrifice's Role, Star Level, and Cost.<br><row>(@MinUnits@) @Health@ %i:scaleHealth%</row><br><row>(@MinUnits@) @Health@ %i:scaleHealth%; Bonus is @StatMultiplier*100@% stronger</row><br><row>(@MinUnits@) @Health@ %i:scaleHealth%; Bonus is @StatMultiplier*100@% stronger</row>"
   },
   "DA_18_Executioner": {
     "name": "Executioner",
@@ -18329,7 +17489,7 @@
   },
   "DA_18_Caustic": {
     "name": "Caustic",
-    "desc": "Caustic damage @ShredPercent@% Shreds and Sunders enemies for @ShredDuration@ seconds."
+    "desc": "Caustic damage @ShredPercent@% Shreds and Sunders enemies for @ShredDuration@ seconds.<br><br><rules>Shred: Reduce Magic Resist</rules><br><rules>Sunder: Reduce Armor</rules>"
   },
   "DA_18_Fae": {
     "name": "Zână",
@@ -18365,7 +17525,7 @@
   },
   "DA_Emerald18": {
     "name": "Emerald Aspect",
-    "desc": "Drag an ally onto your strongest Taric to pair them, granting the ally powerful bonuses from Taric's ability."
+    "desc": "Drag an ally onto your strongest Taric to pair them, granting the ally powerful bonuses from Taric's Ability."
   },
   "TFT13_Singed": {
     "name": "Singed",
@@ -21903,714 +21063,6 @@
     "name": "Asasin",
     "desc": "Nativ: la începutul luptei, asasinii sar în linia din spate a inamicilor.<br><br>Asasinii primesc șanse de lovitură critică și daune bonus din lovituri critice.<br><br><expandRow>(@MinUnits@) +@CritAmpPercent@% daune din loviturile critice și +@CritChanceAmpPercent@% șanse de lovitură critică</expandRow><br>"
   },
-  "TFT4_Aatrox": {
-    "name": "Aatrox",
-    "desc": null
-  },
-  "TFT4_Ahri": {
-    "name": "Ahri",
-    "desc": null
-  },
-  "TFT4_Akali": {
-    "name": "Akali",
-    "desc": null
-  },
-  "TFT4_Annie": {
-    "name": "Annie",
-    "desc": null
-  },
-  "TFT4_Aphelios": {
-    "name": "Aphelios",
-    "desc": null
-  },
-  "TFT4_Ashe": {
-    "name": "Ashe",
-    "desc": null
-  },
-  "TFT4_Azir": {
-    "name": "Azir",
-    "desc": null
-  },
-  "TFT4_Cassiopeia": {
-    "name": "Cassiopeia",
-    "desc": null
-  },
-  "TFT4_Diana": {
-    "name": "Diana",
-    "desc": null
-  },
-  "TFT4_Elise": {
-    "name": "Elise",
-    "desc": null
-  },
-  "TFT4_Evelynn": {
-    "name": "Evelynn",
-    "desc": null
-  },
-  "TFT4_Fiora": {
-    "name": "Fiora",
-    "desc": null
-  },
-  "TFT4_Garen": {
-    "name": "Garen",
-    "desc": null
-  },
-  "TFT4_Hecarim": {
-    "name": "Hecarim",
-    "desc": null
-  },
-  "TFT4_Irelia": {
-    "name": "Irelia",
-    "desc": null
-  },
-  "TFT4_Janna": {
-    "name": "Janna",
-    "desc": null
-  },
-  "TFT4_Jhin": {
-    "name": "Jhin",
-    "desc": null
-  },
-  "TFT4_Jax": {
-    "name": "Jax",
-    "desc": null
-  },
-  "TFT4_Jinx": {
-    "name": "Jinx",
-    "desc": null
-  },
-  "TFT4_Kalista": {
-    "name": "Kalista",
-    "desc": null
-  },
-  "TFT4_Kennen": {
-    "name": "Kennen",
-    "desc": null
-  },
-  "TFT4_Kindred": {
-    "name": "Kindred",
-    "desc": null
-  },
-  "TFT4_LeeSin": {
-    "name": "Lee Sin",
-    "desc": null
-  },
-  "TFT4_Lillia": {
-    "name": "Lillia",
-    "desc": null
-  },
-  "TFT4_Lulu": {
-    "name": "Lulu",
-    "desc": null
-  },
-  "TFT4_Lux": {
-    "name": "Lux",
-    "desc": null
-  },
-  "TFT4_Maokai": {
-    "name": "Maokai",
-    "desc": null
-  },
-  "TFT4_Morgana": {
-    "name": "Morgana",
-    "desc": null
-  },
-  "TFT4_Nami": {
-    "name": "Nami",
-    "desc": null
-  },
-  "TFT4_Nidalee": {
-    "name": "Nidalee",
-    "desc": null
-  },
-  "TFT4_Pyke": {
-    "name": "Pyke",
-    "desc": null
-  },
-  "TFT4_Nunu": {
-    "name": "Nunu și Willump",
-    "desc": null
-  },
-  "TFT4_Riven": {
-    "name": "Riven",
-    "desc": null
-  },
-  "TFT4_Sejuani": {
-    "name": "Sejuani",
-    "desc": null
-  },
-  "TFT4_Sett": {
-    "name": "Sett",
-    "desc": null
-  },
-  "TFT4_Shen": {
-    "name": "Shen",
-    "desc": null
-  },
-  "TFT4_Sylas": {
-    "name": "Sylas",
-    "desc": null
-  },
-  "TFT4_TahmKench": {
-    "name": "Tahm Kench",
-    "desc": null
-  },
-  "TFT4_Talon": {
-    "name": "Talon",
-    "desc": null
-  },
-  "TFT4_Teemo": {
-    "name": "Teemo",
-    "desc": null
-  },
-  "TFT4_Thresh": {
-    "name": "Thresh",
-    "desc": null
-  },
-  "TFT4_Lissandra": {
-    "name": "Lissandra",
-    "desc": null
-  },
-  "TFT4_TwistedFate": {
-    "name": "Twisted Fate",
-    "desc": null
-  },
-  "TFT4_Vayne": {
-    "name": "Vayne",
-    "desc": null
-  },
-  "TFT4_Veigar": {
-    "name": "Veigar",
-    "desc": null
-  },
-  "TFT4_Wukong": {
-    "name": "Wukong",
-    "desc": null
-  },
-  "TFT4_XinZhao": {
-    "name": "Xin Zhao",
-    "desc": null
-  },
-  "TFT4_Yasuo": {
-    "name": "Yasuo",
-    "desc": null
-  },
-  "TFT4_Yone": {
-    "name": "Yone",
-    "desc": null
-  },
-  "TFT4_Yuumi": {
-    "name": "Yuumi",
-    "desc": null
-  },
-  "TFT4_Zed": {
-    "name": "Zed",
-    "desc": null
-  },
-  "TFT4_Zilean": {
-    "name": "Zilean",
-    "desc": null
-  },
-  "TFT4_Vi": {
-    "name": "Vi",
-    "desc": null
-  },
-  "TFT4_NPC_Nexus": {
-    "name": "Minion Nexus",
-    "desc": null
-  },
-  "TFT4_JarvanIV": {
-    "name": "Jarvan IV",
-    "desc": null
-  },
-  "TFT4_Kayn": {
-    "name": "Kayn",
-    "desc": null
-  },
-  "TFT4_Katarina": {
-    "name": "Katarina",
-    "desc": null
-  },
-  "TFT4_Ezreal": {
-    "name": "Ezreal",
-    "desc": null
-  },
-  "TFT4_Warwick": {
-    "name": "Warwick",
-    "desc": null
-  },
-  "TFT4_AzirSoldier": {
-    "name": "Străjer al nisipurilor",
-    "desc": null
-  },
-  "TFT4_Galio": {
-    "name": "Galio",
-    "desc": null
-  },
-  "TFT4_Brawler": {
-    "name": "Bătăuș",
-    "desc": "Bătăușii primesc %i:scaleAD% daune din atac și %i:scaleHealth% viață bonus.<br><br><expandRow>(@MinUnits@) @BonusHealth@ %i:scaleHealth% și @BonusAD@% %i:scaleAD%</expandRow><br>"
-  },
-  "TFT4_Ninja": {
-    "name": "Ninja",
-    "desc": "Ninja primesc %i:scaleAD% daune bonus din atac și %i:scaleAP% puterea abilităților.<br><br>Această caracteristică este activă numai când ai exact 1 sau 4 ninja unici.<br><br><row>(@MinUnits@) Ninja primește @ADValue@% %i:scaleAD% și @APValue@% %i:scaleAP%</row><br><row>(@MinUnits@) Toți ninja primesc @ADValue@% %i:scaleAD% și @APValue@% %i:scaleAP%</row>"
-  },
-  "TFT4_Duelist": {
-    "name": "Duelist",
-    "desc": "Nativ: dueliștii se mișcă mai rapid.<br><br>Atacurile dueliștilor oferă %i:scaleAS% viteză de atac, până la maximum @MaxStacks@ cumuluri.<br><br><expandRow>(@MinUnits@) @AttackSpeed@% %i:scaleAS% per cumul</expandRow>"
-  },
-  "TFT4_Mage": {
-    "name": "Mag",
-    "desc": "Magii își pot folosi abilitățile de două ori și au puterea abilităților totală modificată cu%i:scaleAP%.<br><br><row>(@MinUnits@) @SPPercent@% %i:scaleAP%</row><br><row>(@MinUnits@) @SPPercent@%%i:scaleAP%</row><br><row>(@MinUnits@) @SPPercent@% %i:scaleAP%</row><br><row>(@MinUnits@) @SPPercent@%%i:scaleAP%, magii își folosesc abilitatea MULT mai frecvent</row>"
-  },
-  "TFT4_Sharpshooter": {
-    "name": "Maestru al preciziei",
-    "desc": "Atacurile și abilitățile maeștrilor preciziei ricoșează spre inamicii din apropiere, provocându-le daune reduse.<br><br><expandRow>(@MinUnits@) @MaxBounces@ ricoșeuri cu @PercentDamageReduction@% daune reduse</expandRow><br><br><br>"
-  },
-  "TFT4_Hunter": {
-    "name": "Urmăritor",
-    "desc": "La fiecare câteva secunde, toți urmăritorii vor ataca inamicul cu procentul de viață cel mai mic, provocându-i daune bonus.<br><br><expandRow>(@MinUnits@) @DamageAmp@% daune bonus la fiecare @ShotFrequency@ secunde</expandRow>"
-  },
-  "TFT4_Mystic": {
-    "name": "Mistic",
-    "desc": "Echipa ta primește %i:scaleMR% rezistență la magie.<br><br><expandRow>(@MinUnits@) @MagicResist@ %i:scaleMR%</expandRow>"
-  },
-  "TFT4_Fortune": {
-    "name": "Noroc",
-    "desc": "<row>(@MinUnits@) Victoriile împotriva jucătorilor oferă sfere bonus. Cu cât au trecut mai multe runde de la ultima sferă, cu atât sunt mai mari recompensele! </row><br><row>(@MinUnits@) Victoriile oferă o sferă bonus suplimentară cu recompense rare.</row><br><row>(@MinUnits@) Legendele spun că într-o bună zi Copacul aurului se va alătura luptei.</row><br>"
-  },
-  "TFT4_Elderwood": {
-    "name": "Spirit al pădurii",
-    "desc": "La fiecare două secunde, toate spiritele pădurii cresc, primind atribute bonus. Acest efect se cumulează de maximum 5 ori.<br><br><expandRow>(@MinUnits@) @BonusResists@ %i:scaleArmor% %i:scaleMR%, @BonusADSP@ %i:scaleAD% %i:scaleAP%</expandRow>"
-  },
-  "TFT4_Moonlight": {
-    "name": "Lumina Lunii",
-    "desc": "(@MinUnits@) La începutul luptei, un număr de campioni ai luminii Lunii primesc o singură dată stele până la sfârșitul luptei.<br><br>(Sunt aleși cu prioritate campionii cu nivelul de stele cel mai mic. În caz de egalitate, sunt aleși campionii cu cele mai multe obiecte.)<br><br><row>(@MinUnits@) @NumberOfChampions@ campion</row><br><row>(@MinUnits@) @NumberOfChampions@ campioni</row>"
-  },
-  "TFT4_Exile": {
-    "name": "Exilat",
-    "desc": "Dacă un exilat nu are aliați adiacenți la începutul luptei, primește:<br><br><row>(@MinUnits@) Un scut în valoare de @ShieldPercent@% din viața sa maximă</row><br><row>(@MinUnits@) ȘI @LifeSteal@% furt de viață %i:scaleSV%</row><br><br>"
-  },
-  "TFT4_Shade": {
-    "name": "Umbră",
-    "desc": "Nativ: când începe lupta, umbrele se teleportează în linia din spate a inamicilor.<br><br>Umbrele se învăluie în întuneric după fiecare @NumberOfAttacks@ atacuri, mascându-și prezența și provocând daune magice bonus cu următorul atac de bază.<br><br><expandRow>(@MinUnits@) @Damage@ daune bonus</expandRow>"
-  },
-  "TFT4_Boss": {
-    "name": "Bătăușul-șef",
-    "desc": "Când viața lui Sett scade prima oară sub 40%, iese din luptă pentru a începe să facă abdomene. Fiecare abdomen îi reface @HealPercent@% din viața maximă și îi oferă @AttackSpeedPercent@% viteză de atac și viteză de mișcare. Dacă ajunge la viață completă, revine în luptă în forță, iar atacurile și abilitățile sale provoacă daune reale. Dacă toți aliații săi mor, revine imediat în luptă."
-  },
-  "TFT4_Enlightened": {
-    "name": "Iluminat",
-    "desc": "Campionii iluminați generează mai multă mană.<br><br><expandRow>(@MinUnits@) @ManaAmp@% creștere</expandRow>"
-  },
-  "TFT4_Adept": {
-    "name": "Adept",
-    "desc": "Adepții calmează cursul bătăliei, reducând viteza de atac a tuturor inamicilor cu 50% timp de câteva secunde la începutul luptei.<br><br><expandRow>(@MinUnits@) @AttackSpeedSlowDuration@ secunde</expandRow>"
-  },
-  "TFT4_Tormented": {
-    "name": "Chinuit",
-    "desc": "Chinuiții pot fi transformați după ce participă în @RoundsToTransform@ lupte, îmbunătățindu-și abilitățile."
-  },
-  "TFT4_Divine": {
-    "name": "Divin",
-    "desc": "Când atacă de @NumAttacksToProc@ ori sau au sub @HealthThreshold@% viață, campionii divini elimină toate efectele de control al maselor și evoluează, primind %i:scaleDR% durabilitate și provocând daune reale bonus timp de @Duration@ sec.<br><br><expandRow>(@MinUnits@) @DamageReductionPercent@% %i:scaleDR% și @BonusTrueDamagePercent@% daune reale</expandRow>"
-  },
-  "TFT4_Cultist": {
-    "name": "Cultist",
-    "desc": "Odată ce echipa ta pierde @CultistHealthPercentTaken@% din viață, îl invocă pe Galio, care aterizează în cel mai mare grup de inamici, amețindu-i. Puterea lui Galio crește în funcție de nivelul total de stele al tuturor cultiștilor activi.<br><br><row>(@MinUnits@) Galio tiran</row><br><row>(@MinUnits@) Galio, lordul demonilor</row><br><row>(@MinUnits@) Galio, comandantul suprem</row><br><row>(@MinUnits@) Distrugătorul lumilor</row>"
-  },
-  "TFT4_Assassin": {
-    "name": "Asasin",
-    "desc": "Nativ: la începutul luptei, sar în linia din spate a inamicilor.<br><br>Abilitățile asasinilor pot lovi critic și primesc %i:scaleCrit% șanse de lovitură critică și %i:scaleCritMult% daune bonus din lovituri critice.<br><br><expandRow>(@MinUnits@) @CritChanceAmpPercent@% %i:scaleCrit% și @CritAmpPercent@% %i:scaleCritMult%</expandRow><br>"
-  },
-  "TFT4_Emperor": {
-    "name": "Împărat",
-    "desc": "Azir intră în luptă cu doi străjeri ai nisipurilor, care pot fi plasați oriunde pe câmpul de luptă. Aceștia nu se mișcă, nu atacă și mor odată cu Azir."
-  },
-  "TFT4_Dazzler": {
-    "name": "Orbitor",
-    "desc": "Vrăjile orbitorilor reduc daunele din atac ale inamicilor loviți timp de @Duration@ secunde.<br><br><expandRow>(@MinUnits@) Reducere de @ADReduction@% a vitezei de atac</expandRow><br>"
-  },
-  "TFT4_Warlord": {
-    "name": "Războinic",
-    "desc": "Războinicii au %i:scaleHealth% viață și %i:scaleAP% puterea abilităților bonus. Cu fiecare luptă câștigată împotriva jucătorilor, bonusul crește cu @VictoryPercent@%, până la maximum @MaxCombats@ cumuluri.<br><br><row>(@MinUnits@) @InitialHealth@ %i:scaleHealth% și @InitialSP@% %i:scaleAP%</row><br><row>(@MinUnits@) @InitialHealth@ %i:scaleHealth% și @InitialSP@% %i:scaleAP%</row><br><row>(@MinUnits@) @InitialHealth@ %i:scaleHealth% și @InitialSP@% %i:scaleAP%</row><br><row>(@MinUnits@) @InitialHealth@ %i:scaleHealth% și @InitialSP@% %i:scaleAP% Începutul luptei: armata războinicului se alătură luptei.</row><br>"
-  },
-  "TFT4_Dusk": {
-    "name": "Amurg",
-    "desc": "Campionii amurgului cresc puterea vrăjilor tuturor aliaților.<br><row>(@MinUnits@) Toți aliații primesc @TeamSpellPower@% puterea vrăjilor</row><br><row>(@MinUnits@) Campionii amurgului primesc încă @DuskSpellPower@%</row><br><row>(@MinUnits@) @TeamSpellPower@% puterea vrăjilor pentru toți aliații și încă @DuskSpellPower@% pentru campionii amurgului</row><br>"
-  },
-  "TFT4_Keeper": {
-    "name": "Paznic",
-    "desc": "La începutul luptei, paznicii se protejează pe ei și pe aliații lor adiacenți cu un scut. Scutul este cu 50% mai rezistent în cazul paznicilor.<br><br><expandRow>(@MinUnits@) Scut de @ShieldAmount@ timp de @Duration@ secunde</expandRow>"
-  },
-  "TFT4_Spirit": {
-    "name": "Spirit",
-    "desc": "Prima dată când un spirit își folosește abilitatea, toți aliații primesc %i:scaleAS% viteză de atac.<br><br><expandRow>(@MinUnits@) @AttackSpeedPercent@% %i:scaleAS%</expandRow><br>"
-  },
-  "TFT4_Vanguard": {
-    "name": "Apărător",
-    "desc": "Apărătorii primesc %i:scaleArmor% armură și %i:scaleMR% rezistență la magie.<br><br><expandRow>(@MinUnits@) @Armor@ %i:scaleArmor% și @MR@ %i:scaleMR%</expandRow>"
-  },
-  "TFT5_Riven": {
-    "name": "Riven",
-    "desc": null
-  },
-  "TFT5_Soraka": {
-    "name": "Soraka",
-    "desc": null
-  },
-  "TFT5_Aatrox": {
-    "name": "Aatrox",
-    "desc": null
-  },
-  "TFT5_Syndra": {
-    "name": "Syndra",
-    "desc": null
-  },
-  "TFT5_DraconicEgg": {
-    "name": "Ou draconic",
-    "desc": null
-  },
-  "TFT5_Warwick": {
-    "name": "Warwick",
-    "desc": null
-  },
-  "TFT5_Kalista": {
-    "name": "Kalista",
-    "desc": null
-  },
-  "TFT5_Gragas": {
-    "name": "Gragas",
-    "desc": null
-  },
-  "TFT5_Trundle": {
-    "name": "Trundle",
-    "desc": null
-  },
-  "TFT5_Poppy": {
-    "name": "Poppy",
-    "desc": null
-  },
-  "TFT5_Brand": {
-    "name": "Brand",
-    "desc": null
-  },
-  "TFT5_Monstrosity": {
-    "name": "Monstruozitatea",
-    "desc": null
-  },
-  "TFT5_Katarina": {
-    "name": "Katarina",
-    "desc": null
-  },
-  "TFT5_Varus": {
-    "name": "Varus",
-    "desc": null
-  },
-  "TFT5_Velkoz": {
-    "name": "Vel'Koz",
-    "desc": null
-  },
-  "TFT5_Mordekaiser": {
-    "name": "Mordekaiser",
-    "desc": null
-  },
-  "TFT5_LeBlanc": {
-    "name": "LeBlanc",
-    "desc": null
-  },
-  "TFT5_Hecarim": {
-    "name": "Hecarim",
-    "desc": null
-  },
-  "TFT5_Kennen": {
-    "name": "Kennen",
-    "desc": null
-  },
-  "TFT5_Nocturne": {
-    "name": "Nocturne",
-    "desc": null
-  },
-  "TFT5_LeeSin": {
-    "name": "Lee Sin",
-    "desc": null
-  },
-  "TFT5_Thresh": {
-    "name": "Thresh",
-    "desc": null
-  },
-  "TFT5_Viktor": {
-    "name": "Viktor",
-    "desc": null
-  },
-  "TFT5_Khazix": {
-    "name": "Kha'Zix",
-    "desc": null
-  },
-  "TFT5_Vayne": {
-    "name": "Vayne",
-    "desc": null
-  },
-  "TFT5_Nunu": {
-    "name": "Nunu și Willump",
-    "desc": null
-  },
-  "TFT5_Diana": {
-    "name": "Diana",
-    "desc": null
-  },
-  "TFT5_Yasuo": {
-    "name": "Yasuo",
-    "desc": null
-  },
-  "TFT5_Lulu": {
-    "name": "Lulu",
-    "desc": null
-  },
-  "TFT5_Vladimir": {
-    "name": "Vladimir",
-    "desc": null
-  },
-  "TFT5_Heimerdinger": {
-    "name": "Heimerdinger",
-    "desc": null
-  },
-  "TFT5_Kled": {
-    "name": "Kled",
-    "desc": null
-  },
-  "TFT5_Lux": {
-    "name": "Lux",
-    "desc": null
-  },
-  "TFT5_Leona": {
-    "name": "Leona",
-    "desc": null
-  },
-  "TFT5_Taric": {
-    "name": "Taric",
-    "desc": null
-  },
-  "TFT5_Jax": {
-    "name": "Jax",
-    "desc": null
-  },
-  "TFT5_Karma": {
-    "name": "Karma",
-    "desc": null
-  },
-  "TFT5_Aphelios": {
-    "name": "Aphelios",
-    "desc": null
-  },
-  "TFT5_Ashe": {
-    "name": "Ashe",
-    "desc": null
-  },
-  "TFT5_Ryze": {
-    "name": "Ryze",
-    "desc": null
-  },
-  "TFT5_Ivern": {
-    "name": "Ivern",
-    "desc": null
-  },
-  "TFT5_HeimerTurret": {
-    "name": "Pui de dragon",
-    "desc": null
-  },
-  "TFT5_Pantheon": {
-    "name": "Pantheon",
-    "desc": null
-  },
-  "TFT5_Volibear": {
-    "name": "Volibear",
-    "desc": null
-  },
-  "TFT5_Teemo": {
-    "name": "Teemo",
-    "desc": null
-  },
-  "TFT5_Darius": {
-    "name": "Darius",
-    "desc": null
-  },
-  "TFT5_Garen": {
-    "name": "Garen",
-    "desc": null
-  },
-  "TFT5_Zyra": {
-    "name": "Zyra",
-    "desc": null
-  },
-  "TFT5_Udyr": {
-    "name": "Udyr",
-    "desc": null
-  },
-  "TFT5_Kayle": {
-    "name": "Kayle",
-    "desc": null
-  },
-  "TFT5_Viego": {
-    "name": "Viego",
-    "desc": null
-  },
-  "TFT5_Draven": {
-    "name": "Draven",
-    "desc": null
-  },
-  "TFT5_Nautilus": {
-    "name": "Nautilus",
-    "desc": null
-  },
-  "TFT5_KindredWolfCombat": {
-    "name": "Lup",
-    "desc": null
-  },
-  "TFT5_Lissandra": {
-    "name": "Lissandra",
-    "desc": null
-  },
-  "TFT5_Nidalee": {
-    "name": "Nidalee",
-    "desc": null
-  },
-  "TFT5_Morgana": {
-    "name": "Morgana",
-    "desc": null
-  },
-  "TFT5_Kindred": {
-    "name": "Kindred",
-    "desc": null
-  },
-  "TFT5_IvernMinion": {
-    "name": "Daisy",
-    "desc": null
-  },
-  "TFT5_Rell": {
-    "name": "Rell",
-    "desc": null
-  },
-  "TFT5_Sejuani": {
-    "name": "Sejuani",
-    "desc": null
-  },
-  "TFT5_Ziggs": {
-    "name": "Ziggs",
-    "desc": null
-  },
-  "TFT5_Sett": {
-    "name": "Sett",
-    "desc": null
-  },
-  "TFT5_Brawler": {
-    "name": "Bătăuș",
-    "desc": "Bătăușii primesc viață maximă.<br><br><expandRow>(@MinUnits@) @BonusHealth@ %i:scaleHealth%</expandRow>"
-  },
-  "TFT5_GodKing": {
-    "name": "Zeu-rege",
-    "desc": "(@MinUnits@) Campionii victorioși le provoacă @PercentDamageAmp@% daune bonus inamicilor care dețin un obiect spectral. "
-  },
-  "TFT5_Verdant": {
-    "name": "Înverzit",
-    "desc": "Campionii care încep lupta pe un hexagon adiacent unui aliat înverzit sunt imuni la controlul maselor pentru un anumit timp.<br><br><expandRow>(@MinUnits@) @Duration@ secunde</expandRow>"
-  },
-  "TFT5_Legionnaire": {
-    "name": "Legionar",
-    "desc": "Legionarii primesc viteză de atac și omni-vampirism.<br><br><expandRow>(@MinUnits@) @ASBoostPercent@% %i:scaleAS%, @Omnivamp*100@% %i:scaleSV%</expandRow>"
-  },
-  "TFT5_Redeemed": {
-    "name": "Mântuit",
-    "desc": "Campionii mântuiți primesc armură, rezistență la magie și puterea abilităților. Când mor, bonusul este împărțit tuturor aliaților mântuiți rămași în viață.<br><br><expandRow>(@MinUnits@) @ArmorAmount@ %i:scaleArmor% %i:scaleMR%, @AbilityPowerAmount@ %i:scaleAP%</expandRow>"
-  },
-  "TFT5_Hellion": {
-    "name": "Năpastă",
-    "desc": "Năpastele primesc viteză de atac.<br><br>De fiecare dată când moare o năpastă, o copie (cu o stea mai slabă) sare dintr-un portal al năpastei și se alătură luptei!<br><br><expandRow>(@MinUnits@) @AttackSpeedPercent@% %i:scaleAS% </expandRow>"
-  },
-  "TFT5_Spellweaver": {
-    "name": "Maestru al vrăjilor",
-    "desc": "Maeștrii vrăjilor primesc un bonus la puterea abilităților, care crește de fiecare dată când un campion folosește o abilitate, până la sfârșitul luptei.<br><br><expandRow>(@MinUnits@) @AP@ %i:scaleAP%, @BonusAP@ bonus %i:scaleAP%</expandRow>"
-  },
-  "TFT5_Nightbringer": {
-    "name": "Întruparea Întunericului",
-    "desc": "Când viața lor scade prima oară sub @FirstThreshold@%, întrupările Întunericului primesc un scut egal cu un procent din viața maximă timp de @ShieldDuration@ secunde. Când se întâmplă acest lucru, întrupările Întunericului primesc daune bonus.<br><br><expandRow>(@MinUnits@) @MaxPercentHealthShield@% scut, @BonusDamage@% %i:scaleDA%</expandRow>"
-  },
-  "TFT5_Dragonslayer": {
-    "name": "Ucigaș de dragoni",
-    "desc": "Ucigașii de dragoni primesc mereu puterea abilităților bonus.<br><br>După ce primul ucigaș de dragoni aliat reușește o doborâre a unui inamic cu cel puțin @MaxHealthThreshold@ viață, toți aliații primesc puterea abilităților suplimentară pentru restul luptei.<br><br><expandRow>(@MinUnits@) @DragonslayerAP@ puterea abilităților pentru ucigașii de dragoni, @TeamAP@ pentru echipă</expandRow>"
-  },
-  "TFT5_Caretaker": {
-    "name": "Îngrijitor",
-    "desc": "(@MinUnits@) Îngrijitorii plasează un pui de dragon care poate fi poziționat oriunde pe câmpul de luptă. Puiul de dragon primește @AttackSpeed@% din viteza de atac a îngrijitorului său și îi reface acestuia @ManaRefund@ mană când moare."
-  },
-  "TFT5_Mystic": {
-    "name": "Mistic",
-    "desc": "Echipa ta primește %i:scaleMR% rezistență la magie.<br><br><expandRow>(@MinUnits@) @MagicResist@ %i:scaleMR%</expandRow>"
-  },
-  "TFT5_Cruel": {
-    "name": "Crud",
-    "desc": "Teemo tânjește să rămână singur împotriva unui singur inamic rămas în viață.<br><br>Teemo costă viață în loc de aur. Poate fi vândut pentru aur, dar nu pentru viață. Cu plăcere."
-  },
-  "TFT5_Coven": {
-    "name": "Vrăjitoare",
-    "desc": "La începutul luptei, campionul cel mai apropiat de centrul vrăjitoarelor este ales ca lider al vrăjitoarelor, primind puterea abilităților bonus.<br><br>De fiecare dată când o vrăjitoare își folosește abilitatea, liderul vrăjitoarelor își reface mană egală cu un procent din cost.<br><br><expandRow>(@MinUnits@) @AbilityPower@ puterea abilităților, @PercentMana@% mană</expandRow>"
-  },
-  "TFT5_Knight": {
-    "name": "Cavaler",
-    "desc": "Echipa ta blochează o valoare fixă din daunele suferite din toate sursele.<br><br><expandRow>(@MinUnits@) @BlockAmount@ daune blocate</expandRow>"
-  },
-  "TFT5_Abomination": {
-    "name": "Monstru",
-    "desc": "După ce au murit @AllyDeaths@ aliați, monstruozitatea se trezește din mormânt. Monstruozitatea primește daune din atac și viață bonus în funcție de nivelul de stele al monștrilor aliați.<br><br>Cei 3 monștri cei mai apropiați de mormânt îi vor oferi monstruozității o copie a unui obiect aleatoriu de-al lor la începutul luptei.<br><br><expandRow>(@MinUnits@) @FlatHealth@ %i:scaleHealth%, @FlatAD@% %i:scaleAD%</expandRow>"
-  },
-  "TFT5_Eternal": {
-    "name": "Etern",
-    "desc": "(@MinUnits@) Lupul se separă de Miel și poate fi poziționat oriunde pe câmpul de luptă. Lupul nu este luat în calculul dimensiunii echipei și primește toate atributele bonus ale Mielului."
-  },
-  "TFT5_Assassin": {
-    "name": "Asasin",
-    "desc": "Nativ: la începutul luptei, asasinii sar în linia din spate a inamicilor.<br><br>Abilitățile asasinilor pot lovi critic și primesc șanse de lovitură critică și daune bonus din lovituri critice.<br><br><expandRow>(@MinUnits@) @CritChanceAmpPercent@% %i:scaleCrit%, @CritAmpPercent@% %i:scaleCritMult%</expandRow>"
-  },
-  "TFT5_Draconic": {
-    "name": "Draconic",
-    "desc": "<row>(@MinUnits@) La sfârșitul luptei: primești un ou de dragon pe bancă. Cu cât este mai mare, cu atât durează mai mult până iese ceva din el și cu atât e mai rară recompensa.</row><br><row>(@MinUnits@) Ouăle de dragon sunt aurii! Ouăle aurii conțin recompense și mai rare.</row>"
-  },
-  "TFT5_Revenant": {
-    "name": "Stafie",
-    "desc": "Stafiile învie după prima moarte în fiecare luptă. Când învie, provoacă și suferă daune crescute cu @DamageAmp@%.<br><br><expandRow>(@MinUnits@) Învie cu @HealthPercent@% %i:scaleHealth%</expandRow>"
-  },
-  "TFT5_Skirmisher": {
-    "name": "Înaintaș",
-    "desc": "Începutul luptei: înaintașii primesc un scut și daune bonus din atac în fiecare secundă.<br><br><expandRow> (@MinUnits@) Scut de @PercentHealthShield@% din viața maximă %i:scaleHealth% și @AttackDamage*100@% %i:scaleAD%</expandRow>"
-  },
-  "TFT5_Cavalier": {
-    "name": "Călăreț",
-    "desc": "Nativ: călăreții se avântă rapid spre țintă de fiecare dată când se mișcă.<br><br>Călăreții primesc durabilitate. La începutul luptei și după fiecare avânt, acest efect se dublează timp de @Duration@ secunde.<br><br><expandRow>(@MinUnits@) @DamageReductionPercent@% %i:scaleDR%</expandRow>"
-  },
-  "TFT5_Ironclad": {
-    "name": "Blindat",
-    "desc": "Echipa ta primește armură.<br><br><expandRow>(@MinUnits@) @Armor@ %i:scaleArmor%</expandRow>"
-  },
-  "TFT5_Invoker": {
-    "name": "Invocator",
-    "desc": "Echipa ta primește mană când atacă.<br><br><expandRow>(@MinUnits@) @ManaPerAttack@ %i:scaleMana%</expandRow>"
-  },
-  "TFT5_Renewer": {
-    "name": "Reînnoitor",
-    "desc": "Reînnoitorii își refac un procent din viața maximă în fiecare secundă. Dacă au viața completă, își refac mană.<br><br><expandRow>(@MinUnits@) @PercentHealth@% %i:scaleHealth% sau @PercentMana@% %i:scaleMana%</expandRow>"
-  },
-  "TFT5_Ranger": {
-    "name": "Pădurar",
-    "desc": "Pădurarii primesc un buff la viteza de atac care se activează și se dezactivează la fiecare @BuffDuration@ secunde. Acest buff se aplică vitezei de atac totale a pădurarului.<br><br><expandRow>(@MinUnits@) @AttackSpeed@% %i:scaleAS%</expandRow>"
-  },
-  "TFT5_Forgotten": {
-    "name": "Anonim",
-    "desc": "Anonimii au ca bonus daune din atac și puterea abilităților. Cu fiecare luptă câștigată, bonusul crește cu @VictoryPercent@%, până la maximum @MaxCombats@ cumuluri.<br><br><expandRow>(@MinUnits@) @InitialADandAP@ %i:scaleAD% %i:scaleAP%</expandRow>"
-  },
-  "TFT5_Dawnbringer": {
-    "name": "Întruparea Luminii",
-    "desc": "O dată pe rundă, la @FirstThreshold@% viață, întrupările Luminii se vindecă rapid. Când se vindecă, toate întrupările Luminii aliate primesc @BonusDamage@% daune bonus.<br><br><expandRow>(@MinUnits@) @PercentOfMaximumHealth@% din %i:scaleHealth% maximă</expandRow>."
-  },
   "TFTEvent5YR_SuperMech": {
     "name": "Super Mecha",
     "desc": null
@@ -22850,213 +21302,5 @@
   "TFT13_Rammus": {
     "name": "Rammus",
     "desc": null
-  },
-  "TFT4_Nasus": {
-    "name": "Nasus",
-    "desc": null
-  },
-  "TFT4_Tristana": {
-    "name": "Tristana",
-    "desc": null
-  },
-  "TFT4b_Diana": {
-    "name": "Diana",
-    "desc": null
-  },
-  "TFT4b_Morgana": {
-    "name": "Morgana",
-    "desc": null
-  },
-  "TFT4b_Zed": {
-    "name": "Zed",
-    "desc": null
-  },
-  "TFT4b_Kindred": {
-    "name": "Kindred",
-    "desc": null
-  },
-  "TFT4_Ornn": {
-    "name": "Ornn",
-    "desc": null
-  },
-  "TFT4_Shyvana": {
-    "name": "Shyvana",
-    "desc": null
-  },
-  "TFT4_Swain": {
-    "name": "Swain",
-    "desc": null
-  },
-  "TFT4_Samira": {
-    "name": "Samira",
-    "desc": null
-  },
-  "TFT4_AurelionSol": {
-    "name": "Aurelion Sol",
-    "desc": null
-  },
-  "TFT4_ChoGath": {
-    "name": "Cho'Gath",
-    "desc": null
-  },
-  "TFT4_Xayah": {
-    "name": "Xayah",
-    "desc": null
-  },
-  "TFT4_Vladimir": {
-    "name": "Vladimir",
-    "desc": null
-  },
-  "TFT4_Olaf": {
-    "name": "Olaf",
-    "desc": null
-  },
-  "TFT4_Kayle": {
-    "name": "Kayle",
-    "desc": null
-  },
-  "TFT4_Sivir": {
-    "name": "Sivir",
-    "desc": null
-  },
-  "TFT4_Neeko": {
-    "name": "Neeko",
-    "desc": null
-  },
-  "TFT4_Darius": {
-    "name": "Darius",
-    "desc": null
-  },
-  "TFT4_Nautilus": {
-    "name": "Nautilus",
-    "desc": null
-  },
-  "TFT4_Brand": {
-    "name": "Brand",
-    "desc": null
-  },
-  "TFT4_Tryndamere": {
-    "name": "Tryndamere",
-    "desc": null
-  },
-  "TFT4_Rakan": {
-    "name": "Rakan",
-    "desc": null
-  },
-  "TFT4_Braum": {
-    "name": "Braum",
-    "desc": null
-  },
-  "TFT4_FortuneProp": {
-    "name": "Lăstarul aurului",
-    "desc": null
-  },
-  "TFT4_WarlordDummy": {
-    "name": "Războinic",
-    "desc": null
-  },
-  "TFT4_FortunePropBig": {
-    "name": "Lăstarul aurului",
-    "desc": null
-  },
-  "TFT4_RaceHecarim": {
-    "name": "Hecarim",
-    "desc": null
-  },
-  "TFT4_Slayer": {
-    "name": "Ucigaș",
-    "desc": "Ucigașii primesc %i:scaleSV% omni-vampirism din ce în ce mai mare pe măsură ce viața lor scade și provoacă %i:scaleDA% daune bonus care cresc în funcție de viața lipsă a țintei.<br><br><expandRow>(@MinUnits@) @LifestealBase@% până la @LifestealMax@% %i:scaleSV% și @BonusDamageBase@% până la @BonusDamageMax@% %i:scaleDA%</expandRow><br><br><br>"
-  },
-  "TFT4_Syphoner": {
-    "name": "Hoț de energie",
-    "desc": "Echipa ta primește %i:scaleSV% omni-vampirism.<br><br><expandRow>(@MinUnits@) @AlliedOmnivampPercent@% %i:scaleSV% pentru aliați; @TraitOmnivampPercent@% %i:scaleSV% pentru hoții de energie </expandRow><br>"
-  },
-  "TFT4_Dragonsoul": {
-    "name": "Sufletul dragonului",
-    "desc": "Începutul luptei: primii aliați sufletul dragonului care suferă daune în luptă primesc ''Binecuvântarea dragonului''. Cât timp e binecuvântată, unitatea are atribute bonus, iar fiecare al 5-lea atac lansează un suflu, provocând daune magice în valoare de @DragonBreathDamage@% din viața maximă a țintei.<br><br>Când moare, binecuvântarea e dată celui mai apropiat suflet al dragonului aliat care nu are una.<br><br><expandRow>(@MinUnits@) @NumBlessings@ binecuvântare; @BonusSP@% %i:scaleAS% %i:scaleAP% </expandRow><br>"
-  },
-  "TFT4_Blacksmith": {
-    "name": "Fierar",
-    "desc": "După fiecare luptă la care participă, Ornn va progresa în făurirea unui artefact. Cu cât nivelul său de stele este mai mare, cu atât lucrează mai repede."
-  },
-  "TFT4_Fabled": {
-    "name": "Legendar",
-    "desc": "<row>(@MinUnits@) Îmbunătățește abilitățile campionilor legendari cu un efect suplimentar.</row><br><br><br>"
-  },
-  "TFT4_Daredevil": {
-    "name": "Îndrăzneț",
-    "desc": "Samira caută extazul luptei, năpustindu-se după fiecare al doilea atac. După fiecare năpustire, se protejează cu un scut în valoare de @DaredevilShieldHealthPercent@% din viața sa maximă, iar următorul atac lovește de @DaredevilShots@ ori, îmbunătățindu-i stilul. La nivelul maxim de stil, își folosește abilitatea.<br>"
-  },
-  "TFT4_Executioner": {
-    "name": "Călău",
-    "desc": "Atacurile și abilitățile călăilor lovesc mereu critic împotriva țintelor cu viața sub un anumit prag.<br><br><expandRow>(@MinUnits@) sub @PercentHealth@% viață </expandRow><br><br>"
-  },
-  "TFT5_Olaf": {
-    "name": "Olaf",
-    "desc": null
-  },
-  "TFT5_Irelia": {
-    "name": "Irelia",
-    "desc": null
-  },
-  "TFT5_Tristana": {
-    "name": "Tristana",
-    "desc": null
-  },
-  "TFT5_Senna": {
-    "name": "Senna",
-    "desc": null
-  },
-  "TFT5_MissFortune": {
-    "name": "Miss Fortune",
-    "desc": null
-  },
-  "TFT5_Galio": {
-    "name": "Galio",
-    "desc": null
-  },
-  "TFT5_Fiddlesticks": {
-    "name": "Fiddlesticks",
-    "desc": null
-  },
-  "TFT5_Gwen": {
-    "name": "Gwen",
-    "desc": null
-  },
-  "TFT5_Akshan": {
-    "name": "Akshan",
-    "desc": null
-  },
-  "TFT5_Lucian": {
-    "name": "Lucian",
-    "desc": null
-  },
-  "TFT5_Pyke": {
-    "name": "Pyke",
-    "desc": null
-  },
-  "TFT5_Rakan": {
-    "name": "Rakan",
-    "desc": null
-  },
-  "TFT5_MonstrosityAxe": {
-    "name": "Monstruozitatea",
-    "desc": null
-  },
-  "TFT5_Cannoneer": {
-    "name": "Tunar",
-    "desc": "Fiecare al 5-lea atac al tunarilor este înlocuit de o lovitură de tun care provoacă daune fizice egale cu un procent din daunele acelui atac într-o explozie în jurul țintei.<br><br><expandRow>(@MinUnits@) @AttackPercent@% daune</expandRow>"
-  },
-  "TFT5_Inanimate": {
-    "name": "Neanimat",
-    "desc": "(@MinUnits@) Începutul luptei: Gwen invocă Negura Groazei în hexagoanele adiacente din jurul ei timp de @Duration@ secunde, oferindu-le tuturor aliaților @DamageReductionPercent*100@% durabilitate cât timp se află în negură."
-  },
-  "TFT5_Victorious": {
-    "name": "Victorios",
-    "desc": "Când Garen ucide un inamic, următorul său atac este mai puternic, provocând daune magice bonus egale cu @PercentDamage*100@% din viața lipsă a țintei."
-  },
-  "TFT5_Sentinel": {
-    "name": "Santinelă",
-    "desc": "Începutul luptei: santinela cu cele mai multe obiecte (egalitățile sunt departajate în funcție de cea mai mare viteză de atac) primește un scut care oferă viteză de atac cumulativă. Când este distrus sau la expirarea duratei, se transferă către aliatul cu procentul de viață cel mai mic și se reînnoiește. Bonusul la viteza de atac persistă între ricoșeurile scuturilor.<br><br><row>(@MinUnits@) Scut de @Shield@, @AttackSpeed*100@% %i:scaleAS%, @Duration@ sec.</row><br><row>(@MinUnits@) Scut de @Shield@, @AttackSpeed*100@% %i:scaleAS%, @Duration@ sec.</row><br><row>(@MinUnits@) Scut de @Shield@, @AttackSpeed*100@% %i:scaleAS%, @Duration@ sec.</row><br><row>(@MinUnits@) Scut de @Shield@, @AttackSpeed*100@% %i:scaleAS%, @Duration@ sec., scutul nu este distrus atunci când ricoșează</row>"
   }
 }
